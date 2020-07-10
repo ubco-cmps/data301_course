@@ -1,0 +1,179 @@
+Sub BoldItalics()
+'
+' BoldItalics Macro
+' Makes a cell be both bold and italics.
+'
+' Keyboard Shortcut: Ctrl+m
+'
+    Selection.Font.Bold = True
+    Selection.Font.Italic = True
+End Sub
+
+
+
+
+
+Sub MyFormat()
+'
+' MyFormat Macro
+' Bold, Courier 20 font, centre text
+'
+' Keyboard Shortcut: Ctrl+Shift+B
+'
+    Selection.Font.Bold = True
+    With Selection.Font
+        .Name = "Courier New"
+        .Size = 20
+        .Strikethrough = False
+        .Superscript = False
+        .Subscript = False
+        .OutlineFont = False
+        .Shadow = False
+        .Underline = xlUnderlineStyleNone
+        .ThemeColor = xlThemeColorLight1
+        .TintAndShade = 0
+        .ThemeFont = xlThemeFontNone
+    End With
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent2
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+End Sub
+
+
+' TODO: Enter code for RedUnderline macro here
+
+Sub RedUnderline()
+    ' Reset font so not bold or italic
+    Selection.Font.Bold = False
+    Selection.Font.Italic = False
+    
+    ' Underline text in cell
+    Selection.Font.Underline = xlUnderlineStyleSingle
+    
+    ' Make background of cell red
+    Selection.Interior.Color = RGB(255, 0, 0)
+End Sub
+
+
+
+Sub RedUnderline()
+    ' Alternative answer	
+    
+    With Selection.Font
+        .Bold = False
+	.Italic = False
+	.Underline = xlUnderlineStyleSingle
+    End With
+    
+    ' Make background of cell red
+    Selection.Interior.ColorIndex = 3
+End Sub
+
+
+
+
+Sub EchoDecision()
+    Dim answer As Integer
+    answer = MsgBox("Pick Yes or No!", vbYesNo)
+    ' answer will either be vbYes or vbNo
+    ' Use debug.print to output "Yes" or "No"
+End Sub
+
+
+Sub EchoDecision_Answer()
+    Dim answer As Integer
+    answer = MsgBox("Pick Yes or No!", vbYesNo)
+    If answer = vbYes Then
+        Debug.Print "Yes"
+    Else
+        Debug.Print "No"
+    End If
+End Sub
+
+
+
+Function CountNum(str As String) As Integer
+    
+    ' Useful functions: IsNumeric() and Mid()
+    
+End Function
+
+
+
+Function CountNum_Answer(str As String) As Integer
+    Dim i As Integer
+    Dim count As Integer
+    
+    For i = 1 To Len(str)
+        If IsNumeric(Mid(str, i, 1)) Then
+            count = count + 1
+        End If
+    Next i
+    CountNum = count
+End Function
+
+
+
+Sub TryIf()
+    Dim num As Integer
+    num = 20
+    If num > 10 Then
+        Debug.Print num * 5
+    Else
+        Debug.Print num * 2
+    End If
+End Sub
+
+
+' UDF expect a number to double
+Function doubleIt(num As Integer) As Integer
+    ' To return a value, assign the value to the method name
+    doubleIt = num * 2
+End Function
+
+' Sums all the cells with the same color
+Function SumColor(RangeToSum As Range, ColorID As Integer) As Long
+  Dim ColorCell As Range
+  Dim result As Long
+  
+  ' Loop through each cell in the range.
+  For Each ColorCell In RangeToSum
+    If ColorCell.Interior.ColorIndex = ColorID Then
+        result = result + ColorCell.Value
+    End If
+  Next ColorCell
+  
+  SumColor = result
+End Function
+
+
+
+
+
+Function CountNumbers(str As String) As Integer
+    Dim i As Integer
+    Dim count As Integer
+    
+    For i = 1 To Len(str)
+        If IsNumeric(Mid(str, i, 1)) Then
+            count = count + 1
+        End If
+    Next i
+    CountNumbers = count
+End Function
+

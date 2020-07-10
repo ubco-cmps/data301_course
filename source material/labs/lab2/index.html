@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>DATA 301 - Lab 2</title>
+<link href="../assign.css" type=text/css rel=stylesheet>
+</head>
+
+<body>
+
+<h1>DATA 301 - Introduction to Data Analytics
+<br/>Lab 2: Excel - Pivot Tables and What-If Scenarios</h1>
+
+<hr>
+
+<p>In this lab, we will use Microsoft Excel to perform analysis of business data including reporting and predictions.</p>
+
+<h3>Objectives</h3>
+
+<ol>
+<li>Manipulate sales data commonly seen in business applications.</li>
+<li>Create several pivot tables and pivot charts.</li>
+<li>Develop what-if scenarios to make it easy to communicate possibilities.</li>
+<li>Use goal seek and linear programming to determine sales targets.</li>
+<li>Experiment with analysis toolpak.</li>
+</ol>
+
+<h3>Analysis Problem and Goals</h3>
+
+<p>This scenario involves analyzing real-world, historical business sales data.  This <a href="http://research.chicagobooth.edu/kilts/marketing-databases/dominicks">data set</a> was collected by the University of Chicago from 1989 to 1997 for the company Dominick's Finer Foods.  From this large data set, we are going to perform an analysis on the store-level sales data which contains data for each UPC sold at every store on a weekly basis.  The format of the data is below and a <a href="http://research.chicagobooth.edu/~/media/5F29F56C65894FA194132DB8D36292B3.pdf">detailed description is available</a>.
+</p>
+
+<table border="1"?
+<tr><th>Variable</th>	<th>Description</th>	<th>Type</th>		<th>Length</th></tr>
+<tr><td>upc</td>		<td>UPC Number</td>		<td>Numeric</td>	<td>8</td></tr>
+<tr><td>store</td>		<td>Store Number</td>	<td>Numeric</td>	<td>3</td></tr>
+<tr><td>week</td>		<td>Week Number</td>	<td>Numeric</td>	<td>3</td></tr>
+<tr><td>move</td>		<td>Number of unit sold</td>	<td>Numeric</td>	<td>8</td></tr>
+<tr><td>price</td>		<td>Retail Price</td>	<td>Numeric</td>	<td>8</td></tr>
+<tr><td>qty</td>		<td>Number of item bundled together</td>	<td>Numeric</td>	<td>3</td></tr>
+<tr><td>profit</td>		<td>Gross margin</td>	<td>Numeric</td>	<td>8</td></tr>
+<tr><td>sale</td>		<td>Sale code (B, C, S)</td>	<td>Character</td>	<td>8</td></tr>
+<tr><td>ok</td>			<td>1 for valid date, 0 for trash</td>	<td>Numeric</td>	<td>3</td></tr>
+</table>
+
+<p><strong>Note: To calculate the gross sales, use <tt>price * move / qty</tt>.  To calculate the gross profit, multiple sales by <tt>profit/100</tt>.</strong></p>
+
+<p><a href="data.csv">Click here to download the data set</a> that consists of the sales for the top 20 products from the Cookie category for 5 stores from 1992 to 1996.</p>
+
+
+<h4>Goals</h4>
+
+<p>The analysis goals are:
+
+<ul>
+<li><strong>Loading</strong> - load the input CSV file into Excel and convert into an Excel spreadsheet file.</li>
+<li><strong>Cleaning</strong> - filter out all data indicated as "trash" (value 0) in ok field</li>
+<li><strong>Summary</strong> - create pivot tables for:
+	<ol>
+		<li>Overall sales by store</li>
+		<li>Annual sales by store</li>
+		<li>Sales and profit by UPC</li>
+	</ol>
+</li>
+<li><strong>Visualization</strong> - create charts to display data:
+	<ol>
+		<li>Create a chart for each pivot table.
+		<li>Create a chart for product 4400000551 showing sales by year.  Note: This chart may be used to help predict sales in 1997 but is not part of the marked deliverables.</li>
+	</ol>
+</li>
+<li><strong>Analysis</strong> - using the sales data answer these analysis questions:
+	<ol>
+		<li>What is the most profitable item at each store?</li>
+		<li>For product <tt>4400000551</tt>, determine the estimated sales for the next year (1997).</li>
+		<li>Use What-if scenarios to show annual sales per store in 1997 if -10% decrease, stays the same, and 10% increase.</li>
+		<li>Use regression to determine if any relationship between <em>Sales</em> and <em>GrossProfit</em>.</li>
+		<li>Use goal seek to determine the percentage sales change needed to reach <tt>$250,000</tt> in overall sales in 1997.</li>
+	</ol>
+</li>
+</ul>
+
+<h3>Marking and Evaluation</h3>
+
+<p>Marks are awarded by <em>precisely</em> following these requirements:
+
+<ul>
+<li><strong>Loading (1 mark) - </strong>submit an Excel file called <strong>lab2_(yourstudentnum).xlsx</strong> (e.g. <strong>lab2_11111111.xlsx</strong>) where the first sheet is called <em>rawdata</em> and contains the loaded data set with no changes.</li>
+
+<li><strong>Cleaning and Formatting (3 marks) - </strong>create a second sheet called <em>data</em> that contains the data set after the following formatting and cleaning:
+	<ul>
+		<li>Header fields must be in bold font.  UPC field must display entire value (make sure column width is wide enough). (0.5 marks)</li>
+		<li>Add a column called <em>Sales</em> which is calculated as: <tt>price * move / qty</tt>.  Add a column called <em>GrossProfit</em> which is calculated as: <tt>Sales * Profit/100</tt>.  Both columns must be formatted as <tt>Currency</tt>. (0.5 marks)</li>
+		<li>Add a column called <em>Year</em> that calculates the year for each week. (1 mark)
+			<ul>
+				<li>1992 - Weeks 120 to 172</li>
+				<li>1993 - Weeks 173 to 225</li>
+				<li>1994 - Weeks 226 to 277</li>
+				<li>1995 - Weeks 278 to 329</li>
+				<li>1996 - Weeks 330 to 381 </li>
+			</ul>
+		</li>
+		<li>The data must be sorted by <em>OK</em> (descending), <em>week</em> (ascending), then <em>store</em> (ascending), then <em>UPC</em> (ascending). (0.5 marks)</li>
+		<li>Filter data so only values of <tt>OK=1</tt> appear (no trash data). (0.5 marks)</li>
+	</ul>
+</li>
+
+<li><strong>Summary Analysis and Visualization (3 marks) </strong>- create a third sheet called <em>pivot</em> that contains:
+	<ul>
+		<li>A pivot table for overall sales by stores with a pie chart. (1 mark)</li>
+		<li>A pivot table for overall sales by stores by year with a stacked column chart. (1 mark)</li>
+		<li>A pivot table for overall sales and profits by UPC with an area chart. Sort by total sales descending.(1 mark)</li>
+	</ul>
+</li>
+<li><strong>Analysis (4 marks) - </strong>create a fourth sheet called <em>analysis</em> that contains:
+	<ul>
+		<li>A table with columns <em>Store</em>, <em>Most Profitable Item</em>, and <em>Fastest Growing Item</em> where each row gives a store id and its most profitable (GrossProfit for all years) and fastest growing item by Sales (% increase from 1995 to 1996). (2 marks)</li>
+		<li>In cell <tt>E2</tt>, estimate the total sales in 1997 for product <tt>4400000551</tt> and give a short reasion in cell <tt>F2</tt> for your estimate. (1 mark)</li>
+		<li>In cell <tt>E5</tt>, put the store id of any store that you would suggest to close or <tt>none</tt> if no store closures. (1 mark)</li>
+		<li><strong>Note: None of these values in the analysis tab need to be calculated with formulas. You must just figure out the right answer and type it in as a value in the cell.</strong></li>
+	</ul>
+</li>
+
+<li><strong>Predictions (3 marks) - </strong>create a fifth sheet called <em>predict</em> that contains:
+	<ul>
+		<li>Sales data for 1996 and a column for predicted sales for 1997.  The predicted sales will be a percentage change from 1996.  This percentage will be in cell <tt>H3</tt>.  Use what-if scenarios to create three scenarios: 1) Good (+10%),  2) Same (0%), and 3) Bad (-10%).  (2 marks)</li>
+		<li>Use goal seek to determine the % sales change necessary so total 1997 sales is $250,000.  Put that value in cell <tt>H6</tt>. (1 mark)</li>
+	</ul>
+</li>
+
+<li><strong>Regression (1 marks) - </strong>compute a regression on sales (Y variable) and GrossProfit (X variable) and rename the regression result sheet as <em>regression</em>.  The regression shown uses only records with <tt>OK=1</tt>.</li>
+
+<li><strong>Bonus (2 marks) - </strong>create a new sheet called <em>bonus</em> that performs some analysis to determine any useful insight from the data with an explanation on what you did and why it is interesting.</li>
+
+<li><strong>Note:</strong> You may have additional working sheets in your spreadsheet.  (The screenshots show <em>predict_work</em> and <em>forecast</em> which you do not have to make).
+</ul>
+
+</p>
+
+<p>When complete, submit your Excel file named <strong>lab2_(yourstudentnum).xlsx</strong> (e.g. <strong>lab2_11111111.xlsx</strong>) using Connect.</p>
+
+
+<h3>Screenshots</h3>
+
+<h4>rawdata sheet</h4>
+
+<img src="img/lab2_rawdata.png" width="800">
+
+<h4>data sheet</h4>
+
+<img src="img/lab2_data.png" width="800">
+
+<h4>pivot sheet</h4>
+
+<img src="img/lab2_pivot.png" width="800">
+
+<h4>analysis sheet</h4>
+
+<img src="img/lab2_analysis.png" width="800">
+
+<h4>predict sheet</h4>
+
+<img src="img/lab2_predict.png" width="800">
+
+<h4>regression sheet</h4>
+
+<img src="img/lab2_regression.png" width="800">
+
+<hr>
+<img src="../../../../images/go-upwd.gif" alt="*"  align="top" height="14" width="14">
+        <a href="../index.html">Home</a>
+<hr>
+
+</body>
+</html>

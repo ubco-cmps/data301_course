@@ -1,0 +1,82 @@
+-- CREATE TABLE -------------------------------------------
+
+create table mydata (
+  num int,
+  message varchar(50),
+  amount decimal(8,2)
+ );
+insert into mydata values (1, 'Hello', 99.45);
+insert into mydata values (2, 'Goodbye', 55.99);
+insert into mydata (num, message) values (3, 'No Amount');
+
+-- INSERT DATA ---------------------------------------------
+
+INSERT INTO emp VALUES ('E9','S. Smith','1975-03-05', 
+									'SA',60000,'E8','D1')
+
+-- need not be in correct order
+-- no quotes for numbers
+INSERT INTO emp(ename, eno, salary) 
+        VALUES ('S. Smith','E9',60000)
+
+
+insert into mydata values (1, 'Hello', 99.45);
+insert into mydata values (2, 'Goodbye', 55.99);
+insert into mydata (num, message) values (3, 'No Amount');
+
+
+-- UPDATE ---------------------------------------------
+
+-- multiple rows single col
+UPDATE emp SET salary = salary*1.10;
+
+-- single row multiple col
+UPDATE emp SET salary = 1000000, ename='Rich Guy'
+WHERE eno = 'E2';
+
+-- Try it: UPDATE
+
+UPDATE mydata SET amount = 99.99
+
+UPDATE mydata SET num=10 WHERE num = 1
+
+UPDATE mydata SET message = 'Changed' WHERE num = 2
+
+
+-- DELETE ---------------------------------------------
+-- Try it: Delete
+
+DELETE FROM mydata WHERE num = 1
+DELETE FROM mydata WHERE message < 'C' --- Deletes nothing
+DELETE FROM mydata WHERE message > 'D' --- Deletes 2 rows
+DELETE FROM mydata --- deletes everything
+
+
+-- SELECT ---------------------------------------------
+
+-- Try it: SQL SELECT and Projection
+
+SELECT * FROM proj --- LibreOffice Case sensitive 
+SELECT * FROM Proj --- wont work!
+SELECT pno FROM proj
+SELECT pno, budget FROM proj
+
+-- WHERE ---------------------------------------------
+
+--- LibreOffice Case sensitive
+SELECT ENO, ENAME, TITLE, SALARY FROM EMP
+	WHERE ( SALARY > 35000 OR TITLE = 'PR' )
+	
+SELECT * 
+FROM 	 EMP
+WHERE	 SALARY > 50000 OR TITLE ='PR'
+
+-- Try it: SQL SELECT and Filterin
+
+SELECT * FROM proj WHERE budget > 250000
+SELECT pno, pname FROM proj WHERE dno = 'D1'
+SELECT pno, dno FROM proj WHERE dno = 'D1' or dno = 'D2'
+-- syntax error ... look at the or.........
+SELECT pno, dno FROM proj WHERE dno = 'D1' or 'D2'
+
+

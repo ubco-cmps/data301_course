@@ -1,0 +1,279 @@
+
+create table mydata (
+  num int,
+  message varchar(50),
+  amount decimal(8,2)
+ );
+
+ insert into mydata values (1, 'Hello', 99.45);
+ insert into mydata values (2, 'Goodbye', 55.99);
+insert into mydata (num, message) values (3, 'No Amount');
+
+
+
+
+UPDATE emp SET salary = salary*1.10;
+
+UPDATE emp SET salary = 1000000, ename='Rich Guy'
+WHERE eno = 'E2';
+
+
+
+
+
+UPDATE mydata SET amount = 99.99
+
+UPDATE mydata SET num=10 WHERE num = 1
+
+UPDATE mydata SET message = 'Changed' WHERE num = 2
+
+
+
+
+
+
+DELETE FROM mydata WHERE num = 1
+
+DELETE FROM mydata WHERE message > 'C'
+
+DELETE FROM mydata
+
+
+--- I renames my EMP table and field names to be lower case
+ALTER TABLE "EMP" RENAME TO "emp";
+
+
+------------ JOINS -------------------
+
+--- Let see the whole JOIN query first:
+SELECT * 
+	FROM EMP INNER JOIN DEPT
+		ON EMP.DNO = DEPT.DNO;
+
+SELECT *
+	FROM EMP INNER JOIN DEPT 
+		ON EMP.DNO = DEPT.DNO 
+	WHERE DNAME = 'Management';
+
+
+SELECT ENAME 
+	FROM EMP INNER JOIN DEPT 
+		ON EMP.DNO = DEPT.DNO 
+	WHERE DNAME = 'Management';
+
+------------- ORDER BY ---------------
+
+SELECT ENAME, SALARY, BDATE
+FROM EMP
+WHERE SALARY > 30000
+	ORDER BY 
+		SALARY DESC, 
+		ENAME ASC;
+		
+------------- LIMIT ------------------
+
+SELECT ENAME, SALARY FROM EMP
+ORDER BY SALARY DESC LIMIT 5;
+
+SELECT ENAME, SALARY FROM EMP
+ORDER BY SALARY DESC LIMIT 5 OFFSET 2;
+
+------------- Example 5.9 ------------------
+
+----- (a)
+SELECT * FROM PROJ
+WHERE BUDGET < 500000 
+ORDER BY BUDGET DESC
+
+----- (b) 
+-- In Microsoft Access
+SELECT TOP 5 ENAME, SALARY
+FROM EMP ORDER BY SALARY DESC
+--  In LibreOffice
+SELECT ENAME, SALARY FROM EMP
+ORDER BY SALARY DESC LIMIT 5;
+
+----- (c)
+SELECT * 
+	FROM PROJ INNER JOIN DEPT
+		ON PROJ.DNO = DEPT.DNO;
+
+SELECT PNO, DNO, PNAME, DNAME 
+	FROM PROJ INNER JOIN DEPT
+		ON PROJ.DNO = DEPT.DNO
+ORDER BY DNO ASC, PNO ASC;
+		
+SELECT PNO, PROJ.DNO, PNAME, DNAME 
+	FROM PROJ INNER JOIN DEPT
+		ON PROJ.DNO = DEPT.DNO
+	WHERE DNAME > 'D'
+ORDER BY DNO ASC, PNO ASC;
+
+SELECT pno, proj.dno, pname, dname 
+FROM proj 
+INNER JOIN dept ON proj.dno=dept.dno 
+WHERE dname > 'D' ORDER BY proj.dno, proj.pno
+
+-- Note:  will need a prefix 
+-- (either proj or dept) on the dno field.
+
+--------------- DISTINCT --------------------
+
+-- selects the DISTINCT salaries from emp
+SELECT DISTINCT SALARY FROM EMP;
+
+-- counts the distinct salaries from emp
+SELECT COUNT(DISTINCT SALARY) FROM EMP;
+
+SELECT COUNT(ENO) AS numEmp, AVG(SALARY) AS avgSalary
+FROM EMP;
+
+SELECT COUNT(ENO), AVG(SALARY) FROM EMP;
+
+------ GROUP BY -------------------------------
+
+SELECT 	TITLE, COUNT(ENO) AS numEmp
+FROM 	 	EMP
+GROUP BY TITLE;
+
+
+SELECT 	TITLE, 
+	COUNT(ENO) AS numEmp,
+	MIN(SALARY) as minSal,
+	MAX(SALARY) as maxSal, 
+	AVG(SALARY) AS avgSal
+FROM 	 EMP
+GROUP BY TITLE
+
+-- multiple attributes
+select ENO, PNO, Count(*)
+from WORKSON
+Group by ENO, PNO;
+
+
+-------- HAVING ---------------------
+
+-- will filter out salary > 25000 before 
+-- grouping and aggregate functions
+SELECT 	TITLE, 
+	COUNT(ENO) AS numEmp,
+	MIN(SALARY) as minSal,
+	MAX(SALARY) as maxSal, 
+	AVG(SALARY) AS avgSal
+FROM 	 EMP
+WHERE SALARY > 35000
+GROUP BY TITLE
+
+
+-- syntax error
+SELECT 	TITLE, 
+	COUNT(ENO) AS numEmp,
+	MIN(SALARY) as minSal,
+	MAX(SALARY) as maxSal, 
+	AVG(SALARY) AS avgSal
+FROM 	 EMP
+-- cant call yet since WHERE is performed
+-- before aggregate functions
+WHERE AVG(SALARY) > 25000
+GROUP BY TITLE
+
+
+SELECT 	TITLE, 
+	COUNT(ENO) AS numEmp,
+	MIN(SALARY) as minSal,
+	MAX(SALARY) as maxSal, 
+	AVG(SALARY) AS avgSal
+FROM 	 EMP
+GROUP BY TITLE
+HAVING AVG(SALARY) > 35000;
+
+
+-- TRY it: GROUP BY
+
+-- 1)----------------------------------
+-- since pno is a primary key we can use this:
+SELECT COUNT(*) FROM PROJ
+-- but safer to use this:
+SELECT COUNT(DISTINCT PNO) FROM PROJ;
+
+-- 2) ----------------------------------
+-- this should return one number 
+SELECT SUM(BUDGET) AS totalBudget FROM PROJ
+
+-- 3)----------------------------------
+SELECT DNO, AVG(BUDGET) AS avgBudget FROM PROJ
+GROUP BY DNO;
+
+-- 4) ----------------------------------
+SELECT PNO, SUM(HOURS) as totalHours 
+	FROM WORKSON GROUP BY PNO;
+
+-- Challenge: 
+
+-- look at the join first;
+SELECT  *
+	FROM WORKSON JOIN PROJ 
+	ON WORKSON.PNO=PROJ.PNO;
+
+-- specify which pno (ambiguous col_
+SELECT  PNO, PNAME, SUM(HOURS) AS totalHours
+	FROM WORKSON JOIN PROJ 
+	ON WORKSON.PNO=PROJ.PNO
+GROUP BY PNO, PNAME;
+
+-- for access this will work (errors in LO)
+-- SELECT Proj.pno, pname, SUM(hours) as totalHours
+--  FROM WorksOn INNER JOIN Proj on WorksOn.pno=Proj.pno 
+--  GROUP BY Proj.pno
+
+-- 5)----------------------------------
+
+-- first step: joing workson and proj
+SELECT *
+FROM WORKSON 
+	INNER JOIN PROJ
+		ON WORKSON.PNO = PROJ.PNO;
+
+-- second step: join dept to above
+SELECT *
+FROM WORKSON 
+	INNER JOIN PROJ
+		ON WORKSON.PNO = PROJ.PNO
+	INNER JOIN DEPT
+		ON PROJ.DNO = DEPT.DNO;
+
+		
+-- extract the cols we want
+SELECT DNAME, PNAME, SUM(HOURS) AS totalHours
+FROM WORKSON 
+	INNER JOIN PROJ
+		ON WORKSON.PNO = PROJ.PNO
+	INNER JOIN DEPT
+		ON PROJ.DNO = DEPT.DNO
+GROUP BY DNAME, PNAME;
+
+
+
+-- for access:
+SELECT 
+	DNAME, 
+	PNAME, 
+	SUM(HOURS) AS totalHours, 
+	COUNT(ENO) AS totalEmp 
+FROM 
+(WORKSON INNER JOIN PROJ ON WORKSON.PNO=PROJ.PNO) 
+	INNER JOIN DEPT 
+	ON PROJ.DNO=DEPT.DNO 
+GROUP BY DNAME, PNAME
+
+
+
+-- PUTITING IT ALL TOGETHER
+
+SELECT PNAME, SUM(HOURS) as totalHours 
+FROM 	 WORKSON 
+	INNER JOIN PROJ 
+		on WORKSON.PNO=PROJ.PNO
+WHERE	 RESP='Manager'
+GROUP BY PNAME;
+

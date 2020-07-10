@@ -1,0 +1,911 @@
+.
+
+
+
+Basic Syntax of R
+Commenting is done with a #. There are no multiline comments.
+
+
+Variables are assigned using a <- 
+
+
+To get help for any function use help(function)or ?function
+
+Calculations in R
+R has standard math operators (+, -, *, /, ^ (power)).
+
+Predefined functions in R:
+Trigonometric functions: sin , cos , tan
+Exponential: exp, log (natural log), log10
+
+
+Note: pi returns the value of π BUT you can (accidentally) redefine it.
+
+
+R Question
+Question: How many of the following statements are TRUE?
+
+1) R is case-sensitive.
+2) A command in R can be terminated by a semi-colon.
+3) Indentation is the syntax used to group statements together.
+4) A single line comment starts with #.
+5) The = is the preferred syntax for variable assignment.
+
+A) 0		B) 1		C) 2		D) 3		E) 4
+25
+Answer: D
+True: #1, #2, #4
+
+Note: = does work for assignment in some cases.  Messy rules that we will ignore.
+25
+
+R Data Types
+Numeric
+Decimal values
+Integer
+Can be created using as.integer()
+Complex
+Complex values  (i.e. a+bi)
+Logical
+TRUE/FALSE. Can be denoted using T/F.
+Character
+String values denoted with single or double quotes.  
+
+Try it: R Variables and Expressions
+In a R program:
+Make a comment with your name and student number
+Calculate the following:
+4*5-12^3
+e4*3
+sin(4*pi-6)
+Make the following variables. What types do you think they are?
+var1 = TRUE
+var2 = F
+var3 = 3^4 - 10
+var4 = “Hello World”
+You can print out the responses by typing the variable name in the console and pressing Enter.
+
+
+
+4*5-12^3
+exp(4*3)
+sin(4*pi-6)
+
+typeof(var1) is logical
+
+typeof(var2) is logical
+
+typeof(var3) is double
+
+typeof(var4) is character
+
+
+27
+
+Comparisons
+Comparison operators in R:
+>		- Greater than
+>=		- Greater than or equal
+< 		- Less than
+<=		- Less than or equal
+==		- Equal (Note: Not "="!)
+!=		- Not equal
+
+The result of a comparison is a Boolean value which is either TRUE or FALSE.
+28
+
+Conditions with and, or, not
+
+
+
+
+
+
+Operation
+Syntax
+Examples
+Output
+AND
+(True if both are True)
+&
+TRUE  & TRUE
+FALSE & TRUE
+FALSE & FALSE
+TRUE
+FALSE
+FALSE
+OR
+(TRUE if either or both are TRUE)
+|
+TRUE  | TRUE
+FALSE | TRUE
+FALSE | FALSE
+TRUE
+TRUE
+FALSE
+NOT
+(Reverses: e.g. TRUE becomes FALSE)
+!
+!TRUE
+!FALSE
+FALSE
+TRUE
+29
+
+Decisions
+Decisions allow different actions based on conditions.  R syntax:
+
+
+
+
+
+
+The statement after the if condition is only performed if the condition is TRUE.
+If there is an else, the statement after the else is done if condition is FALSE.
+Indentation is recommended but not required.
+Statements are grouped using brackets which are optional if only one statement.
+
+if (condition)
+{	statements
+}
+if (condition)
+{	statements
+}
+else
+{	statements
+}
+Done if condition
+is FALSE
+Done if condition is TRUE
+30
+
+Decisions if/else if Syntax
+if (condition)
+{	statement
+} else if (condition)
+{ 	statement
+} else if (condition)
+{ 	statement
+}else
+{ 	statement
+}
+if (n == 1)
+{	print("one")
+} else if (n == 2)
+{ 	print("two")
+} else if (n == 3)
+{ 	print("three")
+} else
+{ 	print("Too big!")
+}
+31
+
+The for Loop
+A for loop repeats statements a given number of times.
+
+R for loop syntax:
+
+for (i in seq(1,10,1)){
+ 	print(i)
+}
+Starting number
+Up to and including
+ending number
+Increment
+32
+
+n = 20				
+print(doubleNum(n))			#	 40
+Defining and Calling a Function in R
+doubleNum <- function(num)
+{	# Return number doubled
+	num <- num * 2  
+	print(paste("Num:",num))
+	return (num)
+}
+
+Call function by name
+function Keyword
+Parameter Name
+Argument
+Function Name
+33
+
+paste("abc",5,sep="")
+
+Try it: R Decisions, Loops, and Functions
+Question: Write a R program that contains a function called printEven that prints the first 10 even numbers starting from an input number passed in.
+Note: Modulus is %%.
+Test your function with input values 5 and 10.
+34
+printEven <- function(num)
+{  
+  if (num %% 2 == 1)
+    num = num + 1
+  
+  for (i in seq(num,num+19,2))         
+    print(i)  
+}
+
+printEven(5)
+
+Reading Data Sets
+Read delimited data:
+data <- read.table("filename",sep="",header=TRUE)
+Filename – name of file to read in i.e. input.txt
+sep -  separator character. Default "" uses any type of whitespace.  Others: , \t ;
+header – if TRUE then the first row is used for variable names
+
+Read CSV data:
+data <- read.csv("filename", header=TRUE)
+Specific case of read.table() with sep=","
+
+
+head() and tail()
+After reading a data set, use head() to show the first 6 rows and tail() to show the last 6 rows.
+
+data <- read.csv("data.csv", header=TRUE)
+head(data)
+tail(data)
+head(data, 10)		# First 10 rows
+tail(data, 20)		# Last 20 rows
+
+36
+
+Reading Data with R
+Question: How many of the following statements are TRUE?
+1) R can read comma separated and tab separated files.
+2) If HEADER=TRUE, the first row of the file is assumed to be column names (i.e. not data).
+3) If HEADER=TRUE and there is no header row, the program crashes.
+4) By default, head() and tail() return 10 rows.
+5) A parameter passed into head() can change # of rows returned.
+
+A) 0		B) 1		C) 2		D) 3		E) 4
+37
+Answer: D
+True: #1, #2, #5
+
+37
+
+Data Structures - Vectors
+A vector is an indexed list of data of any type.
+Create vectors using a colon or seq() (R’s version of range).
+1:10
+seq(5, 1, by = -0.5)	# Default by is 1
+Create an empty vector with c(), or fill it by specifying elements.
+c()
+c(4, 3, 5, 'a', 'd')
+Access elements in a vector using []
+myVector[i] 		# Returns ith element of myVector
+myVector[1] 		# Returns 4
+Note: [] returns a vector with a subset of values. If only one index, get a vector with one element. Can also do: myVector[myVector > 3] would return a vector with (4, 5).
+NOTE: First index is 1!
+
+Vectors in R
+Question: How many of the following statements are TRUE?
+
+1) Vectors in R are indexed from 0.
+2) 1:10 creates a vector of 10 numbers.
+3) A vector may have data values of different types.
+4) If data <- 1:5, then data[2]+data[3] = 3.
+
+A) 0		B) 1		C) 2		D) 3		E) 4
+39
+Answer: C
+True:  #2, #3
+
+#4 is 5.
+
+39
+
+Data Structures - Matrices
+A matrix is a structure of rows and columns where each data value is the same data type. All rows must have the same length. All columns must have the same length.
+Create a matrix from the vector x using matrix()
+matrix(x, nrow = 5, ncol = 3, byrow = FALSE)	
+	# Starts at [1,1] and fills the column first before 	# going onto the next column. 
+	# Need to only specify ncol or nrow
+Access elements using [row, col]. Leaving one of them blank returns the whole row or column.
+myMatrix[i,j]		# Returns ith row and jth column
+
+Matrices and Vectors
+Append a vector to a matrix as a row using rbind() :
+myMatrix = rbind(myMatrix, vec) 
+Append a vector to a matrix as a column using: cbind():
+myMatrix = cbind(myMatrix, vec) 
+
+Data Structures - Lists
+A list is an ordered collection of objects of any type. 
+
+Create a list using list(). Specify names of elements by using name= inside the brackets. 
+myList = list(x = 1:4, y = c('a','b'))  
+ # Creates a list with two elements x and y
+
+Access elements using the double square brackets
+myList[[2]]		# Returns 2nd item of list (y)
+myList[['x']]		# Returns item with the name x
+With single bracket, like myList[1] would get a List that contains x=1:4. If use myList[[1]], get sequence 1:4.
+Can also use myList$x to extract element by name.
+Double brackets and $ only return one value. Single brackets return a sublist.
+Can use variable to index with double bracket but not with $. Example: val <- “x”; myList[[val]] works but not myList$val
+
+42
+
+Lists and Matrices in R
+Question: How many of the following statements are TRUE?
+
+1) Data values in a list may be of different types.
+2) In a matrix, the number of rows and number of columns must be the same.
+3) Given matrix m, m[2] would return all data in row 2.
+4) Given matrix m, m[,2] would return all data in column 3.
+
+A) 0		B) 1		C) 2		D) 3		E) 4
+43
+Answer: B
+
+m[2] is same as m[2,1] (2nd row, 1st column)
+m[2,] would return all of row 2
+m[,2] returns all data in column 2 (not 3)
+43
+
+Try it: Lists
+Create a list called grades. Add in the following elements:
+*Name (containing first and last name)
+Student number
+*Assignment grades 
+Midterm grade
+The *’s indicate that the fields should have multiple entries.
+
+myList = list(name=c("Ramon","Lawrence"), number=9999999, grades=c(99,100,55), midterm=100) 
+44
+
+Data Structures – Data Frames
+A data frame is similar to a matrix but the columns can have different data types. 
+Note: Still have uniform length of rows and columns. 
+Data frames are a very common structure for data analysis.
+
+Create a data frame by using data.frame(). Specify names of variables within the brackets.  
+	myDF = data.frame(x = c(1:3), y = (2:4))
+
+Change a matrix into a data.frame using as.data.frame().
+	myDF = as.data.frame(myMatrix)
+
+Data Structures – Accessing Data in Data Frames
+Access elements using [row, col] or $variable_name.
+	myDF[i, j]		# ith row and jth column
+	myDF$x		# Returns the column labeled x
+
+Can add new column called vec into the data frame using $
+	myDF$new_col = vec	# Adds vec as new_col
+
+When subset a number from a matrix, get a vector not a matrix. If want a matrix, use drop parameter like this: myDF[1, 2, drop = FALSE]
+
+Removing na from a vector:
+
+x <- c(5, NA, 4, NA)
+na <- is.na(x)
+x[!bad]
+
+Removing na from two vectors x and y:
+good <- complete.cases(x,y)
+x[good]
+y[good]
+
+Removing na from a dataframe frame:
+good <- complete.cases(frame)
+frame[good,]
+
+46
+
+Data Structures - Factors
+Factors are used for qualitative groups/categories (i.e. Male/Female).  Use as.factor() to turn a vector or data.frame column into a factor.
+	myFactor = as.factor(x)
+	myDF$x = as.factor(myDF$x)
+Access elements using []:
+	myFactor[i]		# Returns ith element 
+
+Can use class() or str() to gain information about the type and/or structure of your variable/data. str() gives more detail.
+
+
+Question on Data Structures
+Question: How many of the following are TRUE?
+Matrices must have the same number of rows as columns.
+Vectors must contain only one data type.
+A factor can contain only characters.
+A Data frame’s columns can be of varying length.
+
+
+A) 0		B) 1		C) 2		D) 3		E) 4
+
+A - none are true
+48
+
+Subsets
+Subsetting is used to extract data with particular values.
+
+Syntax:
+subset(data, condition)
+
+Example:
+# Only return data for province of BC
+cars_bc = subset(cars, prov == 'BC')
+
+Try it: Data Frame
+Create a data frame mydata with the following column names/data:
+id - numbers 1 to 5
+location - "BC", "BC", "AB", "MB", "BC"
+value - 10, 20, 30, 40, 50
+Make location a factor.
+
+Add one more column to your data frame that is a factor:
+success - "Y", "N", "N", "N", "Y"
+
+Display only the data from BC and value >= 20.
+mydata <- data.frame(id=1:5, location=c("BC","BC","AB","MB","BC"), value=c(10,20,30,40,50))
+mydata$location <- as.factor(mydata$location)
+successData <- c("Y","N","N","N","Y")
+mydata$success <- successData
+subset(mydata, location=='BC' & value >= 20)
+50
+
+Visualizing Data in R
+R supports several graphing libraries to produce graphs for qualitative and quantitative data including bar charts, histograms, and box plots.
+We will use the package ggplot2. gg stands for Grammar of Graphics.
+To install tools → Install Packages... Then input ‘ggplot2’
+
+
+Visualization options:
+http://docs.ggplot2.org/current/
+
+Adding axis:
+http://www.r-bloggers.com/how-to-format-your-chart-and-axis-titles-in-ggplot2/
+51
+
+Graphs for Qualitative Data: Frequency Table
+Frequency tables summarize the number of observations in each group.
+
+Use: table(variable)
+
+
+
+Graphs for Qualitative Data: Bar Charts
+Bar charts have each group along the x-axis and a vertical bar with the height representing the number of observations of each group.
+Code example:
+ggplot(Auto, aes(x = origin))+  
+geom_bar(aes(fill=factor(origin)))
+ + xlab("") + ylab("")
+ + ggtitle("BARCHART")
+
+Using the dataset Auto in the ISLR package.
+Start with the ggplot() command and put origin as x.
+Use geom_bar() to create the bar chart
+Use fill = factor(origin) to colour the bars for different groups. 
+
+
+53
+
+A histogram is similar to a bar chart, but the x-axis is divided into bins.
+The variable of interest is on the x-axis, and the y-axis represents count of observations within each bin.
+Visualizes the data distribution.
+Code example:
+
+Graphs for Quantitative Data: Histogram
+ggplot(Auto, aes(x = horsepower)) 
++ geom_histogram(color = 'mediumvioletred', fill= 'mediumaquamarine') 
++ xlab("") + ylab("") + ggtitle("HISTOGRAM")
+
+Start with the ggplot() command, and put horsepower as x.
+Use geom_histogram() to create the histogram
+You can specify the number of bins in geom_histogram(}.  Default is used if blank.
+Use color for the outline of the boxes, and  fill for the inside of the boxes. 
+NOTE: colouring the outlines a separate colour can help to make the graph more readable. 
+A full list of colours can be found here: http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
+
+54
+
+Graphs for Quantitative Data: Boxplot
+A boxplot is a visualization of the 5 number summary.
+Groups along the x-axis
+Data values along the y-axis
+Lowest and highest points are the min and max of the data respectively.
+Bottom of box is Q1 and top is Q3
+Median is represented as the bar inside the box. 
+Single points represent outliers.
+
+Boxplot Example Code
+ggplot(Auto, aes(x = origin, y = horsepower)) 
++ geom_boxplot(color = 'mediumvioletred', fill= 'mediumaquamarine') 
++ xlab("") + ylab("")+ ggtitle("BOXPLOT")
+
+We will use the dataset Auto provided in the ISLR package.
+Start with the ggplot() command, and put origin as x and horsepower as y.
+Use geom_boxplot() to create the boxplot
+You can specify the color and fill in geom_boxplot if you wish. Default is black and white.
+
+56
+
+Graphs for Quantitative Data: ECDF
+An Empirical Cumulative Distribution Function (ECDF) plot shows values along the x-axis and quantiles along the y-axis. 
+
+Each data point is plotted along with its corresponding quantile.
+
+
+ECDF Example Code
+ggplot(Auto, aes(x = horsepower)) 
++ stat_ecdf(color = 'mediumvioletred') 
++ xlab("") + ylab("")+ ggtitle("ECDF")
+
+
+Graphical Summary Question
+Question: How many of the following are TRUE?
+
+Bar charts and histograms will work for the same variables.
+Boxplots show a 5 number summary.
+Variable type does not matter, any graph can be used.
+Histograms can give an idea of the distribution of a variable.
+
+
+A) 0		B) 1		 C) 2		D) 3		E) 4
+
+C: #2 and #4 are true
+59
+
+Try it!
+1) Using the car data from the data.frame example, create a bar chart for the variable prov.
+
+2) Use the cars data and create a histogram of any variable.
+
+3) Create a boxplot for the variable of your choice!
+What are the median and minimum values? Can you estimate the IQR?
+4) Make an ECDF for the variable of your choice. 
+Recalling that Q1, median, and Q3 are the 0.25, 0.5, and 0.75th quantiles, what is your best guess at these values from reading off of the graphs?
+
+
+TODO
+60
+
+Confidence Intervals
+62 percent of US College students miss a class due to excessive drinking. The result is accurate within 1.7 percentage points 19 times out of 20.
+Taking the pieces out of the above statement we have:
+62 is the estimated percentage
+1.7 is the margin of error
+19 times out of 20 is the stated confidence -> 100%(19/20) = 95%
+This is a 95% confidence interval: (60.3, 63.7)
+
+
+
+
+Confidence Intervals (2)
+ 
+CI can be of any strength although the standard is 95%.
+62
+
+Hypothesis Testing
+Hypothesis testing is used to determine if a relationship exists between two sets of data and make decisions/conclusions about that relationship.
+
+Hypothesis testing is useful for:
+business - determining effectiveness of marketing, identifying customer buying properties, online advertising optimization
+science/social science - determining if data sets match a model, understanding scientific process based on collected data values, analysis of study data
+
+	
+https://en.wikipedia.org/wiki/Statistical_hypothesis_testing
+63
+
+Probability distribution functions
+Probability distribution functions
+Rnorm – random Normal variables
+Dnorm = evaluate norm probability density
+Pnorm
+Qnorm – default distribution is mean=0 and sd=1
+D for density
+R for random number generation
+P for cumulative distribution
+Q for quantile function
+Set.seed(1) – sets random generator seed before using rnorm
+
+Other: rpois – Poisson distribution
+64
+
+Hypothesis Testing Steps
+1) Declare hypotheses statement and null hypothesis
+2) Decide on test statistic
+3) Use P-value and/or confidence interval to make decision/conclusion
+A p-value of 0.05 “signifies that if the null hypothesis is true, and all other assumptions made are valid, there is a 5% chance of obtaining a result at least as extreme as the one observed” (http://www.nature.com/news/statisticians-issue-warning-over-misuse-of-p-values-1.19503)
+Data is used as evidence. Perform a test in order to make a decision: reject the null hypothesis or fail to reject the null hypothesis.
+NOTE: We cannot prove if the null hypothesis is true or false. We can only show that there is evidence to suggest one conclusion or another. 
+
+Def: statistic - a value calculated from a sample often to summarize sample for comparison purposes (Wiki)
+
+65
+
+Assumptions
+There are assumptions that need to be met before performing statistical tests. 
+
+For the one sample case:
+Population of interest is normally distributed
+Independent random samples are taken
+
+For the two sample case:
+The two samples are independent
+Populations of interest are normally distributed
+	
+
+
+
+One Sample Test
+A one sample test is used when a sample is compared to a model or known population/estimate.
+
+As an example, using the car data test if the average mileage is different than 10 km/L. 
+
+One Sample Test:Hypotheses Statements
+Null hypothesis (H0) always contains a statement of no change (=).
+Alternative hypothesis (HA) can be one sided (< or >) or two sided (≠).
+H0: µ = test_number
+HA: µ ≠ test_number
+
+Car mileage example:
+H0: µ = 10
+HA: µ ≠ 10
+
+One Sample Test:Calculate Test Statistic
+ 
+Load car data:
+car_data <- read.csv("car_data.csv")
+
+t-test statistic assumptions: (normal population or n >30) and st. dev. (sigma) unknown
+69
+
+One Sample Test:Decision and Conclusion (using P-value)
+If p-value > 0.05, the probability of seeing a sample mean more extreme is not that unlikely. 
+Fail to reject the null hypothesis 
+There is no evidence to suggest that the mean value of VARIABLE is less than, greater than, or different than the test value.
+
+If p-value < 0.05, 
+Reject the null hypothesis
+There is evidence to suggest that the mean value of VARIABLE is less than, greater than, or different than the test value.
+
+One Sample Test:Decision and Conclusion (using P-value) Example
+
+
+
+
+
+
+P-value = 0.1187 > 0.05  => Fail to reject the null hypothesis
+There is no evidence to suggest that the mean mileage is not 10 km/L.
+Note: Unable to claim that either the null or alternative hypothesis is true. Can only reject or fail to reject the null hypothesis. 
+
+
+One Sample Test:Decision and Conclusion (using CI) Example
+
+
+
+
+
+
+Can also make a conclusion (reject or fail to reject) based on the confidence interval. We are 95% confident that the true mean mileage of the car lies within those bounds. 
+Since 10 km/L is within those bounds, fail to reject the null hypothesis.
+
+Two Sample Unpaired
+An unpaired (independent) two sample test compares two independent samples to determine if there is a difference between the groups. 
+
+Examples:
+Compare effectiveness of two different drugs tested on two sets of patients
+Experiment versus control samples
+
+
+
+Two Sample Unpaired ExampleHypothesis Statement
+Using the beaver2 dataset in R, test the hypothesis that there is no difference between the mean active temperature and the mean non-active temperatures.
+H0: µ1 = µ2 → µ1 - µ2 = 0
+HA: µ1 ≠ µ2 → µ1 - µ2 ≠ 0
+
+
+Two Sample Unpaired Example Test Statistic
+Use t-test statistic.
+
+R code:
+# Need to set active to be a factor first
+beaver2$activ = as.factor(beaver2$activ)
+# Perform unpaired test
+t.test(temp~activ, data=beaver2, 
+  alternative=c("two.sided"), mu=0, 
+  paired=FALSE)
+
+Two Sample Unpaired ExampleDecision and Conclusion (using P-value)
+The p-value << 0.05.
+Reject the null hypothesis. There is evidence to suggest that there is a difference between active and non active temperatures. 
+
+
+Two Sample Unpaired ExampleDecision and Conclusion (using CI)
+The two sample case tests a DIFFERENCE between the groups (µ1 - µ2 ≠ 0). The CI stated above is the CI for the difference, µ1 - µ2. 
+We reject the null hypothesis because 0 is not contained in the interval. 
+If 0 was contained we would fail to reject the null hypothesis.
+77
+
+Two Sample Paired Test
+A paired (dependent) two sample test compares two dependent samples to see if there is a difference between the groups.
+This test typically uses multiple measurements on one subject.
+Also called a "repeated measures" test.
+
+Examples:
+Affect of treatment on a patient (before and after)
+Apply something to test subjects to see if there is an effect
+Car example: Do cars get better mileage with different grades of gasoline?
+
+Two Sample Paired Test ExampleHypothesis Statement
+The athlete.csv dataset contains data on ten athletes and their speeds for the 100m dash before training (Training = 0) and after (Training = 1). 
+Test the hypothesis that their training has no affect on the times of the athletes. Test to see if the mean of the difference is different than 0.
+H0: d= 0
+HA: d≠ 0
+
+
+Two Sample Paired Test Example Test Statistic - R Code
+
+# Read in the data
+athlete = read.csv("athlete.csv", header=TRUE)
+
+# Perform paired test
+t.test(Time~Training, data = athlete, alternative=c("two.sided"), mu=0, paired=TRUE)
+
+
+Two Sample Paired Test Example Decision and Conclusion (using P-value)
+The p-value >> 0.05.
+Fail to reject the null hypothesis. There is no evidence to suggest that there is a difference between pre and post training times.
+
+
+Two Sample Paired Test Example Decision and Conclusion (using CI)
+The two sample case tests for a difference between the groups (d ≠ 0). The CI is for the difference.
+Fail to reject the null hypothesis because 0 is contained in the confidence interval.
+
+Sampling Question 1
+Question: How many of the following are TRUE?
+Paired and unpaired t-tests are the same thing.
+Confidence intervals can be of any level of confidence (not just 95%).
+Confidence intervals can be used to make a conclusion about a hypothesis test.
+Confidence intervals can be used to prove that the null hypothesis is false.
+
+A) 0		B) 1		 C) 2		D) 3		E) 4
+
+C: #2 and #3 are true
+83
+
+Sampling Question 2
+Question: How many of the following are TRUE?
+Unpaired t-tests test the difference between two means µ1 and µ2.
+Paired t-tests can be used to compare the difference between two measurements on the same subject.
+In both the paired and unpaired two sample cases, a confidence interval containing 0 would result in a decision of: fail to reject the null hypothesis.
+In the one sample t-test, a confidence interval containing 0 would result in a decision of: fail to reject the null hypothesis.
+
+A) 0		B) 1		 C) 2		D) 3		E) 4
+
+D
+
+1 – 3 are true
+84
+
+Hypothesis Testing Question
+Question: How many of the following hypothesis questions should use two sample unpaired tests?
+Is the average student mark in courses 70%?
+Does a student's mark improve after studying?
+Has the average student height increased since 1990?
+Does radiation reduce the size of tumors when used to treat patients?
+Is aspirin more effective than Tylenol for treating headaches?
+Are college graduates better than high school graduates at standardized tests? 
+A) 0		B) 1		 C) 2		D) 3		E) 4
+
+D - 3
+
+1 - one sample
+2 - two sample paired (same student)
+3 - two sample unpaired (two district student populations)
+4 - two sample paired (same patient), although could argue against control/experiment groups in which case two sample unpaired
+5 - two sample unpaired 
+6 - two sample unpaired
+85
+
+Try It: Hypothesis Testing
+Using the car data, test the hypothesis that the mean distance at each fill up is less than 450km.
+Use the car data to see if the mean distance for Alberta fill ups is different than the mean distance for B.C. fill ups.
+1.
+t.test(x = car_data$Distance, alternative = c("less"), mu = 450)
+
+2. 
+t.test(Distance~prov, data = car_data, alternative = c("two.sided"),mu = 0, paired = FALSE)
+
+Note: Will need to add Province data to this data set.
+86
+
+Linear models in R
+ 
+Assumptions:
+Residuals are independent
+Residuals are normally distributed
+Residuals have a mean of 0 for all X
+Residuals have constant variance
+
+87
+
+Fitting a Linear Model
+lm(km.L~Litres+Distance, data = car_data)
+
+
+
+
+
+The formula can then be created using the values stored in model$coefficients
+Km.L = 10.35447 -0.33295*Litres + 0.03251*Distance
+
+Conclusion
+R is a free and open source programming language for statistical computing and graphics.
+
+R contains many useful features for data analysis including data structures such as vectors and data frames that make it easy to perform statistical analysis and visualization.
+
+R is often used for hypothesis testing and understanding how to properly setup and interpret a test is an important skill.
+89
+
+lapply
+Lapply takes in a list and a function and applies the function to each element in the list.
+Example:
+X <- list(a=1:4, b=5:10)
+Lapply(x, mean)
+Can use anonymous functions as parameter to lapply function.
+Lapply(x, function(n) n+1)
+Sapply will simplify result to vector or matrix if can otherwise leaves it as a list.
+
+File Operations for R
+File.exists(filename)  e.g. file.exists(“test.txt”)
+Dir.create(directory) e.g. dir.create(“mydir”)
+
+Download a file: download.file() from the Internet
+
+Read an Excel file: read.xlsx() library(xlsx)
+Read.xlsx(“my.xlsx”,sheetIndex=1,
+- can read particular column and row ranges
+Also write.xlsx()
+Packages to read XML and JSON.
+
+Library(jsonlite)
+Result <- fromJSON(“URL JSON document”)
+jsonDoc <- toJSON(dataFrame, pretty=TRUE)
+
+91
+
+Data.table
+Data.table inherits from data.frame
+Written in C so faster – loading, subsetting, etc.
+Library(data.table)
+Data = data.table(…)
+
+
+Summary() or str() on data frame to get an overview
+Quantile()
+Table() to make a table summarizing the data
+Check for missing values: is.na() returns 1 if missing 0 if not missing
+colSums() sums each column and returns a value for each column
+In addition to == can use %in%:
+Table(X$col %in% c(1,3,5))
+Cross tabs using xtabs:  xt <- xtabs(Freq ~ Gender + Admit, data)
+
+Objectives
+Understand purpose and usefulness of R
+Types of data: qualitative, quantitative
+Describe data use numerical summaries (measure of centre/spread)
+Define and calculate: mean, median, variance, standard deviation, range
+Define: quantile, quartile, interquartile range, five number summary
+Perform matrix addition, subtraction, and multiplication
+Install and use RStudio
+Set and get the working directory
+Write small programs/commands in R that may use variables, conditions, loops, and functions
+Read in data sets from files
+Use head and tail to explore a data set
+Create and use data structures: vectors, matrices, lists
+94
+
+Objectives (2)
+Use data frames/factors for data analysis
+Create graphs/visualizations: frequency table, bar chart, histogram, boxplot, ECDF using ggplot2
+Explain the purpose of confidence intervals
+Perform hypothesis testing using R
+Understand assumptions inherent in a t-test
+Compute linear models using R
+95

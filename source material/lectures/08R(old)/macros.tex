@@ -1,0 +1,65 @@
+\definecolor{iyellow}{RGB}{255, 162, 23}
+\definecolor{sgreen}{RGB}{118, 191, 138}
+
+\newcommand{\yellow}[1]{\textcolor{iyellow}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{ForestGreen}{#1}}
+\newcommand{\blue}[1]{{\textcolor{blue}{#1}}}
+\newcommand{\orange}[1]{{\textcolor{orange}{#1}}}
+\newcommand{\bblue}[1]{\textcolor{SteelBlue!90!gray}{#1}} % beamer blue
+\newcommand{\purple}[1]{{\textcolor{purple}{#1}}}
+
+\newcommand{\el}{\\[1em]\pause}
+\newcommand{\nl}{\\[1em]}
+\newcommand{\define}[1]{\textbf{\textcolor{orange}{#1}}}
+
+%\newcommand{\answer}[1]{\textit{\textbf{\textcolor{iyellow}{#1}}}}
+
+\newcommand{\command}[1]{\texttt{\textbf{\textcolor{DarkMagenta}{#1}}}}
+\newcommand{\ipic}[2]{\includegraphics[width={#2}\textwidth]{#1}}
+\newcommand{\cell}[1]{{\sf \textbf{\textcolor{DarkMagenta}{#1}}}}
+\newcommand{\ra}{$\rightarrow$}
+
+\newcommand{\ft}[1]{\frametitle{#1}}
+
+
+\newenvironment{allintypewriter}{\ttfamily}{\par}
+\newcommand{\bs}{$\backslash$}
+
+\newcommand*\keystroke[1]{%
+  \tikz[baseline=(key.base)]
+    \node[%
+      draw,
+      fill=white,
+      drop shadow={shadow xshift=0.25ex,shadow yshift=-0.25ex,fill=black,opacity=0.75},
+      rectangle,
+      rounded corners=2pt,
+      inner sep=1pt,
+      line width=0.5pt,
+      font=\scriptsize\sffamily
+    ](key) {#1\strut}
+  ;
+}
+
+% timed answer
+\newcommand{\tans}[2]{\textbf<#1>{\textit<#1>{{\color<#1>{iyellow}{#2}}}}}
+
+
+\makeatletter
+\g@addto@macro\normalsize{%
+  \setlength\abovedisplayskip{0.4em}
+  \setlength\belowdisplayskip{0.4em}
+  \setlength\abovedisplayshortskip{0.2em}
+  \setlength\belowdisplayshortskip{0.2em}
+}
+\makeatother
+
+
+\newcommand{\cmark}{{\Large\color{green}\ding{51}}}%
+\newcommand{\xmark}{{\Large\color{red}\ding{55}}}%
+
+\newcommand{\pcmark}{\onslide<+->{\cmark}}
+\newcommand{\pxmark}{\onslide<+->{\xmark}}
+
+\newcommand{\by}{\overline{y}}
+\newcommand{\ty}{\tilde{y}}

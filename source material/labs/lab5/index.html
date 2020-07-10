@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>DATA 301 - Lab 5</title>
+<link href="../assign.css" type=text/css rel=stylesheet>
+</head>
+
+<body>
+
+<h1>DATA 301 - Introduction to Data Analytics
+<br/>Lab 5: Introduction to Python</h1>
+
+<hr>
+
+<p>In this lab, we will create some Python programs with variables, decisions, and loops. <strong>This lab can be done in pairs. Computer Science majors cannot pair with each other.  You can do it solo if you wish. Pairs are not required.  If working in a pair, only submit from one person with both names on the files.</strong></p>
+
+<h3>Objectives</h3>
+
+<ol>
+<li>Write small Python programs for data analysis tasks.</li>
+<li>Use a Python editor and development environment.</li>
+<li>Practice solving problems with programs that use variables, decisions, and looping/iteration.</li>
+<li>Use Python data structures lists and dictionaries.</li>
+<li>Perform input and output using Python.</li>
+</ol>
+
+<h3>Question #1 (10 marks)</h3>
+
+<p>Create a Python program that processes a list of data to return the minimum, maximum, and average values in the list for all data values in a user-specified range.  Details:
+<ul>
+<li>Put a comment at the top of the Python file called <code>lab5q1</code> with your name and student number. (1 mark)</li>
+<li>The list of data is stored in the Python code itself (not read in from the user or a file).</li>
+<li>The data are numbers between 1 and 100 (perhaps representing sensor readings).  Your code must work on any list of data in that range.  Two samples:
+	<ul>
+		<li><code>data = list(range(1,101))</code></li>
+		<li><code>data = [1, 9, 13, 25, 42, 55, 59, 63, 68, 69, 70, 70, 70, 70, 72, 75, 85, 99, 90, 85, 44, 23, 55, 66, 77]</code></li>
+	</ul>
+</li>
+<li>Prompt the user for two numbers: a lower bound (inclusive) and an upper bound (inclusive). Convert the values to numbers using <code>int()</code>. (2 marks)</li>
+<li>Create variables to store maximum, minimum, sum, and count of data items. (1 mark)</li>
+<li>Use a for loop to examine each data item in the list. (1 mark)</li>
+<li>For each data item only process it if it is within the lower and upper bounds (inclusive). (2 marks)</li>
+<li>Compute the minimum, maximum, and average values (in the bounded range). (2 marks)</li>
+<li>Print out the list of data items, the minimum, maximum, and average values. (1 mark)</li>
+</ul>
+</p>
+
+<h4>Sample Output - List of Numbers 1 to 100 - Lower bound: 10  Upper bound: 60</h4>
+
+<pre>
+Enter lower bound: 10
+Enter upper bound: 60
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+Maximum: 60
+Minimum: 10
+Average: 35.0
+</pre>
+
+<h4>Sample Output - Second List of Numbers - Lower bound: 20  Upper bound: 90</h4>
+
+<pre>
+Enter lower bound: 20
+Enter upper bound: 90
+[1, 9, 13, 25, 42, 55, 59, 63, 68, 69, 70, 70, 70, 70, 72, 75, 85, 99, 90, 85, 44, 23, 55, 66, 77]
+Maximum: 90
+Minimum: 23
+Average: 63.476190476190474
+</pre>
+
+
+<h3>Question #2 (10 marks)</h3>
+
+<p>Create a Python program that takes a badly formatted data set and converts it into CSV.  Details:
+<ul>
+<li>The data has three fields which we will assume are always present: a number, a name (that contains no spaces), and a salary.  The data may have multiple spaces between the fields and all fields for the same row may be on different lines.  Data set is here:<br>
+
+<pre>
+2   Joe    95000 4 Steve
+   35000    1  Samantha   150000     10 Leah   99000
+ 6   Riley   53215     7   Ashley   23424
+ 15    Sheyanne 225000   9  Dave  35235
+</pre>
+
+</li>
+<li>Put a comment at the top of the Python file called <code>lab5q2</code> with your name and student number. (0.5 mark)</li>
+<li>Put the data above into the Python code file using a triple quoted string. (0.5 mark)</li>
+<li>Use <code>split</code> to divide up the messy data where fields are separated by spaces. (0.5 mark)</li>
+<li>Create individual lists for the ids, names, and salaries and print out each list. (1.5 marks)</li>
+<li>Output the data in CSV form: <code>id,name,salary</code>. (1 mark)</li>
+<li>Create a new list where each element is a list representing a row in the CSV file. Print this list. (1 mark)</li>
+<li>Create and print a new list which includes only rows where the id >= 4 and id <= 8, or the person has a salary > 50000. (2 marks)</li>
+<li>Output the original list in CSV form sorted by id ascending. (1 mark)</li>
+<li>Create and print a new list which for each row increases the salary by 50% if the length of the person's name is 3 characters or less or starts with <code>'S'</code>. (2 marks)</li>
+<li>Bonus: Output the original list in CSV form sorted by salary descending. (1 mark)</li>
+<li>Bonus: Create a function to output in CSV form and use it multiple times rather than duplicating code. (1 mark)</li>
+</ul>
+
+<h4>Sample Output</h4>
+
+<pre>
+Ids: ['2', '4', '1', '10', '6', '7', '15', '9']
+Names: ['Joe', 'Steve', 'Samantha', 'Leah', 'Riley', 'Ashley', 'Sheyanne', 'Dave']
+Salaries: ['95000', '35000', '150000', '99000', '53215', '23424', '225000', '35235']
+
+CSV Output:
+id,name,salary
+2,Joe,95000
+4,Steve,35000
+1,Samantha,150000
+10,Leah,99000
+6,Riley,53215
+7,Ashley,23424
+15,Sheyanne,225000
+9,Dave,35235
+
+List with each row a list:
+[[2, 'Joe', 95000], [4, 'Steve', 35000], [1, 'Samantha', 150000], [10, 'Leah', 99000], [6, 'Riley', 53215], [7, 'Ashley', 23424], [15, 'Sheyanne', 225000], [9, 'Dave', 35235]]
+
+Filter with only rows where id>=4 and id<=8 or salary>50000:
+
+CSV Output:
+id,name,salary
+2,Joe,95000
+4,Steve,35000
+1,Samantha,150000
+10,Leah,99000
+6,Riley,53215
+7,Ashley,23424
+15,Sheyanne,225000
+
+Data sorted ascending by id:
+
+CSV Output:
+id,name,salary
+1,Samantha,150000
+2,Joe,95000
+4,Steve,35000
+6,Riley,53215
+7,Ashley,23424
+9,Dave,35235
+10,Leah,99000
+15,Sheyanne,225000
+
+Increase salary where the length of the name is <= 3 or starts with 'S':
+
+CSV Output:
+id,name,salary
+1,Samantha,225000.0
+2,Joe,142500.0
+4,Steve,52500.0
+6,Riley,53215
+7,Ashley,23424
+9,Dave,35235
+10,Leah,99000
+15,Sheyanne,337500.0
+
+Bonus: Sort descending by salary
+
+CSV Output:
+id,name,salary
+15,Sheyanne,225000
+1,Samantha,150000
+10,Leah,99000
+2,Joe,95000
+6,Riley,53215
+9,Dave,35235
+4,Steve,35000
+7,Ashley,23424
+</pre>
+
+<p>When complete, submit your two code files using Connect:
+
+<ul>
+<li><code>lab5q1</code> - Python code for question 1.  May be a <code>.txt</code>, <code>.py</code>, or <code>.ipynb</code> file.</li>
+<!-- <li><code>lab5q1_output</code> - Python output for question 1 for both data sets. May be a <code>.txt</code> or <code>.png</code> file.  May use two files for two different outputs (especially if taking screenshots).</li> -->
+<li><code>lab5q2</code> - Python code for question 2.  May be a <code>.txt</code>, <code>.py</code>, or <code>.ipynb</code> file.</li>
+</ul>
+</p>
+
+<hr>
+<img src="../../../../images/go-upwd.gif" alt="*"  align="top" height="14" width="14">
+        <a href="../index.html">Home</a>
+<hr>
+
+</body>
+</html>

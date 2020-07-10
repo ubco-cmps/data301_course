@@ -1,0 +1,2491 @@
+\documentclass[xcolor=svgnames, colorlinks]{beamer}
+%\documentclass[xcolor=svgnames, handout]{beamer}
+
+%\includeonlyframes{current}
+
+\usepackage[utf8]    {inputenc}
+\usepackage[T1]      {fontenc}
+\usepackage[english] {babel}
+
+\usepackage{amsmath,amsfonts,graphicx}
+\usepackage{beamerleanprogress}
+\usepackage{xcolor}
+\usepackage{soul}
+%\usepackage{verbatim}
+\usepackage{multicol}
+\usepackage{tikz} 
+\usepackage[export]{adjustbox}
+\usepackage{array}
+\usepackage{changepage}
+
+
+\definecolor{iyellow}{RGB}{255, 162, 23}
+\definecolor{sgreen}{RGB}{118, 191, 138}
+
+\newcommand{\yellow}[1]{\textcolor{iyellow}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{ForestGreen}{#1}}
+\newcommand{\blue}[1]{{\textcolor{blue}{#1}}}
+\newcommand{\purple}[1]{{\textcolor{purple}{#1}}}
+\newcommand{\orange}[1]{{\textcolor{orange}{#1}}}
+\newcommand{\bblue}[1]{\textcolor{SteelBlue!90!gray}{#1}} % beamer blue
+\newcommand{\tans}[2]{\textbf<#1>{\textit<#1>{{\color<#1>{iyellow}{#2}}}}}
+
+\newcommand{\eol}{\\[1em]\pause}
+\newcommand{\nl}{\\[1em]}
+\newcommand{\define}[1]{\textbf{\textcolor{orange}{#1}}}
+\newcommand{\answer}[1]{\textit{\textbf{\textcolor{iyellow}{#1}}}}
+\newcommand{\command}[1]{\texttt{\textbf{\textcolor{DarkMagenta}{#1}}}}
+\newcommand{\ipic}[2]{\includegraphics[width={#2}\textwidth]{#1}}
+\newcommand{\cell}[1]{{\sf \textbf{\textcolor{DarkMagenta}{#1}}}}
+\newcommand{\ra}{$\rightarrow$}
+\newenvironment{allintypewriter}{\ttfamily}{\par}
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+ 
+
+            
+
+\setbeamertemplate{theorems}[numbered] 
+ \setbeamersize{description width=0.57cm} % to have less indent with the description environment
+
+
+\newcommand{\ft}[1]{\frametitle{#1}}
+\usepackage{fancyvrb}
+
+\usepackage{upquote,textcomp}
+
+\newcommand{\bs}{$\backslash$}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+
+\newcommand*\keystroke[1]{%
+  \tikz[baseline=(key.base)]
+    \node[%
+      draw,
+      fill=white,
+      drop shadow={shadow xshift=0.25ex,shadow yshift=-0.25ex,fill=black,opacity=0.75},
+      rectangle,
+      rounded corners=2pt,
+      inner sep=1pt,
+      line width=0.5pt,
+      font=\scriptsize\sffamily
+    ](key) {#1\strut}
+  ;
+}
+
+\title
+  [Data 301 Data Analytics\hspace{2em}]
+  {Data 301 Data Analytics\\
+Python}
+
+\author
+  [Dr.\ Irene Vrbik]
+  {Dr.\ Irene Vrbik}
+
+\date
+  {}
+
+\institute
+  {University of British Columbia Okanagan \newline irene.vrbik@ubc.ca}
+
+
+\graphicspath{{img/}}
+
+\begin{document}
+
+\maketitle
+
+\setbeamersize{description width=0.57cm} % to have less indent with the description environment
+
+\begin{frame}\ft{Why learn Python?}
+Python is increasingly the most popular choice of programming language for data analysts because it is designed to be simple, efficient, and easy to read and write.\nl
+
+There are many open source software and libraries that use Python and data analysis tools built on them. \nl
+
+We will use Python to learn programming and explore fundamental programming concepts of commands, variables, decisions, repetition, and events.\nl
+
+P.S. the name comes from Monty Python.
+
+\end{frame}
+
+
+\begin{frame}\ft{What is Python?}
+Python is a general, high-level programming language designed for code readability and simplicity.\nl
+
+Python is available for free as open source and has a large community supporting its development and associated tools.\nl
+
+Python was developed by Guido van Rossum and first released in 1991.  Python 2.0 was released in 2000, and Python 3 was released in 2008.\nl
+
+Python 3 is backwards-incompatible  meaning Python 3 code won't necessary run in Python 2.
+
+
+
+\end{frame}
+
+
+%features: https://www.javatpoint.com/python-features
+\begin{frame}\ft{Python Language Characteristics}
+Python supports:
+\begin{itemize}
+\item \href{https://pythonconquerstheuniverse.wordpress.com/2009/10/03/static-vs-dynamic-typing-of-programming-languages/}{dynamic typing}  -- types can change at run-time
+\item \href{https://blog.newrelic.com/engineering/python-programming-styles/}{multi-paradigm}  -- flexible in that is supports both procedural, object-oriented, and functional styles, for example.
+\item automatic \href{https://www.youtube.com/watch?v=URNdRl97q_0}{memory management} and  \href{https://rushter.com/blog/python-garbage-collector/}{garbage collection}
+%\item extendable -- small core language that is easily extendable
+\item extensible --  other languages such as C/C++ can be used to compile the code.
+\item and \href{https://data-flair.training/blogs/features-of-python/}{more ...}
+\end{itemize}
+\end{frame}
+
+\begin{frame}\ft{Python Language Characteristics}
+Python core philosophies (by \href{https://www.python.org/dev/peps/pep-0020/}{Tim Peters})
+\begin{itemize}
+\item Beautiful is better than ugly
+\item Explicit is better than implicit
+\item Simple is better than complex
+\item Complex is better than complicated
+\item Readability counts
+\end{itemize}
+\end{frame}
+
+
+%\begin{frame}[fragile]\ft{Some Quotes}
+%it
+%%If you can't write it down in English, you can't code it.
+%
+%%ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊ -- Peter Halpern
+%%\begin{quote}
+%%If you lie to the computer, it will get you.
+%%\end{quote}
+%%ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊ -- Peter FarrarÊ
+%%
+%\end{frame}
+
+\begin{frame}\ft{Some Quotes}
+\begin{quote}
+If you can't write it down in English, you can't code it.
+\end{quote}
+\hfill --- Peter Halpern
+
+%\begin{quote}
+%If you lie to the computer, it will get you.
+%\end{quote}
+%\hfill --- Peter Farrar
+
+\begin{quote}
+I really hate this damn machine.\\
+I wish that I could sell it.\\
+I never does quite what I want.\\
+Just only what I tell it.
+\end{quote}
+\hfill --- programmers lament
+
+\end{frame}
+
+\begin{frame}\ft{Introduction to Programming}
+{\it Recall\dots}\nl
+An \emph{algorithm} is a precise sequence of steps to produce a result.  A \emph{program} is an encoding of an algorithm in a \define{language} to solve a particular problem.\nl
+
+There are numerous languages that programmers can use to specify instructions.  Each language has its different features, benefits, and usefulness.\nl
+
+The goal is to understand fundamental programming concepts that apply to all languages.
+
+\end{frame}
+
+
+\begin{frame}{Installing and Using Python}
+
+For this unit, we will be working with Python 3 (\alert{not Python 2}).
+
+\bigskip
+
+Follow %\href{https://wiki.python.org/moin/BeginnersGuide/Download}{this} 
+ \href{https://realpython.com/installing-python/}{this Windows} 
+guide (or any of the other countless others you might find on the internet) on getting Python 3 on your computer. %Be sure to leave all the default options (eg. 
+%Install PIP Windows) selected when you run the installer.\\
+
+\bigskip
+
+If you are on a Mac, you should already have Python 2 installed; however, you'll need to update that to Python 3 with the Installer, or using Homebrew.  Both techniques are summarized \href{https://osxtips.net/how-to-update-python-on-mac/}{here}.
+
+% \href{https://wsvincent.com/install-python3-mac/}{this Mac}
+ 
+\bigskip
+
+Another way you can get python is through \href{https://www.anaconda.com/distribution/}{Anaconda} (recommended).  It includes some of most common data science packages and easy to work with.
+
+\begin{itemize}
+\item See \href{https://www.youtube.com/watch?v=LrMOrMb8-3s}{this} help video (Windows)
+\item See \href{https://www.youtube.com/watch?v=YJC6ldI3hWk}{this} help video (Mac)
+\end{itemize}
+%Anaconda will provide an easy way for managing libraries, with Conda
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Installing and Using Python}
+
+Now that you've installed Python, you have the choice of entering the Python interpreter by either:
+\begin{enumerate}
+\item Command/Terminal Prompt
+\item IDLE
+\end{enumerate}
+
+For option 1. open the Command Prompt/Terminal, and type {\tt python}\footnote{use {\tt python --version} to check what version you're running} and press \keystroke{ENTER}.\nl
+
+%If you already have Python 3, you will want to make sure you are running the latest version (which is currently 3.7.4)\nl
+%\ipic{img/pythonshell.png}{0.99}\\
+%You can find out which version of Python you have by typing {\tt python -V} or {\tt python --version}
+% in your console.\nl
+ 
+%Alternatively, you can check your version by opening the command window/terminal and typing {\tt py}/{\tt python} (Windows/Mac).\nl
+
+This will open up Python and print out your current version
+\ipic{img/pythonshell.png}{0.99}\\
+
+
+
+\end{frame}
+
+
+
+\begin{frame}{Installing and Using Python}
+% https://opentechschool.github.io/python-beginners/en/getting_started.html
+
+IDLE is an integrated development environment (IDE) for Python. The Python installer for Windows contains the IDLE module by default and is  an optional part of the Python packaging with many Linux distributions.\nl
+
+Assuming you have downloaded Python using Installer,  in your applications folder you should see a Python3 folder and within it a  program called IDLE.\nl
+
+In Windows, search for the IDLE icon in the start menu and double click on it.\nl
+
+This will open IDLE, where you can write Python code and execute it as just as you would in the console/terminal.\nl
+
+As a third option, you  could  one of the various \href{https://www.python.org/shell/}{online Python 3 compilers} 
+
+\end{frame}
+
+\begin{frame}[fragile]{Using Python}
+
+When you open Python you will see three Greater Than symbols {\tt >}{\tt >}{\tt >}\nl
+
+This is the so-called \emph{prompt} indicating that you are now in an interactive Python interpreter session, also called the ``Python shell" rather than  normal terminal command prompt.\nl
+
+Let's type some code for Python to run\\[1em]
+\begin{Verbatim}[frame=single, label=Python example 1]
+>>> 3+2
+5
+>>> print("Hello, World!")
+Hello, World!
+>>> 
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]{Using Python}
+\begin{itemize}
+\item The {\tt help()} command is a useful function is used to get the documentation of specified module, class, function, variables etc. right from the interpreter. Press q to close the help window and return to the Python prompt. For example, to get help on the {\tt print} function:\\[2mm]
+\begin{Verbatim}[frame=single, label=Python help]
+>>> help(print)
+\end{Verbatim}
+Press {\tt q} to close the help window and return to the Python prompt.\nl
+
+\item To exit the Python shell in the console type \keystroke{Ctrl} + \keystroke{Z} the \keystroke{ENTER} (on Windows) or \keystroke{Ctrl} + \keystroke{D} on a Mac.  Alternatively, you could also run the python command {\tt exit()}
+%To leave the interactive shell and go back to the console (the system shell), press Ctrl-Z and then Enter on Windows, or Ctrl-D on OS X or Linux. Alternatively, you could also run the python command exit()!
+\end{itemize}
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}[fragile]\ft{Python: Basic Rules}
+\begin{itemize}
+\item To program in Python you must follow a set of rules for specifying your commands.  This set of rules is called a \define{syntax}.\nl
+
+\item Just like any other language, there are rules that you must follow if you are to communicate correctly and precisely.\nl
+
+\item For a more thorough overview of Python, you may have a look at \href{https://www.bogotobogo.com/python/files/pytut/Python%20Essential%20Reference,%20Fourth%20Edition%20(2009).pdf}{Python Essential Reference by David Beazley} as well as countless website online, eg \href{https://www.w3schools.com/python/}{w3schools}, \href{https://www.codecademy.com/learn/learn-python-3}{codeacademy}, \dots
+\medskip
+
+\item Other useful resources include: \href{https://docs.python.org/3/}{documentation for Python 3.7.3}, 
+\href{https://www.python.org/about/gettingstarted/}{Python.org (getting started)}, 
+ and the \href{https://www.python.org/dev/peps/pep-0008/}{Pep 8 style guide}.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Python: Basic Rules}
+
+Important general rules of Python syntax:
+\begin{itemize}
+\item Python \emph{is} case-sensitive.
+\item Python \emph{is} particular on whitespace and indentation.
+\item Use four spaces  or tabs for indentation whenever in a block.
+\begin{itemize}
+%https://www.python.org/dev/peps/pep-0008/#indentation
+\item Spaces are the more ``pythonic" indentation method.
+%\item Tabs should be used solely to remain consistent with code that is already indented with tabs.
+\item Python 3 recognize either spaces or tabs but disallows mixing the two for indentation.
+\end{itemize}
+\end{itemize}
+
+\begin{columns}
+          \column{0.38\linewidth}
+             \centering
+\begin{verbatim}
+    def spam():
+        eggs = 12
+        return eggs
+    print spam()
+\end{verbatim}
+           \column{0.58\linewidth}
+             \includegraphics[width=5.5cm]{silicon}
+         \end{columns}
+         
+
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]\ft{Comments}
+\define{Comments} are used by the programmer to document and explain the code.  Comments are ignored by the computer. \nl 
+
+%In Python\footnote{For ease of copy/pasting I have removed the {\tt >}{\tt >}{\tt >}} we  have two types:
+%\begin{enumerate}
+%\item {\bf One line comment}: put ``\command{\#}" before the comment and any characters to the end of line are ignored by the computer.
+%\item {\bf Multiple line comment}: put \command{"""} at the start of the comment and \command{"""} at the end of the comment.  The computer ignores everything between the start and end comment indicators.
+%\end{enumerate}
+
+Hence any characters appearing after the  ``\command{\#}" %to the end of line
+ are ignored by the computer.
+
+\medskip
+
+%Type \command{\#} before the comment and any characters to the end of line are ignored by the computer.
+
+\begin{Verbatim}[frame=single, label=Comment Example]
+# Single line comment
+print(1)  # Comment at end of line
+\end{Verbatim}
+
+As suggested in the \href{https://www.python.org/dev/peps/pep-0008/#block-comments}{PEP8 Style Guide for Python Code}  inline comments (i.e. those appearing on the same line as a statement) should be used sparingly, should be separated by at least two spaces from the statement and should start with a {\tt \#} and a single space.
+%""" This is a 
+%multiple line
+%comment """
+
+% no tripple quote multi line comments? \href{https://www.codecademy.com/forum_questions/505ba3cfc6addb000200e33c}{here}
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]\ft{Python Programming}
+A Python program, like a book, is read left to right and top to bottom.
+Each command is on its own line.\nl
+
+The end of command is the end of line (i.e semi-colons are not a required terminator).\nl
+
+\begin{Verbatim}[frame=single]
+# Sample Python program
+name = "Joe"
+print("Hello")
+print("Name: "+name)
+\end{Verbatim}
+
+The following would cause an error:
+\begin{Verbatim}[frame=single]
+print("Hello,
+World!")
+\end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Python Programming}
+If you wanted to create a multi-line statement, we could do so using a backward slash
+\begin{Verbatim}[frame=single]
+print("Hello\
+World!")
+\end{Verbatim}
+Alternatively, we could wrap very long strings in triple quotes 
+\begin{Verbatim}[frame=single]
+print('''This is 
+a very long 
+string spanning
+multiple lines ''')
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Python Scripts}
+
+Rather than typing command directly into Python and running statements line by line, a user may type a Python program in a text document with the extension {\tt .py}.
+% https://www.tutorialsteacher.com/python/python-interective-shell
+These Python \textit{scripts} and can be executed using the command\footnote{to be written in the Command prompt/terminal \textit{not} in the Python shell}:
+\begin{Verbatim}[frame=single]
+ python PythonScriptName.py 
+\end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Python Scripts}
+
+For example if our file contained the following content:
+\begin{Verbatim}[frame=single]
+print(3+2)
+print("Hello World!")
+4*8 # won't be printed without print statement
+\end{Verbatim}
+We would expect the following output:
+\begin{Verbatim}[frame=single]
+ivrbik$ python PythonScriptName.py 
+5
+Hello World!
+\end{Verbatim}
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Python Programming}
+
+You may decide to write your Python program in text editor specificly dedicated to Python (\href{https://wiki.python.org/moin/PythonEditors}{some examples}%. \href{https://www.sublimetext.com/}{Sublime Text}
+) or an integrated development environment (\href{https://wiki.python.org/moin/IntegratedDevelopmentEnvironments}{IDE examples}) instead of a basic editor like Notepad.\nl 
+
+%https://realpython.com/python-ides-code-editors-guide/
+Some benefits of using an IDE/Python editor is that  syntax is highlighting for ease of viewing, they may have code formatting capabilities (eg. shortcuts for commenting) and may have the ability to execute and debug code. 
+%and then runs the program.
+%\medskip
+%To run the  program we need a Python \emph{interpreter} (i.e. a program that reads Python programs and carries out their instructions).
+
+\end{frame}
+
+
+\begin{frame}\ft{Python Editor - Jupyter}
+%``\href{https://jupyter.org/}{Project Jupyter} exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages.''\nl
+Another alternative is to create a \emph{notebook} which is a single document that integrates both the code and its output.\nl
+
+\define{Jupyter} notebook is a graphical, browser-based application for editing and running  Python.  You can use it directly on your browser (i.e. without having to download anything) or you can install Notebook (recommended) 
+% allows us to code in a web browser
+by following the the instructions \href{http://jupyter.org/install}{here}.\nl
+
+Once you have Python 3 and Jupyter notebook installed, you can  run it by typing \command{jupyter notebook} in your Command Prompt.\nl
+This action will start the notebook server in your default browser and echo information about the notebook server in your terminal.\nl
+Read more about it \href{https://mybinder.org/v2/gh/ipython/ipython-in-depth/master?filepath=binder/Index.ipynb}{here}
+\end{frame}
+
+
+\begin{frame}\ft{Python Editor - Jupyter}
+The \emph{Notebook Dashboard} will list all of the notebooks (.ipynb), files, and subdirectories stored in the \emph{local} working directory (i.e. the directory from which you launched jupyter).  You can navigate to a different directory by clicking though the filing system as you would in Terminal or a Windows machine.
+$$\ipic{img/jnote}{0.8}$$
+\end{frame}
+
+\begin{frame}\ft{Python Editor - Jupyter}
+
+To create a new notebook, select {\bf New,  Python3}.
+\begin{center}
+\ipic{img/jupyter}{0.8}
+\end{center}
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}\ft{Python Editor -- jupyter notebook}
+You can change the default name from \textit{Untitled} to something reasonable by double-clicking the title field.
+\begin{center}
+\ipic{img/jupyterbutton}{0.98}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}\ft{Python Editor -- jupyter notebook}
+\begin{itemize}
+\item The body of the notbook is comprised of \emph{cells}:
+\begin{description}
+\item[Markdown cells] are used to build write regular (non-code) text. More markdown \href{https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet}{here} and see helpful \href{https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf}{cheatsheet}.
+\item[Code cells (default)]  are used to define the code which will be compiled (after pressing \includegraphics[height=1em]{img/run} or pressing \keystroke{Shift} + \keystroke{Enter}) to produce output.\nl
+\end{description}
+
+\item You can inserts cells (either code/markdown) anywhere by clicking {\bf Insert} $>$ {\bf Insert Cell Above} (or {\bf Insert Cell Below})
+\medskip
+\item Same thing goes for deleting/copying/pasting/undoing cells: see the  {\bf Edit} drop down menu bar.
+\end{itemize}
+
+
+\end{frame}
+
+
+
+\begin{frame}\ft{Python Editor -- jupyter notebook}
+You can create regular text and headings in ``Markdown" mode.  Headings are indicated using {\tt \#} (subheadings use {\tt \#\#})
+\begin{center}
+\ipic{img/textbefore}{0.98}
+\end{center}
+\end{frame}
+
+
+\begin{frame}\ft{Python Editor -- jupyter notebook}
+\begin{itemize}
+\item You can run a cell either by pressing \keystroke{Shift} + \keystroke{ENTER} or by pressing the little run button \includegraphics[height=1.5em]{run}\ located at the top of the page (see \textit{Help} $\rightarrow$ \textit{Keyboard Shortcuts} for more)
+\medskip
+\item For markdown cells, Mardown code will be replaced by text will be formatted according to the Markdown language
+\medskip
+\item For code cells, Python will execute the code and place resulting output directly beneath the cell.
+\medskip
+\item By default, an empty code cell is automatically created at the bottom on the notebook.
+\medskip
+\item If you want to edit a cell, simply double click it.
+\end{itemize}
+\end{frame}
+
+\begin{frame}\ft{Python Editor -- jupyter notebook}
+This is what the markdown looks like after it is run:
+\begin{center}
+\ipic{img/textafter}{0.98}
+\end{center}
+\end{frame}
+
+
+\begin{frame}\ft{Python Editor -- jupyter notebook}
+After a cell is run, a number will appear in the square parenthesis (an asterisk {\tt *} will appear for cells that are currently running).  Every time we run a cell, this number (execution count) will increase.
+\begin{center}
+\ipic{img/runnum}{0.98}
+\end{center}
+\end{frame}
+
+\begin{frame}\ft{Python Editor -- jupyter notebook}
+\begin{itemize}
+\item While jupyter notebook does autosave periodically, it is a good to save your work upon exiting (go to {\bf File} $>$ {\bf Save and Checkpoint} or click the save icon).\nl
+\item This will automatically save a file with the name you provided at the top of the notebook with the extension .ipynb (eg SamplePython.ipynb)\nl
+\item  When we open the file again, it is not guaranteed that everything we need is in memory.\nl
+\item It is good practice to ``reset" the session by clicking {\bf Kernel} $>$ {\bf Restart and Run all Cells} to ensure everything we need has been loaded into our working session (note that this will reset all of our numbers in the square brackets).
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}\ft{Python Editor - Jupyter}
+To close a notebook, navigate the the {\bf Running} tab and click the orange Shutdown button or  go to the associated notebook and click on menu \textit{File} $\rightarrow$  \textit{Close and Halt}\nl \alert{Closing the notebook's page is not sufficient to shutdown}.\nl
+To close the program, you need to close the associated terminal using or press \keystroke{Ctrl} + \keystroke{C} in Terminal.\nl
+\medskip
+\alert{Closing the browser (or the tab) will not close the Jupyter Notebook App.}
+\end{frame}
+
+
+\begin{frame}\ft{Python Editor - Jupyter}
+\begin{center}
+\ipic{img/shutdown}{0.8}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Python: Hello World!}
+A \href{https://en.wikipedia.org/wiki/\%22Hello,_World!\%22_program}{traditional introduction} into programming involves outputting the message {\verb|"Hello World!"|}\nl
+
+In Python3, this is a simple as typing:
+\begin{Verbatim}[frame=single]
+print("Hello World!")
+\end{Verbatim}
+\vspace{1em}
+The {\tt print} function will print to the terminal (standard output) whatever data (number, string, variable) it is given.\nl
+You can use double quotes (\verb|"Hello world"|) or single quotes (\verb|'Hello world'|) just be consistent! E.g. \verb|'Hello World!"| will produce a error.
+\end{frame}
+
+\begin{frame}[fragile]\ft{Tripple Quotes}
+\begin{itemize}
+\item If your message runs across multiple lines, you can use 3 quotations to denote multi-line strings.\nl
+\item The sting begins with a \verb|'''| (or \verb|"""|) and ends with a (or \verb|"""|).\nl
+\item Note that in this environment, we can use linebreaks (ie we can start a new line by pressing ENTER) and include the single and double quotes with our string.
+\end{itemize}
+$$\ipic{img/tripplequotes}{0.6}$$
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Try It: Python Printing}
+\begin{example}
+ Write a Python program that prints "I can start coding!"
+ \end{example}
+
+\begin{example}
+ Write a Python program that prints these three lines:
+ \begin{verbatim}
+I know that I can program in Python.
+I am programming right now.
+My awesome program has three lines!
+ \end{verbatim}
+\end{example}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+How many of the following statements are TRUE?
+\begin{enumerate}
+\item {{Python is case-sensitive.}}
+\item {{A command in Python must be terminated by a semi-colon.}}
+\item {{Indentation does not matter in Python.}}
+\item {{A single line comment starts with \verb|"""|.}} 
+\item {{The print command prints to standard input.}}
+\end{enumerate}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 0 
+\item 1
+\item 2
+\item 3
+\item 4
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+How many of the following statements are TRUE?
+\begin{enumerate}
+\item {\color<1->{sgreen} {Python is case-sensitive.}}
+\item {\color<2->{red}{A command in Python must be terminated by a semi-colon.}}
+\item {\color<3->{red}{Indentation does not matter in Python.}}
+\item {\color<4->{red}{A single line comment starts with "\verb|"""|".}} 
+\item {\color<5->{red}{The print command prints to standard input.}}
+\end{enumerate}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 0 
+\item \tans{5}{1}
+\item 2
+\item 3
+\item 4
+\end{enumerate}
+\end{multicols}
+  \end{block} 
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{frame}[fragile]\ft{Variables}
+\textit{Recall\dots}\nl
+A \emph{variable} is a name that refers to a location that stores a data value.
+$$\includegraphics[]{../04VBA/img/Variable.png}$$
+\begin{alert}
+{IMPORTANT:} The \emph{value} at a location can change using initialization or assignment.
+\end{alert}
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Variable Assignment}
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+In Python the \define{assignment} operator is ``\command{=}".\nl
+We will use it to (re)set value of a variable.
+\begin{itemize}
+\item Example:
+\begin{verbatim}
+num = 10
+message = "Hello world!"
+\end{verbatim}
+\end{itemize}
+\end{column}%
+\hfill%
+\begin{column}{.3\textwidth}
+\ipic{variables}{1.3}
+\end{column}%
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Python Variables}
+%To create a variable in Python, you must only provide a name.\nl
+Variables are created when first assigned.\nl
+%Unlike other programming languages, Python has no command for declaring a variable.
+
+A variable type is dynamic and do not need to be declared.\nl
+  It can store any particular type (e.g.  int, float, strings, or Boolean) at any given time.
+  \begin{itemize}
+\item Example:
+\begin{verbatim}
+val = 5
+val = "Hello"
+isAwesome = True
+\end{verbatim}
+  \end{itemize}
+Recall: \define{Boolean} values can be either True or False (no quotes)  N.B. in Python \alert{case matters}.\nl
+%\begin{verbatim}
+%isAwesome = False
+%\end{verbatim}
+The type (string, int, float etc.) of the variable is determined by Python upon execution.
+\end{frame}
+% https://www.w3resource.com/python/python-variable.php
+
+\begin{frame}\ft{Variable Rules}
+Variables are a name that must begin with a letter or an underscore and cannot contain spaces.  All subsequent characters must be letters, numbers or underscores. \nl
+Variables are created when they are first used. There is no special syntax to declare (create) a variable.\nl
+Variable names \alert{are} case-sensitive.   \nl
+A programmer picks the names for variables, but try to make the names meaningful and explain their purpose.\nl
+%Avoid naming variables as reserved words (e.g. {\tt if, for, else}).  A reserved word has special meaning in the language.\nl
+\end{frame}
+
+\begin{frame}[fragile]\ft{Variable Rules}
+\begin{itemize}
+\item On top of the rules from the previous page, there are a number of reserved words you can't use in Python for variable names since they have special meaning in Python code.
+% https://thehelloworldprogram.com/python/python-variable-assignment-statements-rules-conventions-naming/
+%>>> import keyword
+%>>> keyword.kwlist
+\begin{Verbatim}
+'False', 'None', 'True', 'and', 'as', 'assert', 
+'async', 'await', 'break', 'class', 'continue',
+ 'def', 'del', 'elif', 'else', 'except', 'finally', 
+ 'for',  'from', 'global', 'if', 'import', 'in', 'is', 
+ 'lambda',  'nonlocal', 'not', 'or', 'pass', 
+ 'raise', 'return', 'try', 'while', 'with', 'yield'
+\end{Verbatim}
+\medskip
+\item While these are the only rules, there are certain \href{https://www.python.org/dev/peps/pep-0008/\#naming-conventions}{naming conventions} outlined by PEP8 that you may choose to follow.
+
+\end{itemize}
+
+\end{frame}
+
+
+% question:
+
+\begin{frame}\ft{}
+  \begin{example}
+How many of the following variable names are valid?
+\begin{enumerate}
+\item {	{name}}
+\item {	{string2}}
+\item {	{2cool}}
+\item {	{under\_score}} 
+\item {	{space name}} 
+\item {	{else}} 
+%\item {{\_test}} 
+\end{enumerate}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 0 
+\item 1
+\item 2
+\item 3
+\item $\geq$ 4
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>\ft{}
+  \begin{block}{Answer:}
+How many of the following variable names are valid?
+\begin{enumerate}
+\item {\color<1->{sgreen}	{name}}
+\item {\color<2->{sgreen}	{string2}}
+\item {\color<3->{red}	{2cool}}
+\item {\color<4->{sgreen}	{under\_score}} 
+\item {\color<5->{red}	{space name}} 
+\item {\color<6->{red}	{else}} 
+%\item {\color<7->{green}	{\_test}} 
+\end{enumerate}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 0 
+\item 1
+\item 2
+\item \tans{6}{3}
+\item $\geq$ 4
+\end{enumerate}
+\end{multicols}
+  \end{block} 
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]\ft{Python Math Expressions}
+%Math expressions in Python: 
+\begin{center}
+\begin{tabular}{|c|c|c|c|}\hline
+\textbf{Operation} & {\bf Syntax} & {\bf Example} & {\bf Output}\\\hline
+Add
+& +
+& 5 + 3 & 8 \\
+Subtract
+& -
+& 10 - 2 & 8 \\
+Multiply
+& *
+& 5 * 3 & 15\\
+Divide
+& /
+& 8/4 & 2  \\
+Modulus
+& \% 
+& 9 \% 4
+& 1 \\
+Exponent &
+**&
+5 ** 2 &
+ 25\\\hline
+\end{tabular}
+\end{center}
+
+The modulo operation finds the remainder after division of one number by another (called the modulus of the operation). The modulus is 2 in the following examples (modulo is the operator \command{\%})
+\begin{Verbatim}
+>>> 8%2	# even numbers should return 0
+0
+>>> 7%2	# odd numbers should return 1
+1
+\end{Verbatim}
+
+\end{frame}
+
+\begin{frame}\ft{Expressions - Operator Precedence}
+Each operator has its own priority similar to their priority in regular math expressions:
+\begin{enumerate}
+\item Any expression in parentheses is evaluated first starting with the inner most nesting of parentheses.
+\item Exponents
+\item Multiplication division and modulos (*, /, \%) 
+\item Addition and subtraction (+,-)\nl
+\end{enumerate}
+
+Recall: \define{BEDMAS} \emph Brackets \emph Exponents \emph Division, \emph Multiplication, (modulus), \emph Addition and \emph Subtraction
+
+\green{Example:} {\tt 20 - \orange(\blue(4 + 5\blue) - \blue(3 * \red(6 - 2\red)\blue)\orange) * 4} = 32
+
+\end{frame}
+
+\begin{frame}\ft{Python Expression Question}
+\begin{example}
+What is the value of this expression 
+$${\tt 8 ** 2 + 12 / 4 * (3 -1) \% 5}$$
+HINT: Divide, Multiply and Modulo are rank equally (and go left to right).  See order of operations  \href{https://en.wikipedia.org/wiki/Order_of_operations\#Programming\_languages}{here}.
+\end{example}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 69
+\item 65
+\item 36
+\item 16
+\item 70
+\end{enumerate}
+\end{multicols}
+\end{frame}
+
+
+\begin{frame}<handout:0>[fragile]\ft{Python Expression Question}
+\begin{block}{Answer:}
+What is the value of this expression 
+$${\tt 8 ** 2 + 12 / 4 * (3 -1) \% 5}$$
+HINT: Modulo is executed after multiplication and division; more on this \href{https://en.wikipedia.org/wiki/Order_of_operations\#Programming\_languages}{here}.
+\end{block}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 69
+\item \tans{1}{65}
+\item 36
+\item 16
+\item 70
+\end{enumerate}
+\end{multicols}
+I think it's good practice to be explicit with brackets. I.e., I might have written the above as:
+\begin{center}
+\begin{minipage}{6cm}
+\begin{Verbatim}[frame=single]
+8**2 + ((12/4)*(3-1))%5
+\end{Verbatim}
+\end{minipage}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}\ft{Try it: Python Variables and Expressions}
+\begin{example}
+Write a program that prints the result of {\tt 35 + 5*10}
+\end{example}
+\begin{example}
+Write a program that uses at least 3 operators to end up with the value 99.
+\end{example}
+\begin{example}
+Write a program that has a variable called {\tt name} with the value of \textit{your} name and a variable called {\tt height} storing your height in feet.  Print out your name and height using these \underline{variables}.
+\end{example}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Rules for Stings in Python}
+Strings are sequences of characters that must be surrounded by single or double quotes.\nl
+%Any number of characters is allowed.
+The minimum number of characters is zero {\tt ""}, which is called the \define{empty string}.
+\nl
+Strings can contain most characters except enter, backspace, tab, and backslash. These special characters must be \emph{escaped} by using the escape character:  $\backslash$
+\begin{itemize}
+\item Example:
+\begin{description}
+\item [new line] {\tt $\backslash$n}
+\item [single quote] $\backslash$\verb|'| 
+\item [backslash] {\tt $\backslash$$\backslash$} 
+\item [double quote] $\backslash$\verb|''| 
+\end{description}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Strings}
+%Strings are sequences of characters that are surrounded by either single or double quotes.\nl
+%Use the escape character ($\backslash$) for apostrophes e.g., \verb|There\'s|\nl
+As mentioned previously, we can use triple  quotes \verb|"""| for a strings that contain single/double quotes and/or line breaks.\nl
+
+In addition, double quoted strings can contain single quoted strings and vice versa. Example:\nl
+
+%The use of the word "escape" really means to temporarily escape out of parsing the text and into a another mode where the subsequent character is treated differently.
+
+\begin{verbatim}
+name = 'Joseph "Joe" Jones'
+storeName = 'Joe\'s Store'
+storeName = "Joe's Store" # alternatively
+height = '''5'9"'''
+print("""String that is really long
+with multiple lines
+     and spaces is perfectly fine""")
+\end{verbatim}
+% String \emph{literals} (values) have the quotation marks removed when displayed.
+\end{frame}
+
+%\begin{frame}[fragile]\ft{Raw Stings in Python}
+%A string in raw mode ({\tt r} before quote) a character following a backslash is included in the string without change, and all backslashes are left in the string
+%%  May be useful if data contains escapes. 
+%\begin{itemize}
+%\item  Example:
+%\begin{verbatim}
+%>>> st = r"slash\n hello"
+%>>> st2 = "slash\n hello"
+%>>> print(st)
+%slash\n hello
+%>>> print(st2)
+%slash
+% hello
+%\end{verbatim}
+%\end{itemize}
+%N.B. \verb|>>>| indicates input (lack of \verb|>>>| indicates output).
+%\end{frame}
+%
+%\begin{frame}[fragile]\ft{Raw Stings in Python}
+%Raw strings are \alert{\it not} the same as verbatim. A raw string cannot end in an odd number of backslashes since it will be treated as an escape character.  More on this \href{https://www.journaldev.com/23598/python-raw-string}{here}.\nl
+%
+%\begin{itemize}
+%\item For example:
+%\begin{verbatim}
+%>>> print(r"\"")
+%\"
+%>>> print(r"\\")
+%\\
+%>>> print(r"\")
+%  File "<stdin>", line 1
+%    print(r"\")
+%              ^
+%SyntaxError: EOL while scanning string literal
+%\end{verbatim}
+%\end{itemize}
+%\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Python String Indexing}\label{str}
+Individual characters of a string can be accessed using square brackets ({\tt []}); the first character indexed at 0.\nl
+\begin{itemize}
+\item Example:
+\begin{verbatim}
+str = "Hello"
+print(str[1]) 			# e
+print("ABCD"[0])		# A
+print(str[-1])			# o 
+\end{verbatim}
+\end{itemize}
+Negative values start at end and go backward, note that -1 yields the first number starting from the right. 
+Read all more about strings \href{https://www.python.org/dev/peps/pep-0498/}{here}.
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+How many of the following are valid Python strings?
+\begin{enumerate}
+\item {\verb|""|}
+\item {\verb|''|}
+\item {\verb|"a"|}
+\item {\verb|" "|}
+\item {\verb|"""|}
+\item {\verb|"Joe\' Smith\""|}
+\end{enumerate}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 1
+\item 2
+\item 4
+\item 5
+\item 6
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+How many of the following are valid Python strings?
+\begin{enumerate}
+\item {\color<1->{sgreen}	{\verb|""|}}
+\item {\color<2->{sgreen}	{\verb|''|}}
+\item {\color<3->{sgreen}	{\verb|"a"|}}
+\item {\color<4->{sgreen}	{\verb|" "|}} 
+\item {\color<5->{red}	{\verb|"""|}} 
+\item {\color<6->{sgreen}	{\verb|"Joe\' Smith\""|}} 
+\end{enumerate}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 1
+\item 2
+\item 4
+\item \tans{6}{5} 
+\item 6
+\end{enumerate}
+\end{multicols}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{frame}[t, fragile]\ft{Python String Functions and Methods}
+Suppose: \begin{verbatim}
+st = "Hello"
+st2 = "Goodbye"
+\end{verbatim}
+
+\begin{center}
+\begin{tabular}{|l| >{\ttfamily}c | >{\ttfamily}l  | >{\ttfamily}l |}\hline
+\textbf{Operation} & {\bf Command} & {\bf Example} & {\bf Output}\\\hline
+Length &
+len() &
+len(st) &
+5\\\hline
+Upper case &
+upper() &
+st.upper() &
+HELLO\\\hline
+Lower case &
+lower() &
+st.lower() &
+hello\\\hline
+Convert to a string &
+str() &
+str(9) &
+"9"\\\hline
+Concatenation &
++ &
+st + st2 &
+HelloGoodbye\\\hline
+Substring &
+[] &
+st[0:3] &
+Hel\\
+ &
+&
+st[1:] &
+ello\\\hline
+String to int &
+int() &
+int("99") &
+99\\\hline
+
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]{Dot Notation}
+\begin{itemize}
+\item Like VBA, you will notice that Python uses the dot operator  to perform \emph{methods} on \emph{objects} (read more \href{https://python4astronomers.github.io/python/objects.html}{here}). \nl
+\item Every constant, variable, or function in Python is actually a object with a type and associated attributes and methods. \begin{verbatim}
+>>> type("99")
+<class 'str'>
+>>> type(int("99"))
+<class 'int'>
+\end{verbatim}
+
+%\item An attribute a property of the object that you get or set by giving the <object_name> + dot + <attribute_name>, for example img.shape.
+\item  A \define{method}  is similar to a function however it is attached to an object (read more about this \href{https://data-flair.training/blogs/python-method-and-function/}{here})\nl
+\item Note that we different syntax for functions vs. methods:  For example \command{st.len} will produce an error as would \command{upper(st)}\nl
+%\item When calling a  method on an object,  it possibly makes changes to that object.\nl % when does it do this?
+\item \href{https://www.w3schools.com/python/python\_ref\_string.asp}{Here} are some more examples of string methods.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{String Operators: Concatenation}
+The \emph{concatenation operator} is used to combine two strings into a single string.  The notation is a plus sign ``\define{+}".
+
+\begin{itemize}
+\item 
+Example:
+\begin{Verbatim}[frame=single]
+>>> st1 = "Hello"
+>>> st2 = "World!"
+>>> st3 = st1 + st2 # HelloWorld!
+>>> print(st1+st1)
+HelloHello
+>>> print(st3)
+HelloWorld!
+\end{Verbatim}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{String Operators: Concatenation}
+Note that we must hard code spaces if we want them:
+\begin{Verbatim}[frame=single]
+>>> st4 = st1 +" "+ st2 
+>>> print(st4)
+Hello World!
+\end{Verbatim}
+\begin{alertblock}{Concatenate with numbers and strings}
+We must convert numbers to strings using \href{https://www.w3schools.com/python/ref_func_str.asp}{str} before concatenation.
+\end{alertblock}
+
+\begin{Verbatim}[frame=single]
+>>> num = 5
+>>> print(st1+str(num))         
+Hello5
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Python \command{print()}}
+
+Unlike with concatenation,  we \textit{can} mix types in the {\tt print()} function.
+\vfill
+In addition, notice how {\tt print()} inserts spaces between inputs by default:
+\begin{Verbatim}[frame=single]
+>>> print(st1,num, 100, "hi there", "byethere")  
+Hello 5 100 hi there byethere
+\end{Verbatim}
+\vfill We can change the default separator from \verb|' '| to \verb|', '| for example, as follows:
+\begin{Verbatim}[frame=single]
+>>> print(st1,num, 100, "hi there", sep=", ")
+Hello, 5, 100, hi there
+\end{Verbatim}
+\vfill
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{String Operators: Deleting objects}
+If you have been following along with me, you will find that the code on the previous slide does not work.\nl
+This is because {\tt str} is no longer treated as a function because I assigned \verb|"Hello"| to this object on slide \ref{str}. \nl
+While \command{str} has a special meaning in Python, it is not a reserved word which will produce and error upon reassigning it a value in our program (i.e. it is not protected). \nl
+
+To make use of this function once more, we need delete the object we called {\tt str} by typing:
+\begin{Verbatim}[frame=single]
+del str
+\end{Verbatim}
+%Now we are free to use the \textit{function} {\tt str()} as desired.
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+What is the output of this code?
+\begin{verbatim}
+st1 = "Hello"
+st2 = "World!"
+num = 5
+print(st1 + str(num) + "  " + st2)
+\end{verbatim}
+\begin{enumerate}[A)]
+\item {{Error}}
+\item {{Hello5World!}}
+\item {{Hello5 World!}}
+\item {{Hello 5 World!}} 
+\end{enumerate}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+What is the output of this code?
+\begin{verbatim}
+st1 = "Hello"
+st2 = "World!"
+num = 5
+print(st1 + str(num) + "  " + st2)
+\end{verbatim}
+\begin{enumerate}[A)]
+\item {{Error}}
+\item {{Hello5World!}}
+\item \answer{Hello5 World!}
+\item {{Hello 5 World!}} 
+\end{enumerate}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]\ft{Substrings (slicing)}
+The substring function will return a range of characters from a string.
+The general syntax is \verb|st[start:end]|
+\begin{alertblock}{Substring indexing/slicing}
+\begin{itemize}
+\item The {\tt start} is inclusive the {\tt end} is exclusive.
+\item If {\tt start} is not provided, it defaults to 0.
+\item If {\tt end} is not provided, it defaults to the end of the string. 
+\end{itemize}
+\end{alertblock}
+
+\begin{itemize}
+\item Example:
+\vspace{-1em}
+\begin{Verbatim}[frame=single, xleftmargin=0.9in]
+st = "Fantastic"
+print(st[1])	 	# a
+print(st[0:6])	# Fantas
+print(st[4:])	# astic
+print(st[:5]) 	# Fanta
+print(st[-6:-2])	# tast
+\end{Verbatim}
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+What is the output of this code:
+\begin{verbatim}
+st = "ABCDEFG"
+print(st[1] + st[2:4] + st[3:] + st[:4])
+\end{verbatim}
+\begin{enumerate}[A)]
+\item ABCDCDEFGABCD
+\item ABCDEFGABC
+\item BCDDEFGABCDE
+\item BCDDEFGABCD
+\item BCDECDEFGABC
+\end{enumerate}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+What is the output of this code:
+\begin{verbatim}
+st = "ABCDEFG"
+print(st[1] + st[2:4] + st[3:] + st[:4])
+\end{verbatim}
+\begin{enumerate}[A)]
+\item ABCDCDEFGABCD
+\item ABCDEFGABC
+\item BCDDEFGABCDE
+\item \answer{BCDDEFGABCD}
+\item BCDECDEFGABC
+\end{enumerate}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]\ft{Split}
+The \emph{split} function will divide a string based on a separator. 
+Without any arguments, it splits on whitespace, 
+\begin{Verbatim}[frame=single]
+>>> st = "Awesome coding! Very good!"
+>>> print(st.split())           
+['Awesome', 'coding!', 'Very', 'good!']
+\end{Verbatim}
+otherwise is splits where ever it sees the inputted separator:
+\begin{Verbatim}[frame=single]
+>>> print(st.split("!"))
+['Awesome coding', ' Very good', '']
+\end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Split}
+This is very useful when we have, for example, comma separated values (csv):
+\begin{Verbatim}[frame=single]
+>>> st = 'data,csv,100,50,,25,"use split",99'
+>>> print(st.split(","))
+['data', 'csv', '100', '50', 
+'', '25', '"use split"', '99']
+\end{Verbatim}
+Note that the returned object is a Python \href{https://www.w3schools.com/python/python_lists.asp|}{list}.
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]\ft{List Overview}
+A \define{list} is a collection of data items that are referenced by index.
+\begin{itemize}
+\item Lists in Python are similar to arrays in other programming languages
+\end{itemize}
+
+A list allows multiple data items to be referenced by one name and retrieved by index.
+
+\begin{itemize}
+\item Python list:
+\end{itemize}
+\begin{center}
+\ipic{pythonlist}{0.9}
+\end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]\ft{Retrieving Items from a list}
+Items are retrieved by index (starting from 0) using square brackets:
+\begin{Verbatim}[frame=single]
+data = [100, 200, 300, 'one', 'two', 600]
+print(data[0])           # 100
+print(data[4])           # 'two'
+print(data[6])           # error ? out of range
+print(data[len(data)-1]) # 600
+print(data[-1])          # 600
+print(data[2:4])         # [300, 'one']
+\end{Verbatim}
+You can create an empty list using:
+\begin{Verbatim}[frame=single]
+emptyList = []
+\end{Verbatim}
+\end{frame}
+%for i in range(0, len(x)):
+%        x[i] = x[i] * 2
+%    return x
+%
+%List concatenation using +
+%x + y
+%for two lists x and y
+%
+%letters = ['a', 'b', 'c', 'd']
+%print " ".join(letters)
+%print "---".join(letters)
+%In the example above, we create a list called letters.
+%Then, we print a b c d. The .join method uses the string to combine the items in the list.
+%Finally, we print a---b---c---d. We are calling the .join function on the "---" string.
+%We want to turn each row into "O ".
+
+
+\begin{frame}[fragile]
+\begin{itemize}
+\item To create a list with a range of numbers we can use  \href{https://www.w3schools.com/python/ref_func_range.asp}{range}:
+\begin{Verbatim}[frame=single]
+l = list(range(start, stop, step))
+\end{Verbatim}
+having parameter values:
+\begin{itemize}
+\item {\tt start}:	Optional. An integer number specifying at which position to start. Default is 0
+\item {\tt stop}:	Required. An integer number specifying at which position to end.
+\item {\tt step}:	Optional. An integer number specifying the incrementation. Default is 1
+\end{itemize}
+
+
+\end{itemize}
+\begin{Verbatim}[frame=single, fontsize = \small]
+>>> list(range(10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> print(list(range(10)))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> print(list(range(1,10)))
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> print(list(range(1,10,2)))
+[1, 3, 5, 7, 9]
+\end{Verbatim}
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{List manipulation}
+We can modify  a single value by use of indices and the assignment operator {\tt =}
+\begin{Verbatim}[frame=single]
+>>> data = [1,2,3,5]
+>>> data[2] = 7
+>>> print(data)
+[1, 2, 7, 5]
+\end{Verbatim}
+
+We can also modify multiple values at a time in the following way:
+\begin{Verbatim}[frame=single]
+>>> data[0:1] = ["one","two"]
+>>> print(data)
+['one', 'two', 2, 7, 5]
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Appending to a list}
+\begin{itemize}
+\item Notice that when  we try to add a value to the end of the list, we get an error:
+\begin{Verbatim}[frame=single,commandchars=\\\{\}]
+>>> data[5] = 10
+\textcolor{red}{Traceback (most recent call last):}
+\textcolor{red}{  File "<stdin>", line 1, in <module>}
+\textcolor{red}{IndexError: list assignment index out of range}
+\end{Verbatim}
+\item To add an item to the end of the list, use  \command{append()}.% method.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Appending to a list}
+
+\begin{itemize}
+%\item  {\tt append()} adds a single item to the existing list. 
+\item Notice how \command{append()} doesn't return a new list; rather it \emph{modifies} the original list.
+\begin{Verbatim}[frame=single]
+>>> data = [1,2,3,5]
+>>> data.append(7)
+>>> print(data)
+[1, 2, 3, 5, 7]
+\end{Verbatim}
+
+\item Alternatively we could have used 
+%\item  There are a number of methods and functions  we can perform on list; see some examples \href{https://www.programiz.com/python-programming/methods/list/insert}{here} and slide \ref{operations}.
+\begin{Verbatim}[frame=single]
+>>> data = [1,2,3,5]
+>>> data = data + [7]
+>>> data
+[1, 2, 3, 5, 7]
+\end{Verbatim}
+\
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]\ft{List in loops}
+\begin{itemize}
+\item We can iterate over a list in a \command{for} loop. 
+\begin{Verbatim}[frame=single]
+colours = ['red', 'yellow', 'green', 'blue']
+for colour in colours:
+    print(colour)
+\end{Verbatim}
+\medskip
+\item The following code appends the values in \command{i} one-by-one to the empty list \command{j}.
+\end{itemize}
+\medskip
+\begin{Verbatim}[frame=single]
+i = [1, 2, 3, 5, 8, 13]
+j = []
+for l in i:
+    j.append(l)
+\end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]\ft{List \command{append} vs \command{extend}}
+\begin{itemize}
+\item  \command{append()} adds its argument as a \textit{single} element (eg. a number, a string or a 
+ another list)  to the end of an existing list.
+\begin{Verbatim}[frame=single]
+>>> x = [1, 2, 3] # len(x) = 3
+>>> x.append([4,5])
+>>> x
+[1, 2, 3, [4, 5]]
+>>> len(x)
+4
+\end{Verbatim}
+\item  Notice how the length of the list increases by one.
+\vfill
+\item If we want to add the elements one-by-one to the end of \command{x} we could either use a loop as we did in the previous slide of use the  \command{extend()} function. 
+\vfill
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\ft{List \command{extend}}
+\begin{itemize}
+\item \command{extend()}  iterates over its argument and adds each element to the list thereby \textit{extending} the list. 
+\vfill
+\item The length of the list increases by number of elements in it's argument.
+\begin{Verbatim}[frame=single, commandchars=\\\{\}] 
+>>> x = [1, 2, 3] \textcolor{OliveDrab}{# len(x) = 3}
+>>> x.extend([4,5])
+>>> x \textcolor{OliveDrab}{# len(x) = 5}
+[1, 2, 3, 4, 5]
+\end{Verbatim}
+\item Alternatively, we could have used
+\begin{Verbatim}[frame=single,  commandchars=\\\{\}] 
+>>> x = [1, 2, 3] \textcolor{OliveDrab}{# len(x) = 3}
+>>> x = x + [4,5]
+>>> print(x)
+[1, 2, 3, 4, 5]
+\end{Verbatim}
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]\ft{List \command{extend} vs \command{append} example}
+ Read more about the difference between the two  \href{https://www.geeksforgeeks.org/append-extend-python/}{here}
+\begin{Verbatim}[frame=single]
+>>> x = [1, 2, 3]
+>>> x.append([4, 5])
+>>> print (x)
+[1, 2, 3, [4, 5]]
+>>> x[3]
+[4, 5]
+\end{Verbatim}
+where \verb|x[3]| returns \verb|[4, 5]| and \verb|x[4]| returns an error.
+\begin{Verbatim}[frame=single]
+>>> x = [1, 2, 3]
+>>> x.extend([4, 5])
+>>> print (x)
+[1, 2, 3, 4, 5]
+>>> x[3]
+4
+\end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]\ft{List Operations}\label{operations}
+If \verb|data = [1, 2, 3, 5]| and 
+\verb|lst = []|
+\begin{adjustwidth}{-3mm}{}
+\begin{tabular}{|l|l|l|l|}
+\hline
+{\bf Operation} & 
+{\bf Syntax} & 
+{\bf Examples} & 
+{\bf Output}\\\hline
+Add item & 
+<list>.append(val) & 
+data.append(1) & 
+[1, 2, 3, 5, 1]\\
+Insert item & 
+<list>.insert(idx,val) & 
+data.insert(3,4) & 
+[1, 2, 3, 4, 5]\\
+Remove item & 
+<list>.remove(val) & 
+data.remove(5) & 
+[1, 2, 3]\\
+<list>.pop(ind) & 
+data.remove(0) & 
+[2, 3,5]\\
+Update item & 
+list[idx]=val & 
+data[0]=10 & 
+[10, 2, 3, 5]\\
+Length of list & 
+len(<list>) & 
+len(data) & 
+4\\
+Slice of list & 
+list[x:y] & 
+data[0:3] & 
+[1, 2, 3]\\
+Find index & 
+<list>.index(val) & 
+data.index(5) & 
+3\\
+Sort list & 
+<list>.sort() & 
+data.sort()\footnote{To sort in reverse order, use {\tt data.sort(reverse=True)}} & [1, 2, 3, 5]\\
+Add & lst = [] & lst.append(1) & [1]\\\hline
+%Insert &  
+%data.insert(idx, val) &
+%data.insert(3, 4)& 
+%[1, 2, 3, 4, 5]\\
+%Remove & 
+%data.remove(val) &
+%data.remove(5)&
+%[1, 2, 3]\\\hline
+\end{tabular}
+\end{adjustwidth}
+\vspace{1em}
+See more  \href{https://www.programiz.com/python-programming/methods/list/insert}{here} 
+\end{frame}
+
+\begin{frame}[fragile]\ft{List details}
+It was mentioned already but its worth repeating...\nl
+For loops that are used to iterate though items in a list:
+\begin{Verbatim}[frame=single]
+data = [5,9,-2,9]
+for v in data:
+   print(v)
+   
+ #### output:
+# 5
+# 9
+# -2
+# 9
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{List details}
+
+Note that this is not restricted to numbers:
+\begin{Verbatim}[frame=single]
+data = ["apples", "bananas","oranges"]
+for v in data:
+    print(v)
+\end{Verbatim}
+prints {\tt apples}, {\tt
+bananas}, 
+{\tt oranges} (each on a separate line). \\
+\vspace{2em}
+We could even iterate through characters in a string:
+\begin{Verbatim}[frame=single]
+for v in "bananas":
+    print(v)
+\end{Verbatim}
+prints {\tt b}, {\tt a}, {\tt n}, {\tt a}, {\tt n}, {\tt a}, {\tt s} (each letter on a separate line)
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{List details}
+If we want to iterate through both index and value, we could use the
+\href{http://book.pythontips.com/en/latest/enumerate.html}{\tt enumerate()} function.
+\begin{Verbatim}[frame=single]
+data = ['apple', 'banana', 'grapes', 'pear']
+for c, value in enumerate(data):
+    print(c, value)
+
+# Output:
+# 0 apple
+# 1 banana
+# 2 grapes
+# 3 pear
+\end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]\ft{List details}
+If we want our index to start at 1 rather than 0, we could specify that as the second argument:
+\href{http://book.pythontips.com/en/latest/enumerate.html}{\tt enumerate()} function.
+\begin{Verbatim}[frame=single]
+data = ['apple', 'banana', 'grapes', 'pear']
+for c, value in enumerate(data, 1):
+    print(c, value)
+
+# Output:
+# 1 apple
+# 2 banana
+# 3 grapes
+# 4 pear
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Advanced: Python List Comprehensions}
+\href{https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions}{List comprehensions} build a list using values that satisfy a criteria.
+
+
+
+\begin{itemize}
+\item Example: \verb|evenNums100 = [n for n in range(101) if n%2==0]|
+\item Equivalent to:
+\begin{verbatim}
+    evenNums100 = []
+    for n in range(101): 
+        if n%2==0:
+            evenNums100.append(n)
+\end{verbatim}
+\begin{Verbatim}[frame=single]
+# another example:            
+>>> squares = [x**2 for x in range(10)]
+>>> squares
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+\end{Verbatim}
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Advanced: Python List Slicing}
+\define{List slicing} allows for using range notation to retrieve only certain elements in the list by index.  Syntax:\newline
+$$\verb|list[start:end:step]|$$
+
+\begin{itemize}
+\item Example:
+\begin{verbatim}
+data = list(range(1,11))
+print(data)		# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(data[1:8:2])	# [2, 4, 6, 8]
+print(data[1::3])		# [2, 5, 8]
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+At what index is item with value 3?
+\begin{verbatim}
+data = [1, 2, 3, 4, 5]
+data.remove(3)
+data.insert(1, 3)
+data.append(2)
+data.sort()
+data = data[1:4]
+\end{verbatim}
+\begin{multicols}{6}
+\begin{enumerate}[A)]
+\item 0 
+\item 1
+\item 2
+\item 3
+\item not there
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+At what index is item with value 3?
+\begin{verbatim}
+data = [1, 2, 3, 4, 5]
+data.remove(3)
+data.insert(1, 3)
+data.append(2)
+data.sort()
+data = data[1:4]
+\end{verbatim}
+\begin{multicols}{6}
+\begin{enumerate}[A)]
+\item 0 
+\item 1
+\item \answer{2} 
+\item 3
+\item not there
+\end{enumerate}
+\end{multicols}
+  \end{block} {\tt [2,2,3]}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{frame}\ft{Try it: Lists}
+\begin{example}
+[Question 1] Write a program that puts the numbers from 1 to 10 in a list then prints them by traversing the list.
+\end{example}
+
+\begin{example}
+[Question 2] Write a program that will multiply all elements in a list by 2. Bonus: try doing this using the \href{http://book.pythontips.com/en/latest/enumerate.html}{\tt enumerate()} function.
+\end{example}
+
+\begin{example}
+[Question 3] Write a program that reads in a sentence from the user and splits the sentence into words using split().  Print only the words that are more than 3 characters long.  At the end print the total number of words.
+\end{example}
+
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Lists}
+In the previous example we use the {\tt list()} \href{https://www.programiz.com/python-programming/methods/built-in/list}{function} to create our list instead of the square brackets.\nl
+This constructs a list using the single input.  This could be 
+\begin{itemize}
+\item  a sequence (eg. string, tuples) or
+\item a collection (set, dictionary) or
+\item a  iterator object (like the objects  iterated over in our {\tt for} loops)
+\end{itemize}
+
+If no parameters are passed, it creates an empty list.
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Tuples}
+\begin{itemize}
+\item A tuple is a collection which is ordered and \alert{unchangeable}. To create tuples we use  round brackets \verb|()|.
+\begin{Verbatim}[frame=single]
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+\end{Verbatim}
+\item Elements in a tuple  are referenced the same way as lists:
+\begin{Verbatim}[frame=single]
+>>> print(thistuple)
+('apple', 'banana', 'cherry')
+>>> thistuple[1]
+'banana'
+\end{Verbatim}
+\item Tuples are useful for storing some related information that belong together.
+%representing what other languages often call records ? some related information that belongs together %http://openbookproject.net/thinkcs/python/english3e/tuples.html
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Tuples}
+Unlike list, once a tuple is created, values \alert{can not} be changed. 
+\begin{Verbatim}[frame=single]
+>>> thistuple[1] = "pineapple"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+\end{Verbatim}
+Notice that tuples are also iterable, meaning we can traverse through all the values. eg,
+\begin{Verbatim}[frame=single]
+for i in thistuple:
+   print(i)
+\end{Verbatim}
+The above prints:
+\begin{Verbatim}[frame=single]
+apple
+banana
+cherry
+\end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Python Sets}
+\begin{itemize}
+\item A \define{set} (like a mathematical set) is a collection which is unordered and unindexed. \nl
+\item Sets are written with curly brackets \verb|{}|.\nl
+\end{itemize}
+\begin{Verbatim}[frame=single]
+>>> # N.B they do not carry duplicates
+>>> thisset = {"apple", "banana", "cherry", "apple"}
+>>> print(thisset)
+{'apple', 'banana', 'cherry'}
+\end{Verbatim}
+\begin{itemize}
+\item Since sets are unordered,  the items will appear in a random order and elements cannot be reference by index.\nl
+\item Again  we can iterate though each item using a {\tt for} loop.\nl
+\item Read more about these \href{https://www.programiz.com/python-programming/set}{here}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Python Dictionary}
+A \href{https://www.w3schools.com/python/python_dictionaries.asp}{dictionary} is a collection which is unordered, changeable and indexed. We create them with curly brackets and specify  their \define{keys} and \define{values}.
+ \begin{Verbatim}[frame=single]
+>>> thisdict = {
+...   "key1": "value1",
+...   "key2": "value2",
+...   "key3": "value3"}
+>>> print(thisdict)
+{'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+ \end{Verbatim}
+{\bf N.B} Keys should be \alert{unique}. If you create different values with the same key, Python will just overwrite the value of the duplicate keys.
+ \begin{Verbatim}[frame=single]
+>>> nono = {'key1':'this', 'key1':'that'}
+>>> nono
+{'key1': 'that'}
+ \end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Python Dictionary}
+%A {\define{dictionary}} is a collection of key-value pairs that are manipulated using the key. \href{https://docs.python.org/3/library/stdtypes.html#mapping-types-dict}{more...}
+We can now reference elements by a given \textit{name} (i.e key) rather than the standard  integers index.  
+\begin{Verbatim}[frame=single]
+>>> thisdict['key1'] 
+'value1'
+\end{Verbatim}
+Referencing by index won't work (remember these are unordered)
+\begin{Verbatim}[frame=single,commandchars=\\\{\}, fontsize=\small]
+>>> thisdict[0]
+\textcolor{red}{Traceback (most recent call last):}
+\textcolor{red}{  File "<stdin>", line 1, in <module>}
+\textcolor{red}{KeyError: 0}
+\end{Verbatim}
+Don't get confused at try to do indexing using the values rather than the keys! For instance the following would produce an error:
+\begin{Verbatim}[frame=single,commandchars=\\\{\}, fontsize=\small]
+>>> thisdict['value1']
+\textcolor{red}{Traceback (most recent call last):}
+\textcolor{red}{  File "<stdin>", line 1, in <module>}
+\textcolor{red}{KeyError: 'value1'}
+\end{Verbatim}
+
+
+\end{frame}
+
+\begin{frame}[fragile]\ft{Python Dictionary}
+If we wanted to, we could always use integers for the keys (in that case we don't need quotes around them when indexing using square brackets).
+\begin{Verbatim}[frame=single,commandchars=\\\{\}]
+dict = \{1:'one', 2:'two', 3:'three'\}
+print(dict[1])  \textcolor{OliveDrab}{      # one}
+print(dict['one']) \textcolor{red}{   # error - key not found}
+if 2 in dict:	 \textcolor{OliveDrab}{# check if key exists}
+    print(dict[2])  \textcolor{OliveDrab}{  # 'two'}
+\end{Verbatim}
+We can add/delete and view keys/values using the following:
+\begin{Verbatim}[frame=single,commandchars=\\\{\}]
+dict[4] = 'four'  \textcolor{OliveDrab}{# Add 4:'four'}
+del dict[1]   \textcolor{OliveDrab}{    # Remove key 1}
+dict.keys()\textcolor{OliveDrab}{       # Returns keys}
+dict.values()  \textcolor{OliveDrab}{   # Returns values}
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Python Dictionary}
+Iterating over a dictionary will return the \textit{keys}
+\begin{Verbatim}[frame=single,commandchars=\\\{\}]
+>>> dict = \{'Martha':4, 'Janet':17, 'Peter':10\}
+>>> dict['Anna'] = 20
+>>> for i in dict:
+...     print(i)
+... 
+Martha 
+Janet 
+Peter 
+Anna 
+\end{Verbatim}
+To get the values use:
+\begin{Verbatim}[frame=single,commandchars=\\\{\}]
+>>> for i in dict: print(dict[i]) # or
+>>> for i in dict.values(): print(i)
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Python Dictionary}
+To access both keys and values use:
+\begin{Verbatim}[frame=single,commandchars=\\\{\}]
+# option 1:
+# i = key, dict[i] = value
+for i in dict: 
+    print("key = ", i, "value = ", dict[i])
+\end{Verbatim}
+\begin{Verbatim}[frame=single,commandchars=\\\{\}]
+# option 2:
+for key, val in dict.items():
+    print("key = ", key, "values =", val)
+\end{Verbatim}
+Output:
+\begin{Verbatim}
+key =  Martha value =  4
+key =  Janet value =  17
+key =  Peter value =  10
+key =  Anna value =  20
+\end{Verbatim}
+
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{Summary of Python Structures}
+\emph{Lists} can be altered and hold different data types:
+\begin{Verbatim}[frame=single,commandchars=\\\{\}, fontsize=\small]
+lectures = [1,2,['excelI',excelII'],'CommandLine']
+ \textcolor{OliveDrab}{# can delete individual items}
+del lectures[3]   
+ \textcolor{OliveDrab}{# reassign values}
+lectures[1] = 'Introduction' 
+print(type(lectures[0]))  \textcolor{OliveDrab}{# <class 'int'>}
+print(type(lectures[1]))  \textcolor{OliveDrab}{# <class 'str'>}
+print(type(lectures[2]))  \textcolor{OliveDrab}{# <class 'list'>}
+\end{Verbatim}
+
+\emph{Tuples} are \textit{immutable} (we can't change the values):
+\begin{Verbatim}[fontsize=\small, frame=single, commandchars=\\\{\}]
+topics= (1,2,['excel1','excel2'],'CommandLine')
+del topics[3]
+\textcolor{red}{# TypeError: 'tuple' object doesn't support item deletion}
+type(topics[2])  
+\textcolor{OliveDrab}{# <class 'list'>}
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]{Summary of Python Structures}
+\emph{Sets} do not hold duplicate values and are unordered. 
+\begin{Verbatim}[frame=single,commandchars=\\\{\}]
+>>> myset=\{3,1,2,3,2\}
+>>> myset
+\{1, 2, 3\}
+>>> myset[1]
+\textcolor{red}{TypeError: 'set' object does not support indexing}
+\end{Verbatim}
+
+
+\emph{Dictionaries} hold key-value pairs (just like real life dictionaries hold word-meaning pairs). %The \href{https://www.techbeamers.com/understand-python-statement-indentation/}{continuation character} (\textbackslash) is used to split  statements across multiple lines.
+
+\begin{Verbatim}[frame=single,commandchars=\\\{\}]
+>>> wordoftheday = \{
+ 'persiflage':'light, bantering talk or writing' ,
+ 'foment':'to instigate or foster'\}
+>>> wordoftheday['foment']
+'to instigate or foster'
+>>> wordoftheday[1] \textcolor{red}{# produces an error}
+\end{Verbatim}
+\end{frame}
+
+ 
+ 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+What value is printed?
+\begin{verbatim}
+data = {'one':1, 'two':2, 'three':3}
+data['four'] = 4
+sum = 0
+for k in data.keys():
+    if len(k) > 3:
+        sum = sum + data[k]
+print(sum)
+\end{verbatim}
+\begin{multicols}{6}
+\begin{enumerate}[A)]
+\item 7
+\item 0
+\item 10
+\item 6
+\item error
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+At what index is item with value 3?
+\begin{verbatim}
+data['four'] = 4
+sum = 0
+for k in data.keys():
+    if len(k) > 3:
+        sum = sum + data[k]
+print(sum)
+\end{verbatim}
+\begin{multicols}{6}
+\begin{enumerate}[A)]
+\item \answer 7
+\item 0
+\item 10
+\item 6
+\item error
+\end{enumerate}
+\end{multicols}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{frame}[fragile]\ft{Python Input}
+To read from the keyboard (standard input), use  \command{input}: \\[1.5em]
+%:\footnote{Note in Python 2 the method is called {\tt raw\_input()}}.
+\begin{Verbatim}[frame=single, label=the input() function, commandchars=\\\{\}] 
+\textcolor{OliveDrab}{ # input some text}
+name = input("What's your name?")
+
+\textcolor{OliveDrab}{ # input an integer}
+age = input("What's your age?")
+age + 10
+\textcolor{red}{TypeError: can only concatenate str (not "int") to str}
+int(age) + 10 
+
+\textcolor{OliveDrab}{ # input a float}
+num = input("What is 1 divided by 4?") # string
+num = float(num) # reassign the num variable  
+\textcolor{OliveDrab}{ # all in one line}
+num = float(input("What is 1 divided by 4?"))
+\end{Verbatim}
+
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Python Input}
+\begin{itemize}
+\item When your program executes an \command{input()} command the program will be stopped until the user has provided input.
+\vfill
+\item The \command{input()} function has an optional \command{prompt} argument. Usage: \command{input("optional prompt message")}
+\vfill 
+\item This text will be displayed on the output screen upon execution and can provide the user some instruction on what to type.
+\vfill
+%ask a user to enter input value is optional i.e. the prompt, will be printed on the screen is optional.
+\item Whatever the user enters as input, the \command{input} function will \alert{convert into a string}. You can convert this using \href{https://www.geeksforgeeks.org/taking-input-from-console-in-python/}{typecasting}
+\begin{itemize}
+\item If you enter an integer value you need to explicitly convert it into an integer in your code using \command{int()}
+\item If you enter an float value you need to explicitly convert it into an integer in your code using \command{float()}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}\ft{Try it: Python Input, Output, and Dates}
+\begin{example}
+Write a program that reads a name and prints out the name, the length of the name, the first five characters of the name.
+\end{example}
+\begin{example}
+Print out the current date in {\tt YYYY/MM/DD} format.  
+\end{example}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[fragile]\ft{Try it: Dictionary}
+\begin{example}
+Write a program that will use a dictionary to record the frequency of each letter in a sentence.  Read a sentence from the user then print out the number of each letter.
+
+\end{example}
+
+\begin{itemize}
+\item Code to create the dictionary of letters:
+\begin{verbatim}
+import string
+counts = {}
+for letter in string.ascii_uppercase:
+    counts[letter] = 0
+print(counts)
+
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{}
+\begin{example}
+Create the following two variables and write a Python program that prints the following output:
+\begin{verbatim}
+name = "Joe"
+age = 25
+\end{verbatim}
+\begin{Verbatim}[frame=single, label=output]
+Name: Joe
+Age: 25
+\end{Verbatim}
+\end{example} %----------------
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{}
+
+\begin{example}
+Define the variable:
+\begin{verbatim}
+name = "Steve Smith"
+\end{verbatim}
+Use substring to  write a Python program that prints out the first name and last name of {\tt Steve Smith} like below.\\[1em]
+\begin{Verbatim}[frame=single, label=output]
+First Name: Steve
+Last Name: Smith
+\end{Verbatim}
+{\bf Bonus challenge:} Recode so that it would work with any name.
+\end{example}%----------------
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Print Formatting}
+One of the most obvious changes between Python 2 and Python 3 is how they use {\tt print}:
+\begin{verbatim}
+     print "Hello"
+\end{verbatim}
+and Python 3:
+\begin{verbatim}
+    print("Hello")
+\end{verbatim}
+
+In Python3, the {\tt print} method can accept parameters for \href{http://stackoverflow.com/questions/15286401/print-multiple-arguments-in-python}{formatting}.  See some examples on the next slide \dots
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Print Formatting}
+
+\begin{Verbatim}[frame=single]
+print("Hi", "Amy", ", your age is", 21)
+print("Hi {}, your age is {}".format("Amy",21))
+print("Hi {1}, your age is {0}".format(21,"Amy"))
+print("Hi {name}, your age is {age}".format(age=21,
+name="Amy"))
+\end{Verbatim}
+\begin{itemize}
+\item We can think of \verb|{}| as placeholder arguments for the inputs given in \verb|format(<input0>, <input1>)|.
+\item By default, these inputs will be added in the string in order (the {\tt input0} will appear in the first place holder, {\tt input1} in the second place holder, etc.
+\item If we want to read  {\tt input1} before  {\tt input0}, we need to refer to it by its integer index via \verb|{1}| or by its name if we have provided one \verb|{age}| 
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Python Modules}
+%, commandchars=\\\{\}
+A Python \emph{module} or library is code written by others for a specific purpose.  Whenever coding, make sure to look for modules that are already written for you to make your development faster!
+Modules are imported using the import command:
+
+\begin{Verbatim}[xleftmargin=.5in] 
+import <modulename>
+\end{Verbatim}
+
+Useful modules for data analytics:
+\begin{itemize}
+\item {\tt Biopython} (bioinformatics), 
+\item {\tt NumPy} (scientific computing/linear algebra), 
+\item {\tt scikit-learn} (machine learning), {\tt pandas} (data structures), 
+\item {\tt BeautifulSoup} (HTML/Web)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Python Modules}
+\begin{itemize}
+\item The general syntax to import the module named {\tt mymodule} is:
+\begin{Verbatim}[frame=single]
+import mymodule
+\end{Verbatim}
+\vfill
+\item  You can choose to import only parts from a module, by using the {\tt from} keyword.  For example, if we just want the object {\tt person1} from {\tt mymodule} type:
+\begin{Verbatim}[frame=single]
+from mymodule import person1
+\end{Verbatim}
+\vfill
+\item To import all functions/constants/object from \command{mymodule} use:
+\begin{Verbatim}[frame=single]
+from mymodule import *
+\end{Verbatim}
+\vfill
+\item  Read more about modules \href{https://www.w3schools.com/python/python_modules.asp}{here} and \command{import} \href{https://www.geeksforgeeks.org/import-module-python/}{here}.
+\vfill
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Python: more on \href{https://www.geeksforgeeks.org/import-module-python/}{\tt import}}
+%https://stackoverflow.com/questions/9439480/from-import-vs-import
+\begin{itemize}
+\item When you use \command{import mymodule}, you import the module by the name of {\tt mymodule}.
+\vfill
+\item To access any a particular attribute (eg. object or function) of that module, you need to define a complete model path using the dot notation. 
+\begin{itemize}
+\item For instance, if we wanted to access \command{person1} from \command{mymodule} you would need to use \command{mymodule.person1}.
+\end{itemize}
+\vfill
+\item When you use ``\command{from mymodule import person1}'', 
+the module is not imported, rather just \command{person1} has been imported as a variable.
+\begin{itemize}
+\item We can now access it simply using \command{person1}.
+\end{itemize}
+\vfill
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Python Module}
+\begin{Verbatim}[frame=single, label=importing modules, commandchars=\\\{\}]
+import math \textcolor{purple}{# imports 'math' (of class 'module')}
+\textcolor{purple}{# access pi using dot notation}
+print(math.pi) 
+print(math.factorial(6)) 
+print(pi) \textcolor{red}{# NameError: name 'pi' is not defined}
+
+from math import pi 
+\textcolor{purple}{# access pi directly}
+print(pi)
+factorial(6) \textcolor{red}{# NameError: name 'factorial' is not defined}
+
+from math import *
+\textcolor{OliveDrab}{# access pi (and anything else in the module) directly}
+print(pi) 
+print(factorial(6)) 
+\end{Verbatim}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]{Python Modules}
+\begin{itemize}
+\item There are a number of packages are automatically installed into the \href{https://docs.python.org/3/library/}{Python Standard Library}.
+\vfill
+\item To install a module not in this standard library, use \href{https://realpython.com/what-is-pip/}{\tt pip}.
+\vfill
+\item The general syntax for install a module in the Command Prompt/Terminal (\textit{not} the Python interpreter) is:
+\begin{Verbatim}[frame=single]
+pip install <module_name>
+\end{Verbatim}
+\vfill
+\item Alternatively, if you installed Anaconda you can use:
+\begin{Verbatim}[frame=single]
+conda install <module_name>
+\end{Verbatim}
+\vfill
+\item \href{https://www.anaconda.com/understanding-conda-and-pip/}{Click here} to read about the differences between {\tt pip} \& {\tt conda}.
+\vfill
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Importing Objects from a Module}
+\begin{itemize}
+\item For example, Python supports date and time data types and functions. To use, import the {\tt datetime} \emph{module} using the following:
+\begin{Verbatim}[frame=single]
+import datetime
+\end{Verbatim}
+\vfill
+\item We may choose to only import the {\tt datetime} object from the {\tt datetime} module (which happens to be the same name) using the following:
+\begin{Verbatim}[frame=single]
+from datetime import datetime
+\end{Verbatim}
+\vfill
+\end{itemize}
+\end{frame}
+
+
+
+%
+%\begin{frame}[fragile]\ft{Importing Objects from a Module}
+%You also have the option of importing an object using the syntax: \verb|import some_module.some_object|. Depending on how you import this object, you may have to reference it differently in your program.  Eg.
+%\begin{Verbatim}[frame=single]
+%from urllib import request
+%# access request directly.
+%mine = request()
+%
+%% ### i don't get what the benefit to this notation would be
+%import urllib.request
+%# used as urllib.request
+%mine = urllib.request()
+%\end{Verbatim}
+%\end{frame}
+
+
+
+
+
+
+\begin{frame}[fragile]\ft{Python Date and Time}
+The \command{datetime} object has a method for formatting date objects into readable strings. Read more \href{https://www.w3schools.com/python/python\_datetime.asp}{here}.
+\begin{Verbatim}[fontsize=\small, frame=single]
+now = datetime.now()
+>>> now = datetime.now()
+>>> print(now)
+2018-10-07 12:31:43.830464
+>>> current_year = now.year
+>>> current_month = now.month
+>>> current_day = now.day
+>>> print("{}-{}-{} {}:{}:{}".format(now.year, now.month, 
+now.day, now.hour, now.minute, now.second))
+2018-10-7 12:31:43
+>>> print("{}-{}-{} {}:{}:{}".format(now.year, now.month, 
+now.day, now.hour, now.minute, now.second))
+2018-10-7 12:31:43
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Python Clock}
+\begin{itemize}
+\item The \command{time} module, is another useful package for handling time-related tasks. 
+\vfill
+\item The \command{time()} function for example, returns the current time in seconds.
+\vfill
+\item On Linux machines, this is an integer counting the number of seconds passed since January 1, 1970, 00:00:00 (recall from Lecture 2). 
+\vfill
+\item This function can be useful when we want to time how long a process takes within our program. 
+\vfill
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Python Clock}
+\begin{itemize}
+\item Example:
+\begin{verbatim}
+>>> import time
+>>> startTime = time.time()
+>>> print("Start time:", startTime)
+Start time: 1538941011.206657
+>>> print("How long will this take?")
+How long will this take?
+>>> endTime = time.time()
+>>> print("End time:", endTime)
+End time: 1538941011.2094998
+>>> print("Time elapsed:", endTime-startTime)
+Time elapsed: 0.0028429031372070312
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\end{document}
+

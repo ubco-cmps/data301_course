@@ -1,0 +1,1421 @@
+\documentclass[xcolor=svgnames]{beamer}
+%\documentclass[xcolor=svgnames, handout]{beamer}
+
+%\includeonlyframes{current}
+
+\usepackage[utf8]    {inputenc}
+\usepackage[T1]      {fontenc}
+\usepackage[english] {babel}
+
+\hypersetup{
+     colorlinks = true,
+     linkcolor = blue,
+     anchorcolor = blue,
+     citecolor = blue,
+     filecolor = blue,
+     urlcolor = blue
+     }
+     
+     
+     
+\usepackage{amsmath,amsfonts,graphicx}
+\usepackage{beamerleanprogress}
+\usepackage{xcolor}
+\usepackage{soul}
+%\usepackage{verbatim}
+\usepackage{multicol}
+\usepackage{tikz} 
+\usepackage[export]{adjustbox}
+
+\usepackage{fancyvrb}
+\usepackage{spverbatim}
+
+\usepackage{xcolor}
+
+
+% https://tex.stackexchange.com/questions/182476/how-do-i-center-a-boxed-verbatim/182479
+\newsavebox{\FVerbBox}
+\newenvironment{FVerbatim}
+ {\VerbatimEnvironment
+  \begin{center}
+  \begin{lrbox}{\FVerbBox}
+  \begin{BVerbatim}}
+ {\end{BVerbatim}
+  \end{lrbox}
+  \fbox{\usebox{\FVerbBox}}
+  \end{center}}
+  
+  
+  
+\definecolor{iyellow}{RGB}{255, 162, 23}
+\definecolor{sgreen}{RGB}{118, 191, 138}
+
+\newcommand{\yellow}[1]{\textcolor{iyellow}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{ForestGreen}{#1}}
+\newcommand{\blue}[1]{{\textcolor{blue}{#1}}}
+\newcommand{\orange}[1]{{\textcolor{orange}{#1}}}
+\newcommand{\bblue}[1]{\textcolor{SteelBlue!90!gray}{#1}} % beamer blue
+\newcommand{\purple}[1]{{\textcolor{purple}{#1}}}
+
+
+\newcommand{\el}{\\[1em]\pause}
+\newcommand{\nl}{\\[1em]}
+\newcommand{\define}[1]{\textbf{\textcolor{orange}{#1}}}
+\newcommand{\answer}[1]{\textit{\textbf{\textcolor{iyellow}{#1}}}}
+\newcommand{\command}[1]{\texttt{\textbf{\textcolor{DarkMagenta}{#1}}}}
+\newcommand{\ipic}[2]{\includegraphics[width={#2}\textwidth]{#1}}
+\newcommand{\cell}[1]{{\sf \textbf{\textcolor{DarkMagenta}{#1}}}}
+\newcommand{\ra}{$\rightarrow$}
+
+% timed answer
+\newcommand{\tans}[2]{\textbf<#1>{\textit<#1>{{\color<#1>{iyellow}{#2}}}}}
+
+\newcommand{\ft}[1]{\frametitle{#1}}
+
+% for straight quotes in verbatim:
+\usepackage{upquote,textcomp}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+
+\usepackage{upquote,textcomp}
+\newenvironment{allintypewriter}{\ttfamily}{\par}
+\newcommand{\bs}{$\backslash$}
+
+
+
+
+\newcommand*\keystroke[1]{%
+  \tikz[baseline=(key.base)]
+    \node[%
+      draw,
+      fill=white,
+      drop shadow={shadow xshift=0.25ex,shadow yshift=-0.25ex,fill=black,opacity=0.75},
+      rectangle,
+      rounded corners=2pt,
+      inner sep=1pt,
+      line width=0.5pt,
+      font=\scriptsize\sffamily
+    ](key) {#1\strut}
+  ;
+}
+
+\title
+  [Data 301 Data Analytics]
+  {Data 301 Data Analytics\\
+Reading and Writing Files in Python}
+
+\author
+  [Dr.\ Irene Vrbik]
+  {Dr.\ Irene Vrbik}
+
+\date
+  {}
+
+\institute
+  {University of British Columbia Okanagan \newline irene.vrbik@ubc.ca}
+
+
+\graphicspath{{img/}}
+
+\begin{document}
+
+\maketitle
+
+\setbeamersize{description width=0.57cm} % to have less indent with the description environment
+
+
+
+\begin{frame}{Python File Input/Output}
+Many data processing tasks require reading and writing to files.\nl
+
+\command{open()} is a built-in function for creating, writing and reading files.\nl
+
+This function takes two parameters; \textit{filename}, and \textit{mode}\footnote{there are other optional paramters, see {\tt help(open)}}.\nl
+
+\begin{itemize}
+\item Open a file for \emph{reading} (default):\\
+\begin{allintypewriter}
+infile = open("input.txt", mode = "\purple{\bf r}")
+\end{allintypewriter}
+\item  Open a file for \emph{writing}:\\
+\begin{allintypewriter}
+myfile = open("output.txt",  mode = "\purple{\bf w}")
+\end{allintypewriter}
+%\item Open a file for \emph{read/write}:\\
+%\begin{allintypewriter}
+%myfile = open("data.txt",  mode =  "\purple{\bf r+}")\nl
+%\end{allintypewriter}
+\end{itemize}
+\vfill
+Python will look for the file in the current directory, but you can specify an path if it is located elsewhere.
+\vfill
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Reading from a text file (as one string)}
+\begin{itemize}
+%\item Note that if {\tt data.txt"} is not in your current directory, you can specify its path. \nl
+
+\item Notice that even if you are reading in a text file, the object {\tt myfile} will \textit{not} be a string.
+\end{itemize}
+\begin{Verbatim}[frame=single, xleftmargin=0.5in]
+>>> infile = open("input.txt", "r") 
+>>> class(infile)
+<class '_io.TextIOWrapper'>
+\end{Verbatim}
+\begin{itemize}
+\item The \command{open} function returns a  \href{https://docs.python.org/3/glossary.html#term-file-object}{file object}.\nl
+\item In the above, I saved my file object to a variable called \command{infile}.  Common naming conventions for file input/file output objects are \command{fin} and \command{fout}, resp.\nl
+\item N.B. If the file cannot be opened, an {\tt OSError} is raised.\nl
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Reading from a text file (as one string)}
+\begin{itemize}
+\item One way to read a text file in Python is using the {\tt <filename>.read()} method:\nl
+\item By default \command{read()} will return the entire text document.
+\begin{FVerbatim}
+>>> this = infile.read()
+>>> print(this)
+'1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n'
+\end{FVerbatim}
+\item Notice that all characters (including line breaks \verb|\n|) are returned.\nl
+\item The out outputs of the \command{read()} method is a string
+\begin{FVerbatim}
+>>> type(this)
+<class 'str'>
+\end{FVerbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Reading from a text file by parts}
+\begin{itemize}
+\item Alternatively we can specify the the number characters you want to return as an argument (notice how newline character \verb|\n| is treated as a character:
+\begin{FVerbatim}
+>>> infile = open("input.txt", "r")
+>>> infile.read(4)
+'1\n2\n'
+\end{FVerbatim}
+\item \command{read} will keep our place in the document so that if we call it again it will read the \textit{next} 4 characters.  % until there are no more to be read
+\begin{FVerbatim}
+>>> infile.read(4)
+'3\n4\n'
+\end{FVerbatim}
+\item Notice how when we call these strings in the \command{print()} function \verb!\n! is converted to new lines:
+\begin{FVerbatim}
+>>> print(infile.read(4))
+5
+6
+\end{FVerbatim}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Reading from a text file by parts}
+We can repeatedly call this function until there are no more characters to be read.
+\begin{Verbatim}[commandchars=\\\{\}, xleftmargin=0.5in, frame=single]
+\textcolor{OliveDrab}{# this reaches the end of the document}
+>>> print(infile.read(9))
+7
+8
+9
+10
+
+\textcolor{OliveDrab}{# there are no more characters to be read}
+>>> infile.read(1) 
+''
+\end{Verbatim}
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Reading from a text file by line}
+\begin{itemize}
+\item Alternatively we can read the contents line by line:
+\begin{FVerbatim}
+>>> infile = open("input.txt", "r")
+>>> infile.readline()
+'1\n'
+>>> infile.readline()
+'2\n'
+\end{FVerbatim}
+\item As before, it will keep track of where we are in the file until there are no more lines to be read:
+\begin{FVerbatim}
+# ...
+>>> infile.readline()
+'9\n'
+>>> infile.readline()
+'10\n'
+>>> infile.readline()
+''
+\end{FVerbatim}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Reading from a text file (as one string)}
+It is good practice to close a file once you no longer need it to free up resources.  Once the file is closed, any further attempts to use the file object ({\tt infile}) will fail. \vfill
+ \begin{Verbatim}[commandchars=\\\{\}, frame=single]
+>>> fin = open("input.txt", "r") 
+>>> print(fin.read(5))
+1
+2
+3
+
+>>> fin.close() \textcolor{OliveDrab}{ # close the file}
+>>> fin.read(5)  \textcolor{OliveDrab}{# can no longer read from file}
+\textcolor{red}{Traceback (most recent call last):}
+\textcolor{red}{  File "<stdin>", line 1, in <module>}
+\textcolor{red}{ValueError: I/O operation on closed file.}
+\end{Verbatim}
+\vfill
+\end{frame}
+
+\begin{frame}[fragile]\ft{Reading from a text file (as one string)}
+We have the option to save the entire file as a string object to a variable. If we do that, we can access the information regardless of whether or not the file object has been closed:
+\vfill
+ \begin{Verbatim}[commandchars=\\\{\}, frame=single]
+fin = open("input.txt", "r") 
+val = fin.read() \textcolor{OliveDrab}{ # read file as one string}
+fin.close()\textcolor{OliveDrab}{       # close the file}
+print(val)  \textcolor{OliveDrab}{      # the entire contents of the file}
+print(val[0:4])  \textcolor{OliveDrab}{ # first 4 characters}
+print(val[4:8])  \textcolor{OliveDrab}{ # next 4 characters}
+print(fin.closed) \textcolor{OliveDrab}{# returns True}
+\end{Verbatim}
+\vfill
+\begin{block}{}
+You can check whether the file is close using {\tt <filename>.closed} which returns  {\tt True} or {\tt False}.
+\end{block}
+\vfill
+\end{frame}
+
+\begin{frame}[fragile]{Reading from a text file into a list}
+\begin{itemize}
+\vfill
+\item We could read \textit{every} line using the \command{readlines()} method (as opposed to \command{readline()} (singular which reads a single line).
+\vfill
+\item Notice that \command{readlines()} returns a Python list which includes the end of line characters.
+\end{itemize}
+\vfill
+\begin{Verbatim}[fontsize=\small, frame=single]
+>>> fin = open("input.txt", "r")
+>>> alllines = fin.readlines()
+>>> print(alllines) 
+['1\n', '2\n', '3\n', '4\n', '5\n', '6\n', '7\n', '8\n', 
+'9\n', '10\n']
+\end{Verbatim}
+\vfill
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Iteration with files}
+As with any Python list, we can iterate through its contents element by element  using a \command{for} loop.  \nl
+
+For this particular scenario, this corresponds to going through the {\tt input.txt} file line by line.\nl
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+>>> for lines in alllines:
+...     print(lines)
+... 
+1
+
+2
+
+...
+
+10
+\end{Verbatim}
+\vfill
+\end{frame}
+
+\begin{frame}[fragile]\ft{Iteration with files}
+You may have noticed  extra whitespace between lines.\nl
+This is because the  \command{print} function has a newline character printed by default (eg, we are actually printing \verb|'1\n\n'| for the first line).\nl
+To remedy this we could use the {\command{strip}} method to remove the newline characters before printing.\nl
+\href{https://www.geeksforgeeks.org/python-string-strip-2/}{strip()} removes any characters specified as arguments from both left and right of a string.  If no argument is specified, then all whitespace from starting from the left (resp. right) is removed until we reach the first non-match.
+\begin{Verbatim}[frame=single, fontsize=\small, commandchars=\\\{\}]
+>>> '\textcolor{red}{aaca}bb\textcolor{blue}{aacc}bb\textcolor{red}{cacc}'.strip('ac') \textcolor{red}{# removed}/\textcolor{blue}{not removed}
+'bbaaccbb'
+\end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Iteration with files}
+Hence we can iterate through this file line by line using:
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+>>> for lines in alllines:
+...     print(lines.strip('\n'))
+... 
+1
+2
+...
+10
+\end{Verbatim}
+\vfill
+While this worked well for this small file, if our text file was very long, creating this list would consume a lot of memory.  
+\vfill
+To get around this, we can loop over the file line by line, and only read the lines of text that your program needs\dots
+\end{frame}
+
+
+%\begin{frame}[fragile]\ft{Other File Methods}
+%We can read all of the lines at once using the {\tt readlines()} method.  Unlike the  {\tt read()} method, this saves all the lines of the file into a list:
+%\begin{Verbatim}[xleftmargin=.5in, frame=single]
+%infile = open("input.txt", "r")
+%
+%# Read all lines in the file into a list
+%lines = infile.readlines()
+%infile.close()
+%print(infile.closed)	# True
+%# lines will still be available
+%\end{Verbatim}
+%\begin{Verbatim}[frame=single, fontsize=\small]
+%print(lines)
+%# ['1\n', '2\n', '3\n', '4\n', '5\n', '6\n', '7\n', '8\n', '9\n', '10\n']
+%\end{Verbatim}
+%\end{frame}
+
+
+
+\begin{frame}\ft{Iteration with files}
+\begin{itemize}
+\item The \emph{file objects} themselves are actually iteratable (that is we can iterate through them in a \command{for} loop).\nl
+\item Hence we traverse through the text file line by line and do something with it, eg, print the contents to the screen.\nl
+\item Remember that the end of line characters are part of the string on each line. \nl
+\item We may choose to remove them in combination with print so that we don't produce all that unnecessary white space.  \nl
+\item As before, we mustn't forget to close the file once we are done with it.\nl
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]\ft{Iteration with files}
+By using a loop we can iterate through the whole file line by line:
+\begin{FVerbatim}
+infile = open("input.txt", "r")
+for x in infile:
+  print(x)
+\end{FVerbatim}
+If we only wanted to read this file until we say a \command{4}, say, we could exit the \command{for} loop using \command{break}:\nl
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{Verbatim}[frame=single, fontsize=\small, label=check for equality]
+fin = open("input.txt", "r")
+for x in fin:
+    line = x.strip('\n')
+    print(line)
+    if (int(line) == 4):
+        break
+fin.close()
+\end{Verbatim}
+\end{column}
+\begin{column}{0.5\textwidth}  %%<--- here
+\begin{Verbatim}[frame=single, fontsize=\small, label=check for substring]
+fin = open("input.txt", "r")
+for x in fin:
+    print(x.strip('\n'))
+    if '4' in x:
+        break
+fin.close()
+\end{Verbatim}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+
+
+
+
+%\begin{frame}[fragile]\ft{Reading text from a file line by line}
+%
+%The {\tt <filename>.readline()} function reads a single line of the file.  Every time you call it, it will move to the next line.
+%
+%\begin{Verbatim}[xleftmargin=.5in]
+%infile = open("input.txt", "r")
+%print(infile.readline()) # prints the first line
+%print(infile.readline()) # prints the second line
+%\end{Verbatim}
+%
+%Alternatively, we could read every line using the {\tt <filename>.readlines()} function
+%\begin{Verbatim}[xleftmargin=.5in]
+%infile = open("input.txt", "r")
+%print(infile.readlines()) # not ideal way to view
+%\end{Verbatim}
+%Notice that {\tt readlines()} includes the end of line characters.
+%\end{frame}
+
+%
+%\begin{frame}[fragile]\ft{Reading text from a file line by line}
+%The {\tt read} functions will keep track of where it is in the file and pick up where it left off.  When it reaches the end of the file, {\tt read} will just return an empty string.\nl
+%
+%To locate where you are in the file, you can use
+%\begin{Verbatim}[xleftmargin=.5in]
+%infile = open("input.txt", "r") 
+%print(infile.read(5)) # prints first 5 characters
+%print(infile.read(5)) # prints the next 5 characters
+%
+%# see our current position in the file
+%print(infile.tell()) # returns 10
+%infile.close()
+%
+%\end{Verbatim}
+%% f.seek() will set your position: f.seek(0) will bring you back to the start of the file
+%\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Reading text from a file line by line}
+%To cycle through the lines of a text document we can use a loop.  This will only read one line at a time.\nl
+%We could get rid of that extra newline character using strip:
+It is worth mentioning that we can also cycle through the lines of text document using a \command{while} loop:
+%%infile = open("input.txt", "r")
+%for line in infile:
+%     print(line.strip('\n'))
+%infile.close()
+\vfill
+\begin{Verbatim}[frame=single, label = Using a for loop]
+infile = open("input.txt", "r")
+for line in infile:
+    print(line.strip('\n'))
+infile.close()
+\end{Verbatim}
+\vfill
+\begin{Verbatim}[frame=single, label = Using a while loop]
+infile = open("input.txt", "r")
+line = infile.readline()
+while line != "":
+    line = infile.readline()
+    print(line.strip('\n'))
+infile.close()
+\end{Verbatim}
+\vfill
+\end{frame}
+
+\begin{frame}[fragile]\ft{Reading text from a file line by line}
+To avoid writing programs which forget to close the file, we could also use \href{https://effbot.org/zone/python-with-statement.htm}{\tt with}\footnote{that link may make more sense after we cover {\tt try-except} statements}.  The \command{with} statement will automatically close the file after the suite is exited.  Hence we never have to write {\tt infile.close()}.\nl
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+# The following will auto-close file
+with open("input.txt", "r") as infile:
+     for line in infile:
+          print(line.strip('\n'))
+print(infile.close()) # returns True
+\end{Verbatim}
+\begin{block}{Tip:}
+The {\tt with} option is considered best practice as it automatically closes the file for us.
+\end{block}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]\ft{Writing to a Text File}
+\vfill
+Selecting the write (\verb|'w'|) mode will allow us to \emph{write} text to a file
+\vfill
+\begin{Verbatim}[frame=single]
+outfile = open("output.txt", "w")
+# writes the numbers 1 through 10 on new lines
+for n in range(1,11):
+    outfile.write(str(n) + "\n")
+# not written to final until we run the following:
+outfile.close() 
+\end{Verbatim}
+\vfill
+\begin{alertblock}{Warnings}
+\begin{enumerate}
+\item Python will try to overwrite the file {\tt output.txt} if it exists, otherwise, the file will be created.
+\item The contents are not written to file until we close it. 
+\item Numbers need to be converted to strings before writing.
+\end{enumerate}
+\end{alertblock}
+\vfill
+\end{frame}
+
+\begin{frame}[fragile]\ft{Writing to a Text File}
+The second warning outlined on the previous slide is yet another reason that the {\tt with} method is generally preferred. %N.B that the file (with I know call {\tt f} instead of {\tt outfile} will close automatically.
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+with open('output.txt', 'w') as fout:
+    for n in range(1,11):
+        fout.write(str(n) + "\n")
+\end{Verbatim}
+Notice how this method makes it impossible for us to forget to close a file.
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Writing to a Text File}
+ This will overwrite the file if it already exists, otherwise, it, creates a new file for writing.  The following will overwrite the contents of {\tt output.txt}:
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+with open("output.txt", "w") as f:
+    f.write("Test")
+\end{Verbatim}
+\vfill
+To create an empty file, we can use the \command{pass} command 
+\vfill
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+# creates an empty file
+with open("test2.txt", "w") as f:
+    pass
+\end{Verbatim}
+Another alternative for creating an empty file is:
+\vfill
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+open(filename, 'w').close()
+\end{Verbatim}
+\vfill
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Writing to a Text File}
+Like the \command{read} functions, \command{write} will remember its place within the document and will pick up where it left off:
+\vfill
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+with open("test.txt", "w") as fout:
+    fout.write("Test")
+    fout.write("Test again")
+\end{Verbatim}
+Test.txt file will contain:
+\begin{quote}
+TestTest again
+\end{quote}
+To include line breaks, we need to include the newline character \verb|\n|.
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+with open("test.txt", "w") as f:
+    f.write("Test")
+    f.write("\n Test again")
+\end{Verbatim}
+Test.txt file will contain:
+\begin{quote}
+Test\\
+Test again
+\end{quote}
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Writing to a Text File}
+Once we close the file however, we need to select the \emph{append} mode (\verb|'|\command{a}\verb|'|)  in order to add text to the end of the document. 
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+outfile = open("output.txt", "a")
+for n in range(11,20):
+    outfile.write(str(n) + "\n")
+outfile.close() 
+\end{Verbatim}
+\begin{itemize}
+\item As in the \command{w} (write) mode, the contents are not written to file until we close the file.
+\item  Note that, if the file does not exist, it creates a new file for writing. 
+\end{itemize}
+\end{frame}
+
+
+
+
+
+%\begin{frame}[fragile]\ft{}
+%\begin{Verbatim}[commandchars=\\\{\}]
+%\textcolor{brown}{test} this
+%\end{Verbatim}
+%\end{frame}
+
+
+\begin{frame}[fragile]\ft{Using {\tt split} for CSV files}
+A common type of file you may want to read into your program is a comma separated value (CSV) file.\nl
+We can read csv files by iterating over the file object and using \command{strip} and \command{split}:\nl
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+with open("data.csv", "r") as infile:
+    for line in infile:
+        line = line.strip(" \n")
+        fields = line.split(",")
+        for i in range(0,len(fields)):
+            fields[i] = fields[i].strip()
+        print(fields)
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Using {\tt split} for CSV files}
+\vfill
+In the code from the previous slide:
+\begin{itemize}
+\item \command{line} is a string (with the end of line character \verb|\n| removed)
+\item \command{fields} is a list containing the individual cell values for the corresponding row.
+\end{itemize}
+\vfill
+For the last row in our CSV file:
+\vfill
+\begin{Verbatim}[frame=single]
+>>> print(type(line))
+<class 'str'>
+>>> print(line)
+1.7702,1.1211,-0.6032,-0.6982,0.4066
+>>> print(type(fields))
+<class 'list'>
+>>> print(fields)
+['1.7702', '1.1211', '-0.6032', '-0.6982', '0.4066']
+\end{Verbatim}
+\vfill
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Using modules: {\tt csv} for CSV files}
+Alternatively, you can  use the \command{csv} module to read csv files:\nl
+
+By importing the module named {\tt csv}, we can now call the {\tt csv.reader} function (see more \href{https://docs.python.org/3/library/csv.html}{\bf here}).\nl
+
+A useful module/function in case you forget the name of your file is the \command{os.listdir()} to list all files in a directory.  
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+import os
+print(os.listdir("."))
+\end{Verbatim}
+We can also use the module {\tt pprint} (for pretty print) to make this output a little neater:
+\begin{Verbatim}[xleftmargin=.5in, frame=single]
+from pprint import pprint
+pprint(os.listdir("."))
+\end{Verbatim}
+\end{frame}
+
+
+% https://realpython.com/python-csv/
+\begin{frame}[fragile]\ft{Using modules: {\tt csv} for CSV files}
+%A module is a file containing a set of functions.  
+\begin{Verbatim}[xleftmargin=.1in,commandchars=\\\{\}, frame=single]
+\purple{import csv}
+with open("data.csv", "r") as infile:
+	\purple{csvfile = csv.reader(infile)}
+	for row in csvfile:
+		print(row)
+\end{Verbatim}
+\begin{itemize}
+\item \command{csvfile} is a \emph{reader object} we can iterate over in a for loop.
+\item Each iteration corresponds to a line from {\tt data.csv}.  
+\item Each \command{row} is a Python list of \emph{string} elements containing the data found by removing the delimiters.
+\end{itemize}
+
+%N.B. you can create your own  module under the file extension .py
+\begin{Verbatim}[frame=single, fontsize=\small]
+>>> print(type(csvfile))
+<class '_csv.reader'>
+>>> print(type(row))
+<class 'list'>
+>>> print(row)
+['1.7702', '1.1211', '-0.6032', '-0.6982', '0.4066']
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Using modules: {\tt csv} for CSV files}
+Remember that each element in this list is currently being treated as a string.  Before we do any calculations on this numeric values, we need to convert them using \command{float}.\nl
+
+\begin{Verbatim}[xleftmargin=.1in,commandchars=\\\{\}, frame=single]
+\purple{import csv}
+# only print the rows that start with a number> 1 
+with open("data.csv", "r") as infile:
+	\purple{csvfile = csv.reader(infile)}
+	for row in csvfile:
+		if float(row[0]) > 1:
+			print(row)
+\end{Verbatim}
+\end{frame}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+How many of the following statements are TRUE?
+\begin{enumerate}
+\item {{A Python file is automatically closed for you.
+}}
+\item {{If you use the {\tt with} syntax, Python will close the file for you.
+}}
+\item {{To read from a file, use {\tt w} when opening a file.
+}}
+\item {{The {\tt read()} method will read the entire file into a string.
+}} 
+\item {{You can use a for loop to iterate through all lines in a file.}} 
+\end{enumerate}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 0 
+\item 1
+\item 2
+\item 3
+\item 4
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+How many of the following statements are TRUE?
+\begin{enumerate}
+\item {\color<1->{red}	{A Python file is automatically closed for you.
+}}
+\item {\color<2->{sgreen}	{If you use the {\tt with} syntax, Python will close the file for you.
+}}
+\item {\color<3->{red}	{To read from a file, use {\tt w} when opening a file.
+}}
+\item {\color<4->{sgreen}	{The {\tt read()} method will read the entire file into a string.
+}} 
+\item {\color<5->{sgreen}	{You can use a for loop to iterate through all lines in a file.}} 
+\end{enumerate}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 0 
+\item 1
+\item 2
+\item \tans{5}{3} 
+\item 4
+\end{enumerate}
+\end{multicols}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{frame}\ft{Try it}
+\begin{example}
+\begin{enumerate}
+\item  Write a Python program that writes to the file test.txt the numbers from 20 to 10 on its own line in descending order.
+
+\item Write a Python program that reads your newly created test.txt file line by line and only prints out the value if it is even.
+
+\item Print out the contents of the census file  \href{https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000501}{provinces.csv} available on Canvas \label{provinces} (You may use the {\tt csv} module).
+
+\item Try to print out only the provinces with population$ > 1 $ million people in 2015 from the data in \ref{provinces}.  Hint: You will need to remove the commas from the numbers (eg. 44214 instead of 44,214) using the {\tt replace()} function.
+
+\end{enumerate}
+\end{example}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}\ft{Handling Errors and Exceptions}
+An \define{exception} is an error situation that must be handled or the program will fail. \nl
+\define{Exception handling} is how your program deals with these errors.
+Examples:
+
+\begin{description}
+\item[ZeroDivisionError] Attempting to divide by zero
+\item[IndexError] An array index that is out of bounds
+\item[TypeError] operation is applied to an object of an incorrect type.
+\item[NameError]  when an object could not be found
+\item[SyntaxError] when a syntax error is encountered
+%\item A specified file that could not be found
+%\item A requested I/O operation that could not be completed normally
+%\item Attempting to follow a null or invalid reference
+%\item Attempting to execute an operation that violates some kind of security measure
+\end{description}
+See a list of all errors \href{https://www.tutorialsteacher.com/python/error-types-in-python}{here}.
+\end{frame}
+
+\begin{frame}[fragile]
+Example taken from \href{https://docs.python.org/3/tutorial/errors.html}{here}\\
+\begin{allintypewriter} { \small
+$>>>$ 10 * (1/0)\newline
+Traceback (most recent call last):\newline
+  File "<stdin>", line 1, in <module>\newline
+\red{ZeroDivisionError}: division by zero\newline
+$>>>$ 4 + spam*3\newline
+Traceback (most recent call last):\newline
+  File "<stdin>", line 1, in <module>\newline
+\red{NameError}: name 'spam' is not defined\newline
+$>>>$ '2' + 2\newline
+Traceback (most recent call last):\newline
+  File "<stdin>", line 1, in <module>\newline
+\red{TypeError}: Can't convert 'int' object to str implicitly}
+\end{allintypewriter}
+
+\end{frame}
+
+
+\begin{frame}\ft{The {\tt try-except} statement}
+The \command{try-except} statement will handle an exception that may occur in a  block of statements:\nl
+
+Execution flow:
+\begin{itemize}
+\item The statements in the try block are executed.
+\item If no exception occurs:
+\begin{itemize}
+\item If there is an else clause, it is executed.
+\item Continue on with next statement after try.
+\end{itemize}
+\item If an exception occurs:
+\begin{itemize}
+\item Execute the code after the except.
+\end{itemize}
+\item If the optional \command{finally} block is present, it is always executed regardless if there is an  exception or not.
+\item Keyword \command{pass} is used if any block has no statements.
+\end{itemize}
+
+For more information see \href{https://docs.python.org/3/tutorial/errors.html}{click here}
+\end{frame}
+%References: https://docs.python.org/3/tutorial/errors.html
+%
+%Notes:
+%May list multiple exceptions as a tuple: except (RuntimeError, TypeError, NameError):
+%May catch all exceptions by just putting except:
+
+\begin{frame}[fragile]\ft{Python Exceptions Block}
+The general syntax is 
+\begin{Verbatim}[xleftmargin=0.1in, commandchars=\\\{\}, frame=single] 
+\green{try:}
+    \green{# try something that may produce an exception}
+\purple{except ErrorName:}
+    \purple{# only executed if an ErrorName exception}
+    \purple{# is raised above}
+# the following lines (else and finally clauses) 
+# are optional:
+\blue{else:}
+    \blue{# only executed if no exception}
+\red{finally:}
+    \red{# always executed}
+\end{Verbatim}
+{\bf N.B.} A try statement may have more than one except clause, to specify handlers for different exceptions. However, at most one handler will be executed.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]
+This could be useful in the context of reading files: If we try to read a file that does not exist, we need not have our entire program fail, and try to catch this exception in the following manner:
+\begin{Verbatim}[frame=single, xleftmargin=0.5in]
+filename = 'nonexistingfile.txt'
+try:
+    with open(filename, 'r') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            pass #do stuff here
+except FileNotFoundError:
+    print("Could not read file:", filename)
+\end{Verbatim}
+If the {\sf nonexistingfile.txt} doesn't live in our current working directory the above produces: \verb|Could not read file: nonexistingfile.txt|.
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}[fragile]\ft{Python Exceptions Block}
+
+\begin{Verbatim}[xleftmargin=.5in, commandchars=\\\{\}] 
+\green{try:}
+    \green{# try block, exit if error}
+    \green{num = int(input("Enter a number:"))}
+    \green{print("You entered:",num)}
+\purple{except ValueError:}
+    \purple{# only executed if exception}
+    \purple{print("Error: Invalid number")}
+\blue{else:}
+    \blue{# only executed if no exception}
+    \blue{print("Thank you for the number")}
+\red{finally:}
+    \red{# always executed}
+    \red{print("Always do finally block")}
+\end{Verbatim}
+If the input has not been a valid integer, we will generate (raise) a {\tt ValueError}.
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]\ft{Python Exceptions Block}
+We can be more generic and catch any error using the following
+\begin{Verbatim}[xleftmargin=0.1in, commandchars=\\\{\}] 
+\green{try:}
+    \green{# try something that may produce an exception}
+\purple{except:}
+    \purple{# only executed if an exception is raised above}
+\blue{else:}
+    \blue{# only executed if no exception}
+\red{finally:}
+    \red{# always executed}
+\end{Verbatim}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+  What is the output of the following code if we enter 10?
+\begin{Verbatim}
+try:
+    num = int(input("Enter an integer:"))
+    print(num)
+except ValueError:
+    print("Invalid")
+else:
+    print("Thanks")
+finally:
+    print("Finally")
+\end{Verbatim}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 10 \newline\newline
+\item 10\newline Finally \newline
+\item Invalid\newline\newline
+\item 10 \newline Thanks \newline
+\item 10 \newline Thanks \newline Finally
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+  What is the output of the following code if we enter 10?
+\begin{Verbatim}
+try:
+    num = int(input("Enter an integer"))
+    print(num)
+except ValueError:
+    print("Invalid")
+else:
+    print("Thanks")
+finally:
+    print("Finally")
+\end{Verbatim}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 10 \newline\newline
+\item 10 \newline Finally \newline
+\item Invalid\newline\newline
+\item 10 \newline Thanks \newline
+\item \answer{10} \newline \answer{Thanks} \newline \answer{Finally}
+\end{enumerate}
+\end{multicols}
+  \end{block} 
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+  What is the output of the following code if we enter "{\tt hat}"?
+\begin{Verbatim}
+try:
+    num = int(input("Enter an integer"))
+    print(num)
+except ValueError:
+    print("Invalid")
+else:
+    print("Thanks")
+finally:
+    print("Finally")
+\end{Verbatim}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item hat \newline\newline
+\item Invalid\newline  \newline
+\item Invalid\newline Finally \newline
+\item hat \newline Thanks \newline Finally
+\item Finally \newline  \newline 
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+  What is the output of the following code if we enter "{\tt hat}"?
+\begin{Verbatim}
+try:
+	num = int(input("Enter num:"))
+	print(num)
+except ValueError:
+    print("Invalid")
+else:
+    print("Thanks")
+finally:
+    print("Finally")
+\end{Verbatim}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item hat \newline\newline
+\item Invalid\newline  \newline
+\item \answer{Invalid}\newline \answer{Finally} \newline
+\item hat \newline Thanks \newline Fianlly
+\item Finally \newline  \newline 
+\end{enumerate}
+\end{multicols}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Raising Errors}
+\begin{itemize}
+\item Note that we can always generate an  error using the {\tt raise} statement.\nl
+\begin{FVerbatim}
+def raiseHell():
+  try:
+    raise ValueError
+  except ValueError:
+    print("You raised Hell!")
+\end{FVerbatim}
+Calling this function produces:
+\begin{FVerbatim}
+>>> raiseHell()
+You raised Hell!
+\end{FVerbatim}
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}\ft{Try it: Python Exceptions}
+\begin{example}
+ Write a Python program that reads two numbers and converts them to integers, prints both numbers, and then divides the first number by the second number and prints the result. 
+\begin{itemize}
+\item If we get an exception {\tt ValueError} when converting to an integer, print {\tt Invalid}.
+\item If we get a {\tt ZeroDivisionError}, print {\tt Cannot divide by 0!}
+\end{itemize}
+\end{example}
+\end{frame}
+
+
+
+
+\begin{frame}\ft{Internet Terminology}
+\vfill
+%https://www.webopedia.com/DidYouKnow/Internet/ipv6_ipv4_difference.html
+An \define{Internet Protocol (IP)} address is an identifier for %a computer on the Internet.
+any device -- including computers, smartphones and game consoles -- that connects to the Internet.% requires an address.
+\vfill
+\begin{itemize}
+\item IP version 4 (IPv4) address comprise 32 bits: 4 numbers in the range of 0 to 255.  The numbers are separated by dots. Eg: 
+$${\tt 142.255.0.1}$$
+\vfill
+\end{itemize}
+While IPv4 accommodates over 4 billion addresses, the number of unused IPv4 addresses will eventually run out.  For that reason, Internet Protocol version 6 (IPv6) is being deployed %as a successor to IPv4 to fulfill the need for more Internet addresses.
+(which can accommodate 340 billion billion billion billion, addresses)
+\vfill
+\begin{itemize}
+\item IP version 6 (IPv6) address have 128 bits and are % 16 numbers from 0 to 255 
+represented as a series of eight 4-character hexadecimal numbers.  Eg: 
+$${\tt 2002:CE57:25A2:0000:0000:0000:CE57:25A2}$$
+% https://quizlet.com/158770659/cosc-122-internet-flash-cards/
+\vfill
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}\ft{Internet Terminology}
+\vfill
+ A \define{domain} is a related group of networked computers. A \define{domain name} is a text name for computer(s) that are easier to remember. 
+\begin{itemize}
+\vfill
+\item Eg. \emph{facebook.com} is the domain name for the IP address {\tt 31.13.80.36}
+\vfill
+\item Domain names are organized \emph{hierarchically}.  The most general part of the hierarchy is at the end of the name. 
+\vfill
+\item Example:  people.ok.ubc.ca:
+ca = Canadian domain, ubc = University of British Columbia, ok = Okanagan campus, people = name of computer/server on campus 
+\vfill
+\end{itemize}
+Read more about this in this three part series \href{https://www.spiria.com/en/blog/internet/understanding-the-internet-part-1-ip-addressing-and-ports/}{part 1}, \href{https://www.spiria.com/en/blog/internet/understanding-the-internet-part-2-domain-names/}{part 2}, \href{https://www.spiria.com/en/blog/internet/understanding-the-internet-part-3-practical-applications/}{part 3}.
+\vfill
+\end{frame}
+
+%% https://whatismyipaddress.com/domain-name
+% There are a lot of us on the internet. No two of us can have the same number.
+
+% If the Internet is like a phone book, and a web page is like a physical building, the URL would be the precise street address of that building.  The IP address would be like the car that travels to its destination.
+
+% 	The universal resource locator, or URL, is an entire set of directions, and it contains extremely detailed information. 
+% The domain name is one of the pieces inside of a URL.  It is also the most easily recognized part of the entire address.
+
+% https://www.networkworld.com/article/3268449/what-is-dns-and-how-does-it-work.html
+
+% https://www.spiria.com/en/blog/internet/understanding-the-internet-part-1-ip-addressing-and-ports/
+
+% external ip address - one attatched with your house
+% internal ip address - one attatched with the devices using the extermal ip in the house * internet never sees this, only used by our router
+
+% your home ip address is not fixed and can change overnight (big companies, however, often have static IP addresses)
+
+% https://www.youtube.com/watch?time_continue=28&v=sDmErvLJSnc
+
+\begin{frame}[fragile]\ft{Internet terminology basics}
+\vfill
+A \define{uniform resource locator} (URL) is an address of an item on the Internet. A URL has three parts:
+\begin{enumerate}
+\vfill
+\item Protocol: \url{http://} Hypertext Transfer Protocol: Tells the computer how to handle the file
+\item Server computer's domain name or IP address
+\item Item's path and name:
+Tells the server which item (file, page, resource) is requested and where to find it.
+\end{enumerate}
+\vfill
+Example:
+\begin{Verbatim}[xleftmargin=.5in,commandchars=\\\{\}]
+\textcolor{brown}{http://}\green{people.ok.ubc.ca}\purple{/ivrbik/teaching.html}
+\end{Verbatim}
+ \textcolor{brown}{http protocol} \green{server domain name} \purple{location of file/resource on server}
+ \vfill
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[fragile]\ft{Accessing ({\tt GET}) Web Sites via URL with Python}
+{\bf urllib} is a package that collects several modules for working with URLs: 
+\begin{description}
+\item[urllib.request] for opening and reading URLs, more \href{https://docs.python.org/3/library/urllib.request.html#module-urllib.request}{here}
+\item[urllib.parse] for parsing URLs; more  \href{https://docs.python.org/3/library/urllib.parse.html#module-urllib.parse}{here}
+\end{description}
+
+\begin{Verbatim}[xleftmargin=.1in,commandchars=\\\{\}]
+\purple{import urllib.request}
+# dont forget the http://
+loc="http://google.com"
+\red{site = urllib.request.urlopen(loc)}
+contents = site.read()
+print(contents)
+\red{site.close()}
+\end{Verbatim}
+\end{frame}
+  
+
+\begin{frame}[fragile]\ft{Engine Search with Python }
+%{\tt Request} objects also allow us to:
+%\begin{itemize}
+%\item pass data to be sent to the server
+%\item pass ``header'' containing metadata 
+%\end{itemize}
+
+The URL (that we have input as a string) must be properly URL encoded.\nl 
+Rather than learning the URL encoding language, we can use \command{urllib.parse.urlencode} to do it for us.\nl% encode to url language\nl %(eg. code spaces as \%20)
+
+{\bf Notes:}
+\begin{itemize}
+\item \href{https://requests.readthedocs.org/en/master/}{Requests} package is even higher-level and easy to use\nl
+\item \command{urllib.request.urlopen} could also take a {\tt Request} object (like a .txt document which can be {\tt read}) as an argument.\nl
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+To get a shallow understanding of what is going on under the hood, go to \url{www.ask.com} and search (or query) \verb|"data analysis"|.\nl
+You'll get a new URL that might look something like this:\nl
+\begin{allintypewriter}
+\quad https://www.ask.com/web?\red q=data+analysis\nl
+\end{allintypewriter}
+
+In the above the \red{\tt q} is a parameter, with the input \verb|data+analysis|\nl
+
+We will save this information in  a python dictionary (called {\tt values} on the next slide) and pass it to the urlencoder:
+\begin{FVerbatim}
+>>> values = {'q':'data analysis'}
+>>> data = urllib.parse.urlencode(values)
+>>> print(data)
+q=data+analysis
+>>> data = data.encode('utf-8') 
+>>> print(data)
+b'q=data+analysis'
+\end{FVerbatim}
+
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Engine Search with Python ({\sf POST} request)}
+ %commandchars=\\\{\}]
+\begin{Verbatim}[fontsize=\small, commandchars=\\\{\} ]
+import urllib.parse
+import urllib.request
+
+url = 'https://www.ask.com/web'
+# Build and encode data
+values = \{'q':'data analysis'\} 
+
+data = urllib.parse.urlencode(values)
+data = data.encode('utf-8') 
+req = urllib.request.Request(url, data)
+with urllib.request.urlopen(req) as response:
+    page = response.read()
+    print(page)
+\end{Verbatim}
+
+%\begin{Verbatim}[fontsize=\small, commandchars=\\\{\} ]
+%import urllib
+%url = "http://www.google.com/search?hl=en&q=data+analysis" 
+%headers=\{'User-Agent':'Mozilla/5.0 (Windows NT 6.1)'\} 
+%\purple{request = urllib.request.Request(url,None,headers)}
+%response = urllib.request.urlopen(request)
+%data = response.read()
+%data = data.decode() # Convert from Unicode to ASCII print(data)
+%response.close()
+%\end{Verbatim}
+
+\end{frame}
+
+
+\begin{frame}
+\begin{itemize}
+\item Right now we are just looking at the source and the content is in a form that is not very useful to us.\nl
+\item Our browser typically does the heavy lifting in order to convert that mess to something readable.\nl
+\item In the next lecture we'll see some useful tools for parsing though this data to extract the useful information from websites.
+\end{itemize}
+{\bf Notes:}
+\begin{itemize}
+\item \href{https://www.pythonforbeginners.com/beautifulsoup/beautifulsoup-4-python}{BeautifulSoup} library to make easier to extract information from HTML pages.\end{itemize}
+
+\end{frame}
+
+
+
+
+%\begin{frame}[fragile]\ft{Sending data ({\tt PUT}) to URL with Python}
+%%commandchars=\\\{\}]
+%
+%
+%\begin{Verbatim}[fontsize=\small, commandchars=\\\{\} ]
+%import urllib.parse
+%import urllib.request
+%
+%url = 'http://data301.ok.ubc.ca/ivrbik/tomcat/provinceState.jsp'
+%headers=\{'User-Agent':'Mozilla/5.0 (Windows NT 6.1)'\} 
+%# Build and encode data
+%values = \{'country' : 'US'\}
+%data = urllib.parse.urlencode(values)
+%data = data.encode('ascii')
+%req = urllib.request.Request(url, data, headers)
+%with urllib.request.urlopen(req) as response:
+%   page = response.read()
+%   print(page)
+%\end{Verbatim}
+%Note: {\bf BeautifulSoup} library to make easier to extract information from HTML pages.
+%\end{frame}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+How many of the following statements are TRUE?
+\begin{enumerate}
+\item {{An IPv4 address has 4 numbers between 0 and 256 inclusive.}}
+\item {{A domain name is hierarchical with most specific part at the end.}}
+\item {{Typically, a URL will reference more than one resource/item.}}
+\item {{Python uses the file module for accessing URLs.}} 
+\end{enumerate}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 0 
+\item 1
+\item 2
+\item 3
+\item 4
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+How many of the following statements are TRUE?
+\begin{enumerate}
+\item {\color<1->{red}	{An IPv4 address has 4 numbers between 0 and 25}\green{5} {inclusive.}}
+\item {\color<2->{red}	{A domain name is hierarchical with most specific part at the end.}}
+\item {\color<3->{red}	{Typically, a URL will reference more than one resource/item.}}
+\item {\color<4->{red}	{Python uses the file module for accessing URLs.}} 
+\end{enumerate}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item \tans{4}{0} 
+\item 1
+\item 2
+\item 3
+\item 4
+\end{enumerate}
+\end{multicols}
+  \end{block} 
+\end{frame}
+
+
+\begin{frame}\ft{Try it}
+\begin{example}
+\begin{enumerate}
+\item  Write a Python program that connects to any web page and prints its contents.
+\item Write a Python program that connects to: 
+\url{http://www.sharecsv.com/dl/ab69f200ce5071b27e4af626da293d27/province_population.csv}
+and outputs the CSV data.
+Modify your program to print each province and its 2015 population in descending sorted order. (See next slide for hint)
+\end{enumerate}
+\end{example}
+\end{frame}
+
+\begin{frame}{Advanced sorting}
+\begin{itemize}
+\item Each element in {\tt provinces} list is yet another list containing the province's population and name
+\vfill
+\item  Calling {\tt sort} on this list will sort according to that \textit{first} element (i.e. population)
+\vfill
+\item For advanced sorting, we could also specify a function as a second argument in {\tt sort}.  General syntax:
+\begin{center}
+\textit{<list>}{\tt .sort(reverse=\textit{<True/False>}, key= myFunc)}
+\end{center}
+\vfill
+\item For more on this topic see \href{https://www.w3schools.com/python/ref\_list\_sort.asp}{w3schools} and \href{https://www.geeksforgeeks.org/python-list-sort/}{GeeksforGeeks}
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\end{document}
+

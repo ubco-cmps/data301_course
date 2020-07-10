@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>DATA 301 - Lab 4</title>
+<link href="../assign.css" type=text/css rel=stylesheet>
+</head>
+
+<body>
+
+<h1>DATA 301 - Introduction to Data Analytics
+<br/>Lab 4: Creating and Querying a Relational Database in Microsoft Access</h1>
+
+<hr>
+
+<p>In this lab, we will experiment with relational databases and SQL.</p>
+
+<h3>Objectives</h3>
+
+<ol>
+<li>Create a table using the <tt>CREATE TABLE</tt> statement.</li>
+<li>Use <tt>INSERT</tt>, <tt>UPDATE</tt>, and <tt>DELETE</tt> statements to insert, update, and delete data.</li>
+<li>Write <tt>SELECT</tt> SQL queries that use ordering, filtering, <tt>GROUP BY</tt>, and aggregate functions for data analysis.</li>
+</ol>
+
+<h3>Analysis Problem and Goals</h3>
+
+<p>This scenario involves analyzing the real-world, historical business sales data from <a href="http://research.chicagobooth.edu/kilts/marketing-databases/dominicks">Dominick's Finer Foods</a> using SQL databases.  Our data set consists of the sales for the top 20 products from the Cookie category for 5 stores from 1992 to 1996.  The data set containing the item sales data is available as an <a href="lab4.accdb">Access Database</a> as well as an <a href="lab4.sql">SQL script</a> for loading the data set into the database.  In this lab, we will add, insert, update, delete, and query this data using Microsoft Access.
+</p>
+
+
+<h3>Marking and Evaluation</h3>
+
+<p>Marks are awarded by <em>precisely</em> following these requirements:
+
+<ul>
+<li><strong><tt>CREATE TABLE</tt> statement (2 marks) - </strong>download the starter <a href="lab4.accdb">Lab 4 Access Database</a>.  Using the Data Definition view, create a table with the following information:
+	<ul>
+		<li>Table name: <tt>vendor</tt>  Fields:</li>
+		<li><tt>id</tt> with data type integer that is the key</li>
+		<li><tt>name</tt> with data type holding up to 50 characters</li>
+		<li><tt>address</tt> with data type holding up to 60 characters</li>
+		<li><tt>state</tt> with data type holding exactly 2 characters</li>
+		<li><tt>upcprefix</tt> with data type holding exactly 5 characters</li>
+		<li><tt>balance</tt> with data type that can hold a currency (money field with up to 10 total digits and 2 decimal places)</li>
+		<li><tt>createddate</tt> with data type that is a date</li>
+	</ul>
+</li>
+
+<li><strong><tt>INSERT</tt> statement (2 marks) - </strong>insert the following rows into the <tt>vendor</tt> table:
+	<ul>
+		<li><tt>(1, 'UBC Cookie Company', '3333 University Way', 'BC', '00001', 955463.77, '2016-01-02')</tt></li>
+		<li><tt>(2, 'Salerno Foods', '123 5th Street', 'MA', '14700', 150000.00, '2016-01-04')</tt></li>
+		<li><tt>(3, 'Keebler Company', 'Battle Creek', 'MI', '30100', 255000.00, '2016-01-08')</tt></li>
+		<li><tt>(4, 'Good Bakery', '45 Freedom Road', 'TX', '38281', 123472.99, '2016-01-23')</tt></li>
+		<li><tt>(5, 'Nabisco', 'East Hanover', 'NJ', '44000', 0, '2016-01-11')</tt></li>
+		<li><tt>(6, 'Matt's Cookies', '482 North Milwaukee Avenue', 'IL', '79746', 999.99, '2016-01-15')</tt></li>
+		<li><strong>Note:</strong> If a string has a single quote (<tt>'</tt>) in it, you must escape it by putting another single quote in front of it.  Example: <tt>Joe's</tt> would be <tt>'Joe''s'</tt>.</li>
+	</ul>
+</li>
+
+<li><strong><tt>UPDATE</tt> statement (2 marks) - </strong>write the following <tt>UPDATE</tt> statements:
+	<ol>
+		<li>Update all vendor balances to increase them by 20%.</li>
+		<li>Update the vendor name to <tt>'Cookie Company'</tt>, created date to <tt>'2016-01-25'</tt>, and state to <tt>'CA'</tt> for vendor with <tt>id = 1</tt>.</li>
+	</ol>
+</li>
+
+<li><strong><tt>DELETE</tt> statement (2 marks) - </strong>write the following DELETE statements:
+	<ol>
+		<li>Delete all vendors in the state <tt>'BC'</tt>.  Note: This will not delete any rows.</li>
+		<li>Delete vendor with <tt>id = 1</tt>.</li>
+	</ol>
+</li>
+
+<li><strong><tt>SELECT</tt> statement (12 marks - 2 marks for each query) - </strong>write the following queries as <tt>SELECT</tt> statements:
+	<ol>
+		<li>Return the sales records (all fields) for <tt>store 12</tt> where the <tt>move</tt> is greater than <tt>50</tt>.</li>
+		<li>Return the vendor <tt>name</tt>, <tt>address</tt>, and <tt>balance</tt> for vendors created after January 3, 2016.  Sort rows by <tt>balance</tt> descending.</li>
+		<li>Return the vendor <tt>id</tt>, vendor <tt>name</tt>, product <tt>UPC</tt> code, <tt>move</tt>, and sales (<tt>price * move/qty</tt>) for each product sold by <tt>store 100</tt> in <tt>1995</tt>.  Sort by <tt>sales</tt> descending.</li>
+		<li>Return the total sales (<tt>price*move/qty</tt>) for each product.  The output should have the UPC of a product and the total sales of that product for all stores and for all time.</li>
+		<li>Return for each vendor the total sales of their products at each store between the years <tt>1992</tt> and <tt>1995</tt> (inclusive).  Sort by total sales descending.  The output should have the vendor name, store number, and total sales.</li>
+		<li>Return for each store and product, the total sales, gross profit (<tt>price*move/qty*profit/100</tt>), count of weekly sales records, and average move amount of the product at that store.  Only show data for vendors with a <tt>name > 'H'</tt>. Sort by gross profit descending.  The output should have the store number, product UPC, total sales, gross profit, count of records, and average move volume.
+		<br><strong>Note:</strong> To format the output as a currency, the syntax is: <tt>format(price, 'Currency')</tt>.  <a href="http://www.techonthenet.com/access/functions/string/format.php">Click for more info</a></li>
+	</ol>
+</li>
+
+</ul>
+
+</p>
+
+<p>When complete, submit your Access file named <strong>lab4_(yourstudentnum).accdb</strong> (e.g. <strong>lab4_11111111.accdb</strong>) and a text file containing all your SQL statements called <strong>lab4.txt</strong> (e.g. <strong>lab4_11111111.txt</strong>)  using Connect.</p>
+
+
+<h3>Screenshots</h3>
+
+<h4>Query 1</h4>
+
+<img src="img/lab4_query1.png" width="800">
+
+<h4>Query 2</h4>
+
+<img src="img/lab4_query2.png" width="800">
+
+<h4>Query 3</h4>
+
+<img src="img/lab4_query3.png" width="800">
+
+<h4>Query 4</h4>
+
+<img src="img/lab4_query4.png" width="800">
+
+<h4>Query 5</h4>
+
+<img src="img/lab4_query5.png" width="800">
+
+<h4>Query 6</h4>
+
+<img src="img/lab4_query6.png" width="800">
+
+<hr>
+<img src="../../../../images/go-upwd.gif" alt="*"  align="top" height="14" width="14">
+        <a href="../index.html">Home</a>
+<hr>
+
+</body>
+</html>

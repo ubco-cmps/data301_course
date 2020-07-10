@@ -1,0 +1,2055 @@
+\documentclass[xcolor=svgnames, colorlinks]{beamer}
+%\documentclass[xcolor=svgnames, ]{beamer}
+
+%\includeonlyframes{current}
+
+\usepackage[utf8]    {inputenc}
+\usepackage[T1]      {fontenc}
+\usepackage[english] {babel}
+
+\usepackage{amsmath,amsfonts,graphicx}
+\usepackage{beamerleanprogress}
+\usepackage{xcolor}
+\usepackage{soul}
+%\usepackage{verbatim}
+\usepackage{multicol}
+\usepackage{tikz} 
+\usepackage[export]{adjustbox}
+\usepackage{array}
+\usepackage{fancyvrb}
+
+\setbeamertemplate{theorems}[numbered] 
+ 
+\definecolor{iyellow}{RGB}{255, 162, 23}
+\definecolor{sgreen}{RGB}{118, 191, 138}
+
+\newcommand{\yellow}[1]{\textcolor{iyellow}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{ForestGreen}{#1}}
+\newcommand{\blue}[1]{{\textcolor{blue}{#1}}}
+\newcommand{\purple}[1]{{\textcolor{purple}{#1}}}
+\newcommand{\orange}[1]{{\textcolor{orange}{#1}}}
+\newcommand{\bblue}[1]{\textcolor{SteelBlue!90!gray}{#1}} % beamer blue
+\newcommand{\tans}[2]{\textbf<#1>{\textit<#1>{{\color<#1>{iyellow}{#2}}}}}
+
+\newcommand{\eol}{\\[1em]\pause}
+\newcommand{\nl}{\\[1em]}
+\newcommand{\define}[1]{\textbf{\textcolor{orange}{#1}}}
+\newcommand{\answer}[1]{\textit{\textbf{\textcolor{iyellow}{#1}}}}
+\newcommand{\command}[1]{\texttt{\textbf{\textcolor{DarkMagenta}{#1}}}}
+\newcommand{\ipic}[2]{\includegraphics[width={#2}\textwidth]{#1}}
+\newcommand{\cell}[1]{{\sf \textbf{\textcolor{DarkMagenta}{#1}}}}
+\newcommand{\ra}{$\rightarrow$}
+
+\newenvironment{allintypewriter}{\ttfamily}{\par}
+\newcommand{\ft}[1]{\frametitle{#1}}
+\usepackage{fancyvrb}
+
+\usepackage{upquote,textcomp}
+
+% https://tex.stackexchange.com/questions/182476/how-do-i-center-a-boxed-verbatim/182479
+\newsavebox{\FVerbBox}
+\newenvironment{FVerbatim}
+ {\VerbatimEnvironment
+  \begin{center}
+  \begin{lrbox}{\FVerbBox}
+  \begin{BVerbatim}}
+ {\end{BVerbatim}
+  \end{lrbox}
+  \fbox{\usebox{\FVerbBox}}
+  \end{center}}
+  
+
+\newcommand{\bs}{$\backslash$}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+
+\newcommand*\keystroke[1]{%
+  \tikz[baseline=(key.base)]
+    \node[%
+      draw,
+      fill=white,
+      drop shadow={shadow xshift=0.25ex,shadow yshift=-0.25ex,fill=black,opacity=0.75},
+      rectangle,
+      rounded corners=2pt,
+      inner sep=1pt,
+      line width=0.5pt,
+      font=\scriptsize\sffamily
+    ](key) {#1\strut}
+  ;
+}
+
+\title
+  [Data 301 Data Analytics\hspace{2em}]
+  {Data 301 Data Analytics\\
+Python II}
+
+\author
+  [Dr.\ Irene Vrbik]
+  {Dr.\ Irene Vrbik}
+
+\date
+  {Term 1, 2019}
+
+\institute
+  {University of British Columbia Okanagan \newline irene.vrbik@ubc.ca}
+
+
+\graphicspath{{img/}}
+
+\begin{document}
+
+\maketitle
+
+\setbeamersize{description width=0.57cm} % to have less indent with the description environment
+
+
+\setcounter{theorem}{16}
+
+
+
+
+\begin{frame}[fragile]\ft{Decisions}
+\define{Decisions} allow the program to perform different actions based on  conditions.  Python decision syntax:
+\ipic{if}{0.9}
+\begin{itemize}
+\item The statement after the if condition is only performed if the condition is True.
+\item If there is an else, the statement after the else is done if condition is False.
+\item Indentation is important!  Remember the colon!
+\begin{verbatim}
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Decisions if/elif Syntax}
+If there are more than two choices, use the {\tt if/elif/else} syntax:
+\begin{columns}[T] % align columns
+\begin{column}{.4\textwidth}
+\begin{verbatim}
+if condition:
+    statement
+elif condition:
+    statement
+elif condition:
+    statement
+else:
+    statement
+\end{verbatim}
+\end{column}%
+
+\begin{column}{.4\textwidth}
+\begin{verbatim}
+if n == 1:
+    print("one")
+elif n == 2:
+    print("two")
+elif n == 3:
+    print("three")
+else:
+    print("Too big!")
+print("Done!")
+\end{verbatim}\end{column}%
+\end{columns}
+\vfill
+\begin{alertblock}{}
+Note that there can be multiple {\tt elif} statements but there can only be up to one {\tt else} statement.
+\end{alertblock}
+\end{frame}
+%Note: No switch statement like other languages but there are approaches based on dictionaries (hash tables) that can be used.
+
+
+
+\begin{frame}[fragile]\ft{Decisions if/elif Syntax}
+Once a condition is met, no subsequent conditions are checked:
+\begin{Verbatim}[frame=single,numbers=left]
+n = 1
+if n == 1:
+    print("one")
+elif n>0: # this condition is never checked since 
+    # the condition on line 2 has already been satisfied
+    print("positive number")
+elif n == 3:
+    print("three")
+else:
+    print("Too big!")
+print("and Done!") #  not part of the if statement
+\end{Verbatim}
+The above returns:
+\begin{Verbatim}[frame=single]
+one
+and Done!
+\end{Verbatim}
+
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Decisions if/elif Syntax}
+Once a condition is met, no subsequent conditions are checked:
+\begin{Verbatim}[frame=single,numbers=left]
+n = 3
+if n == 1:
+    print("one")
+elif n>0: 
+    print("positive number")
+elif n == 3: # this condition is never checked since 
+    # the condition on line 4 has already been satisfied
+    print("three")
+else:
+    print("Too big!")
+print("and Done!") #  not part of the if statement
+\end{Verbatim}
+The above returns:
+\begin{Verbatim}[frame=single]
+positive number
+and Done!
+\end{Verbatim}
+
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]\ft{Decision Block Syntax}
+Statements executed after a decision in an {\tt if} statement are indented for readability. This indentation is also how Python knows which statements are part of the block of statements to be executed.
+\begin{itemize}
+\item If you have more than one statement, make sure to indent them.  Be consistent with either using tabs or spaces.  Do not mix them!
+\end{itemize}
+\begin{itemize}
+\item
+\begin{verbatim}
+if age > 19 and name > "N":
+    print("Not a teenager")
+    print("Name larger than N")
+else:
+    print("This is statement #1")
+    print(" and here is statement #2!")
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Decisions if/elif Syntax}
+Check out the difference for {\tt age = 20}:
+\begin{columns}[T] % align columns
+\begin{column}{.4\textwidth}
+\begin{Verbatim}
+age = 20
+if age > 19:
+    print("Not a teenager")
+    print("Sorry")
+else:
+    print("You're young")
+    print("ID checked")
+\end{Verbatim}
+The above returns:
+\begin{Verbatim}[frame=single]
+Not a teenager
+Sorry
+\end{Verbatim}
+\end{column}%
+
+\begin{column}{.4\textwidth}
+\begin{Verbatim}
+age = 20
+if age > 19:
+    print("Not a teenager")
+    print("Sorry")
+else:
+    print("You're young")
+print("ID checked")
+\end{Verbatim}
+The above returns:
+\begin{Verbatim}[frame=single]
+Not a teenager
+Sorry
+ID checked
+\end{Verbatim}
+
+\end{column}%
+\end{columns}
+\end{frame}
+%Note: No switch statement like other languages but there are approaches based on dictionaries (hash tables) that can be used.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+What is the output of the following code?
+\begin{verbatim}
+    n = 3
+    if n < 1:
+        print("one")
+    elif n > 2:
+        print("two")
+    elif n == 3:
+        print("three")
+\end{verbatim}
+
+\begin{enumerate}[A)]
+\item {{nothing}}
+\item {{one}}
+\item {{two}}
+\item {{three}} 
+\item {{error}}
+\end{enumerate}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+What is the output of the following code?
+\begin{verbatim}
+    n = 3
+    if n < 1:
+        print("one")
+    elif n > 2:
+        print("two")
+    elif n == 3:
+        print("three")
+\end{verbatim}
+\begin{enumerate}[A)]
+\item {\color<1->{red}	{nothing}}
+\item {\color<1->{red}	{one}}
+\item {\color<1->{sgreen}	{two}}
+\item {\color<1->{red}	{three}} 
+\item {{error}}
+\end{enumerate}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+What is the output of the following code?
+\begin{Verbatim}[xleftmargin=0.5in]
+n = 3
+if n < 1:
+    print("one")
+elif n > 
+    print("two")
+else:
+    print("three")
+\end{Verbatim}
+
+\begin{enumerate}[A)]
+\item {{nothing}}
+\item {{one}}
+\item {{two}}
+\item {{three}} 
+\item {{error}}
+\end{enumerate}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+What is the output of the following code?
+\begin{Verbatim}[xleftmargin=0.5in]
+n = 3
+if n < 1:
+    print("one")
+elif n > 2
+    print("two")
+else:
+    print("three")
+\end{Verbatim}
+\begin{enumerate}
+\item {\color<1->{red}	{nothing}}
+\item {\color<1->{red}	{one}}
+\item {\color<1->{red}	{two}}
+\item {\color<1->{red}	{three}} 
+\item {\color<1->{sgreen} {error (missing colon)}}
+\end{enumerate}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+What is the output of the following code?
+\begin{Verbatim}[xleftmargin=0.5in]
+n = 1
+if n < 1:
+    print("one")
+elif n > 2:
+    print("two")
+else:
+    print("three")
+print("four")
+\end{Verbatim}
+
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item nothing
+\item one \newline four
+\item three \newline
+\item three\newline four
+\item error
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+What is the output of the following code?
+\begin{Verbatim}[xleftmargin=0.5in]
+n = 1
+if n < 1:
+    print("one")
+elif n > 2:
+    print("two")
+else:
+    print("three")
+print("four")
+\end{Verbatim}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item nothing
+\item one \newline four
+\item three \newline
+\item \answer{three}\newline \answer{four}
+\item error
+\end{enumerate}
+\end{multicols}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+What is the output of the following code?
+\begin{Verbatim}[xleftmargin=0.5in]
+n = 0
+if n < 1:
+    print("one")
+    print("five")
+elif n == 0:
+    print("zero")
+else:
+    print("three")
+print("four")
+\end{Verbatim}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item nothing \newline\newline
+\item one \newline four \newline\newline
+\item one \newline five \newline four\newline
+\item {one}\newline {five} \newline zero \newline four
+\item error \newline\newline
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+What is the output of the following code?
+\begin{Verbatim}[xleftmargin=0.5in]
+n = 0
+if n < 1:
+    print("one")
+    print("five")
+elif n == 0:
+    print("zero")
+else:
+    print("three")
+print("four")
+\end{Verbatim}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item nothing \newline\newline
+\item one \newline four \newline\newline
+\item \answer{one} \newline \answer{five} \newline \answer{four}\newline
+\item {one}\newline {five} \newline zero \newline four
+\item error \newline\newline
+\end{enumerate}
+\end{multicols}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Try it: Decisions}
+\begin{example}
+Write a Python program that asks the user for a number then prints out if it is even or odd.
+\end{example}
+\begin{example}
+Write a Python program that asks the user for an integer.  If that  number is between 1 and 5, prints out the word for that number (e.g. 1 is one).  If the number is not in that range, print out error.
+\end{example}
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}[fragile]\ft{Loops and Iteration}
+A \define{loop} repeats a set of statements multiple times until some condition is satisfied.
+\begin{itemize}
+\item Each time a loop is executed is called an \define{iteration}.\nl
+\end{itemize}
+
+A \blue{\tt for} loop repeats statements a certain number of times.  
+\begin{itemize}
+\item It will iterate over a sequence, eg. 1, 2, .\dots 10
+\item or it could iterate over group/collection elements, eg. lines in a document, elements in a list \nl
+\end{itemize}
+
+
+
+A \blue{\tt while} loop repeats statements while a condition is True.
+\begin{itemize}
+\item At each iteration we will check this condition.
+\item If its {\tt True} we complete another iteration
+\item If its {\tt False} we exit the loop.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\ft{{\tt while} loops}
+The most basic looping structure is the \emph{while} loop.\nl
+A while loop continually executes a set of statements while a condition is true.
+Syntax:
+\begin{center}
+\begin{allintypewriter}
+\orange{while} condition\orange:
+\newline  statement1
+\newline  statement2
+\newline \vdots
+\end{allintypewriter}
+\end{center}
+
+ Example:
+ \vspace{-2em}
+\begin{Verbatim}[xleftmargin=0.8in, frame=single]
+n = 1
+while n <= 5:
+    print(n)
+    n = n + 1 
+\end{Verbatim}
+prints the values 1 through 5.
+\end{frame}
+%Note: No ++ or -? operators in Python.
+%
+%Writes 1 to 5.
+%
+%Something completely different about Python is the while/else construction. while/else is similar to if/else, but there is a difference: the else block will execute anytime the loop condition is evaluated to False. This means that it will execute if the loop is never entered or if the loop exits normally. If the loop exits as the result of a break, the else will not be executed.
+%In this example, the loop will break if a 5 is generated, and the else will not execute. Otherwise, after 3 numbers are generated, the loop condition will become false and the else will execute.
+
+\begin{frame}[fragile]{Shorthand}
+In addition to the {\tt =} operator for assigning a value to a variable, Python also supports a shorthand version that compounds various  mathematical operators with the assignment operator:
+\begin{table}[htdp]
+\caption{Table taken from \href{https://www.programiz.com/python-programming/operators}{this} source}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+{\bf Operator} & {\bf Example} & {\bf Equivalent to} \\
+\hline
+{\tt =} &	{\tt x = 5} & {\tt 	x = 5}\\
+{\tt +=} & 	{\tt x += 5} & 	{\tt x = x + 5} \\
+{\tt -=} & 	{\tt x -= 5} & 	{\tt x = x - 5} \\
+{\tt *=}	& {\tt x *= 5} & 	{\tt x = x * 5}\\
+{\tt /=	} & {\tt x /= 5} & 	{\tt x = x / 5}\\
+{\tt \%=} & {\tt x \%= 5} & {\tt x = x \% 5}\\\hline
+%{\tt **=} & {\tt 	x **= 5} & {\tt 	x = x ** 5}\\\hine
+%{\tt \&=}	& {\tt x \&= 5) & {\tt x = x \& 5}\\
+%{\tt ^=} &	{\tt x ^= 5} & {\tt x = x ^ 5}\\
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Question: {\tt while} loop}
+\begin{example}
+What is the output of the following code:
+\begin{Verbatim}[xleftmargin=0.5in]
+n = 4
+while n >= 0:
+    n = n - 1 
+    print(n)
+\end{Verbatim}
+\begin{enumerate}[A)]
+\item numbers 3 to -1 	
+\item numbers 3 to 0	
+\item numbers 4 to 0 
+\item  numbers 4 to -1
+\item numbers 4 to infinity
+\end{enumerate}
+\end{example}
+\end{frame}
+
+
+
+\begin{frame}<handout:0>[fragile]\ft{Question: {\tt while} loop}
+\begin{block}{answer}
+What is the output of the following code:
+\begin{Verbatim}[xleftmargin=0.5in]
+n = 4
+while n >= 0:
+    n = n - 1 
+    print(n)
+\end{Verbatim}
+
+\begin{enumerate}[A)]
+\item \answer{numbers 3 to -1}
+\item numbers 3 to 0	
+\item numbers 4 to 0 
+\item  numbers 4 to -1
+\item numbers 4 to infinity
+\end{enumerate}
+\end{block}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]\ft{Question: {\tt while} loop 2}
+\begin{example}
+What is the output of the following code:
+\begin{Verbatim}[xleftmargin=0.5in]
+n = 1
+while n <= 5:
+    print(n)
+n = n + 1
+\end{Verbatim}
+\begin{enumerate}[A)]
+\item nothing
+\item numbers 1 to 5	
+\item numbers 1 to 6 
+\item  lots of 1s
+\end{enumerate}
+\end{example}
+\end{frame}
+
+
+
+\begin{frame}<handout:0>[fragile]\ft{Question: {\tt while} loop}
+\begin{block}{answer}
+What is the output of the following code:
+\begin{Verbatim}[xleftmargin=0.5in]
+n = 1
+while n <= 5:
+    print(n)
+n = n + 1
+\end{Verbatim}
+\begin{enumerate}[A)]
+\item nothing
+\item numbers 1 to 5	
+\item numbers 1 to 6 
+\item \answer{lots of 1s} \emph{Infinite loop without the fourth line indented}
+\end{enumerate}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{The {\tt for} loop}
+\begin{itemize}
+\item A {\tt for} loop repeats statements a given number of times.\nl
+\item One way of building a for loop is to iterate over a sequence which we create using \href{https://www.w3schools.com/python/ref_func_range.asp}{\tt range()}\nl
+\begin{verbatim}
+        for i in range(1,6):
+            print(i)
+\end{verbatim}
+\item The above prints the numbers 1--{\bf 5}.
+\end{itemize}
+\begin{alertblock}{\tt range(start, end)}
+In {\tt range(start, end)}, the {\tt start} number in inclusive and the  {\tt start} number is exclusive.
+\end{alertblock}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Using {\tt range()}}
+\begin{itemize}
+\item The general form of range is:
+\begin{verbatim}
+     range(start, end, step)
+\end{verbatim}
+\item The default {\tt step} (i.e increment) is 1
+\item We may also specify an increment:
+\begin{Verbatim}[frame=single]
+# prints the numbers: 1,3,5,7,9
+for i in range(1, 10, 2):
+    print(i)
+# prints the numbers: 2,4,6,8
+for i in range(2, 10, 2):
+    print(i)
+# prints the numbers 5 to 1
+for i in range(5,0, -1):
+    print(i)
+\end{Verbatim}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Using {\tt range()}}
+\begin{itemize}
+\item It is only required that the {\tt end} argument be provided for the {\tt range()} function.\nl
+\item If the {\tt start} argument is not provided, it is set as its default value of 0.\nl
+\begin{Verbatim}[frame=single]
+for i in range(4):
+    print(i)
+\end{Verbatim}
+The above prints the numbers: {\tt 0,1,2,3} (remember, {\tt end} is \textit{not} inclusive)
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{the for and while loop}
+The {\tt for} loop is like a short-hand for the {\tt while} loop:
+\begin{columns}[T] % align columns
+\begin{column}{.3\textwidth}
+\begin{itemize}
+\item
+\begin{verbatim}
+i=0
+while i < 10:
+    print(i)
+    i += 1
+\end{verbatim}
+\end{itemize}
+\end{column}%
+\begin{column}{.6\textwidth}
+\begin{itemize}
+\item
+\begin{verbatim}
+for i in range(0, 10, 1):
+     print(i)
+\end{verbatim}
+\end{itemize}
+\hfill
+\end{column}%
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Common problems -- Infinite Loops}
+\define{Infinite loops} are caused by an incorrect loop condition or not updating values within the loop so that the loop condition will eventually be false.
+
+\begin{itemize}
+\item Example:
+\begin{verbatim}
+    n = 1
+    while n <= 5:
+        print(n)
+\end{verbatim}
+Here we forgot to increase n \ra infinite loop.\nl
+\end{itemize}
+N.B. to exit from an infinite loop while running Python in the console, press \keystroke{Ctrl} + \keystroke{C} (press the stop icon in Jupyter Notebook).
+\end{frame}
+
+\begin{frame}[fragile]\ft{Common Problems -- Off-by-one Error}
+The most common error is to be "off-by-one".  This occurs when you stop the loop one iteration too early or too late.
+
+
+
+
+\begin{itemize}
+\item Example:
+\begin{Verbatim}[xleftmargin=0.5in]
+for i in range(0,10):
+    print(i)
+\end{Verbatim}
+This loop was supposed to print 0 to 10, but it does not.
+\end{itemize}
+\begin{example}
+Question: How can we fix this code to print 0 to 10?
+\end{example}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{Question: {\tt for} loop}
+  \begin{example}
+How many numbers are printed in this loop
+\begin{Verbatim}[xleftmargin=0.5in]
+for i in range(1,10):
+    print(i)
+\end{Verbatim}
+\begin{enumerate}[A)]
+\item {{0}}
+\item {{9}}
+\item {{10}}
+\item {{11}} 
+\item error 
+\end{enumerate}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+How many numbers are printed in this loop
+\begin{verbatim}
+    for i in range(1,10):
+        print(i)
+\end{verbatim}
+\begin{enumerate}[A)]
+\item {{0}}
+\item \answer{9}
+\item {{10}}
+\item {{11}} 
+\item error 
+\end{enumerate}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{Question: {\tt for} loop}
+  \begin{example}
+How many numbers are printed in this loop
+\begin{verbatim}
+    for i in range(11,0):
+        print(i)
+\end{verbatim}
+\begin{enumerate}[A)]
+\item {{0}}
+\item {{9}}
+\item {{10}}
+\item {{11}} 
+\item error 
+\end{enumerate}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+How many numbers are printed in this loop
+\begin{verbatim}
+    for i in range(11,0):
+        print(i)
+\end{verbatim}
+\begin{enumerate}[A)]
+\item \answer{0}
+\item {9}
+\item {{10}}
+\item {{11}} 
+\item error 
+\end{enumerate}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}\ft{Try it: for loops}
+\begin{example}
+ Write a program that prints the numbers from 1 to 10 then 10 to 1.
+
+\end{example}
+
+\begin{example}
+Write a program that prints the numbers from 1 to 100 that are divisible by 3 and 5.
+
+\end{example}
+
+\begin{example}
+ Write a program that asks the user for 5 numbers and prints the maximum, sum, and average of the numbers.
+
+\end{example}
+
+
+
+
+\end{frame}
+
+
+%
+
+
+\begin{frame}{Python Collections}
+% https://www.w3schools.com/python/python_lists.asp
+There are four collection data types in the Python:
+\begin{table}[htdp]
+\begin{center}
+\begin{tabular}{|c|p{5cm}|c|}
+\hline
+& & {\bf Allows}\\
+{\bf Type} & {\bf Description} & {\bf  duplicates}\\\hline\hline
+List &  a collection which is ordered and changeable & Yes\\\hline
+Tuple & a collection which is ordered and unchangeable & Yes \\\hline
+Set &  a collection which is unordered and unindexed &  No \\\hline
+Dictionary &  a collection which is unordered, changeable and indexed &  No \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}%
+%
+%\begin{description}
+%\item[List] is a collection which is ordered and changeable. Allows duplicate members.
+%\item[Tuple] is a collection which is ordered and unchangeable. Allows duplicate members.
+%\item[Set] is a collection which is unordered and unindexed. No duplicate members.
+%\item[Dictionary] is a collection which is unordered, changeable and indexed. No duplicate members.
+%\end{description}
+Sidenote: if we can change it's values we call it \define{mutable}, if we can't change it's values, its said to be \define{immutable}.
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{List Overview}
+A \define{list} is a collection of data items that are referenced by index.
+\begin{itemize}
+\item Lists in Python are similar to arrays in other programming languages
+\end{itemize}
+
+A list allows multiple data items to be referenced by one name and retrieved by index.
+
+\begin{itemize}
+\item Python list:
+\end{itemize}
+\begin{center}
+\ipic{pythonlist}{0.9}
+\end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]\ft{Retrieving Items from a list}
+Items are retrieved by index (starting from 0) using square brackets:
+\begin{itemize}
+\item 
+\begin{verbatim}
+data = [100, 200, 300, 'one', 'two', 600]
+print(data[0])					# 100
+print(data[4])					# 'two'
+print(data[6])					# error ? out of range
+print(data[len(data)-1])	# 600
+print(data[-1])					# 600
+print(data[2:4])				# [300, 'one']
+
+# Create an empty list:
+emptyList = []
+\end{verbatim}
+\end{itemize}
+\end{frame}
+%for i in range(0, len(x)):
+%        x[i] = x[i] * 2
+%    return x
+%
+%List concatenation using +
+%x + y
+%for two lists x and y
+%
+%letters = ['a', 'b', 'c', 'd']
+%print " ".join(letters)
+%print "---".join(letters)
+%In the example above, we create a list called letters.
+%Then, we print a b c d. The .join method uses the string to combine the items in the list.
+%Finally, we print a---b---c---d. We are calling the .join function on the "---" string.
+%We want to turn each row into "O ".
+
+
+\begin{frame}[fragile]\ft{Retrieving Items from a list: Python List Slicing}
+\define{List slicing} allows for using range notation to retrieve only certain elements in the list by index.  Syntax:\newline
+$$\verb|list[start:end:step]|$$
+
+\begin{itemize}
+\item Example:
+\begin{verbatim}
+data = list(range(1,11))
+print(data)		# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(data[1:8:2])	# [2, 4, 6, 8]
+print(data[1::3])		# [2, 5, 8]
+\end{verbatim}
+\end{itemize}
+Sidenote: we could also use the \href{https://www.programiz.com/python-programming/methods/built-in/slice}{\tt slice()} operator which works in the same manner. Usage: {\tt slice(start, end, step)}
+\begin{itemize}
+\item Example:
+\vspace{-1.5em}
+\begin{Verbatim}[frame=single, xleftmargin=0.8in]
+>>> data[slice(1,8,2)]
+[2, 4, 6, 8]
+\end{Verbatim}
+
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]\ft{List Operations}
+We can modify  a single value by use of indices and the assignment operator {\tt =}:
+\begin{Verbatim}[frame=single]
+>>> data = [1,2,3,5]
+>>> data[2] = 7
+>>> print(data)
+[1, 2, 7, 5]
+\end{Verbatim}
+
+We can also modify multiple values at a time in the following way:
+\begin{Verbatim}[frame=single]
+>>> data[0:1] = ["one","two"]
+>>> print(data)
+['one', 'two', 2, 7, 5]
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{List Operations}
+\begin{itemize}
+\item Notice that when  we try to add a value to the end of the list, we get an error:
+\begin{Verbatim}[frame=single]
+>>> data[5] = 10
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list assignment index out of range
+\end{Verbatim}
+\item To add an item to the end of the list, use  {\tt append()}.% method.
+\item  {\tt append()} adds a single item to the existing list. 
+\item It doesn't return a new list; rather it \emph{modifies} the original list.
+\begin{Verbatim}[frame=single]
+>>> data = [1,2,3,5]
+>>> data.append(1)
+>>> print(data)
+[1, 2, 3, 5, 1]
+\end{Verbatim}
+%\item  There are a number of methods and functions  we can perform on list; see some examples \href{https://www.programiz.com/python-programming/methods/list/insert}{here} and slide \ref{operations}.
+
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]\ft{List Operations}
+We can also use append in a for loop:
+\begin{Verbatim}[frame=single]
+i = [1, 2, 3, 5, 8, 13]
+j = []
+for l in i:
+    j.append(l)
+\end{Verbatim}
+Notice how we can iterate over a list in a for loop! \verb|j = [1, 2, 3, 5, 8, 13]|
+\end{frame}
+
+\begin{frame}[fragile]\ft{List Operations}
+{\tt extend()} on the other hand extends the list by adding all items of a list (passed as an argument) to the end.\nl
+It is best to see how this differs from {\tt append} by way of example:
+\begin{Verbatim}[frame=single]
+>>> x = [1, 2, 3]
+>>> x.append([4, 5])
+>>> print (x)
+[1, 2, 3, [4, 5]]
+\end{Verbatim}
+where \verb|x[3]| returns \verb|[4, 5]| and \verb|x[4]| returns an error.
+\begin{Verbatim}[frame=single]
+>>> x = [1, 2, 3]
+>>> x.extend([4, 5])
+>>> print (x)
+[1, 2, 3, 4, 5]
+\end{Verbatim}
+where \verb|x[3]| returns {\tt 4} and \verb|x[4]| returns {\tt 5}.
+\end{frame}
+
+\begin{frame}[fragile]\ft{List Operations}\label{operations}
+\verb|data = [1, 2, 3, 5]|\\
+\verb|lst = []|
+\begin{tabular}{|l|l|l|l|}
+\hline
+{\bf Operation} & 
+{\bf Syntax} & 
+{\bf Examples} & 
+{\bf Output}\\\hline
+Add item & 
+<list>.append(val) & 
+data.append(1) & 
+[1, 2, 3, 5, 1]\\
+Insert item & 
+<list>.insert(idx,val) & 
+data.insert(3,4) & 
+[1, 2, 3, 4, 5]\\
+Remove item & 
+<list>.remove(val) & 
+data.remove(5) & 
+[1, 2, 3]\\
+Update item & 
+list[idx]=val & 
+lst[0]=10 & 
+[10]\\
+Length of list & 
+len(<list>) & 
+len(data) & 
+4\\
+Slice of list & 
+list[x:y] & 
+data[0:3] & 
+[1, 2, 3]\\
+Find index & 
+<list>.index(val) & 
+data.index(5) & 
+3\\
+Sort list & 
+<list>.sort() & 
+data.sort() & [1, 2, 3, 5]\\
+Add & lst = [] & lst.append(1) & [1]\\\hline
+%Insert &  
+%data.insert(idx, val) &
+%data.insert(3, 4)& 
+%[1, 2, 3, 4, 5]\\
+%Remove & 
+%data.remove(val) &
+%data.remove(5)&
+%[1, 2, 3]\\\hline
+\end{tabular}
+To sort in reverse order, use \verb|data.sort(reverse=True)|.  See more  \href{https://www.programiz.com/python-programming/methods/list/insert}{here} 
+\end{frame}
+
+\begin{frame}[fragile]\ft{List details}
+It was mentioned already but its worth repeating...\nl
+For loops that are used to iterate though items in a list:
+\begin{Verbatim}[frame=single]
+data = [5,9,-2,9]
+for v in data:
+   print(v)
+   
+ #### output:
+# 5
+# 9
+# -2
+# 9
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{List details}
+
+Note that this is not restricted to numbers:
+\begin{Verbatim}[frame=single]
+data = ["apples", "bananas","oranges"]
+for v in data:
+    print(v)
+\end{Verbatim}
+prints {\tt apples}, {\tt
+bananas}, 
+{\tt oranges} (each on a separate line). \\
+\vspace{2em}
+We could even iterate through characters in a string:
+\begin{Verbatim}[frame=single]
+for v in "bananas":
+    print(v)
+\end{Verbatim}
+prints {\tt b}, {\tt a}, {\tt n}, {\tt a}, {\tt n}, {\tt a}, {\tt s} (each letter on a separate line)
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{List details}
+If we want to iterate through both index and value, we could use the
+\href{http://book.pythontips.com/en/latest/enumerate.html}{\tt enumerate()} function.
+\begin{Verbatim}[frame=single]
+data = ['apple', 'banana', 'grapes', 'pear']
+for c, value in enumerate(data):
+    print(c, value)
+
+# Output:
+# 0 apple
+# 1 banana
+# 2 grapes
+# 3 pear
+\end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]\ft{List details}
+If we want our index to start at 1 rather than 0, we could specify that as the second argument:
+\href{http://book.pythontips.com/en/latest/enumerate.html}{\tt enumerate()} function.
+\begin{Verbatim}[frame=single]
+data = ['apple', 'banana', 'grapes', 'pear']
+for c, value in enumerate(data, 1):
+    print(c, value)
+
+# Output:
+# 1 apple
+# 2 banana
+# 3 grapes
+# 4 pear
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Advanced: Python List Comprehensions}
+\href{https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions}{List comprehensions} build a list using values that satisfy a criteria.
+
+
+
+\begin{itemize}
+\item Example: \verb|evenNums100 = [n for n in range(101) if n%2==0]|
+\item Equivalent to:
+\begin{verbatim}
+    evenNums100 = []
+    for n in range(101): 
+        if n%2==0:
+            evenNums100.append(n)
+\end{verbatim}
+\begin{Verbatim}[frame=single]
+# another example:            
+>>> squares = [x**2 for x in range(10)]
+>>> squares
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+\end{Verbatim}
+
+\end{itemize}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+At what index is item with value 3?
+\begin{verbatim}
+data = [1, 2, 3, 4, 5]
+data.remove(3)
+data.insert(1, 3)
+data.append(2)
+data.sort()
+data = data[1:4]
+\end{verbatim}
+\begin{multicols}{6}
+\begin{enumerate}[A)]
+\item 0 
+\item 1
+\item 2
+\item 3
+\item not there
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+At what index is item with value 3?
+\begin{verbatim}
+data = [1, 2, 3, 4, 5]
+data.remove(3)
+data.insert(1, 3)
+data.append(2)
+data.sort()
+data = data[1:4]
+\end{verbatim}
+\begin{multicols}{6}
+\begin{enumerate}[A)]
+\item 0 
+\item 1
+\item \answer{2} 
+\item 3
+\item not there
+\end{enumerate}
+\end{multicols}
+  \end{block} {\tt [2,2,3]}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{frame}\ft{Try it: Lists}
+\begin{example}
+[Question 1] Write a program that puts the numbers from 1 to 10 in a list then prints them by traversing the list.
+\end{example}
+
+\begin{example}
+[Question 2] Write a program that will multiply all elements in a list by 2. Bonus: try doing this using the \href{http://book.pythontips.com/en/latest/enumerate.html}{\tt enumerate()} function.
+\end{example}
+
+\begin{example}
+[Question 3] Write a program that reads in a sentence from the user and splits the sentence into words using split().  Print only the words that are more than 3 characters long.  At the end print the total number of words.
+\end{example}
+
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Lists}
+In the previous example we use the {\tt list()} \href{https://www.programiz.com/python-programming/methods/built-in/list}{function} to create our list instead of the square brackets.\nl
+This constructs a list using the single input.  This could be 
+\begin{itemize}
+\item  a sequence (eg. string, tuples) or
+\item a collection (set, dictionary) or
+\item a  iterator object (like the objects  iterated over in our {\tt for} loops)
+\end{itemize}
+
+If no parameters are passed, it creates an empty list.
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Tuples}
+\begin{itemize}
+\item A tuple is a collection which is ordered and \alert{unchangeable}. To create tuples we use  round brackets \verb|()|.
+\begin{Verbatim}[frame=single]
+>>> thistuple = ("apple", "banana", "cherry")
+>>> print(thistuple)
+('apple', 'banana', 'cherry')
+\end{Verbatim}
+
+
+\item Single elements in a tuple  are referenced the same way as lists:
+\begin{Verbatim}[frame=single]
+>>> thistuple[1]
+'banana'
+>>> thistuple[1:3]
+('banana', 'cherry')
+\end{Verbatim}
+\end{itemize}
+\end{frame}
+
+%https://www.tutorialspoint.com/python/python_tuples.htm
+\begin{frame}[fragile]{Tuples}
+\begin{itemize}
+\item The empty tuple is written as an open and closed parentheses 
+\begin{Verbatim}[frame=single]
+>>> emptytup = ()
+>>> print(emptytup)
+()
+\end{Verbatim}
+
+\item To write a tuple containing a single value you have to include a comma, even though there is only one value
+\begin{Verbatim}[frame=single]
+>>> tup1 = (50,)
+>>> print(tup1)
+(50,)
+>>> thistuple[2:3]
+('cherry',)
+\end{Verbatim}
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{Tuples - packing and unpacking}
+\begin{itemize}
+\item We could also ``pack" them without using parentheses:
+\begin{Verbatim}[frame=single]
+>>> anothertuple = 1,2,3
+>>> print(anothertuple)
+(1, 2, 3)
+\end{Verbatim}
+\item We can ``unpack" the contents of a tuple into individual variables:
+\begin{Verbatim}[frame=single]
+>>> a,b,c=anothertuple
+>>> print(a)
+1
+>>> print(b)
+2
+>>> print(c)
+3
+\end{Verbatim}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Tuples}
+Unlike list, once a tuple is created, values \alert{can not} be changed. 
+\begin{Verbatim}[frame=single]
+>>> thistuple = ("apple", "banana", "cherry")
+>>> thistuple[1] = "pineapple"
+TypeError: 'tuple' object does not support item assignment
+\end{Verbatim}
+Notice that tuples are also iterable, meaning we can traverse through all the values. eg,
+\begin{Verbatim}[frame=single]
+for i in thistuple:
+   print(i)
+\end{Verbatim}
+The above prints:
+\begin{Verbatim}[frame=single]
+apple
+banana
+cherry
+\end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Python Sets}
+\begin{itemize}
+\item A \define{set}---like a mathematical set---is a collection which is unordered and unindexed. \nl
+\item Sets are written with curly brackets \verb|{}|.\nl
+\end{itemize}
+\begin{Verbatim}[frame=single]
+>>> # N.B they do not carry duplicates
+>>> thisset = {"apple",  "cherry", "banana", "apple"}
+>>> thisset
+{'banana', 'cherry', 'apple'}
+\end{Verbatim}
+\begin{itemize}
+\item Since sets are unordered,  the items will appear in a random order and elements cannot be reference by index.\nl
+\item Again  we can iterate though each item using a {\tt for} loop.\nl
+\item Read more about these \href{https://www.programiz.com/python-programming/set}{here} and what types of \href{https://data-flair.training/blogs/python-method/}{methods} can be performed on them.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Python Dictionary}
+A \href{https://www.w3schools.com/python/python_dictionaries.asp}{dictionary} is a collection which is unordered, changeable and indexed. We create them with curly brackets and specify  their \define{keys} and \define{values}.
+ \begin{Verbatim}[frame=single]
+thisdict = {
+  "key1": "value1",
+  "key2": "value2",
+  "key3": "value3"
+}
+print(thisdict)
+ \end{Verbatim}
+Output:
+\begin{verbatim}
+{'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]\ft{Python Dictionary}
+%A {\define{dictionary}} is a collection of key-value pairs that are manipulated using the key. \href{https://docs.python.org/3/library/stdtypes.html#mapping-types-dict}{more...}
+We can now reference elements by a given \textit{name} (i.e key) rather than the standard  integers index.  
+\begin{Verbatim}[frame=single]
+>>> thisdict['key1'] 
+'value1'
+\end{Verbatim}
+
+\begin{Verbatim}[frame=single]
+dict = {1:'one', 2:'two', 3:'three'}
+print(dict[1]) # one
+print(dict['one']) # error - key not found
+if 2 in dict:	# check if key exists
+    print(dict[2]) # 'two'
+dict[4] = 'four' # Add 4:'four'
+del dict[1]  # Remove key 1
+dict.keys()	 # Returns keys
+dict.values() # Returns values
+\end{Verbatim}
+
+
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+What value is printed?
+\begin{verbatim}
+data = {'one':1, 'two':2, 'three':3}
+data['four'] = 4
+sum = 0
+for k in data.keys():
+    if len(k) > 3:
+        sum = sum + data[k]
+print(sum)
+\end{verbatim}
+\begin{multicols}{6}
+\begin{enumerate}[A)]
+\item 7
+\item 0
+\item 10
+\item 6
+\item error
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+At what index is item with value 3?
+\begin{verbatim}
+data['four'] = 4
+sum = 0
+for k in data.keys():
+    if len(k) > 3:
+        sum = sum + data[k]
+print(sum)
+\end{verbatim}
+\begin{multicols}{6}
+\begin{enumerate}[A)]
+\item \answer 7
+\item 0
+\item 10
+\item 6
+\item error
+\end{enumerate}
+\end{multicols}
+  \end{block} {\tt [2,2,3]}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+\begin{frame}[fragile]\ft{Try it: Dictionary}
+\begin{example}
+Write a program that will use a dictionary to record the frequency of each letter in a sentence.  Read a sentence from the user then print out the number of each letter.
+
+\end{example}
+
+\begin{itemize}
+\item Code to create the dictionary of letters:
+\begin{verbatim}
+import string
+counts = {}
+for letter in string.ascii_uppercase:
+    counts[letter] = 0
+print(counts)
+
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Summary of Python Collections}
+Lists can be altered and hold different types
+\begin{Verbatim}[fontsize=\small, frame=single]
+lectures = [1,2,['excelI',excelII'],'CommandLine']
+# can delete individual items
+del lectures[3]   
+# reassign values
+lectures[1] = 'Introduction' 
+type(lectures[1]) # <class 'int'>
+type(lectures[2]) # <class 'list'>
+type(lectures[3]) # <class 'str'>
+\end{Verbatim}
+
+Tuples are immutable (we can't change the values)
+\begin{Verbatim}[fontsize=\small, frame=single]
+topics= (1,2,['excel1','excel2'],'CommandLine')
+del topics[3]
+# TypeError: 'tuple' object doesn't support item deletion
+type(topics[2])  
+# <class 'list'>
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]{Summary of Python Collections}
+Sets do not hold duplicate values and are unordered. 
+\begin{Verbatim}[frame=single]
+>>> myset={3,1,2,3,2}
+>>> myset
+{1, 2, 3}
+>>> myset[1]
+TypeError: 'set' object does not support indexing
+\end{Verbatim}
+
+
+Dictionaries holds key-value pairs (just like real life dictionaries hold word-meaning pairs). The \href{https://www.techbeamers.com/understand-python-statement-indentation/}{continuation character} (\textbackslash) is used to split  statements across multiple lines.
+
+\begin{Verbatim}[frame=single]
+>>> wordoftheday = {\
+ 'persiflage':'light, bantering talk or writing' ,\
+ 'foment':'to instigate or foster'}
+>>> wordoftheday['foment']
+'to instigate or foster'
+\end{Verbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Functions and Procedures}
+A \define{procedure} %(or \define{method}) 
+is a sequence of program statements that have a specific task that they perform.  \nl
+%\begin{itemize}
+%\item The statements in the procedure are mostly independent of other statements in the program.
+%\end{itemize}
+
+A \define{function} is a procedure that returns a value after it is executed.\nl
+
+%Both functions and procedures are small sections of code that can be repeated through a program. The difference between them is that functions return a value to the program where procedures perform a specific task.\nl
+
+% https://www.bbc.com/bitesize/guides/zqh49j6/revision/5
+Loosely speaking, functions are a special type of procedure for which we do not immediately know the result.\nl
+%A function is just like a procedure, except that you wait to see what the result is.
+
+%We use functions so that we do not have to type the same code over and over. 
+While there are many built in functions at our disposal in Python, we can also create own \emph{user-defined functions}.
+% We can also use functions that are built-in to the language or written by others.
+\end{frame}
+
+\begin{frame}[fragile]\ft{Defining and Calling Functions and Procedures}
+Creating a function involves writing the statements and providing a function declaration with:
+\begin{itemize}
+\item a name (follows the same naming rules as variables)
+\item list of the inputs (called parameters) 
+\item the output (return value) if any
+\end{itemize}
+
+Calling (or executing) a function involves:
+\begin{itemize}
+\item providing the name of the function
+\item providing the values for all arguments (inputs) if any
+\item providing space (variable name) to store the output (if any)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Defining and Calling a Function}
+Consider a function that returns a number doubled:
+\begin{center}
+\ipic{callfunction2}{.9}
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Defining and Calling a Function}
+\begin{itemize}
+\item Function ``blocks"\footnote{A block is a piece of Python program text that is executed as a unit. } begin with the keyword \green{\tt def} (short for define) followed by the function name.\nl
+\item Regardless of whether or not the function has any parameters, we need to follow the function name with parentheses \command{()}
+\begin{itemize}
+%\item Parameters are specified after the function name, inside the parentheses.
+\item Inside the parentheses, separate as many parameters as you need by commas (no parameters should have the same name).
+\item A function may have 0 parameter inputs.\nl
+\end{itemize}
+\item The code block within every function starts with a colon \command{:}\nl
+
+\item The statements that form the body of the function starts from the next line of function definition and \alert{must be indented}. \nl
+%\item The block of code defined by are functions/procedures are run once the procedure is \textit{called}.\nl
+%\item We call a function by typing its given name followed by any input parameters in parenthesis.\nl
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]\ft{Functions and Procedures}
+\begin{columns}[T] % align columns
+\begin{column}{.4\textwidth}
+See this procedure called {\tt hi} that prints out {\tt Hi!}
+\begin{FVerbatim}
+def hi():
+    print("Hi!")
+\end{FVerbatim}
+Calling this procedure twice (we know exactly what to expect each time):
+\begin{Verbatim}[frame=single]
+>>> hi()
+hi!
+>>> hi()
+hi!
+\end{Verbatim}
+\end{column}%
+
+\begin{column}{.4\textwidth}
+See this function called {\tt addf} which adds two numbers (or concatenates two strings)
+\begin{FVerbatim}
+def addf(x, y):
+    return x + y 
+\end{FVerbatim}
+Calling the function with integers vs. strings:
+\begin{Verbatim}[frame=single]
+>>> addf(2,5)
+7
+>>> addf("2","5")
+'25'
+\end{Verbatim}
+
+\end{column}%
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Function Returns}
+
+\begin{itemize}
+\item Function bodies can contain one or more \command{return} statement.\nl
+%\item  A return statement ends the execution of the function call and "returns" the result, i.e. the value of the expression following the return keyword, to the caller.
+\item The \command{return} statement exits a function and returns the value of the expression following the keyword.\nl
+\item  A function without an explicit \command{return} statement returns {\tt None} (usually suppressed by the interpreter).\nl
+\item Example:
+\vspace{-1em}
+\begin{FVerbatim}
+def plus2(x):
+    x + 2
+\end{FVerbatim}
+Since we didn't specify a \command{return} statement, the calculation is not provided as output. 
+\begin{FVerbatim}
+>>> plus2(3) 
+>>> nothing = plus2(3)
+>>> print(nothing)
+None
+\end{FVerbatim}
+
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Function Returns}
+We will often save our return value(s) to an object defined within the function to be returned.\\
+\begin{FVerbatim}
+def testfun(x,y,z):
+    out = x+y/z
+    return out
+\end{FVerbatim}
+Notice that the variables we define within our functions will \alert{not} be defined outside of that function.
+\begin{FVerbatim}
+>>> testfun(3,8,4)
+5.0
+>>> out
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'out' is not defined
+\end{FVerbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Function Returns}
+There can be multiple returns in a function but a function can only return exactly one \emph{object}.
+\begin{FVerbatim}
+def gradeLetter(pgrade):
+  if (pgrade >= 80):
+     return "A"
+  elif (pgrade >= 68):
+    return "B"
+  elif (pgrade >= 55):
+    return "C"
+  elif (pgrade >= 50):
+    return "D"
+  else: 
+    return "F"
+\end{FVerbatim}
+\begin{Verbatim}[frame=single]
+>>> gradeLetter(81) # 'A'
+>>> gradeLetter(45) # 'F'
+\end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Function Multiple Returns}
+If we want to return multiple values, we can return a list or a tuple, 
+for example. Read \href{https://www.geeksforgeeks.org/g-fact-41-multiple-return-values-in-python/}{here} for some other ways.\nl
+
+\begin{itemize}
+\item Example from \href{https://interactivepython.org/runestone/static/CS152f17/Lists/TuplesasReturnValues.html}{here} which returns the circumference and area of a circle with radius $r$ (input): 
+\begin{Verbatim}[frame=single]
+def circleInfo(r):
+    c = 2 * 3.14159 * r
+    a = 3.14159 * r * r
+    return (c, a)
+
+print(circleInfo(10))
+# (62.8318, 314.159)
+\end{Verbatim}
+To save it to individual variables we could unpack the tuple:
+\begin{FVerbatim}
+circumference, area = circleInfo(10)
+print(circumference)  # 62.8318
+print(area)   # 314.159
+\end{FVerbatim}
+
+
+\end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Function Multiple Returns}
+\begin{columns}[T] % align columns
+\begin{column}{.55\textwidth}
+For this example we use a list to return two values instead of a tuple.\\[0.85em]
+Both are acceptable but tuples are probably more common.\\[0.85em]
+Some benefits of using tuples over lists are that:
+\begin{itemize}
+\item the results cannot be accidentally overwritten (tuples are immutable)
+\item and they can be easily unpacked into multiple variables
+\end{itemize}
+
+\end{column}%
+
+\begin{column}{.4\textwidth}
+\vspace{-2em}
+\begin{FVerbatim}
+def grade(pgrade):
+  if (pgrade >= 80):
+    grade = "A"
+  elif (pgrade >= 68):
+    grade = "B"
+  elif (pgrade >= 55):
+    grade = "C"
+  elif (pgrade >= 50):
+    grade = "D"
+  else: 
+    grade = "F"
+  return [grade, pgrade]
+\end{FVerbatim}
+\begin{Verbatim}[frame=single]
+>>> grade(81)
+['A', 81]
+\end{Verbatim}
+
+\end{column}%
+\end{columns}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[fragile]\ft{Python Built-in Functions}
+Of course there are a multitude of built-in built-in functions, and methods in the standard Python library  that makes life of a programmer easier. More examples \href{https://www.programiz.com/python-programming/methods}{here} or \href{https://docs.python.org/3/library/functions.html}{here}
+\begin{itemize}
+\item {\tt max, min, abs:}
+\begin{verbatim}
+print(max(3, 5, 2))		# 5
+print(min(3, 5, 2))		# 2
+print(abs(-4))				# 4
+\end{verbatim}
+\item {\tt type()} returns the argument data type:
+\begin{verbatim}
+print(type(42))				# <class 'int'> 
+print(type(4.2))			# <class 'float'>
+print(type('spam'))		# <class 'str'>
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Python {\tt math} module}
+%Last class we had to calculate the max and average value of 5 numbers inputted by the user.  
+It is important to keep in mind that there are many useful functions available to us in modules.  For example, some  functions available in the {\tt math} module that can help us with mathematical calculations. 
+\begin{verbatim}
+# Math
+import math
+print(math.sqrt(25))
+
+# Import only a function
+from math import sqrt
+print(sqrt(25))
+
+# Print all math functions
+print(dir(math))
+\end{verbatim}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]\ft{Python Random Numbers}
+Another useful model is the {\tt random} module.  We can for instance import the {\tt randint} function to generate random numbers. \nl% to make the program have different behaviour when it runs.
+Usage: {\tt randint(a, b)} returns a random integer {\tt N} such that $\tt a \leq \tt N \leq \tt b$. %Alias for randrange(a, b+1).
+\begin{FVerbatim}
+from random import randint
+coin = randint(0, 1)	# 0 or 1
+die = randint(1, 6)	# 1 to 6
+print(coin)
+print(die)
+\end{FVerbatim}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Advanced: Python Functions}
+Python supports functional programming allowing functions to be passed like variables to other functions.
+\begin{itemize}
+\item \href{https://www.w3schools.com/python/python_lambda.asp}{Lambda functions} are helpful in this context as they are small anonymous functions.
+\item In other words they do not require the {\tt def} keyword or a function name.
+\end{itemize}
+
+
+\begin{itemize}
+\item Example: take a function as the first argument {\tt func} with it's input as the second argument {\tt val}.  Return the output {\tt func(val)}.
+\begin{verbatim}
+def doFunc(func, val):
+    return func(val)
+
+print(doFunc(doubleNum, 10))			# 20
+print(doFunc(lambda x: x * 3, 5))	# 15
+
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% question:
+
+\begin{frame}[fragile]\ft{}
+  \begin{example}
+What is the value printed:
+\begin{verbatim}
+def triple(num):
+    return num * 3
+    
+n = 5
+print(triple(n)+triple(2))
+\end{verbatim}
+\begin{multicols}{6}
+\begin{enumerate}[A)]
+\item 0
+\item 6
+\item 15
+\item 21
+\item error
+\end{enumerate}
+\end{multicols}
+  \end{example} 
+\end{frame}
+
+
+% answer:
+
+\begin{frame}<handout:0>[fragile]\ft{}
+  \begin{block}{Answer:}
+What is the value printed:
+\begin{verbatim}
+def triple(num):
+    return num * 3
+    
+n = 5
+print(triple(n)+triple(2))
+\end{verbatim}
+\begin{multicols}{6}
+\begin{enumerate}[A)]
+\item 0
+\item 6
+\item 15
+\item \answer{21}
+\item error
+\end{enumerate}
+\end{multicols}
+  \end{block} 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]\ft{Practice Questions: Functions}
+\begin{example}
+1) Write a function that returns the largest of two numbers. \nl
+
+2) Write a function that prints the numbers from 1 to N where N is its input parameter.\nl
+
+Call your functions several times to test that they work.
+\end{example}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Conclusion}
+Python is a general, high-level programming language designed for code readability and simplicity.\nl
+Programming concepts covered:
+\begin{itemize}
+\item variables, assignment, expressions, strings, string functions
+\item making decisions with conditions and if/elif/else
+\item repeating statements (loops) using for and while loops
+\item reading input with input() and printing with print()
+\item data structures including lists and dictionaries
+\item creating and calling functions, using built-in functions (math, random)
+\end{itemize}
+Python is a powerful tool for data analysis and automation.
+
+\end{frame}
+
+\begin{frame}[fragile]\ft{Objectives}
+\begin{itemize}
+\item Explain what is Python and note the difference between Python 2 and 3
+\item Define: algorithm, program, language, programming
+\item Follow Python basic syntax rules including indentation
+\item Define and use variables and assignment
+\item Apply Python variable naming rules
+\item Perform math expressions and understand operator precedence
+\item Use strings, character indexing, string functions
+\item String functions: split, substr, concatenation
+\item Use Python datetime and clock functions
+\item Read input from standard input (keyboard)
+\begin{verbatim}
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\ft{Objective (cont'd)}
+\begin{itemize}
+\item Create comparisons and use them for decisions with if
+\item Combine conditions with and, or, not
+\item Use if/elif/else syntax
+\item Looping with for and while
+\item Create and use lists and list functions
+\item Advanced: list comprehensions, list slicing
+\item Create and use dictionaries
+\item Create and use Python functions
+\item Use built-in functions in math library
+\item Create random numbers
+\item Advanced: passing functions, lambda functions
+\begin{verbatim}
+\end{verbatim}
+\end{itemize}
+\end{frame}
+\end{document}
+
+
+
+%\begin{frame}
+%  {Questions}
+%
+%  \nocite{lorem,ipsum}
+%  \bibliographystyle{plain}
+%  \bibliography{../demo}
+%
+%\end{frame}
+
+\end{document}

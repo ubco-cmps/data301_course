@@ -1,0 +1,1234 @@
+
+%% LyX 2.2.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{url}
+\ifx\hypersetup\undefined
+  \AtBeginDocument{%
+    \hypersetup{unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=false}
+  }
+\else
+  \hypersetup{unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=false}
+\fi
+\usepackage{breakurl}
+\usepackage{xspace}
+\usepackage{array}
+
+
+\newcommand{\while}{{\tt while}\xspace}
+\makeatletter
+
+%%%% https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_3)%E2%80%94Creating_Flowcharts
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=2cm, minimum height=0.75cm,text centered, draw=black, fill=red!30]
+
+\tikzstyle{io} = [rectangle, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+
+\tikzstyle{process} = [rectangle, minimum width=2cm, minimum height=0.75cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+
+\tikzstyle{arrow} = [thick,->,>=stealth]
+%%%%%%%%%%%%%%
+
+\usetikzlibrary{shapes.geometric, arrows,chains}
+\tikzset{
+%  startstop/.style={
+%    rectangle, 
+%    rounded corners,
+%    minimum width=3cm, 
+%    minimum height=1cm,
+%    align=center, 
+%    draw=black, 
+%    fill=red!30
+%    },
+%  process/.style={
+%    rectangle, 
+%    minimum width=3cm, 
+%    minimum height=1cm, 
+%    align=center, 
+%    draw=black, 
+%    fill=blue!30
+%    },
+  decision/.style={
+    diamond, 
+    minimum width=3cm, 
+    minimum height=1cm, align=center, 
+    draw=black, 
+    fill=green!30
+    },
+  arrow/.style={thick,->,>=stealth},
+  dec/.style={
+    ellipse, 
+    align=center, 
+    draw=black, 
+    fill=green!30
+    },
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\providecommand{\LyX}{\texorpdfstring%
+  {L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+  {LyX}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+ % this default might be overridden by plain title style
+ \newcommand\makebeamertitle{\frame{\maketitle}}%
+ % (ERT) argument for the TOC
+ \AtBeginDocument{%
+   \let\origtableofcontents=\tableofcontents
+   \def\tableofcontents{\@ifnextchar[{\origtableofcontents}{\gobbletableofcontents}}
+   \def\gobbletableofcontents#1{\origtableofcontents}
+ }
+ 
+ \renewenvironment{knitrout}{\setlength{\topsep}{0mm}}{} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usetheme{default}
+
+\makeatother
+
+ \input{../header.tex}
+ \input{../macros.tex}
+
+
+
+\begin{document}
+<<setup, include=FALSE>>=
+library(knitr)
+opts_chunk$set(fig.path='figure/beamer-',fig.align='center',fig.show='hold',size='footnotesize')
+@
+
+\title[Data 301]{\R and \RStudio: Part II\\Data manipulation and Flow Control}
+
+\makebeamertitle
+
+
+\section{RStudio}
+
+
+
+
+
+
+
+\begin{frame}[fragile]{Logical Operators}
+\begin{itemize}
+\item \R has several \define{operators} to perform tasks 
+\item We have already seen two:
+\begin{itemize}
+\item assignment operators (eg. {\tt =} and {\tt <-})
+\item arithmetic operators (eg. \verb|+, -, *, /, ^, %%|)
+\end{itemize}
+\item Other types of operators include:
+\begin{itemize}
+\item Relational operators
+\item Logical operators
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Logical Operators (not \R specific)}
+There are three logical operators that are used to compare values.
+\begin{center}
+\begin{tabular}{ |>{\ttfamily}c  | >{\ttfamily}c | >{\ttfamily}c | >{\ttfamily}c |}\hline
+ {\bf Operator} & {\bf True if:} &  {\bf Examples}& {\bf Output} \\\hline
+AND & both are true 	&  True and True& True\\
+&& False and True  &False \\\hline
+OR &either or both are 	& 	 True or True & True\\
+&true& False or True & True\\
+&& False or False & False\\\hline
+NOT &false	& 	not True & False	 \\
+&& not False & True \\\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{Logical Operators (\R specific)}
+\begin{center}
+\begin{tabular}{|c|l|}
+\hline
+Operator &	Description\\\hline
+{\tt !}	& Logical NOT\\
+ {\tt \&} & 	Element-wise logical AND\\
+{\tt \&\&} &	Logical AND\\
+ {\tt $\mid$}	& Element-wise logical OR\\
+{\tt $\mid\mid$ } &	Logical OR\\
+\hline
+\end{tabular}
+\end{center}
+The element-wise operators produce result having length of the longer operand while {\tt \&\&} and {\tt $\mid\mid$ } result in a single length logical vector and examines only the first element of the operands.
+\end{frame}
+
+\begin{frame}[fragile]{Logical Operators}
+The element-wise operators produce result having length of the longer operand 
+<<>>=
+ x <- c(TRUE,FALSE,TRUE,FALSE)
+ y <- c(FALSE,TRUE,TRUE,FALSE)
+ !x
+ x&y
+ x|y
+@
+\end{frame}
+
+\begin{frame}[fragile]{Logical Operators}
+
+<<>>=
+ x <- c(TRUE,FALSE,TRUE, FALSE)
+ z1 <- c(TRUE, TRUE, FALSE)   # recycles TRUE
+ z2 <- c(FALSE, TRUE, FALSE)  # recycles FALSE
+ x|z1
+ x|z2
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{Logical Operators}{}
+ {\tt \&\&} and {\tt $\mid\mid$ } result in a single length logical vector and examines only the first element of the operands.
+<<>>=
+ x <- c(TRUE,FALSE,FALSE,TRUE)
+ y <- c(FALSE,TRUE,FALSE,TRUE)
+ x&&y
+ x||y
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{Logical Operators}
+If you are doing comparisons of scalars (ie length one vectors), there is not effective difference between the two:
+<<>>=
+TRUE & FALSE
+TRUE && FALSE
+TRUE | FALSE
+TRUE || FALSE
+@
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Logical Operators}
+TRUE/FALSEs are converted to 0/1 in numerical operations.  Therefore, to check how many elements return {\tt TRUE}, we can simply take the sum on the logical vector. 
+<<>>=
+ x <- c(TRUE,FALSE,TRUE,TRUE)
+sum(x) # counts the number of TRUEs 
+sum(!x) # counts the number of FALSEs 
+@
+% Other useful functions are:
+% <<>>=
+% any(x) # to check if there are any TRUEs
+% all(x) # to check if all the values are TRUE
+% @
+
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]{Relational Operators}
+\begin{center}
+\begin{tabular}{|c|l|}
+\hline
+Operator &	Description\\\hline
+\verb|<| &	Less than\\
+\verb|>|	&Greater than\\
+\verb|<=|	&Less than or equal to\\
+\verb|>=|	&Greater than or equal to\\
+\verb|==|	&Equal to\\
+\verb|!=| &	Not equal to\\
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Relational Operators}
+<<>>=
+ x <- 4
+ y <- 16
+ x < y
+ 4*x >= y
+ y == 16
+ x != 4
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{Conditional Selection}
+\begin{itemize}
+\item We can use these operators in some advanced indexing.  
+\vfill
+\item Last lecture we saw how to extract elements from a vector/matrix from using one or several indices (eg \verb|x[1], x[c(4,2)]|)
+\vfill
+\item In practice, you often need to extract data that satisfy a certain criteria.
+\vfill
+\item To do this in one step, we use conditional selection.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{}
+<<echo=FALSE>>=
+set.seed(4444)
+@
+
+<<>>=
+# sample twelve numbers from 1--10 with replacement
+(y = sample(10, 12, replace=TRUE))
+
+y[y>7] # returns any numbers(s) larger than 7
+y[y>7 & y%%2==0] # returns any even number(s) larger than 7 
+@
+To get the index rather than the values, use {\tt which()}
+<<>>=
+x = c("female","male","female","male","male","female")
+which(x=="female")
+@
+\end{frame}
+
+\begin{frame}[fragile]{SQLish functions}
+\begin{itemize}
+\item There are a number of functions in R that will mimic tasks  performed using SQL commands on relational databases.
+\begin{description}
+\item[subset] for filtering rows (like \textcolor{purple}{\tt WHERE})
+\item[subset with select] for filtering columns (like \textcolor{purple}{\tt SELECT})
+\item[transform] for updating columns (like \textcolor{purple}{\tt UPDATE})
+\end{description}
+\vfill
+\item {\bf Aside:} There is another useful package called \href{https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html}{dplyr} that can handle more complicated SQL-like statments (eg {\tt GROUP BY} and {\tt JOINS}).
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{SQLish functions}
+\begin{itemize}
+\item To highlight these functions, we will use the data set called {\tt iris}.
+\vfill
+\item R has many useful built-it data sets for us to play with. To see them listed by name, type {\tt data()}.
+\vfill
+\item Notice that the object will not appear in our Enviornment panel until we execute:
+<<>>=
+data("iris")
+@
+\item To see a description of the data type: {\tt ?<nameofdataset>}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{}{}
+{\tt head()} prints out the first 6 rows by default. 
+<<size="scriptsize">>=
+head(iris)
+@
+As an optional second argument we can specify {\tt n}, the number of rows we want to include:
+<<size="scriptsize">>=
+head(iris, 2)
+@
+\end{frame}
+
+\begin{frame}[fragile]{}{}
+To see the last {\tt n} rows use {\tt tail()}:
+<<size="scriptsize">>=
+tail(iris) # default is to print the last 6 lines
+tail(iris, 2) # specify a certain number of lines as a 2nd arg
+@
+\end{frame}
+
+
+
+
+ \begin{frame}[fragile]{Subsetting}\label{subsetting}
+ \begin{itemize}
+% \item Indexing parts from a data frame using logicals is possible, we also have the choice of the {\tt subset()} function which may make things easier yet.
+\item The {\tt subset()} function allows us to filter the rows of a data set based on some criteria applied to a column (or multiple criterion on multiple columns)
+\vfill
+\item This is similar to the {\tt WHERE} statement in SQL.
+\vfill
+\item For example, lets  select all rows in {\tt iris} that have a {\tt Petal.Length} greater than 5.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{}\label{setosa}
+<<>>=
+data(iris) 
+nrow(iris) # 150 observations
+longPetals = subset(iris, Petal.Length>5)
+nrow(longPetals) # subset of 42 observations
+@
+We could have done it without this function with a little work:
+<<>>=
+rows_to_include = iris$Petal.Length > 5
+long_Petals = iris[rows_to_include,]
+nrow(long_Petals) # same subset of 42 observations
+@
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]{}\label{setosa}
+An example that combines multiple conditions
+<<>>=
+data(iris) 
+nrow(iris) # 150 observations
+
+# all observations having a petal length greater than 5
+# or belong to the setosa family.
+newdat = subset(iris, Species=="setosa" | Petal.Length>5) 
+nrow(newdat)
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{SELECT}
+\begin{itemize}
+\item We could also select specific columns using the {\tt select} (optional) argument in the {\tt subset} function.
+\vfill
+\item This is similar to the {\tt SELECT} statement in SQL.
+\vfill
+\item For example, lets select all the rows in {\tt iris} but only the columns pertaining to length measurements.
+\end{itemize}
+<<>>=
+lengthDat = subset(iris, select = c(Sepal.Length, Petal.Length))
+print(paste(nrow(lengthDat), ncol(lengthDat)))
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{SELECT}
+<<>>=
+head(lengthDat)
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{SELECT}
+To do this task without the {\tt subset} function would require us to know which column the {\tt Sepal.Length} and {\tt Petal.Length} fall under.
+ One way we could find that is using the \href{http://www.datasciencemadesimple.com/in-operator-in-r/}{\tt \%in\%} operator.
+<<>>=
+cols_to_include = colnames(iris) %in% 
+  c("Sepal.Length", "Petal.Length")
+cols_to_include
+length_data = iris[,cols_to_include]
+print(paste(nrow(length_data), ncol(length_data)))
+@
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Object Equality}
+As a sidenote, if we want to check equality of two objects in R, we could use {\tt all.equal}
+<<>>=
+all.equal(longPetals, long_Petals)
+all.equal(lengthDat, length_data)
+@
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]{Transforming}\label{transforming}
+\begin{itemize}
+\item The {\tt transform()} function  provides a quick and easy way to transform the data frames (just like SQL {\tt UPDATE} function).
+\item For instance if we want to increase all the {\tt Sepal.Lengths} by 0.1 we could type:
+\end{itemize}
+<<>>=
+dim(iris)
+irisLonger = transform(iris, Sepal.Length = Sepal.Length + 0.1)
+dim(irisLonger)
+@
+\end{frame}
+
+\begin{frame}[fragile]{}
+<<size="scriptsize">>=
+head(iris,4)
+head(irisLonger, 5)
+@
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Transforming}\label{transforming}
+\begin{itemize}
+\item We could also use the {\tt transform()} function to create new variables in our data frame (like the {\tt ALTER} SQL command)
+\item For instance if we want to add a new column which holds the log values of the petal lengths we could type:
+<<>>=
+dim(iris)
+irisMore = transform(iris, logPL = log(Petal.Length))
+dim(irisMore)
+@
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Transforming}
+<<size="scriptsize">>=
+head(irisMore)
+@
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Splitting}
+\begin{itemize}
+\item Another handy function is {\tt split}.
+\item {\tt split()} generates a list of vectors according to a grouping
+\end{itemize}
+<<>>=
+iSpecies = split(iris, iris$Species)
+names(iSpecies)
+# iSpecies$setosa is the same thing as
+setosa = subset(iris, Species=="setosa") 
+all.equal(iSpecies$setosa,setosa)
+@
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Sorting and Order}
+\begin{itemize}
+\item The {\tt sort()} function is a operator that we saw in a very simple context:
+<<>>=
+x <- c(4,0,-7,9,8,3)
+x
+sortx <- sort(x)
+sortx
+@
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Sorting and Order}
+\begin{itemize}
+\item A related function is {\tt order()} which order provides the indexing of {\tt x} which provides the sorted vector {\tt sortx}.
+<<>>=
+(o <- order(x))
+x[o]
+@
+\item We can use order to rearange the rows of data set to agree with a sorting of a particular column, for instance.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{}
+Example: rerrange the rows of {\tt iris} so that the {\tt Petal.length} is sorted from smallest to largest:
+<<>>=
+o = order(iris$Petal.Length)
+head(o)
+irisSorted = iris[o,]
+head(irisSorted)
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{Sorting and Order}
+\begin{itemize}
+\item Note that {\tt order()} can also take multiple sorting arugments
+\item For instance, we {\tt order(gender, age)} in the example of the following slide will give a main division into men and women, and within each group, they will be ordered by age.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Sorting and Order}
+<<>>=
+gender = c("female","male","female","male","male","female")
+age = c(36, 24, 25, 40, 22, 23)
+df = data.frame(gender=gender, age=age)
+o = order(df$gender, df$age)
+df[o,]
+@
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Missing Data}
+\begin{itemize}
+\item In \R, missing values are represented as {\tt NA} (\define Not \define Available). 
+\item {\tt NaN} (\define Not \define a \define Number) is usually the product of some arithmetic operation and represents impossible values (e.g., dividing by zero).
+\item We can check for these using {\tt is.na(), is.nan()}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{}\label{yNAs}
+<<tidy=TRUE>>=
+y = -1:3  # fills elements 1--5
+y[7] = 7  # element 6 is missing
+y
+is.na(y)
+
+(sy = sqrt(y))   # take the square roots 
+is.nan(sy)
+@
+\end{frame}
+
+
+% \begin{frame}[fragile]\ft{Infinite values}
+% \begin{itemize}
+% \item Arithmetic operations may result in infinity (or negative infinity)
+% \item This concept is represented in \R using {\tt Inf} and {\tt -Inf}
+% \item We can check if a number is finite/infinite using {\tt is.finite()}/{\tt is.infinite()}
+% \begin{itemize}
+% \item {\tt is.finite(NA)}/{\tt is.infinite(NA)} returns {\tt FALSE}/{\tt FALSE}.
+% \item {\tt is.finite(NaN)}/{\tt is.infinite(NaN)} returns {\tt FALSE}/{\tt FALSE}
+% \item {\tt is.finite(Inf)}/{\tt is.infinite(Inf)} returns {\tt FALSE}/{\tt TRUE}
+% \end{itemize}
+% \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}[fragile]\ft{}
+% <<tidy=TRUE>>=
+% y
+% (ly = log(y))
+% is.finite(ly) # is.finite with NA/NaN/Inf all return FALSE
+% is.infinite(ly)
+% @
+% % By default, sqrt does not return a complex number when you ask for the square root of a negative number. Instead, it produces a NaN error.
+% % To get the complex square root, you need to cast your negative number as a complex number using as.complex before applying sqrt:
+% % <<>>=
+% % sqrt(as.complex(-1))
+% % sqrt(as.complex(y))
+% % @
+% \end{frame}
+
+
+
+\begin{frame}[fragile]\ft{Missing Values}
+\begin{itemize}
+\item An easy way to remove rows from a data set having missing values is:
+<<eval=FALSE>>=
+newdata <- na.omit(mydata)
+@
+\item Some functions may having built in arguments to remove missing values from the calculation:
+<<>>=
+mean(y)
+mean(y, na.rm = TRUE)
+@
+
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{Missing Values}
+<<echo=FALSE>>=
+set.seed(4444)
+@
+\begin{itemize}
+\item It may happen that we would like to replace values that meet a certain condition with NA
+<<>>=
+y = sample(c(0,1,2,3,4), 10, replace= TRUE)
+# replace 0s with NAs
+y[y==0] = NA
+@
+\item On the flip side, we could easily replace NAs by some value
+<<>>=
+# replace NAs with 0s
+y[is.na(y)] = 0
+@
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Loops}
+\begin{itemize}
+\item \define{Looping}, (AKA cycling or iterating) provides a way of replicating  a set of statements multiple times until some condition is satisfied.
+\begin{itemize}
+\item Each time a loop is executed is called an iteration.\nl
+\end{itemize}
+
+\item A \define{for loop} repeats statements a number of times.  It will iterate based on the number of group/collection elements.
+\nl
+
+\item  A \define{while loop} repeats statements while a condition is TRUE
+
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{{\tt while} loops}
+The most basic looping structure is the \emph{while} loop which continually executes a set of statements while a condition is true. Syntax:
+
+\begin{Verbatim}[xleftmargin=5mm, frame=single,label=while loops]
+while (condition){
+  statement 1
+  ...
+  statement n
+}
+\end{Verbatim}
+While {\tt (condition)} is {\tt TRUE} execute the set of statements {\tt statement 1}, \dots {\tt statement n }
+\end{frame}
+
+\begin{frame}[fragile]\ft{{\tt while} loops Example}
+<<>>=
+n = 1
+while (n<=3){
+  print(n)
+  n = n + 1
+}
+@
+\textit{Recall that blocks are contained within curly braces and indentation is not necessary (though recommended for readability).}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{{\tt while} loops}
+\begin{center}
+ \begin{tikzpicture}[
+  start chain=going below,
+  every join/.style={arrow},
+  node distance=1.7cm
+  ]
+\node (start) [startstop] {Start};
+\node (cond1) [dec, below of = start] {condition 1};
+\node (state1) [process,below of=cond1, yshift = -2em] {Process 1};
+\node (stop) [startstop, right of =state1, xshift = 5em] {Stop};
+%\node (np) [io, below of=stop] {New Process};
+
+\draw [arrow] (start) -- (cond1);
+\draw [arrow] (cond1) -- node[anchor=east] {{\tt TRUE}}(state1);
+\draw [arrow] (cond1) -| node[anchor=west] {{\tt FALSE}} (stop);
+\draw[arrow] (state1.west) --  ++(-40pt,0pt) |- (cond1.west);
+
+\end{tikzpicture}%
+%}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{{\tt repeat}}
+An alternative way of coding this up would be to use {\tt repeat
+}
+<<>>=
+n=1
+repeat {
+  print(n)
+  n = n + 1
+  if (n>5) break
+}
+@
+\end{frame}
+
+
+
+\begin{frame}
+\begin{itemize}
+\item {\tt break} is a reserved word (you are not allowed to use reserved words as variable names) in \R that allows you to break out of a {\tt for}, {\tt while}, or {\tt repeat}
+\item Notice that the condition we place for \emph{breaking} this loop will be the opposite condition that we had for our {\tt while} statement.
+\begin{itemize}
+\item Remember: if the \while condition is {\tt TRUE}, we continue to the next iteration
+\item Remember: if the {\tt break} condition is {\tt FALSE}, we continue to the next iteration
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{{\tt repeat} loops}
+\begin{center}
+ \begin{tikzpicture}[
+  start chain=going below,
+  every join/.style={arrow},
+  node distance=1.7cm
+  ]
+\node (start) [startstop] {Start};
+\node (cond1) [dec, below of = start] {break condition};
+\node (state1) [process,below of=cond1, yshift = -2em] {Process 1};
+\node (stop) [startstop, right of =state1, xshift = 5em] {Stop};
+%\node (np) [io, below of=stop] {New Process};
+
+\draw [arrow] (start) -- (cond1);
+\draw [arrow] (cond1) -- node[anchor=east] {{\tt FALSE}}(state1);
+\draw [arrow] (cond1) -| node[anchor=west] {{\tt TRUE}} (stop);
+\draw[arrow] (state1.west) --  ++(-40pt,0pt) |- (cond1.west);
+
+\end{tikzpicture}%
+%}
+\end{center}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]\ft{The {\tt for} loop}
+\begin{itemize}
+\item A {\tt for} loop repeats statements a given number of times. Syntax:
+\begin{Verbatim}[xleftmargin=5mm, frame=single,label=for loops]
+for (i in seq){
+  statement 1
+  ...
+  statement n
+}
+\end{Verbatim}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{The {\tt for} loop}\label{forex}
+ This simple example prints the numbers 1--\alert{6}. \textit{Don't forget that the end number is inclusive in {\tt R}!}
+<<>>=
+for (i in 1:6){
+  print(i) 
+}
+@
+\end{frame}
+
+
+
+\begin{frame}[fragile]{{\tt for} loops}
+\begin{center}
+ \begin{tikzpicture}[
+  start chain=going below,
+  every join/.style={arrow},
+  node distance=1.7cm
+  ]
+\node (start) [startstop] {Start};
+\node (cond1) [dec, below of = start, yshift = -2em] {last element in\\
+{\tt seq} reached?};
+\node (state1) [process,below of=cond1, yshift = -3em] {Process 1};
+\node (stop) [startstop, right of =state1, xshift = 5em] {Stop};
+%\node (np) [io, below of=stop] {New Process};
+
+\draw [arrow] (start) -- (cond1);
+\draw [arrow] (cond1) -- node[anchor=east] {{\tt FALSE}}(state1);
+\draw [arrow] (cond1) -| node[anchor=west] {{\tt TRUE}} (stop);
+\draw[arrow] (state1.west) --  ++(-40pt,0pt) |- (cond1.west);
+
+\end{tikzpicture}%
+%}
+\end{center}
+\end{frame}
+
+
+% % https://www.datamentor.io/r-programming/for-loop/
+\begin{frame}[fragile]\ft{The {\tt for} loop}
+\begin{itemize}
+% \item The for loop will run the code in that appears between the braces once for each member of that. For example, the for loop below runs print("one run") once for each element in a vector of character strings:
+\item Notice that we \alert{must} wrap the condition (in both {\tt for} loop and {\tt while} loops) in parenthesis \verb|()|, otherwise, we get an error
+% http://www.cs.ecu.edu/karl/2310/Javanotes/while.html
+<<>>=
+for i in 1:6{
+  print(i)
+}
+@
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{The {\tt for} loop}
+\begin{itemize}
+\item In the example on slide \ref{forex} the {\tt seq} was a sequence of numbers (the numbers 1 to 6 inclusive).
+\vfill
+\item More generally, {\tt seq} can be a set of objects stored in a vector, list or data frame.% (often a vector of numbers or character strings). 
+\end{itemize}
+<<>>=
+fruit = c("apples", "banana", "oranges")
+for (i in fruit){
+  print(i)
+}
+@
+
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]{}
+We may use {\tt seq\_along(along.with)} to create a sequence of number 1 to {\tt length(along.with)}
+<<>>=
+x <- c("Hello", "World")
+for (i in seq_along(x)){
+  print(paste("i=",i,"x[i]=",x[i]))
+}
+@
+Same as:
+<<>>=
+for (i in 1:length(x)){print(paste("i=",i,"x[i]=",x[i]))}
+@
+
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{{\tt for} loops}
+It is worth pointing out that the sequence which we iterate over (eg. {\tt 1:6}, and {\tt seq\_along(x)}) need not start from 1, nor does it have to appearing in an increasing order.  For example:
+<<>>=
+x <- c("apple","ball","cat","dog")
+for (i in c(3,1,4,2)){
+  print(paste("i=",i,"x[i]=",x[i]))
+}
+@
+\end{frame}
+
+
+\begin{frame}[fragile]\ft{{\tt next}}
+\begin{itemize}
+\item
+Another reserve word is {\tt next}
+\item Like {\tt break}, {\tt next} does not return a value, it merely  transfers control within the loop.
+\item A {\tt next} statement is useful when we want to skip the current iteration of a loop without terminating it. 
+\item On encountering next, the \R proceeds to next iteration of the loop (without executing any remaing statements the current iteration).
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+<<size='scriptsize'>>=
+x <- c("apple", "ball","cat","dog","elephant","fish")
+for (i in seq_along(x)){
+  print(paste("iteration", i))
+  if (i%%2==0)
+    next
+  print(x[i])} # wont be printed for even indices
+@
+\end{frame}
+
+\begin{frame}[fragile]\ft{Common problems -- Infinite Loops}
+\define{Infinite loops} are caused by an incorrect loop condition or not updating values within the loop so that the loop condition will eventually be false.
+
+\begin{Verbatim}[xleftmargin=5mm, frame=single,label=infinite loops]
+    n = 1
+    while (n <= 5){
+      print(n)
+    }
+\end{Verbatim}
+Here we forgot to increase $n$.  Hence we get an  infinite loop (i.e.\ the code will print 1,2,3, \dots, $\infty$)
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{Apply Functions}
+\begin{itemize}
+\item Last lecture we saw we could perform vector operations
+\end{itemize}
+<<>>=
+y <- 1:6
+# will add 2 to each element in y
+y + 2
+@
+\begin{itemize}
+ \item A similar concept for mutli-dimensional vectors can be done using the {\tt apply} family of functions in \R .
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Apply Functions}{}
+{\tt apply} returns a vector or array or list of values obtained by applying a function to margins of an array or matrix.  There are a number of variants:
+\begin{description}
+\item[lapply] list apply
+\item[sapply] simple apply
+\item[mapply] map apply
+\end{description}
+ The best choice will depend on the data structure and desired output.
+\end{frame}
+
+
+\begin{frame}[fragile]{Apply Functions}{}
+The general syntax is
+$$\verb|apply(X, MARGIN, FUN, ...)|$$
+\begin{itemize}
+\item {\tt X}	an array, including a matrix.
+\item {\tt MARGIN} a vector giving the subscripts which the function will be applied over.  (eg. for a matrix 1 indicates rows, 2 indicates columns, c(1, 2) indicates rows and columns.) %Where X has named dimnames, it can be a character vector selecting dimension names.
+\item {\tt FUN} the function to be applied.  In the case of functions like +, etc., the function name must be backquoted or quoted.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Apply functions}
+The called function could be:
+\begin{itemize}
+\item An \emph{aggregating function} which returns a single number (eg. {\tt mean}, or the {\tt sum}
+\item A \emph{vectorized} functions, which may returns a list, vector, matrix or array.
+\item \emph{transforming} or \emph{subsetting} functions (see slide \ref{subsetting}, \ref{transforming})
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Apply functions}
+\begin{itemize}
+\item The {\tt apply()} function allows us to perform operations with very few lines of code.
+\vfill
+\item Apart from producing more concise code, using an {\tt apply()} function in place of a loop can often save a lot of time (computational time that is, often they will take you longer to think about and code up)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Apply}
+\begin{itemize}
+\item Let's consider the case where {\tt X} is a matrix.
+\vfill
+\item While there is already a built-in function to do this ({\tt rowSums()}), lets compute the sum of each row of an $n \times p$ matrix.
+\vfill
+\item Since there are $n$ rows, the result should be an $n$-length vector.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Apply Functions}
+<<>>=
+m <- matrix(1:12, nrow=3, ncol=4)
+m
+mRowSums = apply(m, 1, sum) # index = 1 for rows
+mRowSums
+@
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Apply Functions}
+To acheive the same result using a loop:
+<<>>=
+m <- matrix(1:12, nrow=3, ncol=4)
+mRowSums = NULL
+for (i in 1:nrow(m)){
+  mRowSums[i] = sum(m[i,])
+}
+mRowSums
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{Apply Functions}
+Similarly we could have found the column sums:
+<<>>=
+m <- matrix(1:12, nrow=3, ncol=4)
+m
+#notice how the margin changes to 2 below
+mColSums = apply(m, 2, sum) # index 2 for columns
+mColSums
+@
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Practical Exercise}
+\begin{exampleblock}{Exercise}
+ Find the average Sepal length and width across for the {\tt setosa} species within the {\tt iris} data.
+\end{exampleblock}
+\begin{block}{Solution}
+<<>>=
+setosa = subset(iris, Species=="setosa", 
+                select= c("Sepal.Length", "Sepal.Width"))
+apply(setosa, 2, mean)
+@
+\end{block}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Question ########################
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+\begin{question}
+ How many of the are following statements are true?
+  \begin{itemize}
+\item The longer logical operators (eg. \verb|&&| and \verb!||!) perform operations element-wise. % FALSE
+\item The {\tt subset()} function can be used to select specific columns from a data frame. % TRUE
+\item The {\tt sort(x)} function returns a vector consisting of the ordered \textit{indices} of the elements in {\tt x}. % FALSE
+\item The {\tt head()} function returns the last 6 rows of a data frame % FALSE 
+\end{itemize}
+\end{question}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 0
+\item 1
+\item 2
+\item 3
+\item 4
+\end{enumerate}
+\end{multicols}
+\end{frame}
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ % Answer ########################
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ \begin{frame}<handout:0>[fragile]
+\begin{question}
+ How many of the are following statements are true?
+  \begin{itemize}
+\item The longer logical operators (eg. \verb|&&| and \verb!||!) perform operations element-wise. \onslide<+->{}\pxmark % FALSE  
+\item The {\tt subset()} function can be used to select specific columns from a data frame. \pcmark% TRUE
+\item The {\tt sort(x)} function returns a vector consisting of the ordered \textit{indices} of the elements in {\tt x}. \pxmark% FALSE
+\item The {\tt head()} function returns the last 6 rows of a data frame \pxmark% FALSE 
+\end{itemize}
+\end{question}
+\begin{multicols}{5}
+\begin{enumerate}[A)]
+\item 0
+\item \tans{5}{1}
+\item 2
+\item 3
+\item 4
+\end{enumerate}
+\end{multicols}
+\end{frame}
+ 
+
+ % # {onside}{text}
+ % \tans{5}{2}
+ 
+ 
+ 
+
+% \begin{frame}[fragile]
+% <<>>=
+% for (i in 1:length(iSpecies)){
+%   temp = subset(iSpecies[[i]], select=c("Sepal.Length", "Sepal.Width"))
+%   print(paste("Averages for",names(iSpecies)[i],":"))
+%   print(apply(temp,2,mean))
+% }
+% @
+% \end{frame}
+
+
+
+% \begin{frame}[fragile]{Apply Functions (advanced)}
+% \begin{itemize}
+% \item  To see an advanced usage of apply, let's create  a 3 dimensional \define{array}.
+% \item We can build arrays using the {\tt array()} function whose first argument is a vector of values to fill the array, and the {\tt dim} parameter gives the maximal indices in each dimension.
+% \item We can think of vectors as 1-dimension arrays, matrices as 2-dimensional arrays, and 3-dimensional arrays as matrices stacked one ontop each other
+% \end{itemize}
+% \end{frame}
+% 
+% 
+% \begin{frame}[fragile]{}
+%   Image adapted from \href{https://www.slideshare.net/smitparikh1/multidimensional-array/3}{(image source)}
+% \begin{center}
+% \includegraphics[height=0.72\textheight, width=0.8\textwidth]{arrays}
+% \end{center}
+% \end{frame}
+% 
+% 
+% \begin{frame}[fragile]{Apply Functions (advanced)}
+% <<size="scriptsize">>=
+% (mm <- array(1:12, dim=c(3,4,2)))
+% @
+% \end{frame}
+% 
+% 
+% \begin{frame}[fragile]{Apply Functions (advanced)}
+% <<size="small">>=
+% # results in a c(3,4,2)[c(1,2)] array
+% apply(mm, c(1,2), sum)
+% # results in a c(3,4,2)[c(3)] array
+% apply(mm, 3, sum)
+% @
+% \end{frame}
+% 
+% 
+% 
+% \begin{frame}[fragile]{{\tt lapply}}
+% \begin{itemize}
+% \item The output of {\tt lapply} is a \emph{list}
+% \item Unlike the generic {\tt apply} function which only takes \emph{arrays} as {\tt X} input, {\tt lapply} accepts lists and data frames for {\tt X}.
+% \item The syntax looks is similar to {\tt apply()}
+% $$\verb|lapply(X, FUN, ...)|$$
+% where {\tt$\dots$} indicate the optional arguments of {\tt FUN()}
+% \end{itemize}
+% \end{frame}
+% 
+% 
+% \begin{frame}[fragile]{{\tt lapply} function}
+% \begin{itemize}
+% \item  To see an advanced usage of {\tt lapply}, let's create a list of matrices.
+% \item We will extract the third column from each of these matrices using the {\tt [} operator.
+% \item To provide another example, we will also extract the second row of each.
+% \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{{\tt lapply} function}
+% <<size="scriptsize">>=
+% mylist = list(matrix(1:12,nrow=2),matrix(1:12,nrow=3),matrix(1:12,nrow=4))
+% mylist
+% @
+% \end{frame}
+% 
+% 
+% 
+% \begin{frame}[fragile]{{\tt lapply} function}
+% <<>>=
+% # extract the third column from each matrix in mylist
+% (lcols = lapply(mylist,"[", , 3))
+% # notice the row argument is left blank
+% @
+% Notice how the length of {\tt lcols} is equal to the length of {\tt mylist}.
+% \end{frame}
+% 
+% % https://www.datacamp.com/community/tutorials/r-tutorial-apply-family#family good visual
+% \begin{frame}[fragile]{{\tt lapply} function}
+% <<>>=
+% # extract the second row from each matrix in mylist
+% (lrows = lapply(mylist,"[", 2, ))
+% # notice the col argument is left blank
+% @
+% Notice how the length of {\tt lrows} is equal to the length of {\tt mylist}.
+% \end{frame}
+% 
+% \begin{frame}[fragile]{{\tt lapply} function}\ref{lapplycell}
+% We could have selected a single element, say the value in the first row and third column using the following code:
+% <<>>=
+% # extract the value in [1,3] for each matrix in mylist
+% (crows = lapply(mylist,"[", 1, 3))
+% @
+% \end{frame}
+% 
+% 
+% \begin{frame}{{\tt sapply()} function}
+% \begin{itemize}
+% \item The {\tt sapply()} function behaves like {\tt lapply()} but instead of returning a list, it attempts to convert the output to the most simple data structure possible.
+% \item Consider the example we did on slide \ref{lapplycell}; the output was a list where each member was a single number.
+% \item {\tt sapply} will coerce this output into a vector of length 3.
+% \end{itemize}
+% \end{frame}
+% 
+% 
+% \begin{frame}[fragile]{{\tt sapply} function}
+% We could have selected a single element, say the value in the first row and third column using the following code:
+% <<>>=
+% # extract the value in [1,3] for each matrix in mylist
+% crows2 = sapply(mylist,"[", 1, 3)
+% crows2
+% @
+% \end{frame}
+
+% \begin{frame}[fragile]
+% <<eval=TRUE, echo=FALSE>>=
+% f <- '08RII.Rnw'
+% knitr::purl(f)
+% Stangle(f)
+% @
+% \end{frame}
+
+% \begin{frame}[fragile]{}
+% \end{frame}
+% 
+% \begin{frame}
+% \begin{itemize}
+% \item 
+% \end{itemize}
+% \end{frame}
+
+
+
+\end{document}
+

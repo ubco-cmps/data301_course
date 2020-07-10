@@ -1,0 +1,14 @@
+
+Include a section on nested if statements!
+
+include an example on how to append lists to lists
+
+https://stackoverflow.com/questions/5653533/indexerror-list-assignment-index-out-of-range
+
+show how to extend a list (vs append)
+https://stackoverflow.com/questions/252703/what-is-the-difference-between-pythons-list-methods-append-and-extend
+
+when iterating over dictionaries we iterate over the keys!
+ https://www.w3schools.com/python/python_dictionaries.asp
+
+can't append dictionaries

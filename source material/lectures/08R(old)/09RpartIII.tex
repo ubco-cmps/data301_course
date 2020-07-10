@@ -1,0 +1,550 @@
+\documentclass[xcolor=svgnames, 10pt, handout]{beamer}
+
+\include{header}
+\include{macros}
+
+\title
+  [R]
+  {R part III}
+  \subtitle{Data Analysis with R}
+
+
+\begin{document}
+
+
+\maketitle
+
+
+
+\begin{frame}{Introduction}
+\begin{itemize}
+\item Now that we have seen some of the basic functionalities of R, we can now discuss some of the important statistical tests that are commonly used. 
+\item The 
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Confidence Intervals}
+Consider the following statement
+\begin{quotation}
+``62\% of US college students miss a class due to excessive drinking.  The result is accurate with 1.7 percentage points 19 times out of 20.''
+\end{quotation}
+\vfill
+Unpacking this statement:
+\begin{enumerate}
+\item \emph{62} is the estimated percentage.
+\item \emph{1.7} is the margin of error.
+\item \emph{19 times out of 20} is the stated confidence and $100\% \frac{19}{20} = 95\%$.
+\end{enumerate}
+\vfill
+We call this a \emph{95\% confidence interval}: $(60.3,\, 63.7)$
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\vfill
+\begin{block}{General Form of Confidence Interval:}
+\begin{align*}
+\text{point estimate }&\pm \text{ margin of error}\\
+(\hat\mu-m.e.&,\, \hat\mu+m.e.)
+\end{align*}
+\end{block}
+\vfill
+Interpretation of a 95\% confidence interval: we are 95\% confident that the interval will contain the true value of the parameter.
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Hypothesis Testing}
+\emph{Hypothesis testing} is used to determine if a relationship exists between two sets of data and make decisions/conclusions about that relationship.
+\vfill
+\emph{Hypothesis testing is useful for}
+\begin{enumerate}
+\item \emph{business} in determining effectiveness of marketing, identifying customer buying properties, online advertising optimization.
+\item \emph{science and social science} in determining if data sets match a model, understanding scientific process based on collected data values, analysis of study data.
+\end{enumerate}
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Probability Distribution Functions}
+\begin{description}
+\item[\texttt rnorm] Random Normal variables.
+\item[\texttt dnorm] Evaluate normal probability density/
+\item[\texttt pnorm]  Evaluates normal distribution function 
+\item[\texttt qnorm] Quantile function
+\item[\texttt d] Density.
+\item[\texttt r] Random number generation.
+\item[\texttt p] Cumulative distribution.
+\item[\texttt q] Quantile function.
+\end{description}
+Default distribution is ${\rm mean}=0$ and ${\rm sd}=1$.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Hypothesis Testing Steps}
+\begin{enumerate}
+\item Declare hypotheses statement and null hypothesis.
+\item Decide on a test statistic.
+\item Use P-value and/or confidence interval to make decision/conclusion.
+\begin{enumerate}
+\item A p-value of 0.05 ``signifies that if the null hypothesis is true, and all other assumptions made are valid, there is a 5\% chance of obtaining a result at least as extreme as the one observed.''
+\end{enumerate}
+\item Data is used as evidence.  Perform a test in order to make a decision:  reject the null hypothesis or fail to reject the null hypothesis.
+\end{enumerate}
+\vfill
+Note: We cannot \emph{prove} that the null hypothesis is true or false. We can only show that there is evidence to suggest one conclusion or another. 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Assumptions}
+\vfill
+There are assumptions that need to be met before performing statistical tests.
+\vfill
+For the one sample:
+\begin{enumerate}
+\item Population of interest is normally distributed.
+\item Independent random samples are taken.
+\end{enumerate}
+\vfill
+For the two sample case:
+\begin{enumerate}
+\item The two samples are independent.
+\item Populations of interest are normally distributed.
+\end{enumerate}
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{One Sample Test}
+\vfill
+A \emph{one sample test} is used when a sample is compared to a model or known population/estimate.
+\vfill
+As an example, using the car data test if the average mileage is different than 10km/L.
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{One Sample Test: Hypotheses Statements}
+Null hypothesis ($H_0$) always contains a statement of no change ($=$).
+\vfill
+Alternatively hypothesis ($H_A$) can be one sided ($<$ or $>$) or two sided ($\neq$).
+\begin{enumerate}
+\item $H_0$: $\mu = \verb|test_number|$,
+\item $H_A$: $\mu \neq \verb|test_number|$.
+\end{enumerate}
+\vfill
+Car mileage example
+\begin{enumerate}
+\item $H_0$: $\mu = \verb|10|$,
+\item $H_A$: $\mu \neq \verb|10|$.
+\end{enumerate}
+More generically, we use $H_0: \mu = \mu_0$ where $\mu_0$ is the hypothesized mean.
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{One Sample Test: Calculate Test Statistic}
+\vfill
+For the one sample test the $t$-test statistic is calculated as:
+$$t = \dfrac{\bar y - \mu_0}{\dfrac{s}{\sqrt n}}$$
+\vfill
+$\overline y$ is a sample mean, $s$ is sample standard deviation, $n$ is sample size, $\mu_0$ is hypothesized mean value
+\vfill
+\begin{Verbatim}[xleftmargin=2em, xrightmargin=1.5em, frame=single, label=R code, framesep=0.5em]
+car_data <- read.csv("car_data.csv")
+t.test(x=car_data$km.L,
+       alternative=c("two.sided"), mu=10)
+\end{Verbatim}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{One Sample Test: Decision and Conclusion (using $P$-value)}
+\vfill
+If $p{\rm-value} > 0.05$, the probability of seeing a sample mean more extreme is not that unlikely.
+\begin{enumerate}
+\item Fail to reject the null hypothesis.
+\item There is insufficient  evidence to suggest that the mean value is less than/greater than/different than the test value (will depend on alternative hypothesis)
+\end{enumerate}
+\vfill
+If $p{\rm-value} < 0.05$,
+\begin{enumerate}
+\item Reject the null hypothesis.
+\item There is statistically significant evidence to suggest that the mean value is less than that/greater than/ different than the test value  (will depend on alternative hypothesis).
+\end{enumerate}
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{One Sample Test: Decision and Conclusions (using $P$-value)}
+\begin{Verbatim}[xleftmargin=2em, xrightmargin=1.5em, frame=single, label=R code, framesep=0.5em, fontsize=\small, commandchars=\\\{\}]
+> t.test(x=car_data$km.L, alternative=c("two.sided"),mu=10)
+            
+            One Sample t-test
+            
+data: car_data$km.L
+t = 1.608, df = 29, \emph{p-value = 0.1187}
+alternative hypothesis: true mean is not equal to 10
+95 percent confidence interval:
+    9.90338  10.80729
+sample estimates:
+mean of x
+  10.35533
+\end{Verbatim}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{One Sample Test: Decision and Conclusions (using $P$-value)}
+\vfill
+$P$-value $=0.1187 > 0.05 \implies \text{ fail to reject the null hypothesis}$.
+\vfill
+There is insufficient evidence to suggest that the mean mileage differs from 10 km/L.
+\vfill
+Note: Unable to claim that either the null or alternative hypothesis is true.  Can only reject or fail to reject the null hypothesis.
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{One Sample Test: Decision and Conclusions (using CI)}\small
+\begin{Verbatim}[xleftmargin=2em, xrightmargin=1.5em, frame=single, label=R code, framesep=0.5em, fontsize=\footnotesize, commandchars=\\\{\}]
+> t.test(x=car_data$km.L, alternative=c("two.sided"),mu=10)
+            One Sample t-test
+data: car_data$km.L
+t = 1.608, df = 29, p-value = 0.1187
+alternative hypothesis: true mean is not equal to 10
+\emph{95 percent confidence interval:}
+\emph{    9.90338  10.80729}
+sample estimates:
+mean of x
+  10.35533
+\end{Verbatim}
+Can also make a conclusion (reject or fail to reject) based on the confidence interval. We are 95\% confident that the true mean mileage of the car lies within those bounds. 
+\vfill
+Since 10 km/L is within those bounds, fail to reject the null hypothesis.
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Two Sample Unpaired}
+\vfill
+An unpaired (independent) \emph{two sample test} compares two independent samples to determine if there is a difference between the groups.
+\vfill
+\begin{example}
+\begin{enumerate}
+\item Compare effectiveness of two different drugs tested on two sets of patients.\\
+\item Experiment versus control samples.
+\end{enumerate}
+\end{example}
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Two Sample Unpaired Example
+Hypothesis Statement}
+Using the \verb|beaver2| dataset in R, test the hypothesis that there is no difference between the mean active temperature and the mean non-active temperatures.
+\begin{align*}
+H_0 : \mu_1 = \mu_2 \to \mu_1 -\mu_2 = 0 \\
+H_A : \mu1 \neq \mu_2 \to \mu_1 - \mu_2 \neq 0
+\end{align*}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Two Sample Unpaired Example Test Statistic}
+\vfill
+Use $t$-test statistics.
+\vfill
+\begin{Verbatim}[xleftmargin=2em, xrightmargin=1.5em, frame=single, numbers=left, label=Using P-value, framesep=0.5em, commandchars=\\\{\}]
+# Need to set active to be a factor first.
+beaver2$activ = as.factor(beaver2$activ)
+# Perform unpaired test
+t.test(temp{~}activ, data=beaver2,
+       alternative=c("two.sided"), mu=0,
+       paired=FALSE)
+\end{Verbatim}
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Two Sample Unpaired Example Decision and Conclusions}
+\begin{Verbatim}[xleftmargin=2em, xrightmargin=1.5em, frame=single, label=Using CI-value, framesep=0.5em, commandchars=\\\{\}, fontsize=\footnotesize]
+> t.text(temp-activ, data=beaver2, alternative=c("two.sided"), mu=0,
+paired=FALSE)
+        welch Two Sample t-test
+data:    temp by activ
+t = -18.548,  df = 80.852, \emph{p-value < 2.2e-16}
+alternative hypothesis: true difference in means is not equal to 0
+95 percent condifence interval:
+  -0.8927106  -0.7197342
+sample estimates:
+mean in group 0 mean in group 1
+        37.09684        37.90306
+\end{Verbatim}
+The p-value $<<$ 0.05.
+\vfill
+Reject the null hypothesis. There is vert strong evidence to suggest that there is a difference between active and non-active temperatures. 
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+The two sample case tests a DIFFERENCE between the groups $(\mu_1 - \mu_2 \neq 0)$. \\[0.2in]
+The CI stated on the previous slide is the CI for the difference, $\mu_1 - \mu_2$\\[0.2in]
+We reject the null hypothesis because 0 is not contained in the interval. \\[0.2in]
+If 0 was contained we would fail to reject the null hypothesis.
+%
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Two Sample Paired Test}
+A \emph{paired (dependent) two sample test} compares two dependent samples to see if there is a difference between the groups.
+\begin{enumerate}
+\item This test typically uses multiple measurements on one subject.
+\item Also called a "repeated measures" test.
+\end{enumerate}
+\vfill
+\begin{examples}
+\begin{enumerate}
+\item Affect of treatment on a patient (before and after)
+\item Apply something to test subjects to see if there is an effect
+\item Car example: Do cars get better mileage with different grades of gasoline?
+\end{enumerate}
+\end{examples}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Two Sample Paired Test Example Hypothesis Statement}
+\vfill
+The \verb|ahtlete.csv| dataset contains data on ten athletes and their speeds for the 100m dash before training (Training = 0) and after (Training = 1).
+\vfill
+Test the hypothesis that the training has no effect on the times of the athletes.  Test to see if the mean of the difference is different than 0.
+\begin{align*}
+H_0 &: d = 0\\
+H_A &: d \neq 0
+\end{align*}
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Two Sample Paired Test Example Test Statistic -- R Code}
+\begin{Verbatim}[xleftmargin=2em, xrightmargin=1.5em, frame=single, label=Using CI-value, framesep=0.5em, commandchars=\\\{\}, fontsize=\small]
+# Read the data
+athlete = read.csv("athlete.csv", header=TRUE)
+
+# Perform paired test
+t.test(Time~Training, data=athlete, 
+  alternative=c("two.sided"), my=0, paired=TRUE)
+\end{Verbatim}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Two Sample Paired Test Example  Decision and Conclusion}
+\begin{Verbatim}[xleftmargin=2em, xrightmargin=1.5em, frame=single, label=Using P-value, framesep=0.5em, commandchars=\\\{\}, fontsize=\footnotesize]
+> t.test(Time~Training, data=athlete, alternative=c("two.sided"),
+  mu=0, paired=TRUE)
+        Paired t-test
+data:    Time by Training
+t = -0.12031, df = 9, \emph{p-value = 0.9069}
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+-0.5544647  0.4984647
+sample estimates:
+mean of the differences
+                 -0.028
+\end{Verbatim}
+The $p{\rm -value}>>0.05$.
+\vfill
+Fail to reject the null hypothesis.  There is insufficient evidence to suggest that there is a difference between pre and post training times.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Two Sample Paired Test Example Decision and Conclusion}
+\begin{Verbatim}[xleftmargin=2em, xrightmargin=1.5em, frame=single, label=Using CI, framesep=0.5em, commandchars=\\\{\}, fontsize=\footnotesize]
+> t.test(Time-Training, data=athlete, alternative=c("two.sided"), 
+  mu=0, paired=TRUE)
+        Paired t-test
+data:    Time by training
+t = -0.12031,  df = 9,  p-values = 0.9069
+alternative hypothesis true difference in means is not equal to 0
+-0.5544647   0.4984647
+sample estimates:
+mean of the differences
+                 -0.028
+\end{Verbatim}
+The two sample case tests for a difference between the groups ($d \neq 0$).  The CI is for the difference.
+\vfill
+Fail to reject the null hypothesis because 0 is contained in the confidence interval.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\begin{question}
+Which (if any) of the following are true?
+\begin{enumerate}
+\item Paired and unpaired $t$-tests are the same thing. \onslide<+-> \pxmark
+\item Confidence intervals can be of any level of confidence (not just 95\%). \pcmark
+\item Confidence intervals can be used to make a conclusion about a hypothesis test. \pcmark
+\item Confidence intervals can be used to prove that the null hypothesis is false. \pxmark
+\end{enumerate}
+\end{question}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\begin{question}
+Which (if any) of the following are true?
+\begin{enumerate}
+\item Unpaired t-tests test the difference between two means $\mu_1$ and $\mu_2$. 
+\item Paired t-tests can be used to compare the difference between two measurements on the same subject.\pcmark
+\item In both the paired and unpaired two sample cases, a confidence interval containing 0 would result in a decision of: fail to reject the null hypothesis.\pcmark (assuming $H_0: \mu_1 - \mu_2 = 0$, we could however have $H_0: \mu_1 - \mu_2 = \mu_d$ with $\mu_d\neq 0$
+\item  In the one sample $t$-test, a confidence interval containing 0 would result in a decision of: fail to reject the null hypothesis.\pxmark
+\end{enumerate}
+\end{question}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]\small
+\begin{question}
+Which is the most appropriate test for each of the following?
+\begin{enumerate}
+\item Is the average student mark in courses 70\%?  \textit{one sample t-test}
+\item Does a student's mark improve after studying?  \textit{two sample paired (same student)}
+\item Has the average student height increased since 1990?  \textit{two sample unpaired (two distinct student populations)}
+\item Does radiation reduce the size of tumours when used to treat patients?  \textit{two sample paired (same patient), although could argue against control/experiment groups in which case two sample unpaired}
+\item Are college graduates better than high school graduates at standardized tests?   \textit{two sample unpaired }
+%\item Is aspirin more effective than Tylenol for treating headaches?  \textit{ two sample unpaired }
+
+\end{enumerate}
+\end{question}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\begin{question}
+Using the car data, test the hypothesis that the mean distance at each fill up is less than 450km.
+\end{question}
+\vfill
+\begin{question}
+Use the car data to see if the mean distance for 2015 fill ups is different than the mean distance for 2016 fill ups.
+\end{question}
+%\pause
+%\pause
+%\verb|t.test(x = car_data Distance, alternative=c("less"), mu=450)|
+%\pause
+%\verb|t.test(Distance~prov, data=car_data, alternative=c("two.sided"), mu=0, paired =FALSE)|
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Linear models in R}
+\vfill
+A linear model is an equation that relates a response variable ($y$) to some explanatory variables ($x$'s).  The general form of the model is:
+$$y = b_0 + b_1x_1 + b_2x_2 + \cdots + b_nx_n$$
+\vfill
+Not all of the data points can fall on this line so the full equation is
+$$y_i = b_0 + b_1 x_{1i} + b_2x_{2i} + \cdot + b_nx_{bi} + \varepsilon_i$$
+\vfill
+Where $\varepsilon_i$ denotes the error term associated with observation $i$.
+\vfill
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Linear models in R}
+We are assuming
+\begin{enumerate}
+\item Residuals are independent.
+\item Residuals are normally distributed.
+\item Residuals have a mean of 0 for all $X$.
+\item Residuals have constant variance.
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Fitting a Linear Model}
+\begin{Verbatim}[xleftmargin=2em, xrightmargin=1.5em, frame=single, label=Using P-value, framesep=0.5em, commandchars=\\\{\}, fontsize=\small]
+> lm(km.L~Litres+Distance, data=car_data)
+> model
+
+call:
+lm(formula = km.L ~ Litres + Distance, data = car_data)
+
+Coefficients:
+(Intercept)        Litres        Distance
+  10.35447       -0.33295         0.03251
+\end{Verbatim}
+The formula can be then be created using the values stored in \verb|model$coefficients|
+
+\verb|Km.L = 10.35447 -0.33295*Litres + 0.03251*Distance|
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Conclusion}
+\begin{enumerate}
+\item R is a free and open source programming language for statistical computing and graphics.
+\item R contains many useful features for data analysis including data structures such as vectors and data frames that make it easy to perform statistical analysis and visualization.
+\item R is often used for hypothesis testing and understanding how to properly setup and interpret a test is an important skill.
+\end{enumerate}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
