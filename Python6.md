@@ -104,10 +104,8 @@ print("Name: "+name)
 ### Installing and Using Python
 <br>Python version
 <br>If you haven’t done any of the installations above, this is probably going to be Python 2.
-
-### need an image here 
-
- <br>You can find out which version of Python you have by typing python -V in your console.
+![alt text](image/pythonshell.png)
+<br>You can find out which version of Python you have by typing python -V in your console.
  
 
 ### Python Editor - Jupyter
@@ -115,3 +113,14 @@ print("Name: "+name)
 <br>Jupyter notebook is a graphical, browser-based application for editing and running Python. Follow the instructions here to install.
 <br>To run, type jupyter notebook in your Command Prompt. This action will start the notebook server in your default browser
 and echo information about the notebook server in your terminal. <br>Read more about it by clicking Try Jupyter for Python here
+
+### Python Editor - Jupyter
+<br>The Notebook Dashboard will list all of the notebooks (.ipynb), files, and subdirectories stored in the local working directory (i.e. the directory from which you launched jupyter)
+![alt text](image/jnote.png)
+
+### Python Editor - Jupyter
+<br>To create anew notebook, select New, Python3.
+
+![alt text](image/jupyter.png)
+
+
