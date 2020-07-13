@@ -108,7 +108,7 @@ Before e-mailing me, I encourage you to ask questions on Canvas’ Discussion Bo
 - If you are working with a partner, please decide on who will submit the documents to Canvas (only one person should upload these files).
 - *Regardless* if you were the partner who uploaded the completed assignment, please include the name and student number of your partner in the **Assignment Comments** 
 
-<img src="/source%20material/lectures/01Intro/img/partner.png" alt="partner" width="800">
+<img src="/source%20material/lectures/01Intro/img/partner.png" alt="partner" width="1000">
 
 
 *Figure*: Each partner should submit the name and student number of their partner in the assignment comments on Canvas. 
@@ -246,7 +246,7 @@ everyone has a chance to obtain a clicker first)
 
 ### Don’t forget to register your clickers on Canvas
 
-<img src="/source material/lectures/01Intro/img/clickerCanvas.png" alt="clickerCanvas" width="800">
+<img src="/source material/lectures/01Intro/img/clickerCanvas.png" alt="clickerCanvas" width="1000">
 
 
 
