@@ -123,4 +123,7 @@ and echo information about the notebook server in your terminal. <br>Read more a
 
 ![alt text](image/jupyter.png)
 
+### Python Editor - Jupyter
+<br>To close this program, navigate the the <b> Running</b> tab and click the orange Shutdown button. Closing the notebook's page is  not sufficient to shutdown.
+![alt text](image/shutdown.png)
 
