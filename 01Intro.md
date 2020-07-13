@@ -5,7 +5,10 @@
 The overall goal of this course is for you to: 
 > Understand data analytics and be able to apply data analysis to data sets using a variety of software tools and techniques.
 
-***Put logos here***
+<img src="/source%20material/lectures/01Intro/img/excel.png" alt="excel" height="48"> <img src="/source%20material/lectures/01Intro/img/python.png" alt="python" height="48">
+<img src="/source%20material/lectures/01Intro/img/sql.png" alt="sql" height="48"> <img src="/source%20material/lectures/01Intro/img/Rlogo.png" alt="Rlogo" height="48">
+<img src="/source%20material/lectures/01Intro/img/Tableau.png" alt="Tableau" height="48">
+
 
 * The most exciting aspect of data analytics is discovering and presenting useful data/information that can have an impact on business, society, etc.
 * This course will provide the tools and skills for you to perform your own data analysis when encountering problems in the real-world.
@@ -105,7 +108,8 @@ Before e-mailing me, I encourage you to ask questions on Canvas’ Discussion Bo
 - If you are working with a partner, please decide on who will submit the documents to Canvas (only one person should upload these files).
 - *Regardless* if you were the partner who uploaded the completed assignment, please include the name and student number of your partner in the **Assignment Comments** 
 
-**put partner.png here**
+<img src="/source%20material/lectures/01Intro/img/partner.png" alt="partner" width="800">
+
 
 *Figure*: Each partner should submit the name and student number of their partner in the assignment comments on Canvas. 
 **Only one** partner should upload the files of the complete assignment.
@@ -242,7 +246,7 @@ everyone has a chance to obtain a clicker first)
 
 ### Don’t forget to register your clickers on Canvas
 
-**put clickerCanvas.png here**
+<img src="/source material/lectures/01Intro/img/clickerCanvas.png" alt="clickerCanvas" width="800">
 
 
 
