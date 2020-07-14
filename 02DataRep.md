@@ -1,3 +1,5 @@
+## Data Representation
+
 ### Computer Terminology
 There is a tremendous amount of terminology related to technology.\
 Using terminology precisely and correctly demonstrates understanding of a domain and simplifies communication.\
@@ -46,19 +48,21 @@ number, etc. data that we want in the computer and convert it into the kind of d
 represented in (on/off) switches.” – [University of Rhode Island](https://computing-concepts.cs.uri.edu/wiki/Data_Representation_For_Computing)
 
 Data size is measured in bytes.
+
+<img src="/source%20material/lectures/02DataRep/img/BitsandBites.jpg" alt="BitsandBites" height="120" >
+
 - A bit is either a 0 or a 1.
 - A *byte* contains 8 *bits* (*B*inary Dig*its*)
 - A *nibble* contains 4 *bits* (*B*inary Dig*its*)  
-> Larger units:
-    - kilobyte (KB) = 1000 bytes \
-    - megabyte (MB) = 106 bytes (or 1000 KB) \
-    - gigabyte (GB) = 109 bytes (or 1000 MB) \
-    - terabyte (TB) = 1012 bytes (or 1000 GB) \
-    - petabyte (PB) = 1015 bytes (or 1000 TB) \
-    - exabyte (EB) = 1018 bytes (or 1000 PB) \
-    - zettabyte (ZB) = 1021 bytes (or 1000 EB) \
+**Larger units**:
+- kilobyte (KB) = 1000 bytes 
+- megabyte (MB) = 106 bytes (or 1000 KB) 
+- gigabyte (GB) = 109 bytes (or 1000 MB) 
+- terabyte (TB) = 1012 bytes (or 1000 GB) 
+- petabyte (PB) = 1015 bytes (or 1000 TB) 
+- exabyte (EB) = 1018 bytes (or 1000 PB) 
+- zettabyte (ZB) = 1021 bytes (or 1000 EB) 
 
-<img src="/source%20material/lectures/02DataRep/img/BitsandBites.jpg" alt="BitsandBites" height="120" >
 
 
 ### Memory/Data Size
@@ -92,8 +96,7 @@ The liquid level is analog, and its expansion continuous over the temperature ra
 
 This information can be represented using discrete units using digital thermometer, for example.
 
-<img src="/source%20material/lectures/02DataRep/img/thermo.png" alt="thermo" height="160" >
-<img src="/source%20material/lectures/02DataRep/img/dtheorm.png" alt="dtheorm" height="160" >
+<img src="/source%20material/lectures/02DataRep/img/thermo.png" alt="thermo" height="160" >     <img src="/source%20material/lectures/02DataRep/img/dtheorm.png" alt="dtheorm" height="160" >
 
 
 ### Conversion of Analogue to Digital
@@ -133,16 +136,14 @@ The more bits you have, the more values you can represent.
 - A **binary number** is a number expressed using only 0s and 1s (ie. in the base-2 numeral system or **binary numeral system**).
 - Before discussing the binary system, let’s first discuss a conversion system you should all be familiar with: the **decimal system**.
 
-The decimal system uses digit placeholders, say , that can take on values from the set {0; 1; 2; 3; 4; 5; 6; 7; 8; 9} \
+The decimal system uses digit placeholders, say ,  :white_large_square: , that can take on values from the set {0; 1; 2; 3; 4; 5; 6; 7; 8; 9} \
 The number of digits in the set is called the **base**. So the base for this system is 10. \
 Reading from right to left, the first placeholder represents ones, the second, 10s, the third hundreds, and so on . . .
 
 > We write eight million, two hundred ninety thousand, eight hundred forty one as:\
- 8 2 9 0 8 4 1 \
+ :eight::two::nine::zero::eight::four::one: \
 = 8 * 10<sup>6</sup> + 2 * 10<sup>5</sup> + 9 * 10<sup>4</sup> + 0 * 10<sup>3</sup> + 8 * 10<sup>2</sup> + 4 * 10<sup>1</sup> + 1 * 10<sup>0</sup>
-``` diff
-- Need to visualize the placeholder
-```
+
 ### Representing Data: Integers
 A binary system works in the same way, only now, the placeholder must take a value from the set {0; 1}.\
 To put another way, instead of using base 10 wherein: 
@@ -151,12 +152,10 @@ we use base 2 where:
 ones=2<sup>0</sup>, ‘twos’=2<sup>1</sup>, ‘fours’=2<sup>2</sup>, ‘eights’=2<sup>3</sup>, etc. .
 
 > For example, the integer 164 would be expressed as \
-1 0 1 0 0 1 0 0 \
+ :one::zero::one::zero::zero::one::zero::zero: \
 164 = 128 + 32 + 4 \
 1 * 2<sup>7</sup> + 0 * 2<sup>6</sup> + 1 * 2<sup>5</sup> + 0 * 2<sup>4</sup> + 0 * 2<sup>3</sup> + 1 * 2<sup>2</sup> + 0 * 2<sup>1</sup> + 0 * 2<sup>0</sup>
-``` diff
-- Need to visualize the placeholder
-```
+
 
 
 ### Converting decimal to binary
@@ -170,8 +169,7 @@ to the binary system (or simply binary). However the steps to do it on paper are
 1. Repeat steps 1–3 until the quotient is equal to 0.
 1. Construct the base 2 representation, by taking all the remainders starting from the bottom up.
 
-Let’s look at an example. . .
-
+Let’s look at an example . . .
 >**Exercise**\
 Convert 37<sub>10</sub> from base 10 (i.e decimal) to binary base 2.
 
@@ -242,7 +240,7 @@ Key features of normalized standard scientific notation:
 
 
 ### Converting decimal fraction to binary - Phase 1
-1. Convert the integer part of decimal to binary (as on [this slide]**add hyperlink**)
+1. Convert the integer part of decimal to binary (as on [this secton](#converting-decimal-to-binary))
 1. Convert the fractional part of decimal to binary equivalent
     1. Multiply the fractional part by 2.
     1. Keep track of the integer part for the binary digit
@@ -254,7 +252,7 @@ Key features of normalized standard scientific notation:
 4. Normalize the result from step 3 by shifting the decimal (either left or right) so that only one non zero digit
 remains to the left of the decimal. The number of places we shift will determine our exponent
 5. Adjust the exponent by adding 2<sup>(8-1)</sup> - 1 to the exponent
-6. Convert the result in step 5 to to binary (as on [this slide](**add hyperlink**))
+6. Convert the result in step 5 to to binary (as on [this section](#converting-decimal-to-binary))
 7. Construct the binary number:
     1. Fill in the sign bit (0 = positive, 1 = negative)
     1. Fill in the exponent bits with the result from step 6
@@ -272,7 +270,7 @@ The number -37.17 stored as 4 consecutive bytes is:
 | 1 | 1000 0100 | 001 0100 1010 1110 0001 0100 |
 
 **Step 1** Convert the number to binary scientific notation
-- Integer part (37) in binary 100101 (as shown in the previous exercise (**hyperlink)))
+- Integer part (37) in binary 100101 (as shown in the [previous exercise](#converting-decimal-to-binary))
 
 
 **Step 2** Convert the fractional part of decimal to binary equivalent
@@ -299,11 +297,11 @@ The number -37.17 stored as 4 consecutive bytes is:
 21) 0.92 * 2 = 1 + 0.84
 22) 0.84 * 2 = 1 + 0.68
 23) 0.68 * 2 = 1 + 0.36
-24) 0.36 * 2 = 0 + 0.72
-. . . continued\
+24) 0.36 * 2 = 0 + 0.72 \
+. . . continued
 
 We didn’t (and won’t) get a fractional part equal to zero but since we have enough iterations to fill the mantissa we can stop.\
-0.17<sub>10</sub> = 0.001010111000010100011110 <sub>...2</sub>
+0.17<sub>10</sub> = 0.001010111000010100011110 <sub>2</sub>
 
 **Step 3**: Write the result from step 1 to the left of the decimal and the result from step 2 to the right of the decimal.
 37.17<sub>10</sub> = 100101.001010111000010100011110102
@@ -318,7 +316,7 @@ Since decimal moved 5 spaces to the left, the exponent becomes (positive) 5.
 **Step 5** Adjust the exponent by adding 2<sup>(8-1)</sup> - 1 to the exponent \
 5 becomes 5 + 2<sup>(8-1)</sup> - 1 = 132
 
-**Step 6** Convert the result in step 5 to to unsigned binary (done on [this slide](**add hyperlink**))
+**Step 6** Convert the result in step 5 to to unsigned binary (done on [this section](#converting-decimal-to-binary)) \
 132<sub>10</sub> = 1000 0100<sub>2</sub>
 
 
@@ -381,8 +379,9 @@ ii) Fill in the exponent bits with the result from step 6 \
 iii) Fill in the mantissa with the first 23 digits to the right of the decimal from step 4
 
 ### Comment
-- While 64-bit can accommodate a wider range of number as shown in the table below, in most scenarios, you will be fine using 32-bit.
+- While 64-bit can accommodate a wider range of number as shown in the table below, in most scenarios, you will be fine using 32-bit. 
 Table source: [here](https://chortle.ccsu.edu/java5/Notes/chap11/ch11_2.html)
+
 | Type | Size | Range |
 | ----------- | ----------- | ----------|
 | float | 32 bits | -3.4E+38 to +3.4E+38 |
@@ -582,19 +581,20 @@ There are many different text file encodings:
 
 > **Exercise**: \
 Use the **fileEncodings.xlsx** file and save the file as **CSV**, **tab-separated**, and **XML**. Look at each file in a text editor.\
-**Try It:File Encodings**
+
+**Try It:File Encodings** \
 <img src="/source%20material/lectures/02DataRep/img/TryItFileEncoding.png" alt="TryItFileEncoding" width="800" >
 
-**Opening xlsx in Excel**
+**Opening xlsx in Excel** \
 <img src="/source%20material/lectures/02DataRep/img/inExcel.png" alt="inExcel" width="800" >
 
-**Opening csv in text editor**
+**Opening csv in text editor** \
 <img src="/source%20material/lectures/02DataRep/img/csv.png" alt="csv" width="800" >
 
-**Opening tab-separated in text editor**
+**Opening tab-separated in text editor** \
 <img src="/source%20material/lectures/02DataRep/img/tabdelimit.png" alt="tabdelimit" width="800" >
 
-**Opening xml in text editor**
+**Opening xml in text editor** \
 <img src="/source%20material/lectures/02DataRep/img/xml.png" alt="xml" width="800" >
 
 ### UPC Barcodes
@@ -608,15 +608,15 @@ Make your own codes at: [www.qrstuff.com](https://www.qrstuff.com/).
 
 ### NATO Broadcast Alphabet
 The code for broadcast communication is purposefully inefficient, to be distinctive when spoken amid noise. \
-A Alpha     J Juliet    S Sierra \
-B Bravo     K Kilo      T Tango \
-C Charlie   L Lima      U Uniform \
-D Delta     M Mike      V Victor \
-E Echo      N November  W Whiskey \
-F Foxtrot   O Oscar     X X-ray \
-G Golf      P Papa      Y Yankee \
-H Hotel     Q Quebec    Z Zulu \
-I India     R Romeo \
+A Alpha         J Juliet            S Sierra \
+B Bravo         K Kilo              T Tango \
+C Charlie       L Lima              U Uniform \
+D Delta         M Mike              V Victor \
+E Echo          N November          W Whiskey \
+F Foxtrot       O Oscar             X X-ray \
+G Golf          P Papa              Y Yankee \
+H Hotel         Q Quebec            Z Zulu \
+I India         R Romeo 
 
 
 ### Advanced: The Time versus Space Tradeoff
