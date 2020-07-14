@@ -530,7 +530,7 @@ What is the output of the following code:
    while n >= 0:
          n=n-1 
          print(n)
-<b>A)numbers 3 to -1<b>
+<b>A)numbers 3 to -1</b>
 B)numbers 3 to 0 
 c) numbers 4 to 0
 D) numbers 4 to -1 
