@@ -517,10 +517,10 @@ As we learn more about representing information, always remember that everything
 
 ### Metadata
 *Metadata* is data that describes other data.
-> Examples of metadata include:\
- - names of files\
- - column names in a spreadsheet\
- - table and column names and types in a database
+> **Examples of metadata include:** \
+    - names of files \
+    - column names in a spreadsheet \
+    - table and column names and types in a database
 
 Metadata helps you understand how to interpret and manipulate the data.
 
