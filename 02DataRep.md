@@ -49,16 +49,16 @@ Data size is measured in bytes.
 - A bit is either a 0 or a 1.
 - A *byte* contains 8 *bits* (*B*inary Dig*its*)
 - A *nibble* contains 4 *bits* (*B*inary Dig*its*)  
-** image maybe??**
-Larger units:
-- kilobyte (KB) = 1000 bytes
-- megabyte (MB) = 106 bytes (or 1000 KB)
-- gigabyte (GB) = 109 bytes (or 1000 MB)
-- terabyte (TB) = 1012 bytes (or 1000 GB)
-- petabyte (PB) = 1015 bytes (or 1000 TB)
-- exabyte (EB) = 1018 bytes (or 1000 PB)
-- zettabyte (ZB) = 1021 bytes (or 1000 EB)
+> Larger units:
+    - kilobyte (KB) = 1000 bytes \
+    - megabyte (MB) = 106 bytes (or 1000 KB) \
+    - gigabyte (GB) = 109 bytes (or 1000 MB) \
+    - terabyte (TB) = 1012 bytes (or 1000 GB) \
+    - petabyte (PB) = 1015 bytes (or 1000 TB) \
+    - exabyte (EB) = 1018 bytes (or 1000 PB) \
+    - zettabyte (ZB) = 1021 bytes (or 1000 EB) \
 
+<img src="/source%20material/lectures/02DataRep/img/BitsandBites.jpg" alt="BitsandBites" height="120" >
 
 
 ### Memory/Data Size
@@ -97,9 +97,9 @@ This information can be represented using discrete units using digital thermomet
 
 
 ### Conversion of Analogue to Digital
-How would you digitize this analog data into 10 discrete points?
-<img src="/source%20material/lectures/02DataRep/img/Analog2Digital.png" alt="Analog2Digital" width="600" >
-<img src="/source%20material/lectures/02DataRep/img/Analog2DigitalB.png" alt="Analog2DigitalB" width="600" >
+How would you digitize this analog data into 10 discrete points? \
+<img src="/source%20material/lectures/02DataRep/img/Analog2Digital.png" alt="Analog2Digital" width="400" >
+<img src="/source%20material/lectures/02DataRep/img/Analog2DigitalB.png" alt="Analog2DigitalB" width="400" >
 
 ### Why go digital over analogue?
 1. Computers are digital and many home electronics are interfacing with computers.
@@ -172,13 +172,13 @@ to the binary system (or simply binary). However the steps to do it on paper are
 
 Let’s look at an example. . .
 
-**Exercise**\
+>**Exercise**\
 Convert 37<sub>10</sub> from base 10 (i.e decimal) to binary base 2.
 
-**Try it!**\
+>**Try it!**\
 Convert 132<sub>10</sub> from base 10 (i.e decimal) to binary base 2.
 
-**Question**\
+>**Question**\
 Does any see a problem with this system?\
 **Hint**: this system is called *unsigned binary*
 
@@ -222,8 +222,8 @@ new concept easier to understand.
 
 ### Representing Data: Normalized scientific notation
 > **Example: Normalized scientific notation:**\
-The number 55,125.17 in normalized scientific notation is:\
-5:512517 * 10<sup>4</sup>
+The number 55,125.17 in normalized scientific notation is:
+5.512517 * 10<sup>4</sup>
 
 Key features of normalized standard scientific notation:
 - 5.512517 is our **mantissa**
@@ -232,7 +232,7 @@ Key features of normalized standard scientific notation:
 
 
 > **Example: Normalized scientific notation:**\
-The number 0.000 000 007 51 in normalized scientific notation is:\
+The number 0.000 000 007 51 in normalized scientific notation is:
 7.51 * 10<sup>-9</sup>
 
 Key features of normalized standard scientific notation:
@@ -264,8 +264,9 @@ remains to the left of the decimal. The number of places we shift will determine
     
 ### Representing Data: Doubles and Floats
 
-**Example: 32-bit single precision**\ 
-The number -37.17 stored as 4 consecutive bytes is: \
+**Example: 32-bit single precision**
+
+The number -37.17 stored as 4 consecutive bytes is: 
 | sign | exponent | mantissa |
 | ----------- | ----------- | ----------|
 | 1 | 1000 0100 | 001 0100 1010 1110 0001 0100 |
@@ -299,8 +300,8 @@ The number -37.17 stored as 4 consecutive bytes is: \
 22) 0.84 * 2 = 1 + 0.68
 23) 0.68 * 2 = 1 + 0.36
 24) 0.36 * 2 = 0 + 0.72
-
 . . . continued\
+
 We didn’t (and won’t) get a fractional part equal to zero but since we have enough iterations to fill the mantissa we can stop.\
 0.17<sub>10</sub> = 0.001010111000010100011110 <sub>...2</sub>
 
@@ -363,8 +364,328 @@ Rounding errors will occur since some real numbers will have repeating bit repre
 
 Rational numbers of the form x=2k , where x and k are integers, can have exact fractional binary representation.
 > For example:
-- 0:015625 = 1=26, ..1:5 = ..3=2, 96 = 3=2..5 will have exact representation.
-- 0:1; 123:4; 0:025 will not have exact representation.
+- 0.015625 = 1/2<sup>6</sup>, -1.5 = -3/2, 96 = 3/2<sup>-5</sup> will have exact representation.
+- 0.1, 123.4, 0.025 will not have exact representation.
 
-**Claire you are at 02DataRepAnswer.pdf pg48/96**
+> Try it! You can check your answer [here](https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php)
+Convert 0.015625 to 32 bit single precision.
+**Step 1** Convert the integer part of decimal to binary \
+**Step 2** Convert the fractional part of the decimal to binary \
+**Step 3** Write the result from step 1 to the left of the decimal and the result from step 2 to the right of the decimal \
+**Step 4** Normalize the result from step 3 \
+**Step 5** Adjust the exponent by adding 2<sup>(8-1)</sup> - 1 to the exponent \
+**Step 6** Convert the result in step 5 to to binary \
+**Step 7** Construct the binary number:
+i) Fill in the sign bit (0 = positive, 1 = negative) \
+ii) Fill in the exponent bits with the result from step 6 \
+iii) Fill in the mantissa with the first 23 digits to the right of the decimal from step 4
+
+### Comment
+- While 64-bit can accommodate a wider range of number as shown in the table below, in most scenarios, you will be fine using 32-bit.
+Table source: [here](https://chortle.ccsu.edu/java5/Notes/chap11/ch11_2.html)
+| Type | Size | Range |
+| ----------- | ----------- | ----------|
+| float | 32 bits | -3.4E+38 to +3.4E+38 |
+| double | 64 bits | -1.7E+308 to +1.7E+308 |
+
+
+### Hexadecimal
+We saw how binary and decimal systems consist of two and ten digits respectively.\
+For that reason, binary is also known as **base 2** and decimal as **base 10**.\
+**Hexadecimal** is another such system that contains sixteen digits and is therefore known as **base 16**.\
+Like decimal, hexadecimal uses the same 10 digits (0–-9)\
+In addition, it uses: A,B,C,D,E, and F.
+| Hexadecimal  Base 16 | Decimal  Base 10 | Binary  Base 2 |
+| ----------- | ----------- | ----------|
+| 0 | 0 | 0 |
+| 1 | 1 | 1 |
+| 2 | 2 | 10 |
+| 3 | 3 | 11 |
+| 4 | 4 | 100 |
+| 5 | 5 | 101 |
+| 6 | 6 | 110 |
+| 7 | 7 | 111 |
+| 8 | 8 | 1000 |
+| 9 | 9 | 1001 |
+| A | 10 | 1010 |
+| B | 11 | 1011 |
+| C | 12 | 1100 |
+| D | 13 | 1101 |
+| E | 14 | 1110 |
+| F | 15 | 1111 |
+
+Notice, it takes 4 binary digits (a nibble) to represent a single hexadecimal digits. \
+Consequently, hexadecimal provides a compact short hand for binary. \
+Another benefit for using hexadecimal is that it is easier (for a human) to read. \
+The most common place to see this hexadecimal notation is when describing colours, eg. \
+Roses are #FF0000 (in decimal (255, 0, 0)) \
+Violets are #0000FF (in decimal (0, 0, 255))
+
+
+### Representing Data: Characters
+A character is mapped to a sequence of bits using a *lookup* or *translation table*. \
+A common encoding is *ASCII* (American Standard Code for Information Interchange), which uses 8 bits to represent characters.
+| bits | character|
+| ---- | ---------|
+| 01000001 | A |
+| 01000010 | B |
+| 01000011 | C |
+| 01000100 | D |
+| 01000101 | E |
+| 01000110 | F |
+| . . . | . . . |
+
+<img src="/source%20material/lectures/02DataRep/img/ASCIITable2.PNG" alt="ASCIITable2" width="600" >
+
+> Exercise: Try writing your name in ASCII!
+
+**Example 2** \
+What ASCII character is 0100 0101? \
+A) T \
+B) ! \
+C) @ \
+D) E 
+
+### START SOLUTIONS HERE
+**Example 2**\
+What ASCII character is 0100 0101? \
+A) A \
+B) ! \
+C) @ \
+**D) E** 
+### END SOLUTIONS HERE
+
+**Example 3**\
+What is “Test” encoded in ASCII?\
+A) 01110100 01100101 01110011 01110100 \
+B) 01010100 01100101 01110011 01110100 \
+C) 01000101 01010110 00110111 01000111 \
+D) 01010100 01000101 01010011 01010100
+
+### START SOLUTIONS HERE
+**Example 3**\
+What is “Test” encoded in ASCII?\
+A) 01110100 01100101 01110011 01110100 \
+**B) 01010100 01100101 01110011 01110100** \
+C) 01000101 01010110 00110111 01000111 \
+D) 01010100 01000101 01010011 01010100
+### END SOLUTIONS HERE
+
+- While these conversions are useful to see, these conversions need not be done ‘by hand’.
+- If there was a time when we need to see these conversions, there are countless sites available online for doing so, eg. [ASCII to Binary](https://www.binaryhexconverter.com/ascii-text-to-binary-converter)
+> **Limitations with ASCII?** \
+    Does anyone see a problem with using ASCII as a character encoding? \
+    Although ASCII is suitable for English text, many world languages, including Chinese, require a larger number of symbols to represent their basic alphabet.
+
+
+### Representing Text Beyond ASCII - Unicode
+The *Unicode* standard uses patterns of 16-bits (2 bytes) to represent the major symbols used in all languages.
+- First 256 characters exactly the same as ASCII.
+- Maximum number of symbols: 65,536.
+Unicode can be implemented by different character encodings (eg. UTF-8, UTF-16, UTF-32) with new versions released on a regular basis. \
+UTF-8, the dominant encoding on the World Wide Web (used in over 92% of websites). \
+As of May 2019 the most recent version, Unicode 12.1, contains 137,994 characters covering 150 modern and historic scripts, as well as multiple symbol sets and emojis. :raised_hands:
+
+### Representing Data: Strings
+A string is a sequence of characters allocated in consecutive memory bytes. \
+A string has a terminator to know when it ends:
+- **Null-terminated string** last byte value is ‘n0’ to indicate end of string.
+- **length-prefixed** length of string in bytes is specified (usually in the first few bytes before string starts).
+
+### Representing Data: Dates and Times
+A *date* value can be represented in multiple ways: \
+**Integer representation** number of days past since a given date
+> Example: Julian Date (astronomy) – number of days since noon, January 1, 4713 BC. \
+  [Why this date?](https://en.wikipedia.org/wiki/Julian_day#History)
+
+**String representation** represent a date’s components (year, month, day) as individual characters of a string
+> Example: YYYYMMDD or YYYYDDD
+
+A *time* value can also be represented in similar ways: \
+**Integer representation** number of sec since a given time
+> Example: Number of seconds since Thursday, January 1, 1970 (UNIX)
+
+**String representation** hours, minutes, seconds, fractions
+> Example: HHMMSSFF
+
+Read [here](https://en.wikipedia.org/wiki/Year_2038_problem) about the year 2038 problem (analogy to the Y2K problem).
+
+### Encoding other data
+We have seen how we can encode characters, numbers, and strings using only sequences of bits (and translation tables). \
+The documents, music, and videos that we commonly use are much more complex. However, the principle is exactly the same. We use sequences of bits and interpret them based on the context to represent information. \
+As we learn more about representing information, always remember that everything is stored as bits, it is by interpreting the context that we have information.
+
+
+### Metadata
+*Metadata* is data that describes other data.
+> Examples of metadata include:\
+ - names of files\
+ - column names in a spreadsheet\
+ - table and column names and types in a database
+
+Metadata helps you understand how to interpret and manipulate the data.
+
+### Files
+A *file* is a sequence of bytes on a storage device.
+- A file has a name.
+- A computer reads the file from a storage device into memory to use it.
+
+The operating system manages how to store and retrieve the file bytes from the device.
+
+The program using the file must know how to interpret those bytes based on its information (e.g. metadata) on what is stored in the file.
+
+### File Encoding
+A file *encoding* is how the bytes represent data in a file.
+
+A file encoding is determined from the file extension (e.g. .txt or .xlsx) which allows the operating system (OS) to know how to process the file.
+
+The extension allows the OS to select the program to use.\
+The program understands how to process the file in its format.
+
+### [Binary vs Text files](https://www.nayuki.io/page/what-are-binary-and-text-files)
+- At a generic level of description, there are two kinds of computer files: text files and binary files.
+- The difference between binary and text files is in how these bytes are interpreted.
+- A text file is a file encoded in a character format such as ASCII or Unicode. These files are readable by humans.
+- Data analytics will often involve processing text files.
+- We can usually tell if a file is binary or text based on its file extension.
+
+### File Encodings: Text Files
+There are many different text file encodings:
+- *Web standards*: html, xml, css, svg, json, ...
+        - *JSON file* data encoded in JSON (JavaScript Object Notation) format
+        - *XML file* data encoded in XML (Extensible Markup Language) format
+- *Tabular data*: csv, tsv, . . .
+        - *CSV comma-separate file* each line is a record, fields separated by commas
+        - *tab-separated file* each line is a record, fields separated by tabs
+- *Documents*: txt, tex, markdown, asciidoc, rtf, ps, ...
+
+**Question**: \
+In these file encodings, what is data and what is metadata? \
+<img src="/source%20material/lectures/02DataRep/img/metadataQA1.PNG" alt="metadataQA1" width="500" >
+<img src="/source%20material/lectures/02DataRep/img/metadataQA2.PNG" alt="metadataQA2" width="500" >
+
+### File Encodings: Binary File
+A *binary file* encodes data in a format that is not designed to be human-readable and is in the format used by the computer.
+
+Binary files are often faster to process as they do not require translation from text form and may also be smaller.
+
+Processing a binary file requires the user to understand its encoding so that the bytes can be read and interpreted properly.
+
+There are many different text file encodings:
+- *Image*: jpg, png, gif, bmp, tiff, psd, . . .
+- *Videos*: mp4, mkv, avi, mov, mpg, vob, . . .
+- *Audio*: mp3, aac, wav, flac, ogg, mka, wma, . . .
+- *Documents*: pdf, doc, xls, ppt, docx, odt, . . .
+- *Archive*: zip, rar, 7z, tar, iso, . . .
+- *Database*: mdb, accde, frm, sqlite, . . .
+- *Executable*: exe, dll, so, class, .. . .
+
+> **Exercise**: \
+Use the **fileEncodings.xlsx** file and save the file as **CSV**, **tab-separated**, and **XML**. Look at each file in a text editor.\
+**Try It:File Encodings**
+<img src="/source%20material/lectures/02DataRep/img/TryItFileEncoding.png" alt="TryItFileEncoding" width="800" >
+
+**Opening xlsx in Excel**
+<img src="/source%20material/lectures/02DataRep/img/inExcel.png" alt="inExcel" width="800" >
+
+**Opening csv in text editor**
+<img src="/source%20material/lectures/02DataRep/img/csv.png" alt="csv" width="800" >
+
+**Opening tab-separated in text editor**
+<img src="/source%20material/lectures/02DataRep/img/tabdelimit.png" alt="tabdelimit" width="800" >
+
+**Opening xml in text editor**
+<img src="/source%20material/lectures/02DataRep/img/xml.png" alt="xml" width="800" >
+
+### UPC Barcodes
+*Universal Product Codes (UPC)* encode manufacturer on left side and product on right side. Each digit uses 7 bits with different bit combinations for each side (can tell if upside down). \
+<img src="/source%20material/lectures/02DataRep/img/UPCbarcode.png" alt="UPCbarcode" width="600" >
+
+### QR code
+A *QR* (*Q*uick *R*esponse) code is a 2D optical encoding developed in 1994 by Toyota with support for error correction. \
+<img src="/source%20material/lectures/02DataRep/img/QR1.png" alt="QR1" width="250" > \
+Make your own codes at: [www.qrstuff.com](https://www.qrstuff.com/). 
+
+### NATO Broadcast Alphabet
+The code for broadcast communication is purposefully inefficient, to be distinctive when spoken amid noise. \
+A Alpha     J Juliet    S Sierra \
+B Bravo     K Kilo      T Tango \
+C Charlie   L Lima      U Uniform \
+D Delta     M Mike      V Victor \
+E Echo      N November  W Whiskey \
+F Foxtrot   O Oscar     X X-ray \
+G Golf      P Papa      Y Yankee \
+H Hotel     Q Quebec    Z Zulu \
+I India     R Romeo \
+
+
+### Advanced: The Time versus Space Tradeoff
+A fundamental challenge in computer science is encoding information efficiently both in terms of space and time.
+
+At all granularities (sizes) of data representation, we want to use as little space (memory) as possible. However, saving space often makes it harder to figure out what the data means (think of compression or abbreviations). In computer terms, the data takes longer to process.
+
+The *time versus space tradeoff* implies that we can often get a faster execution time if we use more memory (space). Thus, we often must strive for a balance between time and space.
+
+
+### Review: Memory Size
+
+**Example 4** \
+Which is bigger? \
+A) 10 TB \
+B) 100 GB \
+C) 1,000,000,000,000 bytes \
+D) 1 PB
+
+### START SOLUTIONS HERE
+**Example 4** \
+Which is bigger? \
+A) 10 TB =10,000 GB \
+B) 100 GB \
+C) 1,000,000,000,000 bytes = 1000 GB \
+**D) 1 PB = 1,000,000 GB**
+### END SOLUTIONS HERE
+
+
+### Review: Metadata vs. Data
+**Example 5** \
+How many of the following are TRUE? 
+- It is possible to have data without metadata.
+- Growth rates of data generation are decreasing.
+- It is possible to represent all decimal numbers precisely on a computer.
+- A character encoded in Unicode uses twice as much space as ASCII. 
+A) 0  B) 1  C) 2  D) 3  E) 4 
+
+### START SOLUTIONS HERE
+**Example 5** \
+How many of the following are TRUE? 
+- It is possible to have data without metadata. :heavy_check_mark:
+- Growth rates of data generation are decreasing. :x:
+- It is possible to represent all decimal numbers precisely on a computer. :x:
+- A character encoded in Unicode uses twice as much space as ASCII. :heavy_check_mark: \
+A) 0  B) 1  **C) 2**  D) 3  E) 4 
+### END SOLUTIONS HERE
+
+
+
+### Conclusion
+- All *data* is encoded as bits on a computer.
+- *Metadata* provides the context to understand how to interpret the data to make it useful.
+- Memory capacity and data sizes are measured in bytes.
+- *Files* are sequences of bytes stored on a device. A *file encoding* is how the bytes are organized to represent data
+        - Text files (comma/tab separated, JSON, XML) are often processed during data analytics tasks.
+        - Binary files are usually only processed by the program that creates them.
+As a data analyst, understanding the different ways of representing data is critical as it is often necessary to transform data from one format to another.
+
+
+### Objectives
+- Define: computer, software, memory, data, memory size/data size, cloud
+- Explain "Big Data" and describe data growth in the coming years.
+- Compare and contrast: digital versus analog
+- Explain how integers, doubles, and strings are encoded.
+- Explain why ASCII table is required for character encoding.
+- Explain why Unicode is used in certain situations instead of ASCII.
+- Explain the role of metadata for interpreting data.
+- Define: file, file encoding, text file, binary file
+- Encode using the NATO broadcast alphabet.
+- Discuss the time-versus-space tradeoff.
 
