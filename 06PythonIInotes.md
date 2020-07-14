@@ -248,4 +248,394 @@ The above returns:
 positive number<br>
  and Done!
 ```
+### Decisions Multiple if statements
+I As mentioned previously, once a condition is met in an if/elif
+statement, no subsequent conditions are checked.
+I If we want all conditions to be checked we could use multiple
+if statements:
 
+```
+if condition1:
+    Process 1
+if condition2:
+    Process 2
+if condition3:
+    Process 3
+if condition4:
+    Process 4
+```
+
+```
+n=3 
+if n>0:
+   print("positive number")
+if n==3:
+   print("three") 
+if n<10:
+   print("single digit")
+```
+```
+
+positive number
+three
+single digit
+```
+
+```
+ Example 17
+What is the output of the following code?
+n=3
+if n < 1:
+  print("one") 
+elif n > 2:
+  print("two") 
+elif n == 3:
+  print("three")
+A) nothing
+B) one
+C) two
+D) three
+E) error
+```
+```
+ Answer:
+What is the output of the following code?
+n=3
+if n < 1:
+print("one") elif n > 2:
+print("two") elif n == 3:
+print("three")
+A) nothing
+B) one
+**C) two**
+D) three
+E) error
+```
+
+```
+ Example 18
+What is the output of the following code?
+n=3
+if n < 1:
+  print("one") 
+elif n > 2
+  print("two")
+else:
+  print("three")
+A) nothing
+B) one
+C) two
+D) three
+E) error
+```
+```
+ Answer:
+What is the output of the following code?
+n=3
+if n < 1:
+print("one") elif n > 2
+print("two") else:
+print("three")
+```
+1. nothing
+2. one
+3. two
+4. three<br>
+**5. error (missing colon)**
+
+```
+Example 19
+What is the output of the following code?
+n=1
+if n < 1:
+  print("one") 
+elif n > 2:
+  print("two")
+else:
+  print("three") 
+print("four")
+A)nothing
+B) one  four
+C) three
+D) three four
+E) error
+```
+
+```
+Answer:
+What is the output of the following code?
+n=1
+if n < 1:
+  print("one") 
+elif n > 2:
+  print("two")
+else:
+  print("three") 
+print("four")
+```
+A)nothing
+B) one  four
+C) three
+**D) three four**
+E) error
+
+```
+ Example 20
+What is the output of the following code?
+n=0
+if n < 1:
+   print("one")
+   print("five") 
+elif n == 0:
+   print("zero")
+else:
+   print("three") 
+print("four")
+
+A)nothing 
+B) one 
+   four
+C) one 
+   four
+   five
+D) one 
+  five
+  zero 
+  four
+E) error
+  
+```
+
+<pre><code>
+ Example 20
+What is the output of the following code?
+n=0
+if n < 1:
+   print("one")
+   print("five") 
+elif n == 0:
+   print("zero")
+else:
+   print("three") 
+print("four")
+
+A)nothing 
+B) one 
+   four
+<b>C) one 
+   four
+   five</b>
+D) one 
+  five
+  zero 
+  four
+E) error
+ </pre></code> 
+ 
+ ### Try it: Decisions
+
+```text
+Example 21
+Write a Python program that asks the user for a number then prints out if it is even or odd.
+```
+```text
+Example 22
+Write a Python program that asks the user for an integer. If that number is between 1 and 5, prints out the word for that number (e.g. 1 is one). If the number is not in that range, print out error. 
+```
+ 
+### Loops and Iteration
+
+A loop repeats a set of statements multiple times until some condition is satisfied.
+  - Each time a loop is executed is called an iteration.
+A for loop repeats statements a certain number of times.
+  -It will iterate over asequence, eg.1,2,....10
+  - or it could iterate over group/collection elements, eg. lines in a document, elements in a list
+A while loop repeats statements while a condition is True.
+  - At each iteration we will check this condition. 
+  - If its True we complete another iteration 
+  - If its False we exit the loop.
+  
+ ### while loops
+The most basic looping structure is the while loop.
+A while loop continually executes a set of statements while a condition is true. Syntax:
+
+```
+ while condition :
+                   statement1
+                   statement2
+                       .
+                       .
+```
+Example:
+```
+n=1
+while n <= 5:
+     print(n)
+     n=n+1
+```
+
+prints the values 1 through 5.
+
+### while loops
+
+## put an image
+
+### Shorthand
+In addition to the = operator for assigning a value to a variable, Python also supports a shorthand version that compounds various mathematical operators with the assignment operator:
+Table: Table taken from [this](https://www.programiz.com/python-programming/operators) source
+
+|Operator| Example| Equivalent to|
+|:-------------|:-------------|:-------------|
+|= |x=5| x=5|
+|+=| x+=5| x=x+5|
+|-=| x-=5| x=x-5|
+|*=| x*=5| x=x*5|
+|/=| x/=5| x=x/5|
+|%=| x%=5| x=x%5|
+
+Hence the program from 2 slides ago can be written:
+```
+n=1
+while n <= 5:
+print(n) n += 1
+```
+Output:
+```
+1 
+2
+3
+4
+5
+```
+
+### Question: while loop
+
+```
+ Example 23
+What is the output of the following code:
+    n=4
+   while n >= 0:
+         n=n-1 
+         print(n)
+A)numbers 3 to -1
+B)numbers 3 to 0 
+c) numbers 4 to 0
+D) numbers 4 to -1 
+E)numbers 4 to infinity
+```
+<pre><code>
+Answer
+What is the output of the following code:
+    n=4
+   while n >= 0:
+         n=n-1 
+         print(n)
+<b>A)numbers 3 to -1<b>
+B)numbers 3 to 0 
+c) numbers 4 to 0
+D) numbers 4 to -1 
+E)numbers 4 to infinity
+</pre></code> 
+
+### Question: while loop 2
+ Example 24
+What is the output of the following code:
+```
+n=1
+while n <= 5:
+      print(n) 
+      n=n+1
+A) nothing
+B) numbers 1 to 5 
+C) numbers 1 to 6 
+D) lots of 1s
+
+```
+
+<pre><code>
+Question: while loop
+answer
+What is the output of the following code:
+n=1
+while n <= 5:
+print(n) n=n+1
+A) nothing
+B) numbers 1 to 5
+C) numbers 1 to 6
+<b>D) lots of 1s Infinite loop without the fourth line indented</b>
+ 
+</pre></code>
+   
+### The for loop
+- A for loop repeats statements a given number of times.
+- One way of building a for loop is to iterate over a sequence which we create using range()
+   ```for i in range(1,6): 
+               print(i)
+   ```
+ - The above prints the numbers 1 through 5. 
+ ```text
+ range(start, end)
+  In range(start, end), the start number in inclusive and the start number is exclusive.
+  ```
+  ### Using range()
+- The general form of range is: 
+    range(start, end, step)
+- Thedefaultstep(i.eincrement)is1 
+- We may also specify an increment:
+```
+# prints the numbers: 1,3,5,7,9 
+for i in range(1, 10, 2):
+    print(i)
+# prints the numbers: 2,4,6,8 
+for i in range(2, 10, 2):
+    print(i)
+# prints the numbers 5 to 1
+for i in range(5,0, -1):
+    print(i)
+```
+### Using range()
+- It is only required that the end argument be provided for the
+range() function.
+- Ifthestartargumentisnotprovided,itissetasitsdefault
+value of 0 (not 1).
+```
+ for i in range(4):
+      print(i)
+```
+The above prints the numbers: 0,1,2,3 (remember, end is not inclusive)
+  
+### the for and while loop
+The for loop is like a short-hand for the while loop:
+```
+- i=0
+while i < 10:
+   print(i)
+   i += 1
+- for i in range(0, 10, 1): 
+     print(i)   
+```
+### Common problems – Infinite Loops
+Infinite loops are caused by an incorrect loop condition or not updating values within the loop so that the loop condition will eventually be false.
+```
+- Example:
+    n=1
+    while n <= 5:
+          print(n)
+ ```
+Here we forgot to increase n->infinite loop.
+
+N.B. to exit from an infinite loop while running Python in the
+console, press Ctrl + C (press the stop icon in Jupyter Notebook).  
+
+
+### Common Problems – Off-by-one Error
+The most common error is to be "off-by-one". This occurs when you stop the loop one iteration too early or too late.
+- Example:
+    for i in range(0,10):
+        print(i)
+This loop was supposed to print 0 to 10, but it does not.
+```text
+Example 25
+Question: How can we fix this code to print 0 to 10?
+```
+ 
