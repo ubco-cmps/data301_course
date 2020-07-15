@@ -344,13 +344,264 @@ How many of the following statements are TRUE?
 ### User made dimension
 Notice that the ‘Product’ pill now has a clickable + sign to expand and collapse the levels of the hierarchy.
 
+![Kiku](image/product.png)
+
+### User made dimension
+We can click the sort buttons to arrange bars by descending/ascending order.
+![Kiku](image/sort.png)
+
+### Tableau Files
+- Tableau Workbook (.twb) (default) saves workbook but no data
+- Tableau Packaged Workbook (.twbx) contains data and visualization for easier sharing
+- Tableau Datasource (.tds) metadata on a data source
+- Tableau Bookmark (.twb) one worksheet within workbook
+- Tableau Data Extract (.tde) compressed snapshot of data stored in column format
+
+### Joining Tables
+When connecting tables R and S, there are four types of joins: INNER JOIN row in result for each row of R that matches a row
+of S
+- LEFT OUTER JOIN row in result for each row of R that matches a row of S OR a row of R that does not match anything in S
+- RIGHT OUTER JOIN row in result for each row of R that matches a row of S OR a row of S that does not match anything in R
+- FULL OUTER JOIN row in result for each row of R that matches a row of S OR a row of R that does not match anything in S OR a row of S that does not match anything in R
+- See [here](https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins) for a visual representation of joins (for SQL but same concept here).
+
+### Join Example
+
+![Kiku](image/joins.png)
+
+### Data Blending
+- Data blending allows "joining" data that does not reside in a single source. There are automatic and manual methods.
+- Automatic field names must match across sources. Will link secondary data source with primary data source.
+- Manual methods include ability to specify SQL statement to perform with join.
+
+### Try it: Tableau Data Sources - Joins
+Using the MySQL tables in the data301 database, create some joins to connect them so it looks like this:
+![Kiku](image/mySQLjoin.png)
+
+### Dynamic Grouping/Renaming
+􏰏- Dynamic grouping (also called ad hoc groups) can be created by using Ctrl+Select (windows) or Cmnd+select (mac) to select elements in visualization and select Group from menu.
+|||
+|---|---|
+|![Kiku](image/group1.png)|![Kiku](image/group2.png)|
+
+- It is also possible to rename values/labels and correct value errors.
+􏰏      - Eg. change California to "CA" by right clicking on the state and selecting Annotate > Mark and edit the defaults
+
+### Tableau Chart Types
+Chart types:
+􏰏 􏰏 􏰏 􏰏 􏰏 􏰏 􏰏
+- text tables/crosstabs
+- maps
+- heat maps, highlight tables, tree maps
+- line charts
+- area fill charts and pie charts
+- scatter plot, circle view, side-by-side plots (identify outliers)
+- bullet graph, packed bubble, histogram, Gantt charts
+
+ ### Line Chart (discrete time)
+
+![Kiku](image/forecast2.png)
+
+### Text Table (Crosstab)
+These are very similar to Pivot Tables: after selecting the Dimensions you want, drag the desired Measure directly overtop the table. N.B. you can change the aggregate function (SUM is the default in most cases)
+
+![Kiku](image/crosstab.png)
+
+### Maps
+
+![Kiku](image/maps.png)
+
+### Heat Map
+Turn the cross tab viz from slide 65 to a heat map by going to the Show Me tab and selecting the option in the top right corner. Think of this as a complex conditional formatting of Excel cells.
+
+![Kiku](image/heatmap2.png)
+
+### Tree Map
+Tree maps are a way of displaying hierarchical data using nested figures, usually rectangles. To change the colours used, click ‘Color’ in the Marks panel and go to Edit Colors.
+![Kiku](image/treemap.png)
+
+### Bar Charts
+![Kiku](image/bar.png)
+
+### Pie Charts
+
+![Kiku](image/piecharts.png)
+
+### Scatter Plots
+You can change the points that appear in your scatterplot by dragging pills into the Details button in the marks field.
+
+![Kiku](image/scatter.png)
+
+### Trend Lines and Reference Lines
+􏰏 􏰏
+- Trend lines show patterns in data.
+- Trend lines can be easily created by:
+􏰏    - navigating the Analytics pane → Model → Trend Line (double click or drag).
+􏰏    - or by right clicking on appropriate visualizations. These trend lines do not have to be linear.
+- To remove the trend line, simple drag it off the viz (or press undo).
+- If you hover over the trend line on your Viz, you can see some useful information (eg. p-value, R-squared) in the so-called “tooltip".
+### Adding Trend Lines
+
+![Kiku](image/trendlineSP.png)
+
+### Adding Trend Lines
+
+![Kiku](image/dragTrend.png)
+
+### Adding Trend Lines
+
+![Kiku](image/rightClickTrend.png)
 
 
+### Trend Lines and Reference Lines
+􏰏 We can get ‘side-by-side’ or colour-coded trendlines for multiple fields by dragging an additional dimension into the view.
+􏰏-  For example:
+􏰏    - Navigate back to the Data pane
+􏰏    - Drag Location onto the y-axis of the Viz (or the Row shelf) see Figure 1
+􏰏    - Alternatively we could drag Location onto ‘Color’ on the Marks pane: see Figure 2
+### Adding Trend Lines
 
+![Kiku](image/trippleTrend.png)
 
+### Adding Trend Lines
 
+![Kiku](image/trippleTrend2.png)
 
+### Reference Lines
+􏰏 - Reference lines allow comparison with a reference (detect trends and outliers). To add a reference line:
+􏰏    - go to the Analytics tab → Custom pane “Reference Line"
+􏰏    - or right click on the y (or x) axis on the Viz and select AddReference Line.
+􏰏 - To show the confidence bands, right click your trend line,Trend Lines → Edit Trend Lines... and select "Show Confidence Bands"
 
+![Kiku](image/CB.png)
+
+### Adding Trend Lines and Reference Lines
+
+![Kiku](image/trendref.png)
+
+### Sorting
+
+![Kiku](image/sorting.png)
+
+### Calculations
+􏰏 - Functions in tableau allow us to manipulate our data.
+􏰏 - We can save those calculations in a calculated field.
+􏰏 - To create a calculated field, simply right click in the data pane and select Create → Calculated Field
+![Kiku](image/calc.png)
+### Calculations
+􏰏
+- Available functions are displayed on the right hand panel, and our formulas (similar to what you would write in an Excel cell) is written on the left.
+- You may search for functions within the right-hand panel.
+- Functions work very much the same as in Excel, only now instead of referencing numbers be cell we call on them by name using [PillName].
+- Notice that the name of our new calculated field will be prefaced by an equal sign
+- Now, this calculated field may be treated as any other pill.
+
+### Creating a Calculated Field
+An example calling a function on a String
+![Kiku](image/field.png)
+
+### Creating a Calculated Field
+An example calling a function on a Number
+
+![Kiku](image/formula.png)
+
+### Forecasting
+􏰏
+􏰏- Forecasts use statistical models to generate predictions for future data based on historical information.
+- To build a forecast in Tableau, we need a Date Dimension pill and a Measure (i.e some green pill).
+- Once the pills are dragged to the appropriate shelf, navigate to the Analytics tab, and select the Forecast option.
+- By default, this will create a forecast prediction curve, alongside prediction bands.
+
+### Forecasting
+
+![Kiku](image/forecast1.png)
+
+### Forecasting
+
+![Kiku](image/forecast2.png)
+
+### Forecasting
+- Alternatively, we can right click on an appropriate Viz and select
+ - Forecast → Show Forecast
+
+![Kiku](image/forcast.png)
+
+### Tableau Question
+```text
+Example
+How many of the following statements are TRUE?
+1. There can only be one pill on the row shelf.
+2. A trend line can only be linear.
+3. A user can group multiple items into a group in the visualization.
+A) 0 B) 1 C) 2 D) 3
+
+```
+
+### Tableau Question
+
+Answer
+How many of the following statements are TRUE?
+1. There can only be one pill on the row shelf. #
+2. A trend line can only be linear.#
+3. A user can group multiple items into a group in the visualization. 
+A) 0 **B) 1** C) 2 D) 3
+
+### Try it: Tableau Charts
+Using the Superstore data set, create a visualization for each of these chart types:
+􏰏 􏰏 􏰏 􏰏 􏰏 􏰏 􏰏
+- line chart (with forecast and trend line) 
+- bar chart (with filters and sorting)
+- pie chart (with a parameter)
+- heat map (with grouping)
+- scatter plot (with a calculated field)
+- histogram
+- circle view
+
+### Dashboards
+􏰏-  A dashboard consists of multiple sheets organized to make information and its relationships more understandable.
+􏰏-  Tableau recommendation: 4-pane dashboard designs
+
+### Dashboard Starter View
+
+![Kiku](image/dashboard.png)
+
+### Dashboard Populated with Worksheets
+
+![Kiku](image/dw.png)
+
+### Try it: Tableau Dashboard
+ 
+ ```text
+  Example
+Using the Superstore data set, create your own dashboard with multiple visualizations.
+ ```
+### Conclusion
+􏰏
+- Tableau is a software system for visualizing data sets from multiple sources using a wide-range of visualization techniques.
+􏰏     - line charts, bar charts, scatter plots, heat maps, pie charts, histograms
+- Visualization of data sets is critical for communicating meaning and understanding, especially for people with less understanding of the data set.
+
+### Objectives
+􏰏 􏰏
+􏰏- Explain the purpose of visualization
+- List different types of visualizations available in Excel, Python, R, GIS
+- List the three "types of data"
+- Define: pill, shelf, view card (as used in Tableau)
+- Explain the purpose of the Show Me button
+- Be able to connect to Excel and relational databases using Tableau
+- Compare/contrast connecting to versus extracting data with Tableau
+- List and explain the different Tableau file types
+- Define and compute: inner join, left outer join, right outer join, full outer join
+- Use dynamic grouping and renaming to clean and correct data values in a visualization
+ 
+ ### Objectives
+􏰏
+- List and use the different Tableau chart types: text tables, maps, heat maps, tree maps, line charts, pie charts, area charts, scatter plot, circle view, histogram, Gantt charts
+- Add trend lines, references lines, quantiles to a visualization Create and use hierarchies
+- Create and use filters
+- Create calculated fields
+- Use parameters to allow user-controlled visualizations Add forecasts to a visualization
+- Organize visualizations into a dashboard
 
 
 
