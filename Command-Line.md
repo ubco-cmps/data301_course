@@ -27,6 +27,7 @@ You might be wondering why we would ever prefer command line over using the grap
 The command line on Windows dates back to the original Microsoft operating system called DOS (Disk Operating System) in 1981.
 
 This command line interface is still part of all modern Windows operating systems and is accessible as the "Command Prompt".
+![Test Image 1](source material/lectures/09CommandLine/img/CommandPrompt.png)
 
 To access this, navigate to the start menu with your mouse (or click the windows button on your keyboard) and type “cmd" then
 ENTER .
