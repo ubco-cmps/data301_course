@@ -33,7 +33,7 @@ Spreadsheets are very common in business and reporting applications.
 **worksheet** A worksheet (or sheet/spreadsheet) is a single page in a file created with an electronic spreadsheet program.  
 For example 03ExcelPartI.xlsx is a *workbook* that contains two *worksheets*. The name of these worksheets are QuarterSales and AnnualSales.
 
-###Adding and renaming worksheets
+### Adding and renaming worksheets
 To add a new worksheet we simply the plus sign located to the right of the worksheets.  
 <img src="/source%20material/lectures/03Excel/img/rename.png" alt="rename" width="700" >  
 By default, the worksheets are named Sheet1, Sheet2, Sheet3, and so on, but you can change these names by double clicking on the tab and typing an alternate name.  
@@ -222,8 +222,8 @@ Simple mathematical expressions:
 
 Common functions:
 ```
-- = ROUND(PI(),2) // Result is 3.14
-- = CONCATENATE("Hello", " World") // Hello World
+ = ROUND(PI(),2) // Result is 3.14
+ = CONCATENATE("Hello", " World") // Hello World
 ```
 Other common functions for trigonometry, dates, and finance are available. See a full list of functions [here](https://support.microsoft.com/en-us/office/excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188?ui=en-us&rs=en-us&ad=us)
 
@@ -248,8 +248,64 @@ Other common functions for trigonometry, dates, and finance are available. See a
 
 ### Arrays
 Alternatively we could have created an array using {} to compute our sum:
-=SUM({1,2,3})
-This is equivalent to the following calculation:
-
+`=SUM({1,2,3})`
+This is equivalent to the following calculation:  
+<img src="/source%20material/lectures/03Excel/img/sumarray.png" alt="sumarray" width="30" >  
 These examples and others can be found in DemoPartI.xlsx on Canvas
 
+
+### Cell Referencing 
+The power of formulas comes from using cell references (similar to variable names in programming).  
+Cell reference examples: 
+- = A1 + A2 
+- = B1 + A3 - A4 
+
+Cell address will appear in diﬀerent coloured font within your formula for ease of viewing. In addition, the cell itself will be outlined with the same colour when the formula is selected.    
+<img src="/source%20material/lectures/03Excel/img/colours.png" alt="colours" width="400" >   
+
+**TIP** Rather than typing out cell names while constructing a formula, you can select them using your mouse or keyboard as done on [this](#Spreadsheet-Selecting-Multiple-Cells) slide. You can refer to a single cell, a range of cells, a location in another worksheet, or a location in another workbook.
+
+**Figure**: Example of using cell references across worksheets. General syntax: `<SheetName>!<CellAddress>`   
+<img src="/source%20material/lectures/03Excel/img/cellref.png" alt="cellref" width="400" >
+
+
+### Formula Questions
+Excel follows the BEDMAS order or operations (Brackets, Exponents, Division, Multiplication, Addition, Subtraction).  
+
+**Example 2**  
+Question: A cell contains the following: `=2+4*3` What is the value of the cell? 
+A) 14   
+B) 18   
+C) =2+4*3  
+D) None of the above
+
+### START SOLUTIONS HERE
+**Example 2**  
+Question: A cell contains the following:`=2+4*3` What is the value of the cell?  
+**A) 14**   
+B) 18   
+C) =2+4*3   
+D) None of the above
+
+### END SOLUTIONS HERE
+
+
+**Example 3**
+A cell contains the following: `=(2+4)*3^2` What is the value of the cell?   
+A) 38   
+B) 54   
+C) 324   
+D) None of the above
+
+### START SOLUTIONS HERE
+**Example 2**  
+A cell contains the following:`=(2+4)*3^2` What is the value of the cell?   
+A) 38   
+**B) 54**   
+C) 324   
+D) None of the above
+
+### END SOLUTIONS HERE
+
+
+**Claire you are at page 41/122
