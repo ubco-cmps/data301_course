@@ -98,8 +98,7 @@ function converts text to a date serial number which we can then format to displ
 function. These cells, however, will be treated as text, not dates.
 
 ### Custom Date Options
-Here are some examples of custom formatting options. [Source: ablebits.com]
-(https://www.ablebits.com/office-addins-blog/2015/03/11/change-date-format-excel/#custom-date-format)
+Here are some examples of custom formatting options. [Source: ablebits.com](https://www.ablebits.com/office-addins-blog/2015/03/11/change-date-format-excel/#custom-date-format)
 
 **Example (January 1, 2005)**  
 |**Code**| Description| Result|
@@ -161,11 +160,11 @@ Once you have selected one or more cells, there are several common actions you c
 1. DELETE
 - delete the contents of all cells by pressing delete key
 - delete the contents and the cell locations (then shift remaining) by selecting Edit menu, Delete. . . or Delete. . . pop-up menu (brought up by right click).
-1. Cut, Copy, Paste
+2. Cut, Copy, Paste
 - cut - copies selected cells to clipboard and removes from document (Cmnd /Ctrl + X )
 - copy - copies selected cells to clipboard (Cmnd /Ctrl + C )
 - paste - copies cells in clipboard to sheet starting at currently selected cell (Cmnd /Ctrl + V )
-1. Add selected cells to a formula (requires that you were previously constructing a formula before selecting the cells).
+3. Add selected cells to a formula (requires that you were previously constructing a formula before selecting the cells).
 
 ### Cut, Copy, Paste
 Alternatively you could use the command button shortcuts located in the *Home* tab on the ribbon.  
@@ -178,13 +177,13 @@ Alternatively you could use the command button shortcuts located in the *Home* t
 <img src="../images/03Excel/pasteOpt.png" alt="pasteOpt" width="600" >  
 
 ### Manipulating Cells - Filling
-*Filling* combines copy and paste. There is a small box or tab beyond the cell’s lower right corner (fill handle). Grab it with the cursor and pull to other cells.
+*Filling* combines copy and paste. There is a small box or tab beyond the cell’s lower right corner (fill handle). Grab it with the cursor and pull to other cells.  
 <img src="../images/03Excel/Filling.png" alt="Filling" width="600" >  
 
 Double clicking that lower corner will quickly copy and paste that formula to the end of the data (or until the first blank row).  
 <img src="../images/03Excel/doubleClick.png" alt="doubleClick" width="600" >  
 
-[See demo on YouTube](See demo on YouTube)
+[See demo on YouTube](https://www.youtube.com/watch?v=O8c9N6CIqWM&feature=youtu.be)
 
 ### Hiding Columns and Rows
 You can hide a column or row by right-clicking on the column or row header and selecting *Hide*.
@@ -250,7 +249,7 @@ Other common functions for trigonometry, dates, and finance are available. See a
 Alternatively we could have created an array using {} to compute our sum:
 `=SUM({1,2,3})`
 This is equivalent to the following calculation:  
-<img src="/source%20material/lectures/03Excel/img/sumarray.png" alt="sumarray" width="30" >  
+<img src="../images/03Excel/sumarray.png" alt="sumarray" width="30" >  
 These examples and others can be found in DemoPartI.xlsx on Canvas
 
 
@@ -261,12 +260,12 @@ Cell reference examples:
 - = B1 + A3 - A4 
 
 Cell address will appear in diﬀerent coloured font within your formula for ease of viewing. In addition, the cell itself will be outlined with the same colour when the formula is selected.    
-<img src="/source%20material/lectures/03Excel/img/colours.png" alt="colours" width="400" >   
+<img src="../images/03Excel/colours.png" alt="colours" width="400" >   
 
 **TIP** Rather than typing out cell names while constructing a formula, you can select them using your mouse or keyboard as done on [this](#Spreadsheet-Selecting-Multiple-Cells) slide. You can refer to a single cell, a range of cells, a location in another worksheet, or a location in another workbook.
 
-**Figure**: Example of using cell references across worksheets. General syntax: `<SheetName>!<CellAddress>`   
-<img src="/source%20material/lectures/03Excel/img/cellref.png" alt="cellref" width="400" >
+**Figure**: Example of using cell references across worksheets. General syntax: `<SheetName>!<CellAddress>`    
+<img src="../images/03Excel/cellref.png" alt="cellref" width="400" >
 
 
 ### Formula Questions
@@ -276,7 +275,7 @@ Excel follows the BEDMAS order or operations (Brackets, Exponents, Division, Mul
 Question: A cell contains the following: `=2+4*3` What is the value of the cell? 
 A) 14   
 B) 18   
-C) =2+4*3  
+C) `=2+4*3`  
 D) None of the above
 
 ### START SOLUTIONS HERE
@@ -284,7 +283,7 @@ D) None of the above
 Question: A cell contains the following:`=2+4*3` What is the value of the cell?  
 **A) 14**   
 B) 18   
-C) =2+4*3   
+C) `=2+4*3`   
 D) None of the above
 
 ### END SOLUTIONS HERE
@@ -308,4 +307,244 @@ D) None of the above
 ### END SOLUTIONS HERE
 
 
-**Claire you are at page 41/122
+### Using Excel Functions
+- Excel will attempt to autocomplete your formulas.
+- To accept a suggestion, press `TAB` .
+- Excel will provide a guideline of how the function is used in the lower right corner of the cell. Optional arguments appear in
+square brackets []  
+<img src="../images/03Excel/sum.png" alt="sum" width="400" >
+
+For example, in **H6** we have `=POWER(G2,2) = 252 = 625`. POWER is the function and G2 and 2 are the inputs and 625 is the output.  
+<img src="../images/03Excel/function.png" alt="function" width="600" >  
+
+### Try Entering Formulas
+>**Exercise** \
+Calculate the total Revenue in cell **G13**. Add the label of **Total Revenue**: to cell **F13**.
+
+**Tip**: Try using the <img src="../images/03Excel/autosum.png" alt="autosum" width="30" > button (located in the **Formula** tab in the ribbon) to save time! **Directions**: Select a cell next to the numbers you want to sum (or simply select cell **G13**, click the AutoSum button, then press `Enter`.  
+
+>**Exercise** \
+Add a column for expenses and profit as below. (Expense is volume multiplied by cost and profit is revenue minus expense).  
+<img src="../images/03Excel/QuarterSalesTryIt.png" alt="QuarterSalesTryIt" width="600" >  
+
+
+### Concatenation
+String concatenation is when two or more strings are combined by appending them in order. The function to do this in Excel is CONCATENATE() or & operator.  
+<img src="../images/03Excel/concatenate.png" alt="concatenate" width="600" >   
+Notice that we needed to add spaces " " in order for the words to be separated. In addition, numbers work as arguments too!
+
+
+### Titles and Merged Cells
+- On the previous slide I added a title to my spreadsheet. To do this:
+        1. Click View from the toolbar menu and select Header and Footer.
+        2. Click on the Add Header box and insert the desired text.
+        3. To return to the default view, click View from the toolbar menu and select Normal.
+- I also utilize the merge cell option in order to center text over a section of a spreadsheet. To do this:
+        1. Highlight or select a range of cells.
+        2. Right-click on the highlighted cells and select Format Cells....
+        3. Click the Alignment tab and place a checkmark in the checkbox labeled Merge cells.
+ 
+Alternatively, you can merge and center a group of cells using the Merge and Center <img src="../images/03Excel/mergeandcenter.png" alt="mergeandcenter" width="30" > button located on the `Home` tab.
+
+### Formulas Question
+**Example 4** \
+A cell contains the following: ='ABC'+'DEF'. What is the value of the cell?  
+A) error  
+B) ABCDEF  
+C) ’ABC’+’DEF’  
+
+### START SOLUTIONS HERE
+**Example 3**  
+A cell contains the following: ='ABC'+'DEF'. What is the value of the cell?    
+**A) error**    
+B) ABCDEF  
+C) ’ABC’+’DEF’  
+
+### END SOLUTIONS HERE
+
+
+### LOOKUP function
+- The LOOKUP function searches for a value in either a row (or column) and returns a corresponding value from a neighbouring row (or column).
+        - This function works like searching for numbers in a phonebook: by searching for their name in the phonebook, you can determine their listed phone number.
+- VLOOKUP does the same thing, only it is restricted to **V**ertical (column) searches
+- HLOOKUP on the other hand, is restricted to **H**orizontal (row) searches
+- Some consider [LOOKUP](https://support.microsoft.com/en-us/office/lookup-function-446d94af-663b-451d-8251-369d5e3864cb?ui=en-us&rs=en-us&ad=us) as better than VLOOKUP [Source](https://corporatefinanceinstitute.com/resources/excel/functions/lookup-vs-vlookup/) while others consider [VLOOKUP](https://support.microsoft.com/en-us/office/video-vlookup-when-and-how-to-use-it-9a86157a-5542-4148-a536-724823014785?ui=en-us&rs=en-us&ad=us) is an improved version of LOOKUP [Source](https://support.microsoft.com/en-us/office/lookup-function-446d94af-663b-451d-8251-369d5e3864cb?ui=en-us&rs=en-us&ad=us).  
+- We will go through the advantages and disadvantages of each.
+
+The LOOKUP function has the following form:  
+`LOOKUP(lookup_value, lookup_vector, [result_vector])`  
+- lookup_value is the value we would like to match (eg. the name in our phonebook analogy)
+- lookup_vector the corresponding <ins>column</ins> (or row) containing the values from which we are searching for lookup_vector (eg. the column of names in our phonebook analogy)
+- result_vector the corresponding <>ins>column</ins> (or row) containing the information we are trying to obtain (eg. the column of phone numbers in our phonebook analogy); this has to be the same size as the lookup_vector
+
+It is common that we store the lookup_value in a cell so that we might change it easily for future use of the formula.  
+
+<img src="../images/03Excel/lookupZoom.png" alt="lookupZoom" width="600" >     
+
+Formula: `=LOOKUP(F2, A2:A6,C2:C6)`
+Output: `$2.99`
+[YouTube Demo](https://www.youtube.com/watch?v=jvcK_nbxCZM&feature=youtu.be)  
+
+### A comment on LOOKUP function
+**Important**  
+- The values in lookup_vector must be placed in **ascending order**: . . . , -2, -1, 0, 1, 2, ..., A-Z, FALSE, TRUE; otherwise, LOOKUP might not return the correct
+value.
+- Uppercase and lowercase text are treated as equivalent.
+
+**Example 5**  
+Use the lookup function to determine the product ID of a certain product name.  
+1. What happens when you try and look up the ID of *Pumpkin*?  
+2. How can we fix this problem?  
+
+### VLOOKUP function
+`VLOOKUP(lookup_value, table_array, col_index_num,[range_lookup])`  
+
+- lookup_value is the value we would like to match (eg. the name in our phonebook analogy)
+- table_array the corresponding <ins>array</ins> (or matrix) containing the values from which we are searching for **and** the information we are trying to obtain. (eg. a matrix contain the columns of names **and** phone numbers in our phonebook analogy)
+- col_index_num corresponding to the column number containing the information we are trying to obtain (eg. the column of phone numbers in our phonebook analogy)
+- range_lookup An [optional argument] indicating if you want exact (FALSE) or approximate (TRUE (default)) matching.  
+<img src="../images/03Excel/vlookupZoom.png" alt="vlookupZoom" width="700" >    
+
+Formula: `=VLOOKUP(F2,A2:C6,3)`  
+Output: `$2.99`  
+
+[Youtube Demo](https://www.youtube.com/watch?v=q575W8vM7FY&feature=youtu.be)  
+
+**Some warnings about VLOOKUP**  
+- The column of lookup values (the equivalent lookup_vector from the LOOKUP example) is expected to be in the left-most column of the table_array.
+- If the fourth optional argument range_lookup is left blank, it defaults to TRUE
+        - FALSE allows only exact matches while TRUE allows for partial matches
+- If range_lookup is TRUE (the default setting) the first row of the table must be sorted in ascending order.
+Otherwise, VLOOKUP may return an incorrect or unexpected value.  
+`N.B. HLOOKUP` works in the exact same way as `VLOOKUP` only now we look across rows instead of columns.  
+<img src="../images/03Excel/partialLookupZoom.png" alt="partialLookupZoom" width="700" >     
+
+Formula: `=VLOOKUP(B9,A2:C6,2,TRUE<sup>3</sup>)` where **B9** = 1.2  
+Output: `Apple`  
+Formula: `=VLOOKUP(B9,A2:C6,2,FALSE)` where **B9** = 1.2  
+Output: `#N/A`    
+
+<sup>3</sup>N.B doesn’t look for the "nearest" value but the greatest value smaller than or equal to the lookup value.
+
+
+
+
+**Example 6**  
+1. Can you use vlookup function to determine the product ID of a certain product name?  
+2. Use vlookup function to determine the price a certain product name. Use the default setting of `range_lookup = TRUE`?  
+3. Test this function with the entry: *Pumpkin*.  
+4. Test this function with the entry: *Pumpkin*, this time using `range_lookup = FALSE`  
+
+
+### LOOKUP vs. VLOOKUP
+The *pros* of LOOKUP              
+- Accommodates left-to-right and right-to-left lookups              
+- Less restrictive in terms of lookup/result_vector  
+
+The *cons* of LOOKUP
+- Requires ascending ordered lookup_vector
+- Partial matching (no option to for exact matches)
+
+The *pros* of VLOOKUP
+- option to force exact matches  
+
+The *cons* of VLOOKUP
+- Accommodates only left-to-right lookups
+- Requires a table (more restrictive)
+- Requires ascending ordered lookup_vector  
+
+Both have unexpected behaviour with duplicates
+
+
+### INDEX function
+The syntax for the INDEX function in Microsoft Excel is:   
+'INDEX( table, row_number, column_number )'
+It returns the value from within a table or range (i.e. an array of cells) at the given index. (Think of indexing a matrix in R using 'mat[i,j]' with i is your row_number and j is your col_number)  
+
+<img src="../images/03Excel/indexZoom.png" alt="indexZoom" width="700" >  
+
+### Formulas Question
+**Example 7**
+How many of the following statements are TRUE?  
+1. CONCATENATE function can take 3 arguments.
+2. There is an Excel function that has 0 arguments.
+3. =INDEX({1,3,5},2) returns 5.
+4. =LOOKUP(5,{1,3,5},{"a","b","c"}) returns "c".  
+A) 0  
+B) 1  
+C) 2  
+D) 3  
+
+### START SOLUTIONS HERE
+**Example 7**
+How many of the following statements are TRUE?  
+1. CONCATENATE function can take 3 arguments. :heavy_check_mark:  
+2. There is an Excel function that has 0 arguments. :heavy_check_mark:    
+3. =INDEX({1,3,5},2) returns 5.  :x:
+4. =LOOKUP(5,{1,3,5},{"a","b","c"}) returns "c".  :heavy_check_mark:
+A) 0  
+B) 1    
+C) 2  
+**D) 3**  
+
+### END SOLUTIONS HERE
+
+
+### Advanced Spreadsheet Addressing
+The dollar sign “$” is a symbol that indicates an *absolute address*.
+- By default, addresses are "relative" in the sense that if they are in a formula that is copied to another cell, they will be changed relative to where they were copied from their origin.
+Example:
+- Cell **A1** has the formula =A2+B1
+- Copy contents of cell **A1** to cell **C4** (+ 2 columns + 3 rows).
+- Formula changes to =C5+D4 because moved down three rows and over two columns. (eg. col**A** + 2col = **C**, row**2** + 3 = 5;
+hence **A2** changes to **C5**)  
+If cell **A1** had the formula =$A$2+$B$1, then the same formula would be copied in cell **C4**.
+
+There are three different ways you can specify an absolute address
+- By row eg. =B$1 (column will change but row will not)
+- By column eg. =$B1 (row will change but col will not)
+- By cell (row and column) eg. =$B$1 (neither row nor col will change)
+
+> Question: How would the formula =$A2+B$3 in cell **D3** be changed when copied to **E5**?
+
+**D3** to **E5**: :arrow_right: one column, :arrow_down: two rows
+- $A2: + <del>:arrow_right: one column</del>, :arrow_down: two rows = $A4
+- B$3: + :arrow_right: one column, + <del>:arrow_down: two rows</del> = C$3
+
+**Needs formatting**
+
+> Answer: The copied formula would appear as `=$A4+C$3` in cell **E5**
+
+
+### Formulas and Reference Question
+**Example 8** \
+Cell **A1** contains the following: =$B2+D$4. What is the formula if the cell is copied to cell D3?
+- error
+- =$B2+D$4
+- =$B4+F$4
+- =$B4+G$4  
+For more examples see the **Absolute** worksheet on DemoPartI
+
+### START SOLUTIONS HERE
+**Example 8** \
+Cell **A1** contains the following: =$B2+D$4. What is the formula if the cell is copied to cell D3?
+- error
+- =$B2+D$4
+- =$B4+F$4
+- **=$B4+G$4**  
+
+### END SOLUTIONS HERE
+
+
+### Tips
+> Tip:  
+You can change a cell from relative to absolute with the shortcut `F4` . You can continue to press F4 to have Excel cycle through the different reference types.  
+>Tip:  
+To show all the formulas in a worksheet (rather then their result), click the <img src="../images/03Excel/showFormula.png" alt="showFormula" width="700" > button located in the Formulas tab in the ribbon.
+
+
+
+** Claire you are at page 74/122
+
+
+
