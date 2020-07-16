@@ -3,8 +3,9 @@
 The course website is here: firas.moosvi.com/courses/data301
 
 For now, you will need a username and password:
-username: guestfiras
-pass: doctorstrange-ironman!
+
+- username: guestfiras
+- pass: doctorstrange-ironman!
 
 Everytime you push to master, that system will redeploy the site on the internet.
 It may take about 90s to complete.
