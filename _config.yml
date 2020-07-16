@@ -14,9 +14,8 @@ html:
   baseurl : "https://firas.moosvi.com/courses/data301/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   extra_footer : |
       <div>
-      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
-          All content on this site is copyright.
-          Please contact the instructors for more information</a>
+      All content on this site is copyright.
+      Please contact the instructors for more information</a>
       </div>
 
 sphinx:
