@@ -366,7 +366,7 @@ Rational numbers of the form x=2k , where x and k are integers, can have exact f
 - 0.1, 123.4, 0.025 will not have exact representation.
 
 > Try it! You can check your answer [here](https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php)
-Convert 0.015625 to 32 bit single precision.
+Convert 0.015625 to 32 bit single precision.  
 **Step 1** Convert the integer part of decimal to binary \
 **Step 2** Convert the fractional part of the decimal to binary \
 **Step 3** Write the result from step 1 to the left of the decimal and the result from step 2 to the right of the decimal \
