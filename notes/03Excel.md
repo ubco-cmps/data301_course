@@ -545,6 +545,3 @@ To show all the formulas in a worksheet (rather then their result), click the <i
 
 
 ** Claire you are at page 74/122
-
-
-
