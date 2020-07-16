@@ -1,6 +1,6 @@
 # DATA and COSC 301 Instructions
 
-The course website is here: firas.moosvi.com/courses/data301
+The course website is here: [firas.moosvi.com/courses/data301](firas.moosvi.com/courses/data301)
 
 For now, you will need a username and password:
 
