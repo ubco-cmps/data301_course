@@ -128,7 +128,7 @@ It is worth mentioning the difference between *Currency* and *Accounting* as the
 
 ### Spreadsheet Formatting (Windows)
 A text editor shortcut will allow you to format cells in bold, italics, underline, fonts, colours, justify, etc.  
-<img src="/source%20material/lectures/03Excel/img/FormatShortcut.png" alt="FormatShortcut" width="450" >  
+<img src="/source%20material/lectures/03Excel/img/FormatShortcut.png" alt="FormatShortcut" width="600" >  
 
 ### Try It!
 > **Exercise** \
@@ -138,5 +138,118 @@ Make a copy of the QuarterSales worksheet and call it QuarterSalesFormat. Format
 Format all monetary cells to the format *Currency*
 
 
-** CLAIRE YOU ARE AT 19/112**
+### Spreadsheet Selecting Multiple Cells
+There are a number of ways of selecting multiple cells at a time:
+1. With the mouse, (left) click and drag mouse to select a rectangle region of cells.
+1. With keyboard, hold SHIFT key and use arrow keys to select a rectangle region of cells.
+1. With mouse and keyboard, while holding CTRL (windows)/Cmnd (mac) key, (left) click on individual cells to select non-contiguous cells.
+1. Click on a row number to select a whole row<sup>2</sup> or select the first column in that row and press SHIFT + Cmnd /Cntrl + :arrow_right:
+1. Click on a column header to select a whole column2 or select the first row in that column and SHIFT + Cmnd /Ctrl + :arrow_down:
+See more keyboard shortcuts [here](https://exceljet.net/keyboard-shortcuts). (eg. Cmnd /Ctrl + A select entire worksheet) [See demo](https://www.youtube.com/watch?v=L9n3tbufCyk&feature=youtu.be)  
+
+<sup>2</sup> or until the first empty cell
+
+
+### Range Selecting Cells Example
+<img src="/source%20material/lectures/03Excel/img/SelectingCells.png" alt="SelectingCells" width="600" >  
+
+### Selecting non-contiguous
+<img src="/source%20material/lectures/03Excel/img/SelectingIndCells.png" alt="SelectingIndCellss" width="600" >  
+
+### Manipulating Cells
+Once you have selected one or more cells, there are several common actions you can perform:
+1. DELETE
+- delete the contents of all cells by pressing delete key
+- delete the contents and the cell locations (then shift remaining) by selecting Edit menu, Delete. . . or Delete. . . pop-up menu (brought up by right click).
+1. Cut, Copy, Paste
+- cut - copies selected cells to clipboard and removes from document (Cmnd /Ctrl + X )
+- copy - copies selected cells to clipboard (Cmnd /Ctrl + C )
+- paste - copies cells in clipboard to sheet starting at currently selected cell (Cmnd /Ctrl + V )
+1. Add selected cells to a formula (requires that you were previously constructing a formula before selecting the cells).
+
+### Cut, Copy, Paste
+Alternatively you could use the command button shortcuts located in the *Home* tab on the ribbon.  
+<img src="/source%20material/lectures/03Excel/img/CutCopyPaste.png" alt="CutCopyPaste" width="600" >  
+
+
+### Paste Button Ribbon
+- Some buttons in the ribbon open a menu with additional options.
+- For example, the Paste button opens a menu with additional pasting options such as **Paste Values**, **Formulas**,. . .which will be useful to us later.
+<img src="/source%20material/lectures/03Excel/img/pasteOpt.png" alt="pasteOpt" width="600" >  
+
+### Manipulating Cells - Filling
+*Filling* combines copy and paste. There is a small box or tab beyond the cell’s lower right corner (fill handle). Grab it with the cursor and pull to other cells.
+<img src="/source%20material/lectures/03Excel/img/Filling.png" alt="Filling" width="600" >  
+
+Double clicking that lower corner will quickly copy and paste that formula to the end of the data (or until the first blank row).  
+<img src="/source%20material/lectures/03Excel/img/doubleClick.png" alt="doubleClick" width="600" >  
+
+[See demo on YouTube](See demo on YouTube)
+
+### Hiding Columns and Rows
+You can hide a column or row by right-clicking on the column or row header and selecting *Hide*.
+- The column/row still exists but will not be displayed or printed until we select *Unhide*. [Link to my demo on YouTube](https://www.youtube.com/watch?v=2Z0kPQfhDbE&feature=youtu.be)  
+<img src="/source%20material/lectures/03Excel/img/Hide.png" alt="Hide" width="600" >  
+
+### Selecting Cells Question
+**Example 1**  
+Which method allows you to select non-contiguous cells in a spreadsheet?  
+A) hold SHIFT key and use arrow keys  
+B) With the mouse left click on a cell and drag mouse  
+C) hold CTRL (windows)/Cmnd (mac) key and use arrow keys  
+D) hold CTRL (windows)/Cmnd (mac) key and left click on cells  
+
+### START SOLUTIONS HERE
+**Example 1**  
+Which method allows you to select non-contiguous cells in a spreadsheet?  
+A) hold SHIFT key and use arrow keys  
+B) With the mouse left click on a cell and drag mouse  
+C) hold CTRL (windows)/Cmnd (mac) key and use arrow keys  
+**D) hold CTRL (windows)/Cmnd (mac) key and left click on cells**  
+### END SOLUTIONS HERE
+
+### Entering Formulas
+A *formula* is any expression that begins with an equal sign (=).
+- The equal sign means that a calculation must be done to compute the cell value.
+<img src="/source%20material/lectures/03Excel/img/formula.png" alt="formula" width="600" >  
+
+### Formula Expressions
+A formula expression can consist of literals (numbers, text strings), operators, functions (eg. MAX(), AVERAGE()), and cell references.
+
+Simple mathematical expressions:
+- = 1 + 5
+- = 1.5 * 3.14 + 42
+
+Common functions:
+```
+- = ROUND(PI(),2) // Result is 3.14
+- = CONCATENATE("Hello", " World") // Hello World
+```
+Other common functions for trigonometry, dates, and finance are available. See a full list of functions [here](https://support.microsoft.com/en-us/office/excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188?ui=en-us&rs=en-us&ad=us)
+
+
+### Using Formulas
+- In order to use functions correctly, you need to follow a certain structure, or *syntax*.
+- The basic syntax for a function is the equals sign (=), the function name (eg, SUM), and one or more *arguments/inputs* within parenthesis. For example:
+    ```
+    =SUM(1,2,3)
+    ```
+    Once we press ENTER (or leave the cell), it will display the result, i.e. *output*, of the formula (in this case is 6). Returning to that cell will display the formula in the formula bar.
+- N.B. if you function has no arguments, you will still need to type the parenthesis. For example =NOW() returns the current date and time as output.
+
+
+### Using Excel Functions
+- You can get help on any function by searching its name in Excel’s drop down Help menu
+<img src="/source%20material/lectures/03Excel/img/Help.png" alt="Help" width="800" >  
+
+- Alternatively, you can navigate to the **Formulas** tab in the ribbon and select the <img src="/source%20material/lectures/03Excel/img/insertfunction.png" alt="insertfunction" width="30" > button (there is also a shortcut to this button directly beside the formula bar <img src="/source%20material/lectures/03Excel/img/ficon.png" alt="insertfunction" width="30" >). This will bring up a **Formula Builder** window which contains the name of all the functions in Excel, with a search and description on how to use each function.
+
+
+
+### Arrays
+Alternatively we could have created an array using {} to compute our sum:
+=SUM({1,2,3})
+This is equivalent to the following calculation:
+
+These examples and others can be found in DemoPartI.xlsx on Canvas
 
