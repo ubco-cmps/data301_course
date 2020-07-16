@@ -5,9 +5,9 @@
 The overall goal of this course is for you to: 
 > Understand data analytics and be able to apply data analysis to data sets using a variety of software tools and techniques.
 
-<img src="/source%20material/lectures/01Intro/img/excel.png" alt="excel" height="48"> <img src="/source%20material/lectures/01Intro/img/python.png" alt="python" height="48">
-<img src="/source%20material/lectures/01Intro/img/sql.png" alt="sql" height="48"> <img src="/source%20material/lectures/01Intro/img/Rlogo.png" alt="Rlogo" height="48">
-<img src="/source%20material/lectures/01Intro/img/Tableau.png" alt="Tableau" height="48">
+<img src="../images/01Intro/excel.png" alt="excel" height="48"> <img src="../images/01Intro/python.png" alt="python" height="48">
+<img src="../images/01Intro/sql.png" alt="sql" height="48"> <img src="../images/01Intro/Rlogo.png" alt="Rlogo" height="48">
+<img src="../images/01Intro/Tableau.png" alt="Tableau" height="48">
 
 
 * The most exciting aspect of data analytics is discovering and presenting useful data/information that can have an impact on business, society, etc.
@@ -108,7 +108,7 @@ Before e-mailing me, I encourage you to ask questions on Canvas’ Discussion Bo
 - If you are working with a partner, please decide on who will submit the documents to Canvas (only one person should upload these files).
 - *Regardless* if you were the partner who uploaded the completed assignment, please include the name and student number of your partner in the **Assignment Comments** 
 
-<img src="/source%20material/lectures/01Intro/img/partner.png" alt="partner" width="1000">
+<img src="../images/01Intro/partner.png" alt="partner" width="1000">
 
 
 *Figure*: Each partner should submit the name and student number of their partner in the assignment comments on Canvas. 
@@ -246,7 +246,7 @@ everyone has a chance to obtain a clicker first)
 
 ### Don’t forget to register your clickers on Canvas
 
-<img src="/source material/lectures/01Intro/img/clickerCanvas.png" alt="clickerCanvas" width="1000">
+<img src="/source material/lectures/01Intro/clickerCanvas.png" alt="clickerCanvas" width="1000">
 
 
 
@@ -390,7 +390,7 @@ E) None of the above
 **Example 3** \
 What is your major? \
 A) Math/Stat/Computer Science/Engineering \
-B) Buisness \
+B) Business \
 C) Science (biology, chemistry, physics, environmental) \
 D) Arts \
 E) Other
@@ -412,6 +412,3 @@ B) B \
 C) C \
 D) D \
 E) F
-
-
-

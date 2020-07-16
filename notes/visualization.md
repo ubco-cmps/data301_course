@@ -21,7 +21,7 @@ Data visualization is the creation and presentation of visual representations of
 ### Data Visualization with Excel
 - In Excel, we saw examples of charts including pivot charts, sparklines, and visual formatting of cells.
 
-![Kiku](image/excel1.png)
+![Kiku](../images/11Visualization/excel1.png)
 
 
 Figure: Examples of data visualizations using Excel
@@ -30,7 +30,7 @@ Figure: Examples of data visualizations using Excel
 Using Python a variety of charting libraries are available including matplotlib and ggplot.
 |||
 |---|---|
-|![Kiku](image/python1.png)|![Kiku](image/python2.png)|
+|![Kiku](../images/11Visualization/python1.png)|![Kiku](../images/11Visualization/python2.png)|
 
 Figure: Examples of data visualizations using Python
 
@@ -38,7 +38,7 @@ Figure: Examples of data visualizations using Python
 Using in R we can create visualization for qualitative data in form of bar charts, frequency tables, pie charts,
 |||
 |---|---|
-|![Kiku](image/r1.png)|![Kiku](image/r2.png)|![Kiku](image/r3.png)|
+|![Kiku](../images/11Visualization/r1.png)|![Kiku](../images/11Visualization/r2.png)|![Kiku](../images/11Visualization/r3.png)|
 
 Figure: Examples of qualitative data visualizations using ggplot in R
 
@@ -46,7 +46,7 @@ Figure: Examples of qualitative data visualizations using ggplot in R
 Using in R we saw examples of how we could represent quantitative data, eg. histograms, boxplots
 |||
 |---|---|
-|![Kiku](image/r4.png)|![Kiku](image/r5.png)|
+|![Kiku](../images/11Visualization/r4.png)|![Kiku](../images/11Visualization/r5.png)|
 
 Figure: Examples of quantitative data visualizations using R
 
@@ -70,7 +70,7 @@ Figure: Examples of quantitative data visualizations using R
 􏰏
 ### Tableau Home page
 
-![Kiku](image/home.png)
+![Kiku](../images/11Visualization/home.png)
 
 ### Home Page Tableau
 􏰏
@@ -103,11 +103,11 @@ See finished workbook: getting_started_finished.twbx file
 
 ### Tableau Workspace
 
-![Kiku](image/datasource.png)
+![Kiku](../images/11Visualization/datasource.png)
 
 ### Example Connecting to Excel
 
-![Kiku](image/excel.png)
+![Kiku](../images/11Visualization/excel.png)
 
 ### Example Connecting to Excel
 􏰏
@@ -116,19 +116,19 @@ See finished workbook: getting_started_finished.twbx file
 - For example, we can create a database-like JOIN with data from another source (eg. we can connect the Orders from Global Superstore Orders 2016.xlsx to the Returns from Global Superstore Returns 2016.csv)
 
 ### Tableau Workspace
-![Kiku](image/add.png)
+![Kiku](../images/11Visualization/add.png)
 
 ### Tableau Workspace
 Notice here that we have created a left join (on Order ID) which we can change by clicking on the Venn Diagram image.
 
-![Kiku](image/leftJoin.png)
+![Kiku](../images/11Visualization/leftJoin.png)
 
 We can also change meta-data in the excel-like spreedsheet.
 
 ### Tableau Workspace
 Clicking on the ‘Sheet’ tab (orange button in the lower left hand corner) will bring us to this workspace:
 
-![Kiku](image/showme.png)
+![Kiku](../images/11Visualization/showme.png)
 
 ### Tableau Features
    􏰏
@@ -151,11 +151,11 @@ A shelf is a location to put a pill.
 􏰏 - Row and column shelves are similar to Pivot tables in Excel but with built-in visualization.
 Dragging pills to different shelves will change the way our graphics appears. To remove of undo a move, simple drag the pill off the shelf to delete, or press the undo button. The Clear Sheet button will erase the entire graphic
 
-![Kiku](image/undo.png)
+![Kiku](../images/11Visualization/undo.png)
 
 ### Tableau Workspace Items
 
-![Kiku](image/workplaceitems.png)
+![Kiku](../images/11Visualization/workplaceitems.png)
 
 
 ### View Cards
@@ -169,7 +169,7 @@ View or shape cards allows control of colour, shape, and size. They also enable 
 - <b>Shape</b> expresses discrete or continuous fields
 Multiple fields can be placed on the colour, label, detail, and tooltip buttons.
 
-![Kiku](image/sales.png)
+![Kiku](../images/11Visualization/sales.png)
 
 􏰏 - Notice how Tableau will guess at useful aggregations of our data.
 􏰏 
@@ -186,11 +186,11 @@ For example, we may want to see average sales month-to-month for each year.
 - Change Quarter to Month to get the next level of granularity for these dates
 - Click the downarrow on the green pill and change Measure (Sum) > Average.
 
-![Kiku](image/sales2.png)
+![Kiku](../images/11Visualization/sales2.png)
 
 There are a number of other ‘quick calculations’ we have to choose from:
 
-![Kiku](image/quickCalcs.png)
+![Kiku](../images/11Visualization/quickCalcs.png)
 
 ### Show Me Button
 􏰏
@@ -201,16 +201,16 @@ There are a number of other ‘quick calculations’ we have to choose from:
 
 ### Show Me
 - Eg, since Country has a geographical component, a map seems like a natural choice:
-![Kiku](image/showme.png)
+![Kiku](../images/11Visualization/showme.png)
 
 ### Show Me
 For geographic data (small globe icon), Tableau automatically generates center-point geocodes (longitude/latitude).
-![Kiku](image/map.png)
+![Kiku](../images/11Visualization/map.png)
 
 ### Show Me
 We can click and drag ‘Sales’ onto the map to include this information in the graphic (depicted by size of the dot, also visible when hovering over the country)
 
-![Kiku](image/sales3.png)
+![Kiku](../images/11Visualization/sales3.png)
 
 ### Tableau Question
 ``` text
@@ -257,12 +257,12 @@ Tableau can connect to a wide variety of data sources including:
 ### Connecting to relational databases
 Once you have the necessary driver, you simple click on the appropriate option on the left hand panel of the home screen:
 
-![Kiku](image/sql.png)
+![Kiku](../images/11Visualization/sql.png)
 
 ### Connecting to relational databases
 At this point you will be asked to fill in the required fields in a pop a window like this:
 
-![Kiku](image/mysql.png)
+![Kiku](../images/11Visualization/mysql.png)
 
 Using the above credentials with password ubc should grant you access to the WorksOn database that we have studied in out SQL unit.
 In order to connect to this database you need to be on ubcsecure wifi on campus.
@@ -274,7 +274,7 @@ To access it from home:
 ### Connecting to MySQL
 ||
 |---|
-|![Kiku](image/mySQLtables.png)|
+|![Kiku](../images/11Visualization/mySQLtables.png)|
 
 ### Connect or Extract Data
 Tableau has its own internal data engine. There are two options when retrieving data to visualize:
@@ -317,13 +317,13 @@ How many of the following statements are TRUE?
 􏰏 - Alternatively, you could go to toolbar and select Worksheet > Duplicate as Crosstab.
 ### Copy data in Tableau
 
-![Kiku](image/copy.png)
+![Kiku](../images/11Visualization/copy.png)
 
 ### Paste into Excel
-![Kiku](image/paste.png)
+![Kiku](../images/11Visualization/paste.png)
 
 ### Duplicate as crosstab
-![Kiku](image/crosstab2.png)
+![Kiku](../images/11Visualization/crosstab2.png)
 ### Interactive plots
  - We can also make the plot interactive by right clicking a desired field and selecting "Show Filter".
 
@@ -344,11 +344,11 @@ How many of the following statements are TRUE?
 ### User made dimension
 Notice that the ‘Product’ pill now has a clickable + sign to expand and collapse the levels of the hierarchy.
 
-![Kiku](image/product.png)
+![Kiku](../images/11Visualization/product.png)
 
 ### User made dimension
 We can click the sort buttons to arrange bars by descending/ascending order.
-![Kiku](image/sort.png)
+![Kiku](../images/11Visualization/sort.png)
 
 ### Tableau Files
 - Tableau Workbook (.twb) (default) saves workbook but no data
@@ -367,7 +367,7 @@ of S
 
 ### Join Example
 
-![Kiku](image/joins.png)
+![Kiku](../images/11Visualization/joins.png)
 
 ### Data Blending
 - Data blending allows "joining" data that does not reside in a single source. There are automatic and manual methods.
@@ -376,13 +376,13 @@ of S
 
 ### Try it: Tableau Data Sources - Joins
 Using the MySQL tables in the data301 database, create some joins to connect them so it looks like this:
-![Kiku](image/mySQLjoin.png)
+![Kiku](../images/11Visualization/mySQLjoin.png)
 
 ### Dynamic Grouping/Renaming
 􏰏- Dynamic grouping (also called ad hoc groups) can be created by using Ctrl+Select (windows) or Cmnd+select (mac) to select elements in visualization and select Group from menu.
 |||
 |---|---|
-|![Kiku](image/group1.png)|![Kiku](image/group2.png)|
+|![Kiku](../images/11Visualization/group1.png)|![Kiku](../images/11Visualization/group2.png)|
 
 - It is also possible to rename values/labels and correct value errors.
 􏰏      - Eg. change California to "CA" by right clicking on the state and selecting Annotate > Mark and edit the defaults
@@ -400,37 +400,37 @@ Chart types:
 
  ### Line Chart (discrete time)
 
-![Kiku](image/forecast2.png)
+![Kiku](../images/11Visualization/forecast2.png)
 
 ### Text Table (Crosstab)
 These are very similar to Pivot Tables: after selecting the Dimensions you want, drag the desired Measure directly overtop the table. N.B. you can change the aggregate function (SUM is the default in most cases)
 
-![Kiku](image/crosstab.png)
+![Kiku](../images/11Visualization/crosstab.png)
 
 ### Maps
 
-![Kiku](image/maps.png)
+![Kiku](../images/11Visualization/maps.png)
 
 ### Heat Map
 Turn the cross tab viz from slide 65 to a heat map by going to the Show Me tab and selecting the option in the top right corner. Think of this as a complex conditional formatting of Excel cells.
 
-![Kiku](image/heatmap2.png)
+![Kiku](../images/11Visualization/heatmap2.png)
 
 ### Tree Map
 Tree maps are a way of displaying hierarchical data using nested figures, usually rectangles. To change the colours used, click ‘Color’ in the Marks panel and go to Edit Colors.
-![Kiku](image/treemap.png)
+![Kiku](../images/11Visualization/treemap.png)
 
 ### Bar Charts
-![Kiku](image/bar.png)
+![Kiku](../images/11Visualization/bar.png)
 
 ### Pie Charts
 
-![Kiku](image/piecharts.png)
+![Kiku](../images/11Visualization/piecharts.png)
 
 ### Scatter Plots
 You can change the points that appear in your scatterplot by dragging pills into the Details button in the marks field.
 
-![Kiku](image/scatter.png)
+![Kiku](../images/11Visualization/scatter.png)
 
 ### Trend Lines and Reference Lines
 􏰏 􏰏
@@ -442,15 +442,15 @@ You can change the points that appear in your scatterplot by dragging pills into
 - If you hover over the trend line on your Viz, you can see some useful information (eg. p-value, R-squared) in the so-called “tooltip".
 ### Adding Trend Lines
 
-![Kiku](image/trendlineSP.png)
+![Kiku](../images/11Visualization/trendlineSP.png)
 
 ### Adding Trend Lines
 
-![Kiku](image/dragTrend.png)
+![Kiku](../images/11Visualization/dragTrend.png)
 
 ### Adding Trend Lines
 
-![Kiku](image/rightClickTrend.png)
+![Kiku](../images/11Visualization/rightClickTrend.png)
 
 
 ### Trend Lines and Reference Lines
@@ -461,11 +461,11 @@ You can change the points that appear in your scatterplot by dragging pills into
 􏰏    - Alternatively we could drag Location onto ‘Color’ on the Marks pane: see Figure 2
 ### Adding Trend Lines
 
-![Kiku](image/trippleTrend.png)
+![Kiku](../images/11Visualization/trippleTrend.png)
 
 ### Adding Trend Lines
 
-![Kiku](image/trippleTrend2.png)
+![Kiku](../images/11Visualization/trippleTrend2.png)
 
 ### Reference Lines
 􏰏 - Reference lines allow comparison with a reference (detect trends and outliers). To add a reference line:
@@ -473,21 +473,21 @@ You can change the points that appear in your scatterplot by dragging pills into
 􏰏    - or right click on the y (or x) axis on the Viz and select AddReference Line.
 􏰏 - To show the confidence bands, right click your trend line,Trend Lines → Edit Trend Lines... and select "Show Confidence Bands"
 
-![Kiku](image/CB.png)
+![Kiku](../images/11Visualization/CB.png)
 
 ### Adding Trend Lines and Reference Lines
 
-![Kiku](image/trendref.png)
+![Kiku](../images/11Visualization/trendref.png)
 
 ### Sorting
 
-![Kiku](image/sorting.png)
+![Kiku](../images/11Visualization/sorting.png)
 
 ### Calculations
 􏰏 - Functions in tableau allow us to manipulate our data.
 􏰏 - We can save those calculations in a calculated field.
 􏰏 - To create a calculated field, simply right click in the data pane and select Create → Calculated Field
-![Kiku](image/calc.png)
+![Kiku](../images/11Visualization/calc.png)
 ### Calculations
 􏰏
 - Available functions are displayed on the right hand panel, and our formulas (similar to what you would write in an Excel cell) is written on the left.
@@ -498,12 +498,12 @@ You can change the points that appear in your scatterplot by dragging pills into
 
 ### Creating a Calculated Field
 An example calling a function on a String
-![Kiku](image/field.png)
+![Kiku](../images/11Visualization/field.png)
 
 ### Creating a Calculated Field
 An example calling a function on a Number
 
-![Kiku](image/formula.png)
+![Kiku](../images/11Visualization/formula.png)
 
 ### Forecasting
 􏰏
@@ -514,17 +514,17 @@ An example calling a function on a Number
 
 ### Forecasting
 
-![Kiku](image/forecast1.png)
+![Kiku](../images/11Visualization/forecast1.png)
 
 ### Forecasting
 
-![Kiku](image/forecast2.png)
+![Kiku](../images/11Visualization/forecast2.png)
 
 ### Forecasting
 - Alternatively, we can right click on an appropriate Viz and select
  - Forecast → Show Forecast
 
-![Kiku](image/forcast.png)
+![Kiku](../images/11Visualization/forcast.png)
 
 ### Tableau Question
 ```text
@@ -563,11 +563,11 @@ Using the Superstore data set, create a visualization for each of these chart ty
 
 ### Dashboard Starter View
 
-![Kiku](image/dashboard.png)
+![Kiku](../images/11Visualization/dashboard.png)
 
 ### Dashboard Populated with Worksheets
 
-![Kiku](image/dw.png)
+![Kiku](../images/11Visualization/dw.png)
 
 ### Try it: Tableau Dashboard
  

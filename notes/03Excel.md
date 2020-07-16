@@ -25,7 +25,7 @@ Spreadsheets are very common in business and reporting applications.
 ### Excel Ribon
 **ribbon** The Excel ribbon is the strip of icons above the worksheet area. It replaces the menus and toolbars found in Excel 2003 and earlier.  
 **ribbon tab** contains multiple commands logically sub-divided into groups  
-<img src="/source%20material/lectures/03Excel/img/ribbon.png" alt="ribbon" width="600" >  
+<img src="../images/03Excel/ribbon.png" alt="ribbon" width="600" >  
 [image source](https://www.ablebits.com/office-addins-blog/2019/07/02/excel-ribbon-guide/)
 
 ### Workbook vs. worksheets
@@ -35,7 +35,7 @@ For example 03ExcelPartI.xlsx is a *workbook* that contains two *worksheets*. Th
 
 ###Adding and renaming worksheets
 To add a new worksheet we simply the plus sign located to the right of the worksheets.  
-<img src="/source%20material/lectures/03Excel/img/rename.png" alt="rename" width="700" >  
+<img src="../images/03Excel/rename.png" alt="rename" width="700" >  
 By default, the worksheets are named Sheet1, Sheet2, Sheet3, and so on, but you can change these names by double clicking on the tab and typing an alternate name.  
 
 - To Move a sheet, drag the sheet tab to the location that you want along the row of sheet tabs.
@@ -50,7 +50,7 @@ By default, the worksheets are named Sheet1, Sheet2, Sheet3, and so on, but you 
 
 ### Spreadsheet Addressing
 A cell is identified by a column letter and row number.
-<img src="/source%20material/lectures/03Excel/img/ExcelSheet.png" alt="ExcelSheet" width="700" >  
+<img src="../images/03Excel/ExcelSheet.png" alt="ExcelSheet" width="700" >  
 Notice how the *active cell* (the cell highlighted by the green rectangle in the spreadsheet) also displays its cell identifier in name
 box located to the left of the formula bar.
 
@@ -60,12 +60,12 @@ box located to the left of the formula bar.
 - A cell is identified by putting the column letter first then the row number.
     - e.g. **B3** is the 2nd column and the 3rd row.
 Question: What column number is **AD**? How about **BAD**?  
-<img src="/source%20material/lectures/03Excel/img/ColumnRef.png" alt="ColumnRef" width="250" >  
+<img src="../images/03Excel/ColumnRef.png" alt="ColumnRef" width="250" >  
 
 ### Spreadsheet Data Entry
 An entry is added to a cell by clicking on it and typing in the data.
 - The spreadsheet attempts to detect the data type and format it accordingly. It is also possible to manually *format* the data
-<img src="/source%20material/lectures/03Excel/img/CellFormat.png" alt="CellFormat" width="600" >   
+<img src="../images/03Excel/CellFormat.png" alt="CellFormat" width="600" >   
 
 ### Date and Type Formats
 - Excel stores dates and time as a date serial number.
@@ -89,7 +89,7 @@ function converts text to a date serial number which we can then format to displ
 
 - Formatting data helps users read and understand data and is especially important for numbers and dates.
 - To change the format of a serial date, click the down arrow in the format drop down menu and select **More Number Formats**; this will open up the Format Cells pop-up box
-<img src="/source%20material/lectures/03Excel/img/DateType.png" alt="DateType" width="400" >  
+<img src="../images/03Excel/DateType.png" alt="DateType" width="400" >  
 
 - You can use either built-in or custom formats or [custom formatting]
 (https://www.ablebits.com/office-addins-blog/2015/03/11/change-date-format-excel/#custom-date-format) (see a summary of these on the next slide)
@@ -123,12 +123,12 @@ It is worth mentioning the difference between *Currency* and *Accounting* as the
 - Currency places the dollar sign to the immediate left of the number while Accounting places the dollar sign on the left edge of the cell.
 - Currency displaces zeros as $0.00 while Accounting denotes zeros with dashes
 - The Accounting format displays negative numbers in parentheses.
-<img src="/source%20material/lectures/03Excel/img/currencyVsAccounting.png" alt="currencyVsAccounting" width="250" >   
+<img src="../images/03Excel/currencyVsAccounting.png" alt="currencyVsAccounting" width="250" >   
 
 
 ### Spreadsheet Formatting (Windows)
 A text editor shortcut will allow you to format cells in bold, italics, underline, fonts, colours, justify, etc.  
-<img src="/source%20material/lectures/03Excel/img/FormatShortcut.png" alt="FormatShortcut" width="600" >  
+<img src="../images/03Excel/FormatShortcut.png" alt="FormatShortcut" width="600" >  
 
 ### Try It!
 > **Exercise** \
@@ -151,10 +151,10 @@ See more keyboard shortcuts [here](https://exceljet.net/keyboard-shortcuts). (eg
 
 
 ### Range Selecting Cells Example
-<img src="/source%20material/lectures/03Excel/img/SelectingCells.png" alt="SelectingCells" width="600" >  
+<img src="../images/03Excel/SelectingCells.png" alt="SelectingCells" width="600" >  
 
 ### Selecting non-contiguous
-<img src="/source%20material/lectures/03Excel/img/SelectingIndCells.png" alt="SelectingIndCellss" width="600" >  
+<img src="../images/03Excel/SelectingIndCells.png" alt="SelectingIndCellss" width="600" >  
 
 ### Manipulating Cells
 Once you have selected one or more cells, there are several common actions you can perform:
@@ -169,27 +169,27 @@ Once you have selected one or more cells, there are several common actions you c
 
 ### Cut, Copy, Paste
 Alternatively you could use the command button shortcuts located in the *Home* tab on the ribbon.  
-<img src="/source%20material/lectures/03Excel/img/CutCopyPaste.png" alt="CutCopyPaste" width="600" >  
+<img src="../images/03Excel/CutCopyPaste.png" alt="CutCopyPaste" width="600" >  
 
 
 ### Paste Button Ribbon
 - Some buttons in the ribbon open a menu with additional options.
 - For example, the Paste button opens a menu with additional pasting options such as **Paste Values**, **Formulas**,. . .which will be useful to us later.
-<img src="/source%20material/lectures/03Excel/img/pasteOpt.png" alt="pasteOpt" width="600" >  
+<img src="../images/03Excel/pasteOpt.png" alt="pasteOpt" width="600" >  
 
 ### Manipulating Cells - Filling
 *Filling* combines copy and paste. There is a small box or tab beyond the cell’s lower right corner (fill handle). Grab it with the cursor and pull to other cells.
-<img src="/source%20material/lectures/03Excel/img/Filling.png" alt="Filling" width="600" >  
+<img src="../images/03Excel/Filling.png" alt="Filling" width="600" >  
 
 Double clicking that lower corner will quickly copy and paste that formula to the end of the data (or until the first blank row).  
-<img src="/source%20material/lectures/03Excel/img/doubleClick.png" alt="doubleClick" width="600" >  
+<img src="../images/03Excel/doubleClick.png" alt="doubleClick" width="600" >  
 
 [See demo on YouTube](See demo on YouTube)
 
 ### Hiding Columns and Rows
 You can hide a column or row by right-clicking on the column or row header and selecting *Hide*.
 - The column/row still exists but will not be displayed or printed until we select *Unhide*. [Link to my demo on YouTube](https://www.youtube.com/watch?v=2Z0kPQfhDbE&feature=youtu.be)  
-<img src="/source%20material/lectures/03Excel/img/Hide.png" alt="Hide" width="600" >  
+<img src="../images/03Excel/Hide.png" alt="Hide" width="600" >  
 
 ### Selecting Cells Question
 **Example 1**  
@@ -211,7 +211,7 @@ C) hold CTRL (windows)/Cmnd (mac) key and use arrow keys
 ### Entering Formulas
 A *formula* is any expression that begins with an equal sign (=).
 - The equal sign means that a calculation must be done to compute the cell value.
-<img src="/source%20material/lectures/03Excel/img/formula.png" alt="formula" width="600" >  
+<img src="../images/03Excel/formula.png" alt="formula" width="600" >  
 
 ### Formula Expressions
 A formula expression can consist of literals (numbers, text strings), operators, functions (eg. MAX(), AVERAGE()), and cell references.
@@ -240,9 +240,9 @@ Other common functions for trigonometry, dates, and finance are available. See a
 
 ### Using Excel Functions
 - You can get help on any function by searching its name in Excel’s drop down Help menu
-<img src="/source%20material/lectures/03Excel/img/Help.png" alt="Help" width="800" >  
+<img src="../images/03Excel/Help.png" alt="Help" width="800" >  
 
-- Alternatively, you can navigate to the **Formulas** tab in the ribbon and select the <img src="/source%20material/lectures/03Excel/img/insertfunction.png" alt="insertfunction" width="30" > button (there is also a shortcut to this button directly beside the formula bar <img src="/source%20material/lectures/03Excel/img/ficon.png" alt="insertfunction" width="30" >). This will bring up a **Formula Builder** window which contains the name of all the functions in Excel, with a search and description on how to use each function.
+- Alternatively, you can navigate to the **Formulas** tab in the ribbon and select the <img src="../images/03Excel/insertfunction.png" alt="insertfunction" width="30" > button (there is also a shortcut to this button directly beside the formula bar <img src="../images/03Excel/ficon.png" alt="insertfunction" width="30" >). This will bring up a **Formula Builder** window which contains the name of all the functions in Excel, with a search and description on how to use each function.
 
 
 

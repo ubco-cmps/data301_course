@@ -49,7 +49,7 @@ represented in (on/off) switches.” – [University of Rhode Island](https://co
 
 Data size is measured in bytes.
 
-<img src="/source%20material/lectures/02DataRep/img/BitsandBites.jpg" alt="BitsandBites" height="120" >
+<img src="../images/02DataRep/BitsandBites.jpg" alt="BitsandBites" height="120" >
 
 - A bit is either a 0 or a 1.
 - A *byte* contains 8 *bits* (*B*inary Dig*its*)
@@ -76,7 +76,7 @@ C) Data size is about 200 KB.\
 D) Data size of 1000 KB would "overflow device".\
 E) All of the above statements are false.
 
-<img src="/source%20material/lectures/02DataRep/img/flask.png" alt="flask" height="60" >
+<img src="../images/02DataRep/flask.png" alt="flask" height="60" >
 
 ### START SOLUTIONS HERE
 **Example 1**\
@@ -96,13 +96,13 @@ The liquid level is analog, and its expansion continuous over the temperature ra
 
 This information can be represented using discrete units using digital thermometer, for example.
 
-<img src="/source%20material/lectures/02DataRep/img/thermo.png" alt="thermo" height="160" >     <img src="/source%20material/lectures/02DataRep/img/dtheorm.png" alt="dtheorm" height="160" >
+<img src="../images/02DataRep/thermo.png" alt="thermo" height="160" >     <img src="../images/02DataRep/dtheorm.png" alt="dtheorm" height="160" >
 
 
 ### Conversion of Analogue to Digital
 How would you digitize this analog data into 10 discrete points? \
-<img src="/source%20material/lectures/02DataRep/img/Analog2Digital.png" alt="Analog2Digital" width="400" >
-<img src="/source%20material/lectures/02DataRep/img/Analog2DigitalB.png" alt="Analog2DigitalB" width="400" >
+<img src="../images/02DataRep/Analog2Digital.png" alt="Analog2Digital" width="400" >
+<img src="../images/02DataRep/Analog2DigitalB.png" alt="Analog2DigitalB" width="400" >
 
 ### Why go digital over analogue?
 1. Computers are digital and many home electronics are interfacing with computers.
@@ -205,10 +205,10 @@ IEEE 754 adopts a binary FP where r = 2.
 Modern computers adopt *IEEE 754* for floating-point numbers with two representation schemes:
 
 **32 bit/single-precision (or “float’)** 1-bit sign; 8-bit exponent; 23-bit mantissa
-<img src="/source%20material/lectures/02DataRep/img/DataRep_Float.png" alt="DataRep_Float" width="600" >
+<img src="../images/02DataRep/DataRep_Float.png" alt="DataRep_Float" width="600" >
 
 **64 bit/double-precision** 1-bit sign; 11-bit exp; 52-bit mantissa
-<img src="/source%20material/lectures/02DataRep/img/DataRep_Double.png" alt="DataRep_Double" width="600" >
+<img src="../images/02DataRep/DataRep_Double.png" alt="DataRep_Double" width="600" >
 
 - As before, let’s revisited a related concept (which we all would have learned about in high school) to make this
 new concept easier to understand.
@@ -322,7 +322,7 @@ Since decimal moved 5 spaces to the left, the exponent becomes (positive) 5.
 
 ### Why the exponent adjustment?
 
-<img src="/source%20material/lectures/02DataRep/img/binary-floating-point-8-bit-range.png" alt="binary-floating-point-8-bit-range" width="400" >\
+<img src="../images/02DataRep/binary-floating-point-8-bit-range.png" alt="binary-floating-point-8-bit-range" width="400" >\
 [Photo souce](https://blog.penjee.com/binary-numbers-floating-point-conversion/)
 
 The 8-bits set aside for the exponent can represent 28 = 256 different values (0– 255 using unsigned binary)
@@ -342,15 +342,15 @@ for negative exponents and the upper other half (128–255) will be used for pos
 **Step 7** Construct the binary number:
 1. Fill in the sign bit (0 = positive, 1 = negative)
     1. since -37.17 is a negative number the first bit = 1.
-    <img src="/source%20material/lectures/02DataRep/img/example01.PNG" alt="example01" width="400" >
+    <img src="../images/02DataRep/example01.PNG" alt="example01" width="400" >
     
 1. Fill in the exponent bits with the result from step 6
     1. Recall our unadjusted positive exponent (eg 5) was adjusted to 5 + (2<sup>(8-1)</sup> - 1) = 5 + 127 = 132<sub>10</sub> = 1000 0100<sub>2</sub>.    
-    <img src="/source%20material/lectures/02DataRep/img/example02.PNG" alt="example02" width="400" >
+    <img src="../images/02DataRep/example02.PNG" alt="example02" width="400" >
     
 1. Fill in the mantissa with the first 23 digits to the right of the decimal from step 4 \
     <del>1.</del>00101001010111000010100<del>01111010</del> \
-    <img src="/source%20material/lectures/02DataRep/img/example03.PNG" alt="example03" width="400" >
+    <img src="../images/02DataRep/example03.PNG" alt="example03" width="400" >
     
     
     
@@ -434,7 +434,7 @@ A common encoding is *ASCII* (American Standard Code for Information Interchange
 | 01000110 | F |
 | . . . | . . . |
 
-<img src="/source%20material/lectures/02DataRep/img/ASCIITable2.PNG" alt="ASCIITable2" width="600" >
+<img src="../images/02DataRep/ASCIITable2.PNG" alt="ASCIITable2" width="600" >
 
 > Exercise: Try writing your name in ASCII!
 
@@ -560,8 +560,8 @@ There are many different text file encodings:
 
 **Question**: \
 In these file encodings, what is data and what is metadata? \
-<img src="/source%20material/lectures/02DataRep/img/metadataQA1.PNG" alt="metadataQA1" width="500" >
-<img src="/source%20material/lectures/02DataRep/img/metadataQA2.PNG" alt="metadataQA2" width="500" >
+<img src="../images/02DataRep/metadataQA1.PNG" alt="metadataQA1" width="500" >
+<img src="../images/02DataRep/metadataQA2.PNG" alt="metadataQA2" width="500" >
 
 ### File Encodings: Binary File
 A *binary file* encodes data in a format that is not designed to be human-readable and is in the format used by the computer.
@@ -583,27 +583,27 @@ There are many different text file encodings:
 Use the **fileEncodings.xlsx** file and save the file as **CSV**, **tab-separated**, and **XML**. Look at each file in a text editor.\
 
 **Try It:File Encodings** \
-<img src="/source%20material/lectures/02DataRep/img/TryItFileEncoding.png" alt="TryItFileEncoding" width="800" >
+<img src="../images/02DataRep/TryItFileEncoding.png" alt="TryItFileEncoding" width="800" >
 
 **Opening xlsx in Excel** \
-<img src="/source%20material/lectures/02DataRep/img/inExcel.png" alt="inExcel" width="800" >
+<img src="../images/02DataRep/inExcel.png" alt="inExcel" width="800" >
 
 **Opening csv in text editor** \
-<img src="/source%20material/lectures/02DataRep/img/csv.png" alt="csv" width="800" >
+<img src="../images/02DataRep/csv.png" alt="csv" width="800" >
 
 **Opening tab-separated in text editor** \
-<img src="/source%20material/lectures/02DataRep/img/tabdelimit.png" alt="tabdelimit" width="800" >
+<img src="../images/02DataRep/tabdelimit.png" alt="tabdelimit" width="800" >
 
 **Opening xml in text editor** \
-<img src="/source%20material/lectures/02DataRep/img/xml.png" alt="xml" width="800" >
+<img src="../images/02DataRep/xml.png" alt="xml" width="800" >
 
 ### UPC Barcodes
 *Universal Product Codes (UPC)* encode manufacturer on left side and product on right side. Each digit uses 7 bits with different bit combinations for each side (can tell if upside down). \
-<img src="/source%20material/lectures/02DataRep/img/UPCbarcode.png" alt="UPCbarcode" width="600" >
+<img src="../images/02DataRep/UPCbarcode.png" alt="UPCbarcode" width="600" >
 
 ### QR code
 A *QR* (*Q*uick *R*esponse) code is a 2D optical encoding developed in 1994 by Toyota with support for error correction. \
-<img src="/source%20material/lectures/02DataRep/img/QR1.png" alt="QR1" width="250" > \
+<img src="../images/02DataRep/QR1.png" alt="QR1" width="250" > \
 Make your own codes at: [www.qrstuff.com](https://www.qrstuff.com/). 
 
 ### NATO Broadcast Alphabet

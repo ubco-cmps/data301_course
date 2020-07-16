@@ -1,0 +1,39 @@
+- file: about/home
+
+- header: About this Course
+- file: about/syllabus
+  sections:
+    - file: about/course_schedule
+    - file: about/accommodations
+    - file: about/doing_well
+    - file: about/faq
+
+- header: Class Notes
+- file: notes/part1
+  title: Part 1
+  sections:
+    - file: notes/test_notebook
+    - file: notes/02DataRep
+      title: Week 2 - Data Representations
+    - file: notes/03Excel
+      title: Week 3 - Topic
+    - file: notes/06PythonIInotes
+      title: Week 6 - Python II
+    - file: notes/12OpenData
+      title: Week 12 - OpenData
+- file: notes/part2
+  title: Part 2
+  sections:
+    - file: notes/test_notebook
+- file: notes/part3
+  title: Part 3
+  sections:
+    - file: notes/test_notebook
+
+- header: Lab Materials
+- file: notes/labs
+  title: Lab Stuff
+
+- header: Final Project
+- file: notes/project
+  title: Final Project

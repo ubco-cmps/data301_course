@@ -104,7 +104,7 @@ You could also use one of the various online Python 3 compilers for example.
 ### Installing and Using Python
 Python version
 If you haven’t done any of the installations above, this is probably going to be Python 2.
-![alt text](image/pythonshell.png)
+![alt text](../images/06Python/pythonshell.png)
 You can find out which version of Python you have by typing python -V in your console.
  
 
@@ -116,16 +116,16 @@ and echo information about the notebook server in your terminal. Read more about
 
 ### Python Editor - Jupyter
 The Notebook Dashboard will list all of the notebooks (.ipynb), files, and subdirectories stored in the local working directory (i.e. the directory from which you launched jupyter)
-![alt text](image/jnote.png)
+![alt text](../images/06Python/jnote.png)
 
 ### Python Editor - Jupyter
 To create anew notebook, select New, Python3.
 
-![alt text](image/jupyter.png)
+![alt text](../images/06Python/jupyter.png)
 
 ### Python Editor - Jupyter
 To close this program, navigate the the <b> Running</b> tab and click the orange Shutdown button. Closing the notebook's page is  not sufficient to shutdown.
-![alt text](image/shutdown.png)
+![alt text](../images/06Python/shutdown.png)
 ### Python Editor - Jupyter
 The Notebook Dashboard will list all of the notebooks (.ipynb), files, and subdirectories stored in the local working directory (i.e. the directory from which you launched jupyter)
 

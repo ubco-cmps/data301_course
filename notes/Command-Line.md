@@ -27,24 +27,24 @@ You might be wondering why we would ever prefer command line over using the grap
 The command line on Windows dates back to the original Microsoft operating system called DOS (Disk Operating System) in 1981.
 
 This command line interface is still part of all modern Windows operating systems and is accessible as the "Command Prompt".
-![Kiku](image/CommandPrompt.png)
+![Kiku](../images/09CommandLine/CommandPrompt.png)
 
 To access this, navigate to the start menu with your mouse (or click the windows button on your keyboard) and type “cmd" then
 ENTER .
 
 ### Command Line - Windows
 
-![Kiku](image/rlawrenc.png)
+![Kiku](../images/09CommandLine/rlawrenc.png)
 
 ### Mac OS Command Line
 The command line for Mac OS uses the same commands as Linux. It can be opened using Finder then Utilities then Terminal.
 
-![Kiku](image/cmdMac.png)
+![Kiku](../images/09CommandLine/cmdMac.png)
 
 Alternatively, we could type Cmnd + spacebar, then type “Terminal" and press ENTER
 ### Command Line - Mac/Linux
 
-![Kiku](image/terminalex.png)
+![Kiku](../images/09CommandLine/terminalex.png)
 
 ### Entering a Command
 Enter a command at a prompt. The prompt may be a > or a $ or
@@ -54,7 +54,7 @@ Press ENTER to execute the command.
 
 On Windows, commands are mostly case-insensitive while on Mac/Linux they are case-sensitive.
 
-![Kiku](image/terminalex.png)
+![Kiku](../images/09CommandLine/terminalex.png)
 
 ```text
 ls
@@ -66,7 +66,7 @@ Each folder (AKA directory) has a name and can contain any number of files or su
 Each file has a name.
 The user can change (navigate) directories in the hierarchy
 
-![Kiku](image/filesystem.png)
+![Kiku](../images/09CommandLine/filesystem.png)
 
 ### File System
 The tree is rooted at, well, the root.
@@ -113,7 +113,7 @@ user was currently in level3 directory.
 5. There is only one root of the directory hierarchy.
 A) 0 B) 1 C) 2 D) 3 E) 4 
 ```
-![Kiku](image/relativepath.png)
+![Kiku](../images/09CommandLine/relativepath.png)
    
 ### makdir
 Download this filesystem as a zip file on Canvas.
@@ -152,7 +152,7 @@ given on the bottom of the window. More shortcuts [here](https://skorks.com/2009
 - N.B. the standard shortcuts we might be used to wont work in
 this command line (eg. Ctrl /Cmnd + C for copy);
 
-![Kiku](image/editme.png)
+![Kiku](../images/09CommandLine/editme.png)
 
 ### notepad/nano
 􏰏 - Upon saving (ie WriteOut via Ctrl + O ) you will be prompted to provide a filename to save the document under.
@@ -161,7 +161,7 @@ this command line (eg. Ctrl /Cmnd + C for copy);
 nano notes.txt
 
 ```
-![Kiku](image/writeout.png)
+![Kiku](../images/09CommandLine/writeout.png)
 􏰏-  N.B. We will still be asked to verify the name upon exiting,
 but we won’t have to type it again.
 
@@ -185,8 +185,8 @@ but we won’t have to type it again.
 - The * (asterisk) matches any number of characters (including no characters). Example: *.txt would match anything ending with .txt (i.e. all .txt files).
 ### Wildcards
 
-![Kiku](image/files.png)
-![Kiku](image/wildcards.png)
+![Kiku](../images/09CommandLine/files.png)
+![Kiku](../images/09CommandLine/wildcards.png)
 
 Replace ls with dir if you are using Windows.
 
@@ -232,14 +232,14 @@ A command can take arguments that changes its behaviour.
 On Windows, commands also can be modified by a switch (or extension) which is usually a slash then a letter (e.g. /S).
 􏰏 - To find out what is available, run the command with: /?
 
-![Kiku](image/help.png)
+![Kiku](../images/09CommandLine/help.png)
 
 ### Command Arguments - Mac/Linux
 On Mac/Linux arguments are separated by spaces and begin with ‘-’
 
 An explanation of arguments can be found by using man then the command name. Example: man cp (to quit press q)
 
-![Kiku](image/man.png)
+![Kiku](../images/09CommandLine/man.png)
 
 ### Standard Input, Output, and Error
 <b>Standard input</b> (stdin) is the default input device (usually a keyboard) into the terminal.

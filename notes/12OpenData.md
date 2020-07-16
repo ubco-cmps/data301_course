@@ -12,7 +12,7 @@
 - British Columbia government: http://www.data.gov.bc.ca/
 - City of Kelowna: http://opendata.kelowna.ca/
 ### Open Data in Canada
-![Kiku](image/gov.png)
+![Kiku](../images/12OpenData/gov.png)
 
 ### Open Data in BC
 - Example: MSP Blue Book
@@ -23,7 +23,7 @@
 ### Open Data in BC
 ## Example: MSP Blue Book
 
-![Kiku](image/MSPBlueBook.png)
+![Kiku](../images/12OpenData/MSPBlueBook.png)
 
 ### Open Data in BC
 Example: DriveBC
@@ -38,7 +38,7 @@ Example: DriveBC
 
 ### Open Data in Kelowna
 
-![Kiku](image/kewl.png)
+![Kiku](../images/12OpenData/kewl.png)
 
 ### Open Data in United States
 􏰏 - United States government: https://www.data.gov/ 􏰏 
@@ -46,7 +46,7 @@ Example: DriveBC
 􏰏       - Example: Washington state: https://data.wa.gov/
 ### United States: Data.gov
 
-![Kiku](image/us.png)
+![Kiku](../images/12OpenData/us.png)
 
 ### Open Data Worldwide
 􏰏 􏰏
@@ -86,7 +86,7 @@ Example: DriveBC
 ### Open Data Biology/Bioinformatics
 Huge number of databases with most related to [NCBI](https://www.ncbi.nlm.nih.gov) but distributed world-wide.
 
-![Kiku](image/ncbi.png)
+![Kiku](../images/12OpenData/ncbi.png)
 
 ### Open Data in Chemistry
 􏰏
@@ -110,7 +110,7 @@ Huge number of databases with most related to [NCBI](https://www.ncbi.nlm.nih.go
 - National Geographic Data Center: http://www.nodc.noaa.gov/submit/
 - Polar Data Catalog: https://www.polardata.ca/
 
-![Kiku](image/earth.png)
+![Kiku](../images/12OpenData/earth.png)
 
 ### Open Data in Physics
 - Modern physics produces a HUGE amount in data in experiments like astronomical observations and the Large Hadron Collider (LHC; the worlds largest particle accelorator).
