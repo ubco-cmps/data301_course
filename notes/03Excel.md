@@ -540,8 +540,284 @@ Cell **A1** contains the following: =$B2+D$4. What is the formula if the cell is
 > Tip:  
 You can change a cell from relative to absolute with the shortcut `F4` . You can continue to press F4 to have Excel cycle through the different reference types.  
 >Tip:  
-To show all the formulas in a worksheet (rather then their result), click the <img src="../images/03Excel/showFormula.png" alt="showFormula" width="700" > button located in the Formulas tab in the ribbon.
+To show all the formulas in a worksheet (rather then their result), click the <img src="../images/03Excel/showFormula.png" alt="showFormula" width="30" > button located in the Formulas tab in the ribbon.
+
+
+### Naming Cells
+
+Instead of referring to cells by their address, you can give a cell a name and use that name in cell formulas. 
+- This makes it easier to read and understand formulas. 
+- Like programming variables where we use names instead of addresses to refer to data locations.
+
+Step for naming cells: 
+- Select the cell(s) you want to name 
+- Click the Name box located to the left of the formula bar 
+- Type a valid one-word name for the list, e.g. Hours œ Press `ENTER`  
+[See YouTube demo here](https://www.youtube.com/watch?v=eEFbCBCLLFM&feature=youtu.be)  
+Alternatively: click the letter of the column you want to change and then click the “Formulas” tab. Click “Deﬁne Name” in the Deﬁned Names group in the Ribbon to open the New Name window.  
+
+<img src="../images/03Excel/NameBox.png" alt="NameBox" width="600" >  
+
+
+### Naming Rules
+- While these names can included numbers, the ﬁrst character must be a letter or an underscore. 
+- These names cannot include spaces or special characters beside underscores and periods. 
+- Finally this name should not conﬂict with an existing name in the workbook. 
+- For example, I wouldn’t want to use the name DAY1 since that already exists as a cell address by default.
+
+
+### Try It! 
+Complete the following in the *NamedCells* worksheet in the DemoPartI workbook. 
+
+**Example 9**  
+Rename **A3** *Day_1* and **A9** *Day_7*. Calculate the di ﬀ erence between these two dates using the [DATEDIF](https://exceljet.net/excel-functions/excel-datedif-function) function.  
+
+**Example 10**  
+Find the total hours using named cells. That is, rename the cells **E3:E9** *Total* and calculate `=SUM(Total)`.   
+
+**Example 11** (Advanced array formulas)   
+RecalculatetheTotalsusingthenamedcells. Thatis, renamethe cells **C3:C9** *Hours* and **D3:D9** *Rate*, and calculate `Hours*Rate`.
+
+To answer this last exercise, we will need to know more about [array formulas](#array-formulas). 
+
+
+### Array Formulas
+- If you are using Oﬃce 2010 – Oﬃce 2019 array formulas require ﬁrst selecting the entire output range, then conﬁrming the formula with `Ctrl` +`Shift` +`Enter` . They are commonly referred to as CSE formulas.  
+- In Oﬃce 365 any formula that can return multiple results will automatically spill them either down, or across into neighboring cells by pressing `Enter `.  
+- To see Total cost of each activity, select cells **F3:F9**, enter the formula `=Hours*Rate`, and then press `Ctrl` +`Shift` +`Enter` .  
+- N.B. To see the grand Total of all activities, we could select cell **F10** and enter the formula `=SUM(Hours*Rate)` and then press `Ctrl` +`Shift` +`Enter` .  
+Read more about array formulas [here](https://support.microsoft.com/en-ie/office/guidelines-and-examples-of-array-formulas-7d94a64e-3ff3-4686-9372-ecfd5caa57c7?ui=en-us&rs=en-ie&ad=ie). See my YouTube demo [here](https://www.youtube.com/watch?v=rHqKVJJmuFs&feature=youtu.be).
+
+### Aggregate Functions
+An *aggregate* function computes a summary function over a range of cells. The values can either be data values or cell locations.  
+Common functions are: 
+|Function|Description|
+|--------|----------|
+|`=MIN(<value list>)` |returns minimum value in list|
+|`=MAX(<value list>)`| returns maximum value in list|
+|`=SUM(<value list>)`| returns sum of all values in list|
+|`=AVERAGE(<value list>)`| returns average of values in list|
+|`=COUNT(<value list>)`| returns count of values in list|
+|`=MEDIAN(<value list>)`| returns median value of list|
+
+If specifying an array, give the upper left and lower right corners, separated by a colon. 
+|Function|Description|
+|--------|----------|
+|`AVERAGE(A3:E6)`| returns the average value in the array of 4 rows and 5 columns|
+
+
+### Aggregate Functions Example
+<img src="../images/03Excel/aggregate.png" alt="aggregate" width="800" >  
+
+### Try it!
+>**Exercise**   
+Find the a) maximum volume b) average price c) minimum cost and d) total revenue in the *QrSales* worksheet.  
+
+### Aggregate Functions Question
+
+**Example 12**  
+Assume the cells in the range A1:C4 each contain a number that is equal to their row number (e.g. **B3** contains 3). How many of the following statements are TRUE?   
+1. The number of cells in the range is 12.  
+2. The value of `SUM(A1:C4)` is 20.   
+3. The value of `COUNTIF(A1:B4,">2")` is 4.  
+4. `AVERAGE(A1:C4)` > `MAX(C2:C3)`  
+A) 0 B) 1 C) 2 D) 3 E) 4
+
+### START SOLUTIONS HERE
+**Example 12**  
+Assume the cells in the range A1:C4 each contain a number that is equal to their row number (e.g. **B3** contains 3). How many of the following statements are TRUE?   
+1. The number of cells in the range is 12. :heavy_check_mark:   
+2. The value of `SUM(A1:C4)` is 20. :x:    
+3. The value of `COUNTIF(A1:B4,">2")` is 4. :heavy_check_mark:   
+4. `AVERAGE(A1:C4)` > `MAX(C2:C3)` :x:   
+A) 0 B) 1 **C) 2** D) 3 E) 4
+
+### END SOLUTIONS HERE
+
+
+**Example 13**   
+Assume the three cells in the range A1:C1 contain numbers. Which of these formula output results is ALWAYS the largest?  
+A) `MAX(A1:C1)`   
+B) `MIN(A1:C1) `   
+C) `COUNT(A1:C1)`   
+D) `SUM(A1:C1)`   
+E) None of the above are always guaranteed to be the largest  
+
+### START SOLUTIONS HERE
+**Example 13**   
+Assume the three cells in the range A1:C1 contain numbers. Which of these formula output results is ALWAYS the largest?  
+A) `MAX(A1:C1)`   
+B) `MIN(A1:C1) `   
+C) `COUNT(A1:C1)`   
+D) `SUM(A1:C1)`   
+**E) None of the above are always guaranteed to be the largest**    
+
+### END SOLUTIONS HERE
+
+
+### Other Formatting: Column Width 
+*Resizing columns/rows:*  
+<img src="../images/03Excel/ColWidth.png" alt="ColWidth" width="800" >   
+> Auto-resize by double clicking on border between columns or selecting **Format– >Column–>AutoFit Selection**.  
+    Drag the row/column border to manually resize. 
+
+
+Lets see an example by doing this on the *Namecells* workbook in DemoPartI
+
+
+### Conditional Formatting
+*Conditional formatting* allows you to change the cell format based on data values. This is accessible under **Format–>Conditional Formatting**.  
+- Other options: data bars, color scales, icon sets  
+
+<img src="../images/03Excel/CondFormat.png" alt="CondFormat" width="800" >   
+
+A shortcut to this feature (along with some great default options) can be found in the Conditional Formatting button <img src="../images/03Excel/CFbutton.png" alt="CFbutton" width="30" >  
+<img src="../images/03Excel/CFoptions.png" alt="CFoptions" width="300" >   
+
+
+### Conditional Formatting Result 
+The format painter button allows you to copy formatting to many cells. Select the cell, click paint button, then highlight cells to have identical formatting.  
+
+<img src="../images/03Excel/FormatPainter.png" alt="FormatPainter" width="800" >   
 
 
 
-** Claire you are at page 74/122
+### Try it: Conditional Formatting
+Format Volume column to be:  
+1. bold/green if volume >50  
+2. italics/red if volume <10  
+3. yellow background otherwise as below:  
+<img src="../images/03Excel/CondFormatTryIt.png" alt="CondFormatTryIt" width="800" >   
+
+> Question: Take the previous formatting and apply it to whole row:
+
+> Hint: Highlight the whole table, go to Conditional Formatting, select the “Classic" option from the Style drop down menu and select “Use a formula to determine which cells to format"
+<img src="../images/03Excel/QSTryIt4.png" alt="QSTryIt4" width="800" >   
+<img src="../images/03Excel/condform2.png" alt="condform2" width="600" >   
+<img src="../images/03Excel/condform1.png" alt="condform1" width="600" >   
+
+
+
+
+### Spreadsheet for Data Management
+A spreadsheet is often used as a "database". A *database* collects, stores and manages information so users can retrieve, add, update or remove such information.  
+- Examples: schedules and calendars, timesheets, expenses and ﬁnances, records, notes, and recipes, data research/analysis  
+
+We can use a spreadsheet as a database by:  
+- Using a row to store all the information about something we want to represent.  
+- Giving each column a meaningful name. A column represents a property or feature of the object stored in the row.  
+- Using the formulas to calculate new facts from the data.  
+- Using sorting to organize the data by key features.  
+- Using simple ﬁltering (querying) to only show the most important data or data of interest.
+
+
+### Sorting Data
+Data can be sorted by selecting the **Sort** option under the **Data** menu. Select the column(s) to sort on and order to sort by.  
+<img src="../images/03Excel/Sorting.png" alt="Sorting" width="300" >   
+
+### Try it: Sorting Data
+> Exercise: Sort the data by revenue (desc) then product (asc).
+
+<img src="../images/03Excel/SortQ.png" alt="SortQ" width="800" >  
+
+
+
+### Filtering
+A *ﬁlter* shows a subset of the rows in the spreadsheet that pass a given condition (test).
+
+Select **Auto Filter** under the **Data** then **Filter** menu.
+
+Once you select **Auto Filter**, each column heading has a drop-down list. By selecting a ﬁltering criteria from the list, you can limit the rows that are displayed.
+
+It is possible to ﬁlter on more than one column at the same time.
+
+### Filter Example 
+Filter on Revenue column: Select value(s), Top 10, or custom ﬁlter.  
+
+<img src="../images/03Excel/CustomFilter.png" alt="CustomFilter" width="300" >  
+
+Filter on Revenue column: Custom ﬁlter with Revenue > 150  
+
+<img src="../images/03Excel/CustomFilter2.png" alt="CustomFilter2" width="600" >  
+
+### Try It: Filter Challenge
+> Exercise: Filter the data so only products with volume < 20 or revenue &ge; $500 are shown.  
+
+<img src="../images/03Excel/filterChallenge.png" alt="filterChallenge" width="800" >  
+
+### Removing Duplicates  
+To remove duplicates, select your Data then Remove Duplicates from the **Data** tab in the ribbon.  
+<img src="../images/03Excel/RmDup.png" alt="RmDup" width="600" >    
+Note that we can also remove duplicates using a ﬁlter:  
+Data>Sort&Filter>Advanced  
+
+By default, it will look for duplicates over the all of the selected columns. You can delete entire rows based on particular columns by selecting them the pop-up window:  
+<img src="../images/03Excel/removedup.png" alt="removedup" width="300" >  
+
+Notice how the Removing Duplicates feature is NOT case sensitive:  
+<img src="../images/03Excel/rmDup2.png" alt="rmDup2" width="600" >    
+
+
+### Sorting Question
+Question: Given this spreadsheet and sort order, what is the output?  
+<img src="../images/03Excel/SortingQ2.png" alt="SortingQ2" width="600" >    
+<img src="../images/03Excel/SortingQuestion.png" alt="SortingQuestion" width="100" >    
+
+
+> Clicker Question: Given this spreadsheet and sort order, what is the output?  
+<img src="../images/03Excel/SortingClickerQ.png" alt="SortingClickerQ" width="600" >    
+
+
+### START SOLUTIONS HERE
+> Clicker Question: Given this spreadsheet and sort order, what is the output?  
+<img src="../images/03Excel/SortingClickerQ_answer.png" alt="SortingClickerQ_answer" width="600" >    
+### END SOLUTIONS HERE
+
+### Sorting
+
+If you want to make sorting on characters case sensitive, we need to select that in Options:  
+
+<img src="../images/03Excel/caseSensitive.png" alt="caseSensitive" width="600" >    
+
+### Filtering Question
+**Example 14**  
+Given this spreadsheet, how many of the sestatements are TRUE?  
+<img src="../images/03Excel/FilteringQ.png" alt="FilteringQ" width="300" >    
+1. The data is sorted ascending by Number.  
+2. Filter Number > 3 shows 3 rows.  
+3. Filter Letter >= "c" shows 3 rows.  
+4. Filter Number < 3 ORLetter > "b" shows 5 rows.  
+A) 0 B) 1 C) 2 D) 3 E) 4  
+
+### START SOLUTIONS HERE
+**Example 14**  
+Given this spreadsheet, how many of the sestatements are TRUE?  
+<img src="../images/03Excel/FilteringQ.png" alt="FilteringQ" width="300" >    
+1. The data is sorted ascending by Number. :heavy_check_mark:   
+2. Filter Number > 3 shows 3 rows. :x:   
+3. Filter Letter >= "c" shows 3 rows. :heavy_check_mark:   
+4. Filter Number < 3 ORLetter > "b" shows 5 rows. :heavy_check_mark:   
+A) 0 B) 1 C) 2 **D) 3** E) 4  
+### END SOLUTIONS HERE
+
+N.B. The solution to the previous question required some [Advanced Filtering](https://www.ablebits.com/office-addins-blog/2016/09/07/excel-advanced-filter/) options:  
+
+<img src="../images/03Excel/advancedFilter.png" alt="advancedFilter" width="600" >    
+
+### Conclusion
+Spreadsheets are general purpose tools for data analysis that consist of a table of cells which contain data and formulas.  
+
+Formulas contain data values, cell references, and functions.
+- Aggregate functions summarize multiple data values into a single value.
+- Functions exist for statistics, string manipulation, lookup/indexing, and decisions.
+
+
+### Objectives
+- Explain what a spreadsheet is.
+- Explain how cells are addressed in a spreadsheet.
+- List some of the ways to select cells in a spreadsheet.
+- Define and explain: formula, function, argument, concatenation
+- Use these functions: concatenate, lookup, index
+- Explain the difference between an absolute and relative address.
+- Explain how an aggregate function works. List some examples.
+- Explain how to use conditional formatting.
