@@ -8,25 +8,28 @@
     - file: about/doing_well
     - file: about/faq
 
-- header: Class Notes
+- header: Part 1
 - file: notes/part1
-  title: Part 1
-  sections:
-    - file: notes/test_notebook
-    - file: notes/02DataRep
-      title: Week 2 - Data Representations
-    - file: notes/03Excel
-      title: Week 3 - Topic
-    - file: notes/06PythonIInotes
-      title: Week 6 - Python II
-    - file: notes/12OpenData
-      title: Week 12 - OpenData
+  title: Introduction
+- file: notes/test_notebook
+- file: notes/01Intro
+  title: Week 1 - Introduction
+- file: notes/02DataRep
+  title: Week 2 - Data Representations
+- file: notes/03Excel
+  title: Week 3 - Topic 
+- file: notes/06PythonIInotes
+  title: Week 6 - Python II
+- file: notes/12OpenData
+  title: Week 12 - OpenData
+- header: Part 2
 - file: notes/part2
-  title: Part 2
+  title:  Introduction to Part 2
   sections:
     - file: notes/test_notebook
+- header: Part 3
 - file: notes/part3
-  title: Part 3
+  title:  Introduction to Part 3
   sections:
     - file: notes/test_notebook
 
@@ -37,3 +40,5 @@
 - header: Final Project
 - file: notes/project
   title: Final Project
+
+  

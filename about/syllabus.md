@@ -5,7 +5,7 @@ Syllabus
 =======================
 2020 - 2021, Winter Term 1
 
-This is the official syllabus for Course 100.
+This is the official syllabus for DATA 301 and COSC 301.
 
 ## A message from your instructor
 
@@ -19,14 +19,12 @@ This is the official syllabus for Course 100.
 
 | Name                | Description                                     |
 |---------------------|-------------------------------------------------|
-| Course              | Course 100                                      |
+| Course              | DATA 301 and COSC 301                           |
 | Pre-requisites      | Pre-Course 100                                  |
 | Co-requisites       | N/A                                             |
 | Costs               | Total $XX                                       |
-| Weekly meetings     | [Thursdays at 14:00](https://cbc.ca)            |
+| Weekly meetings     | [TBD](https://cbc.ca)                           |
 | Lectures            | Online                                          |
-| Tutorial            | You **must** register for a tutorial section.   |
-| Laboratory          | You **must** register for a laboratory section. |
 | URL                 | https://this.site                               |
 | Instructor          | Firas Moosvi                                    |
 | Office              | [Zoom](https://ubc.zoom.us)                     |
@@ -39,11 +37,10 @@ The grading scheme for this course is here:
 
 | Item                 | Weight | Due date(s) |
 | -------------------- | ------ | ----------- |
-| Learning Logs           | 10% (10 x 1%)   | TBD |
-| 12 Homework Assignments | 24% (12 x 2%)   | TBD |
-| 8 Tests (& Bonus Tests) | 32% (8 x 4%)    | TBD |
-| 8 Labs                  | 16% (8 x 2%)    | TBD |
-| Final Exam              | 20%             | TBD | 
+| Clickers/Activities  | 5%     | TBD   |     |
+| Lab Assignments      | 30% (N x M%)   | TBD |
+| Oral Exams           | 35% (N x M%)   | TBD |
+| Group Project        | 30% (N x M%)   | TBD |
 
 ```{attention} 
 All deadlines in this course have an automatic 48 hour grace period after the due dates listed above.
