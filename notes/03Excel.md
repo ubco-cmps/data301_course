@@ -821,3 +821,275 @@ Formulas contain data values, cell references, and functions.
 - Explain the difference between an absolute and relative address.
 - Explain how an aggregate function works. List some examples.
 - Explain how to use conditional formatting.
+
+
+
+## Spreadsheets: Microsoft Excel Part 2 of 3
+
+### Charts
+A *chart* is a graphical representation of spreadsheet data.  
+
+Charts can help you visualize relationships between data and create maximum impact on your audience.  
+
+When you create a chart, you can select from many chart types (eg, a stacked column chart or a 3-D exploded pie chart).  
+
+To create a line/bar/pic/etc. chart, the user to supply the data that will be displayed.
+
+Once your data is selected, navigate to the **Insert** tab, then click the desired **Chart** Icon. You can either choose one from the **Recommended Chart** button or select from the variety of chart types.
+
+<img src="../images/03Excel/barchart.png" alt="barchart" width="800" >   
+
+Sometimes the default graphic is not what we want,. . .  
+
+For instance the recommended chart on the previous page shows an individual bar for each instance of the product type.  
+
+We could instead create the total revenue for each product by selecting:
+- The histogram icon <img src="../images/03Excel/histicon.png" alt="histicon" width="30" > 
+- Double clicking on the bars
+- Selecting the Series Options icon: <img src="../images/03Excel/seriesopt.png" alt="seriesopt" height="30" > 
+- Selecting *By Category* in the **Bins** drop down menu.
+
+
+### Chart Options
+After you create a chart, you can customize it by applying chart quick layouts or styles. The **Chart Design** tab also provides a number of features for modifying things like chart color/type/position/etc.  
+
+<img src="../images/03Excel/ChartTools2.png" alt="ChartTools2" width="800" >   
+
+> **Example 1**  
+Navigate to the **Chart Design** tab and relocate your chart to a new worksheet called *barchart*.  
+
+<img src="../images/03Excel/ChartTools2.png" alt="ChartTools2" width="800" >   
+
+### Trendlines
+- Trendlines can be easily added to a number of chart types.
+- Click on chart, "Add Chart Element"...."Trendline"
+
+<img src="../images/03Excel/trendline.png" alt="trendline" width="800" >   
+
+Trendlines can be easily added to any chart.
+- Linear treadline for monthly revenue. Good choice?  
+> Probably not, as data appears to be seasonal
+<img src="../images/03Excel/Trendline1.png" alt="Trendline1" width="800" > <img src="../images/03Excel/Trendlines2.png" alt="Trendlines2" width="800" >   
+
+
+### Try it! Trendline
+Of course it wouldn’t really make sense to add a linear trend to the previous line chart since the data do not appear linear.  
+
+> Apples  \
+1. Create a line chart that plots the revenue per month for only Apples using the Annual Sales data.  
+2. Add a linear trendline.  
+3. In Chart Design tab, select a design that displays the months on a 45 degree angle.  
+
+
+### Try It: Chart  
+
+> Question:  
+Create a Pareto chart (option under the histogram icon) to make it easy to see the best selling product.  
+<img src="../images/03Excel/pareto.png" alt="pareto" width="800" >   
+
+
+### Sparklines
+A *sparkline* is a tiny chart in a worksheet cell for a quick data overview.  
+- Click Insert then select Sparklines. . .
+- Displayed below is an example of a line and column sparkline.
+- You can change the style in the Sparkline tab in the ribbon.  
+<img src="../images/03Excel/Sparklines.png" alt="Sparklines" width="800" >   
+
+
+### Pivot Tabels
+*Pivot tables* allow for easily aggregating and exploring large data sets.  
+- For example, our data set can be summarized by revenue by month.  
+<img src="../images/03Excel/pivot.png" alt="pivot" width="800" >   
+
+
+### Creating a Pivot Table
+To create a pivot table  
+1. Select the data (or click any single cell inside the data set).  
+2. Navigate to the **Insert** tab, select the drop down **Tables** menu, and click the PivotTable icon.  
+3. Click OK  
+4. Add fields in the PivotTable Fields pane  
+
+**Drag fields** To get the total revenue for each month, drag the following fields to the different areas.  
+1. `Month` to the Rows area.  
+2. `Revenue` to the Values area.  
+
+The following dialog box appears. Excel automatically selects the data for you. The default location for a new pivot table is New Worksheet.   
+<img src="../images/03Excel/pivotOne.png" alt="pivotOne" width="800" >   
+
+*Pivot1* worksheet  
+<img src="../images/03Excel/pivot3.png" alt="pivot3" width="600" >    
+Add fields to pivot table.  
+Field may either be:
+- ROWS value
+- COLUMNS value
+- Cell VALUES (aggregated)
+- Used in a FILTERS (we could also filter using the drop down filter option; select the dropdown arrow located in cell A3, for example)  
+N.B Right click on a cell in the pivot table and select Show/Hide Fields List to show/hide the pop-up window on the right.  
+
+### Pivot Table Example
+*Pivot2* worksheet  
+<img src="../images/03Excel/pivotExample.png" alt="pivotExample" width="600" >    
+- Categories are rows.
+- Months are columns.
+- Each cell is a sum of revenue per category for that month.
+- We can filter on product (eg. filter out apples).
+
+*Pivot3* worksheet  
+<img src="../images/03Excel/pivotThree.png" alt="pivotThree" width="600" >    
+- Notice that the same field can be used in VALUES multiple times
+- In that way we can see multiple aggregate summaries (eg. total and count)
+- To change the value aggregation function, click on the <img src="../images/03Excel/i.png" alt="i" width="30" > icon
+- Notice that a field can NOT be used in ROWS/COLUMNS/FILTER at the same time.
+
+### Try It: Pivot Table
+> Question:  
+Create a pivot table using the annual sales data that shows the total revenue per month by category/product.  
+
+<img src="../images/03Excel/TryItPivot.png" alt="TryItPivot" width="600" >    
+N.B. The order in which your fields appear in ROWS will make a difference. Also, we can reformat the cells to display in currency format.   
+
+### Pivot Charts
+A pivot chart is a chart attached to a pivot table. Create it under **Insert** then **Pivot Chart**.
+<img src="../images/03Excel/pivChart.png" alt="pivChart" width="800" >    
+
+Below we have chosen a 100% stacked bar chart type.  
+<img src="../images/03Excel/pivChart2.png" alt="pivChart2" width="800" >    
+
+
+### Pivot Tables Question
+
+**Example 2**  
+How many of the following statements are TRUE?  
+1. A pivot table field can be used in ROWS and COLUMNS at the same time.  
+2. A pivot table field can be used in VALUES more than once.  
+3. In our sales spreadsheet example, if Product and Category are both used in ROWS then the order they are list does not matter.  
+A) 0 B) 1 C) 2 D) 3  
+
+
+### START SOLUTIONS HERE
+**Example 2**  
+How many of the following statements are TRUE?  
+1. A pivot table field can be used in ROWS and COLUMNS at the same time. :x:   
+2. A pivot table field can be used in VALUES more than once. :heavy_check_mark:   
+3. In our sales spreadsheet example, if Product and Category are both used in ROWS then the order they are list does not matter. :x:   
+A) 0 **B) 1** C) 2 D) 3  
+
+### END SOLUTIONS HERE
+
+
+### Conditions and Decisions
+A condition is an expression that is either TRUE or FALSE.  
+
+Conditions are used to make decisions and perform different actions depending on the condition value.  
+
+Excel condition and decision functions:  
+`FALSE()` returns FALSE   
+`TRUE()` returns TRUE   
+`AND(cond1, cond2)` returns TRUE if both cond1 and cond2 are true  
+`OR(cond1, cond2)` returns TRUE if either or both of cond1 and cond2 are true  
+`NOT(cond)` returns TRUE if cond is FALSE  
+
+### Decisions using IF()
+The IF() function is used to make a decision based on a condition  
+- `IF(condition, value_if_true, value_if_false)`
+
+Example: If cell **A2** is less than 5, return 10 otherwise return 20.  
+- ` = IF(A2 < 5, 10, 20)`
+
+If the third argument is not specified, it’s default is FALSE()
+- ` = IF(A2 < 5, 10) returns FALSE()` if **A2** is &ge; 5
+
+The following statements are equivalent  
+- = IF(A2 < 5, TRUE(), FALSE()) same as =A2 < 5  
+
+Hence if we just want to check if a condition is met, we don’t need the IF() function.
+
+### Try it: `IF()`
+Question: Create two conditions:  
+1. If cell **B2** &le; 10, then show **C2**, otherwise **D2**.
+2. If cell **B2**< 15 and **C2**> 20, return B2\*C2, otherwise if D2 < 10, return 1, else 4.  
+<img src="../images/03Excel/TryItIf2.png" alt="TryItIf2" width="600" >    
+
+
+### Decision Using `IF()` Question
+**Example 3**  
+How many of these statements are TRUE with **A1**=40, **A2**=10?  
+1. `=AND(FALSE(), TRUE())`  
+2. `=OR(FALSE(), NOT(TRUE()))`  
+3. `=IF(A1=40, 5, 10)` returns 10.  
+4. `=IF(OR(A1=40,A2>10),1, 2)` returns 2.  
+5. `=IF(A2=10,IF(A1=40,FALSE()),TRUE())`  
+A) 0 B) 1 C) 2 D) 3 E) 4  
+
+
+### START SOLUTIONS HERE
+**Example 3**  
+How many of these statements are TRUE with **A1**=40, **A2**=10?  
+1. `=AND(FALSE(), TRUE())` :x:   
+2. `=OR(FALSE(), NOT(TRUE()))`  :x:     
+3. `=IF(A1=40, 5, 10)` returns 10.  :x:    
+4. `=IF(OR(A1=40,A2>10),1, 2)` returns 2.  :x:    
+5. `=IF(A2=10,IF(A1=40,FALSE()),TRUE())`  :x:    
+**A) 0** B) 1 C) 2 D) 3 E) 4  
+
+### END SOLUTIONS HERE  
+
+
+### What-If
+*What-If* scenarios help understand different possibilities.  
+There are three kinds of What-If Analysis tools:  
+**Scenarios**  
+**Goal Seek**  
+**Data Tables**  
+A what-if *scenario* is created under **Data** tab then **What-If Analysis** then **Scenario Manager**.  
+
+To define a scenario, give it a name and list the cells that will change with this scenario.  
+
+> Tip
+It is usually a good idea to create a “Normal" scenario that you can go back to.  
+
+Consider what happens with a cold winter and we predict to sell 50 jackets instead of the normal 15.  
+<img src="../images/03Excel/whatif1.png" alt="whatif1" width="300" >   <img src="../images/03Excel/whatif2.png" alt="whatif2" width="300" >  <img src="../images/03Excel/whatif3.png" alt="whatif3" width="300" >    
+
+
+User can easily select scenario and see the result.  
+<img src="../images/03Excel/whatifexcel.png" alt="whatifexcel" width="600" > <img src="../images/03Excel/whatif2.png" alt="whatif2" width="300" >   
+
+### Scenario Summary
+- After creating all of your scenarios, you can create a Scenario Summary Report.
+- This report summaries how these scenarios impact a specified **Result Cell**
+- For instance, to see how the *Cold Winter* scenario affects total revenue when compared with the Normal
+        1. go to the **Data** tab then **What-If Analysis** then **Scenario Manager**.
+        2. Select **Summary** in the pop up window.
+        3. Select the **Scenario summary** report type and specify the **Result cell** (the value of interest these scenarios will impact).
+
+A scenario report will display a summary in table form:  
+<img src="../images/03Excel/scwin.png" alt="scwin" width="200" > <img src="../images/03Excel/scsum.png" alt="scsum" width="400" >   
+**Figure**: Left: Step **3** from the previous slide. Right: the resulting Scenario Summary  
+
+### Try it: What-If
+> Question:  
+Create a what-if scenario that wherever chocolates are sold, the volume is double than normal. Examine how it affects our total revenue.  
+<img src="../images/03Excel/DoubleChocolate.png" alt="DoubleChocolate" width="600" >  
+
+### Try it: What-If Scenario Challenge
+> Question:  
+Create a what-if scenario in which all costs go up by 10% and volume down by 20%.  
+<img src="../images/03Excel/badcase.png" alt="badcase" width="600" >  
+
+
+### Goal Seek and Solver
+- Another way to ask Excel "what if" is by using the Goal Seek and Solver tools.
+- *Goal seek* is used to determine what **value** needs to be in an input cell to achieve a desired result in a formula cell.
+- *Solver* determines what **values** need to be in multiple input cells to achieve a desired result in a formula cell.
+        - The Solver add-in is similar to Goal Seek, but it can accommodate more variables.
+- These methods work to achieve a certain goal in the form of a formula output, while what-if scenarios looked at changing formula inputs.  
+
+### Claire you are almost there!! page 43/85
+
+
+
+
+
+
+
