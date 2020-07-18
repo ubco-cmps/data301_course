@@ -688,4 +688,3 @@ As a data analyst, understanding the different ways of representing data is crit
 - Define: file, file encoding, text file, binary file
 - Encode using the NATO broadcast alphabet.
 - Discuss the time-versus-space tradeoff.
-
