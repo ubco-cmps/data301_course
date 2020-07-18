@@ -869,13 +869,13 @@ Navigate to the **Chart Design** tab and relocate your chart to a new worksheet 
 Trendlines can be easily added to any chart.
 - Linear treadline for monthly revenue. Good choice?  
 > Probably not, as data appears to be seasonal
-<img src="../images/03Excel/Trendline1.png" alt="Trendline1" width="800" > <img src="../images/03Excel/Trendlines2.png" alt="Trendlines2" width="800" >   
+<img src="../images/03Excel/trendline1.png" alt="Trendline1" width="300" > <img src="../images/03Excel/Trendlines2.png" alt="Trendlines2" width="300" >   
 
 
 ### Try it! Trendline
 Of course it wouldn’t really make sense to add a linear trend to the previous line chart since the data do not appear linear.  
 
-> Apples  \
+> Apples  
 1. Create a line chart that plots the revenue per month for only Apples using the Annual Sales data.  
 2. Add a linear trendline.  
 3. In Chart Design tab, select a design that displays the months on a 45 degree angle.  
@@ -1085,11 +1085,259 @@ Create a what-if scenario in which all costs go up by 10% and volume down by 20%
         - The Solver add-in is similar to Goal Seek, but it can accommodate more variables.
 - These methods work to achieve a certain goal in the form of a formula output, while what-if scenarios looked at changing formula inputs.  
 
-### Claire you are almost there!! page 43/85
+### Goal Seek
+> Example: How many balls would we have to sell in January to have total revenue for first 3 months of $4000?
+
+1. Navigate to the **Data** tab, click **What-If Analysis**, and then click **Goal Seek**.  
+2. In the **Set cell** box, enter the reference for the cell that contains the formula that you want to resolve, ie. **G13**.  
+3. In the **To value** box, type the formula result that you want.   
+eg. 4000  
+4. In the **By changing** cell box, enter the reference for the cell that contains the value that you want to adjust, ie, **D4**   
+<img src="../images/03Excel/GoalSeek1.png" alt="GoalSeek1" width="800" >    
+
+> Answer: How many balls would we have to sell in January to have total revenue for first 3 months of $4000? Answer: 865
+<img src="../images/03Excel/GoalSeek2.png" alt="GoalSeek2" width="800" >    
 
 
+### Add ons
+- Goal Seek only allows a single input value, that is, we can only specify a single cell under the *By changing cell field*.
+- In order to specify more than one input value we should instead use the Solver.  
+- To use the Solver Add-in, however, you first need to load it in Excel ([click here](https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us&rs=en-us&ad=us#OfficeVersion=Windows) for instructions on Windows)
+        1. On the **Tools** menu, select **Excel Add-Ins**.
+        2. Select the **Solver Add-in** check box from the Add-Ins available box.  
+        <img src="../images/03Excel/solveraddin.png" alt="solveraddin" width="200" >      
+- After you load the Solver add-in, the Solver button is available on the Data tab.   
+
+### Solver
+- Like Goal seek, Solver can be used to determine what values need to be changed to achieve a desired result. Unlike Goal seek, we can accommodate multiple cell values changing.
+- In addition, rather than setting our desired result (called the objective cell) to a specific number, we could use Solver to find an optimal (maximum or minimum) value for a formula in one cell subject to certain constraints.
+- Solver works with a group of cells, called decision variables.
+        - These cells are necessarily inputs to the objective cell.
+        - Solver adjusts these decision variable in order to obtain the desired result in your objective cell.  
 
 
+### Solver Example
+- For example, lets assume that our final grades are calculated using the following breakdown:  
 
+|Assessment|%|
+|---|---|
+|Assignments| 10%|
+|Midterm 1 |25%|
+|Midterm 2 |25%|
+|Exam |40%|  
+
+- Let’s assume we’ve already received 90% on the assignment component, 65% on midterm 1, and only midterm 2 and the exam remain.
+- Let’s use Solver to determine a scenario in which our resulting final grade would be 75%.
+
+Consider the *Solver* starter worksheet on **03ExcelPart2ii.xlsx**  
+<img src="../images/03Excel/solverF.png" alt="solverF" width="400" >     
+- Our final grade stored in **D6** is our objective cell.
+- **B3** and **B5** will be our decision variables.
+- Notice how the calculation of D6 depends on **B4** and **B5**.  
+- Navigate to the **Data** tab and click on the Solver button.  
+<img src="../images/03Excel/addins.png" alt="addins" width="600" >    
+- Specify the objective cell, decision variables and any constraints in the the pop-up window.
+- For this example our only constraints is that B3 and B5 must be $le; 100 and $ge; 0.  
+Sidenote other constraints include:  
+    **int** Restricting cells to be an integer,  
+    **bin** Restricting cells to be a binary digit (either 0 or 1)  
+    **dif** Restrict cells to contain different (i.e. non-identical) value    
+<img src="../images/03Excel/solverparameters.png" alt="solverparameters" width="400" > <img src="../images/03Excel/solverresult.png" alt="solverresult" width="400" >   
+
+
+### Solver
+You may have noticed that there are three different solving methods using solver (as chosen in the **Select a Solving Method** drop-down menu:
+1. GRG Nonlinear
+2. Simplex LP
+3. Evolutionary.  
+A description of these methods are provided directly below the drop-down menu with further options available by clicking the **Options** button located to the right of this drop-down menu.
+If you are unsure which one to use, it is usually best to select the GRG Nonlinear engine.
+
+
+### What-If Clicker Question  
+
+**Example 4**  
+How many of the following statements are TRUE?  
+1. We can only change a single cell in using Scenario Manager.  
+2. We can only change a single cell in using Goal Seek.  
+3. We can only change a single cell in using Solver. on the fitted line.  
+A) 0 B) 1 C) 2 D) 3
+
+
+### START SOLUTIONS HERE
+**Example 4**  
+How many of the following statements are TRUE?  
+1. We can only change a single cell in using Scenario Manager. :x:   
+2. We can only change a single cell in using Goal Seek. :heavy_check_mark:  
+3. We can only change a single cell in using Solver. on the fitted line. :x:   
+A) 0 **B) 1** C) 2 D) 3
+### END SOLUTIONS HERE
+
+### The Analysis ToolPak
+The *Analysis ToolPak* is an another Excel *add-in* that has a set of statistical and data analysis tools such as ANOVA, covariance, regression, and t-test.
+
+On a Windows: Analysis ToolPak is not installed by default.
+- To install: **File** -> **Options** -> **Add-Ins**
+- Select **Excel Add-ins** in the **Manage**: box and select **Go** . . .
+- Choose **AnalysisToolPak** and select OK  
+
+On a mac: **Tools** –> **Excel Add-ins** select AnalysisToolpak  
+
+### Regression
+*Linear regression* models the relationship between a dependent variable Y and explanatory/independent variable(s) X.  
+Simple linear regression has one explanatory variable, X, and can be modelled using the equation  
+Y = &beta;<sub>0</sub> + &beta;<sub>1</sub>X + &epsilon;   (1)
+- You can think of &beta;<sub>0</sub> as the y-intercept (b) and &beta;<sub>1</sub> as the slope (m) is an equation for a line y = m \* x + b from high school.
+- &epsilon; denotes the random error about the line which we cannot account for in our model  
+N.B. *Trend lines* are often calculated using linear regression.
+
+- The technique provides a way to determine linear patterns in the data set.
+- The so-called fitted model can be used to:
+        1. determine the strength of the relationship between variables Y and X and/or
+        2. predict the outcome variable Y for a new variable X.
+- To address either of these points, we need the fitted model comprised of the estimates of the regression equation coefficients.
+- &beta;&#770;<sub>0</sub> and &beta;&#770;<sub>1</sub> are the estimates for &beta;&#770;<sub>0</sub> and &beta;&#770;<sub>1</sub> respectively.
+- the fitted line is given by Y&#770; = &beta;&#770;<sub>0</sub> + &beta;&#770;<sub>1</sub>X  
+
+> N.B. To learn more on linear regression, I encourage you to take STAT 121/230 or read [Faraway’s Linear Models with R](https://books.google.ca/books?id=i0DOBQAAQBAJ&printsec=frontcover&dq=Faraway%27s+Linear+Models+with+R+(2005,+p.+59).&hl=en&sa=X&ved=0ahUKEwinqMbTjq3iAhVhMX0KHedMCnkQ6AEIMjAB#v=onepage&q&f=false)  
+
+### Regression in Excel- R^2 value
+- Regarding point 1. Excel regression function that will calculate R^2, the coefficient of determination which is a statistical measure of how close the data are to the fitted regression line.
+- Mathematically speaking, this is the percentage of the variation in Y that is explained by a linear model.
+- This range of this value is from 0–1.
+        - A value of 0 indicates that the model explains none of the variability of the response data around its mean and
+        - a value of 1 indicates that the model explains all the variability of the response data around its mean.
+        
+<img src="../images/03Excel/rsquared.png" alt="rsquared" width="600" >  
+**Figure**: The regression model on the left accounts for 38.0% of the variance (ie. R^2 = 0:38) while the one on the right accounts for 87.4% (i.e has an R^2 = 0:874). Source of image [here](https://blog.minitab.com/blog/adventures-in-statistics-2/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit).  
+
+### Linear Regression assumptions
+The legitimacy of this model depends on the following assumptions:
+1. **Linearity**: The means of the values of X fall approximately on the straight line &beta;<sub>0</sub> + &beta;<sub>1</sub>X  for simple linear regression, fall approximately on the plane &beta;<sub>0</sub> + &beta;<sub>1</sub>X<sub>1</sub>; + &beta;<sub>2</sub> X<sub>2</sub> for multiple linear regression, . . . (harder to visual in larger dimensions).
+2. The error terms &epsilon; ~<sup>i.i.d</sup> N(0; &sigma;<sup>2</sup>). That is:
+        - **Normality**: For each value of the explanatory variable (X) there is a subpopulation of response variables (Y ) that is normally distributed.
+        - **Constant variance (homoscedasticity)**: All subpopulations have the same standard deviation &sigma;<sup>2</sup>.
+        - **Independence**: All observations are independent.    
+N.B. non-constant variance = heteroscedasticity  
+
+
+### Regression in Excel- Testing Assumptions
+- To check the **linearity** assumption for simple linear regression, it is always a good idea to plot your data in a scatterplot.
+- To check the **normality** assumption, we can look at the *Normal Probability Plot* of residuals.
+        - If the data are normal the points should form an approximate straight line.
+- The **constant variance** assumption can be assessed using a *residual* plot (where a residual is the difference between our observed and predicted y, i.e. y<sub>i</sub> - y&#770;<sub>i</sub> ).
+        - A ‘good’ residual plot should show no pattern and look like random noise about 0.
+- A pattern in the residual plot may suggests a violation of the **independence** assumption. Reason for this may include:
+        - Time series data, related individuals (same family, same household).
+
+### Testing Assumptions Using Residual Plots
+**Figure**: Image taken from [Faraway’s Linear Models with R (2005, p. 59)](Figure: Image taken from Faraway’s Linear Models with R (2005, p. 59).).  
+<img src="../images/03Excel/resplot.png" alt="resplot" width="600" >  
+
+### Testing Assumptions Using Normal Probability Plots
+**Figure**: The points on a “good" normal probability plots should fall approximately on a straight line. Images taken from [SlideShare](https://www.slideshare.net/saqibshahzad26/26-assumptions)  
+<img src="../images/03Excel/ppplot.png" alt="ppplot" width="600" >   
+<img src="../images/03Excel/notok.png" alt="notok" width="600" >   
+
+
+### Regression in Excel
+> **Example:**  
+Given a data set of car weight and acceleration, determine if there is any relationship between them.  
+<img src="../images/03Excel/avsw2.png" alt="avsw2" width="600" >   
+Scatterplot shows weak relationship with no strong patterns, and we would expect to see this shown in the regression analysis.  
+
+Regression computes constants m and b in formula:  
+acceleration = m\*weight +b = &beta;<sub>1</sub>\*weight +&beta;<sub>0</sub>  
+Acceleration is the dependent variable and weight is the independent variable  
+<img src="../images/03Excel/Regression2.png" alt="Regression2" width="400" >   
+To start select, **Data Analysis** from the **Data** tab and then select **Regression** and **OK** .  
+
+
+### Regression Example Settings
+Settings:  
+- Response (dependent) data for the Input Y Range
+- Columns for the explanatory (independent) data (X Range).
+- For residual information select, Residuals,Standardized Residuals, and Residual Plots from the Residuals section.  
+<img src="../images/03Excel/RegressionSettings.png" alt="RegressionSettings" width="400" >   
+<img src="../images/03Excel/regpopup.png" alt="regpopup" width="400" >   
+If you select the column headers, be sure to select the Labels options to ensure they are treated as meta-data.  
+Notice that many of the features regarding the residuals are not selected by default.
+
+
+### Regression Example Results
+<img src="../images/03Excel/RegressionResults.png" alt="RegressionResults" width="600" >   
+All of the output is put into a new sheet. Read the values off of the table and form the regression equation:  
+acceleration = -0.001353896\*weight + 19.57266581  
+As one might expect, a weak relation is found as reflected by the R<sup>2</sup> value  
+- Only 17.4% of the variation in weight is explained by acceleration.
+Below the previous tables are the predicted y values (from the regression equation) as well as the residuals and standardized residuals (residuals divided by their standard deviation).  
+<img src="../images/03Excel/RER1a.png" alt="RER1a" width="600" >   
+eg. X<sub>1</sub>=3504; 
+hence Y&#770;<sub>1</sub> = -0.001353896 \* weight + 19.57266581 - 0.001353896 \* 3504 + 19.57266581  
+= 14:82861423 (with some rounding error)    
+
+<img src="../images/03Excel/RER1b.png" alt="RER1b" width="600" >  
+The observed acceleration for observation 1 was Y<sub>1</sub> = 12. To calculated the residual, we subtract the true value Y<sub>1</sub> from the predicted value Y&#770;<sub>1</sub>   
+e<sub>1</sub>(the residual of obs. 1) = Y<sub>1</sub> - Y&#770;<sub>1</sub>  
+= 12 - 14.82861423  
+= -2.828614226 (rounding error)  
+
+All plots are placed to the right of the charts.  
+<img src="../images/03Excel/normalpp.png" alt="normalpp" width="600" >    
+- This is a “good" residual plot since it shows no obvious pattern and points are symmetrically distributed around a horizontal line with a roughly constant variance.
+- The Normal Probability Plot shows some curvature in the tails indicating that the residuals are showing some departure from normality.  
+
+As you can see, these are also the results obtained when fitting a trendline to the original scatterplot  
+<img src="../images/03Excel/trendlineinfo.png" alt="trendlineinfo" width="600" >    
+
+
+### Try It: Regression
+> Question:  
+Perform a regression analysis between weight (dependent) and displacement (independent) variable.  
+<img src="../images/03Excel/WvsD.png" alt="WvsD" width="600" >    
+
+**Example 5**  
+How many of the following statements are TRUE?  
+1. Regression can only be used when we have one dependent variable Y and one explanatory variable X.  
+2. No assumptions are needed for the distribution of X in order to fit a linear regression model.  
+3. Residual plots may be used to test linear model assumptions.  
+4. A R2 value of 1 means that all points in our data set lie exactly on the fitted line.  
+A) 0 B) 1 C) 2 D) 3 E) 4  
+
+### START SOLUTIONS HERE
+**Example 5**  
+How many of the following statements are TRUE?  
+1. Regression can only be used when we have one dependent variable Y and one explanatory variable X. :x:   
+2. No assumptions are needed for the distribution of X in order to fit a linear regression model. :heavy_check_mark:   
+3. Residual plots may be used to test linear model assumptions. :heavy_check_mark:  
+4. A R2 value of 1 means that all points in our data set lie exactly on the fitted line. :heavy_check_mark:   
+A) 0 B) 1 C) 2 **D) 3** E) 4    
+### END SOLUTIONS HERE
+
+
+### Conclusion
+*Spreadsheets* are general purpose tools for data analysis that consist of a table of cells which contain data and formulas.  
+
+Formulas contain data values, cell references, and functions.  
+- Aggregate functions summarize multiple data values into a single value.  
+- Functions exist for statistics, string manipulation, lookup/indexing, and decisions.  
+Spreadsheets provide tools for data sorting, filtering, visualization using charts, and summarization (pivot tables).  
+
+Also contain tools for what-if scenarios, goal seek, linear solvers, and statistical analysis tools.
+
+### Objectives
+- Explain what a spreadsheet is.
+- Explain how cells are addressed in a spreadsheet.
+- List some of the ways to select cells in a spreadsheet.
+- Define and explain: formula, function, argument, concatenation
+- Use these functions: concatenate, lookup, index
+- Explain the difference between an absolute and relative address.
+- Explain how an aggregate function works. List some examples.
+- Explain how to use conditional formatting.
+- Use sorting and filtering.
+- Be able to create and edit charts and use chart features: trendlines, sparklines
+- Explain the usefulness of: what-if scenarios, goal seek, solver
+- Use and create pivot tables and charts.
+- Evaluate and create conditions. Use IF() to make decisions.
 
 
