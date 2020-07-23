@@ -1,3 +1,5 @@
+# Excel
+
 ## Spreadsheets: Microsoft Excel Part 1 of 3
 
 ### Why Spreadsheets and Microsoft Excel?

@@ -1,5 +1,7 @@
-### Data 301 Data Analytics
-Python Flow Control
+# Python I
+
+## Python Flow Control
+
 ### Decisions
 - Decisions are used in programming to specify one or more conditions to be tested, along with statement(s) to execute if the condition is true.
 - Acondition is an expression that is either True or False.

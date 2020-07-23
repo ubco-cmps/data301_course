@@ -1,3 +1,5 @@
+# Test Heading
+
 ## Course Outline
 
 ### The Essence of the Course

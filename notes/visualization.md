@@ -1,5 +1,7 @@
-### Data 301 Data Analytics
-### Data Visualization
+# Data Visualization
+
+## Fill 
+
 ### Why learn Visualization?
 - 􏰏Visualization allows people to understand and extract information faster and with more accuracy than displaying text and numbers.
 - A good visualization makes data more understandable and reachable to more people.

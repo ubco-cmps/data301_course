@@ -1,4 +1,6 @@
-## Data Representation
+# Data Representation
+
+## Fill
 
 ### Computer Terminology
 There is a tremendous amount of terminology related to technology.\

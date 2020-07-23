@@ -1,4 +1,5 @@
-### Data 301 Data Analytics
+# Open Data
+
 ## Open Data
 ### What is open data?
 􏰏 - Open Data is the movement to make data freely available to all with no restrictions on use or copyright.
