@@ -1341,5 +1341,3 @@ Also contain tools for what-if scenarios, goal seek, linear solvers, and statist
 - Explain the usefulness of: what-if scenarios, goal seek, solver
 - Use and create pivot tables and charts.
 - Evaluate and create conditions. Use IF() to make decisions.
-
-
