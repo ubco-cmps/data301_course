@@ -540,8 +540,804 @@ Cell **A1** contains the following: =$B2+D$4. What is the formula if the cell is
 > Tip:  
 You can change a cell from relative to absolute with the shortcut `F4` . You can continue to press F4 to have Excel cycle through the different reference types.  
 >Tip:  
-To show all the formulas in a worksheet (rather then their result), click the <img src="../images/03Excel/showFormula.png" alt="showFormula" width="700" > button located in the Formulas tab in the ribbon.
+To show all the formulas in a worksheet (rather then their result), click the <img src="../images/03Excel/showFormula.png" alt="showFormula" width="30" > button located in the Formulas tab in the ribbon.
+
+
+### Naming Cells
+
+Instead of referring to cells by their address, you can give a cell a name and use that name in cell formulas. 
+- This makes it easier to read and understand formulas. 
+- Like programming variables where we use names instead of addresses to refer to data locations.
+
+Step for naming cells: 
+- Select the cell(s) you want to name 
+- Click the Name box located to the left of the formula bar 
+- Type a valid one-word name for the list, e.g. Hours œ Press `ENTER`  
+[See YouTube demo here](https://www.youtube.com/watch?v=eEFbCBCLLFM&feature=youtu.be)  
+Alternatively: click the letter of the column you want to change and then click the “Formulas” tab. Click “Deﬁne Name” in the Deﬁned Names group in the Ribbon to open the New Name window.  
+
+<img src="../images/03Excel/NameBox.png" alt="NameBox" width="600" >  
+
+
+### Naming Rules
+- While these names can included numbers, the ﬁrst character must be a letter or an underscore. 
+- These names cannot include spaces or special characters beside underscores and periods. 
+- Finally this name should not conﬂict with an existing name in the workbook. 
+- For example, I wouldn’t want to use the name DAY1 since that already exists as a cell address by default.
+
+
+### Try It! 
+Complete the following in the *NamedCells* worksheet in the DemoPartI workbook. 
+
+**Example 9**  
+Rename **A3** *Day_1* and **A9** *Day_7*. Calculate the di ﬀ erence between these two dates using the [DATEDIF](https://exceljet.net/excel-functions/excel-datedif-function) function.  
+
+**Example 10**  
+Find the total hours using named cells. That is, rename the cells **E3:E9** *Total* and calculate `=SUM(Total)`.   
+
+**Example 11** (Advanced array formulas)   
+RecalculatetheTotalsusingthenamedcells. Thatis, renamethe cells **C3:C9** *Hours* and **D3:D9** *Rate*, and calculate `Hours*Rate`.
+
+To answer this last exercise, we will need to know more about [array formulas](#array-formulas). 
+
+
+### Array Formulas
+- If you are using Oﬃce 2010 – Oﬃce 2019 array formulas require ﬁrst selecting the entire output range, then conﬁrming the formula with `Ctrl` +`Shift` +`Enter` . They are commonly referred to as CSE formulas.  
+- In Oﬃce 365 any formula that can return multiple results will automatically spill them either down, or across into neighboring cells by pressing `Enter `.  
+- To see Total cost of each activity, select cells **F3:F9**, enter the formula `=Hours*Rate`, and then press `Ctrl` +`Shift` +`Enter` .  
+- N.B. To see the grand Total of all activities, we could select cell **F10** and enter the formula `=SUM(Hours*Rate)` and then press `Ctrl` +`Shift` +`Enter` .  
+Read more about array formulas [here](https://support.microsoft.com/en-ie/office/guidelines-and-examples-of-array-formulas-7d94a64e-3ff3-4686-9372-ecfd5caa57c7?ui=en-us&rs=en-ie&ad=ie). See my YouTube demo [here](https://www.youtube.com/watch?v=rHqKVJJmuFs&feature=youtu.be).
+
+### Aggregate Functions
+An *aggregate* function computes a summary function over a range of cells. The values can either be data values or cell locations.  
+Common functions are: 
+|Function|Description|
+|--------|----------|
+|`=MIN(<value list>)` |returns minimum value in list|
+|`=MAX(<value list>)`| returns maximum value in list|
+|`=SUM(<value list>)`| returns sum of all values in list|
+|`=AVERAGE(<value list>)`| returns average of values in list|
+|`=COUNT(<value list>)`| returns count of values in list|
+|`=MEDIAN(<value list>)`| returns median value of list|
+
+If specifying an array, give the upper left and lower right corners, separated by a colon. 
+|Function|Description|
+|--------|----------|
+|`AVERAGE(A3:E6)`| returns the average value in the array of 4 rows and 5 columns|
+
+
+### Aggregate Functions Example
+<img src="../images/03Excel/aggregate.png" alt="aggregate" width="800" >  
+
+### Try it!
+>**Exercise**   
+Find the a) maximum volume b) average price c) minimum cost and d) total revenue in the *QrSales* worksheet.  
+
+### Aggregate Functions Question
+
+**Example 12**  
+Assume the cells in the range A1:C4 each contain a number that is equal to their row number (e.g. **B3** contains 3). How many of the following statements are TRUE?   
+1. The number of cells in the range is 12.  
+2. The value of `SUM(A1:C4)` is 20.   
+3. The value of `COUNTIF(A1:B4,">2")` is 4.  
+4. `AVERAGE(A1:C4)` > `MAX(C2:C3)`  
+A) 0 B) 1 C) 2 D) 3 E) 4
+
+### START SOLUTIONS HERE
+**Example 12**  
+Assume the cells in the range A1:C4 each contain a number that is equal to their row number (e.g. **B3** contains 3). How many of the following statements are TRUE?   
+1. The number of cells in the range is 12. :heavy_check_mark:   
+2. The value of `SUM(A1:C4)` is 20. :x:    
+3. The value of `COUNTIF(A1:B4,">2")` is 4. :heavy_check_mark:   
+4. `AVERAGE(A1:C4)` > `MAX(C2:C3)` :x:   
+A) 0 B) 1 **C) 2** D) 3 E) 4
+
+### END SOLUTIONS HERE
+
+
+**Example 13**   
+Assume the three cells in the range A1:C1 contain numbers. Which of these formula output results is ALWAYS the largest?  
+A) `MAX(A1:C1)`   
+B) `MIN(A1:C1) `   
+C) `COUNT(A1:C1)`   
+D) `SUM(A1:C1)`   
+E) None of the above are always guaranteed to be the largest  
+
+### START SOLUTIONS HERE
+**Example 13**   
+Assume the three cells in the range A1:C1 contain numbers. Which of these formula output results is ALWAYS the largest?  
+A) `MAX(A1:C1)`   
+B) `MIN(A1:C1) `   
+C) `COUNT(A1:C1)`   
+D) `SUM(A1:C1)`   
+**E) None of the above are always guaranteed to be the largest**    
+
+### END SOLUTIONS HERE
+
+
+### Other Formatting: Column Width 
+*Resizing columns/rows:*  
+<img src="../images/03Excel/ColWidth.png" alt="ColWidth" width="800" >   
+> Auto-resize by double clicking on border between columns or selecting **Format– >Column–>AutoFit Selection**.  
+    Drag the row/column border to manually resize. 
+
+
+Lets see an example by doing this on the *Namecells* workbook in DemoPartI
+
+
+### Conditional Formatting
+*Conditional formatting* allows you to change the cell format based on data values. This is accessible under **Format–>Conditional Formatting**.  
+- Other options: data bars, color scales, icon sets  
+
+<img src="../images/03Excel/CondFormat.png" alt="CondFormat" width="800" >   
+
+A shortcut to this feature (along with some great default options) can be found in the Conditional Formatting button <img src="../images/03Excel/CFbutton.png" alt="CFbutton" width="30" >  
+<img src="../images/03Excel/CFoptions.png" alt="CFoptions" width="300" >   
+
+
+### Conditional Formatting Result 
+The format painter button allows you to copy formatting to many cells. Select the cell, click paint button, then highlight cells to have identical formatting.  
+
+<img src="../images/03Excel/FormatPainter.png" alt="FormatPainter" width="800" >   
 
 
 
-** Claire you are at page 74/122
+### Try it: Conditional Formatting
+Format Volume column to be:  
+1. bold/green if volume >50  
+2. italics/red if volume <10  
+3. yellow background otherwise as below:  
+<img src="../images/03Excel/CondFormatTryIt.png" alt="CondFormatTryIt" width="800" >   
+
+> Question: Take the previous formatting and apply it to whole row:
+
+> Hint: Highlight the whole table, go to Conditional Formatting, select the “Classic" option from the Style drop down menu and select “Use a formula to determine which cells to format"
+<img src="../images/03Excel/QSTryIt4.png" alt="QSTryIt4" width="800" >   
+<img src="../images/03Excel/condform2.png" alt="condform2" width="600" >   
+<img src="../images/03Excel/condform1.png" alt="condform1" width="600" >   
+
+
+
+
+### Spreadsheet for Data Management
+A spreadsheet is often used as a "database". A *database* collects, stores and manages information so users can retrieve, add, update or remove such information.  
+- Examples: schedules and calendars, timesheets, expenses and ﬁnances, records, notes, and recipes, data research/analysis  
+
+We can use a spreadsheet as a database by:  
+- Using a row to store all the information about something we want to represent.  
+- Giving each column a meaningful name. A column represents a property or feature of the object stored in the row.  
+- Using the formulas to calculate new facts from the data.  
+- Using sorting to organize the data by key features.  
+- Using simple ﬁltering (querying) to only show the most important data or data of interest.
+
+
+### Sorting Data
+Data can be sorted by selecting the **Sort** option under the **Data** menu. Select the column(s) to sort on and order to sort by.  
+<img src="../images/03Excel/Sorting.png" alt="Sorting" width="300" >   
+
+### Try it: Sorting Data
+> Exercise: Sort the data by revenue (desc) then product (asc).
+
+<img src="../images/03Excel/SortQ.png" alt="SortQ" width="800" >  
+
+
+
+### Filtering
+A *ﬁlter* shows a subset of the rows in the spreadsheet that pass a given condition (test).
+
+Select **Auto Filter** under the **Data** then **Filter** menu.
+
+Once you select **Auto Filter**, each column heading has a drop-down list. By selecting a ﬁltering criteria from the list, you can limit the rows that are displayed.
+
+It is possible to ﬁlter on more than one column at the same time.
+
+### Filter Example 
+Filter on Revenue column: Select value(s), Top 10, or custom ﬁlter.  
+
+<img src="../images/03Excel/CustomFilter.png" alt="CustomFilter" width="300" >  
+
+Filter on Revenue column: Custom ﬁlter with Revenue > 150  
+
+<img src="../images/03Excel/CustomFilter2.png" alt="CustomFilter2" width="600" >  
+
+### Try It: Filter Challenge
+> Exercise: Filter the data so only products with volume < 20 or revenue &ge; $500 are shown.  
+
+<img src="../images/03Excel/filterChallenge.png" alt="filterChallenge" width="800" >  
+
+### Removing Duplicates  
+To remove duplicates, select your Data then Remove Duplicates from the **Data** tab in the ribbon.  
+<img src="../images/03Excel/RmDup.png" alt="RmDup" width="600" >    
+Note that we can also remove duplicates using a ﬁlter:  
+Data>Sort&Filter>Advanced  
+
+By default, it will look for duplicates over the all of the selected columns. You can delete entire rows based on particular columns by selecting them the pop-up window:  
+<img src="../images/03Excel/removedup.png" alt="removedup" width="300" >  
+
+Notice how the Removing Duplicates feature is NOT case sensitive:  
+<img src="../images/03Excel/rmDup2.png" alt="rmDup2" width="600" >    
+
+
+### Sorting Question
+Question: Given this spreadsheet and sort order, what is the output?  
+<img src="../images/03Excel/SortingQ2.png" alt="SortingQ2" width="600" >    
+<img src="../images/03Excel/SortingQuestion.png" alt="SortingQuestion" width="100" >    
+
+
+> Clicker Question: Given this spreadsheet and sort order, what is the output?  
+<img src="../images/03Excel/SortingClickerQ.png" alt="SortingClickerQ" width="600" >    
+
+
+### START SOLUTIONS HERE
+> Clicker Question: Given this spreadsheet and sort order, what is the output?  
+<img src="../images/03Excel/SortingClickerQ_answer.png" alt="SortingClickerQ_answer" width="600" >    
+### END SOLUTIONS HERE
+
+### Sorting
+
+If you want to make sorting on characters case sensitive, we need to select that in Options:  
+
+<img src="../images/03Excel/caseSensitive.png" alt="caseSensitive" width="600" >    
+
+### Filtering Question
+**Example 14**  
+Given this spreadsheet, how many of the sestatements are TRUE?  
+<img src="../images/03Excel/FilteringQ.png" alt="FilteringQ" width="300" >    
+1. The data is sorted ascending by Number.  
+2. Filter Number > 3 shows 3 rows.  
+3. Filter Letter >= "c" shows 3 rows.  
+4. Filter Number < 3 ORLetter > "b" shows 5 rows.  
+A) 0 B) 1 C) 2 D) 3 E) 4  
+
+### START SOLUTIONS HERE
+**Example 14**  
+Given this spreadsheet, how many of the sestatements are TRUE?  
+<img src="../images/03Excel/FilteringQ.png" alt="FilteringQ" width="300" >    
+1. The data is sorted ascending by Number. :heavy_check_mark:   
+2. Filter Number > 3 shows 3 rows. :x:   
+3. Filter Letter >= "c" shows 3 rows. :heavy_check_mark:   
+4. Filter Number < 3 ORLetter > "b" shows 5 rows. :heavy_check_mark:   
+A) 0 B) 1 C) 2 **D) 3** E) 4  
+### END SOLUTIONS HERE
+
+N.B. The solution to the previous question required some [Advanced Filtering](https://www.ablebits.com/office-addins-blog/2016/09/07/excel-advanced-filter/) options:  
+
+<img src="../images/03Excel/advancedFilter.png" alt="advancedFilter" width="600" >    
+
+### Conclusion
+Spreadsheets are general purpose tools for data analysis that consist of a table of cells which contain data and formulas.  
+
+Formulas contain data values, cell references, and functions.
+- Aggregate functions summarize multiple data values into a single value.
+- Functions exist for statistics, string manipulation, lookup/indexing, and decisions.
+
+
+### Objectives
+- Explain what a spreadsheet is.
+- Explain how cells are addressed in a spreadsheet.
+- List some of the ways to select cells in a spreadsheet.
+- Define and explain: formula, function, argument, concatenation
+- Use these functions: concatenate, lookup, index
+- Explain the difference between an absolute and relative address.
+- Explain how an aggregate function works. List some examples.
+- Explain how to use conditional formatting.
+
+
+
+## Spreadsheets: Microsoft Excel Part 2 of 3
+
+### Charts
+A *chart* is a graphical representation of spreadsheet data.  
+
+Charts can help you visualize relationships between data and create maximum impact on your audience.  
+
+When you create a chart, you can select from many chart types (eg, a stacked column chart or a 3-D exploded pie chart).  
+
+To create a line/bar/pic/etc. chart, the user to supply the data that will be displayed.
+
+Once your data is selected, navigate to the **Insert** tab, then click the desired **Chart** Icon. You can either choose one from the **Recommended Chart** button or select from the variety of chart types.
+
+<img src="../images/03Excel/barchart.png" alt="barchart" width="800" >   
+
+Sometimes the default graphic is not what we want,. . .  
+
+For instance the recommended chart on the previous page shows an individual bar for each instance of the product type.  
+
+We could instead create the total revenue for each product by selecting:
+- The histogram icon <img src="../images/03Excel/histicon.png" alt="histicon" width="30" > 
+- Double clicking on the bars
+- Selecting the Series Options icon: <img src="../images/03Excel/seriesopt.png" alt="seriesopt" height="30" > 
+- Selecting *By Category* in the **Bins** drop down menu.
+
+
+### Chart Options
+After you create a chart, you can customize it by applying chart quick layouts or styles. The **Chart Design** tab also provides a number of features for modifying things like chart color/type/position/etc.  
+
+<img src="../images/03Excel/ChartTools2.png" alt="ChartTools2" width="800" >   
+
+> **Example 1**  
+Navigate to the **Chart Design** tab and relocate your chart to a new worksheet called *barchart*.  
+
+<img src="../images/03Excel/ChartTools2.png" alt="ChartTools2" width="800" >   
+
+### Trendlines
+- Trendlines can be easily added to a number of chart types.
+- Click on chart, "Add Chart Element"...."Trendline"
+
+<img src="../images/03Excel/trendline.png" alt="trendline" width="800" >   
+
+Trendlines can be easily added to any chart.
+- Linear treadline for monthly revenue. Good choice?  
+> Probably not, as data appears to be seasonal
+<img src="../images/03Excel/trendline1.png" alt="Trendline1" width="300" > <img src="../images/03Excel/Trendlines2.png" alt="Trendlines2" width="300" >   
+
+
+### Try it! Trendline
+Of course it wouldn’t really make sense to add a linear trend to the previous line chart since the data do not appear linear.  
+
+> Apples  
+1. Create a line chart that plots the revenue per month for only Apples using the Annual Sales data.  
+2. Add a linear trendline.  
+3. In Chart Design tab, select a design that displays the months on a 45 degree angle.  
+
+
+### Try It: Chart  
+
+> Question:  
+Create a Pareto chart (option under the histogram icon) to make it easy to see the best selling product.  
+<img src="../images/03Excel/pareto.png" alt="pareto" width="800" >   
+
+
+### Sparklines
+A *sparkline* is a tiny chart in a worksheet cell for a quick data overview.  
+- Click Insert then select Sparklines. . .
+- Displayed below is an example of a line and column sparkline.
+- You can change the style in the Sparkline tab in the ribbon.  
+<img src="../images/03Excel/Sparklines.png" alt="Sparklines" width="800" >   
+
+
+### Pivot Tabels
+*Pivot tables* allow for easily aggregating and exploring large data sets.  
+- For example, our data set can be summarized by revenue by month.  
+<img src="../images/03Excel/pivot.png" alt="pivot" width="800" >   
+
+
+### Creating a Pivot Table
+To create a pivot table  
+1. Select the data (or click any single cell inside the data set).  
+2. Navigate to the **Insert** tab, select the drop down **Tables** menu, and click the PivotTable icon.  
+3. Click OK  
+4. Add fields in the PivotTable Fields pane  
+
+**Drag fields** To get the total revenue for each month, drag the following fields to the different areas.  
+1. `Month` to the Rows area.  
+2. `Revenue` to the Values area.  
+
+The following dialog box appears. Excel automatically selects the data for you. The default location for a new pivot table is New Worksheet.   
+<img src="../images/03Excel/pivotOne.png" alt="pivotOne" width="800" >   
+
+*Pivot1* worksheet  
+<img src="../images/03Excel/pivot3.png" alt="pivot3" width="600" >    
+Add fields to pivot table.  
+Field may either be:
+- ROWS value
+- COLUMNS value
+- Cell VALUES (aggregated)
+- Used in a FILTERS (we could also filter using the drop down filter option; select the dropdown arrow located in cell A3, for example)  
+N.B Right click on a cell in the pivot table and select Show/Hide Fields List to show/hide the pop-up window on the right.  
+
+### Pivot Table Example
+*Pivot2* worksheet  
+<img src="../images/03Excel/pivotExample.png" alt="pivotExample" width="600" >    
+- Categories are rows.
+- Months are columns.
+- Each cell is a sum of revenue per category for that month.
+- We can filter on product (eg. filter out apples).
+
+*Pivot3* worksheet  
+<img src="../images/03Excel/pivotThree.png" alt="pivotThree" width="600" >    
+- Notice that the same field can be used in VALUES multiple times
+- In that way we can see multiple aggregate summaries (eg. total and count)
+- To change the value aggregation function, click on the <img src="../images/03Excel/i.png" alt="i" width="30" > icon
+- Notice that a field can NOT be used in ROWS/COLUMNS/FILTER at the same time.
+
+### Try It: Pivot Table
+> Question:  
+Create a pivot table using the annual sales data that shows the total revenue per month by category/product.  
+
+<img src="../images/03Excel/TryItPivot.png" alt="TryItPivot" width="600" >    
+N.B. The order in which your fields appear in ROWS will make a difference. Also, we can reformat the cells to display in currency format.   
+
+### Pivot Charts
+A pivot chart is a chart attached to a pivot table. Create it under **Insert** then **Pivot Chart**.
+<img src="../images/03Excel/pivChart.png" alt="pivChart" width="800" >    
+
+Below we have chosen a 100% stacked bar chart type.  
+<img src="../images/03Excel/pivChart2.png" alt="pivChart2" width="800" >    
+
+
+### Pivot Tables Question
+
+**Example 2**  
+How many of the following statements are TRUE?  
+1. A pivot table field can be used in ROWS and COLUMNS at the same time.  
+2. A pivot table field can be used in VALUES more than once.  
+3. In our sales spreadsheet example, if Product and Category are both used in ROWS then the order they are list does not matter.  
+A) 0 B) 1 C) 2 D) 3  
+
+
+### START SOLUTIONS HERE
+**Example 2**  
+How many of the following statements are TRUE?  
+1. A pivot table field can be used in ROWS and COLUMNS at the same time. :x:   
+2. A pivot table field can be used in VALUES more than once. :heavy_check_mark:   
+3. In our sales spreadsheet example, if Product and Category are both used in ROWS then the order they are list does not matter. :x:   
+A) 0 **B) 1** C) 2 D) 3  
+
+### END SOLUTIONS HERE
+
+
+### Conditions and Decisions
+A condition is an expression that is either TRUE or FALSE.  
+
+Conditions are used to make decisions and perform different actions depending on the condition value.  
+
+Excel condition and decision functions:  
+`FALSE()` returns FALSE   
+`TRUE()` returns TRUE   
+`AND(cond1, cond2)` returns TRUE if both cond1 and cond2 are true  
+`OR(cond1, cond2)` returns TRUE if either or both of cond1 and cond2 are true  
+`NOT(cond)` returns TRUE if cond is FALSE  
+
+### Decisions using IF()
+The IF() function is used to make a decision based on a condition  
+- `IF(condition, value_if_true, value_if_false)`
+
+Example: If cell **A2** is less than 5, return 10 otherwise return 20.  
+- ` = IF(A2 < 5, 10, 20)`
+
+If the third argument is not specified, it’s default is FALSE()
+- ` = IF(A2 < 5, 10) returns FALSE()` if **A2** is &ge; 5
+
+The following statements are equivalent  
+- = IF(A2 < 5, TRUE(), FALSE()) same as =A2 < 5  
+
+Hence if we just want to check if a condition is met, we don’t need the IF() function.
+
+### Try it: `IF()`
+Question: Create two conditions:  
+1. If cell **B2** &le; 10, then show **C2**, otherwise **D2**.
+2. If cell **B2**< 15 and **C2**> 20, return B2\*C2, otherwise if D2 < 10, return 1, else 4.  
+<img src="../images/03Excel/TryItIf2.png" alt="TryItIf2" width="600" >    
+
+
+### Decision Using `IF()` Question
+**Example 3**  
+How many of these statements are TRUE with **A1**=40, **A2**=10?  
+1. `=AND(FALSE(), TRUE())`  
+2. `=OR(FALSE(), NOT(TRUE()))`  
+3. `=IF(A1=40, 5, 10)` returns 10.  
+4. `=IF(OR(A1=40,A2>10),1, 2)` returns 2.  
+5. `=IF(A2=10,IF(A1=40,FALSE()),TRUE())`  
+A) 0 B) 1 C) 2 D) 3 E) 4  
+
+
+### START SOLUTIONS HERE
+**Example 3**  
+How many of these statements are TRUE with **A1**=40, **A2**=10?  
+1. `=AND(FALSE(), TRUE())` :x:   
+2. `=OR(FALSE(), NOT(TRUE()))`  :x:     
+3. `=IF(A1=40, 5, 10)` returns 10.  :x:    
+4. `=IF(OR(A1=40,A2>10),1, 2)` returns 2.  :x:    
+5. `=IF(A2=10,IF(A1=40,FALSE()),TRUE())`  :x:    
+**A) 0** B) 1 C) 2 D) 3 E) 4  
+
+### END SOLUTIONS HERE  
+
+
+### What-If
+*What-If* scenarios help understand different possibilities.  
+There are three kinds of What-If Analysis tools:  
+**Scenarios**  
+**Goal Seek**  
+**Data Tables**  
+A what-if *scenario* is created under **Data** tab then **What-If Analysis** then **Scenario Manager**.  
+
+To define a scenario, give it a name and list the cells that will change with this scenario.  
+
+> Tip
+It is usually a good idea to create a “Normal" scenario that you can go back to.  
+
+Consider what happens with a cold winter and we predict to sell 50 jackets instead of the normal 15.  
+<img src="../images/03Excel/whatif1.png" alt="whatif1" width="300" >   <img src="../images/03Excel/whatif2.png" alt="whatif2" width="300" >  <img src="../images/03Excel/whatif3.png" alt="whatif3" width="300" >    
+
+
+User can easily select scenario and see the result.  
+<img src="../images/03Excel/whatifexcel.png" alt="whatifexcel" width="600" > <img src="../images/03Excel/whatif2.png" alt="whatif2" width="300" >   
+
+### Scenario Summary
+- After creating all of your scenarios, you can create a Scenario Summary Report.
+- This report summaries how these scenarios impact a specified **Result Cell**
+- For instance, to see how the *Cold Winter* scenario affects total revenue when compared with the Normal
+        1. go to the **Data** tab then **What-If Analysis** then **Scenario Manager**.
+        2. Select **Summary** in the pop up window.
+        3. Select the **Scenario summary** report type and specify the **Result cell** (the value of interest these scenarios will impact).
+
+A scenario report will display a summary in table form:  
+<img src="../images/03Excel/scwin.png" alt="scwin" width="200" > <img src="../images/03Excel/scsum.png" alt="scsum" width="400" >   
+**Figure**: Left: Step **3** from the previous slide. Right: the resulting Scenario Summary  
+
+### Try it: What-If
+> Question:  
+Create a what-if scenario that wherever chocolates are sold, the volume is double than normal. Examine how it affects our total revenue.  
+<img src="../images/03Excel/DoubleChocolate.png" alt="DoubleChocolate" width="600" >  
+
+### Try it: What-If Scenario Challenge
+> Question:  
+Create a what-if scenario in which all costs go up by 10% and volume down by 20%.  
+<img src="../images/03Excel/badcase.png" alt="badcase" width="600" >  
+
+
+### Goal Seek and Solver
+- Another way to ask Excel "what if" is by using the Goal Seek and Solver tools.
+- *Goal seek* is used to determine what **value** needs to be in an input cell to achieve a desired result in a formula cell.
+- *Solver* determines what **values** need to be in multiple input cells to achieve a desired result in a formula cell.
+        - The Solver add-in is similar to Goal Seek, but it can accommodate more variables.
+- These methods work to achieve a certain goal in the form of a formula output, while what-if scenarios looked at changing formula inputs.  
+
+### Goal Seek
+> Example: How many balls would we have to sell in January to have total revenue for first 3 months of $4000?
+
+1. Navigate to the **Data** tab, click **What-If Analysis**, and then click **Goal Seek**.  
+2. In the **Set cell** box, enter the reference for the cell that contains the formula that you want to resolve, ie. **G13**.  
+3. In the **To value** box, type the formula result that you want.   
+eg. 4000  
+4. In the **By changing** cell box, enter the reference for the cell that contains the value that you want to adjust, ie, **D4**   
+<img src="../images/03Excel/GoalSeek1.png" alt="GoalSeek1" width="800" >    
+
+> Answer: How many balls would we have to sell in January to have total revenue for first 3 months of $4000? Answer: 865
+<img src="../images/03Excel/GoalSeek2.png" alt="GoalSeek2" width="800" >    
+
+
+### Add ons
+- Goal Seek only allows a single input value, that is, we can only specify a single cell under the *By changing cell field*.
+- In order to specify more than one input value we should instead use the Solver.  
+- To use the Solver Add-in, however, you first need to load it in Excel ([click here](https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us&rs=en-us&ad=us#OfficeVersion=Windows) for instructions on Windows)
+        1. On the **Tools** menu, select **Excel Add-Ins**.
+        2. Select the **Solver Add-in** check box from the Add-Ins available box.  
+        <img src="../images/03Excel/solveraddin.png" alt="solveraddin" width="200" >      
+- After you load the Solver add-in, the Solver button is available on the Data tab.   
+
+### Solver
+- Like Goal seek, Solver can be used to determine what values need to be changed to achieve a desired result. Unlike Goal seek, we can accommodate multiple cell values changing.
+- In addition, rather than setting our desired result (called the objective cell) to a specific number, we could use Solver to find an optimal (maximum or minimum) value for a formula in one cell subject to certain constraints.
+- Solver works with a group of cells, called decision variables.
+        - These cells are necessarily inputs to the objective cell.
+        - Solver adjusts these decision variable in order to obtain the desired result in your objective cell.  
+
+
+### Solver Example
+- For example, lets assume that our final grades are calculated using the following breakdown:  
+
+|Assessment|%|
+|---|---|
+|Assignments| 10%|
+|Midterm 1 |25%|
+|Midterm 2 |25%|
+|Exam |40%|  
+
+- Let’s assume we’ve already received 90% on the assignment component, 65% on midterm 1, and only midterm 2 and the exam remain.
+- Let’s use Solver to determine a scenario in which our resulting final grade would be 75%.
+
+Consider the *Solver* starter worksheet on **03ExcelPart2ii.xlsx**  
+<img src="../images/03Excel/solverF.png" alt="solverF" width="400" >     
+- Our final grade stored in **D6** is our objective cell.
+- **B3** and **B5** will be our decision variables.
+- Notice how the calculation of D6 depends on **B4** and **B5**.  
+- Navigate to the **Data** tab and click on the Solver button.  
+<img src="../images/03Excel/addins.png" alt="addins" width="600" >    
+- Specify the objective cell, decision variables and any constraints in the the pop-up window.
+- For this example our only constraints is that B3 and B5 must be $le; 100 and $ge; 0.  
+Sidenote other constraints include:  
+    **int** Restricting cells to be an integer,  
+    **bin** Restricting cells to be a binary digit (either 0 or 1)  
+    **dif** Restrict cells to contain different (i.e. non-identical) value    
+<img src="../images/03Excel/solverparameters.png" alt="solverparameters" width="400" > <img src="../images/03Excel/solverresult.png" alt="solverresult" width="400" >   
+
+
+### Solver
+You may have noticed that there are three different solving methods using solver (as chosen in the **Select a Solving Method** drop-down menu:
+1. GRG Nonlinear
+2. Simplex LP
+3. Evolutionary.  
+A description of these methods are provided directly below the drop-down menu with further options available by clicking the **Options** button located to the right of this drop-down menu.
+If you are unsure which one to use, it is usually best to select the GRG Nonlinear engine.
+
+
+### What-If Clicker Question  
+
+**Example 4**  
+How many of the following statements are TRUE?  
+1. We can only change a single cell in using Scenario Manager.  
+2. We can only change a single cell in using Goal Seek.  
+3. We can only change a single cell in using Solver. on the fitted line.  
+A) 0 B) 1 C) 2 D) 3
+
+
+### START SOLUTIONS HERE
+**Example 4**  
+How many of the following statements are TRUE?  
+1. We can only change a single cell in using Scenario Manager. :x:   
+2. We can only change a single cell in using Goal Seek. :heavy_check_mark:  
+3. We can only change a single cell in using Solver. on the fitted line. :x:   
+A) 0 **B) 1** C) 2 D) 3
+### END SOLUTIONS HERE
+
+### The Analysis ToolPak
+The *Analysis ToolPak* is an another Excel *add-in* that has a set of statistical and data analysis tools such as ANOVA, covariance, regression, and t-test.
+
+On a Windows: Analysis ToolPak is not installed by default.
+- To install: **File** -> **Options** -> **Add-Ins**
+- Select **Excel Add-ins** in the **Manage**: box and select **Go** . . .
+- Choose **AnalysisToolPak** and select OK  
+
+On a mac: **Tools** –> **Excel Add-ins** select AnalysisToolpak  
+
+### Regression
+*Linear regression* models the relationship between a dependent variable Y and explanatory/independent variable(s) X.  
+Simple linear regression has one explanatory variable, X, and can be modelled using the equation  
+Y = &beta;<sub>0</sub> + &beta;<sub>1</sub>X + &epsilon;   (1)
+- You can think of &beta;<sub>0</sub> as the y-intercept (b) and &beta;<sub>1</sub> as the slope (m) is an equation for a line y = m \* x + b from high school.
+- &epsilon; denotes the random error about the line which we cannot account for in our model  
+N.B. *Trend lines* are often calculated using linear regression.
+
+- The technique provides a way to determine linear patterns in the data set.
+- The so-called fitted model can be used to:
+        1. determine the strength of the relationship between variables Y and X and/or
+        2. predict the outcome variable Y for a new variable X.
+- To address either of these points, we need the fitted model comprised of the estimates of the regression equation coefficients.
+- &beta;&#770;<sub>0</sub> and &beta;&#770;<sub>1</sub> are the estimates for &beta;&#770;<sub>0</sub> and &beta;&#770;<sub>1</sub> respectively.
+- the fitted line is given by Y&#770; = &beta;&#770;<sub>0</sub> + &beta;&#770;<sub>1</sub>X  
+
+> N.B. To learn more on linear regression, I encourage you to take STAT 121/230 or read [Faraway’s Linear Models with R](https://books.google.ca/books?id=i0DOBQAAQBAJ&printsec=frontcover&dq=Faraway%27s+Linear+Models+with+R+(2005,+p.+59).&hl=en&sa=X&ved=0ahUKEwinqMbTjq3iAhVhMX0KHedMCnkQ6AEIMjAB#v=onepage&q&f=false)  
+
+### Regression in Excel- R^2 value
+- Regarding point 1. Excel regression function that will calculate R^2, the coefficient of determination which is a statistical measure of how close the data are to the fitted regression line.
+- Mathematically speaking, this is the percentage of the variation in Y that is explained by a linear model.
+- This range of this value is from 0–1.
+        - A value of 0 indicates that the model explains none of the variability of the response data around its mean and
+        - a value of 1 indicates that the model explains all the variability of the response data around its mean.
+        
+<img src="../images/03Excel/rsquared.png" alt="rsquared" width="600" >  
+**Figure**: The regression model on the left accounts for 38.0% of the variance (ie. R^2 = 0:38) while the one on the right accounts for 87.4% (i.e has an R^2 = 0:874). Source of image [here](https://blog.minitab.com/blog/adventures-in-statistics-2/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit).  
+
+### Linear Regression assumptions
+The legitimacy of this model depends on the following assumptions:
+1. **Linearity**: The means of the values of X fall approximately on the straight line &beta;<sub>0</sub> + &beta;<sub>1</sub>X  for simple linear regression, fall approximately on the plane &beta;<sub>0</sub> + &beta;<sub>1</sub>X<sub>1</sub>; + &beta;<sub>2</sub> X<sub>2</sub> for multiple linear regression, . . . (harder to visual in larger dimensions).
+2. The error terms &epsilon; ~<sup>i.i.d</sup> N(0; &sigma;<sup>2</sup>). That is:
+        - **Normality**: For each value of the explanatory variable (X) there is a subpopulation of response variables (Y ) that is normally distributed.
+        - **Constant variance (homoscedasticity)**: All subpopulations have the same standard deviation &sigma;<sup>2</sup>.
+        - **Independence**: All observations are independent.    
+N.B. non-constant variance = heteroscedasticity  
+
+
+### Regression in Excel- Testing Assumptions
+- To check the **linearity** assumption for simple linear regression, it is always a good idea to plot your data in a scatterplot.
+- To check the **normality** assumption, we can look at the *Normal Probability Plot* of residuals.
+        - If the data are normal the points should form an approximate straight line.
+- The **constant variance** assumption can be assessed using a *residual* plot (where a residual is the difference between our observed and predicted y, i.e. y<sub>i</sub> - y&#770;<sub>i</sub> ).
+        - A ‘good’ residual plot should show no pattern and look like random noise about 0.
+- A pattern in the residual plot may suggests a violation of the **independence** assumption. Reason for this may include:
+        - Time series data, related individuals (same family, same household).
+
+### Testing Assumptions Using Residual Plots
+**Figure**: Image taken from [Faraway’s Linear Models with R (2005, p. 59)](Figure: Image taken from Faraway’s Linear Models with R (2005, p. 59).).  
+<img src="../images/03Excel/resplot.png" alt="resplot" width="600" >  
+
+### Testing Assumptions Using Normal Probability Plots
+**Figure**: The points on a “good" normal probability plots should fall approximately on a straight line. Images taken from [SlideShare](https://www.slideshare.net/saqibshahzad26/26-assumptions)  
+<img src="../images/03Excel/ppplot.png" alt="ppplot" width="600" >   
+<img src="../images/03Excel/notok.png" alt="notok" width="600" >   
+
+
+### Regression in Excel
+> **Example:**  
+Given a data set of car weight and acceleration, determine if there is any relationship between them.  
+<img src="../images/03Excel/avsw2.png" alt="avsw2" width="600" >   
+Scatterplot shows weak relationship with no strong patterns, and we would expect to see this shown in the regression analysis.  
+
+Regression computes constants m and b in formula:  
+acceleration = m\*weight +b = &beta;<sub>1</sub>\*weight +&beta;<sub>0</sub>  
+Acceleration is the dependent variable and weight is the independent variable  
+<img src="../images/03Excel/Regression2.png" alt="Regression2" width="400" >   
+To start select, **Data Analysis** from the **Data** tab and then select **Regression** and **OK** .  
+
+
+### Regression Example Settings
+Settings:  
+- Response (dependent) data for the Input Y Range
+- Columns for the explanatory (independent) data (X Range).
+- For residual information select, Residuals,Standardized Residuals, and Residual Plots from the Residuals section.  
+<img src="../images/03Excel/RegressionSettings.png" alt="RegressionSettings" width="400" >   
+<img src="../images/03Excel/regpopup.png" alt="regpopup" width="400" >   
+If you select the column headers, be sure to select the Labels options to ensure they are treated as meta-data.  
+Notice that many of the features regarding the residuals are not selected by default.
+
+
+### Regression Example Results
+<img src="../images/03Excel/RegressionResults.png" alt="RegressionResults" width="600" >   
+All of the output is put into a new sheet. Read the values off of the table and form the regression equation:  
+acceleration = -0.001353896\*weight + 19.57266581  
+As one might expect, a weak relation is found as reflected by the R<sup>2</sup> value  
+- Only 17.4% of the variation in weight is explained by acceleration.
+Below the previous tables are the predicted y values (from the regression equation) as well as the residuals and standardized residuals (residuals divided by their standard deviation).  
+<img src="../images/03Excel/RER1a.png" alt="RER1a" width="600" >   
+eg. X<sub>1</sub>=3504; 
+hence Y&#770;<sub>1</sub> = -0.001353896 \* weight + 19.57266581 - 0.001353896 \* 3504 + 19.57266581  
+= 14:82861423 (with some rounding error)    
+
+<img src="../images/03Excel/RER1b.png" alt="RER1b" width="600" >  
+The observed acceleration for observation 1 was Y<sub>1</sub> = 12. To calculated the residual, we subtract the true value Y<sub>1</sub> from the predicted value Y&#770;<sub>1</sub>   
+e<sub>1</sub>(the residual of obs. 1) = Y<sub>1</sub> - Y&#770;<sub>1</sub>  
+= 12 - 14.82861423  
+= -2.828614226 (rounding error)  
+
+All plots are placed to the right of the charts.  
+<img src="../images/03Excel/normalpp.png" alt="normalpp" width="600" >    
+- This is a “good" residual plot since it shows no obvious pattern and points are symmetrically distributed around a horizontal line with a roughly constant variance.
+- The Normal Probability Plot shows some curvature in the tails indicating that the residuals are showing some departure from normality.  
+
+As you can see, these are also the results obtained when fitting a trendline to the original scatterplot  
+<img src="../images/03Excel/trendlineinfo.png" alt="trendlineinfo" width="600" >    
+
+
+### Try It: Regression
+> Question:  
+Perform a regression analysis between weight (dependent) and displacement (independent) variable.  
+<img src="../images/03Excel/WvsD.png" alt="WvsD" width="600" >    
+
+**Example 5**  
+How many of the following statements are TRUE?  
+1. Regression can only be used when we have one dependent variable Y and one explanatory variable X.  
+2. No assumptions are needed for the distribution of X in order to fit a linear regression model.  
+3. Residual plots may be used to test linear model assumptions.  
+4. A R2 value of 1 means that all points in our data set lie exactly on the fitted line.  
+A) 0 B) 1 C) 2 D) 3 E) 4  
+
+### START SOLUTIONS HERE
+**Example 5**  
+How many of the following statements are TRUE?  
+1. Regression can only be used when we have one dependent variable Y and one explanatory variable X. :x:   
+2. No assumptions are needed for the distribution of X in order to fit a linear regression model. :heavy_check_mark:   
+3. Residual plots may be used to test linear model assumptions. :heavy_check_mark:  
+4. A R2 value of 1 means that all points in our data set lie exactly on the fitted line. :heavy_check_mark:   
+A) 0 B) 1 C) 2 **D) 3** E) 4    
+### END SOLUTIONS HERE
+
+
+### Conclusion
+*Spreadsheets* are general purpose tools for data analysis that consist of a table of cells which contain data and formulas.  
+
+Formulas contain data values, cell references, and functions.  
+- Aggregate functions summarize multiple data values into a single value.  
+- Functions exist for statistics, string manipulation, lookup/indexing, and decisions.  
+Spreadsheets provide tools for data sorting, filtering, visualization using charts, and summarization (pivot tables).  
+
+Also contain tools for what-if scenarios, goal seek, linear solvers, and statistical analysis tools.
+
+### Objectives
+- Explain what a spreadsheet is.
+- Explain how cells are addressed in a spreadsheet.
+- List some of the ways to select cells in a spreadsheet.
+- Define and explain: formula, function, argument, concatenation
+- Use these functions: concatenate, lookup, index
+- Explain the difference between an absolute and relative address.
+- Explain how an aggregate function works. List some examples.
+- Explain how to use conditional formatting.
+- Use sorting and filtering.
+- Be able to create and edit charts and use chart features: trendlines, sparklines
+- Explain the usefulness of: what-if scenarios, goal seek, solver
+- Use and create pivot tables and charts.
+- Evaluate and create conditions. Use IF() to make decisions.
+
+
