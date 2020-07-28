@@ -419,7 +419,7 @@ Output: `$2.99`
 - If range_lookup is TRUE (the default setting) the first row of the table must be sorted in ascending order.
 Otherwise, VLOOKUP may return an incorrect or unexpected value.  
 `N.B. HLOOKUP` works in the exact same way as `VLOOKUP` only now we look across rows instead of columns.  
-<img src="../images/03Excel/partialLookupZoom.png" alt="partialLookupZoom" width="700" >     
+<img src="../images/03Excel/partialLookupZoom.png" alt="partialLookupZoom" width="500" >     
 
 Formula: `=VLOOKUP(B9,A2:C6,2,TRUE<sup>3</sup>)` where **B9** = 1.2  
 Output: `Apple`  
@@ -715,7 +715,7 @@ We can use a spreadsheet as a database by:
 
 ### Sorting Data
 Data can be sorted by selecting the **Sort** option under the **Data** menu. Select the column(s) to sort on and order to sort by.  
-<img src="../images/03Excel/Sorting.png" alt="Sorting" width="300" >   
+<img src="../images/03Excel/Sorting.png" alt="Sorting" width="800" >   
 
 ### Try it: Sorting Data
 > Exercise: Sort the data by revenue (desc) then product (asc).
