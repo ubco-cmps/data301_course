@@ -35,12 +35,13 @@ This is the official syllabus for DATA 301 and COSC 301.
 
 The grading scheme for this course is here:
 
-| Item                 | Weight | Due date(s) |
-| -------------------- | ------ | ----------- |
-| Clickers/Activities  | 5%     | TBD   |     |
-| Lab Assignments      | 30% (N x M%)   | TBD |
-| Oral Exams           | 35% (N x M%)   | TBD |
-| Group Project        | 30% (N x M%)   | TBD |
+| Item               | Weight        | Due date(s) |
+|--------------------|---------------|-------------|
+| Lab Assignments    | 20% (10 x 2%) | TBD         |
+| Bi-weekly quizzes  | 20% (5 x 4%)  | TBD         |
+| Project Milestones | 20% (5 x 4%)  | TBD         |
+| Final Project      | 10%           | TBD         |
+| Final Exam         | 25%           | TBD         |
 
 ```{attention} 
 All deadlines in this course have an automatic 48 hour grace period after the due dates listed above.
