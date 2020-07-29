@@ -1,56 +1,60 @@
 - file: about/home
 
-- header: About this Course
-- file: about/syllabus
+- chapter: About this Course
   sections:
-    - file: about/course_schedule
-    - file: about/accommodations
-    - file: about/doing_well
-    - file: about/faq
+    - file: about/syllabus
+      sections:
+        - file: about/course_schedule
+        - file: about/accommodations
+        - file: about/doing_well
+        - file: about/faq
 
-- header: Part 1
-- file: notes/part1
-  title: Introduction
-#
-- file: notes/01Intro
-  title: Week 1 - Introduction
-#
-- file: notes/02DataRep
-  title: Week 2 - Data Representations
-#
-- file: notes/03Excel
-  title: Week 3 - Excel
-#
-- file: notes/06PythonIInotes
-  title: Week 6 - Python II
-#
-
-- header: Part 2
-- file: notes/part2
-  title:  Introduction to Part 2
-- file: notes/09CommandLine
-  title: Week 9 - Command line
+- chapter: Part 1
   sections:
-    - file: notes/test_notebook
-- file: notes/visualization
-  title: Week 10 - Visualization
-
-- header: Part 3
-- file: notes/part3
-  title:  Introduction to Part 3
-#
-- file: notes/12OpenData
-  title: Week 12 - OpenData
+    - file: notes/part1
+      title: Introduction to Part 2
   #
-- file: notes/midterm1-review
-  title: Review
+    - file: notes/01Intro
+      title: Week 1 - Introduction
+  #
+    - file: notes/02DataRep
+      title: Week 2 - Data Representations
+    #
+    - file: notes/03Excel
+      title: Week 3 - Excel
+    #
+    - file: notes/06PythonIInotes
+      title: Week 6 - Python II
+#
 
-- header: Lab Materials
-- file: notes/labs
-  title: Lab Stuff
+- chapter: Part 2
+  sections:
+    - file: notes/part2
+      title:  Introduction to Part 2
+    - file: notes/09CommandLine
+      title: Week 9 - Command line
+      sections:
+        - file: notes/test_notebook
+    - file: notes/visualization
+      title: Week 10 - Visualization
 
-- header: Final Project
-- file: notes/project
-  title: Final Project
+- chapter: Part 3
+  sections:
+    - file: notes/part3
+      title:  Introduction to Part 3
+    #
+    - file: notes/12OpenData
+      title: Week 12 - OpenData
+      #
+    - file: notes/midterm1-review
+      title: Review
 
-  
+- chapter: Lab Materials
+  sections:
+    - file: notes/labs
+      title: Lab Stuff
+
+- chapter: Final Project
+  sections:
+    - file: notes/project
+      title: Final Project
