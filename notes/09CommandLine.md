@@ -1,7 +1,5 @@
 # Command Line
 
-## Fill
-
 ### Why learn command line?
 The command line is the text interface to the computer.
 Understanding the command line allows you to interact with the computer in ways that you often cannot with the graphical user interface (GUI).

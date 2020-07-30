@@ -3,7 +3,7 @@ title: DATA 301
 author: Firas Moosvi & Patricia Lasserre
 logo: images/logo.jpg
 copyright: ""
-exclude_patterns: ["LICENSE.md", "README.md", "source material"]
+exclude_patterns: ["LICENSE.md", "README.md", "source material","notes/05Databases.ipynb",notes/06Python.ipynb, "binary files/*"]
 
 latex:
   latex_documents:
