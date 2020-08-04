@@ -1,13 +1,11 @@
-- file: about/home
+- file: about/syllabus
 
 - chapter: About this Course
   sections:
-    - file: about/syllabus
-      sections:
-        - file: about/course_schedule
-        - file: about/accommodations
-        - file: about/doing_well
-        - file: about/faq
+    - file: about/course_schedule
+    - file: about/accommodations
+    - file: about/doing_well
+    - file: about/faq
 
 - chapter: Part 1
   sections:
