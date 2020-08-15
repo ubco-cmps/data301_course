@@ -11,6 +11,9 @@ latex:
 html:
   navbar_number_sections : false
   home_page_in_navbar : true
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
   baseurl : "https://firas.moosvi.com/courses/data301/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   extra_footer : |
       <div>
@@ -18,6 +21,18 @@ html:
       Please contact the instructors for more information</a>
       </div>
 
+launch_buttons:
+  notebook_interface : "jupyterlab"
+  binderhub_url      : "https://mybinder.org"
+  thebe              : true
+
+repository: 
+  url          : https://github.com/ubco-cmps/data301_course
+  path_to_book : ""
+  branch       : master
+
 sphinx:
   config:
     html_show_copyright: false
+  extra_extensions:
+    - sphinx_thebe
