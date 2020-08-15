@@ -9,6 +9,7 @@
 
 - chapter: Part 1
   sections:
+    - file: notes/ActiveExercises 
     - file: notes/part1
       title: Introduction to Part 2
   #
