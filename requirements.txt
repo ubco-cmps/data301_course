@@ -2,3 +2,7 @@ jupyter-book
 matplotlib
 numpy
 mysql
+ghp-import
+sphinx-thebe
+pandas
+plotly

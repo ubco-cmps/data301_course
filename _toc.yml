@@ -32,8 +32,6 @@
       title:  Introduction to Part 2
     - file: notes/09CommandLine
       title: Week 9 - Command line
-      sections:
-        - file: notes/test_notebook
     - file: notes/visualization
       title: Week 10 - Visualization
 
