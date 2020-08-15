@@ -1,3 +1,0 @@
-To convert data in SAS format to CSV, download and use SAS System Viewer here: http://support.sas.com/downloads/package.htm?pid=313#
-
-Data source: http://research.chicagobooth.edu/kilts/marketing-databases/dominicks

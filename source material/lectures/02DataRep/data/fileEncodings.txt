@@ -1,6 +1,0 @@
-Id	Name	Province	Balance
-1	Joe Smith	BC	345.42
-2	Angus Angel	AB	123.99
-3	Bart Brooke	ON	0
-4	"O'Shae, Riley"	NS	999.99
-5	Xavier Rhodes	MB	1456789.23

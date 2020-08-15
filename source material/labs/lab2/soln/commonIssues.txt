@@ -1,6 +1,0 @@
-Common Issues
--------------
-
-1) In Pivot table, sum of sales for store 50 is too high ($65,084.48 versus $64,829.97). Reason is that pivot table is including the records with OK=0. The answer only selects rows up to 22422 which does not include the OK=0 records. You can also add a filter to the Pivot table to only show records with OK=1.   Under PivotTable Tools, Analyze, Change Data Source to change the rows in a pivot table.
-
-2) You can use =lookup(C2,{170...},{1992,...,1996}) as a shorter formula compared to nested ifs. Even shorter to make it 1992+lookup(…).

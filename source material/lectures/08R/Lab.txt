@@ -1,5 +1,0 @@
-"Person" "Grade" "Passed"
-"Student1" "John" 45 FALSE
-"Student2" "Jill" 92 TRUE
-"Student3" "Jack" 91 TRUE
-"Student4" "James" NA NA

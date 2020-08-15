@@ -1,29 +1,0 @@
-?”Hey there”
-?765 * 39
-PRINT 3 + 2
-Debug.Print “Hello World!”
-
-Worksheets.Add
-
-?Worksheets.Count
-
-Worksheets("Sheet2”).Activate
-
-Worksheets(1).Activate
-
-Range("A1:A4").Select
-Range("E5,C4,D5").Select
-
-Range("A6").Activate
-
-?ActiveCell.Value
-
-ActiveCell.Value = 10
-
-bolditalics
-
-msgbox ActiveCell.Value
-
-ActiveCell.HorizontalAlignment = xlCenter
-
-?Selection.Interior.ColorIndex?Range("B7").Interior.ColorIndexWorksheets("data").Copy After:=Worksheets("forms")Worksheets("data").Rows(3).ActivateRows(2).Activate

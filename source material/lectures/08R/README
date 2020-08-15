@@ -1,5 +1,0 @@
-https://stackoverflow.com/questions/8857763/what-is-the-difference-between-casting-and-coercing
-
-The word coercion is used to denote an implicit conversion.
-
-The word cast typically refers to an explicit type conversion (as opposed to an implicit 
