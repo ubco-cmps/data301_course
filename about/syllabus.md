@@ -5,6 +5,9 @@ Syllabus
 =======================
 2020 - 2021, Winter Term 1
 
+```{warning} Please note that this syllabus is currently under active development, treat this as a draft.
+```
+
 This is the official syllabus for DATA 301 and COSC 301.
 
 ## A message from your instructor
@@ -23,13 +26,14 @@ This is the official syllabus for DATA 301 and COSC 301.
 | Pre-requisites      | Pre-Course 100                                  |
 | Co-requisites       | N/A                                             |
 | Costs               | Total $XX                                       |
-| Weekly meetings     | [TBD](https://cbc.ca)                           |
+| Weekly meetings     | [TBD]()                                         |
 | Lectures            | Online                                          |
-| URL                 | https://this.site                               |
+| URL                 | https://firas.moosvi.com/courses/data301        |
 | Instructor          | Firas Moosvi                                    |
 | Office              | [Zoom](https://ubc.zoom.us)                     |
-| Email               | [Contact via Piazza](https://piazza.com)        |
-| Teaching Assistants | TA1 (location) <br> TA2(location) <br> TA3 (location) <br> TA4 (location) <br> TA5 (location) |
+| Email               | [Contact via Piazza/Slack](https://piazza.com)        |
+
+<!-- | Teaching Assistants | TA1 (location) <br> TA2(location) <br> TA3 (location) <br> TA4 (location) <br> TA5 (location) | -->
 
 ## How will I be evaluated in this course?
 
