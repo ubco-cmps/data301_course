@@ -1,14 +1,69 @@
 ![](../images/header.jpg)
-[Header image attribution](https://unsplash.com/photos/qxCqkbF7tUc)
 
-Syllabus
+![](../images/UBCO_CMPS_header.png)
+
+DATA 301 (3) Introduction to Data Analytics
 =======================
-2020 - 2021, Winter Term 1
 
-```{warning} Please note that this syllabus is currently under active development, treat this as a draft.
+The [UBCO calendar description](http://www.calendar.ubc.ca/okanagan/courses.cfm?code=DATA) of this course is: 
+
+> Techniques for computation, analysis, and visualization of data using software. Manipulation of small and large data sets. 
+> Automation using scripting. Real-world applications from life sciences, physical sciences, economics, engineering, or psychology. 
+> No prior computing background is required. Credit will be granted for only one of COSC 301, DATA 301 or DATA 501. [3-2-0]
+> 
+> *Prerequisite*: Either (a) third-year standing, or (b) one of COSC 111 or COSC 122.
+> 
+> *Equivalency*: COSC 301.
+
+# Syllabus
+
+This is the official syllabus and course outline for DATA 301, COSC 301, and DATA 501.
+
+```{warning} Please note that this syllabus is currently under active development, there may be typos or missing sections; treat this as a draft until the course starts!
 ```
 
-This is the official syllabus for DATA 301 and COSC 301.
+Rather than interpreting this syllabus as a legal document that serves as a contract between the instructor and the students, I prefer to view the syllabus as a *living document*.
+Dr. John Warmer describes this best [in his article, "A syllabus is not a contract"](https://www.insidehighered.com/blogs/just-visiting/syllabus-not-contract):
+
+> ... this syllabus is not a contract, it is a living document which reflects the experiences, emotions, philosophies, and goals I bring to a particular course.
+
+and also: 
+
+> A syllabus as a plan is a lot like an itinerary before a trip. 
+> There’s some definite highlights we need to hit, but if something that seems cool and worth doing crops up unexpectedly, we need to seize that opportunity in the moment. 
+> If something really bad happens (the equivalent of a norovirus breakout on a cruise ship) we may need to abandon something previously scheduled entirely.
+
+Interestingly, it is worth noting that a recent review of legal precedents suggests that syllabi are not considered contracts by the courts {cite}`Rumore2016`.
+
+Having an adaptive and responsive syllabus is important to me as an instructor because it allows me to be more flexible with what/how/when you learn, and respond to your feedback in a meaningful way.
+I invite you to be co-contributors to this syllabus, and use the tools provided to add your own annotations, questions, and suggestions on making this syllabus work for you.
+
+```{important} Please note that I have your best interests in mind, and it is highly unlikely that I will ever change a syllabus in a way that negatively affects the class, or even individual students. If you believe a syllabus change is affecting you negatively, please do not hesitate to reach out to me, or [submit your feedback anonymously here](https://ubc.ca1.qualtrics.com/jfe/form/SV_6FhZZZAe9WoKdnv).
+```
+
+### Changes to the syllabus since the start of Term
+
+Any major changes to the syllabus (this page) will be documented here as well as the date the change was made. 
+
+| Change Date | Change summary | Rationale |
+|-------------|----------------|-----------|
+| TBD         | TBD            | TBD       |
+
+## About this course
+
+| Name            | Description                                    |
+|-----------------|------------------------------------------------|
+| Course          | DATA 301, COSC 301, DATA 501                   |
+| Term            | 2020/21 Winter Term 1                          |
+| Pre-requisites  | 3rd year status or COSC 111, 122               |
+| Co-requisites   | N/A                                            |
+| Costs           | $0 (Free!)                                     |
+| Weekly meetings | [Wednesdays 15:30-16:30 on Zoom]()             |
+| Lectures        | Online                                         |
+| URL             | https://firas.moosvi.com/courses/data301       |
+| Instructor      | Firas Moosvi                                   |
+| Office Hours    | [Zoom](https://ubc.zoom.us)                    |
+| Email           | [Contact via Piazza/Slack](https://piazza.com) |
 
 ## A message from your instructor
 
@@ -18,26 +73,18 @@ This is the official syllabus for DATA 301 and COSC 301.
 
 <div class="page_break"> </div>
 
-## About this Course
+## Contact the Teaching Team
 
-| Name                | Description                                     |
-|---------------------|-------------------------------------------------|
-| Course              | DATA 301 and COSC 301                           |
-| Pre-requisites      | Pre-Course 100                                  |
-| Co-requisites       | N/A                                             |
-| Costs               | Total $XX                                       |
-| Weekly meetings     | [TBD]()                                         |
-| Lectures            | Online                                          |
-| URL                 | https://firas.moosvi.com/courses/data301        |
-| Instructor          | Firas Moosvi                                    |
-| Office              | [Zoom](https://ubc.zoom.us)                     |
-| Email               | [Contact via Piazza/Slack](https://piazza.com)        |
-
-<!-- | Teaching Assistants | TA1 (location) <br> TA2(location) <br> TA3 (location) <br> TA4 (location) <br> TA5 (location) | -->
+| Team Member                               | Pronounce as | Contact | Office Hour |
+|-------------------------------------------|--------------|---------|-------------|
+| Dr. Firas Moosvi (he/his/him); Instructor |              | TBD     | TBD         |
+| (TA)                                      |              | TBD     | TBD         |
+| (TA)                                      |              | TBD     | TBD         |
+| (TA)                                      |              | TBD     | TBD         |
 
 ## How will I be evaluated in this course?
 
-The grading scheme for this course is here:
+The grading scheme for this course is:
 
 | Item               | Weight        | Due date(s) |
 |--------------------|---------------|-------------|
@@ -54,27 +101,27 @@ Any submissions submitted past the grace period will not be graded.
 
 ### Are there other requirements I need to know about to pass the course?
 
-Yes. To pass this course, you must do all of the following:
+- All students must satisfy ALL conditions to pass the course:
+    1. Pass the Lab component with a grade of at least 50%,
+    1. Pass the Quiz and Exam components (together) with a grade of at least 50%,
+    1. Pass the Final Project with a grade of at least 50%.
 
-- Achieve a minimum of 50% on the labs (8.0 / 16) with no more than 3 missed labs
-- Achieve a minimum of 50% on the tests and final exam (26.0 / 52) 
-- Achieve a minimum of 50% on whole course grade (50.0 / 100)
+- In addition to the requirements above, graduate students (i.e. those enrolled in DATA 501) must:
+    1. Earn an overall grade of 60% in the course, AND
+    1. Earn at least 60% on the Final Project,
+
+If students do not satisfy the appropriate requirements, the student will be assigned a maximum overall grade of 45 in the course.
 
 ## Why should I take this course?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Ut blandit faucibus fermentum.
-Fusce porttitor congue dolor, eget efficitur neque ultricies at.
-Nulla suscipit convallis elit, eu consequat felis.
-Quisque et malesuada justo, dapibus commodo enim.
-Sed malesuada turpis sed nibh dictum, a interdum dui tincidunt.
-Duis consequat magna non tortor dictum facilisis.
-In hac habitasse platea dictumst.
-Phasellus eu eros libero.
-Phasellus rhoncus eros vel metus porttitor porta.
-In et tellus finibus, mollis nisi sed, auctor est.
-Sed placerat ex at ligula eleifend, ac dapibus neque euismod.
-Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat enim sed feugiat malesuada.
+You should take this course to get an introduction to a very exciting field of data analytics!
+In nearly every industry, the collection, analysis, and reporting of data is taking centre stage. 
+Very soon (if not already), computational literacy will be a foundational skill and this course will give you a taste of that world. 
+
+Regardless of what your academic background is, you will find something interesting in this course. 
+DATA 301 is actually a very popular course in the department, and it gives students some important skills in programming, data science, data analysis, and communicating results effectively. 
+Though this is not an introductory programming course, we will make every attempt to make sure the content is accessible and interesting both to those that have prior computing experience, as well as those that don't. 
+Pay close attention to the supplementary videos and articles that will be linked in the lecture notes if you need a primer on some of the concepts that we will only briefly cover.
 
 ```{tip}
 Number one reason thing to take away from this is...
@@ -110,52 +157,8 @@ Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat e
 
 ## What do I need to purchase for this course?
 
-The following are required items for this course, and their costs (in $CAD) are:
-
-- Textbook ($XX)
-- Access to online homework system ($XX)
-- Lab Manual ($0)
-
-Being very conscious of the high costs of education, I have made efforts to minimize the additional cost of taking this course.
-Below is a justification of each required item and why I think you need it to succeed in this course.
-
-```{warning}
-Do not procrastinate buying access to the online homework system! You will need it right away.
-```
-
-### Textbook
-
-The required **textbook** for this course is:
-
-> Physics for Scientists and Engineers, 4e by Randall D. Knight
-
-and it is required because you need a reference text for this course, as well as practice problems, and a homework system.
-The Mastering Physics homework system comes bundled with this textbook.
-
-You may purchase either Volume 1 only or the full text.
-The cost for a new physical textbook is $---.
-It is also possible to get a digital textbook for $---.
-Volume 1 contains all of the material required for PHYS 111 and will be lighter and more portable. If you purchase the full text, it will include Volume 2 which will (tentatively) be used in the second part of Introductory Physics for the Physical Sciences (PHYS 121) in term 2.
-
-### Online homework system
-
-The required online homework system for this course is:
-
-> Mastering Physics 
-
-and it is required because it is a companion product to our textbook.
-There is considerable research ([here](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1949-8594.1995.tb15736.x) and [here](https://www.learningscientists.org/learning-scientists-podcast/2017/10/4/episode-4-spaced-practice)) that suggests distributed practice is more helpful for long term retention and overall learning.
-Furthermore with online Mastering Physics interface, your textbook, homework assignments, and tests are all on Mastering Physics.
-Mastering Physics also has some integrated study modules that can help you test yourself and take more effective notes.
-
-### Lab Manual
-
-The required **lab manual** for this course is:
-
-> Available on Canvas, free of charge
-
-In the past, this lab manual had to be purchased from the UBC Bookstore.
-This year, because the labs are all online, a digital version of the lab manual is available to you on Canvas free of charge. 
+There is no requirement to purchase anything for this course.
+All of the course material, including videos, labs, and course notes will be available on this site.
 
 ## What should I think about if I'm considering withdrawing from the course?
 
@@ -163,13 +166,16 @@ First of all, I'm sorry you're having trouble and are considering withdrawing fr
 This is no problem, and I will not be personally offended or upset you need to do this, I encourage you to do what you feel is right for you and your situation. 
 Below is some information that might be helpful for you in making the decision.
 
-| Withdrawal type | Effect on Transcript | Tuition refund |
-| --------------- | -------------------- | -------------- | 
-| Before the 1st withdrawal date | None  | 100% refund    |
-| Before the 2nd withdrawal date  | W on transcript | [0 - 50%](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=14,339,1033,0) refund (depending on the date you're withdrawing) |
-| After the 2nd withdrawal date (cannot happen without faculty approval) | W on transcript | 0% |
+```{warning} Please note that it is the student's responsibility to check the withdrawl dates as [listed in the UBC Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=14,339,1033,0).
+```
 
-There are other things to consider as well, including your graduation requirements/timelines, eligibility for student loans, bursaries, scholarships etc.
+| Withdrawal type                                                        | Effect on Transcript | Tuition refund                                                                                                                |
+|------------------------------------------------------------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Before the 1st withdrawal date                                         | None                 | 100% refund                                                                                                                   |
+| Before the 2nd withdrawal date                                         | W on transcript      | [0 - 50%](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=14,339,1033,0) refund (depending on the date you're withdrawing) |
+| After the 2nd withdrawal date (cannot happen without faculty approval) | W on transcript      | 0%                                                                                                                            |
+
+There are factors other than money and your transcript to consider as well, including your mental health, graduation requirements/timelines, eligibility for student loans, bursaries, scholarships etc.
 I advise you to [read the full list of considerations](https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/) here and contact your faculty advisor if you have additional questions.
 
 ## How do I do well in this course? 
@@ -190,16 +196,14 @@ Nulla suscipit convallis elit, eu consequat felis.
 Sed placerat ex at ligula eleifend, ac dapibus neque euismod.
 Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat enim sed feugiat malesuada.
 
-### ... but I've never been good at physics or math!
-
-### ... but I don't even like physics or math!
+### ... but I've never been good at coding
 
 ## What type of information will I collect about you in this course?
 
 Having taught [DSCI 541: Security, Ethics, and Security](https://github.com/UBC-MDS/DSCI_541_priv-eth-sec) in the UBC Master of Data Science in the past, I am very aware of the surveillance culture that has permeated our society and heralded the [End of Privacy](https://www.youtube.com/watch?v=NesTWiKfpD0) as we know it.
 That being said, as an instructor, I care tremendously about your learning and the course-related data that is collected about you is extremely valuable. 
 Broadly speaking, this relatively new field is called **Learning Analytics**.
-[Learning analytics](https://www.solaresearch.org/about/what-is-learning-analytics/) involves the collection and analysis of data about learners for the [express purpose](https://www.collinsdictionary.com/dictionary/english/the-express-purpose-of) of improving their learning by optimizing teaching and learning practices. 
+[Learning Analytics](https://www.solaresearch.org/about/what-is-learning-analytics/) involves the collection and analysis of data about learners for the [express purpose](https://www.collinsdictionary.com/dictionary/english/the-express-purpose-of) of improving their learning by optimizing teaching and learning practices. 
 
 In this course, we will be using the following learning technologies (privacy policies linked): 
 
@@ -249,7 +253,7 @@ In some very exceptional (i.e. very rare) cases, I reserve the right to grant an
 
 ### What if I have dependents that rely on me for care and unpredictable emergencies may arise?
 
-Let's talk, send me a private message and we can discuss it.
+Let's talk, send me a private message and we can discuss your needs.
 I do not necessarily need to know all the personal details, just a high-level summary of your situation and what you think an ideal solution would be.
 
 I'm sure we will come to some agreement, generally the earlier you let me know of any special circumstances or accommodation, the more I'll be able to do for you!
@@ -294,13 +298,13 @@ A more detailed description of academic integrity, including the University’s 
 
 With these features, and many other little things, I sincerely hope that you will consider completing this course with maximum integrity so that you never have to feel guilty, ashamed, or disappointed in yourself and your actions!
 
-To make it even easier for you to decide what isn't allowed, below is a list of things that I *definitely** consider to be academic dishonesty:
+To make it even easier for you to decide what isn't allowed, below is a list of things that I **definitely** consider to be academic dishonesty:
 
 - Asking others for their work in the course (whether question by question, or all at once)
 - Sending others your work in the course
 - Doing tests collaboratively (tests **must** be done by yourself and alone)
 - Sending others your test questions and/or answers
-- Sharing any course material onto Chegg, Course Hero, Slader or other similar sites
+- Sharing any course material onto Chegg, Course Hero, Slader, or other similar sites
 - Searching for solutions to course material on Chegg, Course Hero, Slader or other similar sites
 - Blindly googling the question in hopes of finding someone who had a similar question and then copying their answer
     - Note, googling to find resources to understand specific concepts or general ideas is highly encouraged!
@@ -326,7 +330,7 @@ If I am not able to help you myself, then I can probably direct you to the right
 If you need extra help, or extra time to deal with something you're going through, just ask.
 You will *never* owe me an explanation about your physical health, mental health, or those of your family members, friends, etc... I will believe you, and I will trust you.
 I will not judge you, nor think any less of you.
-I will do everything in my power to work something that is both reasonable and fair. 
+I will do everything in my power to work out something that is both reasonable and fair. 
 This, I promise!
 
 ## UBC Policies
@@ -339,12 +343,19 @@ UBC values academic honesty and students are expected to acknowledge the ideas g
 
 ## Attribution
 
-The syllabus was constructed and adapted from many other templates and examples.
+The syllabus was constructed and adapted from several other templates and examples.
 Below is the list of resources I have used to put this syllabus together:
 
 - Physics 117 (Instructor: [Dr. Simon Bates](https://sites.google.com/site/simonpbates/home?authuser=0))
 - Psychology 417A-951 (Instructor: [Dr. Catherine Rawn](https://blogs.ubc.ca/catherinerawn/))
-- [Dr. Christopher Jones](https://hcommons.org/members/profchrismjones/) and [this tweet](https://twitter.com/ProfChrisMJones/status/1282036533562834944)
-- [Jesse Stommell](https://www.jessestommel.com/designing-for-care/)
+- [Designing for Care, Dr. Jesse Stommell](https://www.jessestommel.com/designing-for-care/)
+- [Annotate your syllabus, Dr. Remi Kalir](http://remikalir.com/blog/annotate-your-syllabus-3-0/)
+- [Dr. Christopher Jones](https://hcommons.org/members/profchrismjones/) and [his viral tweet](https://twitter.com/ProfChrisMJones/status/1282036533562834944)
+- Course Header: Photo by [Carlos Muza Unsplash](https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+- Course Logo: Photo by [fauxels from Pexels](https://www.pexels.com/photo/photo-of-person-holding-mobile-phone-3183153/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
 
-### References
+## References
+
+```{bibliography} about/citations.bib
+:style: unsrt
+```

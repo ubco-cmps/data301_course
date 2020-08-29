@@ -1,14 +1,19 @@
 - file: about/syllabus
 
-- chapter: About this Course
-  sections:
+- part: About this Course
+  chapters:
     - file: about/course_schedule
     - file: about/accommodations
     - file: about/doing_well
     - file: about/faq
 
-- chapter: Part 1
-  sections:
+- part: Course Feedback
+  chapters:
+    - file: about/feedback
+      title: Anonymous Feedback Form
+
+- part: Part 1
+  chapters:
     - file: notes/ActiveExercises 
     - file: notes/part1
       title: Introduction to Part 2
@@ -26,8 +31,8 @@
       title: Week 6 - Python II
 #
 
-- chapter: Part 2
-  sections:
+- part: Part 2
+  chapters:
     - file: notes/part2
       title:  Introduction to Part 2
     - file: notes/09CommandLine
@@ -35,8 +40,8 @@
     - file: notes/visualization
       title: Week 10 - Visualization
 
-- chapter: Part 3
-  sections:
+- part: Part 3
+  chapters:
     - file: notes/part3
       title:  Introduction to Part 3
     #
@@ -46,12 +51,12 @@
     - file: notes/midterm1-review
       title: Review
 
-- chapter: Lab Materials
-  sections:
+- part: Lab Materials
+  chapters:
     - file: notes/labs
       title: Lab Stuff
 
-- chapter: Final Project
-  sections:
+- part: Final Project
+  chapters:
     - file: notes/project
       title: Final Project
