@@ -1,5 +1,6 @@
 - file: about/syllabus
-
+  title: Syllabus
+  
 - part: About this Course
   chapters:
     - file: about/course_schedule
