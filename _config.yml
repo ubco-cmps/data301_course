@@ -15,6 +15,9 @@ html:
   use_issues_button: true
   use_edit_page_button: true
   baseurl : "https://firas.moosvi.com/courses/data301/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  comments:
+    utterances:
+      repo: "github.com/ubco-cmps/data301_course"
   extra_footer : |
       <div>
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
