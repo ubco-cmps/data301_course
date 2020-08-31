@@ -21,14 +21,16 @@ html:
       repo: "github.com/ubco-cmps/data301_course"
   extra_footer : |
 
-  <script src="https://utteranc.es/client.js"
-        repo="https://github.com/ubco-cmps/data301_course"
-        issue-term="pathname"
-        label="comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
+      <div>
+      <script src="https://utteranc.es/client.js"
+            repo="https://github.com/ubco-cmps/data301_course"
+            issue-term="pathname"
+            label="comment"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+      </div>
 
       <div>
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
