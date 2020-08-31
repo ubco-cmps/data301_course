@@ -14,6 +14,7 @@ html:
   use_repository_button: true
   use_issues_button: true
   use_edit_page_button: true
+  google_analytics_id: UA-168693744-4
   baseurl : "https://firas.moosvi.com/courses/data301/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   comments:
     utterances:
