@@ -7,7 +7,7 @@ It may take about 90s to build, and another few seconds to become live.
 
 ## Attribution
 
-All content on this website is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and is attributed to the DATA 301 Course Instructors:
+Unless specified explicitly, all content on this website is [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and is attributed to the DATA 301 Course Instructors:
 
 - Dr. Ramon Lawrence
 - Dr. Irene Vrbik
