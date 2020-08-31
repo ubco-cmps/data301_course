@@ -78,7 +78,7 @@ Any major changes to the syllabus (this page) will be documented here as well as
 
 | Team Member                               | Pronounce as | Contact | Office Hour |
 |-------------------------------------------|--------------|---------|-------------|
-| Dr. Firas Moosvi (he/his/him); Instructor |              | TBD     | TBD         |
+| Dr. Firas Moosvi (he/his/him); Instructor | Fur-az Moose-vee     | TBD     | TBD         |
 | (TA)                                      |              | TBD     | TBD         |
 | (TA)                                      |              | TBD     | TBD         |
 | (TA)                                      |              | TBD     | TBD         |
@@ -117,7 +117,8 @@ If students do not satisfy the appropriate requirements, the student will be ass
 
 You should take this course to get an introduction to a very exciting field of data analytics!
 In nearly every industry, the collection, analysis, and reporting of data is taking centre stage. 
-Very soon (if not already), computational literacy will be a foundational skill and this course will give you a taste of that world. 
+Very soon (if not already), computational literacy will be a foundational skill and this course will give you a taste of that world.
+To show you the breadth and depth of careers available in data analytics, several recent graduates will be profiled and showcased.
 
 Regardless of what your academic background is, you will find something interesting in this course. 
 DATA 301 is actually a very popular course in the department, and it gives students some important skills in programming, data science, data analysis, and communicating results effectively. 
@@ -125,16 +126,17 @@ Though this is not an introductory programming course, we will make every attemp
 Pay close attention to the supplementary videos and articles that will be linked in the lecture notes if you need a primer on some of the concepts that we will only briefly cover.
 
 ```{tip}
-Number one reason thing to take away from this is...
+You should take this course to get an introduction to a very exciting field of data analytics!
 ```
 
-### Course Learning Outcomes (AKA what will I learn in this course?)
+## Course Learning Outcomes (AKA what will I learn in this course?)
 
-1. Pellentesque pellentesque ut arcu vel sagittis.
-1. Sed faucibus at ipsum pharetra euismod.
-1. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-1. Vivamus pharetra pretium dui, nec semper enim vehicula nec.
-1. Quisque vel odio dui. Aenean ullamcorper arcu sit amet gravida dapibus.
+1. Understand data representation formats and techniques and how to use them.
+1. Work with large datasets and learn to manipulate them programmatically. 
+1. Experience using a wide-range of data analytics tools including Excel, Python, SQL,
+and visualization packages and software.
+1. Develop a computational thinking approach to problem-solving and use programs to solve
+data tasks.
 
 ```{tip}
 The full course schedule is available here: {ref}`page_Course_Schedule`.
@@ -201,25 +203,11 @@ Below is some information that might be helpful for you in making the decision.
 There are factors other than money and your transcript to consider as well, including your mental health, graduation requirements/timelines, eligibility for student loans, bursaries, scholarships etc.
 I advise you to [read the full list of considerations](https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/) here and contact your faculty advisor if you have additional questions.
 
+<!-- 
 ## How do I do well in this course? 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Ut blandit faucibus fermentum.
-Fusce porttitor congue dolor, eget efficitur neque ultricies at.
-Nulla suscipit convallis elit, eu consequat felis.
-
-1. Quisque et malesuada justo, dapibus commodo enim.
-1. Sed malesuada turpis sed nibh dictum, a interdum dui tincidunt.
-1. Duis consequat magna non tortor dictum facilisis.
-1. In hac habitasse platea dictumst.
-1. Phasellus eu eros libero.
-1. Phasellus rhoncus eros vel metus porttitor porta.
-1. In et tellus finibus, mollis nisi sed, auctor est.
-
-Sed placerat ex at ligula eleifend, ac dapibus neque euismod.
-Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat enim sed feugiat malesuada.
-
 ### ... but I've never been good at coding
+-->
 
 ## What type of information will I collect about you in this course?
 
@@ -383,6 +371,8 @@ Below is the list of resources I have used to put this syllabus together:
 :style: unsrt
 ```
 
+<!--
+
 ## Test 
 
 <label><input type="checkbox" id="box-1" class="box"> Item 1 </input></label>
@@ -391,11 +381,4 @@ Below is the list of resources I have used to put this syllabus together:
 
 <label><input type="checkbox" id="box-3" class="box"> Item 3 </input></label>
 
-<script src="https://utteranc.es/client.js"
-        repo="https://github.com/ubco-cmps/data301_course"
-        issue-term="pathname"
-        label="comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
+-->
