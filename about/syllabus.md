@@ -391,3 +391,11 @@ Below is the list of resources I have used to put this syllabus together:
 
 <label><input type="checkbox" id="box-3" class="box"> Item 3 </input></label>
 
+<script src="https://utteranc.es/client.js"
+        repo="https://github.com/ubco-cmps/data301_course"
+        issue-term="pathname"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
