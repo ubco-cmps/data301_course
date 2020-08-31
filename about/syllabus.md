@@ -69,10 +69,12 @@ Any major changes to the syllabus (this page) will be documented here as well as
 
 ## A message from your instructor
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+Coming soon...
+<!--
+[<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://player.vimeo.com/video/148751763" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-</div>
-
+</div>]
+-->
 <div class="page_break"> </div>
 
 ## Why should I take this course?
