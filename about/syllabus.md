@@ -46,7 +46,7 @@ I invite you to be co-contributors to this syllabus, and use the tools provided 
 
 Any major changes to the syllabus (this page) will be documented here as well as the date the change was made. 
 
-| Change Date | Change summary | Rationale |
+| Change Date | Summary | Rationale |
 |-------------|----------------|-----------|
 | TBD         | TBD            | TBD       |
 
@@ -110,7 +110,7 @@ The grading scheme for this course is:
 | Item               | Weight        | Due date(s) |
 |--------------------|---------------|-------------|
 | Lab Assignments    | 20% (10 x 2%) | TBD         |
-| Bi-weekly Tests  | 20% (5 x 4%)  | TBD         |
+| Bi-weekly Tests    | 20% (5 x 4%)  | TBD         |
 | Project Milestones | 20% (5 x 4%)  | TBD         |
 | Final Project      | 10%           | TBD         |
 | Final Exam         | 25%           | TBD (Take-home) |
@@ -219,7 +219,7 @@ I advise you to [read the full list of considerations](https://students.ok.ubc.c
 
 ## What type of information will I collect about you in this course?
 
-Having taught [DSCI 541: Security, Ethics, and Security](https://github.com/UBC-MDS/DSCI_541_priv-eth-sec) in the UBC Master of Data Science in the past, I am very aware of the surveillance culture that has permeated our society and heralded the [End of Privacy](https://www.youtube.com/watch?v=NesTWiKfpD0) as we know it.
+Having taught [DSCI 541: Privacy, Ethics, and Security](https://github.com/UBC-MDS/DSCI_541_priv-eth-sec) in the UBC Master of Data Science in the past, I am very aware of the surveillance culture that has permeated our society and heralded the [End of Privacy](https://www.youtube.com/watch?v=NesTWiKfpD0) as we know it.
 That being said, as an instructor, I care tremendously about your learning and the course-related data that is collected about you is extremely valuable. 
 Broadly speaking, this relatively new field is called **Learning Analytics**.
 [Learning Analytics](https://www.solaresearch.org/about/what-is-learning-analytics/) involves the collection and analysis of data about learners for the [express purpose](https://www.collinsdictionary.com/dictionary/english/the-express-purpose-of) of improving their learning by optimizing teaching and learning practices. 
@@ -456,7 +456,7 @@ Below is the list of resources I have used to put this syllabus together:
 
 ## References
 
-```{bibliography} about/citations.bib
+```{bibliography} citations.bib
 :style: unsrt
 ```
 
