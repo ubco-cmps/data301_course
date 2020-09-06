@@ -5,6 +5,7 @@
 # Course Syllabus
 
 This is the official syllabus and course outline for DATA 301, COSC 301, and DATA 501.
+For convenience, we will use DATA 301 in place of DATA301/501 and COSC 301.
 
 ```{warning} Please note that this syllabus is currently under active development, there may be typos or missing sections; treat this as a draft until the course starts!
 ```
@@ -136,6 +137,10 @@ Any submissions submitted past the grace period will not be graded.
 
 If students do not satisfy the appropriate requirements, the student will be assigned a maximum overall grade of 45 in the course.
 
+```{note} 
+I reserve the right to have slightly different expectations for the lab assignments and final project depending on whether students are enrolled in DATA 301, COSC 301, or DATA 501.
+```
+
 ## Course Learning Outcomes (AKA what will I learn in this course?)
 
 1. Understand data representation formats and techniques and how to use them.
@@ -196,11 +201,11 @@ Here are the key principles I intend to apply in this class:
 ## Course Communication
 
 - For lectures, labs, tutorials, and office hours we will be using Zoom.
-- For official course communication, we will be using [Canvas](https://canvas.ubc.ca/courses/63995) and [Piazza](https://piazza.com/ubc.ca/winterterm12020/phys1110012020w).
-- For unofficial chat, community building, sharing of tiktoks, cat videos, and general conversation we will (optionally) be using a Discord server.
+- For official course communication, we will be using [Canvas](https://canvas.ubc.ca/courses/63469) and [Piazza](https://canvas.ubc.ca/courses/63469/external_tools/201?display=borderless).
+- For unofficial chat, community building, sharing of tiktoks, cat videos, and general conversation we will (optionally) be using a Discord server OR a Slack team.
 
 ```{warning}
-Please note signing up for the Discord server is **completely optional**! You will not miss anything course-related if you choose not to get on the Discord.
+Please note signing up for the Discord/Slack is **completely optional**! You will not miss anything course-related if you choose not to get on this unofficial platform.
 ```
 
 ### Sign up for a (free) Zoom account
@@ -217,9 +222,11 @@ Rather than emailing questions to the teaching staff, I encourage you to post yo
 
 [Sign up for our class Piazza](https://piazza.com/ubc.ca/winterterm12020/).
 
-### Sign up for the Slack team [Optional]
+### Sign up for the Slack or Discord team [Optional]
 
-You can [download Discord for free on desktop here](https://discord.com/download), or through the [Google Play store](https://play.google.com/store/apps/details?id=com.discord) or [Apple App Store](https://apps.apple.com/us/app/discord/id985746746) on mobile and tablets.
+Coming soon...
+
+<!-- You can [download Discord for free on desktop here](https://discord.com/download), or through the [Google Play store](https://play.google.com/store/apps/details?id=com.discord) or [Apple App Store](https://apps.apple.com/us/app/discord/id985746746) on mobile and tablets.
 
 Invitation to [join the unofficial UBCO first year science Discord Server](https://discord.gg/uzcEBSK)!
 
@@ -229,8 +236,7 @@ Here is a [Beginner's Guide to Discord](https://support.discord.com/hc/en-us/art
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/3ooRuvrPQsU" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-Again, please note signing up for the Discord server is **completely optional**, and is an experiment we are trying to help maintain human interactions during online learning.
-
+Again, please note signing up for the Discord server is **completely optional**, and is an experiment we are trying to help maintain human interactions during online learning. -->
 
 ## What should I think about if I'm considering withdrawing from the course?
 

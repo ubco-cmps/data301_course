@@ -8,56 +8,61 @@
     - file: about/doing_well
     - file: about/faq
 
+- part: Getting started!
+  chapters:
+    - file: getting-started/todo_list
+      title: Things to do before start of course
+
 - part: Course Feedback
   chapters:
     - file: about/feedback
       title: Anonymous Feedback Form
 
-- part: Part 1
-  chapters:
-    - file: notes/ActiveExercises 
-    - file: notes/part1
-      title: Introduction to Part 2
-  #
-    - file: notes/01Intro
-      title: Week 1 - Introduction
-  #
-    - file: notes/02DataRep
-      title: Week 2 - Data Representations
-    #
-    - file: notes/03Excel
-      title: Week 3 - Excel
-    #
-    - file: notes/06PythonIInotes
-      title: Week 6 - Python II
-#
+# - part: Part 1
+#   chapters:
+#     - file: notes/ActiveExercises 
+#     - file: notes/part1
+#       title: Introduction to Part 2
+#   #
+#     - file: notes/01Intro
+#       title: Week 1 - Introduction
+#   #
+#     - file: notes/02DataRep
+#       title: Week 2 - Data Representations
+#     #
+#     - file: notes/03Excel
+#       title: Week 3 - Excel
+#     #
+#     - file: notes/06PythonIInotes
+#       title: Week 6 - Python II
+# #
 
-- part: Part 2
-  chapters:
-    - file: notes/part2
-      title:  Introduction to Part 2
-    - file: notes/09CommandLine
-      title: Week 9 - Command line
-    - file: notes/visualization
-      title: Week 10 - Visualization
+# - part: Part 2
+#   chapters:
+#     - file: notes/part2
+#       title:  Introduction to Part 2
+#     - file: notes/09CommandLine
+#       title: Week 9 - Command line
+#     - file: notes/visualization
+#       title: Week 10 - Visualization
 
-- part: Part 3
-  chapters:
-    - file: notes/part3
-      title:  Introduction to Part 3
-    #
-    - file: notes/12OpenData
-      title: Week 12 - OpenData
-      #
-    - file: notes/midterm1-review
-      title: Review
+# - part: Part 3
+#   chapters:
+#     - file: notes/part3
+#       title:  Introduction to Part 3
+#     #
+#     - file: notes/12OpenData
+#       title: Week 12 - OpenData
+#       #
+#     - file: notes/midterm1-review
+#       title: Review
 
-- part: Lab Materials
-  chapters:
-    - file: notes/labs
-      title: Lab Stuff
+# - part: Lab Materials
+#   chapters:
+#     - file: notes/labs
+#       title: Lab Stuff
 
-- part: Final Project
-  chapters:
-    - file: notes/project
-      title: Final Project
+# - part: Final Project
+#   chapters:
+#     - file: notes/project
+#       title: Final Project

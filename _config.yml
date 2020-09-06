@@ -41,3 +41,5 @@ sphinx:
     html_show_copyright: false
   extra_extensions:
     - sphinx_thebe
+parse:
+  myst_extended_syntax: true
