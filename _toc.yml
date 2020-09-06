@@ -5,7 +5,7 @@
   chapters:
     - file: about/course_schedule
     - file: about/accommodations
-    - file: about/doing_well
+#    - file: about/doing_well
     - file: about/faq
 
 - part: Getting started!

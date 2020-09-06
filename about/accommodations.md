@@ -2,14 +2,6 @@
 Accommodations
 =======================
 
-## One 
+More details on this page is coming soon...
 
-test test
-
-## Two
-
-test test
-
-## Three 
-
-test test
+In the meantime, please [contact the DRC](https://students.ok.ubc.ca/academic-success/disability-resources/).

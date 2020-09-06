@@ -1,10 +1,4 @@
 Frequently Asked Questions
 =======================
 
-1. Question
-
-> Answer
-
-2. Question 2
-
-> Answer
+Please see the Course Piazza forums for Frequently Asked Questions.
