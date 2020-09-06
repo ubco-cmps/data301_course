@@ -59,7 +59,7 @@ Any major changes to the syllabus (this page) will be documented here as well as
 | Pre-requisites  | 3rd year status or COSC 111, 122               |
 | Co-requisites   | N/A                                            |
 | Costs           | $0 (Free!)                                     |
-| Weekly meetings | [Wednesdays 15:30-16:30 on Zoom]()             |
+| Weekly meetings | Wednesdays 15:30-16:30 on Zoom                 |
 | Lectures        | Online                                         |
 | Laboratory      | You **must** register for a laboratory section |
 | URL             | https://firas.moosvi.com/courses/data301       |
@@ -191,7 +191,46 @@ Here are the key principles I intend to apply in this class:
 1. Effective teaching is inclusive teaching.
 1. Learning technologies must be leveraged to scale instructor effort across multiple classes.
 1. Exploring the connections between different disciplines is an extremely powerful motivator.
-1. Teaching is three parts preparation, two parts classroom management, and one part execution. 
+1. Teaching is three parts preparation, two parts classroom management, and one part execution.
+
+## Course Communication
+
+- For lectures, labs, tutorials, and office hours we will be using Zoom.
+- For official course communication, we will be using [Canvas](https://canvas.ubc.ca/courses/63995) and [Piazza](https://piazza.com/ubc.ca/winterterm12020/phys1110012020w).
+- For unofficial chat, community building, sharing of tiktoks, cat videos, and general conversation we will (optionally) be using a Discord server.
+
+```{warning}
+Please note signing up for the Discord server is **completely optional**! You will not miss anything course-related if you choose not to get on the Discord.
+```
+
+### Sign up for a (free) Zoom account
+
+Instructions coming soon...
+
+### Sign up for a (free) Piazza account [Required]
+
+This term we will be using Piazza for class discussion.
+The system is highly catered to getting you help fast and efficiently from classmates, the TA, and myself.
+Rather than emailing questions to the teaching staff, I encourage you to post your questions on Piazza.
+
+*The Piazza tool is stored on servers outside Canada. When you access this site by clicking on the link through Canvas, you are being transferred to these servers. In order to protect your identity, UBC obfuscates your user ID before it is sent to the site. However, Piazza does require you to create an account on their servers. While Piazza adheres to strict U.S. privacy regulations (FERPA), UBC cannot guarantee security of your private details on servers outside of Canada. Please exercise caution whenever using personal information. You may wish to use a pseudonym to protect your privacy if you have concerns.*
+
+[Sign up for our class Piazza](https://piazza.com/ubc.ca/winterterm12020/).
+
+### Sign up for the Slack team [Optional]
+
+You can [download Discord for free on desktop here](https://discord.com/download), or through the [Google Play store](https://play.google.com/store/apps/details?id=com.discord) or [Apple App Store](https://apps.apple.com/us/app/discord/id985746746) on mobile and tablets.
+
+Invitation to [join the unofficial UBCO first year science Discord Server](https://discord.gg/uzcEBSK)!
+
+Here is a [Beginner's Guide to Discord](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord) and if you prefer watching a video:
+
+<div class="container">
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/3ooRuvrPQsU" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Again, please note signing up for the Discord server is **completely optional**, and is an experiment we are trying to help maintain human interactions during online learning.
+
 
 ## What should I think about if I'm considering withdrawing from the course?
 
@@ -229,6 +268,7 @@ In this course, we will be using the following learning technologies (privacy po
 - [Canvas](https://faculty.canvas.ubc.ca/canvas-privacy/)
 - [Piazza](https://piazza.com/legal/privacy)
 - [Sli.do](https://www.sli.do/terms#privacy-policy)
+- [Hypothes.is](https://web.hypothes.is/privacy/)
 
 All tools used in the course will be used in a [FIPPA-compliant](https://universitycounsel.ubc.ca/subject-areas/access-and-privacy-general/access-to-information/about-fippa/) manner, with your privacy top of mind. 
 New tools may be added to the course as the need arises, and I will update this section with the appropriate information and make an announcement if a new tool is added midway through a course.
@@ -254,21 +294,21 @@ As a matter of principle, UBC is committed to promoting human rights, equity and
 [Policy 73](https://universitycounsel.ubc.ca/files/2019/02/policy73.pdf) (Accommodation for Students with Disabilities) sets out principles and processes governing the accommodation of students with disabilities.
 
 All accommodations for this course are handled through the [Disability Resource Centre](https://students.ok.ubc.ca/academic-success/disability-resources/contact-the-disability-resource-centre/) and I encourage you to contact them to book an appointment. 
-For a more detailed guide, the {ref}`page_Accommodations` page has a list of steps you should take for this course. 
+<!-- For a more detailed guide, the {ref}`page_Accommodations` page has a list of steps you should take for this course. -->
 
 ### What if I miss labs, tests, or the exam due to an illness, health, or other personal situation?
 
 Students who, because of unforeseen events, are absent during the term and are unable to complete tests or other graded work, should normally discuss with their instructors how they can make up for missed work.
 If ill health is an issue, students are encouraged to seek attention from a health professional.
 Campus Health and Counselling will normally provide documentation only to students who have been seen previously at these offices for treatment or counselling specific to conditions associated with their academic difficulties. 
-Students who feel that requests for consideration have not been dealt with fairly by their instructors may take their concerns first to the Head of the Department, and if not resolved, to the Office of the Dean. Further information can be found at the UBCO Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0).
+Students who feel that requests for consideration have not been dealt with fairly by their instructors may take their concerns first to the Head of the Department, and if not resolved, to the Office of the Dean. Further information can be found at the [UBCO Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0).
 
 ```{tip}
 If you miss a course component due to an illness, health, or other personal situation, please reach out to me as soon as you are comfortable, and I'll work with you to get you back on track.
 ```
 ### What if I have dependents that rely on me for care and unpredictable emergencies may arise?
 
-Let's talk, send me a private message and we can discuss your needs.
+Let's talk, send me a private message and we can discuss it.
 I do not necessarily need to know all the personal details, just a high-level summary of your situation and what you think an ideal solution would be.
 
 I'm sure we will come to some agreement, generally the earlier you let me know of any special circumstances or accommodation, the more I'll be able to do for you!
@@ -346,7 +386,7 @@ To make it even easier for you to decide what isn't allowed, below is a list of 
 - Doing tests collaboratively (tests **must** be done by yourself and alone)
 - Sending others your test questions and/or answers
 - Sharing any course material onto Chegg, Course Hero, Slader, or other similar sites
-- Searching for solutions to course material on Chegg, Course Hero, Slader or other similar sites
+- Searching for solutions to course material on Chegg, Course Hero, Slader, or other similar sites
 - Blindly googling the question in hopes of finding someone who had a similar question and then copying their answer
     - Note, googling to find resources to understand specific concepts or general ideas is highly encouraged!
 - Having a tutor/friend/nemesis complete and submit your work for you
@@ -370,6 +410,17 @@ UBC values respect for the person and ideas of all members of the academic commu
 Harassment and discrimination are not tolerated nor is suppression of academic freedom. 
 UBC provides appropriate accommodation for students with disabilities and for religious and cultural observances. 
 UBC values academic honesty and students are expected to acknowledge the ideas generated by others and to uphold the highest academic standards in all of their actions. Details of the policies and how to access support are available [here](https://senate.ubc.ca/policies-resources-support-student-success).
+
+### Online learning for international students
+
+During this pandemic, the shift to online learning has greatly altered teaching and studying at UBC, including changes to health and safety considerations.
+Keep in mind that some UBC courses might cover topics that are censored or considered illegal by non-Canadian governments.
+This may include, but is not limited to, human rights, representative government, defamation, obscenity, gender or sexuality, and historical or current geopolitical controversies.
+If you are a student living abroad, you will be subject to the laws of your local jurisdiction, and your local authorities might limit your access to course material or take punitive action against you. UBC is strongly committed to academic freedom, but has no control over foreign authorities (please visit [this calendar page](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,293,866,0) for an articulation of the values of the University conveyed in the Senate Statement on Academic Freedom).
+Thus, we recognize that students will have legitimate reason to exercise caution in studying certain subjects.
+If you have concerns regarding your personal situation, consider postponing taking a course with manifest risks, until you are back on campus or reach out to your academic advisor to find substitute courses. 
+For further information and support, please visit: [https://academic.ubc.ca/support-resources/freedom-expression/](https://academic.ubc.ca/support-resources/freedom-expression/).
+
 
 ### Copyright Disclaimer
 
@@ -413,7 +464,7 @@ If you require assistance related to an issue of equity, discrimination or haras
 At UBC Okanagan health services to students are provided by Health and Wellness.
 Nurses, physicians and counsellors provide health care and counselling related to physical health, emotional/mental health and sexual/reproductive health concerns.
 As well, health promotion, education and research activities are provided to the campus community.
-If you require assistance with your health, please contact [Health and Wellness](www.students.ok.ubc.ca/health-wellness) in person (UNC 337) or by email (healthwellness.okanagan@ubc.ca) for more information or to book an appointment.
+If you require assistance with your health, please contact [Health and Wellness](https://www.students.ok.ubc.ca/health-wellness) in person (UNC 337) or by email (healthwellness.okanagan@ubc.ca) for more information or to book an appointment.
 
 ### Sexual Violence Prevention and Response Office (SVPRO)
 
@@ -426,7 +477,7 @@ We support your decision, whatever you decide. Visit [svpro.ok.ubc.ca](https://s
 
 If you or someone you know has experienced sexual assault or some other form of sexual misconduct by a UBC community member and you want the Independent Investigations Office (IIO) at UBC to investigate, please contact the IIO.
 Investigations are conducted in a trauma informed, confidential and respectful manner in accordance with the principles of procedural fairness.
-You can report your experience directly to the IIO via email: director.of.investigations@ubc.ca or by calling 604.827.2060 or online by visiting [investigationsoffice.ubc.ca](investigationsoffice.ubc.ca).
+You can report your experience directly to the IIO via email: director.of.investigations@ubc.ca or by calling 604.827.2060 or online by visiting [investigationsoffice.ubc.ca](https://investigationsoffice.ubc.ca).
 
 ### The Hub
 
@@ -451,6 +502,7 @@ Below is the list of resources I have used to put this syllabus together:
 - [Designing for Care, Dr. Jesse Stommell](https://www.jessestommel.com/designing-for-care/)
 - [Annotate your syllabus, Dr. Remi Kalir](http://remikalir.com/blog/annotate-your-syllabus-3-0/)
 - [Dr. Christopher Jones](https://hcommons.org/members/profchrismjones/) and [his viral tweet](https://twitter.com/ProfChrisMJones/status/1282036533562834944)
+- [Dr. Jesse Stommell](https://www.jessestommel.com/designing-for-care/)
 - Course Header: Photo by [Carlos Muza Unsplash](https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 - Course Logo: Photo by [fauxels from Pexels](https://www.pexels.com/photo/photo-of-person-holding-mobile-phone-3183153/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
 
