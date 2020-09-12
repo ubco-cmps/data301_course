@@ -22,6 +22,16 @@ The [UBCO calendar description](http://www.calendar.ubc.ca/okanagan/courses.cfm?
 > 
 > *Equivalency*: COSC 301.
 
+## Contact the Teaching Team
+
+| Team Member                               | Pronounce as     | Contact   | Office Hour |
+|-------------------------------------------|------------------|-----------|-------------|
+| Dr. Firas Moosvi (he/his/him); Instructor | Fur-az Moose-vee | on Piazza | TBD         |
+| Roozbeh Eslami                            |                  | on Piazza | TBD         |
+| Biswapriyo (Bishwo) Chakrabarty           |                  | on Piazza | TBD         |
+| Amir Kalkhoran                            |                  | on Piazza | TBD         |
+
+
 ## Is this syllabus a contract? 
 
 Rather than interpreting this syllabus as a legal document that serves as a contract between the instructor and the students, I prefer to view the syllabus as a *living document*.
@@ -48,25 +58,25 @@ I invite you to be co-contributors to this syllabus, and use the tools provided 
 Any major changes to the syllabus (this page) will be documented here as well as the date the change was made. 
 
 | Change Date | Summary | Rationale |
-|-------------|----------------|-----------|
-| TBD         | TBD            | TBD       |
+|-------------|---------|-----------|
+| September 12, 2020         | Added TAs and clarified dates     | Requests from Associate Dean       |
 
 ## About this course
 
-| Name            | Description                                    |
-|-----------------|------------------------------------------------|
-| Course          | DATA 301, COSC 301, DATA 501                   |
-| Term            | 2020/21 Winter Term 1                          |
-| Pre-requisites  | 3rd year status or COSC 111, 122               |
-| Co-requisites   | N/A                                            |
-| Costs           | $0 (Free!)                                     |
-| Weekly meetings | Wednesdays 15:30-16:30 on Zoom                 |
-| Lectures        | Online                                         |
-| Laboratory      | You **must** register for a laboratory section |
-| URL             | https://firas.moosvi.com/courses/data301       |
-| Instructor      | Firas Moosvi                                   |
-| Office Hours    | [Zoom](https://ubc.zoom.us)                    |
-| Email           | [Contact via Piazza/Slack](https://piazza.com) |
+| Name                   | Description                                    |
+|------------------------|------------------------------------------------|
+| Course                 | DATA 301, COSC 301, DATA 501                   |
+| Term                   | 2020/21 Winter Term 1                          |
+| Pre-requisites         | 3rd year status or COSC 111, 122               |
+| Co-requisites          | N/A                                            |
+| Additional course fees | None                                           |
+| Weekly meetings        | Wednesdays 15:30-16:30 on Zoom                 |
+| Lectures               | Online                                         |
+| Laboratory             | You **must** register for a laboratory section |
+| URL                    | https://firas.moosvi.com/courses/data301       |
+| Instructor             | Firas Moosvi                                   |
+| Office Hours           | [Zoom](https://ubc.zoom.us)                    |
+| Email                  | [Contact via Piazza/Slack](https://piazza.com) |
 
 ## A message from your instructor
 
@@ -94,26 +104,17 @@ Pay close attention to the supplementary videos and articles that will be linked
 You should take this course to get an introduction to a very exciting field of data analytics!
 ```
 
-## Contact the Teaching Team
-
-| Team Member                               | Pronounce as | Contact | Office Hour |
-|-------------------------------------------|--------------|---------|-------------|
-| Dr. Firas Moosvi (he/his/him); Instructor | Fur-az Moose-vee     | TBD     | TBD         |
-| (TA)                                      |              | TBD     | TBD         |
-| (TA)                                      |              | TBD     | TBD         |
-| (TA)                                      |              | TBD     | TBD         |
-
 (grading_practices) = 
 ## How will I be evaluated in this course?
 
 The grading scheme for this course is:
 
-| Item               | Weight        | Due date(s) |
-|--------------------|---------------|-------------|
-| Lab Assignments    | 20% (10 x 2%) | TBD         |
-| Bi-weekly Tests    | 20% (5 x 4%)  | TBD         |
-| Project Milestones | 20% (5 x 4%)  | TBD         |
-| Final Project      | 10%           | TBD         |
+| Item               | Weight        | Due date(s)     |
+|--------------------|---------------|-----------------|
+| Lab Assignments    | 20% (10 x 2%) | TBD             |
+| Bi-weekly Tests    | 20% (5 x 4%)  | TBD             |
+| Project Milestones | 20% (5 x 4%)  | TBD             |
+| Final Project      | 10%           | TBD             |
 | Final Exam         | 25%           | TBD (Take-home) |
 
 There will be 5 tests in this course in an (approximately) bi-weekly schedule.
@@ -202,10 +203,16 @@ Here are the key principles I intend to apply in this class:
 
 - For lectures, labs, tutorials, and office hours we will be using Zoom.
 - For official course communication, we will be using [Canvas](https://canvas.ubc.ca/courses/63469) and [Piazza](https://canvas.ubc.ca/courses/63469/external_tools/201?display=borderless).
-- For unofficial chat, community building, sharing of tiktoks, cat videos, and general conversation we will (optionally) be using a Discord server OR a Slack team.
+- For unofficial chat, community building, sharing of tiktoks, cat videos, and general conversation, we will (optionally) be using a Discord server.
 
 ```{warning}
-Please note signing up for the Discord/Slack is **completely optional**! You will not miss anything course-related if you choose not to get on this unofficial platform.
+Please note signing up for the Discord is **completely optional**! You will not miss anything course-related if you choose not to signup for this unofficial platform. 
+
+This tool stores data on servers that are located outside of Canada.
+UBC cannot guarantee the security of your personal information on servers located outside of Canada. 
+For this reason, use of this tool has not been approved for use by UBC.
+Please exercise caution whenever using your personal information online.
+You may wish to use a pseudonym to protect your privacy if you have concerns, or decline to signup for this tool.
 ```
 
 ### Sign up for a (free) Zoom account
@@ -244,17 +251,19 @@ First of all, I'm sorry you're having trouble and are considering withdrawing fr
 This is no problem, and I will not be personally offended or upset you need to do this, I encourage you to do what you feel is right for you and your situation. 
 Below is some information that might be helpful for you in making the decision.
 
-```{warning} Please note that it is the student's responsibility to check the withdrawal dates as [listed in the UBC Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=14,339,1033,0).
+```{warning} Please note that it is the student's responsibility to check the withdrawal dates as [listed in the UBC Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?go=deadlines).
 ```
 
-| Withdrawal type                                                        | Effect on Transcript | Tuition refund                                                                                                                |
-|------------------------------------------------------------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Before the 1st withdrawal date                                         | None                 | 100% refund                                                                                                                   |
-| Before the 2nd withdrawal date                                         | W on transcript      | [0 - 50%](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=14,339,1033,0) refund (depending on the date you're withdrawing) |
-| After the 2nd withdrawal date (cannot happen without faculty approval) | W on transcript      | 0%                                                                                                                            |
+| Withdrawal type                     | Effect on Transcript | Tuition refund                                                                                     |
+|-------------------------------------|----------------------|----------------------------------------------------------------------------------------------------|
+| Before September 21, 2020 11:59 PDT | None                 | 100% refund                                                                                        |
+| Before November 13, 2020 11:59 PDT  | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
+| After 11:59 PDT November 13, 2020 ^ | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
+
+^ Note: Withdrawal after this date cannot happen without approval from the Faculty (Email: fos.students.ubco@ubc.ca).
 
 There are factors other than money and your transcript to consider as well, including your mental health, graduation requirements/timelines, eligibility for student loans, bursaries, scholarships etc.
-I advise you to [read the full list of considerations](https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/) here and contact your faculty advisor if you have additional questions.
+I advise you to [read the full list of considerations](https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/) here and conslt with an Academic Advisor or your Program Advisor if you have additional questions.
 
 <!-- 
 ## How do I do well in this course? 
@@ -307,7 +316,7 @@ All accommodations for this course are handled through the [Disability Resource 
 Students who, because of unforeseen events, are absent during the term and are unable to complete tests or other graded work, should normally discuss with their instructors how they can make up for missed work.
 If ill health is an issue, students are encouraged to seek attention from a health professional.
 Campus Health and Counselling will normally provide documentation only to students who have been seen previously at these offices for treatment or counselling specific to conditions associated with their academic difficulties. 
-Students who feel that requests for consideration have not been dealt with fairly by their instructors may take their concerns first to the Head of the Department, and if not resolved, to the Office of the Dean. Further information can be found at the [UBCO Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0).
+Students who feel that requests for consideration have not been dealt with fairly by their instructors may take their concerns first to the Head of the Department, and if not resolved, to the Office of the Dean (Email: fos.students.ubco@ubc.ca). Further information can be found at the [UBCO Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0).
 
 ```{tip}
 If you miss a course component due to an illness, health, or other personal situation, please reach out to me as soon as you are comfortable, and I'll work with you to get you back on track.
