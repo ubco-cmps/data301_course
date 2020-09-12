@@ -75,8 +75,8 @@ Any major changes to the syllabus (this page) will be documented here as well as
 | Laboratory             | You **must** register for a laboratory section |
 | URL                    | https://firas.moosvi.com/courses/data301       |
 | Instructor             | Firas Moosvi                                   |
-| Office Hours           | [Zoom](https://ubc.zoom.us)                    |
-| Email                  | [Contact via Piazza/Slack](https://piazza.com) |
+| Office Hours           | Zoom (See Canvas sidebar for meeting links)                  |
+| Email                  | [Contact via Piazza](https://piazza.com/class/keqqsay6su15ea) |
 
 ## A message from your instructor
 
