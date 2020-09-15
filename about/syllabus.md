@@ -1,6 +1,6 @@
 ![](../images/header.jpg)
 
-![](../images/UBCO_CMPS_header.png)
+![](../images/UBCO_CMPS_header.jpg)
 
 # Course Syllabus
 
