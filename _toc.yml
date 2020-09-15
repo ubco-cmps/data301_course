@@ -20,6 +20,28 @@
         - file: getting-started/install_ds_stack_windows_part1
           title: Windows
 
+- part: Part 1 - Setting up
+  chapters:
+    - file: notes/week01/week01_summary
+      title: Introductions
+    - file: notes/week02/week02_summary
+      title: Week 2 - Command Line and Excel
+      expand_sections: true
+      sections:
+        - file: notes/week02/videos
+        - file: notes/week02/lecture
+        - file: notes/week02/lab
+        - file: notes/week02/test
+
+    # - file: class/week03/week03_summary
+    #   title: Week 3 - 
+    #   expand_sections: true
+    #   sections:
+    #     - file: notes/week03/videos
+    #     - file: notes/week03/lecture
+    #     - file: notes/week03/lab
+    #     - file: notes/week03/test        
+
 - part: Course Feedback
   chapters:
     - file: about/feedback
