@@ -308,7 +308,7 @@ Download the Ubuntu 18/Debian 10 Desktop version of RStudio Preview from [https:
 
 To see if you were successful, try opening RStudio by clicking on its icon or typing `rstudio` in a terminal. It should open and look something like this picture below:
 
-<img src="../images/RStudio-ubuntu.png" alt = ""/>
+<img src="../../images/RStudio-ubuntu.png" alt = ""/>
 
 > Note that since we installed RStudio directly from a deb file rather than from a repository or a snap package, it will not be updated when we run `sudo apt upgrade` and not automatically as for snap packages. Instead, RStudio will notify you of any available updates when the program is launched.
 
@@ -350,11 +350,11 @@ jupyter lab
 
 A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an JupyterLab with an R kernel.
 
-<img src="../images/jupyter_lab_r_kernel.png" alt = ""/>
+<img src="../../images/jupyter_lab_r_kernel.png" alt = ""/>
 
 Sometimes a kernel loads, but doesn't work as expected. To test whether your installation was done correctly now type `library(tidyverse)` in the code cell and click on the run button to run the cell. If your R kernel works you should see something like the image below:
 
-<img src="../images/jupyter_lab_r_kernel2.png" alt = ""/>
+<img src="../../images/jupyter_lab_r_kernel2.png" alt = ""/>
 
 To improve the experience of using R in JupyterLab,
 we will add an extension that allows us to setup keyboard shortcuts for inserting text
@@ -487,7 +487,7 @@ Next, [follow the Linux post installation steps here](https://docs.docker.com/en
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
-<img src="../images/vscode.png" alt = ""/>
+<img src="../../images/vscode.png" alt = ""/>
 
 To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
 

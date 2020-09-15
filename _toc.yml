@@ -12,13 +12,6 @@
   chapters:
     - file: getting-started/todo_list
       title: Things to do before start of course
-    - file: getting-started/install_ds_stack
-      title: Install Instructions
-      sections:
-        - file: getting-started/install_ds_stack_mac_part1
-          title: macOS
-        - file: getting-started/install_ds_stack_windows_part1
-          title: Windows
 
 - part: Part 1 - Setting up
   chapters:
@@ -31,6 +24,12 @@
         - file: notes/week02/videos
         - file: notes/week02/lecture
         - file: notes/week02/lab
+          title: Install Instructions
+          sections:
+            - file: notes/week02/install_ds_stack_mac_part1
+              title: macOS
+            - file: notes/week02/install_ds_stack_windows_part1
+              title: Windows
         - file: notes/week02/test
 
     # - file: class/week03/week03_summary

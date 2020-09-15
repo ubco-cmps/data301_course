@@ -82,22 +82,19 @@ The open-source text editor Visual Studio Code (VS Code) is both a powerful text
     - "Register Code as an editor for supported file types"
     - "Add to PATH" (this should be selected by default).
 
-<img src="../images/vs_code.png" alt = ""/>
+<img src="../../images/vs_code.png" alt = ""/>
 
 ### VS Code extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
-<img src="../images/vscode.png" alt = ""/>
+<img src="../../images/vscode.png" alt = ""/>
 
 To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
 
 - Python (everything Python: notebooks, debugging, linting, formatting, etc.)
 - markdownlint (markdown linting and style checking extension)
 - GitLens (powerful extension that extends VS Code's native git capabilities)
-- Docker (easily use Docker from VS Code)
-- (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
-- (Optional) Material Icon Theme (great-looking custom file icons!)
 - (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
 
 This [video tutorial](https://www.youtube.com/watch?v=-nh9rCzPJ20) is an excellent introduction to using VS Code in Python.
@@ -120,13 +117,13 @@ Go to <https://git-scm.com/download/win> and download the windows version of git
 - *Optional* On the **Select Components** page, check "On the Desktop" under "Additional icons".
 - On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
 
-<img src="../images/vscode-as-git-editor.png" alt = ""/>
+<img src="../../images/vscode-as-git-editor.png" alt = ""/>
 
 > Note if you wish to pin Git Bash to the taskbar, you need to search for the program in the start menu, right click the entry and select "Pin to taskbar". If you instead first launch the program and pin it by right clicking on the taskbar icon, Git Bash will open with the wrong home directory (`/` instead of `/c/users/$USERNAME`.
 
 After installation, test if you were successful by opening the Git Bash program. Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just "the terminal"):
 
-<img src="../images/gitbash.png" alt = ""/>
+<img src="../../images/gitbash.png" alt = ""/>
 
 In the terminal, type the following to check which version of Bash you just installed:
 
