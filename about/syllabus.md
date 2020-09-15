@@ -231,7 +231,7 @@ Invitation to [join the unofficial Data 301 Discord Server](https://discord.gg/V
 
 Here is a [Beginner's Guide to Discord](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord) and if you prefer watching a video:
 
-<div class="container">
+<div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/3ooRuvrPQsU" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
