@@ -11,8 +11,8 @@ This guide has been (lightly) adapted from the UBC-Vancouver [MDS Install stack]
 Below are links to the software installation guide used for DATA 301 for the operating systems we support.
 We provide these installation instructions to our students on the first day of the program. Original version written by [Anmol Jawandha](https://github.com/Anmol6), updated version by Tomas Beuzen, Rodolfo Lourenzutti, Joel Ostblom & Tiffany Timbers.
 
-- [macOS](notes/week02/install_ds_stack_mac_part1.md)
-- [Windows](notes/week02/install_ds_stack_windows_part1.md)
+- [macOS](install_ds_stack_mac_part1.md)
+- [Windows](install_ds_stack_windows_part1.md)
 
 ## Ubuntu users 
 
