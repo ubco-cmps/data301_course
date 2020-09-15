@@ -13,7 +13,7 @@
     - file: getting-started/todo_list
       title: Things to do before start of course
     - file: getting-started/install_ds_stack
-      title: Installing Instructions
+      title: Install Instructions
       sections:
         - file: getting-started/install_ds_stack_mac_part1
           title: macOS

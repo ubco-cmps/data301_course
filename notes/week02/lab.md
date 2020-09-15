@@ -1,15 +1,14 @@
 # Lab
 
-
 ````{panels}
 
-The lab information for this week is in the Physics 111 Lab canvas course...
+This week, your only task is to do your best installing the software we will need for this course. 
 
 ++++ 
 
-```{link-button} https://canvas.ubc.ca/courses/66799
-:text: Physics 111 Lab Canvas
-:type: url
+```{link-button} getting-started/install_ds_stack.md
+:text: DATA 301 Lab 0
+:type: ref
 :classes: btn-outline-primary btn-block stretched-link text-dark
 ```
 ````

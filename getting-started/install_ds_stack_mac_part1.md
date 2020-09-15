@@ -119,7 +119,7 @@ To install an extension, you simply search for it in the search bar, click the e
 
 ## GitHub.com
 
-In MDS we will use the publicly available [GitHub.com](https://github.com/).
+We will use the publicly available [GitHub.com](https://github.com/).
 
 Sign up for a free account at [GitHub.com](https://github.com/) if you don't have one already.
 

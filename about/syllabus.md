@@ -215,10 +215,6 @@ Please exercise caution whenever using your personal information online.
 You may wish to use a pseudonym to protect your privacy if you have concerns, or decline to signup for this tool.
 ```
 
-### Sign up for a (free) Zoom account
-
-Instructions coming soon...
-
 ### Sign up for a (free) Piazza account [Required]
 
 This term we will be using Piazza for class discussion.
@@ -227,15 +223,11 @@ Rather than emailing questions to the teaching staff, I encourage you to post yo
 
 *The Piazza tool is stored on servers outside Canada. When you access this site by clicking on the link through Canvas, you are being transferred to these servers. In order to protect your identity, UBC obfuscates your user ID before it is sent to the site. However, Piazza does require you to create an account on their servers. While Piazza adheres to strict U.S. privacy regulations (FERPA), UBC cannot guarantee security of your private details on servers outside of Canada. Please exercise caution whenever using personal information. You may wish to use a pseudonym to protect your privacy if you have concerns.*
 
-[Sign up for our class Piazza](https://piazza.com/ubc.ca/winterterm12020/).
+[Sign up for our class Piazza](https://piazza.com/ubc.ca/winterterm12020/data301).
 
 ### Sign up for the Slack or Discord team [Optional]
 
-Coming soon...
-
-<!-- You can [download Discord for free on desktop here](https://discord.com/download), or through the [Google Play store](https://play.google.com/store/apps/details?id=com.discord) or [Apple App Store](https://apps.apple.com/us/app/discord/id985746746) on mobile and tablets.
-
-Invitation to [join the unofficial UBCO first year science Discord Server](https://discord.gg/uzcEBSK)!
+Invitation to [join the unofficial Data 301 Discord Server](https://discord.gg/VRQ9jQv)!
 
 Here is a [Beginner's Guide to Discord](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord) and if you prefer watching a video:
 
@@ -243,7 +235,9 @@ Here is a [Beginner's Guide to Discord](https://support.discord.com/hc/en-us/art
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/3ooRuvrPQsU" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-Again, please note signing up for the Discord server is **completely optional**, and is an experiment we are trying to help maintain human interactions during online learning. -->
+You can [download Discord for free on desktop here](https://discord.com/download), or through the [Google Play store](https://play.google.com/store/apps/details?id=com.discord) or [Apple App Store](https://apps.apple.com/us/app/discord/id985746746) on mobile and tablets.
+
+Again, please note signing up for the Discord server is **completely optional**, and is an experiment we are trying to help maintain human interactions during online learning.
 
 ## What should I think about if I'm considering withdrawing from the course?
 
