@@ -1,4 +1,4 @@
-# Test 0
+# Test 0 - Course Policies
 
 ````{panels}
 

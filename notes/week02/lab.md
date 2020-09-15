@@ -1,4 +1,4 @@
-# Lab
+# Lab 0 - Installation and Setup
 
 ````{panels}
 
