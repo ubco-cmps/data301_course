@@ -39,6 +39,7 @@ repository:
 sphinx:
   config:
     html_show_copyright: false
+    html_extra_path: ['files']
   extra_extensions:
     - sphinx_thebe
 parse:
