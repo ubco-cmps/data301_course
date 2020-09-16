@@ -22,7 +22,7 @@
       expand_sections: true
       sections:
         - file: notes/week02/videos
-        - file: notes/week02/lecture
+        - file: notes/week02/Lecture3
         - file: notes/week02/lab
           title: Install Instructions
           sections:
