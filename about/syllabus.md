@@ -59,6 +59,7 @@ Any major changes to the syllabus (this page) will be documented here as well as
 
 | Change Date | Summary | Rationale |
 |-------------|---------|-----------|
+| September 16, 2020 | Increased project weight to 15% | To make things add up to 100 |
 | September 12, 2020         | Added TAs and clarified dates     | Requests from Associate Dean       |
 
 ## About this course
@@ -114,7 +115,7 @@ The grading scheme for this course is:
 | Lab Assignments    | 20% (10 x 2%) | TBD             |
 | Bi-weekly Tests    | 20% (5 x 4%)  | TBD             |
 | Project Milestones | 20% (5 x 4%)  | TBD             |
-| Final Project      | 10%           | TBD             |
+| Final Project      | 15%           | TBD             |
 | Final Exam         | 25%           | TBD (Take-home) |
 
 There will be 5 tests in this course in an (approximately) bi-weekly schedule.

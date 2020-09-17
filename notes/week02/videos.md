@@ -2,19 +2,24 @@
 
 Videos will be posted here shortly after our lecture this week.
 
-<!-- 
-```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week02_reading1" class="box"> **Introduction to Displacement and the Differences Between Displacement and Distance**</input></label></h4> 
+
+```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week02_video1" class="box"> **First part of Introduction to Excel (Lecture)**</input></label></h4> 
 :open:
 
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/uTQ4_AOae1g" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-- [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0007_lecture_notes_-_displacement_versus_distance.pdf)
-- [Direct link to Mr. P's page](https://www.flippingphysics.com/introduction-to-displacement.html)
+You can access this part through [Canvas --> Zoom --> Cloud Recordings](https://canvas.ubc.ca/courses/63469/external_tools/15408).
 
 ```
 
+
+```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week02_video2" class="box"> **Second part of Introduction to Excel**</input></label></h4> 
+:open:
+
+<div class="container youtube">
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/2azOHhiyomY" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+```
+<!--
 ```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week02_reading2" class="box"> **Introduction to Velocity and Speed and the differences between the two** </input></label></h4>
 <div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/I16utd8d6JM" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

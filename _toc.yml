@@ -22,8 +22,8 @@
       expand_sections: true
       sections:
         - file: notes/week02/videos
-        - file: notes/week02/Lecture3
-          title: Lecture 3 - Excel
+        - file: notes/week02/Lecture2
+          title: Lecture 2 - Excel
         - file: notes/week02/lab
           title: Install Instructions
           sections:
