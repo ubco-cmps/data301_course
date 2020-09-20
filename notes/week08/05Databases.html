@@ -1,0 +1,2087 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Relational Databases &#8212; DATA 301</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/extra.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pdf_print.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom_layouts.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/save_state.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "ubco-cmps/data301_course");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://firas.moosvi.com/courses/data301/notes/week08/05Databases.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://firas.moosvi.com/courses/data301/notes/week08/05Databases.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Relational Databases" />
+<meta property="og:description" content="Relational Databases  Why Relational Databases?  Relational databases allow for the storage and analysis of large amounts of data.  Relational databases are the" />
+<meta property="og:image"       content="https://firas.moosvi.com/courses/data301/_static/logo.jpg" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.jpg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">DATA 301</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/syllabus.html">
+   Course Syllabus
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  About this Course
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/course_schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/accommodations.html">
+   Accommodations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/faq.html">
+   Frequently Asked Questions
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Getting started!
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../getting-started/todo_list.html">
+   Things to do before start of course
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Part 1 - Setting up
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week01/week01_summary.html">
+   Introductions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week02/week02_summary.html">
+   Week 2 - Command Line and Excel
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Course Feedback
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/feedback.html">
+   Anonymous Feedback Form
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/notes/week08/05Databases.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ubco-cmps/data301_course"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ubco-cmps/data301_course/issues/new?title=Issue%20on%20page%20%2Fnotes/week08/05Databases.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ubco-cmps/data301_course/edit/master/notes/week08/05Databases.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ubco-cmps/data301_course/master?urlpath=lab/tree/notes/week08/05Databases.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/ubco-cmps/data301_course/blob/master/notes/week08/05Databases.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-relational-databases">
+   Why Relational Databases?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-a-database">
+   What is a database?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#databases-in-the-real-world">
+   Databases in the Real World
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#database-system-properties">
+   Database System Properties
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-relational-model-terminology">
+   The Relational Model: Terminology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relation-example">
+   Relation Example
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relation-practice-example">
+   Relation Practice Example
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#start-solutions-here">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#end-solutions-here">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#database-definition-question">
+   Database Definition Question
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#database-definition-matching-question">
+   Database Definition Matching Question
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cardinality-and-degree-question">
+   Cardinality and Degree Question
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-and-using-databases">
+   Creating and Using Databases
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-simple-query-language-keyword-seaching">
+   A Simple Query Language: Keyword Seaching
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sql-overview">
+   SQL Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sql-create-table">
+   SQL Create Table
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sql-create-table-constraints">
+   SQL Create Table - Constraints
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-a-key">
+   What is a key?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-table-syntax">
+   CREATE TABLE Syntax
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-table-syntax-in-libreoffice-base">
+   CREATE TABLE Syntax in LibreOffice Base
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#try-it-create-table">
+   Try It: CREATE TABLE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relational-database-management-systems">
+   Relational Database Management Systems
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-table-in-microsoft-access">
+   CREATE TABLE in Microsoft Access
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-table-in-libreoffice-base">
+   CREATE TABLE in LibreOffice Base
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#schemas-and-metadata">
+   Schemas and Metadata
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-data-using-insert">
+   Adding Data using INSERT
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#continuing-from-our-sqlfiddle-example">
+     Continuing from our
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       sqlfiddle
+      </span>
+     </code>
+     example.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-data-in-microsoft-access">
+   Adding Data in Microsoft Access
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-data-in-libreoffice-base">
+   Adding Data in LibreOffice Base
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sql-mode">
+   SQL mode
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#libreoffice-base-using-lowercase-letters">
+   LibreOffice Base using lowercase letters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sql-view">
+   SQL view
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comment">
+   Comment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#notes">
+   Notes:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#updating-in-microsoft-access-and-libreoffice-base">
+   Updating in Microsoft Access and LibreOffice Base
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-deleting-attributes">
+   Adding/Deleting Attributes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Notes:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#delete-statements">
+   Delete Statements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deleting-data-in-microsoft-access-libreoffice-base">
+   Deleting Data in Microsoft Access/LibreOffice Base
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#delete-the-row-with-num-10">
+     Delete the row with num = 10
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#delete-the-row-s-with-message-d">
+     Delete the row(s) with message &gt; ’D’.
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comparison-operators-on-strings">
+   Comparison operators on strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#delete-all-rows">
+   Delete all rows
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#drop-table">
+   DROP TABLE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-tables-question">
+   Create Tables Question
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id10">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id11">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id12">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id13">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id14">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id15">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id16">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id17">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="relational-databases">
+<h1>Relational Databases<a class="headerlink" href="#relational-databases" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="why-relational-databases">
+<h2>Why Relational Databases?<a class="headerlink" href="#why-relational-databases" title="Permalink to this headline">¶</a></h2>
+<p><em>Relational databases</em> allow for the storage and analysis of large amounts of data.</p>
+<p>Relational databases are the most common form of database used by companies and organizations for data management.</p>
+<p>Since a significant amount of data is stored in relational databases, understanding how to create and query these databases using the SQL standard is a very valuable skill.</p>
+</div>
+<div class="section" id="what-is-a-database">
+<h2>What is a database?<a class="headerlink" href="#what-is-a-database" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>database</strong> is a collection of logically related data for a particular domain.</p>
+<p>To manage (query, monitor, etc.) your database you need a tool…</p>
+<p>A <strong>database management system (DBMS)</strong> is software designed for the creation and management of databases.</p>
+<ul class="simple">
+<li><p>e.g. Oracle, DB2, Microsoft Access, MySQL, SQL Server, MongoDB, LibreOffice Base, …</p></li>
+</ul>
+<p>Bottom line: A <strong>database</strong> is the <em>data</em> stored and a <strong>database system</strong> is the <em>software</em> that manages the data.</p>
+</div>
+<div class="section" id="databases-in-the-real-world">
+<h2>Databases in the Real World<a class="headerlink" href="#databases-in-the-real-world" title="Permalink to this headline">¶</a></h2>
+<p>Databases are everywhere in the real-world even though you do not often interact with them directly. $40 billion dollar annual industry</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p>Retailers manage their products and sales using a database. e.g. Wal-Mart has one of the largest databases in the world!</p></li>
+<li><p>Online web sites such as Amazon, eBay, and Expedia track orders, shipments, and customers using databases.</p></li>
+<li><p>The university maintains all your registration information and marks in a database that is accessible over the Internet.</p></li>
+</ul>
+<p>Apart from these large enterprise-grade data stores, we could also create and store small database on our person computers.</p>
+</div>
+<div class="section" id="database-system-properties">
+<h2>Database System Properties<a class="headerlink" href="#database-system-properties" title="Permalink to this headline">¶</a></h2>
+<p>A database system provides efficient, convenient, and safe multi-user storage and access to massive amounts of persistent data.</p>
+<p><strong>Efficient</strong>: Able to handle large data sets and complex queries without searching all files and data items.<br />
+<strong>Convenient</strong>: Easy to write queries to retrieve data.<br />
+<strong>Safe</strong>: Protects data from system failures and hackers.<br />
+<strong>Massive</strong>: Database sizes in gigabytes, terabytes and petabytes.<br />
+<strong>Persistent</strong>: Data exists even if have a power failure.<br />
+<strong>Multi-user</strong>: More than one user can access and update data at the same time while preserving consistency.</p>
+</div>
+<div class="section" id="the-relational-model-terminology">
+<h2>The Relational Model: Terminology<a class="headerlink" href="#the-relational-model-terminology" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>relational model</strong> organizes data into tables called relations.<br />
+Developed by E. F. Codd in 1970 and used by most database systems.</p>
+<p>Terminology:<br />
+A <strong>relation</strong> is a table with columns and rows.<br />
+An <strong>attribute</strong> is a named column of a relation.<br />
+A <strong>tuple</strong> is a row of a relation (a single record in a table).<br />
+A <strong>domain</strong> is a set of allowable values for one or more attributes.<br />
+The <strong>degree</strong> of a relation is the number of attributes it contains.<br />
+The <strong>cardinality</strong> of a relation is the number of tuples it contains.</p>
+</div>
+<div class="section" id="relation-example">
+<h2>Relation Example<a class="headerlink" href="#relation-example" title="Permalink to this headline">¶</a></h2>
+<p>The name of this relation is Emp.</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/databases.png"><img alt="databases" src="notes/week08/../images/05Databases/databases.png" style="width: 800px;" /></a>
+</div>
+<div class="section" id="relation-practice-example">
+<h2>Relation Practice Example<a class="headerlink" href="#relation-practice-example" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/dbq.png"><img alt="dbq" src="notes/week08/../images/05Databases/dbq.png" style="width: 400px;" /></a>
+</div>
+<div class="section" id="start-solutions-here">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#start-solutions-here" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.1</strong></p>
+<ol class="simple">
+<li><p>What is the name of the relation? WorksOn</p></li>
+<li><p>What is the cardinality of the relation? 9</p></li>
+<li><p>What is the degree of the relation? 4</p></li>
+<li><p>What is the domain of resp? string</p></li>
+<li><p>What is the domain of hours? integer</p></li>
+</ol>
+</div>
+<div class="section" id="end-solutions-here">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#end-solutions-here" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="database-definition-question">
+<h2>Database Definition Question<a class="headerlink" href="#database-definition-question" title="Permalink to this headline">¶</a></h2>
+<p><strong>Question</strong>:<br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>A database refers to the stored data.</p></li>
+<li><p>A database system refers to the software.</p></li>
+<li><p>A database system will lose the data stored when the power is turned off.</p></li>
+</ol>
+<p>A) 0 B) 1 C) 2 D) 3</p>
+</div>
+<div class="section" id="id1">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><strong>Answer</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>A database refers to the stored data. :heavy_check_mark:</p></li>
+<li><p>A database system refers to the software. :heavy_check_mark:</p></li>
+<li><p>A database system will lose the data stored when the power is turned off. :x:</p></li>
+</ol>
+<p>A) 0 B) 1 <strong>C) 2</strong> D) 3</p>
+</div>
+<div class="section" id="id2">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p><strong>Question</strong>:<br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>Usually, more than one user can use a database system at a time.</p></li>
+<li><p>The cardinality is the number of rows in a relation.</p></li>
+<li><p>A relation’s cardinality is always bigger than its degree.</p></li>
+</ol>
+<p>A) 0 B) 1 C) 2 D) 3</p>
+</div>
+<div class="section" id="id3">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p><strong>Answer</strong>:<br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>Usually, more than one user can use a database system at a time. :heavy_check_mark:</p></li>
+<li><p>The cardinality is the number of rows in a relation. :heavy_check_mark:</p></li>
+<li><p>A relation’s cardinality is always bigger than its degree. :x:</p></li>
+</ol>
+<p>A) 0 B) 1 <strong>C) 2</strong> D) 3</p>
+</div>
+<div class="section" id="id4">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="database-definition-matching-question">
+<h2>Database Definition Matching Question<a class="headerlink" href="#database-definition-matching-question" title="Permalink to this headline">¶</a></h2>
+<p><strong>Question</strong>:
+Given the three definitions, select the ordering that contains their related definitions to the following three terms: relation, tuple, attribute<br />
+A) column, row, table<br />
+B) row, column, table<br />
+C) table, row, column<br />
+D) table, column, row</p>
+</div>
+<div class="section" id="id5">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p><strong>Answer</strong>:<br />
+Given the three definitions, Select the ordering that contains their related definitions to the following three terms: relation, tuple, attribute<br />
+A) column, row, table<br />
+B) row, column, table<br />
+<strong>C) table, row, column</strong><br />
+D) table, column, row</p>
+</div>
+<div class="section" id="id6">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="cardinality-and-degree-question">
+<h2>Cardinality and Degree Question<a class="headerlink" href="#cardinality-and-degree-question" title="Permalink to this headline">¶</a></h2>
+<p><strong>Question</strong>:<br />
+A database table has 5 rows and 10 columns. Select one true statement.<br />
+A) The table’s degree is 50.<br />
+B) The table’s cardinality is 5.<br />
+C) The table’s degree is 5.<br />
+D) The table’s cardinality is 10.</p>
+</div>
+<div class="section" id="id7">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p><strong>Answer</strong>:
+A database table has 5 rows and 10 columns. Select one true statement.<br />
+A) The table’s degree is 50.<br />
+<strong>B) The table’s cardinality is 5.</strong><br />
+C) The table’s degree is 5.<br />
+D) The table’s cardinality is 10.</p>
+</div>
+<div class="section" id="id8">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="creating-and-using-databases">
+<h2>Creating and Using Databases<a class="headerlink" href="#creating-and-using-databases" title="Permalink to this headline">¶</a></h2>
+<p>Typically, a data analyst will use an existing database. The database will already be created on a database system and contain data that was inserted and updated previously.</p>
+<p>To use an existing database, the data analyst must be able to use the tools and languages to query the database. The standard is SQL.</p>
+<p>Creating a large database is outside of the scope of this class, but we will learn how to create individual tables and load data into them which is a common data analysis task.</p>
+</div>
+<div class="section" id="a-simple-query-language-keyword-seaching">
+<h2>A Simple Query Language: Keyword Seaching<a class="headerlink" href="#a-simple-query-language-keyword-seaching" title="Permalink to this headline">¶</a></h2>
+<p>A query on Google, for example, allows a user to type keywords or phrases and returns a best answer estimate.<br />
+<img src="../images/05Databases/google.png" alt="google" width="400" >
+This works fairly well for web searches, although we lack precision. Precision is required for many applications.</p>
+<blockquote>
+<div><p>Example: How would you return all employees with salary greater than 30,000 using keyword search?</p>
+</div></blockquote>
+</div>
+<div class="section" id="sql-overview">
+<h2>SQL Overview<a class="headerlink" href="#sql-overview" title="Permalink to this headline">¶</a></h2>
+<p><strong>S</strong>tructured <strong>Q</strong>uery <strong>L</strong>anguage or <strong>SQL</strong> is the standard database query language to retrieve <em>exact answers</em>.</p>
+<ul class="simple">
+<li><p>Using simple, declarative <em>statements</em> (i.e. a valid command recognized by the database), SQL queries specifies what to retrieve while preserving the accuracy, security and integrity of the database.</p></li>
+<li><p>SQL is used by Microsoft Access, LibreOffice Base, and almost all other database systems.</p></li>
+<li><p>A knowledge of SQL commands will give you the power to access and explore data stored or relational databases.</p></li>
+<li><p>There is a set of <em>reserved/key words</em> that cannot be used as names for database fields and tables. e.g. <strong>SELECT</strong>, <strong>FROM</strong>, <strong>WHERE</strong>, etc.</p></li>
+<li><p>SQL is generally <em>case-insensitive</em>.</p></li>
+<li><p><strong>SELECT</strong> will be treated the same as <strong>Select</strong> and <strong>select</strong><sup name="a1"><a class="reference external" href="#f1">1</a></sup></p></li>
+<li><p>Some setups are case-sensitive for table and column, for example, ‘ENAME’ not the same as ‘ename’.</p></li>
+<li><p>Linux MySQL: usually defaults to case-sensitive for table and column names</p></li>
+<li><p>Windows: usually defaults to case-insensitive for table and column names</p></li>
+<li><p>Note that LibreOffice Base converts unquoted fields and table names to upper case; more on this <a class="reference external" href="https://eeperry.wordpress.com/2013/11/15/libreoffice-base-sql-creating-tables/">here</a>.</p></li>
+<li><p>SQL is <em>free-format</em> and white-space is ignored.</p></li>
+<li><p>Statements always end in a semicolon ;<br />
+<b name="f1">1</b> standard convention usually will capitalize keywords <a class="reference external" href="#a1">↩</a></p></li>
+</ul>
+</div>
+<div class="section" id="sql-create-table">
+<h2>SQL Create Table<a class="headerlink" href="#sql-create-table" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">CREATE</span> <span class="pre">TABLE</span></code> <strong>command/clause</strong> is used to create a table in the database.</p>
+<ul class="simple">
+<li><p>A clause/command performs a specific tasks in SQL. While clause will work with lowercase letters, the convention is to write command in capital letters.
+A table consists of a table name (eg. emp) and a set of fields/attributes with their names and data types (i.e. domain).</p></li>
+</ul>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/createTab.png"><img alt="createTab" src="notes/week08/../images/05Databases/createTab.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="sql-create-table-constraints">
+<h2>SQL Create Table - Constraints<a class="headerlink" href="#sql-create-table-constraints" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The NOT NULL is a <em>constraint</em> which indicates that we can not enter a tuple into this relation without the field ename</p></li>
+<li><p>To put another way, all employees in the employee table must be entered with an employee name (makes sense!)</p></li>
+<li><p>Other constraints include:<br />
+<strong>UNIQUE</strong> forces all rows to have a different value.<br />
+<strong>DEFAULT</strong> sets the field to a certain value if it is not specified,<br />
+<strong>eg.</strong> DEFAULT 0 or DEFAULT ’unknown’</p></li>
+</ul>
+</div>
+<div class="section" id="what-is-a-key">
+<h2>What is a key?<a class="headerlink" href="#what-is-a-key" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>key</strong> is a set of attributes that <em>uniquely</em> identifies a tuple in a relation. Read more about this constrain <a class="reference external" href="https://www.w3schools.com/sql/sql_primarykey.asp">here</a></p>
+<ul class="simple">
+<li><p>A <em>primary key</em> uniquely identifies a record in the table.</p></li>
+<li><p>A table can have only <em>one</em> primary key; however it can consist of single or multiple columns (fields).</p></li>
+<li><p>A <em>foreign key</em> is a field in a table that is primary key in another table.
+Although keys are not required, they can help to identify a particular row (data item) and find it faster.</p></li>
+</ul>
+<p>In the emp table, the key was eno. It was called the primary key because it was the main key used to find an employee in the table.</p>
+<blockquote>
+<div><p>Question: What is a key to identify a student in this class?</p>
+</div></blockquote>
+</div>
+<div class="section" id="create-table-syntax">
+<h2>CREATE TABLE Syntax<a class="headerlink" href="#create-table-syntax" title="Permalink to this headline">¶</a></h2>
+<p>The general syntax to create a new table in a database:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CREATE</span> <span class="n">TABLE</span> <span class="n">table_name</span> <span class="p">(</span>
+<span class="n">attribute1</span> <span class="n">datatype</span><span class="p">,</span>
+<span class="n">attribute2</span> <span class="n">datatype</span><span class="p">,</span>
+<span class="o">...</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+<p>We specify the names of the columns of our table within the parenthesis</p>
+<ul class="simple">
+<li><p>notice that they are separated by commas</p></li>
+<li><p>end of lines have a semicolons</p></li>
+<li><p>We can choose from a number of <a class="reference external" href="https://www.w3schools.com/sql/sql_datatypes.asp">data types</a> (e.g. varchar, integer, date, etc.).</p></li>
+</ul>
+</div>
+<div class="section" id="create-table-syntax-in-libreoffice-base">
+<h2>CREATE TABLE Syntax in LibreOffice Base<a class="headerlink" href="#create-table-syntax-in-libreoffice-base" title="Permalink to this headline">¶</a></h2>
+<p>In LibreOffice Base, unquoted fields and table names are converted to upper case. <a class="reference external" href="https://eeperry.wordpress.com/2013/11/15/libreoffice-base-sql-creating-tables/">read more here.</a><br />
+To prevent this, you can use quoted attribute and tables names, eg.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CREATE</span> <span class="n">TABLE</span> <span class="s2">&quot;table_name&quot;</span> <span class="p">(</span>
+<span class="s2">&quot;attribute1&quot;</span> <span class="n">datatype</span><span class="p">,</span>
+<span class="s2">&quot;attribute2&quot;</span> <span class="n">datatype</span><span class="p">,</span>
+<span class="o">....</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="try-it-create-table">
+<h2>Try It: CREATE TABLE<a class="headerlink" href="#try-it-create-table" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><strong>Question</strong>:<br />
+Create a table called mydata that has three fields:</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>num – that will store a number (use int as data type)</p></li>
+<li><p>message – that will store a string up to 50 characters (varchar data type)</p></li>
+<li><p>amount – that stores a decimal number with 8 total digits and 2 decimal digits (decimal data type)
+Use the web site <strong>sqlfiddle.com</strong> or <a class="reference external" href="https://www.db-fiddle.com/">DB-fiddle</a> to try your table creation. SQL fiddle is an online SQL database (no need to download anything) where we can test, debug and share SQL snippets.</p></li>
+</ul>
+<p>Sharing is as easy as pasting the url. <a class="reference external" href="http://sqlfiddle.com/#%219/d8ad4/3">click me!</a></p>
+</div>
+<div class="section" id="relational-database-management-systems">
+<h2>Relational Database Management Systems<a class="headerlink" href="#relational-database-management-systems" title="Permalink to this headline">¶</a></h2>
+<p>In this lecture we will be introducing a couple relational database management systems.</p>
+<ul class="simple">
+<li><p>UBC qualify for a free <a class="reference external" href="https://it.ubc.ca/services/desktop-print-services/software-licensing/office-365-students">Office 365</a> subscription, which includes free downloads of: Word, Excel, PowerPoint, and more.</p></li>
+<li><p>Students running Windows can also install <strong>Microsoft Access</strong>.</p></li>
+<li><p>Microsoft Access is a Database Management System (DBMS).</p></li>
+<li><p>Access can work directly with data from many SQL databases on the desktop, on servers, on minicomputers, or on mainframes, and with data stored on web servers.
+<a class="reference external" href="https://www.tutorialspoint.com/ms_access/ms_access_overview.htm">TutorialsPoint</a> is a great resource for help on MS Access.</p></li>
+</ul>
+<p>For students not running Windows, a nice alternative is LibreOffice</p>
+<ul class="simple">
+<li><p><em>LibreOffice</em> is a free and open-source office suite, a project of The Document Foundation.</p></li>
+<li><p><strong>LibreOffice Base</strong> is a free and open-source relational database management system that is part of the LibreOffice office suite; download <a class="reference external" href="https://www.libreoffice.org/download/download/">here</a></p></li>
+<li><p>Like Access, it can be used to create and manage databases either locally or on servers eg. <strong>mysql</strong>, an <strong>access database</strong>.
+As I am using a Mac, I will be conducting demonstrations in LibreOffice Base. The details for Microsoft Access are provided as snap shots throughout and will be very similar to LibreOffice Base.</p></li>
+<li><p><a class="reference external" href="https://thefrugalcomputerguy.com/seriespg.php?ser=15/">Here</a> is a useful webpage for help on LibreOffice Base along with the <a class="reference external" href="https://wiki.documentfoundation.org/images/e/e8/BH40-BaseHandbook.pdf">handbook</a>.</p></li>
+<li><p>We will learn how to code SQL queries.</p></li>
+<li><p>Queries offer the ability to retrieve and filter data, calculate summaries (totals), and update/move/delete records in bulk.</p></li>
+<li><p>We also may want to take advantage of the graphical user interface (GUI) frontend for data manipulation and queries.</p></li>
+<li><p>These visual representations are easy to use and hides the complexity of writing SQL commands while still providing access to powerful and advanced analysis</p></li>
+<li><p>We’ll see how we can easy switch between the graphical query design and SQL syntax.</p></li>
+<li><p>Bonus: this easy back and forth may be useful as you are trying to learn SQL.</p></li>
+</ul>
+</div>
+<div class="section" id="create-table-in-microsoft-access">
+<h2>CREATE TABLE in Microsoft Access<a class="headerlink" href="#create-table-in-microsoft-access" title="Permalink to this headline">¶</a></h2>
+<p>In Microsoft Access, start by creating a “Blank desktop database” (give it whatever name you want).</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/blankDatabase.jpg"><img alt="blankDatabase" src="notes/week08/../images/05Databases/blankDatabase.jpg" style="width: 600px;" /></a>
+<p>Next, navigate to the Create tab in the Ribbon and select the Table button to build a table. To get to the “Design View”
+as seen <img src="../images/05Databases/create_tab.png" alt="create_tab" width="30" style="display:inline;"> on the next page, go to <strong>View</strong> &gt; <strong>Design View</strong> in the Fields tab:
+<img src="../images/05Databases/designView.png" alt="designView" width="400" ><br />
+For a walk through of this, see <a class="reference external" href="https://www.youtube.com/watch?v=PBhftKTmdHI">this</a> demo on YouTube.</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/createTable.png"><img alt="createTable" src="notes/week08/../images/05Databases/createTable.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="create-table-in-libreoffice-base">
+<h2>CREATE TABLE in LibreOffice Base<a class="headerlink" href="#create-table-in-libreoffice-base" title="Permalink to this headline">¶</a></h2>
+<p>Upon opening Base, a database Wizard will pop-up. While we could access an existing database from a server, today we will be creating a new internal database:
+<img src="../images/05Databases/LibreOffice1.png" alt="LibreOffice1" width="1000" ></p>
+<ul class="simple">
+<li><p>If you don’t see the Database Wizard, choose <strong>File</strong> &gt; <strong>New</strong> &gt; <strong>Database</strong>. (Shortcut <code class="docutils literal notranslate"><span class="pre">Cmnd</span></code> + <code class="docutils literal notranslate"><span class="pre">N</span></code> ).</p></li>
+<li><p>To create a new database file.</p></li>
+</ul>
+<blockquote>
+<div><ol class="simple">
+<li><p>select the type of database (leave the HSQLDB environment default),</p></li>
+</ol>
+</div></blockquote>
+<ol class="simple">
+<li><p>you may or may not choose to register you database <sup name="a2"><a class="reference external" href="#f2">2</a></sup>. For now choose no (we can always register it later).</p></li>
+<li><p>click the Finish button.
+N.B. The Table Wizard helps you to add a sample tables to the new database file upon which we can build; see <a class="reference external" href="https://documentation.libreoffice.org/assets/Uploads/Documentation/en/GS5.2/HTML/GS5208-GettingStartedWithBase.html">Using the Wizard to create a table.</a><br />
+<b name="f2">2</b> registered databases be accessed by other program components as a data source (e.g. <a class="reference external" href="https://thefrugalcomputerguy.com/grouppg.php?ser=15&amp;grp=26">mail merge</a>)<a class="reference external" href="#a2">↩</a></p></li>
+</ol>
+<p>It doesn’t make any functional difference to us if we register the database for what we will be doing. Either leave it at the default or change it to “No, do not register the database”.
+<img src="../images/05Databases/lob.png" alt="lob" width="600" ></p>
+<p>Right now we have an empty database. In LibreOffice Base use “Create a Table in Design View” to add a table.
+<img src="../images/05Databases/LibreOffice.png" alt="LibreOffice" width="800" ></p>
+<p>We can enter our fields and specify the data types from the drop down menu. Any extra parameters can be entered in the boxes provided below.
+<img src="../images/05Databases/LibreOffice3.png" alt="LibreOffice3" width="800" ></p>
+<ul class="simple">
+<li><p>To make an attribute a primary key in LibreOffice Base, simply right click on the Field Name and select “Primary Key”.</p></li>
+<li><p>In MS Access, select the field and press the primary key button <img src="../images/05Databases/pkey.png" alt="pkey" width="30" style="display:inline;"></p></li>
+<li><p>N.B. Data type options are named slightly different in LibreOffice Base than MS Access).</p></li>
+<li><p>For example “Text” vs. “Short Text”, LibreOffice base does not have a “Currency” option.</p></li>
+<li><p>To view the image from the previous slide, open WorksOn.odb in LibreOffice base, right click on the emp table and press Edit</p></li>
+</ul>
+</div>
+<div class="section" id="schemas-and-metadata">
+<h2>Schemas and Metadata<a class="headerlink" href="#schemas-and-metadata" title="Permalink to this headline">¶</a></h2>
+<p>Typically a database will be a compilation of many tables that are all connected in some way.</p>
+<p>The description of the structure of the database is called a <strong>schema</strong>. It can refer to a visual representation of a database or a set of rules that govern a database.</p>
+<p>The schema is a type of <em>metadata</em>.<br />
+<img src="../images/05Databases/schema.png" alt="schema" width="400" ></p>
+</div>
+<div class="section" id="adding-data-using-insert">
+<h2>Adding Data using INSERT<a class="headerlink" href="#adding-data-using-insert" title="Permalink to this headline">¶</a></h2>
+<p>Insert a row using the <code class="docutils literal notranslate"><span class="pre">INSERT</span></code> command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="n">emp</span> <span class="n">VALUES</span> <span class="p">(</span><span class="s1">&#39;E9&#39;</span><span class="p">,</span><span class="s1">&#39;S. Smith&#39;</span><span class="p">,</span>
+<span class="s1">&#39;1975-03-05&#39;</span><span class="p">,</span> <span class="s1">&#39;SA&#39;</span><span class="p">,</span><span class="mi">60000</span><span class="p">,</span><span class="s1">&#39;E8&#39;</span><span class="p">,</span><span class="s1">&#39;D1&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Recall the fields of our table: eno, ename, bdate, title, salary, supereno, dno</p>
+<p>If you do not give values for all fields in the order they are in the table, you must list the fields you are providing data for:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="n">emp</span><span class="p">(</span><span class="n">eno</span><span class="p">,</span> <span class="n">ename</span><span class="p">,</span> <span class="n">salary</span><span class="p">)</span>
+<span class="n">VALUES</span> <span class="p">(</span><span class="s1">&#39;E9&#39;</span><span class="p">,</span><span class="s1">&#39;S. Smith&#39;</span><span class="p">,</span><span class="mi">60000</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Note: If any columns are omitted from the list, they are set to NULL. <em>Note that NULL is not the same thing as an empty string ‘’</em></p>
+<p><strong>Question</strong>
+Using the mydata table insert three rows:</p>
+<ul class="simple">
+<li><p>(1, ’Hello’, 99.45)</p></li>
+<li><p>(2, ’Goodbye’, 55.99)</p></li>
+<li><p>(3, ’No Amount’)</p></li>
+</ul>
+<p><strong>Some notes on quotes</strong><br />
+Notice how numbers do not need to be surrounded in quotes.
+While we may use single or double quotes around text, single quotes is generally preferred.</p>
+<p><strong>Dates</strong><br />
+The DATA data type appears in the format YYYY-MM-DD (in quotes) eg, bdate = ‘1975-01-15’.</p>
+<div class="section" id="continuing-from-our-sqlfiddle-example">
+<h3>Continuing from our <code class="docutils literal notranslate"><span class="pre">sqlfiddle</span></code> example.<a class="headerlink" href="#continuing-from-our-sqlfiddle-example" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/SQLfiddle.png"><img alt="SQLfiddle" src="notes/week08/../images/05Databases/SQLfiddle.png" style="width: 1000px;" /></a>
+</div>
+</div>
+<div class="section" id="adding-data-in-microsoft-access">
+<h2>Adding Data in Microsoft Access<a class="headerlink" href="#adding-data-in-microsoft-access" title="Permalink to this headline">¶</a></h2>
+<p>Consider the WorksOn.accdb database on Canvas. In Microsoft Access, insert a new row by entering data into the last row of the table when in data view.</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/insert.png"><img alt="insert" src="notes/week08/../images/05Databases/insert.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="adding-data-in-libreoffice-base">
+<h2>Adding Data in LibreOffice Base<a class="headerlink" href="#adding-data-in-libreoffice-base" title="Permalink to this headline">¶</a></h2>
+<p>Consider this WorksOn.obd, we can add a row to the emp table by simply double clicking it in Tables and inputting the data as we would in an Excel spreadsheet.
+<img src="../images/05Databases/empTables.png" alt="empTables" width="1000" ></p>
+<p>Consider this WorksOn.obd, we can add a row to the emp table by simply double clicking it in <strong>Tables</strong> and inputting the data as we would in an Excel spreadsheet. N.B. You have to set a primary key before adding records to a table using this feature
+<img src="../images/05Databases/inputEmp.png" alt="inputEmp" width="1000" ></p>
+</div>
+<div class="section" id="sql-mode">
+<h2>SQL mode<a class="headerlink" href="#sql-mode" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Rather than using the Design View mode, we can use SQL commands by selection <strong>Tools</strong> &gt; <strong>SQL</strong> in LibreOffice Base.</p></li>
+<li><p>If you are using Microsoft Access, you can access SQL view by following <a class="reference external" href="https://www.youtube.com/watch?v=IqGXE2nZZ9o">this</a> demo or the instructions on <a class="reference external" href="#SQL-view">this</a> slide.</p></li>
+<li><p>After you type in your command and press <strong>Execute</strong>, you will get a status command to see if your command was successful or had any syntax errors:</p></li>
+<li><p>N.B. In order to see mytable appear in the Tables panel, you may have to refresh by selection <strong>View</strong> &gt; <strong>Refresh</strong> Tables</p></li>
+<li><p><a class="reference external" href="https://eeperry.wordpress.com/2013/11/15/libreoffice-base-sql-creating-tables/">Recall</a> since I didn’t put my table names and fields in quotes, they get converted to capital letters (specific to LibreOffice Base–may not be the functionality of Access).
+<img src="../images/05Databases/SQLBASE.png" alt="SQLBASE" width="600"></p></li>
+</ul>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/mydataBASE.png"><img alt="mydataBASE" src="notes/week08/../images/05Databases/mydataBASE.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="libreoffice-base-using-lowercase-letters">
+<h2>LibreOffice Base using lowercase letters<a class="headerlink" href="#libreoffice-base-using-lowercase-letters" title="Permalink to this headline">¶</a></h2>
+<p>To force the names of tales and fields to be lowercase in LibreOffice base, use double quotes.
+<img src="../images/05Databases/baseLoserSQL.png" alt="baseLoserSQL" width="600"  >
+<img src="../images/05Databases/baseLower.png" alt="baseLower" width="600" ></p>
+</div>
+<div class="section" id="sql-view">
+<h2>SQL view<a class="headerlink" href="#sql-view" title="Permalink to this headline">¶</a></h2>
+<p>In Microsoft Access, go to the Design tab in the ribbon and select the SQL View button</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/SQLview.png"><img alt="SQLview" src="notes/week08/../images/05Databases/SQLview.png" style="width: 1000px;" /></a>
+</div>
+<div class="section" id="comment">
+<h2>Comment<a class="headerlink" href="#comment" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>For monetary values in LibreOffice base we used the data type <code class="docutils literal notranslate"><span class="pre">DECIMAL(x,</span> <span class="pre">2</span> <span class="pre">)</span></code>.</p></li>
+<li><p>For monetary values in Microsoft Access, use <code class="docutils literal notranslate"><span class="pre">CURRENCY</span></code> (with no arguments).</p></li>
+</ul>
+<p>We can updating existing rows using the <code class="docutils literal notranslate"><span class="pre">UPDATE</span></code> statement.<br />
+Examples:</p>
+<ol class="simple">
+<li><p>Increase all employee salaries by 10%.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="n">SET</span> <span class="n">salary</span> <span class="o">=</span> <span class="n">salary</span><span class="o">*</span><span class="mf">1.10</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>Increase salary of employee E2 to $1 million and change his name:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">UPDATE</span> <span class="n">emp</span>
+<span class="n">SET</span> <span class="n">salary</span> <span class="o">=</span> <span class="mi">1000000</span><span class="p">,</span> <span class="n">ename</span><span class="o">=</span><span class="s1">&#39;Rich Guy&#39;</span>
+<span class="n">WHERE</span> <span class="n">eno</span> <span class="o">=</span> <span class="s1">&#39;E2&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>INSERT</strong> vs <strong>UPDATE</strong><br />
+The main difference between <code class="docutils literal notranslate"><span class="pre">INSERT</span></code> and <code class="docutils literal notranslate"><span class="pre">UPDATE</span></code> is that <code class="docutils literal notranslate"><span class="pre">INSERT</span></code> is used to add new records to the table while <code class="docutils literal notranslate"><span class="pre">UPDATE</span></code> is used to modify the existing records in the table</p>
+</div></blockquote>
+</div>
+<div class="section" id="notes">
+<h2>Notes:<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Use <strong>WHERE</strong> to filter only the rows to update.</p></li>
+<li><p>The <strong>WHERE</strong> clause can also be used with other comparisons (eg. = , &gt;, &lt;) with numbers, characters, or dates.</p></li>
+<li><p>For example, you can filter on dates passed a certain time using WHERE date &gt; ‘2011-12-16’
+- In Access, you will need to surround your dates with #, eg WHERE date &gt; #2011-12-16#</p></li>
+<li><p>Notice how we can also change (i.e <strong>SET</strong>) more than one value at a time by separating the fields by commas.</p></li>
+<li><p>Notice that there are no commas separating keyword clauses</p></li>
+</ul>
+</div>
+<div class="section" id="updating-in-microsoft-access-and-libreoffice-base">
+<h2>Updating in Microsoft Access and LibreOffice Base<a class="headerlink" href="#updating-in-microsoft-access-and-libreoffice-base" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>UPDATE</strong> command is supported by Microsoft Access/LibreOffice Base’s GUI. That is, to modify individual data items with SQL code, simply enter the table, select the row and cell to update and change the data. Data is saved when you leave the row.</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/update.png"><img alt="update" src="notes/week08/../images/05Databases/update.png" style="width: 700px;" /></a>
+<p><strong>Example 5.2</strong><br />
+Question Using the mydata table and the three rows previously inserted do these updates:</p>
+<ul class="simple">
+<li><p>Update all amount fields to be 99.99.</p></li>
+<li><p>Update the num field and set it to 10 for the record with num = 1.</p></li>
+<li><p>Update the message field to ’Changed’ for the record with num = 2.
+Perform these takes in SQL mode in either Access, Base, or sqlfiddle.com.</p></li>
+</ul>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/SQLfiddle2.png"><img alt="SQLfiddle2" src="notes/week08/../images/05Databases/SQLfiddle2.png" style="width: 1000px;" /></a>
+</div>
+<div class="section" id="adding-deleting-attributes">
+<h2>Adding/Deleting Attributes<a class="headerlink" href="#adding-deleting-attributes" title="Permalink to this headline">¶</a></h2>
+<p>We can add or delete columns using the <code class="docutils literal notranslate"><span class="pre">ALTER</span></code> statement.</p>
+<ol class="simple">
+<li><p>To add the column notes to our emp table:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ALTER</span> <span class="n">TABLE</span> <span class="n">emp</span>
+<span class="n">ADD</span> <span class="n">COLUMN</span> <span class="n">notes</span> <span class="n">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+<span class="n">Alternatively</span> <span class="n">we</span> <span class="n">could</span> <span class="n">just</span> <span class="nb">type</span> <span class="n">ADD</span><span class="p">:</span>
+<span class="n">ALTER</span> <span class="n">TABLE</span> <span class="n">emp</span>
+<span class="n">ADD</span> <span class="n">notes</span> <span class="n">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>To delete the column notes from our emp table:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ALTER</span> <span class="n">TABLE</span> <span class="n">emp</span>
+<span class="n">DROP</span> <span class="n">COLUMN</span> <span class="n">notes</span><span class="p">;</span>
+</pre></div>
+</div>
+<div class="section" id="id9">
+<h3>Notes:<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Note that we don’t need quotes for field names (just as we didn’t need them in the <code class="docutils literal notranslate"><span class="pre">CREATE</span> <span class="pre">TABLE</span></code> statement).</p></li>
+<li><p>We can not at a column at a specific position in the table (they get placed in the last row by default).</p></li>
+<li><p>We can add multiple columns at a time using the syntax:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ALTER</span> <span class="n">TABLE</span> <span class="n">table_name</span>
+<span class="n">ADD</span> <span class="n">column_1</span> <span class="n">column_definition</span><span class="p">,</span> <span class="n">column_2</span>
+<span class="n">column_definition</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="delete-statements">
+<h2>Delete Statements<a class="headerlink" href="#delete-statements" title="Permalink to this headline">¶</a></h2>
+<p>Rows are deleted using the <code class="docutils literal notranslate"><span class="pre">DELETE</span></code> statement. Examples:</p>
+<ul class="simple">
+<li><p>Fire everyone in the company.
+<code class="docutils literal notranslate"><span class="pre">DELETE</span> <span class="pre">FROM</span></code> emp;</p></li>
+<li><p>Fire everyone making over $35,000.
+<code class="docutils literal notranslate"><span class="pre">DELETE</span> <span class="pre">FROM</span></code> emp WHERE salary &gt; 35000;</p></li>
+<li><p>You can think of the previous example as deleting all the visible rows in an excel sheet after applying a filter.</p></li>
+</ul>
+</div>
+<div class="section" id="deleting-data-in-microsoft-access-libreoffice-base">
+<h2>Deleting Data in Microsoft Access/LibreOffice Base<a class="headerlink" href="#deleting-data-in-microsoft-access-libreoffice-base" title="Permalink to this headline">¶</a></h2>
+<p>The DELETE command is supported by Microsoft Access/LibreOffice Base GUI. To delete an individual row, select the row (by clicking the gray space to the left of the row), then press <code class="docutils literal notranslate"><span class="pre">Alt</span></code> +<code class="docutils literal notranslate"><span class="pre">Delete</span></code> key or right click and select Delete Row from pop-up menu.<sup name="a3"><a class="reference external" href="#f3">3</a></sup>
+<img src="../images/05Databases/deleteRow.png" alt="deleteRow" width="600" ></p>
+<p><b name="f3">3</b> standard convention usually will capitalize keywords <a class="reference external" href="#a3">↩</a></p>
+<p>The <strong>DELETE</strong> command is supported by Microsoft Access/LibreOffice Base. To delete an individual row, select the row (by clicking the gray space to the left of the row), then press <code class="docutils literal notranslate"><span class="pre">Delete</span></code> key or right click select <strong>Delete Record</strong> from pop-up menu.</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/delete.png"><img alt="delete" src="notes/week08/../images/05Databases/delete.png" style="width: 700px;" /></a>
+<p><strong>Example 5.3 (Delete)</strong><br />
+Using the mydata table and the three rows previously inserted do these deletes:</p>
+<ul class="simple">
+<li><p>Delete the row with num = 10.</p></li>
+<li><p>Delete the row(s) with message &gt; ’D’.</p></li>
+<li><p>Delete all rows.
+You can use Access, LibreOffice Base, or sqlfiddle.com.</p></li>
+</ul>
+<p>Let’s have a look at the current table mydata</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/mydataRaw.png"><img alt="mydataRaw" src="notes/week08/../images/05Databases/mydataRaw.png" style="width: 1000px;" /></a>
+<div class="section" id="delete-the-row-with-num-10">
+<h3>Delete the row with num = 10<a class="headerlink" href="#delete-the-row-with-num-10" title="Permalink to this headline">¶</a></h3>
+<p>DELETE FROM mydata WHERE num = 10;</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/delete10.png"><img alt="delete10" src="notes/week08/../images/05Databases/delete10.png" style="width: 1000px;" /></a>
+</div>
+<div class="section" id="delete-the-row-s-with-message-d">
+<h3>Delete the row(s) with message &gt; ’D’.<a class="headerlink" href="#delete-the-row-s-with-message-d" title="Permalink to this headline">¶</a></h3>
+<p>Let’s look at what &gt; ’D’ looks like anyhow:</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/mydataGd.png"><img alt="mydataGd" src="notes/week08/../images/05Databases/mydataGd.png" style="width: 1000px;" /></a>
+<p>So removing the rows greater than D yeilds:</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/rmD.png"><img alt="rmD" src="notes/week08/../images/05Databases/rmD.png" style="width: 1000px;" /></a>
+</div>
+</div>
+<div class="section" id="comparison-operators-on-strings">
+<h2>Comparison operators on strings<a class="headerlink" href="#comparison-operators-on-strings" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Comparison operators on strings uses <a class="reference external" href="https://en.wikipedia.org/wiki/Lexicographical_order">lexicographical ordering</a>.</p></li>
+<li><p><strong>Warning</strong>: This is similar to the alphabetical order except <strong>sometimes</strong> all the lowercase letters come before all the uppercase letters and other times all the uppercase letters come before all the lowercase letters.</p></li>
+</ul>
+<p>On DB-fiddle C &lt; c &lt; Changed &lt; change in lexicographical order, hence:
+<img src="../images/05Databases/lexo1.png" alt="lexo1" width="1000" ></p>
+<p>On LibreOffice Base c &lt; C &lt; changed &lt; Changed in lexicographical order, hence:
+<img src="../images/05Databases/lexo2.png" alt="lexo2" width="500" ></p>
+<p>Using &gt; on numbers:
+<img src="../images/05Databases/greatnum.png" alt="greatnum" width="1000" ></p>
+</div>
+<div class="section" id="delete-all-rows">
+<h2>Delete all rows<a class="headerlink" href="#delete-all-rows" title="Permalink to this headline">¶</a></h2>
+<p>Removing all rows and querying all the data from mydata will return zero records.<br />
+<img src="../images/05Databases/noRec.png" alt="noRec" width="1000" ></p>
+</div>
+<div class="section" id="drop-table">
+<h2>DROP TABLE<a class="headerlink" href="#drop-table" title="Permalink to this headline">¶</a></h2>
+<p>When we delete all the records from a table, that table still exists (its just empty).</p>
+<p>The command <strong>DROP TABLE</strong> is used to delete the table and all its data from the database. An example of usage:<br />
+DROP TABLE emp;</p>
+<blockquote>
+<div><p>Warning<br />
+The database does not confirm if you really want to drop the table and delete its data. The effect of the command is immediate.</p>
+</div></blockquote>
+</div>
+<div class="section" id="create-tables-question">
+<h2>Create Tables Question<a class="headerlink" href="#create-tables-question" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.4</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>Each field in the CREATE TABLE statement is separated by a comma.</p></li>
+<li><p>The data type for a field is optional.</p></li>
+<li><p>You can create two tables in a database with the same name.</p></li>
+<li><p>A table will not be dropped (with DROP TABLE) if it contains data.<br />
+A) 0 B) 1 C) 2 D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id10">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.4</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>Each field in the CREATE TABLE statement is separated by a comma. :heavy_check_mark:</p></li>
+<li><p>The data type for a field is optional. :x:</p></li>
+<li><p>You can create two tables in a database with the same name. :x:</p></li>
+<li><p>A table will not be dropped (with DROP TABLE) if it contains data. :x:<br />
+A) 0 <strong>B) 1</strong> C) 2 D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id11">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.5 (Insert Question)</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>You must always specify the fields being inserted with INSERT statement.</p></li>
+<li><p>If you list the fields, the fields must be in the same order as the table.</p></li>
+<li><p>If you do not provide a value for a number field, it will default to 1.</p></li>
+<li><p>Number data items are enclosed in single quotes.<br />
+A) 0 B) 1 C) 2 D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id12">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.5 (Insert Question)</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>You must always specify the fields being inserted with INSERT statement. :x:</p></li>
+<li><p>If you list the fields, the fields must be in the same order as the table. :x:</p></li>
+<li><p>If you do not provide a value for a number field, it will default to 1. :x:</p></li>
+<li><p>Number data items are enclosed in single quotes. :x:<br />
+<strong>A) 0</strong> B) 1 C) 2 D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id13">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.6 (Update Question)</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>You may update more than one row at a time.</p></li>
+<li><p>If the UPDATE has no WHERE clause, it updates all rows.</p></li>
+<li><p>You may update zero or more rows using a UPDATE statement.</p></li>
+<li><p>UPDATE may change more than one data value (column) in a row.<br />
+A) 0 B) 1 C) 2 D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id14">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.6 (Update Question)</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>You may update more than one row at a time. :heavy_check_mark:</p></li>
+<li><p>If the UPDATE has no WHERE clause, it updates all rows. :heavy_check_mark:</p></li>
+<li><p>You may update zero or more rows using a UPDATE statement. :heavy_check_mark:</p></li>
+<li><p>UPDATE may change more than one data value (column) in a row. :heavy_check_mark:<br />
+A) 0 B) 1 C) 2 D) 3 <strong>E) 4</strong></p></li>
+</ol>
+</div>
+<div class="section" id="id15">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.7 (Delete Question)</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>A DELETE with no WHERE clause will delete all rows.</p></li>
+<li><p>The DELETE keyword is case-sensitive.</p></li>
+<li><p>It is possible to DELETE zero or more rows using a WHERE clause.</p></li>
+<li><p>DELETE mydata will delete the entire table and its data.<br />
+A) 0 B) 1 C) 2 D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id16">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.7 (Delete Question)</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>A DELETE with no WHERE clause will delete all rows. :heavy_check_mark:</p></li>
+<li><p>The DELETE keyword is case-sensitive. :x:</p></li>
+<li><p>It is possible to DELETE zero or more rows using a WHERE clause. :heavy_check_mark:</p></li>
+<li><p>DELETE mydata will delete the entire table and its data. :x:<br />
+A) 0 B) 1 <strong>C) 2</strong> D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id17">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="database-part-ii-sql">
+<h1>Database Part II: SQL<a class="headerlink" href="#database-part-ii-sql" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="intro">
+<h2>Intro<a class="headerlink" href="#intro" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>So far we’ve learnt how to manipulate data stored in a relational database using:</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">CREATE</span></code> to create new tables<br />
+<code class="docutils literal notranslate"><span class="pre">INSERT</span></code> to insert new rows<br />
+<code class="docutils literal notranslate"><span class="pre">UPDATE</span></code> to edit rows in a table<br />
+<code class="docutils literal notranslate"><span class="pre">ALTER</span></code> to edit columns in a table<br />
+<code class="docutils literal notranslate"><span class="pre">DELETE</span></code> for deleting rows<br />
+<code class="docutils literal notranslate"><span class="pre">DROP</span> <span class="pre">TABLE</span></code> for deleting tables</p>
+<ul class="simple">
+<li><p>Today we’ll look at some examples for <em>querying</em> data from a database.</p></li>
+</ul>
+</div>
+<div class="section" id="sql-queries-using-select">
+<h2>SQL Queries using <code class="docutils literal notranslate"><span class="pre">SELECT</span></code><a class="headerlink" href="#sql-queries-using-select" title="Permalink to this headline">¶</a></h2>
+<p>A query in SQL has the form:<br />
+<code class="docutils literal notranslate"><span class="pre">SELECT</span></code> <list of columns separated by commas><br />
+<code class="docutils literal notranslate"><span class="pre">FROM</span></code> <list of tables><br />
+<code class="docutils literal notranslate"><span class="pre">WHERE</span></code> <filter conditions><br />
+<code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> <columns><br />
+<code class="docutils literal notranslate"><span class="pre">ORDER</span> <span class="pre">BY</span></code> <columns> ASC/DESC</p>
+<p>Notes:</p>
+<ol class="simple">
+<li><p>Separate the list of columns/expressions and list of tables by commas.</p></li>
+<li><p>The “*” is used to select all columns.</p></li>
+<li><p>Only SELECT required. <code class="docutils literal notranslate"><span class="pre">FROM</span></code>, <code class="docutils literal notranslate"><span class="pre">WHERE</span></code>, <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code>, <code class="docutils literal notranslate"><span class="pre">ORDER</span> <span class="pre">BY</span></code> are optional.</p></li>
+</ol>
+</div>
+<div class="section" id="doing-a-query-in-sql-mode">
+<h2>Doing a query in SQL mode<a class="headerlink" href="#doing-a-query-in-sql-mode" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>To see how to do a basic <code class="docutils literal notranslate"><span class="pre">SELECT</span></code> query in Microsoft Access, see 1:35-2:25 in <a class="reference external" href="https://www.youtube.com/watch?v=IFr4jvt_ZZc">this</a> YouTube video.</p></li>
+<li><p>To see how to do a basic <code class="docutils literal notranslate"><span class="pre">SELECT</span></code> query in LibreOffice base, see <a class="reference external" href="https://www.youtube.com/watch?v=zG1IeZ37aj0&amp;feature=youtu.be">this</a> YouTube demo.</p></li>
+</ul>
+</div>
+<div class="section" id="example-data">
+<h2>Example Data<a class="headerlink" href="#example-data" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/ExampleData.pdf"><img alt="ExampleData" src="notes/week08/../images/05Databases/ExampleData.pdf" style="width: 800px;" /></a>
+</div>
+<div class="section" id="sql-retrieving-only-some-columns">
+<h2>SQL: Retrieving Only Some Columns<a class="headerlink" href="#sql-retrieving-only-some-columns" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>projection operation</strong> creates a new table that has some of the columns of the input table.</p>
+<p>In SQL, provide the table in the FROM clause and the fields in the output in the SELECT.</p>
+<p>Example:<br />
+Return only the eno field from the emp table:<br />
+SELECT eno FROM emp</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/SELECTFROM.png"><img alt="SELECTFROM" src="notes/week08/../images/05Databases/SELECTFROM.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="sql-projection-examples">
+<h2>SQL Projection Examples<a class="headerlink" href="#sql-projection-examples" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/SQLProjection.png"><img alt="SQLProjection" src="notes/week08/../images/05Databases/SQLProjection.png" style="width: 800px;" /></a>
+<p>To return only the distinct values from the previous example, use DISTINCT:
+<img src="../images/05Databases/distinct.png" alt="distinct" width="400" ></p>
+<p><strong>Example 5.1</strong><br />
+Given this table and the following query:<br />
+Select eno, ename, salary<br />
+From emp<br />
+How many columns are returned?<br />
+A) 0 B) 1 C) 2 D) 3 E) 4
+<img src="../images/05Databases/emp.png" alt="emp" width="400" ></p>
+</div>
+<div class="section" id="id18">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.1</strong><br />
+Given this table and the following query:<br />
+Select eno, ename, salary<br />
+From emp<br />
+How many columns are returned?<br />
+A) 0 B) 1 C) 2 <strong>D) 3</strong> E) 4</p>
+</div>
+<div class="section" id="id19">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.2</strong><br />
+Given this table and the following query:<br />
+Select salary<br />
+From emp<br />
+How many rows are returned?<br />
+A) 0 B) 1 C) 2 D) 4 E) 8<br />
+<img src="../images/05Databases/emp.png" alt="emp" width="400" ></p>
+</div>
+<div class="section" id="id20">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.2</strong><br />
+Given this table and the following query:<br />
+Select salary<br />
+From emp<br />
+How many rows are returned?<br />
+A) 0 B) 1 C) 2 D) 4 <strong>E) 8</strong></p>
+</div>
+<div class="section" id="id21">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="building-a-select-sql-query-in-microsoft-access">
+<h2>Building a SELECT SQL Query in Microsoft Access<a class="headerlink" href="#building-a-select-sql-query-in-microsoft-access" title="Permalink to this headline">¶</a></h2>
+<p>Under Create Tab, click on Query Design. <img src="../images/05Databases/QueryDesign.png" alt="QueryDesign" width="40" style="display:inline;"></p>
+<p>Access will pop-up a window asking what table(s) you wish to query. Select one or more.</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/MASQLquery.png"><img alt="MASQLquery" src="notes/week08/../images/05Databases/MASQLquery.png" style="width: 300px;" /></a>
+</div>
+<div class="section" id="microsoft-access-query-interface">
+<h2>Microsoft Access Query Interface<a class="headerlink" href="#microsoft-access-query-interface" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/QueryInterface.png"><img alt="QueryInterface" src="notes/week08/../images/05Databases/QueryInterface.png" style="width: 800px;" /></a>
+</div>
+<div class="section" id="libreoffice-query-interface">
+<h2>LibreOffice Query Interface<a class="headerlink" href="#libreoffice-query-interface" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/LibreOfficeQuery.png"><img alt="LibreOfficeQuery" src="notes/week08/../images/05Databases/LibreOfficeQuery.png" style="width: 800px;" /></a>
+<ul class="simple">
+<li><p>If you hit the Run command ( <img src="../images/05Databases/runBase.png" alt="runBase" width="30" style="display:inline;"> in LibreOffice base, <img src="../images/05Databases/runAccess.png" alt="runAccess" width="25" style="display:inline;"> in Access) and results will instantly appear in a data sheet view.</p></li>
+<li><p>We can save these results in Access by clicking the “Save” icon Toolbar. Give your query an identifying name, eg “Query1” for assignment question 1.
+<img src="../images/05Databases/resultsBase.png" alt="resultsBase" width="600" ></p></li>
+</ul>
+</div>
+<div class="section" id="microsoft-access-data-sheet-view">
+<h2>Microsoft Access Data Sheet View<a class="headerlink" href="#microsoft-access-data-sheet-view" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/MOdatasheetview.png"><img alt="MOdatasheetview" src="notes/week08/../images/05Databases/MOdatasheetview.png" style="width: 1000px;" /></a>
+</div>
+<div class="section" id="libreoffice-preview">
+<h2>LibreOffice Preview<a class="headerlink" href="#libreoffice-preview" title="Permalink to this headline">¶</a></h2>
+<p>To view the table: View -&gt; Preview or <code class="docutils literal notranslate"><span class="pre">F5</span></code> or Run the Query
+<img src="../images/05Databases/f5.png" alt="f5" width="800" ></p>
+</div>
+<div class="section" id="sql-query-view-in-libreoffice">
+<h2>SQL Query View in LibreOffice<a class="headerlink" href="#sql-query-view-in-libreoffice" title="Permalink to this headline">¶</a></h2>
+<p>The design view window in Microsoft Access and LibreOffice provide an easy way of creating SQL queries</p>
+<p>This may be referred to as QBE or Query By Example</p>
+<p>Under the hood, these programs are creating SQL code and runs it to give us our result set.</p>
+<p>To view that code in LibreOffice, we go to <strong>View</strong> -&gt; <strong>Switch Design View On/Off</strong>.</p>
+<ul class="simple">
+<li><p>‘Off’ will show the query in SQL</p></li>
+<li><p>‘On’ will show the query graphical</p></li>
+</ul>
+</div>
+<div class="section" id="libreoffice-query-views">
+<h2>LibreOffice Query Views<a class="headerlink" href="#libreoffice-query-views" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/pretty.png"><img alt="pretty" src="notes/week08/../images/05Databases/pretty.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="microsoft-access-queries-in-sql-view">
+<h2>Microsoft Access Queries in SQL View<a class="headerlink" href="#microsoft-access-queries-in-sql-view" title="Permalink to this headline">¶</a></h2>
+<p>You may view your data, your query graphically, or your query in SQL.<br />
+<img src="../images/05Databases/MAviews.png" alt="MAviews" width="400" ><br />
+For exam purposes, we will be needing to familiarize ourselves more with the SQL View.</p>
+</div>
+<div class="section" id="libreoffice-base-queries-in-sql-view">
+<h2>LibreOffice base Queries in SQL View<a class="headerlink" href="#libreoffice-base-queries-in-sql-view" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/sqlqbase.png"><img alt="sqlqbase" src="notes/week08/../images/05Databases/sqlqbase.png" style="width: 1000px;" /></a>
+</div>
+<div class="section" id="id22">
+<h2>SQL Query View in LibreOffice<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Warning<br />
+Unlike the SQL statements from last lecture, the SQL view mode for queries is case sensitive. That is, it will not convert all of our lower case to upper case text as it did before (annoying I know!)</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/annoying.png"><img alt="annoying" src="notes/week08/../images/05Databases/annoying.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="try-it-sql-select-and-projection">
+<h2>Try it: SQL SELECT and Projection<a class="headerlink" href="#try-it-sql-select-and-projection" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.3</strong><br />
+Using the proj table, write these three queries:</p>
+<ul class="simple">
+<li><p>Show all rows and all columns.</p></li>
+<li><p>Show all rows but only the pno column.</p></li>
+<li><p>Show all rows but only the pno and budget columns.</p></li>
+</ul>
+</div>
+<div class="section" id="retrieving-only-some-of-the-rows">
+<h2>Retrieving only some of the rows<a class="headerlink" href="#retrieving-only-some-of-the-rows" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>selection operation</strong> creates a new table with some of the rows of the input table.</p>
+<p>A <em>condition</em> specifies which rows are in the new table. This condition is similar to a filter in Excel.</p>
+<p>Eg. the following algorithm scans each tuple and checks if it satisfies the condition in the WHERE clause.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="o">*</span> <span class="n">FROM</span> <span class="n">proj</span> <span class="n">WHERE</span> <span class="n">dno</span> <span class="o">=</span> <span class="s1">&#39;D2&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/rows.png"><img alt="rows" src="notes/week08/../images/05Databases/rows.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="selection-conditions">
+<h2>Selection Conditions<a class="headerlink" href="#selection-conditions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The condition in a selection statement specifies which rows are included.</p></li>
+<li><p>It has the general form of an if statement.</p></li>
+<li><p>The condition may consist of attributes, constants, comparison operators (&lt;, &gt;, =, !=, &lt;=, &gt;=), and logical operators (AND, OR, NOT).</p></li>
+<li><p>To check for NULLs, use IS NULL<sup name="a4"><a class="reference external" href="#f4">4</a></sup> which is different that checking if its equal to the empty string =’’. General syntax:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">column_names</span>
+<span class="n">FROM</span> <span class="n">table_name</span>
+<span class="n">WHERE</span> <span class="n">column_name</span> <span class="n">IS</span> <span class="n">NULL</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><b name="f4">4</b> IS NOT NULL is used to check for non null values <a class="reference external" href="#a4">↩</a></p>
+</div>
+<div class="section" id="sql-selection-examples">
+<h2>SQL Selection Examples<a class="headerlink" href="#sql-selection-examples" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/emp.png"><img alt="emp" class="align-left" src="notes/week08/../images/05Databases/emp.png" style="width: 300px;" /></a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="o">*</span>
+<span class="n">FROM</span> <span class="n">emp</span>
+<span class="n">WHERE</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;EE&#39;</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/empshort.png"><img alt="empshort" class="align-left" src="notes/week08/../images/05Databases/empshort.png" style="width: 300px;" /></a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="o">*</span>
+<span class="n">FROM</span> <span class="n">emp</span>
+<span class="n">WHERE</span> <span class="n">salary</span> <span class="o">&gt;</span> <span class="mi">35000</span>
+<span class="n">OR</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;PR&#39;</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/emp35.png"><img alt="emp35" class="align-left" src="notes/week08/../images/05Databases/emp35.png" style="width: 300px;" /></a>
+</div>
+<div class="section" id="selection-question">
+<h2>Selection Question<a class="headerlink" href="#selection-question" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.4</strong><br />
+Given the emp table and the following query, how many rows are returned?<br />
+<code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">*</span>&#160;&#160; <span class="pre">FROM</span> <span class="pre">emp</span>&#160;&#160; <span class="pre">WHERE</span> <span class="pre">title</span> <span class="pre">=</span> <span class="pre">’SA’</span></code><br />
+A) 0 B) 1 C) 2 D) 3 E) &gt;3
+<img src="../images/05Databases/emp.png" alt="emp" width="300" ></p>
+</div>
+<div class="section" id="id23">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.4</strong><br />
+Given the emp table and the following query, how many rows are returned?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>SELECT *  
+FROM emp  
+WHERE title = ’SA’
+</pre></div>
+</div>
+<p>A) 0 B) 1 C) 2 <strong>D) 3</strong> E) &gt;3</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/sol4.png"><img alt="sol4" src="notes/week08/../images/05Databases/sol4.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="id24">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.5</strong>
+Given the emp table and the following query, how many rows are returned?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="o">*</span>
+<span class="n">FROM</span> <span class="n">emp</span>
+<span class="n">WHERE</span> <span class="n">salary</span> <span class="o">&gt;</span> <span class="mi">40000</span>
+<span class="n">OR</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;PR&#39;</span>
+</pre></div>
+</div>
+<p>A) 0
+B) 1
+C) 3
+D) 4
+E) &gt; 4</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/emp.png"><img alt="emp" src="notes/week08/../images/05Databases/emp.png" style="width: 300px;" /></a>
+</div>
+<div class="section" id="id25">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.5</strong>
+Given the emp table and the following query, how many rows are returned?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="o">*</span>
+<span class="n">FROM</span> <span class="n">emp</span>
+<span class="n">WHERE</span> <span class="n">salary</span> <span class="o">&gt;</span> <span class="mi">40000</span>
+<span class="n">OR</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;PR&#39;</span>
+</pre></div>
+</div>
+<p>A) 0
+B) 1
+C) 3
+<strong>D) 4</strong>
+E) &gt; 4</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/sol5.png"><img alt="sol5" src="notes/week08/../images/05Databases/sol5.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="id26">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.6</strong>
+Given the emp table and the following query, how many rows are returned?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>SELECT *
+FROM emp
+WHERE salary &gt;= 40000
+AND ename &gt; &#39;C&#39;?
+</pre></div>
+</div>
+<p>A) 0
+B) 1
+C) 2
+D) 3
+E) ≥ 4</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/emp.png"><img alt="emp" src="notes/week08/../images/05Databases/emp.png" style="width: 300px;" /></a>
+</div>
+<div class="section" id="id27">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.6</strong>
+Given the emp table and the following query, how many rows are returned?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>SELECT *
+FROM emp
+WHERE salary &gt;= 40000
+AND ename &gt; &#39;C&#39;?
+</pre></div>
+</div>
+<p>A) 0
+B) 1
+C) 2
+D) 3
+E) ≥ 4</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/sol6.png"><img alt="sol6" src="notes/week08/../images/05Databases/sol6.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="id28">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="try-it-sql-select-and-filtering-rows">
+<h2>Try It: SQL <code class="docutils literal notranslate"><span class="pre">SELECT</span></code> and Filtering Rows<a class="headerlink" href="#try-it-sql-select-and-filtering-rows" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.7</strong><br />
+Using the proj table, write these three queries:</p>
+<ul class="simple">
+<li><p>Return all projects with budget &gt; $250000.</p></li>
+<li><p>Show the pno and pname for projects in dno = ‘D1’.</p></li>
+<li><p>Show pno and dno for projects in dno=’D1’ or dno=’D2’.</p></li>
+</ul>
+</div>
+<div class="section" id="join-example-for-combining-tables">
+<h2>Join Example for Combining Tables<a class="headerlink" href="#join-example-for-combining-tables" title="Permalink to this headline">¶</a></h2>
+<p>A join combines two tables by matching columns in each table.</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/workson.png"><img alt="workson" src="notes/week08/../images/05Databases/workson.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/proj.png"><img alt="proj" src="notes/week08/../images/05Databases/proj.png" style="width: 300px;" /></a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="o">*</span>
+<span class="n">FROM</span> <span class="n">WorksOn</span>
+<span class="n">INNER</span> <span class="n">JOIN</span> <span class="n">Proj</span>
+<span class="n">ON</span> <span class="n">WorksOn</span><span class="o">.</span><span class="n">pno</span> <span class="o">=</span> <span class="n">Proj</span><span class="o">.</span><span class="n">pno</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/innerjoin.png"><img alt="innerjoin" src="notes/week08/../images/05Databases/innerjoin.png" style="width: 300px;" /></a>
+<p>The general syntax is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="o">&lt;</span><span class="n">columns</span><span class="o">&gt;</span>
+<span class="n">FROM</span>
+<span class="n">R</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="n">of</span> <span class="n">join</span><span class="o">&gt;</span> <span class="n">JOIN</span>
+<span class="n">S</span>
+<span class="n">ON</span> <span class="n">R</span><span class="o">.&lt;</span><span class="n">colname</span><span class="o">&gt;=</span> <span class="n">S</span><span class="o">.&lt;</span><span class="n">colname</span><span class="o">&gt;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Since joining tables often result in repeated field (ie. columns) we distinguish between them using table_name.column_name.</p>
+<p>N.B. the related columns will not necessarily have the same name (but oftentimes they will!)</p>
+</div>
+<div class="section" id="joining-tables">
+<h2>Joining Tables<a class="headerlink" href="#joining-tables" title="Permalink to this headline">¶</a></h2>
+<p>When connecting tables <strong>R</strong> and <strong>S</strong>, there are four types of joins:</p>
+<p><strong>(INNER) JOIN</strong> row in result for each row of R that matches a row of S<br />
+<strong>LEFT (OUTER) JOIN</strong> row in result for each row of R that matches a row of S OR a row of R that does not match anything in S<br />
+<strong>RIGHT (OUTER) JOIN</strong> row in result for each row of R that matches a row of S OR a row of S that does not match anything in R<br />
+<strong>FULL OUTER JOIN</strong> row in result for each row of R that matches a row of S OR a row of R that does not match anything in S OR a row of S that does not match anything in R</p>
+<p><a class="reference external" href="https://www.w3schools.com/sql/sql_join.asp">w3schools</a> is another good resource for learning SQL. Here is a helpful representation of the different types of joins (where R = table1 and S=right table2).</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/joins2.png"><img alt="joins2" src="notes/week08/../images/05Databases/joins2.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="join-example">
+<h2>Join Example<a class="headerlink" href="#join-example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="o">*</span> <span class="n">FROM</span> <span class="n">Boys</span> <span class="o">&lt;&gt;</span> <span class="n">JOIN</span> <span class="n">Girls</span> <span class="n">ON</span> <span class="n">Boys</span><span class="o">.</span><span class="n">Bid</span> <span class="o">=</span> <span class="n">Girls</span><span class="o">.</span><span class="n">Gid</span><span class="p">;</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/joins.png"><img alt="joins" src="notes/week08/../images/05Databases/joins.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="join-query-with-selection-example">
+<h2>Join Query with Selection Example<a class="headerlink" href="#join-query-with-selection-example" title="Permalink to this headline">¶</a></h2>
+<p>You can use join, selection, and projection in the same query.<br />
+Recall:</p>
+<ul class="simple">
+<li><p>projection returns columns listed in SELECT</p></li>
+<li><p>selection filters out rows using condition in WHERE, and</p></li>
+<li><p>join combines tables in FROM using a condition.</p></li>
+</ul>
+<blockquote>
+<div><p>Example 5.8<br />
+Return the employee names who are assigned to the ’Management’ department.</p>
+</div></blockquote>
+<p><img src="../images/05Databases/emp2.png" alt="emp2" width="400" align="left"><img src="../images/05Databases/dept.png" alt="dept" height="150" align="left"></p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/QuerySelection.png"><img alt="QuerySelection" src="notes/week08/../images/05Databases/QuerySelection.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="ordering-result-data">
+<h2>Ordering Result Data<a class="headerlink" href="#ordering-result-data" title="Permalink to this headline">¶</a></h2>
+<p>The query result returned is not ordered on any column by default.
+We can order the data using the ORDER BY clause:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">ename</span><span class="p">,</span> <span class="n">salary</span><span class="p">,</span> <span class="n">bdate</span>
+<span class="n">FROM</span> <span class="n">emp</span>
+<span class="n">WHERE</span> <span class="n">salary</span> <span class="o">&gt;</span> <span class="mi">30000</span>
+<span class="n">ORDER</span> <span class="n">BY</span> <span class="n">salary</span> <span class="n">DESC</span><span class="p">,</span> <span class="n">ename</span> <span class="n">ASC</span><span class="p">;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>ASC sorts the data in ascending order, and DESC sorts it in descending order. The default is ASC.</p></li>
+<li><p>The order of sorted attributes matters; namely, the first column specified is sorted on first, then the second column is used to break any ties, etc.</p></li>
+</ul>
+<p>In LibreOffice the order is done Left to right. To ensure that salary gets ordered first, add another hidden (Deselect <strong>Visible</strong>) column with ename to the right.
+<img src="../images/05Databases/ORDERBY.png" alt="ORDERBY" width="700"></p>
+</div>
+<div class="section" id="limit-and-offset">
+<h2>LIMIT and OFFSET<a class="headerlink" href="#limit-and-offset" title="Permalink to this headline">¶</a></h2>
+<p>If you only want the first N rows, use a LIMIT clause:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">ename</span><span class="p">,</span> <span class="n">salary</span> <span class="n">FROM</span> <span class="n">emp</span>
+<span class="n">ORDER</span> <span class="n">BY</span> <span class="n">salary</span> <span class="n">DESC</span> <span class="n">LIMIT</span> <span class="mi">5</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>To start from a row besides the first, use OFFSET:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">ename</span><span class="p">,</span> <span class="n">salary</span> <span class="n">FROM</span> <span class="n">emp</span>
+<span class="n">ORDER</span> <span class="n">BY</span> <span class="n">salary</span> <span class="n">DESC</span> <span class="n">LIMIT</span> <span class="mi">5</span> <span class="n">OFFSET</span> <span class="mi">2</span><span class="p">;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>LIMIT</strong> improves performance by reducing amount of data processed and sent by the database system.</p></li>
+<li><p><strong>OFFSET 0</strong> is first row, so <strong>OFFSET 2</strong> would return the 3rd row.</p></li>
+<li><p><strong>LIMIT/OFFSET</strong> syntax is supported differently by systems.</p></li>
+<li><p>For example, Access uses</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">TOP</span> <span class="mi">5</span> <span class="n">eno</span><span class="p">,</span> <span class="n">salary</span> <span class="n">FROM</span> <span class="n">emp</span>
+</pre></div>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Program</p></th>
+<th class="head"><p>syntax</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MySQL, PostgreSQL</p></td>
+<td><p>LIMIT syntax</p></td>
+</tr>
+<tr class="row-odd"><td><p>Oracle</p></td>
+<td><p>ROWNUM field that can be filtered in WHERE</p></td>
+</tr>
+<tr class="row-even"><td><p>SQL Server</p></td>
+<td><p>SELECT TOP N</p></td>
+</tr>
+</tbody>
+</table>
+<p>(click the pink text above and <a class="reference external" href="https://www.w3schools.com/sql/sql_top.asp">here</a> for more details.)</p>
+</div>
+<div class="section" id="try-it-sql-select-with-joins-and-ordering">
+<h2>Try It: SQL SELECT with Joins and Ordering<a class="headerlink" href="#try-it-sql-select-with-joins-and-ordering" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.9</strong><br />
+Write these three queries:</p>
+<ul class="simple">
+<li><p>Return all projects with budget &lt; $500000 sorted by budget descending.</p></li>
+<li><p>List only the top 5 employees by salary descending. Show only their name and salary.</p></li>
+<li><p>List each project pno, dno, pname, and dname ordered by dno ascending then pno ascending. Only show projects if department name &gt; ‘D’. Note: This query will require a join.</p></li>
+</ul>
+</div>
+<div class="section" id="select-statement-execution-order">
+<h2>SELECT Statement Execution Order<a class="headerlink" href="#select-statement-execution-order" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Order written:</p></th>
+<th class="head"><p>Order executed:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>SELECT &lt; feilds &gt;</p></td>
+<td><p>1. FROM clause</p></td>
+</tr>
+<tr class="row-odd"><td><p>FROM &lt; left_table &gt;</p></td>
+<td><p>2. JOIN clause</p></td>
+</tr>
+<tr class="row-even"><td><p>JOIN &lt; right_table &gt;</p></td>
+<td><p>3. WHERE clause</p></td>
+</tr>
+<tr class="row-odd"><td><p>ON &lt; join_condition &gt;</p></td>
+<td><p>4. GROUP BY clause</p></td>
+</tr>
+<tr class="row-even"><td><p>WHERE &lt; where_condition &gt;</p></td>
+<td><p>5. SELECT clause</p></td>
+</tr>
+<tr class="row-odd"><td><p>GROUPBY &lt; group_by_list &gt;</p></td>
+<td><p>6. DISTINCT clause</p></td>
+</tr>
+<tr class="row-even"><td><p>ORDERBY &lt; order_by_list &gt;</p></td>
+<td><p>7. ORDER BY clause</p></td>
+</tr>
+</tbody>
+</table>
+<p>Read more about it <a class="reference external" href="https://sqlbolt.com/lesson/select_queries_order_of_execution">here</a></p>
+</div>
+<div class="section" id="aggregate-queries-and-functions">
+<h2>Aggregate Queries and Functions<a class="headerlink" href="#aggregate-queries-and-functions" title="Permalink to this headline">¶</a></h2>
+<p>Several queries cannot be answered using the simple form of the SELECT statement. These queries require a summary calculation to be performed. For example:</p>
+<ul class="simple">
+<li><p>What is the maximum employee salary?</p></li>
+<li><p>What is the total number of hours worked on a project?</p></li>
+<li><p>How many employees are there in department ’D1’?</p></li>
+</ul>
+<p>To answer these queries requires the use of <strong>aggregate</strong> functions.<br />
+These functions operate on a single column of a table and return a single value.</p>
+</div>
+<div class="section" id="aggregate-functions">
+<h2>Aggregate Functions<a class="headerlink" href="#aggregate-functions" title="Permalink to this headline">¶</a></h2>
+<p>Five common aggregate functions are:<br />
+<code class="docutils literal notranslate"><span class="pre">COUNT</span></code> returns the number of values in a column<br />
+<code class="docutils literal notranslate"><span class="pre">SUM</span></code> returns the sum of the values in a column<br />
+<code class="docutils literal notranslate"><span class="pre">AVG</span></code> returns the average of the values in a column<br />
+<code class="docutils literal notranslate"><span class="pre">MIN</span></code> returns the smallest value in a column<br />
+<code class="docutils literal notranslate"><span class="pre">MAX</span></code> returns the largest value in a column</p>
+<p>Notes:
+1.<code class="docutils literal notranslate"><span class="pre">COUNT</span></code>, <code class="docutils literal notranslate"><span class="pre">MAX</span></code>, and <code class="docutils literal notranslate"><span class="pre">MIN</span></code> apply to all types of fields, whereas <code class="docutils literal notranslate"><span class="pre">SUM</span></code> and <code class="docutils literal notranslate"><span class="pre">AVG</span></code> apply to only numeric fields.
+2. Except for <code class="docutils literal notranslate"><span class="pre">COUNT(*)</span></code> all functions ignore nulls. <code class="docutils literal notranslate"><span class="pre">COUNT(*)</span></code> returns the number of rows in the table.
+3. Use <code class="docutils literal notranslate"><span class="pre">DISTINCT</span></code> to eliminate duplicates.</p>
+</div>
+<div class="section" id="distinct-syntax">
+<h2><code class="docutils literal notranslate"><span class="pre">DISTINCT</span></code> syntax<a class="headerlink" href="#distinct-syntax" title="Permalink to this headline">¶</a></h2>
+<p>The following selects the distinct salaries from emp:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DISTINCT</span> <span class="pre">salary</span> <span class="pre">FROM</span> <span class="pre">Emp</span></code><br />
+The following counts the number of distinct salaries from emp:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">COUNT(DISTINCT</span> <span class="pre">salary)</span> <span class="pre">FROM</span> <span class="pre">Emp</span></code></p></li>
+</ul>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/one.png"><img alt="one" class="align-left" src="notes/week08/../images/05Databases/one.png" style="width: 300px;" /></a>
+</div>
+<div class="section" id="count">
+<h2><code class="docutils literal notranslate"><span class="pre">COUNT</span></code><a class="headerlink" href="#count" title="Permalink to this headline">¶</a></h2>
+<p>Use SELECT COUNT(*) FROM EMP; to count all the rows including NULLS and duplicates.</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/a.png"><img alt="a" class="align-left" src="notes/week08/../images/05Databases/a.png" style="width: 300px;" /></a>
+</div>
+<div class="section" id="aggregate-function-example">
+<h2>Aggregate Function Example<a class="headerlink" href="#aggregate-function-example" title="Permalink to this headline">¶</a></h2>
+<p>Return the number of employees and their average salary.</p>
+<p>SELECT COUNT(eno) AS numEmp, AVG(salary) AS avgSalary FROM emp</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/result.png"><img alt="result" src="notes/week08/../images/05Databases/result.png" style="width: 200px;" /></a>
+<p>Note: AS is used to rename a column in the output.<br />
+N.B. Aggregate functions are separated by commas just like any other field name.</p>
+</div>
+<div class="section" id="group-by-clause">
+<h2><code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> Clause<a class="headerlink" href="#group-by-clause" title="Permalink to this headline">¶</a></h2>
+<p>Aggregate functions are most useful when combined with the <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> clause.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> clause groups rows based on the values of the columns specified.</p>
+<p>When used in combination with aggregate functions, the result is a table where each row consists of unique values for the <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> attributes and the result of the aggregate functions applied to the rows of that group.</p>
+</div>
+<div class="section" id="group-by-example">
+<h2><code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> example<a class="headerlink" href="#group-by-example" title="Permalink to this headline">¶</a></h2>
+<p>For each employee title, return the number of employees with that title.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">title</span><span class="p">,</span> <span class="n">COUNT</span><span class="p">(</span><span class="n">eno</span><span class="p">)</span> <span class="n">AS</span> <span class="n">numEmp</span>
+<span class="n">FROM</span> <span class="n">emp</span>
+<span class="n">GROUP</span> <span class="n">BY</span> <span class="n">title</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/ex1.png"><img alt="ex1" src="notes/week08/../images/05Databases/ex1.png" style="width: 300px;" /></a>
+<p>If a selected field is not aggregated by a function it has to be explicitily added to the GROUP BY clause!!</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="o">&lt;</span><span class="n">A</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&gt;</span><span class="n">B</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">aggregateFun</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="n">AS</span> <span class="n">varName</span>
+<span class="n">GROUP</span> <span class="n">BY</span> <span class="o">&lt;</span><span class="n">A</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&gt;</span><span class="n">B</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>For example.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">title</span><span class="p">,</span> <span class="n">COUNT</span><span class="p">(</span><span class="n">eno</span><span class="p">)</span> <span class="n">AS</span> <span class="n">numEmp</span>
+<span class="n">FROM</span> <span class="n">emp</span>
+<span class="n">GROUP</span> <span class="n">BY</span> <span class="n">title</span> <span class="o">&lt;-</span> <span class="n">without</span> <span class="n">this</span> <span class="n">line</span> <span class="n">we</span> <span class="n">get</span> <span class="n">an</span> <span class="n">error</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/ex1.png"><img alt="ex1" src="notes/week08/../images/05Databases/ex1.png" style="width: 300px;" /></a>
+<p>For each employee title, return the number of employees with that title, and the minimum, maximum, and average salary.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">title</span><span class="p">,</span> <span class="n">COUNT</span><span class="p">(</span><span class="n">eno</span><span class="p">)</span> <span class="n">AS</span> <span class="n">numEmp</span><span class="p">,</span>
+<span class="n">MIN</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span> <span class="n">AS</span> <span class="n">minSal</span><span class="p">,</span>
+<span class="n">MAX</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span> <span class="n">AS</span> <span class="n">maxSal</span><span class="p">,</span> <span class="n">AVG</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span> <span class="n">AS</span> <span class="n">avgSal</span>
+<span class="n">FROM</span> <span class="n">emp</span>
+<span class="n">GROUP</span> <span class="n">BY</span> <span class="n">title</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/groupby.png"><img alt="groupby" src="notes/week08/../images/05Databases/groupby.png" style="width: 300px;" /></a>
+</div>
+<div class="section" id="group-by-facts">
+<h2>GROUP BY Facts<a class="headerlink" href="#group-by-facts" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>You can group by multiple attributes. To be in the same group, all attribute values must be the same.</p></li>
+<li><p>Any <code class="docutils literal notranslate"><span class="pre">WHERE</span></code> conditions are applied before the <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> and aggregate functions are calculated.</p></li>
+<li><p>A column name cannot appear in the <code class="docutils literal notranslate"><span class="pre">SELECT</span></code> part of the query unless it is part of an aggregate function or in the list of group by attributes.</p></li>
+<li><p>There is a <code class="docutils literal notranslate"><span class="pre">HAVING</span></code> clause that is applied <u>after</u> the <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> clause and aggregate functions are calculated to filter out groups.</p></li>
+</ol>
+</div>
+<div class="section" id="id29">
+<h2>SELECT Statement Execution Order<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Order written:</p></th>
+<th class="head"><p>Order executed:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>SELECT &lt; feilds &gt;</p></td>
+<td><p>1. FROM clause</p></td>
+</tr>
+<tr class="row-odd"><td><p>FROM &lt; left_table &gt;</p></td>
+<td><p>2. JOIN clause</p></td>
+</tr>
+<tr class="row-even"><td><p>JOIN &lt; right_table &gt;</p></td>
+<td><p>3. WHERE clause</p></td>
+</tr>
+<tr class="row-odd"><td><p>ON &lt; join_condition &gt;</p></td>
+<td><p>4. GROUP BY clause</p></td>
+</tr>
+<tr class="row-even"><td><p>WHERE &lt; where_condition &gt;</p></td>
+<td><p>5. HAVING clause</p></td>
+</tr>
+<tr class="row-odd"><td><p>GROUPBY &lt; group_by_list &gt;</p></td>
+<td><p>6. SELECT clause</p></td>
+</tr>
+<tr class="row-even"><td><p>HAVING &lt; having_condition &gt;</p></td>
+<td><p>7. DISTINCT clause</p></td>
+</tr>
+<tr class="row-odd"><td><p>ORDERBY &lt; order_by_list &gt;</p></td>
+<td><p>8. ORDER BY clause</p></td>
+</tr>
+</tbody>
+</table>
+<p>Read more about it <a class="reference external" href="https://sqlbolt.com/lesson/select_queries_order_of_execution">here</a>
+<code class="docutils literal notranslate"><span class="pre">WHERE</span></code> filters <em>before</em> <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> whereas <code class="docutils literal notranslate"><span class="pre">HAVING</span></code> filters after.</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/GROUPBY2.png"><img alt="GROUPBY2" class="align-left" src="notes/week08/../images/05Databases/GROUPBY2.png" style="width: 320px;" /></a>
+</div>
+<div class="section" id="group-by-question">
+<h2>GROUP BY Question<a class="headerlink" href="#group-by-question" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.10</strong><br />
+Given the emp table and the following query, how many rows are returned?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">title</span><span class="p">,</span> <span class="n">SUM</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span>
+<span class="n">FROM</span> <span class="n">emp</span>
+<span class="n">GROUP</span> <span class="n">BY</span> <span class="n">title</span>
+</pre></div>
+</div>
+<p>A) 1 B) 2 C) 4 D) 8</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/emp.png"><img alt="emp" src="notes/week08/../images/05Databases/emp.png" style="width: 300px;" /></a>
+</div>
+<div class="section" id="id30">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.10</strong><br />
+Given the emp table and the following query, how many rows are returned?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">title</span><span class="p">,</span> <span class="n">SUM</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span>
+<span class="n">FROM</span> <span class="n">emp</span>
+<span class="n">GROUP</span> <span class="n">BY</span> <span class="n">title</span>
+</pre></div>
+</div>
+<p>A) 1 B) 2 <strong>C) 4</strong> D) 8</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/sol10.png"><img alt="sol10" src="notes/week08/../images/05Databases/sol10.png" style="width: 400px;" /></a>
+</div>
+<div class="section" id="id31">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.11</strong><br />
+Given the workson table and the following query, how many rows are returned?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">resp</span><span class="p">,</span> <span class="n">pno</span><span class="p">,</span> <span class="n">SUM</span><span class="p">(</span><span class="n">hours</span><span class="p">)</span>
+<span class="n">FROM</span> <span class="n">workson</span>
+<span class="n">WHERE</span> <span class="n">hours</span> <span class="o">&gt;</span> <span class="mi">10</span>
+<span class="n">GROUP</span> <span class="n">BY</span> <span class="n">resp</span><span class="p">,</span> <span class="n">pno</span>
+</pre></div>
+</div>
+<p>A) 9 B) 7 C) 5 D) 1 E) 0</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/WORKSONQ.png"><img alt="WORKSONQ" src="notes/week08/../images/05Databases/WORKSONQ.png" style="width: 350px;" /></a>
+</div>
+<div class="section" id="id32">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.11</strong><br />
+Given the workson table and the following query, how many rows are returned?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">resp</span><span class="p">,</span> <span class="n">pno</span><span class="p">,</span> <span class="n">SUM</span><span class="p">(</span><span class="n">hours</span><span class="p">)</span>
+<span class="n">FROM</span> <span class="n">workson</span>
+<span class="n">WHERE</span> <span class="n">hours</span> <span class="o">&gt;</span> <span class="mi">10</span>
+<span class="n">GROUP</span> <span class="n">BY</span> <span class="n">resp</span><span class="p">,</span> <span class="n">pno</span>
+</pre></div>
+</div>
+<p>A) 9 <strong>B) 7</strong> C) 5 D) 1 E) 0</p>
+<a class="reference internal image-reference" href="notes/week08/../images/05Databases/sol11.png"><img alt="sol11" src="notes/week08/../images/05Databases/sol11.png" style="width: 400px;" /></a>
+</div>
+<div class="section" id="id33">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="try-it-group-by">
+<h2>Try It: <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code><a class="headerlink" href="#try-it-group-by" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5.12</strong><br />
+Use <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> and aggregation functions to answer these queries.</p>
+<ol class="simple">
+<li><p>Output the total number of projects in the database.</p></li>
+<li><p>Return the sum of the budgets for all projects.</p></li>
+<li><p>For each department (dno), return the department number (dno) and the average budget of projects in that department.</p></li>
+<li><p>For each project (pno), return the project number (pno) and the sum of the number of hours employees have worked on that project.
+- <strong>Challenge</strong>: Show the project name (pname) as well as the project number.</p></li>
+<li><p><strong>Challenge</strong>: Show the department name (dname), project name (pname), and sum of hours worked on that project as well as the number of employees working on the project.</p></li>
+</ol>
+</div>
+<div class="section" id="putting-it-all-together">
+<h2>Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permalink to this headline">¶</a></h2>
+<p>The steps to write an English query in SQL are:</p>
+<ol class="simple">
+<li><p>Find the columns that you need and put in <code class="docutils literal notranslate"><span class="pre">SELECT</span></code> clause.</p></li>
+<li><p>List the tables that have the columns in the <code class="docutils literal notranslate"><span class="pre">FROM</span></code> clause. If there is more than one, join them together (using <code class="docutils literal notranslate"><span class="pre">JOIN/ON</span></code>)</p></li>
+<li><p>If you must filter rows, add a filter criteria in <code class="docutils literal notranslate"><span class="pre">WHERE</span></code> clause.</p></li>
+<li><p>If you need to create an aggregate, use aggregation functions (e.g. <code class="docutils literal notranslate"><span class="pre">COUNT</span></code>, <code class="docutils literal notranslate"><span class="pre">AVG</span></code>) and <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code>.</p></li>
+<li><p>If you must filter aggregates, add a filter criteria in a <code class="docutils literal notranslate"><span class="pre">HAVING</span></code> clause.</p></li>
+</ol>
+<blockquote>
+<div><p>Example: For each project name list the sum of the hours worked by employees working as a ‘Manager’ on the project.</p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>SELECT pname, SUM(hours) as totalHours
+FROM workson INNER JOIN proj on workson.pno=proj.pno
+WHERE resp=’Manager’
+GROUP BY pname
+</pre></div>
+</div>
+</div>
+<div class="section" id="microsoft-access-querying-summary">
+<h2>Microsoft Access Querying Summary<a class="headerlink" href="#microsoft-access-querying-summary" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Projection is performed by selecting the fields in the output in the field row in the table at the bottom of the screen.</p></li>
+<li><p>Selection is performed by entering the condition in the criteria box. The criteria applies to the field in that column.</p></li>
+<li><p>The tables used are added to the query by the <strong>Show Table</strong>… option.</p></li>
+<li><p>Joins (based on relationships) are often automatically added, but if not, you can add them by selecting the join field in one table, holding the mouse button, then dragging to the join field in the other table.</p></li>
+</ol>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>database</strong> is a collection of related data. A database system allows storing and querying a database.</p>
+<p><strong>SQL</strong> is the standard query language for databases, although Microsoft Access also provides a graphical user interface.</p>
+<p><code class="docutils literal notranslate"><span class="pre">CREATE</span> <span class="pre">TABLE</span></code> creates a table. <code class="docutils literal notranslate"><span class="pre">INSERT</span></code>, <code class="docutils literal notranslate"><span class="pre">DELETE</span></code>, and <code class="docutils literal notranslate"><span class="pre">UPDATE</span></code> commands modify the data stored within the database.</p>
+<p>The basic query operations are selection (subset of rows), projection (subset of columns), join (combine two or more tables),
+and grouping and aggregation.</p>
+</div>
+<div class="section" id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Define: database, database system, schema, metadata</p></li>
+<li><p>Define: relation, attribute, tuple, domain, degree, cardinality</p></li>
+<li><p>SQL properties: reserved words, case-insensitive, free-format</p></li>
+<li><p>Be able to create a table using CREATE TABLE command and in Microsoft Access.</p></li>
+<li><p>Explain what a key is and what it is used for.</p></li>
+<li><p>Use DROP TABLE to delete a table and its data.</p></li>
+<li><p>Use INSERT/UPDATE/DELETE to add/update/delete rows of a table and perform same actions using Microsoft Access user interface.</p></li>
+<li><p>Execute queries using SQL SELECT and using Microsoft Access user interface.</p></li>
+<li><p>Sort rows using ORDER BY. Use LIMIT to keep only the first (top) N rows.</p></li>
+<li><p>Use GROUP BY and aggregation functions for calculating summary data.</p></li>
+<li><p>Given a small database write simple English queries in SQL.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ubco-cmps/data301_course",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notes/week08"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Firas Moosvi & Patricia Lasserre<br/>
+        
+          <div class="extra_footer">
+            <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-168693744-4', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>

@@ -1,0 +1,965 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Command Line &#8212; DATA 301</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/extra.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pdf_print.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom_layouts.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/save_state.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "ubco-cmps/data301_course");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://firas.moosvi.com/courses/data301/notes/week02/09CommandLine.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://firas.moosvi.com/courses/data301/notes/week02/09CommandLine.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Command Line" />
+<meta property="og:description" content="Command Line  Why learn command line?  The command line is the text interface to the computer. Understanding the command line allows you to interact with the co" />
+<meta property="og:image"       content="https://firas.moosvi.com/courses/data301/_static/logo.jpg" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.jpg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">DATA 301</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/syllabus.html">
+   Course Syllabus
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  About this Course
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/course_schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/accommodations.html">
+   Accommodations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/faq.html">
+   Frequently Asked Questions
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Getting started!
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../getting-started/todo_list.html">
+   Things to do before start of course
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Part 1 - Setting up
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week01/week01_summary.html">
+   Introductions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week02_summary.html">
+   Week 2 - Command Line and Excel
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Course Feedback
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/feedback.html">
+   Anonymous Feedback Form
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/notes/week02/09CommandLine.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ubco-cmps/data301_course"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ubco-cmps/data301_course/issues/new?title=Issue%20on%20page%20%2Fnotes/week02/09CommandLine.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ubco-cmps/data301_course/edit/master/notes/week02/09CommandLine.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ubco-cmps/data301_course/master?urlpath=lab/tree/notes/week02/09CommandLine.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/ubco-cmps/data301_course/blob/master/notes/week02/09CommandLine.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-learn-command-line">
+   Why learn command line?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-the-command-line">
+   What is the Command Line?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-use-command-line">
+   Why use command line?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#windows-command-line">
+   Windows Command Line
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#command-line-windows">
+   Command Line - Windows
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mac-os-command-line">
+   Mac OS Command Line
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#command-line-mac-linux">
+   Command Line - Mac/Linux
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#entering-a-command">
+   Entering a Command
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#file-system">
+   File System
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   File System
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#absolute-versus-relative-path">
+   Absolute versus Relative Path
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#short-forms">
+   Short forms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#absolute-versus-relative-path-question">
+   Absolute versus Relative Path Question
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#makdir">
+   makdir
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#touch">
+   touch
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#notepad-nano">
+   notepad/nano
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   notepad/nano
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#commonly-used-file-navigation-commands">
+   Commonly Used File Navigation Commands
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#commonly-used-text-related-commands">
+   Commonly Used Text Related Commands
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wildcards">
+   Wildcards
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Wildcards
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#navigating-the-command-line">
+   Navigating the Command Line
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pausing-or-cancelling-commands">
+   Pausing or Cancelling Commands
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="command-line">
+<h1>Command Line<a class="headerlink" href="#command-line" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="why-learn-command-line">
+<h2>Why learn command line?<a class="headerlink" href="#why-learn-command-line" title="Permalink to this headline">¶</a></h2>
+<p>The command line is the text interface to the computer.
+Understanding the command line allows you to interact with the computer in ways that you often cannot with the graphical user interface (GUI).
+The command line is commonly used for scripting and automation of tasks and when accessing remote systems.
+It will also be useful to run programs that make use of the command line (eg. github).</p>
+</div>
+<div class="section" id="what-is-the-command-line">
+<h2>What is the Command Line?<a class="headerlink" href="#what-is-the-command-line" title="Permalink to this headline">¶</a></h2>
+<p>The <b>command line </b>is the text interface to the computer that accepts commands that the computer will execute. These commands include:</p>
+<ul class="simple">
+<li><p>starting programs</p></li>
+<li><p>navigating directories and manipulating files</p></li>
+<li><p>searching, sorting, and editing text files</p></li>
+<li><p>system and environment configuration</p></li>
+</ul>
+</div>
+<div class="section" id="why-use-command-line">
+<h2>Why use command line?<a class="headerlink" href="#why-use-command-line" title="Permalink to this headline">¶</a></h2>
+<p>The command line is part of the operating system (OS), which is software that manages your computer including all devices and programs.</p>
+<ul class="simple">
+<li><p>Common operating systems include Windows, Mac OS, and Linux/Unix.</p></li>
+<li><p>Some commands will be OS specif</p></li>
+</ul>
+<p>You might be wondering why we would ever prefer command line over using the graphical user interface (GUI).</p>
+<ul class="simple">
+<li><p>Certain tools may only be available to command line.</p></li>
+<li><p>Sometimes command line is faster.</p></li>
+</ul>
+</div>
+<div class="section" id="windows-command-line">
+<h2>Windows Command Line<a class="headerlink" href="#windows-command-line" title="Permalink to this headline">¶</a></h2>
+<p>The command line on Windows dates back to the original Microsoft operating system called DOS (Disk Operating System) in 1981.</p>
+<p>This command line interface is still part of all modern Windows operating systems and is accessible as the “Command Prompt”.
+<img src="../images/09CommandLine/CommandPrompt.png" alt="CommandPrompt" width="400" ></p>
+<p>To access this, navigate to the start menu with your mouse (or click the windows button on your keyboard) and type “cmd” then
+ENTER .</p>
+</div>
+<div class="section" id="command-line-windows">
+<h2>Command Line - Windows<a class="headerlink" href="#command-line-windows" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="notes/week02/../images/09CommandLine/rlawrenc.png"><img alt="rlawrenc" src="notes/week02/../images/09CommandLine/rlawrenc.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="mac-os-command-line">
+<h2>Mac OS Command Line<a class="headerlink" href="#mac-os-command-line" title="Permalink to this headline">¶</a></h2>
+<p>The command line for Mac OS uses the same commands as Linux. It can be opened using Finder then Utilities then Terminal.</p>
+<p><img alt="Kiku" src="notes/week02/../images/09CommandLine/cmdMac.png" /></p>
+<p>Alternatively, we could type Cmnd + spacebar, then type “Terminal” and press ENTER</p>
+</div>
+<div class="section" id="command-line-mac-linux">
+<h2>Command Line - Mac/Linux<a class="headerlink" href="#command-line-mac-linux" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Kiku" src="notes/week02/../images/09CommandLine/terminalex.png" /></p>
+</div>
+<div class="section" id="entering-a-command">
+<h2>Entering a Command<a class="headerlink" href="#entering-a-command" title="Permalink to this headline">¶</a></h2>
+<p>Enter a command at a prompt. The prompt may be a &gt; or a $ or customized by the user.</p>
+<p>Press ENTER to execute the command.</p>
+<p>On Windows, commands are mostly case-insensitive while on Mac/Linux they are case-sensitive.</p>
+<p><img alt="Kiku" src="notes/week02/../images/09CommandLine/terminalex.png" /></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>ls
+For example, the ls/dir (Mac/Windows), lists all the contents (i.e files and folders) inside or your current directory.
+</pre></div>
+</div>
+</div>
+<div class="section" id="file-system">
+<h2>File System<a class="headerlink" href="#file-system" title="Permalink to this headline">¶</a></h2>
+<p>The file system organizes data on a device as a hierarchy of directories and files (like a tree).
+Each folder (AKA directory) has a name and can contain any number of files or subdirectories.
+Each file has a name.
+The user can change (navigate) directories in the hierarchy</p>
+<p><img alt="Kiku" src="notes/week02/../images/09CommandLine/filesystem.png" /></p>
+</div>
+<div class="section" id="id1">
+<h2>File System<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>The tree is rooted at, well, the root.</p>
+<ul class="simple">
+<li><p>There is only one root of a directory hierarchy.
+Every item in the tree is either a file or a directory (AKA folder).</p></li>
+<li><p>You can think of a directory as a container that may contains files and/or other directories.</p></li>
+<li><p>Files on the other hand holds information (and cannot contain other files or directories) .</p></li>
+</ul>
+<p>If directoryC is contained in directoryP, then directoryC is a child of directoryP and directoryP is said to be the parent to directoryC.</p>
+<ul class="simple">
+<li><p>A directory may have many children, but can only have one parent.</p></li>
+</ul>
+</div>
+<div class="section" id="absolute-versus-relative-path">
+<h2>Absolute versus Relative Path<a class="headerlink" href="#absolute-versus-relative-path" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The root of the file system is the directory “/”
+- There is only one root of a directory hierarchy.</p></li>
+<li><p>A path to a new location (from your current location) can be specified as an absolute path from the root (this will work no matter where we are in the file system):</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">ivrbik</span><span class="o">/</span><span class="mi">301</span><span class="o">/</span><span class="n">level1</span>
+</pre></div>
+</div>
+<p>or a relative path from your current location (this will only work if we are in /Users/ivrbik/):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="mi">301</span><span class="o">/</span><span class="n">level1</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The directory separator is a forward slash ‘/’ for Macs/Linux.
+In windows you may use forward or backward slashes ‘/’ or ‘\’</p></li>
+</ul>
+</div>
+<div class="section" id="short-forms">
+<h2>Short forms<a class="headerlink" href="#short-forms" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>‘.’ is the short-form for the current directory</p></li>
+<li><p>‘..’ signifies the parent directory (akin to pressing Cmnd +↑
+on a Mac)</p></li>
+<li><p>For example, to navigate (i.e. change directories) to the parent directory of the current directory, use the command:
+cd ..</p></li>
+<li><p>Note that this command is dependant on your current directory (i.e. the folder you are currently in).</p></li>
+</ul>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>pwd/cd
+To print your current working directory type pwd/cd (Mac/Windows) then ENTER .
+</pre></div>
+</div>
+</div>
+<div class="section" id="absolute-versus-relative-path-question">
+<h2>Absolute versus Relative Path Question<a class="headerlink" href="#absolute-versus-relative-path-question" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Example
+Given this directory hierarchy and that the user is currently in the directory level2 and level1 directory contains a file test.txt. How many of the following statements are TRUE?
+1. A relative path to change to directory 301 is ..
+2. Absolute path to test.txt is /Users/ivrbik/301/level1/test.txt
+3. Relative path to test.txt is ../test.txt
+4. Relative path to test.txt is different if
+user was currently in level3 directory.
+5. There is only one root of the directory hierarchy.
+A) 0 B) 1 C) 2 D) 3 E) 4 
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="notes/week02/../images/09CommandLine/relativepath.png"><img alt="relativepath" src="notes/week02/../images/09CommandLine/relativepath.png" style="width: 300px;" /></a>
+</div>
+<div class="section" id="makdir">
+<h2>makdir<a class="headerlink" href="#makdir" title="Permalink to this headline">¶</a></h2>
+<p>Download this filesystem as a zip file on Canvas.</p>
+<ul class="simple">
+<li><p>To create a new folder in the current directory we use mkdir.</p></li>
+<li><p>To complete this task we need to specify the directory name as an argument.</p></li>
+<li><p>For example, the following creates a folder called NewFolder in the current directory:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">NewFolder</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Exercise: mkdir
+Navigate to the 301 folder and create a new folder called Demo.
+</pre></div>
+</div>
+</div>
+<div class="section" id="touch">
+<h2>touch<a class="headerlink" href="#touch" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>We can create files using the touch command.</p></li>
+<li><p>Like mkdir we need to specify a argument.</p></li>
+<li><p>Rather than a folder name, we provide a filename as the argument.</p></li>
+<li><p>For example, the following command creates a new file named empty.txt inside the current working directory.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">touch</span> <span class="n">empty</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>touch
+Navigate to the Demo folder and type touch abc.txt
+</pre></div>
+</div>
+</div>
+<div class="section" id="notepad-nano">
+<h2>notepad/nano<a class="headerlink" href="#notepad-nano" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>To create a file with actually text, we can use the notepad/nano command (Windows/Mac).</p></li>
+<li><p>Typing nano will open a blank file for editing.</p></li>
+<li><p>We can then type the desired text and save using the shortcuts
+given on the bottom of the window. More shortcuts <a class="reference external" href="https://skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/">here</a>.</p></li>
+<li><p>N.B. the standard shortcuts we might be used to wont work in
+this command line (eg. Ctrl /Cmnd + C for copy);</p></li>
+</ul>
+<a class="reference internal image-reference" href="notes/week02/../images/09CommandLine/editme.png"><img alt="editme" src="notes/week02/../images/09CommandLine/editme.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id2">
+<h2>notepad/nano<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Upon saving (ie WriteOut via Ctrl + O ) you will be prompted to provide a filename to save the document under.</p></li>
+<li><p>We could have supplied this information as an argument in our nano command as follows:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nano</span> <span class="n">notes</span><span class="o">.</span><span class="n">txt</span>
+
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="notes/week02/../images/09CommandLine/writeout.png"><img alt="writeout" src="notes/week02/../images/09CommandLine/writeout.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>N.B. We will still be asked to verify the name upon exiting,
+but we won’t have to type it again.</p></li>
+</ul>
+</div>
+<div class="section" id="commonly-used-file-navigation-commands">
+<h2>Commonly Used File Navigation Commands<a class="headerlink" href="#commonly-used-file-navigation-commands" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Windows</p></th>
+<th class="head"><p>Mac OS &amp; Linux</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>List contents of directory <br>Change directory<br>Print working directory Make a directory  <br>Remove a directory <br> Rename a file<br>Remove a file <br> Copy a file <br> Move a file</p></td>
+<td><p>dir <br>cd 301 <br>cd <br>mkdir 301 <br>rmdir 301 <br>ren old.txt new.txt <br>del file.txt<br>copy src.txt dest.txt<br> move <source> <dest></p></td>
+<td><p>ls <br>cd 301 <br>pwd <br>mkdir 301 <br>rmdir 301<br>mv old.txt new.txt <br>rm file.txt <br>cp src.txt dest.txt <br> mv source dest</p></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="https://www.lemoda.net/windows/windows2unix/windows2unix.html">Click here</a> for see some more Windows and Unix equivalents.</p>
+</div>
+<div class="section" id="commonly-used-text-related-commands">
+<h2>Commonly Used Text Related Commands<a class="headerlink" href="#commonly-used-text-related-commands" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Windows</p></th>
+<th class="head"><p>Mac OS &amp; Linux</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Open a text editor<br>Echo output<br>Output contents of a file<br> Search text files<br>Sort text files</p></td>
+<td><p>notepad <br>echo Hello <br>more file.txt<br> find<br>sort</p></td>
+<td><p>nano<br>echo Hello<br> cat file.txt <br>grep<br>sort</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="wildcards">
+<h2>Wildcards<a class="headerlink" href="#wildcards" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A wildcard character allows for matching file names with more flexibility.</p></li>
+<li><p>The ? represents any one character in a file name. Example: file?.txt would match file1.txt.</p></li>
+<li><p>The * (asterisk) matches any number of characters (including no characters). Example: *.txt would match anything ending with .txt (i.e. all .txt files).</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>Wildcards<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="notes/week02/../images/09CommandLine/files.png"><img alt="files" src="notes/week02/../images/09CommandLine/files.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="notes/week02/../images/09CommandLine/wildcards.png"><img alt="wildcards" src="notes/week02/../images/09CommandLine/wildcards.png" style="width: 600px;" /></a>
+<p>Replace ls with dir if you are using Windows.</p>
+</div>
+<div class="section" id="navigating-the-command-line">
+<h2>Navigating the Command Line<a class="headerlink" href="#navigating-the-command-line" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Windows</p></th>
+<th class="head"><p>Mac OS &amp; Linux</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Previous command in history<br>Next command in history <br>First command in history<br>Last command in history<br>Move to start of line<br>Move to end of line<br>Auto-compete file name</p></td>
+<td><p>Up<br>Down<br>PageUp<br>PageDown<br>Home<br>End<br>Tab</p></td>
+<td><p>Up<br>Down<br> <br> <br>Ctrl+A<br> Ctrl+E<br> Tab<br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="pausing-or-cancelling-commands">
+<h2>Pausing or Cancelling Commands<a class="headerlink" href="#pausing-or-cancelling-commands" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="to-pause-a-command">
+<h1>To pause a command:<a class="headerlink" href="#to-pause-a-command" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Windows: Press Ctrl +S or the Pause To resume, press any key.</p></li>
+<li><p>Mac: Ctrl + Esc or Cmnd + .
+To cancel a command, press Ctrl +C .</p></li>
+<li><p>The command is canceled, and the command prompt returns.</p></li>
+<li><p>However, any actions performed before the cancel are not undone.</p></li>
+</ul>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span> Example
+How many of the following statements are TRUE?
+1. To cancel a command, press Ctrl +X .
+2. To go to the most recent command, press Up arrow.
+3. This wildcard expression te*a?.txt matches tea12.txt. 4. The command to change a directory is pwd.
+A) 0 B) 1 C) 2 D) 3 E) 4
+</pre></div>
+</div>
+<div class="section" id="try-it-navigating-directories-with-commands">
+<h2>Try It: Navigating Directories with Commands<a class="headerlink" href="#try-it-navigating-directories-with-commands" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span> Example
+Using a terminal window, perform the following actions:
+1. Create a directory called 301.
+2. Change into the directory 301.
+3. Echo I am awesome!
+4. Show your current directory (print working directory). 
+5. Create a text file called message.txt with a message in it. 
+6. List the contents of your directory.
+7. Rename the file message.txt to test.txt.Verify the name change.
+8. Delete the test.txt file.
+9. Change directory to directory above 301. 
+10. Delete directory 301.
+</pre></div>
+</div>
+</div>
+<div class="section" id="command-arguments-windows">
+<h2>Command Arguments - Windows<a class="headerlink" href="#command-arguments-windows" title="Permalink to this headline">¶</a></h2>
+<p>A command can take arguments that changes its behaviour.</p>
+<ul class="simple">
+<li><p>Example: Path was an argument for the cd command. cd 301
+On Windows, commands also can be modified by a switch (or extension) which is usually a slash then a letter (e.g. /S).</p></li>
+<li><p>To find out what is available, run the command with: /?</p></li>
+</ul>
+<p><img alt="Kiku" src="notes/week02/../images/09CommandLine/help.png" /></p>
+</div>
+<div class="section" id="command-arguments-mac-linux">
+<h2>Command Arguments - Mac/Linux<a class="headerlink" href="#command-arguments-mac-linux" title="Permalink to this headline">¶</a></h2>
+<p>On Mac/Linux arguments are separated by spaces and begin with ‘-’</p>
+<p>An explanation of arguments can be found by using man then the command name. Example: man cp (to quit press q)</p>
+<p><img alt="Kiku" src="notes/week02/../images/09CommandLine/man.png" /></p>
+</div>
+<div class="section" id="standard-input-output-and-error">
+<h2>Standard Input, Output, and Error<a class="headerlink" href="#standard-input-output-and-error" title="Permalink to this headline">¶</a></h2>
+<p><b>Standard input</b> (stdin) is the default input device (usually a keyboard) into the terminal.
+<b>Standard output</b> (stdout) is the location where output is sent after a command is run. The default is the terminal window.
+<b>Standard error</b>(stderr) is the location where error messages are displayed (typically the terminal window).</p>
+</div>
+<div class="section" id="redirecting-input">
+<h2>Redirecting Input<a class="headerlink" href="#redirecting-input" title="Permalink to this headline">¶</a></h2>
+<p>By default, a command gets its input from standard input and outputs results to standard output.
+A command can get its input from the output of another command by using the pipe (|) symbol. Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="n">test</span><span class="o">.</span><span class="n">txt</span> <span class="o">|</span> <span class="n">wc</span>
+</pre></div>
+</div>
+<p>Note the example commands are Mac OS/Linux only: wc (word
+count) is not on Windows.
+Also can use redirect input (&lt;) to send input to a command. Ex:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;</span> <span class="n">test</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>same as</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sort</span> <span class="n">cat</span> <span class="n">test</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="redirecting-output">
+<h2>Redirecting Output<a class="headerlink" href="#redirecting-output" title="Permalink to this headline">¶</a></h2>
+<p>Redirect output using &gt; which will overwrite the file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sort</span> <span class="n">test</span><span class="o">.</span><span class="n">txt</span> <span class="o">&gt;</span> <span class="nb">sorted</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Use » to append to the existing file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sort test.txt » sorted.txt
+</pre></div>
+</div>
+</div>
+<div class="section" id="redirection-summary">
+<h2>Redirection Summary<a class="headerlink" href="#redirection-summary" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Symbol</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Redirect input</p></td>
+<td><p>&lt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>Redirect output</p></td>
+<td><p>&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>Redirect output (append)</p></td>
+<td><p>&gt;&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pipe output to input of next command</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="escape-symbol">
+<h2>Escape Symbol<a class="headerlink" href="#escape-symbol" title="Permalink to this headline">¶</a></h2>
+<p>An escape symbol is used when a command requires input that contains a character with a special meaning. The escape symbol indicates this character is data not part of the command.
+Windows the caret (^) indicates that whatever character that follows it is data rather than part of the command.</p>
+<ul class="simple">
+<li><p>Example: cp test.txt a^&amp;b.txt Linux use the backslash ().
+This is especially common when dealing with spaces in a file name. The other way to handle file names with spaces is to enclose them in double <a class="reference external" href="https://wiki.bash-hackers.org/syntax/quoting%20">quotes</a>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="n">test</span><span class="o">.</span><span class="n">txt</span> <span class="s2">&quot;c:\program files</span><span class="se">\f</span><span class="s2">ile spaces.txt&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="environment-variable">
+<h2>Environment Variable<a class="headerlink" href="#environment-variable" title="Permalink to this headline">¶</a></h2>
+<p>Environment variables allow for customization and control of the command and system environment.</p>
+<p>Current variables are seen using the set or env command.</p>
+<p>Important variables:</p>
+<p>$PATH list of directories where commands/applications will be found</p>
+<p>$HOME user home directory</p>
+</div>
+<div class="section" id="finding-text-in-files">
+<h2>Finding Text in Files<a class="headerlink" href="#finding-text-in-files" title="Permalink to this headline">¶</a></h2>
+<p>The grep command allows for searching for text in files that match a pattern (Mac/Linux only, find on Windows).</p>
+<ul class="simple">
+<li><p>grep stands for “global regular expression print”</p></li>
+<li><p>Search is case-sensitive (use -i for case-insensitive) and can contain regular expressions.</p></li>
+<li><p>grep -i will be case-insensitive
+Example:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">grep</span> <span class="n">er</span> <span class="o">*.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>searches for er in any file that ends in .txt</p>
+</div>
+<div class="section" id="batch-files">
+<h2>Batch Files<a class="headerlink" href="#batch-files" title="Permalink to this headline">¶</a></h2>
+<p>A batch program (also commonly called a batch file or command file) is a text file that contains a sequence of commands to be executed.</p>
+<p>You define the sequence of commands, name the sequence, and then execute the commands by entering the name at a command prompt. Any action you can take by typing a command at a command prompt can be encapsulated in a batch program.</p>
+<p>In Windows files typically end in .bat or .cmd and on Mac/Linux with .sh</p>
+<p>Batch files can take arguments like other commands.</p>
+</div>
+<div class="section" id="connecting-to-another-computer-using-ssh">
+<h2>Connecting to Another Computer using SSH<a class="headerlink" href="#connecting-to-another-computer-using-ssh" title="Permalink to this headline">¶</a></h2>
+<p>Secure shell or SSH is a protocol allowing remote login to other machines to execute commands.</p>
+<ul class="simple">
+<li><p>The network communication is encrypted for security.</p></li>
+<li><p>An open-source program on campus is Putty.
+Using SSH allows you to connect and execute commands on another machine even when you do not have physical access to that machine.</p></li>
+</ul>
+<p>SSH may be used to send or retrieve data from other computers for analysis.</p>
+</div>
+<div class="section" id="try-it-using-batch-files">
+<h2>Try it: Using Batch Files<a class="headerlink" href="#try-it-using-batch-files" title="Permalink to this headline">¶</a></h2>
+<p>Before creating the batch file, create a file called numbers.txt that has the numbers one, two, three, … , ten.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Example
+Using a terminal window, create a batch file called myscript.bat (or .sh), to perform the following:
+1. sort numbers.txt and output as sorted.txt.
+2. output the word count on numbers.txt to count.txt.
+3. take numbers.txt and append its data three times into the file output.txt.
+4. search for &quot;e&quot; in output.txt and write results as file search.txt (use grep).
+5. Output the contents of sorted.txt, output.txt, and search.txt .
+6. Run your batch file.
+</pre></div>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The command line is the text interface to the computer that accepts commands that the computer will execute including running programs, manipulating files, and running scripts.</p></li>
+<li><p>The command line allows for automation and more control than may be available in the user interface. It may also be the only way to interact with the machine if connecting via SSH.</p></li>
+<li><p>The command environment allows for redirecting the standard input and output using input/output redirection and pipes.</p></li>
+</ul>
+</div>
+<div class="section" id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Define command line and list some of its uses</p></li>
+<li><p>Explain the purpose of an operating system</p></li>
+<li><p>Know how to open the command line window on Mac OS and Windows</p></li>
+<li><p>Be able to enter commands and stop them</p></li>
+<li><p>Define: file system, folder, file</p></li>
+<li><p>Explain the difference between an absolute and relative path Use command line shortcuts to save time</p></li>
+<li><p>Be able to match wildcards involving ? and *</p></li>
+<li><p>Be able to cancel a command</p></li>
+<li><p>Explain standard input, standard output, and standard error</p></li>
+<li><p>Be able to use input and output redirection and pipes (?, &gt;, &lt; , »)</p></li>
+<li><p>Explain the reason for an escape symbol</p></li>
+<li><p>Define and explain the purpose of environment variables. Be able to use grep to search text files.</p></li>
+<li><p>Explain the purpose of a batch program.</p></li>
+<li><p>Be able to connect to another machine using SSH.</p></li>
+</ul>
+</div>
+<div class="section" id="questions">
+<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ubco-cmps/data301_course",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notes/week02"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Firas Moosvi & Patricia Lasserre<br/>
+        
+          <div class="extra_footer">
+            <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-168693744-4', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>

@@ -1,0 +1,619 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>MDS software stack install instructions for macOS &#8212; DATA 301</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/extra.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pdf_print.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom_layouts.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/save_state.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "ubco-cmps/data301_course");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://firas.moosvi.com/courses/data301/notes/week02/install_ds_stack_mac_part1.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="MDS software stack install instructions for Windows" href="install_ds_stack_windows_part1.html" />
+    <link rel="prev" title="Lab 0 - Installation and Setup" href="lab.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://firas.moosvi.com/courses/data301/notes/week02/install_ds_stack_mac_part1.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="MDS software stack install instructions for macOS" />
+<meta property="og:description" content="MDS software stack install instructions for macOS  &lt;!-- Open links in a new tab unless they have the `` attribute --&gt;   &lt;head&gt;     &lt;base target=&#34;_blank&#34;&gt; &lt;/head" />
+<meta property="og:image"       content="https://firas.moosvi.com/courses/data301/_static/logo.jpg" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.jpg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">DATA 301</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/syllabus.html">
+   Course Syllabus
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  About this Course
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/course_schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/accommodations.html">
+   Accommodations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/faq.html">
+   Frequently Asked Questions
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Getting started!
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../getting-started/todo_list.html">
+   Things to do before start of course
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Part 1 - Setting up
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week01/week01_summary.html">
+   Introductions
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="week02_summary.html">
+   Week 2 - Command Line and Excel
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="videos.html">
+     Videos
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Lecture2.html">
+     Lecture 2 - Excel
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="reference internal" href="lab.html">
+     Install Instructions
+    </a>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       macOS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="install_ds_stack_windows_part1.html">
+       Windows
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="test.html">
+     Test 0 - Course Policies
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Course Feedback
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/feedback.html">
+   Anonymous Feedback Form
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/notes/week02/install_ds_stack_mac_part1.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ubco-cmps/data301_course"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ubco-cmps/data301_course/issues/new?title=Issue%20on%20page%20%2Fnotes/week02/install_ds_stack_mac_part1.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ubco-cmps/data301_course/edit/master/notes/week02/install_ds_stack_mac_part1.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of Contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation-notes">
+   Installation notes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ubc-student-email">
+   UBC Student Email
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#web-browser">
+   Web browser
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-microsoft-office">
+   Install Microsoft Office
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visual-studio-code">
+   Visual Studio Code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#launch-from-the-terminal-aka-command-line">
+     Launch from the Terminal (aka command line)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vs-code-extensions">
+     VS Code extensions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github-com">
+   GitHub.com
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configure-git-on-your-computer">
+   Configure Git on your computer
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#configuring-git-user-info">
+     Configuring Git user info
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#discord">
+   Discord
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#attributions">
+   Attributions
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="mds-software-stack-install-instructions-for-macos">
+<span id="page-install-ds-stack-macos"></span><h1>MDS software stack install instructions for macOS<a class="headerlink" href="#mds-software-stack-install-instructions-for-macos" title="Permalink to this headline">¶</a></h1>
+<!-- Open links in a new tab unless they have the `` attribute -->
+<head>
+    <base target="_blank">
+</head>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This guide has been (lightly) adapted from the UBC-Vancouver <a class="reference external" href="https://ubc-mds.github.io/resources_pages/installation_instructions/">MDS Install stack</a> under a CC-BY-SA 4.0 license.</p>
+</div>
+<p>These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:</p>
+<ul class="simple">
+<li><p>runs one of the following operating systems: macOS 10.15.X (Catalina), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004.</p>
+<ul>
+<li><p><strong>Windows 10 Home is not sufficient</strong> as not all the software required for the program can be installed on that OS. <a class="reference external" href="https://it.ubc.ca/software-downloads">Click here to download Windows 10 Education for free from UBC.</a></p></li>
+<li><p>When installing Ubuntu, checking the box “Install third party…” will (among other things) install proprietary drivers, which can be helpful for wifi and graphics cards.</p></li>
+</ul>
+</li>
+<li><p>can connect to networks via a wireless connection</p></li>
+<li><p>has at least 50 GB disk space available</p></li>
+<li><p>has at least 8 GB of RAM</p></li>
+<li><p>uses a 64-bit CPU</p></li>
+<li><p>is at most 6 years old at the start of the program (4 years old or newer is recommended)</p></li>
+<li><p>uses English as the default language</p></li>
+<li><p>student user has full administrative access to the computer</p></li>
+</ul>
+<p><strong>Students’ whose laptops do not meet the requirements specified above will not be able to receive technical assistance from the course team in troubleshooting installation issues.</strong></p>
+<div class="section" id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="#ubc-student-email">UBC Student Email</a></p></li>
+<li><p><a class="reference external" href="#web-browser">Web browser</a></p></li>
+<li><p><a class="reference external" href="#lastpass-password-manager">LastPass password manager</a></p></li>
+<li><p><a class="reference external" href="#slack">Slack</a></p></li>
+<li><p><a class="reference external" href="#visual-studio-code">Visual Studio Code</a></p></li>
+<li><p><a class="reference external" href="#vs-code-extensions">VS Code extensions</a></p></li>
+<li><p><a class="reference external" href="#github">GitHub</a></p></li>
+<li><p><a class="reference external" href="#git">Git</a></p></li>
+</ul>
+</div>
+<div class="section" id="installation-notes">
+<h2>Installation notes<a class="headerlink" href="#installation-notes" title="Permalink to this headline">¶</a></h2>
+<p>If you have already installed Git, Latex, or any of the R or Python related packages please uninstall these and follow the instructions below to reinstall them (make sure to also remove any user configuration files and backup them if desired).
+In order to be able to support you effectively and minimize setup issues and software conflicts, we require all students to install the software stack the same way.</p>
+<p>In all the sections below, if you are presented with the choice to download either a 64-bit (also called x64) or a 32-bit (also called x86) version of the application <strong>always</strong> choose the 64-bit version.</p>
+<p>Once you have completed these installation instructions, make sure to follow the post-installation notes at the end to check that all software is setup correctly.</p>
+</div>
+<div class="section" id="ubc-student-email">
+<h2>UBC Student Email<a class="headerlink" href="#ubc-student-email" title="Permalink to this headline">¶</a></h2>
+<p>Please sign up for a UBC Student Email.
+This account will also grant you access to a range of UBC services, including Microsoft Teams and OneDrive.
+To do so navigate to <a class="reference external" href="https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service">https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service</a> and follow the instructions under “Get Started”.</p>
+</div>
+<div class="section" id="web-browser">
+<h2>Web browser<a class="headerlink" href="#web-browser" title="Permalink to this headline">¶</a></h2>
+<p>In MDS we will be using many tools that work most reliably on Google Chrome and Firefox (including our online quiz software), so we recommend that you use one of these browsers.</p>
+<ul class="simple">
+<li><p>To install Chrome, go to <a class="reference external" href="https://www.google.com/chrome/">https://www.google.com/chrome/</a>, click on “Download Chrome” and follow the instructions on the website to finish the installation.</p></li>
+<li><p>To install Firefox, go to <a class="reference external" href="https://www.mozilla.org/en-US/firefox/new/">https://www.mozilla.org/en-US/firefox/new/</a>, click on “Download Firefox” and follow the instructions on the website to finish the installation.</p></li>
+</ul>
+</div>
+<div class="section" id="install-microsoft-office">
+<h2>Install Microsoft Office<a class="headerlink" href="#install-microsoft-office" title="Permalink to this headline">¶</a></h2>
+<p>UBC students have free access to a Microsoft Office 365 annual subscription, which is renewed for students enrolled in at least one course.
+Office 365 includes Word, Excel, PowerPoint, Outlook, and OneNote, and is available on a variety of platforms, including Windows, Mac, and Linux/Android.</p>
+<p>To get your free Office 365 license and download the installer files, visit [UBC IT] (https://it.ubc.ca/services/desktop-print-services/software-licensing/office-365-students) and click <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Office</span> <span class="pre">365</span></code>.
+Note that you will need your CWL login credentials in order to download the software and activate your license.</p>
+</div>
+<div class="section" id="visual-studio-code">
+<h2>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permalink to this headline">¶</a></h2>
+<p>The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis.
+You can download and install the macOS version of VS Code from the VS code website <a class="reference external" href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a>.
+Once the download is finished, click “Open with Archive utility”, and move the extracted VS Code application from “Downloads” to “Applications”.</p>
+<div class="section" id="launch-from-the-terminal-aka-command-line">
+<h3>Launch from the Terminal (aka command line)<a class="headerlink" href="#launch-from-the-terminal-aka-command-line" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Launch VS Code.</p></li>
+<li><p>Open the Command Palette (⇧⌘P ; shift+command+P).</p></li>
+<li><p>Type ‘shell command’ to find the “Shell Command: Install ‘code’ command in PATH” command.</p></li>
+<li><p>Hit Enter</p></li>
+<li><p>Restart the terminal for the new $PATH value to take effect.</p></li>
+</ol>
+<p>You can open files in VS Code from the Terminal!
+Alternatively, just type <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">.</span></code> in any folder to start editing files in that folder.</p>
+<p>You can test that VS Code is installed and can be opened from Terminal by restarting terminal and typing the following command in a Terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>you should see something like this if you were successful:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.48</span><span class="o">.</span><span class="mi">2</span>
+<span class="n">a0479759d6e9ea56afa657e454193f72aef85bd0</span>
+<span class="n">x64</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">Manual install instructions are here, but remember you’re using the zsh now!</a> steps as well.</p>
+</div>
+<div class="section" id="vs-code-extensions">
+<h3>VS Code extensions<a class="headerlink" href="#vs-code-extensions" title="Permalink to this headline">¶</a></h3>
+<p>The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them. From within VS Code you can open up the <a class="reference external" href="https://code.visualstudio.com/docs/editor/extension-gallery">Extension Marketplace (read more here)</a> to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.</p>
+<img alt="" src="../../_images/vscode.png" />
+<p>To install an extension, you simply search for it in the search bar, click the extension you want, and then click “Install”. There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:</p>
+<ul class="simple">
+<li><p>Python (everything Python: notebooks, debugging, linting, formatting, etc.)</p></li>
+<li><p>markdownlint (markdown linting and style checking extension)</p></li>
+<li><p>GitLens - Git supercharged (powerful extension that extends VS Code’s native git capabilities)</p></li>
+<li><p>(Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})</p></li>
+</ul>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=06I63_p-2A4">This video tutorial</a> is an excellent introduction to using VS Code in Python.</p>
+</div>
+</div>
+<div class="section" id="github-com">
+<h2>GitHub.com<a class="headerlink" href="#github-com" title="Permalink to this headline">¶</a></h2>
+<p>We will use the publicly available <a class="reference external" href="https://github.com/">GitHub.com</a>.</p>
+<p>Sign up for a free account at <a class="reference external" href="https://github.com/">GitHub.com</a> if you don’t have one already.</p>
+</div>
+<div class="section" id="configure-git-on-your-computer">
+<h2>Configure Git on your computer<a class="headerlink" href="#configure-git-on-your-computer" title="Permalink to this headline">¶</a></h2>
+<p>We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if your Git is older than this version, we ask you to update it using the Xcode command line tools (not all of Xcode), which includes Git.</p>
+<p>Open Terminal and type the following command to install Xcode command line tools:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
+</pre></div>
+</div>
+<p>After installation, in terminal type the following to ask for the version:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>you should see something like this (does not have to be the exact same version) if you were successful:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">version</span> <span class="mf">2.24</span><span class="o">.</span><span class="mi">3</span> <span class="p">(</span><span class="n">Apple</span> <span class="n">Git</span><span class="o">-</span><span class="mi">127</span><span class="p">)</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: If you run into trouble, this is the time to post on Piazza with your error message and ask for help!</p>
+</div></blockquote>
+<div class="section" id="configuring-git-user-info">
+<h3>Configuring Git user info<a class="headerlink" href="#configuring-git-user-info" title="Permalink to this headline">¶</a></h3>
+<p>Next, we need to configure Git by telling it your name and email. To do this type the following into the terminal (replacing Jane Doe and janedoe&#64;example.com, with your name and email (the same used to sign up for GitHub), respectively):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Jane Doe&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="n">janedoe</span><span class="nd">@example</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: to ensure that you haven’t made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">~/.gitconfig</span></code>) or by typing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--list</span> <span class="pre">--global</span></code>.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="discord">
+<h2>Discord<a class="headerlink" href="#discord" title="Permalink to this headline">¶</a></h2>
+<p>For our MDS courses and program announcements, correspondence and course forums we use the communication tool Slack. Slack can be accessed via the web browser, however we strongly recommend installing the Slack App. The Slack app can be installed from the Mac App Store, or from the Slack website. Installation instructions from the Slack website install method are here: <a class="reference external" href="https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac">https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac</a></p>
+</div>
+<div class="section" id="attributions">
+<h2>Attributions<a class="headerlink" href="#attributions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://cs109.github.io/2015/">Harvard CS109</a></p></li>
+<li><p><a class="reference external" href="http://stat545.com/packages01_system-prep.html#mac-os-system-prep">UBC STAT 545</a> licensed under the <a class="reference external" href="https://creativecommons.org/licenses/by-nc/3.0/legalcode">CC BY-NC 3.0</a>.</p></li>
+<li><p><a class="reference external" href="https://software-carpentry.org/">Software Carpentry</a></p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ubco-cmps/data301_course",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notes/week02"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="lab.html" title="previous page">Lab 0 - Installation and Setup</a>
+    <a class='right-next' id="next-link" href="install_ds_stack_windows_part1.html" title="next page">MDS software stack install instructions for Windows</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Firas Moosvi & Patricia Lasserre<br/>
+        
+          <div class="extra_footer">
+            <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-168693744-4', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>

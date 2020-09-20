@@ -1,0 +1,1064 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test Heading &#8212; DATA 301</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/extra.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pdf_print.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom_layouts.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/save_state.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "ubco-cmps/data301_course");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://firas.moosvi.com/courses/data301/notes/week01/01Intro.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://firas.moosvi.com/courses/data301/notes/week01/01Intro.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Test Heading" />
+<meta property="og:description" content="Test Heading  Course Outline  The Essence of the Course  The overall goal of this course is for you to:  Understand data analytics and be able to apply data ana" />
+<meta property="og:image"       content="https://firas.moosvi.com/courses/data301/_static/logo.jpg" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.jpg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">DATA 301</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/syllabus.html">
+   Course Syllabus
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  About this Course
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/course_schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/accommodations.html">
+   Accommodations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/faq.html">
+   Frequently Asked Questions
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Getting started!
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../getting-started/todo_list.html">
+   Things to do before start of course
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Part 1 - Setting up
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="week01_summary.html">
+   Introductions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week02/week02_summary.html">
+   Week 2 - Command Line and Excel
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Course Feedback
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/feedback.html">
+   Anonymous Feedback Form
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/notes/week01/01Intro.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ubco-cmps/data301_course"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ubco-cmps/data301_course/issues/new?title=Issue%20on%20page%20%2Fnotes/week01/01Intro.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ubco-cmps/data301_course/edit/master/notes/week01/01Intro.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#course-outline">
+   Course Outline
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-essence-of-the-course">
+     The Essence of the Course
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#official-calendar-description">
+     Official Calendar Description
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#specific-description">
+     Specific Description
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#course-objectives">
+     Course Objectives
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#toolkit">
+     Toolkit
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#skills-and-capabilities">
+     Skills and Capabilities
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#my-course-goals">
+     My Course Goals
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#course-format">
+     Course Format
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#email">
+     Email
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#labs">
+     Labs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assignments">
+     Assignments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#evaluation">
+     Evaluation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#midterms">
+     Midterms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grad-students-final-project">
+     Grad students Final Project
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#academic-dishonesty">
+     Academic Dishonesty
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#academic-misconduct">
+     Academic Misconduct
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#disciplinary-measures">
+     Disciplinary Measures
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Academic Dishonesty
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-to-pass-this-course">
+     How to Pass This Course
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#disclaimer">
+     Disclaimer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#systems-and-tools">
+     Systems and Tools
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-in-class-quizzes">
+     The In-Class Quizzes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clickers">
+     Clickers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dont-forget-to-register-your-clickers-on-canvas">
+     Don’t forget to register your clickers on Canvas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#an-introduction-to-data-analytics">
+   An Introduction to Data Analytics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-analytics-vs-data-analytics">
+     Data Analytics vs Data Analytics
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-related-terms">
+     Other related terms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-a-data-analyst">
+     What is a Data Analyst?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-is-data-analytics-important">
+     Why is Data Analytics important?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-this-course-is-important">
+     Why This Course is Important?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-analytics-toolkit">
+     Data Analytics Toolkit
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Why is Data Analytics important?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#massive-growth-of-data-big-data">
+     Massive Growth of Data - “Big Data”
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#types-of-data-analysis">
+     Types of Data Analysis
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clicker-test">
+     Clicker Test
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="test-heading">
+<h1>Test Heading<a class="headerlink" href="#test-heading" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="course-outline">
+<h2>Course Outline<a class="headerlink" href="#course-outline" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-essence-of-the-course">
+<h3>The Essence of the Course<a class="headerlink" href="#the-essence-of-the-course" title="Permalink to this headline">¶</a></h3>
+<p>The overall goal of this course is for you to:</p>
+<blockquote>
+<div><p>Understand data analytics and be able to apply data analysis to data sets using a variety of software tools and techniques.</p>
+</div></blockquote>
+<p><img src="../images/01Intro/excel.png" alt="excel" height="48"> <img src="../images/01Intro/python.png" alt="python" height="48">
+<img src="../images/01Intro/sql.png" alt="sql" height="48"> <img src="../images/01Intro/Rlogo.png" alt="Rlogo" height="48">
+<img src="../images/01Intro/Tableau.png" alt="Tableau" height="48"></p>
+<ul class="simple">
+<li><p>The most exciting aspect of data analytics is discovering and presenting useful data/information that can have an impact on business, society, etc.</p></li>
+<li><p>This course will provide the tools and skills for you to perform your own data analysis when encountering problems in the real-world.</p></li>
+<li><p>As an introductory course, the goal is to get exposure to the skills and techniques as there will not be time for mastery.</p></li>
+</ul>
+</div>
+<div class="section" id="official-calendar-description">
+<h3>Official Calendar Description<a class="headerlink" href="#official-calendar-description" title="Permalink to this headline">¶</a></h3>
+<p><strong>Official Calendar</strong>: Techniques for computation, analysis, and visualization of data using software. Manipulation of small and large data sets.
+Automation using scripting. Real-world applications from life sciences, physical sciences, economics, engineering, or psychology.
+No prior computing background is required. Credit will be granted for only one of COSC 301, DATA 301 or DATA 501.[3-2-0]</p>
+<p><strong>Prerequisite</strong>: Either (a) third-year standing, or (b) one of COSC 111 (Computer Programming I) or COSC 122 (Computer Fluency).
+Please familiarize yourself with the details outlined on the course syllabus (posted on Canvas).</p>
+</div>
+<div class="section" id="specific-description">
+<h3>Specific Description<a class="headerlink" href="#specific-description" title="Permalink to this headline">¶</a></h3>
+<p><strong>Specific description</strong>: This course provides an introduction to data analytics to train students with practical industrial techniques
+for data manipulation, analysis, reporting, and visualization.
+This is <strong>not</strong> an introduction to programming.</p>
+<ul class="simple">
+<li><p>Programming techniques will be taught to automate data analysis.</p></li>
+<li><p>Introduction to programming courses are COSC 111 or COSC 123.</p></li>
+<li><p>Prior computing experience is not required, but is helpful (for instance COSC 122 or COSC 111).</p></li>
+</ul>
+</div>
+<div class="section" id="course-objectives">
+<h3>Course Objectives<a class="headerlink" href="#course-objectives" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Understand data representation formats and techniques and how to use them.</p></li>
+<li><p>Experience a wide-range of data analytics tools include Excel, SQL databases, R, and visualization.</p></li>
+<li><p>Develop a computational thinking approach to problem solving and use programs and scripting to solve data tasks.</p></li>
+<li><p>Apply techniques to representative problems from the real word.</p></li>
+</ol>
+</div>
+<div class="section" id="toolkit">
+<h3>Toolkit<a class="headerlink" href="#toolkit" title="Permalink to this headline">¶</a></h3>
+<p>Our toolkit refers to the tools, software, and techniques that you can use today to solve your problems.
+Some of the things you will be adding to your toolkit include:</p>
+<ul class="simple">
+<li><p>Excel and Excel VBA</p></li>
+<li><p>SQL/databases</p></li>
+<li><p>command line</p></li>
+<li><p>Python and Python libraries for data analysis/visualization,</p></li>
+<li><p>R and R libraries for data analysis/visualization</p></li>
+<li><p>Tableau</p></li>
+</ul>
+</div>
+<div class="section" id="skills-and-capabilities">
+<h3>Skills and Capabilities<a class="headerlink" href="#skills-and-capabilities" title="Permalink to this headline">¶</a></h3>
+<p>While these tools have many capabilities (of which we will only see a small subset)
+the skills we will cover in this course will be the building blocks of future learning.</p>
+<p>Skills include:</p>
+<ul class="simple">
+<li><p>programming concepts (Python &amp; R)</p></li>
+<li><p>data representation/metadata</p></li>
+<li><p>thinking algorithmically, designing, manipulating and cleaning data</p></li>
+<li><p>querying and filtering data</p></li>
+<li><p>statistical analysis</p></li>
+<li><p>visualizing information</p></li>
+</ul>
+</div>
+<div class="section" id="my-course-goals">
+<h3>My Course Goals<a class="headerlink" href="#my-course-goals" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Provide the information in a simple, concise, and effective way for learning.</p></li>
+<li><p>Strive for <em><strong>all</strong></em> students to understand the material and pass the course.</p></li>
+<li><p>Be available for questions during class time, office hours, and at other times as needed.</p></li>
+<li><p>Provide an introduction to data analytics tools and techniques so that students are able to apply data analysis to their own data sets.</p></li>
+<li><p>Encourage students to continue with other data analytics/statistics/computer science courses.</p></li>
+</ol>
+</div>
+<div class="section" id="course-format">
+<h3>Course Format<a class="headerlink" href="#course-format" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Each lecture will be posted on <a class="reference external" href="https://canvas.ubc.ca/">Canvas</a>.</p></li>
+<li><p>I encourage you to print them out/follow along with them on your computer.</p></li>
+<li><p>If possible, it will be beneficial that you download the necessary programs prior to lecture so that you can follow along with examples on your laptop.</p></li>
+</ul>
+</div>
+<div class="section" id="email">
+<h3>Email<a class="headerlink" href="#email" title="Permalink to this headline">¶</a></h3>
+<p>I check email twice a day, once in the morning and once in the late afternoon. Emails will be answered in order of importance and
+when they were received. In order to ensure a reasonably prompt response all Emails should use the following format:</p>
+<ul class="simple">
+<li><p>Subject line must begin with the course subject, eg. DATA 301 (or COSC 301 or DATA 501)</p></li>
+<li><p>The first line of the email you will state your name, student number and the course code as stated in the subject line.
+Before e-mailing me, I encourage you to ask questions on Canvas’ Discussion Board.</p></li>
+</ul>
+</div>
+<div class="section" id="labs">
+<h3>Labs<a class="headerlink" href="#labs" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Labs are held weekly starting next week.</p></li>
+<li><p>Please check your registration to determine your lab section and time.</p></li>
+<li><p>TAs will be in the lab each week to help with labs assignments and to provide help with general course material questions.</p></li>
+<li><p>While labs are not mandatory, you are highly encouraged to attend.</p></li>
+<li><p>You must be enrolled in a lab and you must only attend the lab you are enrolled in.</p></li>
+<li><p>While you will have access to University computers in the lab (all of the needed software should already be installed) feel free to bring in your laptops instead.</p></li>
+</ul>
+</div>
+<div class="section" id="assignments">
+<h3>Assignments<a class="headerlink" href="#assignments" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Lab assignments are worth 30% (if enrolled in Data 301/Cosc 301) of your overall grade.</p></li>
+<li><p>Lab assignments may take more than the schedules lab time.</p></li>
+<li><p>Late assignments will have 10% deducted for each day (which includes weekends) beyond the due date. Assignments that are more than 5 days overdue will not be accepted.</p></li>
+<li><p>An assignment may be handed in any time before the due date.</p></li>
+<li><p>Assignments are critical to learning the material and are designed to prepare you for the exams and build up your skills!</p></li>
+<li><p>Please attend lab to go over any errors you made with your TA. Assignment solutions will not be posted.</p></li>
+<li><p>Lab assignments are done individually or in groups of two depending on the assignment.</p></li>
+<li><p>You are not bound to your partner and may choose to go solo on some or all of the subsequent assignments.</p></li>
+<li><p>Your partner need not be in the same lab section as you.</p></li>
+<li><p>If you are working with a partner, please decide on who will submit the documents to Canvas (only one person should upload these files).</p></li>
+<li><p><em>Regardless</em> if you were the partner who uploaded the completed assignment, please include the name and student number of your partner in the <strong>Assignment Comments</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="notes/week01/../images/01Intro/partner.png"><img alt="partner" src="notes/week01/../images/01Intro/partner.png" style="width: 1000px;" /></a>
+<p><em>Figure</em>: Each partner should submit the name and student number of their partner in the assignment comments on Canvas.
+<strong>Only one</strong> partner should upload the files of the complete assignment.</p>
+</div>
+<div class="section" id="evaluation">
+<h3>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this headline">¶</a></h3>
+<p>DATA 301/COSC 301:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Assessment</p></th>
+<th class="head"><p>%</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Clickers</p></td>
+<td><p>5%</p></td>
+<td><p>in class</p></td>
+</tr>
+<tr class="row-odd"><td><p>Assignments</p></td>
+<td><p>30%</p></td>
+<td><p>weekly-ish</p></td>
+</tr>
+<tr class="row-even"><td><p>Two Midterms</p></td>
+<td><p>30%</p></td>
+<td><p>in class</p></td>
+</tr>
+<tr class="row-odd"><td><p>Final Exam</p></td>
+<td><p>35%</p></td>
+<td><p>cumulative, 3 hours</p></td>
+</tr>
+</tbody>
+</table>
+<p>DATA 501 Graduate Student Evaluation:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Assessment</p></th>
+<th class="head"><p>%</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Project</p></td>
+<td><p>30%</p></td>
+<td><p>details to be posted on Canvas</p></td>
+</tr>
+<tr class="row-odd"><td><p>Two Midterms</p></td>
+<td><p>30%</p></td>
+<td><p>in class</p></td>
+</tr>
+<tr class="row-even"><td><p>Final Exam</p></td>
+<td><p>40%</p></td>
+<td><p>cumulative, 3 hours</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="midterms">
+<h3>Midterms<a class="headerlink" href="#midterms" title="Permalink to this headline">¶</a></h3>
+<p>As stated on the TentativeSchedule (posted on Canvas), midterms are held in class on:
+<strong>Midterm 1</strong> Tuesday, Feb 25, 2020
+<strong>Midterm 2</strong> Thursday, March 26, 2020</p>
+<blockquote>
+<div><p><strong>Clause</strong> <br />
+A student must pass the final exam, or receive an average grade
+of at least 50% on the exams (midterms and final) to pass the
+course. Otherwise, the student will be assigned a maximum overall
+grade of 45. See table for examples:</p>
+</div></blockquote>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Midterm 1</p></th>
+<th class="head"><p>Midterm 2</p></th>
+<th class="head"><p>Final</p></th>
+<th class="head"><p>Average Grade</p></th>
+<th class="head"><p>Satisfy Clause</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>70%</p></td>
+<td><p>35%</p></td>
+<td><p>45%</p></td>
+<td><p>50%</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="row-odd"><td><p>40%</p></td>
+<td><p>35%</p></td>
+<td><p>50%</p></td>
+<td><p>42%</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="row-even"><td><p>45%</p></td>
+<td><p>51%</p></td>
+<td><p>45%</p></td>
+<td><p>47%</p></td>
+<td><p>No</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="grad-students-final-project">
+<h3>Grad students Final Project<a class="headerlink" href="#grad-students-final-project" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>There is no clicker, lab or assignment component for students enrolled in Data 501 (although it is recommended that you work through these assignments for practice).</p></li>
+<li><p>Graduate students enrolled in DATA 501 will be expected to complete a Final Project</p></li>
+<li><p>This includes a hand-in written proposal, final paper, and in-class presentation (final week of class)</p></li>
+<li><p>Pay attention on Canvas for postings on checkpoint deadlines, rubrics, etc.</p></li>
+</ul>
+</div>
+<div class="section" id="academic-dishonesty">
+<h3>Academic Dishonesty<a class="headerlink" href="#academic-dishonesty" title="Permalink to this headline">¶</a></h3>
+<p>Cheating in all its forms is strictly prohibited and will be taken very seriously by the instructor.</p>
+<blockquote>
+<div><p><strong>Assignments</strong> <br />
+You are expect to submit original work done by you and acknowledge
+all sources of information or ideas while attributing them to
+others as required.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Exams</strong> <br />
+All exams are closed book, so no course materials should be
+present.</p>
+</div></blockquote>
+</div>
+<div class="section" id="academic-misconduct">
+<h3>Academic Misconduct<a class="headerlink" href="#academic-misconduct" title="Permalink to this headline">¶</a></h3>
+<p>Students are responsible for informing themselves of the guidelines of acceptable and unacceptable conduct for graded assignments
+established by their instructors for specific courses, and of the examples of academic misconduct set out
+<a class="reference external" href="http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,54,111,959">here</a>. Some main concerns include:</p>
+<ul class="simple">
+<li><p>Plagiarism, which is intellectual theft, occurs when an individual submits or presents the oral or written work of
+another person as his or her own.</p></li>
+<li><p>Submitting the same, or substantially the same, essay, presentation, or assignment more than once (whether the
+earlier submission was at this or another institution) unless prior approval has been obtained from the instructor(s) to
+whom the assignment is to be submitted.</p></li>
+</ul>
+</div>
+<div class="section" id="disciplinary-measures">
+<h3>Disciplinary Measures<a class="headerlink" href="#disciplinary-measures" title="Permalink to this headline">¶</a></h3>
+<p>Academic misconduct that is subject to <a class="reference external" href="http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,54,111,960">disciplinary measures</a>.</p>
+<p>Academic misconduct often results in a one-year suspension from the University and a notation of academic discipline on the
+student’s record. However, disciplinary measures which may be imposed, singly or in combination, for academic misconduct
+include, but are not limited to, the following:</p>
+<ul class="simple">
+<li><p>a failing grade or mark of zero on the assignment or in the course in which the academic misconduct occurred</p></li>
+</ul>
+<p>Note that all incidents of suspected academic misconduct must be reported to the Dean’s Office.</p>
+</div>
+<div class="section" id="id1">
+<h3>Academic Dishonesty<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><strong>Don’t cheat!</strong> <br />
+Do not cheat, copy, or mislead others about what is your work.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Violations of academic integrity (i.e., misconduct) may result in a mark of zero on the assignment or exam and more serious
+consequences may apply if the matter is referred to the President’s Advisory Committee on Student Discipline.</p></li>
+<li><p>Careful records are kept in order to monitor and prevent recurrences. If you have any questions about how
+academic integrity applies to this course, please consult with your professor.</p></li>
+</ul>
+</div>
+<div class="section" id="how-to-pass-this-course">
+<h3>How to Pass This Course<a class="headerlink" href="#how-to-pass-this-course" title="Permalink to this headline">¶</a></h3>
+<p>The most important things to do to pass this course:</p>
+<p><strong>Attend class and labs</strong></p>
+<ul class="simple">
+<li><p>Follow along and annotate the lecture notes in class.</p></li>
+<li><p>Participate in class exercises and questions.</p></li>
+<li><p>Labs are for marks and are practice to learn the material for the exams.</p></li>
+</ul>
+<p>To get an “A” in this course do all the above plus:</p>
+<ul class="simple">
+<li><p>Practice on your own. Practice makes perfect.</p></li>
+<li><p>Do more questions than in the labs. Try the techniques on your own data sets.</p></li>
+</ul>
+</div>
+<div class="section" id="disclaimer">
+<h3>Disclaimer<a class="headerlink" href="#disclaimer" title="Permalink to this headline">¶</a></h3>
+<p>There is a wide variety in previous experience.</p>
+<ul class="simple">
+<li><p>Some material you may already know. Help others!!</p></li>
+<li><p>Build up your computer experience in labs and outside of class.</p></li>
+<li><p>Third-year standing means that you know how to “figure things out.”</p></li>
+</ul>
+<p>The course will be very straightforward: Do the work and practice the techniques to do well.</p>
+</div>
+<div class="section" id="systems-and-tools">
+<h3>Systems and Tools<a class="headerlink" href="#systems-and-tools" title="Permalink to this headline">¶</a></h3>
+<p>All required software is available on the lab computers in SCI 234.If you have your own personal laptop, it is advised that you download
+the required software prior to class so that you can follow along with examples in lecture.</p>
+<ul class="simple">
+<li><p>Our first unit uses Excel. A student download of Microsoft office is available <a class="reference external" href="https://it.ubc.ca/software-downloads">here</a></p></li>
+</ul>
+<p>Canvas will be used for accessing lectures, submitting assignments, posting marks, discussions, and more,…</p>
+<ul class="simple">
+<li><p>Support for students is available <a class="reference external" href="https://canvas.ok.ubc.ca/2019/07/03/students/">here</a></p></li>
+</ul>
+</div>
+<div class="section" id="the-in-class-quizzes">
+<h3>The In-Class Quizzes<a class="headerlink" href="#the-in-class-quizzes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>To encourage attendance and effort, 5% of your overall grade is allocated to answering in-class clicker questions.</p></li>
+<li><p>These questions are answered electronically using a clicker.</p></li>
+<li><p>The clicker can be purchased at the bookstore.</p></li>
+<li><p>Please refer to the <strong>ClickerOrientation</strong> file uploaded to the <strong>Supplementary Material</strong> Canvas on how to use them.</p></li>
+</ul>
+</div>
+<div class="section" id="clickers">
+<h3>Clickers<a class="headerlink" href="#clickers" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The clicker is personalized to you with your student number.</p></li>
+<li><p>At different times during all the lectures, questions reviewing material will be asked. Responses are given using clickers.</p></li>
+<li><p>You must answer 80% of the questions correctly to get the full 5%.</p></li>
+<li><p>There are some (not-for-grading) example clicker questions at the end of the lecture (I will take them up next class to ensure
+everyone has a chance to obtain a clicker first)</p></li>
+</ul>
+</div>
+<div class="section" id="dont-forget-to-register-your-clickers-on-canvas">
+<h3>Don’t forget to register your clickers on Canvas<a class="headerlink" href="#dont-forget-to-register-your-clickers-on-canvas" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="sourcematerial/lectures/01Intro/clickerCanvas.png"><img alt="clickerCanvas" src="sourcematerial/lectures/01Intro/clickerCanvas.png" style="width: 1000px;" /></a>
+</div>
+</div>
+<div class="section" id="an-introduction-to-data-analytics">
+<h2>An Introduction to Data Analytics<a class="headerlink" href="#an-introduction-to-data-analytics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="data-analytics-vs-data-analytics">
+<h3>Data Analytics vs Data Analytics<a class="headerlink" href="#data-analytics-vs-data-analytics" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><strong>Data Analysis</strong><br />
+<em>Data analysis</em> is the processing of data to yield useful insights or knowledge.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Data Analytics</strong><br />
+<em>Data Analytics</em> is the science of examining raw data with the purpose of drawing conclusions about that information.</p>
+</div></blockquote>
+<p>The distinction between data analysis and analytics is blurry to say the least
+(even <a class="reference external" href="https://en.wikipedia.org/wiki/Analytics#Analytics_vs._analysis">Wikipedia</a> is confused).<br />
+<a class="reference external" href="https://www.getsmarter.com/blog/career-advice/difference-data-analytics-data-analysis/">One source</a>
+might say that data analysis is a subcomponent of data analytics, while
+<a class="reference external" href="https://www.quora.com/What-is-the-difference-between-Analytics-and-analysis-data-analytics">another source</a> says data analytics is a subcomponent of data analysis.<br />
+I like to think of data analysis as the method (ie action) whereas data analytics are tools used to do so.<br />
+Analytics is supported by many tools such as Microsoft Excel, SQL, Python, R, all of which we will talk about in this course.</p>
+</div>
+<div class="section" id="other-related-terms">
+<h3>Other related terms<a class="headerlink" href="#other-related-terms" title="Permalink to this headline">¶</a></h3>
+<p>Other terms that may add confusion to these definitions are …</p>
+<ul class="simple">
+<li><p><em><strong>Data Science</strong></em> is a field comprised of everything relating to data cleansing, preparation, and analysis. This umbrella term that
+encompasses data analytics, data mining, machine learning, and several other related disciplines.</p></li>
+<li><p><em><strong>Big Data</strong></em> usually refers to immense volumes of data that inhibits the use of traditional data-processing applications.</p></li>
+</ul>
+<p>See <a class="reference external" href="https://www.simplilearn.com/data-science-vs-big-data-vs-data-analytics-article">this</a> article
+for more on the differences between Data Science, Big Data, and Data Analytics.</p>
+</div>
+<div class="section" id="what-is-a-data-analyst">
+<h3>What is a Data Analyst?<a class="headerlink" href="#what-is-a-data-analyst" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><strong>Data analyst</strong> <br />
+A <em>data analyst</em> is a person who uses tools and applications to transform raw data into a form that will be useful.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Vital in a “data-driven” world with larger and more critical data sets.</p></li>
+<li><p>The first step in data analysis is often <em><strong>data collection/ munging/ processing</strong></em> which involves finding, loading, cleaning,
+manipulating, transforming, and visualizing the data.</p></li>
+<li><p>The knowledge may be used for scientific discovery, business decision-making, or a variety of other applications.</p></li>
+</ul>
+</div>
+<div class="section" id="why-is-data-analytics-important">
+<h3>Why is Data Analytics important?<a class="headerlink" href="#why-is-data-analytics-important" title="Permalink to this headline">¶</a></h3>
+<p><em><strong>Data analytics</strong></em> is important as society is collecting more and larger data sets all the time:</p>
+<ul class="simple">
+<li><p><strong>Web</strong> All web pages visited and links clicked, searches made, images and posts</p></li>
+<li><p><strong>Business</strong> Items purchased by date, supply chain/customers, industrial sensors</p></li>
+<li><p><strong>Science</strong> Massive data sets (biological/genomic, astronomy, physics, healthcare)</p></li>
+<li><p><strong>Environmental</strong> Sensors and monitors (temperature, etc.)</p></li>
+</ul>
+<p>Transforming this raw data into useful insights has major value:</p>
+<ul class="simple">
+<li><p><strong>Web</strong> Online advertising driven by understanding customer behaviour;
+<a class="reference external" href="https://microarts.com/insights/why-googles-search-results-vary-from-person-to-person/">tailored google searches</a>,
+<a class="reference external" href="https://analytics.google.com/analytics/web/provision/?authuser=0#/provision">Google Analytics</a></p></li>
+<li><p><strong>Business</strong> <a class="reference external" href="https://channels.theinnovationenterprise.com/articles/how-sales-teams-are-using-predictive-analytics">Sales predictions</a>,
+marketing promotions, manufacturing improvement</p></li>
+<li><p><strong>Science</strong> Scientific discoveries, new medical treatments and drugs; see some <a class="reference external" href="https://www.datapine.com/blog/big-data-examples-in-healthcare/">examples</a> in healthcare.</p></li>
+<li><p><strong>Environmental</strong> Understanding of environmental processes to allow for changing policies and behaviours,
+eg <a class="reference external" href="https://www.the-iea.org/what-we-do/">Institute of Environmental Analytics</a></p></li>
+</ul>
+</div>
+<div class="section" id="why-this-course-is-important">
+<h3>Why This Course is Important?<a class="headerlink" href="#why-this-course-is-important" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>For many of you, this will be your first exposure to programming and data analytics.</p></li>
+<li><p>Regardless of your discipline, the tools you develop throughout this course will train you to think analytically and creatively.</p></li>
+<li><p>Beyond University, many professional jobs of the future will involve collecting, manipulating, and analyzing data.</p></li>
+<li><p>People who can understand how data can be used will have better employment opportunities.</p></li>
+</ul>
+<p>Important skills you may learn in this course:</p>
+<ul class="simple">
+<li><p>Excel Proficiency: for general data analysis and productivity.</p></li>
+<li><p>Databases: Understand how they work and how to use them.</p></li>
+<li><p>Programming and Computational Thinking: Critical thinking and the ability to clearly articulate a problem in a systematic way has applications beyond data analytics.</p></li>
+<li><p>Applied Statistics: Using R and other software makes your statistics training useful for real-world problems.</p></li>
+<li><p>Data visualization: how to display and convey information in a meaningful way.</p></li>
+<li><p>Real-world problem solving: learn to tackle real-world data analysis problems and understand when to use what tool.</p></li>
+</ul>
+</div>
+<div class="section" id="data-analytics-toolkit">
+<h3>Data Analytics Toolkit<a class="headerlink" href="#data-analytics-toolkit" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>A data analyst has expertise in programming, statistics, data munging (transformation), and data visualization.</p></li>
+<li><p>In this course, you will be introduced to severals tools for gaining competency in each of these skills.</p></li>
+<li><p>As an introductory course, the goal is to get exposure to the skills and techniques as there will not be time for mastery.</p></li>
+<li><p>This toolkit of systems and techniques will be useful in many jobs even if they are not considered data analyst positions.</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h3>Why is Data Analytics important?<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>90 percent of the worlds data have been generated over the last two years
+<a class="reference external" href="https://www.forbes.com/sites/louiscolumbus/2017/12/11/linkedins-fastest-growing-jobs-today-are-in-data-science-machine-learning/#6f8d4d7b51bd">Forbes Magazine</a>.</p></li>
+<li><p>In 2017, Machine Learning Engineers, Data Scientists, and Big Data Engineers ranked among the top emerging jobs on LinkedIn
+<a class="reference external" href="https://www.forbes.com/sites/louiscolumbus/2017/12/11/linkedins-fastest-growing-jobs-today-are-in-data-science-machine-learning/#4e8d9a9251bd">Forbes Magazine</a>.</p></li>
+<li><p>In 2012 was Data Scientist dubbed the sexiest job of the 21st Century by
+<a class="reference external" href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century">Harvard Business Review</a>.</p></li>
+<li><p>An estimated 2.7 million job postings for Data Analytics and Data Science are projected in the United States by 2020 <a class="reference external" href="https://www.ibm.com/downloads/cas/3RL3VXGA">IBM</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="massive-growth-of-data-big-data">
+<h3>Massive Growth of Data - “Big Data”<a class="headerlink" href="#massive-growth-of-data-big-data" title="Permalink to this headline">¶</a></h3>
+<p>Data facts from Forbes Magazine, May 21, 2018
+<a class="reference external" href="https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#27ff4eec60ba">Forbes</a></p>
+<ul class="simple">
+<li><p>An estimated 2.5 quintillion bytes (2.5 EB) generated per day.</p></li>
+<li><p>Google processes about 3.5 billion requests/day and stores about 10 EB of data.</p></li>
+<li><p>Facebook collects 500 TBs/day (⇠2.5 billion items) and stores 100+ PB of photos.</p></li>
+</ul>
+<p>See <a class="reference external" href="https://web-assets.domo.com/blog/wp-content/uploads/2017/07/17_domo_data-never-sleeps-5-01.png">here</a> on how much data is generated every minute</p>
+<ul class="simple">
+<li><p>Users watch 4,146,600 videos every minute on YouTube</p></li>
+<li><p>Intagram users post 46,740 photos every minute.</p></li>
+</ul>
+</div>
+<div class="section" id="types-of-data-analysis">
+<h3>Types of Data Analysis<a class="headerlink" href="#types-of-data-analysis" title="Permalink to this headline">¶</a></h3>
+<p><strong>Descriptive</strong>: what are the features of the data?</p>
+<p><strong>Exploratory</strong>: what new relationships/connections exist in the data?</p>
+<blockquote>
+<div><p>Correlation does not imply causation</p>
+</div></blockquote>
+<p><strong>Inferential</strong>: use data samples to predict about larger population</p>
+<blockquote>
+<div><p>Statistical models: estimate value and uncertainty</p>
+</div></blockquote>
+<p><strong>Predictive</strong>: use data to predict values for other objects</p>
+<p><strong>Causal</strong>: what variables change values of other variables?</p>
+<blockquote>
+<div><p>Randomized studies: if give a drug/treatment, does it have a positive effect?</p>
+</div></blockquote>
+</div>
+<div class="section" id="clicker-test">
+<h3>Clicker Test<a class="headerlink" href="#clicker-test" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 1</strong> <br />
+Why are you here? <br />
+A) I want to learn more about data analytics. <br />
+B) I know how important data is to my work or future work. <br />
+C) I need an upper-year elective course. <br />
+D) I already have training in computer science/statistics and want to expand my knowledge further. <br />
+E) I want an easy credit.</p>
+<p><strong>Example 2</strong> <br />
+Which of the following topics are you most interested in? <br />
+A) Excel and SQL Databases <br />
+B) Programming and Python <br />
+C) Data visualization and GIS <br />
+D) R and Applied Statistics <br />
+E) None of the above</p>
+<p><strong>Example 3</strong> <br />
+What is your major? <br />
+A) Math/Stat/Computer Science/Engineering <br />
+B) Business <br />
+C) Science (biology, chemistry, physics, environmental) <br />
+D) Arts <br />
+E) Other</p>
+<p><strong>Example 4</strong> <br />
+What is your computer background? <br />
+A) I can use computer and mobile applications <br />
+B) I can write a formula in Excel <br />
+C) I can write a simple program in some programming language (eg. Python, R, Java) <br />
+D) I can write a query in SQL <br />
+E) Two or more of the above</p>
+<p><strong>Example 5</strong> <br />
+What grade are you expecting to get? <br />
+A) A <br />
+B) B <br />
+C) C <br />
+D) D <br />
+E) F</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ubco-cmps/data301_course",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notes/week01"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Firas Moosvi & Patricia Lasserre<br/>
+        
+          <div class="extra_footer">
+            <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-168693744-4', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>

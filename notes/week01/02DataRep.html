@@ -1,0 +1,1541 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Data Representation &#8212; DATA 301</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/extra.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pdf_print.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom_layouts.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/save_state.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "ubco-cmps/data301_course");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://firas.moosvi.com/courses/data301/notes/week01/02DataRep.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://firas.moosvi.com/courses/data301/notes/week01/02DataRep.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Data Representation" />
+<meta property="og:description" content="Data Representation  Computer Terminology  There is a tremendous amount of terminology related to technology.&lt;br /&gt; Using terminology precisely and correctly de" />
+<meta property="og:image"       content="https://firas.moosvi.com/courses/data301/_static/logo.jpg" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.jpg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">DATA 301</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/syllabus.html">
+   Course Syllabus
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  About this Course
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/course_schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/accommodations.html">
+   Accommodations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/faq.html">
+   Frequently Asked Questions
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Getting started!
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../getting-started/todo_list.html">
+   Things to do before start of course
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Part 1 - Setting up
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="week01_summary.html">
+   Introductions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week02/week02_summary.html">
+   Week 2 - Command Line and Excel
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Course Feedback
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/feedback.html">
+   Anonymous Feedback Form
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/notes/week01/02DataRep.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ubco-cmps/data301_course"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ubco-cmps/data301_course/issues/new?title=Issue%20on%20page%20%2Fnotes/week01/02DataRep.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ubco-cmps/data301_course/edit/master/notes/week01/02DataRep.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ubco-cmps/data301_course/master?urlpath=lab/tree/notes/week01/02DataRep.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/ubco-cmps/data301_course/blob/master/notes/week01/02DataRep.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computer-terminology">
+   Computer Terminology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic-computer-terminology">
+   Basic Computer Terminology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-cloud">
+   “The Cloud”
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-data">
+   What is data?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-is-data-measured">
+   How is data measured?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#memory-data-size">
+   Memory/Data Size
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#start-solutions-here">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#end-solutions-here">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analog-vs-digital-thermometer-example">
+   Analog vs. Digital: Thermometer example
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conversion-of-analogue-to-digital">
+   Conversion of Analogue to Digital
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-go-digital-over-analogue">
+   Why go digital over analogue?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bits-and-bytes">
+   Bits and Bytes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#decimal-system">
+   Decimal System
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#representing-data-integers">
+   Representing Data: Integers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#converting-decimal-to-binary">
+   Converting decimal to binary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Representing Data: Integers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#representing-data-real-numbers">
+   Representing Data: Real Numbers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#representing-data-doubles-and-floats-photo-souce">
+   Representing Data: Doubles and Floats Photo souce
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#representing-data-normalized-scientific-notation">
+   Representing Data: Normalized scientific notation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#converting-decimal-fraction-to-binary-phase-1">
+   Converting decimal fraction to binary - Phase 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#converting-decimal-fraction-to-binary-phase-2">
+   Converting decimal fraction to binary - Phase 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#representing-data-doubles-and-floats">
+   Representing Data: Doubles and Floats
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-the-exponent-adjustment">
+   Why the exponent adjustment?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#precision">
+   Precision
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comment">
+   Comment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hexadecimal">
+   Hexadecimal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#representing-data-characters">
+   Representing Data: Characters
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#representing-text-beyond-ascii-unicode">
+   Representing Text Beyond ASCII - Unicode
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#representing-data-strings">
+   Representing Data: Strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#representing-data-dates-and-times">
+   Representing Data: Dates and Times
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#encoding-other-data">
+   Encoding other data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#metadata">
+   Metadata
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#files">
+   Files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#file-encoding">
+   File Encoding
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#binary-vs-text-files">
+   Binary vs Text files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#file-encodings-text-files">
+   File Encodings: Text Files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#file-encodings-binary-file">
+   File Encodings: Binary File
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#upc-barcodes">
+   UPC Barcodes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#qr-code">
+   QR code
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nato-broadcast-alphabet">
+   NATO Broadcast Alphabet
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#advanced-the-time-versus-space-tradeoff">
+   Advanced: The Time versus Space Tradeoff
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#review-memory-size">
+   Review: Memory Size
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#review-metadata-vs-data">
+   Review: Metadata vs. Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   START SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id9">
+   END SOLUTIONS HERE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objectives">
+   Objectives
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="data-representation">
+<h1>Data Representation<a class="headerlink" href="#data-representation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="computer-terminology">
+<h2>Computer Terminology<a class="headerlink" href="#computer-terminology" title="Permalink to this headline">¶</a></h2>
+<p>There is a tremendous amount of terminology related to technology.<br />
+Using terminology precisely and correctly demonstrates understanding of a domain and simplifies communication.<br />
+We will introduce terminology as needed.</p>
+</div>
+<div class="section" id="basic-computer-terminology">
+<h2>Basic Computer Terminology<a class="headerlink" href="#basic-computer-terminology" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A <strong>computer</strong> is a device that can be programmed to solve problems.</p></li>
+<li><p><strong>Harware</strong> includes the physical components of computer</p>
+<ul>
+<li><p>(eg. central processing unit, monitor, keyboard, computer data storage, graphic card, speakers).</p></li>
+</ul>
+</li>
+<li><p><strong>Software</strong> programs that a computer follows to perform
+functions</p>
+<ul>
+<li><p>(eg. operating system, internet browser).</p></li>
+</ul>
+</li>
+<li><p><strong>Memory</strong> is a device which allows the computer to store data either temporarily (lost when computer reboots, eg.
+RAM) or permanently (data is preserved even if power is lost, eg. hard drive).</p></li>
+<li><p>There are many different technologies for storing data with varying performance.</p></li>
+<li><p>Some live inside your computer while others are portable and can be used on difference devices (e.g. USB drives).</p></li>
+</ul>
+</div>
+<div class="section" id="the-cloud">
+<h2>“The Cloud”<a class="headerlink" href="#the-cloud" title="Permalink to this headline">¶</a></h2>
+<p>“The Cloud” is not part of your computer but rather a network
+of distributed computers on the Internet that provides storage,
+applications, and services for your computer.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><strong>Dropbox</strong> is a cloud service that allows you to store your files on machines distributed on the Internet.
+Automatically synchronizes any files in folder with all your machines.</p></li>
+<li><p><strong>iCloud</strong> is an Apple service that stores and synchronizes your data, music, apps, and other content across Apple devices.</p></li>
+<li><p><a class="reference external" href="https://www.google.com/docs/about/"><strong>Google Docs</strong></a> you can write, edit, and collaborate wherever you are. For free.</p></li>
+</ul>
+</div>
+<div class="section" id="what-is-data">
+<h2>What is data?<a class="headerlink" href="#what-is-data" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><strong>Data</strong>: information, especially facts or numbers, collected to be examined and considered and used to
+help decision-making, or information in an electronic form that can be stored and used by a computer.
+– <a class="reference external" href="https://dictionary.cambridge.org/dictionary/english/data">Cambridge Dictionary</a></p>
+</div></blockquote>
+<p>However, is can be argued (see <a class="reference external" href="https://siliconangle.com/2014/03/05/data-does-not-equal-information-bigdatasv/">this article</a> for example) that
+data ≠ information.<br />
+In addition, on might refer to <em>raw</em> data as a collection of number/facts that don’t have meaning until it has been analyzed or has been given meaning.</p>
+</div>
+<div class="section" id="how-is-data-measured">
+<h2>How is data measured?<a class="headerlink" href="#how-is-data-measured" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Computers represent data <a class="reference external" href="https://homepage.cs.uri.edu/faculty/wolfe/book/Readings/Reading02.htm">digitally</a>
+meaning that data is represented using discrete units called as bits (Binary Digits).</p></li>
+<li><p>The real-world is <em>analog</em> where the information is encoded on a continuous signal (spectrum of values, ie. infinite sounds/colours).</p></li>
+</ul>
+<blockquote>
+<div><p>“Like with the artist’s abstract composition, the trick is to take all of the real-world sound, picture,
+number, etc. data that we want in the computer and convert it into the kind of data that can be
+represented in (on/off) switches.” – <a class="reference external" href="https://computing-concepts.cs.uri.edu/wiki/Data_Representation_For_Computing">University of Rhode Island</a></p>
+</div></blockquote>
+<p>Data size is measured in bytes.</p>
+<a class="reference internal image-reference" href="notes/week01/../images/02DataRep/BitsandBites.jpg"><img alt="BitsandBites" src="notes/week01/../images/02DataRep/BitsandBites.jpg" style="width: 100px;" /></a>
+<ul class="simple">
+<li><p>A bit is either a 0 or a 1.</p></li>
+<li><p>A <em>byte</em> contains 8 <em>bits</em> (<em>B</em>inary Dig<em>its</em>)</p></li>
+<li><p>A <em>nibble</em> contains 4 <em>bits</em> (<em>B</em>inary Dig<em>its</em>)<br />
+<strong>Larger units</strong>:</p></li>
+<li><p>kilobyte (KB) = 1000 bytes</p></li>
+<li><p>megabyte (MB) = 106 bytes (or 1000 KB)</p></li>
+<li><p>gigabyte (GB) = 109 bytes (or 1000 MB)</p></li>
+<li><p>terabyte (TB) = 1012 bytes (or 1000 GB)</p></li>
+<li><p>petabyte (PB) = 1015 bytes (or 1000 TB)</p></li>
+<li><p>exabyte (EB) = 1018 bytes (or 1000 PB)</p></li>
+<li><p>zettabyte (ZB) = 1021 bytes (or 1000 EB)</p></li>
+</ul>
+</div>
+<div class="section" id="memory-data-size">
+<h2>Memory/Data Size<a class="headerlink" href="#memory-data-size" title="Permalink to this headline">¶</a></h2>
+<p><strong>Memory size</strong> is a measure of memory storage capacity in bytes. It represents the maximum capacity of data in the device.</p>
+<p><strong>Example 1</strong><br />
+Given this flask, assume the red liquid is data and each mark represents 100 MB of data. Select a true statement.<br />
+A) Memory size is 200 MB.<br />
+B) Flask can hold 0.5 GB of data.<br />
+C) Data size is about 200 KB.<br />
+D) Data size of 1000 KB would “overflow device”.<br />
+E) All of the above statements are false.</p>
+<a class="reference internal image-reference" href="notes/week01/../images/02DataRep/flask.png"><img alt="flask" src="notes/week01/../images/02DataRep/flask.png" style="width: 60px;" /></a>
+</div>
+<div class="section" id="start-solutions-here">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#start-solutions-here" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 1</strong><br />
+Given this flask, assume the red liquid is data and each mark represents 100 MB of data. Select a true statement.<br />
+A) Memory size is 200 MB. <em>~500MB</em><br />
+<strong>B) Flask can hold 0.5 GB of data.</strong><br />
+C) Data size is about 200 KB. <em>~200 MB</em><br />
+D) Data size of 1000 KB would “overflow device”. <em>1000 KB = 1 MB &lt; 500 MB</em><br />
+E) All of the above statements are false.</p>
+</div>
+<div class="section" id="end-solutions-here">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#end-solutions-here" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="analog-vs-digital-thermometer-example">
+<h2>Analog vs. Digital: Thermometer example<a class="headerlink" href="#analog-vs-digital-thermometer-example" title="Permalink to this headline">¶</a></h2>
+<p>A thermometer contains liquid which expands and contracts in response to temperature changes.</p>
+<p>The liquid level is analog, and its expansion continuous over the temperature range.</p>
+<p>This information can be represented using discrete units using digital thermometer, for example.</p>
+<p><img src="../images/02DataRep/thermo.png" alt="thermo" width="100" >     <img src="../images/02DataRep/dtheorm.png" alt="dtheorm" width="300" ></p>
+</div>
+<div class="section" id="conversion-of-analogue-to-digital">
+<h2>Conversion of Analogue to Digital<a class="headerlink" href="#conversion-of-analogue-to-digital" title="Permalink to this headline">¶</a></h2>
+<p>How would you digitize this analog data into 10 discrete points?</p>
+<a class="reference internal image-reference" href="notes/week01/../images/02DataRep/Analog2Digital.png"><img alt="Analog2Digital" class="align-left" src="notes/week01/../images/02DataRep/Analog2Digital.png" style="width: 480px;" /></a>
+<p><br/><br/></p>
+</div>
+<div class="section" id="why-go-digital-over-analogue">
+<h2>Why go digital over analogue?<a class="headerlink" href="#why-go-digital-over-analogue" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Computers are digital and many home electronics are interfacing with computers.</p></li>
+<li><p>Analog signals are more susceptible to noise that degrades the quality of the signal (sound, picture, etc.). The effect of
+noise also makes it difficult to preserve the quality of analog signals across long distances.</p></li>
+<li><p>Reading data stored in analog format is susceptible to data loss and noise. Copying analog data leads to declining quality.</p></li>
+</ol>
+<p>A computer memory consists of billions of bits which allows for an almost limitless number of possible states.
+Bits are combined to allow more information to be represented including characters and numbers</p>
+<ul class="simple">
+<li><p>eg. 0 = off, 1= on</p></li>
+<li><p>01100010 = “b”
+To do this, it needs a set of rules on how to translate binary information into things like numbers, text, photos, video, etc.</p></li>
+</ul>
+</div>
+<div class="section" id="bits-and-bytes">
+<h2>Bits and Bytes<a class="headerlink" href="#bits-and-bytes" title="Permalink to this headline">¶</a></h2>
+<p>Numbers are encoded in a computer using a fixed number of bits (usually 32 or 64).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p># of bits</p></th>
+<th class="head"><p>Unique patterns</p></th>
+<th class="head"><p># of unique patterns</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0,1</p></td>
+<td><p>2<sup>1</sup> = 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>00, 01, 10, 11</p></td>
+<td><p>2<sup>2</sup> = 4</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>000, 001, 010, 100, 011, 101, 110, 111</p></td>
+<td><p>2<sup>3</sup> = 8</p></td>
+</tr>
+<tr class="row-odd"><td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+<tr class="row-even"><td><p>32</p></td>
+<td><p>…</p></td>
+<td><p>2<sup>32</sup> = 4, 294, 967, 296</p></td>
+</tr>
+<tr class="row-odd"><td><p>64</p></td>
+<td><p>…</p></td>
+<td><p>2<sup>64</sup> &gt; 18 quintillion</p></td>
+</tr>
+</tbody>
+</table>
+<p>The more bits you have, the more values you can represent.</p>
+</div>
+<div class="section" id="decimal-system">
+<h2>Decimal System<a class="headerlink" href="#decimal-system" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Assuming we use a 32-bit register, we now need a way of mapping or converting these unique patterns of 0s and 1s to a specific meaning (in this case a number).</p></li>
+<li><p>A <strong>binary number</strong> is a number expressed using only 0s and 1s (ie. in the base-2 numeral system or <strong>binary numeral system</strong>).</p></li>
+<li><p>Before discussing the binary system, let’s first discuss a conversion system you should all be familiar with: the <strong>decimal system</strong>.</p></li>
+</ul>
+<p>The decimal system uses digit placeholders, say ,  :white_large_square: , that can take on values from the set {0; 1; 2; 3; 4; 5; 6; 7; 8; 9} <br />
+The number of digits in the set is called the <strong>base</strong>. So the base for this system is 10.<br />
+Reading from right to left, the first placeholder represents ones, the second, 10s, the third hundreds, and so on …</p>
+<blockquote>
+<div><p>We write eight million, two hundred ninety thousand, eight hundred forty one as:<br />
+:eight::two::nine::zero::eight::four::one:<br />
+= 8 * 10<sup>6</sup> + 2 * 10<sup>5</sup> + 9 * 10<sup>4</sup> + 0 * 10<sup>3</sup> + 8 * 10<sup>2</sup> + 4 * 10<sup>1</sup> + 1 * 10<sup>0</sup></p>
+</div></blockquote>
+</div>
+<div class="section" id="representing-data-integers">
+<h2>Representing Data: Integers<a class="headerlink" href="#representing-data-integers" title="Permalink to this headline">¶</a></h2>
+<p>A binary system works in the same way, only now, the placeholder must take a value from the set {0; 1}.<br />
+To put another way, instead of using base 10 wherein:<br />
+ones=10<sup>0</sup>, tens=10<sup>1</sup>, hundreds=10<sup>2</sup>, thousands=10<sup>3</sup>, etc.<br />
+we use base 2 where:<br />
+ones=2<sup>0</sup>, ‘twos’=2<sup>1</sup>, ‘fours’=2<sup>2</sup>, ‘eights’=2<sup>3</sup>, etc. .</p>
+<blockquote>
+<div><p>For example, the integer 164 would be expressed as<br />
+:one::zero::one::zero::zero::one::zero::zero:<br />
+164 = 128 + 32 + 4<br />
+1 * 2<sup>7</sup> + 0 * 2<sup>6</sup> + 1 * 2<sup>5</sup> + 0 * 2<sup>4</sup> + 0 * 2<sup>3</sup> + 1 * 2<sup>2</sup> + 0 * 2<sup>1</sup> + 0 * 2<sup>0</sup></p>
+</div></blockquote>
+</div>
+<div class="section" id="converting-decimal-to-binary">
+<h2>Converting decimal to binary<a class="headerlink" href="#converting-decimal-to-binary" title="Permalink to this headline">¶</a></h2>
+<p>There are a number of websites online (<a class="reference external" href="https://www.rapidtables.com/convert/number/decimal-to-binary.html">ex 1</a>,
+<a class="reference external" href="https://binary-system.base-conversion.ro/convert-positive-unsigned-integers-from-decimal-system-to-unsigned-binary.php">ex 2</a>)
+that can convert numbers from our decimal system (or simply decimal)
+to the binary system (or simply binary). However the steps to do it on paper are quite easy:</p>
+<ol class="simple">
+<li><p>Divide the decimal number by 2.</p></li>
+<li><p>Keep track of the integer quotient for the next iteration.</p></li>
+<li><p>Keep track of the the remainder for the binary digit.</p></li>
+<li><p>Repeat steps 1–3 until the quotient is equal to 0.</p></li>
+<li><p>Construct the base 2 representation, by taking all the remainders starting from the bottom up.</p></li>
+</ol>
+<p>Let’s look at an example …</p>
+<blockquote>
+<div><p><strong>Exercise</strong><br />
+Convert 37<sub>10</sub> from base 10 (i.e decimal) to binary base 2.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Try it!</strong><br />
+Convert 132<sub>10</sub> from base 10 (i.e decimal) to binary base 2.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Question</strong><br />
+Does any see a problem with this system?<br />
+<strong>Hint</strong>: this system is called <em>unsigned binary</em></p>
+</div></blockquote>
+</div>
+<div class="section" id="id1">
+<h2>Representing Data: Integers<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Recall a 32-bit register can store 2<sup>32</sup> different values.<br />
+The range of integer values it will represent depends on the <em>encoding</em> type.</p>
+<p><strong>Unsigned Binary</strong> Range is 0 through 4,294,967,295 = (2<sup>32</sup> - 1)</p>
+<p><strong>2’s compliment</strong> We use the first bit to store the sign (0=+, 1=-), so the range is -2,147,483,648 (-2<sup>31</sup>) through 2,147,483,647 (2<sup>31</sup> - 1) .</p>
+</div>
+<div class="section" id="representing-data-real-numbers">
+<h2>Representing Data: Real Numbers<a class="headerlink" href="#representing-data-real-numbers" title="Permalink to this headline">¶</a></h2>
+<p>There are many standards for representing real numbers which include integers, rationals, fractions (eg -4, √2, 1/3).<br />
+The most common is <a class="reference external" href="https://en.wikipedia.org/wiki/IEEE_754">IEEE 754</a> format which uses floating-point (FP) representation.</p>
+<p>Similar to scientific notation, FP expresses real numbers using a base and an exponent:
+N = m * r <sup>e</sup></p>
+<ul class="simple">
+<li><p>m = mantissa (the decimal component of a number)</p></li>
+<li><p>e = exponent</p></li>
+<li><p>r = radix<br />
+IEEE 754 adopts a binary FP where r = 2.</p></li>
+</ul>
+</div>
+<div class="section" id="representing-data-doubles-and-floats-photo-souce">
+<h2>Representing Data: Doubles and Floats <a class="reference external" href="https://blog.penjee.com/binary-numbers-floating-point-conversion/">Photo souce</a><a class="headerlink" href="#representing-data-doubles-and-floats-photo-souce" title="Permalink to this headline">¶</a></h2>
+<p>Modern computers adopt <em>IEEE 754</em> for floating-point numbers with two representation schemes:</p>
+<p><strong>32 bit/single-precision (or “float’)</strong> 1-bit sign; 8-bit exponent; 23-bit mantissa
+<img src="../images/02DataRep/DataRep_Float.png" alt="DataRep_Float" width="600" ></p>
+<p><strong>64 bit/double-precision</strong> 1-bit sign; 11-bit exp; 52-bit mantissa
+<img src="../images/02DataRep/DataRep_Double.png" alt="DataRep_Double" width="600" ></p>
+<ul class="simple">
+<li><p>As before, let’s revisited a related concept (which we all would have learned about in high school) to make this
+new concept easier to understand.</p></li>
+<li><p>Scientific notation operates in very much the same way as FP representation.</p></li>
+<li><p>Key features of normalized standard scientific notation:</p>
+<ul>
+<li><p>There is a single non-zero digit to the left of the decimal point</p></li>
+<li><p>The power indicates how far we’ve moved the decimal point to the left (+ exponent) or right (- exponent)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="representing-data-normalized-scientific-notation">
+<h2>Representing Data: Normalized scientific notation<a class="headerlink" href="#representing-data-normalized-scientific-notation" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><strong>Example</strong>: Normalized scientific notation<br />
+The number 55,125.17 in normalized scientific notation is:<br />
+5.512517 * 10<sup>4</sup></p>
+</div></blockquote>
+<p>Key features of normalized standard scientific notation:</p>
+<ul class="simple">
+<li><p>5.512517 is our <strong>mantissa</strong></p></li>
+<li><p>4 is our <strong>exponent</strong></p></li>
+<li><p>10 is our <strong>radix</strong></p></li>
+</ul>
+<blockquote>
+<div><p><strong>Example: Normalized scientific notation:</strong><br />
+The number 0.000 000 007 51 in normalized scientific notation is:
+7.51 * 10<sup>-9</sup></p>
+</div></blockquote>
+<p>Key features of normalized standard scientific notation:</p>
+<ul class="simple">
+<li><p>7.51 is our <strong>mantissa</strong></p></li>
+<li><p>-9 is our <strong>exponent</strong></p></li>
+<li><p>10 is our <strong>radix</strong></p></li>
+</ul>
+</div>
+<div class="section" id="converting-decimal-fraction-to-binary-phase-1">
+<h2>Converting decimal fraction to binary - Phase 1<a class="headerlink" href="#converting-decimal-fraction-to-binary-phase-1" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Convert the integer part of decimal to binary (as on <a class="reference external" href="#converting-decimal-to-binary">this secton</a>)</p></li>
+<li><p>Convert the fractional part of decimal to binary equivalent</p>
+<ol class="simple">
+<li><p>Multiply the fractional part by 2.</p></li>
+<li><p>Keep track of the integer part for the binary digit</p></li>
+<li><p>Keep track of the fractional part for the next iteration</p></li>
+<li><p>Repeat steps 1–3 until the fractional part is equal to 0 or we have enough digits to fill the mantissa</p></li>
+<li><p>Construct the base 2 representation, by taking all the integer parts starting from the top</p></li>
+</ol>
+</li>
+<li><p>Write the result from step 1 to the left of the decimal and the result from step <strong>2</strong> to the right of the decimal.</p></li>
+</ol>
+</div>
+<div class="section" id="converting-decimal-fraction-to-binary-phase-2">
+<h2>Converting decimal fraction to binary - Phase 2<a class="headerlink" href="#converting-decimal-fraction-to-binary-phase-2" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Normalize the result from step 3 by shifting the decimal (either left or right) so that only one non zero digit
+remains to the left of the decimal. The number of places we shift will determine our exponent</p></li>
+<li><p>Adjust the exponent by adding 2<sup>(8-1)</sup> - 1 to the exponent</p></li>
+<li><p>Convert the result in step 5 to to binary (as on <a class="reference external" href="#converting-decimal-to-binary">this section</a>)</p></li>
+<li><p>Construct the binary number:</p>
+<ol class="simple">
+<li><p>Fill in the sign bit (0 = positive, 1 = negative)</p></li>
+<li><p>Fill in the exponent bits with the result from step 6</p></li>
+<li><p>Fill in the mantissa with the first 23 digits to the right of the decimal from step 4</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="representing-data-doubles-and-floats">
+<h2>Representing Data: Doubles and Floats<a class="headerlink" href="#representing-data-doubles-and-floats" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example: 32-bit single precision</strong></p>
+<p>The number -37.17 stored as 4 consecutive bytes is:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>sign</p></th>
+<th class="head"><p>exponent</p></th>
+<th class="head"><p>mantissa</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>1000 0100</p></td>
+<td><p>001 0100 1010 1110 0001 0100</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 1</strong> Convert the number to binary scientific notation</p>
+<ul class="simple">
+<li><p>Integer part (37) in binary 100101 (as shown in the <a class="reference external" href="#converting-decimal-to-binary">previous exercise</a>)</p></li>
+</ul>
+<p><strong>Step 2</strong> Convert the fractional part of decimal to binary equivalent</p>
+<ol class="simple">
+<li><p>0.17 * 2 = 0 + 0.34</p></li>
+<li><p>0.34 * 2 = 0 + 0.68</p></li>
+<li><p>0.68 * 2 = 1 + 0.36</p></li>
+<li><p>0.36 * 2 = 0 + 0.72</p></li>
+<li><p>0.72 * 2 = 1 + 0.44</p></li>
+<li><p>0.44 * 2 = 0 + 0.88</p></li>
+<li><p>0.88 * 2 = 1 + 0.76</p></li>
+<li><p>0.76 * 2 = 1 + 0.52</p></li>
+<li><p>0.52 * 2 = 1 + 0.04</p></li>
+<li><p>0.04 * 2 = 0 + 0.08</p></li>
+<li><p>0.08 * 2 = 0 + 0.16</p></li>
+<li><p>0.16 * 2 = 0 + 0.32</p></li>
+<li><p>0.32 * 2 = 0 + 0.64</p></li>
+<li><p>0.64 * 2 = 1 + 0.28</p></li>
+<li><p>0.28 * 2 = 0 + 0.56</p></li>
+<li><p>0.56 * 2 = 1 + 0.12</p></li>
+<li><p>0.12 * 2 = 0 + 0.24</p></li>
+<li><p>0.24 * 2 = 0 + 0.48</p></li>
+<li><p>0.48 * 2 = 0 + 0.96</p></li>
+<li><p>0.96 * 2 = 1 + 0.92</p></li>
+<li><p>0.92 * 2 = 1 + 0.84</p></li>
+<li><p>0.84 * 2 = 1 + 0.68</p></li>
+<li><p>0.68 * 2 = 1 + 0.36</p></li>
+<li><p>0.36 * 2 = 0 + 0.72<br />
+… continued</p></li>
+</ol>
+<p>We didn’t (and won’t) get a fractional part equal to zero but since we have enough iterations to fill the mantissa we can stop.<br />
+0.17<sub>10</sub> = 0.001010111000010100011110 <sub>2</sub></p>
+<p><strong>Step 3</strong>: Write the result from step 1 to the left of the decimal and the result from step 2 to the right of the decimal.<br />
+37.17<sub>10</sub> = 100101.001010111000010100011110102</p>
+<p><strong>Step 4</strong>: Normalize the result from step 3 by shifting the decimal (either left or right) so that only one non zero digit
+remains to the left of the decimal (form 1.xxxxxx).<br />
+= 100101.001010111000010100011110102<br />
+= 1.0010100101011100001010001111010<sub>2</sub> * 2<sup>5</sup></p>
+<p>Since decimal moved 5 spaces to the left, the exponent becomes (positive) 5.</p>
+<p><strong>Step 5</strong> Adjust the exponent by adding 2<sup>(8-1)</sup> - 1 to the exponent<br />
+5 becomes 5 + 2<sup>(8-1)</sup> - 1 = 132</p>
+<p><strong>Step 6</strong> Convert the result in step 5 to to unsigned binary (done on <a class="reference external" href="#converting-decimal-to-binary">this section</a>)<br />
+132<sub>10</sub> = 1000 0100<sub>2</sub></p>
+</div>
+<div class="section" id="why-the-exponent-adjustment">
+<h2>Why the exponent adjustment?<a class="headerlink" href="#why-the-exponent-adjustment" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="notes/week01/../images/02DataRep/binary-floating-point-8-bit-range.png"><img alt="binary-floating-point-8-bit-range" src="notes/week01/../images/02DataRep/binary-floating-point-8-bit-range.png" style="width: 400px;" /></a>
+<p>The 8-bits set aside for the exponent can represent 28 = 256 different values (0– 255 using unsigned binary)</p>
+<p>However, had the decimal moved to the right, the exponent would have been a negative number.</p>
+<p>To accommodate negative integers in unsigned binary system we simply allow he lower half of the range (0–127) to be used
+for negative exponents and the upper other half (128–255) will be used for positive exponents.</p>
+<ul class="simple">
+<li><p>Our unadjusted positive exponent (eg 5) is now adjusted to 5 + (28..1 .. 1) = 5 + 127 = 13210 = 1000 01002.</p></li>
+<li><p>To provide another examples:</p></li>
+</ul>
+<blockquote>
+<div><p>-8 is represented as -8 + 127 = 11910 = 011101112<br />
+0 is represented as 0 + 127 = 12710 = 011111112<br />
++1 is represented as +1 + 127 = 12810 = 100000002</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>This scheme (called <a class="reference external" href="https://en.wikipedia.org/wiki/Offset_binary#Excess-127">Excess-127</a>) supports unadjusted exponents of -127 to 128</p></li>
+</ul>
+<p><strong>Step 7</strong> Construct the binary number:</p>
+<ol class="simple">
+<li><p>Fill in the sign bit (0 = positive, 1 = negative)</p>
+<ol class="simple">
+<li><p>since -37.17 is a negative number the first bit = 1.
+<img src="../images/02DataRep/example01.PNG" alt="example01" width="400" ></p></li>
+</ol>
+</li>
+<li><p>Fill in the exponent bits with the result from step 6</p>
+<ol class="simple">
+<li><p>Recall our unadjusted positive exponent (eg 5) was adjusted to 5 + (2<sup>(8-1)</sup> - 1) = 5 + 127 = 132<sub>10</sub> = 1000 0100<sub>2</sub>.<br />
+<img src="../images/02DataRep/example02.PNG" alt="example02" width="400" ></p></li>
+</ol>
+</li>
+<li><p>Fill in the mantissa with the first 23 digits to the right of the decimal from step 4<br />
+<del>1.</del>00101001010111000010100<del>01111010</del><br />
+<img src="../images/02DataRep/example03.PNG" alt="example03" width="400" ></p></li>
+</ol>
+</div>
+<div class="section" id="precision">
+<h2>Precision<a class="headerlink" href="#precision" title="Permalink to this headline">¶</a></h2>
+<p>Take note of the fact that we deleted some information in order to get the number -37.17 to fit into the 32-bit single representation.<br />
+As a result, the storage of this number is -37.1699981689453125.</p>
+<blockquote>
+<div><p><strong>Lack of precision</strong><br />
+Rounding errors will occur since some real numbers will have repeating bit representations. This lack of precision may be important in scientific applications!</p>
+</div></blockquote>
+<p>Rational numbers of the form x=2k , where x and k are integers, can have exact fractional binary representation.</p>
+<blockquote>
+<div><p>For example:</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>0.015625 = 1/2<sup>6</sup>, -1.5 = -3/2, 96 = 3/2<sup>-5</sup> will have exact representation.</p></li>
+<li><p>0.1, 123.4, 0.025 will not have exact representation.</p></li>
+</ul>
+<blockquote>
+<div><p>Try it! You can check your answer <a class="reference external" href="https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php">here</a>
+Convert 0.015625 to 32 bit single precision.<br />
+<strong>Step 1</strong> Convert the integer part of decimal to binary<br />
+<strong>Step 2</strong> Convert the fractional part of the decimal to binary<br />
+<strong>Step 3</strong> Write the result from step 1 to the left of the decimal and the result from step 2 to the right of the decimal<br />
+<strong>Step 4</strong> Normalize the result from step 3<br />
+<strong>Step 5</strong> Adjust the exponent by adding 2<sup>(8-1)</sup> - 1 to the exponent<br />
+<strong>Step 6</strong> Convert the result in step 5 to to binary<br />
+<strong>Step 7</strong> Construct the binary number:<br />
+i) Fill in the sign bit (0 = positive, 1 = negative)<br />
+ii) Fill in the exponent bits with the result from step 6<br />
+iii) Fill in the mantissa with the first 23 digits to the right of the decimal from step 4</p>
+</div></blockquote>
+</div>
+<div class="section" id="comment">
+<h2>Comment<a class="headerlink" href="#comment" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>While 64-bit can accommodate a wider range of number as shown in the table below, in most scenarios, you will be fine using 32-bit.
+Table source: <a class="reference external" href="https://chortle.ccsu.edu/java5/Notes/chap11/ch11_2.html">here</a></p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Size</p></th>
+<th class="head"><p>Range</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>float</p></td>
+<td><p>32 bits</p></td>
+<td><p>-3.4E+38 to +3.4E+38</p></td>
+</tr>
+<tr class="row-odd"><td><p>double</p></td>
+<td><p>64 bits</p></td>
+<td><p>-1.7E+308 to +1.7E+308</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="hexadecimal">
+<h2>Hexadecimal<a class="headerlink" href="#hexadecimal" title="Permalink to this headline">¶</a></h2>
+<p>We saw how binary and decimal systems consist of two and ten digits respectively.<br />
+For that reason, binary is also known as <strong>base 2</strong> and decimal as <strong>base 10</strong>.<br />
+<strong>Hexadecimal</strong> is another such system that contains sixteen digits and is therefore known as <strong>base 16</strong>.<br />
+Like decimal, hexadecimal uses the same 10 digits (0–-9)<br />
+In addition, it uses: A,B,C,D,E, and F.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Hexadecimal  Base 16</p></th>
+<th class="head"><p>Decimal  Base 10</p></th>
+<th class="head"><p>Binary  Base 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>11</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>100</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>5</p></td>
+<td><p>101</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>6</p></td>
+<td><p>110</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>7</p></td>
+<td><p>111</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>8</p></td>
+<td><p>1000</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>9</p></td>
+<td><p>1001</p></td>
+</tr>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>10</p></td>
+<td><p>1010</p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p>11</p></td>
+<td><p>1011</p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p>12</p></td>
+<td><p>1100</p></td>
+</tr>
+<tr class="row-odd"><td><p>D</p></td>
+<td><p>13</p></td>
+<td><p>1101</p></td>
+</tr>
+<tr class="row-even"><td><p>E</p></td>
+<td><p>14</p></td>
+<td><p>1110</p></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p>15</p></td>
+<td><p>1111</p></td>
+</tr>
+</tbody>
+</table>
+<p>Notice, it takes 4 binary digits (a nibble) to represent a single hexadecimal digits.<br />
+Consequently, hexadecimal provides a compact short hand for binary.<br />
+Another benefit for using hexadecimal is that it is easier (for a human) to read.<br />
+The most common place to see this hexadecimal notation is when describing colours, eg.<br />
+Roses are #FF0000 (in decimal (255, 0, 0)) <br />
+Violets are #0000FF (in decimal (0, 0, 255))</p>
+</div>
+<div class="section" id="representing-data-characters">
+<h2>Representing Data: Characters<a class="headerlink" href="#representing-data-characters" title="Permalink to this headline">¶</a></h2>
+<p>A character is mapped to a sequence of bits using a <em>lookup</em> or <em>translation table</em>.<br />
+A common encoding is <em>ASCII</em> (American Standard Code for Information Interchange), which uses 8 bits to represent characters.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>bits</p></th>
+<th class="head"><p>character</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>01000001</p></td>
+<td><p>A</p></td>
+</tr>
+<tr class="row-odd"><td><p>01000010</p></td>
+<td><p>B</p></td>
+</tr>
+<tr class="row-even"><td><p>01000011</p></td>
+<td><p>C</p></td>
+</tr>
+<tr class="row-odd"><td><p>01000100</p></td>
+<td><p>D</p></td>
+</tr>
+<tr class="row-even"><td><p>01000101</p></td>
+<td><p>E</p></td>
+</tr>
+<tr class="row-odd"><td><p>01000110</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="notes/week01/../images/02DataRep/ASCIITable2.PNG"><img alt="ASCIITable2" src="notes/week01/../images/02DataRep/ASCIITable2.PNG" style="width: 600px;" /></a>
+<blockquote>
+<div><p>Exercise: Try writing your name in ASCII!</p>
+</div></blockquote>
+<p><strong>Example 2</strong><br />
+What ASCII character is 0100 0101?<br />
+A) T<br />
+B) !<br />
+C) &#64;<br />
+D) E</p>
+</div>
+<div class="section" id="id2">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 2</strong><br />
+What ASCII character is 0100 0101?<br />
+A) A<br />
+B) !<br />
+C) &#64;<br />
+<strong>D) E</strong></p>
+</div>
+<div class="section" id="id3">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 3</strong><br />
+What is “Test” encoded in ASCII?<br />
+A) 01110100 01100101 01110011 01110100<br />
+B) 01010100 01100101 01110011 01110100<br />
+C) 01000101 01010110 00110111 01000111<br />
+D) 01010100 01000101 01010011 01010100</p>
+</div>
+<div class="section" id="id4">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 3</strong><br />
+What is “Test” encoded in ASCII?<br />
+A) 01110100 01100101 01110011 01110100<br />
+<strong>B) 01010100 01100101 01110011 01110100</strong><br />
+C) 01000101 01010110 00110111 01000111<br />
+D) 01010100 01000101 01010011 01010100</p>
+</div>
+<div class="section" id="id5">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>While these conversions are useful to see, these conversions need not be done ‘by hand’.</p></li>
+<li><p>If there was a time when we need to see these conversions, there are countless sites available online for doing so, eg. <a class="reference external" href="https://www.binaryhexconverter.com/ascii-text-to-binary-converter">ASCII to Binary</a></p></li>
+</ul>
+<blockquote>
+<div><p><strong>Limitations with ASCII?</strong> <br />
+Does anyone see a problem with using ASCII as a character encoding?<br />
+Although ASCII is suitable for English text, many world languages, including Chinese, require a larger number of symbols to represent their basic alphabet.</p>
+</div></blockquote>
+</div>
+<div class="section" id="representing-text-beyond-ascii-unicode">
+<h2>Representing Text Beyond ASCII - Unicode<a class="headerlink" href="#representing-text-beyond-ascii-unicode" title="Permalink to this headline">¶</a></h2>
+<p>The <em>Unicode</em> standard uses patterns of 16-bits (2 bytes) to represent the major symbols used in all languages.</p>
+<ul class="simple">
+<li><p>First 256 characters exactly the same as ASCII.</p></li>
+<li><p>Maximum number of symbols: 65,536.
+Unicode can be implemented by different character encodings (eg. UTF-8, UTF-16, UTF-32) with new versions released on a regular basis.<br />
+UTF-8, the dominant encoding on the World Wide Web (used in over 92% of websites).<br />
+As of May 2019 the most recent version, Unicode 12.1, contains 137,994 characters covering 150 modern and historic scripts, as well as multiple symbol sets and emojis. :raised_hands:</p></li>
+</ul>
+</div>
+<div class="section" id="representing-data-strings">
+<h2>Representing Data: Strings<a class="headerlink" href="#representing-data-strings" title="Permalink to this headline">¶</a></h2>
+<p>A string is a sequence of characters allocated in consecutive memory bytes.<br />
+A string has a terminator to know when it ends:</p>
+<ul class="simple">
+<li><p><strong>Null-terminated string</strong> last byte value is ‘n0’ to indicate end of string.</p></li>
+<li><p><strong>length-prefixed</strong> length of string in bytes is specified (usually in the first few bytes before string starts).</p></li>
+</ul>
+</div>
+<div class="section" id="representing-data-dates-and-times">
+<h2>Representing Data: Dates and Times<a class="headerlink" href="#representing-data-dates-and-times" title="Permalink to this headline">¶</a></h2>
+<p>A <em>date</em> value can be represented in multiple ways:<br />
+<strong>Integer representation</strong> number of days past since a given date</p>
+<blockquote>
+<div><p>Example: Julian Date (astronomy) – number of days since noon, January 1, 4713 BC.<br />
+<a class="reference external" href="https://en.wikipedia.org/wiki/Julian_day#History">Why this date?</a></p>
+</div></blockquote>
+<p><strong>String representation</strong> represent a date’s components (year, month, day) as individual characters of a string</p>
+<blockquote>
+<div><p>Example: YYYYMMDD or YYYYDDD</p>
+</div></blockquote>
+<p>A <em>time</em> value can also be represented in similar ways:<br />
+<strong>Integer representation</strong> number of sec since a given time</p>
+<blockquote>
+<div><p>Example: Number of seconds since Thursday, January 1, 1970 (UNIX)</p>
+</div></blockquote>
+<p><strong>String representation</strong> hours, minutes, seconds, fractions</p>
+<blockquote>
+<div><p>Example: HHMMSSFF</p>
+</div></blockquote>
+<p>Read <a class="reference external" href="https://en.wikipedia.org/wiki/Year_2038_problem">here</a> about the year 2038 problem (analogy to the Y2K problem).</p>
+</div>
+<div class="section" id="encoding-other-data">
+<h2>Encoding other data<a class="headerlink" href="#encoding-other-data" title="Permalink to this headline">¶</a></h2>
+<p>We have seen how we can encode characters, numbers, and strings using only sequences of bits (and translation tables).</p>
+<p>The documents, music, and videos that we commonly use are much more complex. However, the principle is exactly the same. We use sequences of bits and interpret them based on the context to represent information.</p>
+<p>As we learn more about representing information, always remember that everything is stored as bits, it is by interpreting the context that we have information.</p>
+</div>
+<div class="section" id="metadata">
+<h2>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h2>
+<p><em>Metadata</em> is data that describes other data.</p>
+<blockquote>
+<div><p><strong>Examples of metadata include:</strong><br />
+- names of files<br />
+- column names in a spreadsheet<br />
+- table and column names and types in a database</p>
+</div></blockquote>
+<p>Metadata helps you understand how to interpret and manipulate the data.</p>
+</div>
+<div class="section" id="files">
+<h2>Files<a class="headerlink" href="#files" title="Permalink to this headline">¶</a></h2>
+<p>A <em>file</em> is a sequence of bytes on a storage device.</p>
+<ul class="simple">
+<li><p>A file has a name.</p></li>
+<li><p>A computer reads the file from a storage device into memory to use it.</p></li>
+</ul>
+<p>The operating system manages how to store and retrieve the file bytes from the device.</p>
+<p>The program using the file must know how to interpret those bytes based on its information (e.g. metadata) on what is stored in the file.</p>
+</div>
+<div class="section" id="file-encoding">
+<h2>File Encoding<a class="headerlink" href="#file-encoding" title="Permalink to this headline">¶</a></h2>
+<p>A file <em>encoding</em> is how the bytes represent data in a file.</p>
+<p>A file encoding is determined from the file extension (e.g. .txt or .xlsx) which allows the operating system (OS) to know how to process the file.</p>
+<p>The extension allows the OS to select the program to use.<br />
+The program understands how to process the file in its format.</p>
+</div>
+<div class="section" id="binary-vs-text-files">
+<h2><a class="reference external" href="https://www.nayuki.io/page/what-are-binary-and-text-files">Binary vs Text files</a><a class="headerlink" href="#binary-vs-text-files" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>At a generic level of description, there are two kinds of computer files: text files and binary files.</p></li>
+<li><p>The difference between binary and text files is in how these bytes are interpreted.</p></li>
+<li><p>A text file is a file encoded in a character format such as ASCII or Unicode. These files are readable by humans.</p></li>
+<li><p>Data analytics will often involve processing text files.</p></li>
+<li><p>We can usually tell if a file is binary or text based on its file extension.</p></li>
+</ul>
+</div>
+<div class="section" id="file-encodings-text-files">
+<h2>File Encodings: Text Files<a class="headerlink" href="#file-encodings-text-files" title="Permalink to this headline">¶</a></h2>
+<p>There are many different text file encodings:</p>
+<ul class="simple">
+<li><p><em>Web standards</em>: html, xml, css, svg, json, …
+- <em>JSON file</em> data encoded in JSON (JavaScript Object Notation) format
+- <em>XML file</em> data encoded in XML (Extensible Markup Language) format</p></li>
+<li><p><em>Tabular data</em>: csv, tsv, …
+- <em>CSV comma-separate file</em> each line is a record, fields separated by commas
+- <em>tab-separated file</em> each line is a record, fields separated by tabs</p></li>
+<li><p><em>Documents</em>: txt, tex, markdown, asciidoc, rtf, ps, …</p></li>
+</ul>
+<p><strong>Question</strong>:<br />
+In these file encodings, what is data and what is metadata?<br />
+<img src="../images/02DataRep/metadataQA1.PNG" alt="metadataQA1" width="475" align="left">
+<img src="../images/02DataRep/metadataQA2.PNG" alt="metadataQA2" width="485" align="left"></p>
+</div>
+<div class="section" id="file-encodings-binary-file">
+<h2>File Encodings: Binary File<a class="headerlink" href="#file-encodings-binary-file" title="Permalink to this headline">¶</a></h2>
+<p>A <em>binary file</em> encodes data in a format that is not designed to be human-readable and is in the format used by the computer.</p>
+<p>Binary files are often faster to process as they do not require translation from text form and may also be smaller.</p>
+<p>Processing a binary file requires the user to understand its encoding so that the bytes can be read and interpreted properly.</p>
+<p>There are many different text file encodings:</p>
+<ul class="simple">
+<li><p><em>Image</em>: jpg, png, gif, bmp, tiff, psd, …</p></li>
+<li><p><em>Videos</em>: mp4, mkv, avi, mov, mpg, vob, …</p></li>
+<li><p><em>Audio</em>: mp3, aac, wav, flac, ogg, mka, wma, …</p></li>
+<li><p><em>Documents</em>: pdf, doc, xls, ppt, docx, odt, …</p></li>
+<li><p><em>Archive</em>: zip, rar, 7z, tar, iso, …</p></li>
+<li><p><em>Database</em>: mdb, accde, frm, sqlite, …</p></li>
+<li><p><em>Executable</em>: exe, dll, so, class, .…</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Exercise</strong>:<br />
+Use the <strong>fileEncodings.xlsx</strong> file and save the file as <strong>CSV</strong>, <strong>tab-separated</strong>, and <strong>XML</strong>. Look at each file in a text editor.</p>
+</div></blockquote>
+<p><strong>Try It:File Encodings</strong><br />
+<img src="../images/02DataRep/TryItFileEncoding.png" alt="TryItFileEncoding" width="800" ></p>
+<p><strong>Opening xlsx in Excel</strong><br />
+<img src="../images/02DataRep/inExcel.png" alt="inExcel" width="800" ></p>
+<p><strong>Opening csv in text editor</strong><br />
+<img src="../images/02DataRep/csv.png" alt="csv" width="800" ></p>
+<p><strong>Opening tab-separated in text editor</strong><br />
+<img src="../images/02DataRep/tabdelimit.png" alt="tabdelimit" width="800" ></p>
+<p><strong>Opening xml in text editor</strong><br />
+<img src="../images/02DataRep/xml.png" alt="xml" width="800" ></p>
+</div>
+<div class="section" id="upc-barcodes">
+<h2>UPC Barcodes<a class="headerlink" href="#upc-barcodes" title="Permalink to this headline">¶</a></h2>
+<p><em>Universal Product Codes (UPC)</em> encode manufacturer on left side and product on right side. Each digit uses 7 bits with different bit combinations for each side (can tell if upside down).<br />
+<img src="../images/02DataRep/UPCbarcode.png" alt="UPCbarcode" width="400" ></p>
+</div>
+<div class="section" id="qr-code">
+<h2>QR code<a class="headerlink" href="#qr-code" title="Permalink to this headline">¶</a></h2>
+<p>A <em>QR</em> (<em>Q</em>uick <em>R</em>esponse) code is a 2D optical encoding developed in 1994 by Toyota with support for error correction.</p>
+<a class="reference internal image-reference" href="notes/week01/../images/02DataRep/QR1.png"><img alt="QR1" src="notes/week01/../images/02DataRep/QR1.png" style="width: 200px;" /></a>
+</div>
+<div class="section" id="nato-broadcast-alphabet">
+<h2>NATO Broadcast Alphabet<a class="headerlink" href="#nato-broadcast-alphabet" title="Permalink to this headline">¶</a></h2>
+<p>The code for broadcast communication is purposefully inefficient, to be distinctive when spoken amid noise.</p>
+<p>A Alpha         J Juliet            S Sierra<br />
+B Bravo         K Kilo              T Tango<br />
+C Charlie       L Lima              U Uniform<br />
+D Delta         M Mike              V Victor<br />
+E Echo          N November          W Whiskey<br />
+F Foxtrot       O Oscar             X X-ray<br />
+G Golf          P Papa              Y Yankee<br />
+H Hotel         Q Quebec            Z Zulu<br />
+I India         R Romeo</p>
+</div>
+<div class="section" id="advanced-the-time-versus-space-tradeoff">
+<h2>Advanced: The Time versus Space Tradeoff<a class="headerlink" href="#advanced-the-time-versus-space-tradeoff" title="Permalink to this headline">¶</a></h2>
+<p>A fundamental challenge in computer science is encoding information efficiently both in terms of space and time.</p>
+<p>At all granularities (sizes) of data representation, we want to use as little space (memory) as possible. However, saving space often makes it harder to figure out what the data means (think of compression or abbreviations). In computer terms, the data takes longer to process.</p>
+<p>The <em>time versus space tradeoff</em> implies that we can often get a faster execution time if we use more memory (space). Thus, we often must strive for a balance between time and space.</p>
+</div>
+<div class="section" id="review-memory-size">
+<h2>Review: Memory Size<a class="headerlink" href="#review-memory-size" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 4</strong><br />
+Which is bigger?<br />
+A) 10 TB<br />
+B) 100 GB<br />
+C) 1,000,000,000,000 bytes<br />
+D) 1 PB</p>
+</div>
+<div class="section" id="id6">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 4</strong><br />
+Which is bigger?<br />
+A) 10 TB =10,000 GB<br />
+B) 100 GB<br />
+C) 1,000,000,000,000 bytes = 1000 GB<br />
+<strong>D) 1 PB = 1,000,000 GB</strong></p>
+</div>
+<div class="section" id="id7">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="review-metadata-vs-data">
+<h2>Review: Metadata vs. Data<a class="headerlink" href="#review-metadata-vs-data" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5</strong><br />
+How many of the following are TRUE?</p>
+<ul class="simple">
+<li><p>It is possible to have data without metadata.</p></li>
+<li><p>Growth rates of data generation are decreasing.</p></li>
+<li><p>It is possible to represent all decimal numbers precisely on a computer.</p></li>
+<li><p>A character encoded in Unicode uses twice as much space as ASCII.<br />
+A) 0  B) 1  C) 2  D) 3  E) 4</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h2>START SOLUTIONS HERE<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p><strong>Example 5</strong><br />
+How many of the following are TRUE?</p>
+<ul class="simple">
+<li><p>It is possible to have data without metadata. :heavy_check_mark:</p></li>
+<li><p>Growth rates of data generation are decreasing. :x:</p></li>
+<li><p>It is possible to represent all decimal numbers precisely on a computer. :x:</p></li>
+<li><p>A character encoded in Unicode uses twice as much space as ASCII. :heavy_check_mark:<br />
+A) 0  B) 1  <strong>C) 2</strong>  D) 3  E) 4</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h2>END SOLUTIONS HERE<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>All <em>data</em> is encoded as bits on a computer.</p></li>
+<li><p><em>Metadata</em> provides the context to understand how to interpret the data to make it useful.</p></li>
+<li><p>Memory capacity and data sizes are measured in bytes.</p></li>
+<li><p><em>Files</em> are sequences of bytes stored on a device. A <em>file encoding</em> is how the bytes are organized to represent data
+- Text files (comma/tab separated, JSON, XML) are often processed during data analytics tasks.
+- Binary files are usually only processed by the program that creates them.
+As a data analyst, understanding the different ways of representing data is critical as it is often necessary to transform data from one format to another.</p></li>
+</ul>
+</div>
+<div class="section" id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Define: computer, software, memory, data, memory size/data size, cloud</p></li>
+<li><p>Explain “Big Data” and describe data growth in the coming years.</p></li>
+<li><p>Compare and contrast: digital versus analog</p></li>
+<li><p>Explain how integers, doubles, and strings are encoded.</p></li>
+<li><p>Explain why ASCII table is required for character encoding.</p></li>
+<li><p>Explain why Unicode is used in certain situations instead of ASCII.</p></li>
+<li><p>Explain the role of metadata for interpreting data.</p></li>
+<li><p>Define: file, file encoding, text file, binary file</p></li>
+<li><p>Encode using the NATO broadcast alphabet.</p></li>
+<li><p>Discuss the time-versus-space tradeoff.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ubco-cmps/data301_course",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notes/week01"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Firas Moosvi & Patricia Lasserre<br/>
+        
+          <div class="extra_footer">
+            <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-168693744-4', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>

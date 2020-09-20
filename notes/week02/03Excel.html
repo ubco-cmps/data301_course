@@ -1,0 +1,2673 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Excel &#8212; DATA 301</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/extra.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pdf_print.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom_layouts.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/save_state.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "ubco-cmps/data301_course");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://firas.moosvi.com/courses/data301/notes/week02/03Excel.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://firas.moosvi.com/courses/data301/notes/week02/03Excel.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Excel" />
+<meta property="og:description" content="Excel  Spreadsheets: Microsoft Excel Part 1 of 3  Why Spreadsheets and Microsoft Excel?  Spreadsheets are the most common, general-purpose software for data ana" />
+<meta property="og:image"       content="https://firas.moosvi.com/courses/data301/_static/logo.jpg" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.jpg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">DATA 301</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/syllabus.html">
+   Course Syllabus
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  About this Course
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/course_schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/accommodations.html">
+   Accommodations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/faq.html">
+   Frequently Asked Questions
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Getting started!
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../getting-started/todo_list.html">
+   Things to do before start of course
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Part 1 - Setting up
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week01/week01_summary.html">
+   Introductions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="week02_summary.html">
+   Week 2 - Command Line and Excel
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Course Feedback
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../about/feedback.html">
+   Anonymous Feedback Form
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/notes/week02/03Excel.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ubco-cmps/data301_course"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ubco-cmps/data301_course/issues/new?title=Issue%20on%20page%20%2Fnotes/week02/03Excel.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ubco-cmps/data301_course/edit/master/notes/week02/03Excel.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spreadsheets-microsoft-excel-part-1-of-3">
+   Spreadsheets: Microsoft Excel Part 1 of 3
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-spreadsheets-and-microsoft-excel">
+     Why Spreadsheets and Microsoft Excel?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spreadsheet-overview">
+     Spreadsheet Overview
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#excel-ribon">
+     Excel Ribon
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#workbook-vs-worksheets">
+     Workbook vs. worksheets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adding-and-renaming-worksheets">
+     Adding and renaming worksheets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spreadsheet-addressing">
+     Spreadsheet Addressing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spreadsheet-data-entry">
+     Spreadsheet Data Entry
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#date-and-type-formats">
+     Date and Type Formats
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#custom-date-options">
+     Custom Date Options
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#currency-vs-accounting">
+     Currency vs Accounting
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spreadsheet-formatting-windows">
+     Spreadsheet Formatting (Windows)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it">
+     Try It!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spreadsheet-selecting-multiple-cells">
+     Spreadsheet Selecting Multiple Cells
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#range-selecting-cells-example">
+     Range Selecting Cells Example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#selecting-non-contiguous">
+     Selecting non-contiguous
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manipulating-cells">
+     Manipulating Cells
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cut-copy-paste">
+     Cut, Copy, Paste
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#paste-button-ribbon">
+     Paste Button Ribbon
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manipulating-cells-filling">
+     Manipulating Cells - Filling
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hiding-columns-and-rows">
+     Hiding Columns and Rows
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#selecting-cells-question">
+     Selecting Cells Question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#start-solutions-here">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#end-solutions-here">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#entering-formulas">
+     Entering Formulas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formula-expressions">
+     Formula Expressions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-formulas">
+     Using Formulas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-excel-functions">
+     Using Excel Functions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#arrays">
+     Arrays
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cell-referencing">
+     Cell Referencing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formula-questions">
+     Formula Questions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Using Excel Functions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-entering-formulas">
+     Try Entering Formulas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#concatenation">
+     Concatenation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#titles-and-merged-cells">
+     Titles and Merged Cells
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formulas-question">
+     Formulas Question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lookup-function">
+     LOOKUP function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-comment-on-lookup-function">
+     A comment on LOOKUP function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vlookup-function">
+     VLOOKUP function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lookup-vs-vlookup">
+     LOOKUP vs. VLOOKUP
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#index-function">
+     INDEX function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Formulas Question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#advanced-spreadsheet-addressing">
+     Advanced Spreadsheet Addressing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formulas-and-reference-question">
+     Formulas and Reference Question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tips">
+     Tips
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#naming-cells">
+     Naming Cells
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#naming-rules">
+     Naming Rules
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Try It!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#array-formulas">
+     Array Formulas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aggregate-functions">
+     Aggregate Functions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aggregate-functions-example">
+     Aggregate Functions Example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Try it!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aggregate-functions-question">
+     Aggregate Functions Question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id15">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id17">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id18">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-formatting-column-width">
+     Other Formatting: Column Width
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conditional-formatting">
+     Conditional Formatting
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conditional-formatting-result">
+     Conditional Formatting Result
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it-conditional-formatting">
+     Try it: Conditional Formatting
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spreadsheet-for-data-management">
+     Spreadsheet for Data Management
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sorting-data">
+     Sorting Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it-sorting-data">
+     Try it: Sorting Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#filtering">
+     Filtering
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#filter-example">
+     Filter Example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it-filter-challenge">
+     Try It: Filter Challenge
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#removing-duplicates">
+     Removing Duplicates
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sorting-question">
+     Sorting Question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id19">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id20">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sorting">
+     Sorting
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#filtering-question">
+     Filtering Question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id21">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id22">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusion">
+     Conclusion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#objectives">
+     Objectives
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spreadsheets-microsoft-excel-part-2-of-3">
+   Spreadsheets: Microsoft Excel Part 2 of 3
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#charts">
+     Charts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chart-options">
+     Chart Options
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trendlines">
+     Trendlines
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it-trendline">
+     Try it! Trendline
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it-chart">
+     Try It: Chart
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sparklines">
+     Sparklines
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pivot-tabels">
+     Pivot Tabels
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#creating-a-pivot-table">
+     Creating a Pivot Table
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pivot-table-example">
+     Pivot Table Example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it-pivot-table">
+     Try It: Pivot Table
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pivot-charts">
+     Pivot Charts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pivot-tables-question">
+     Pivot Tables Question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id23">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id24">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conditions-and-decisions">
+     Conditions and Decisions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#decisions-using-if">
+     Decisions using IF()
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it-if">
+     Try it:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       IF()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#decision-using-if-question">
+     Decision Using
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       IF()
+      </span>
+     </code>
+     Question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id25">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id26">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-if">
+     What-If
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scenario-summary">
+     Scenario Summary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it-what-if">
+     Try it: What-If
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it-what-if-scenario-challenge">
+     Try it: What-If Scenario Challenge
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#goal-seek-and-solver">
+     Goal Seek and Solver
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#goal-seek">
+     Goal Seek
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-ons">
+     Add ons
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solver">
+     Solver
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solver-example">
+     Solver Example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id27">
+     Solver
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-if-clicker-question">
+     What-If Clicker Question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id28">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id29">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-analysis-toolpak">
+     The Analysis ToolPak
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#regression">
+     Regression
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#regression-in-excel-r-2-value">
+     Regression in Excel- R^2 value
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linear-regression-assumptions">
+     Linear Regression assumptions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#regression-in-excel-testing-assumptions">
+     Regression in Excel- Testing Assumptions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#testing-assumptions-using-residual-plots">
+     Testing Assumptions Using Residual Plots
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#testing-assumptions-using-normal-probability-plots">
+     Testing Assumptions Using Normal Probability Plots
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#regression-in-excel">
+     Regression in Excel
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#regression-example-settings">
+     Regression Example Settings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#regression-example-results">
+     Regression Example Results
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it-regression">
+     Try It: Regression
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id30">
+     START SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id31">
+     END SOLUTIONS HERE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id32">
+     Conclusion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id33">
+     Objectives
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="excel">
+<h1>Excel<a class="headerlink" href="#excel" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="spreadsheets-microsoft-excel-part-1-of-3">
+<h2>Spreadsheets: Microsoft Excel Part 1 of 3<a class="headerlink" href="#spreadsheets-microsoft-excel-part-1-of-3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="why-spreadsheets-and-microsoft-excel">
+<h3>Why Spreadsheets and Microsoft Excel?<a class="headerlink" href="#why-spreadsheets-and-microsoft-excel" title="Permalink to this headline">¶</a></h3>
+<p>Spreadsheets are the most common, general-purpose software for data analysis and reporting.</p>
+<p>Microsoft Excel is the most popular spreadsheet program with hundreds of millions of installations.</p>
+<ul class="simple">
+<li><p>The spreadsheet concepts translate to other products.</p></li>
+</ul>
+<p>Excel and spreadsheets are not always the best tool for data analysis, but they are great for quick analysis, reporting, and
+sharing.</p>
+<p>Follow along with the examples by downloading the <strong>03ExcelPartI.xlsx</strong> and <strong>DemoPartI.xlsx</strong> file from CANVAS.</p>
+</div>
+<div class="section" id="spreadsheet-overview">
+<h3>Spreadsheet Overview<a class="headerlink" href="#spreadsheet-overview" title="Permalink to this headline">¶</a></h3>
+<p>A spreadsheet organizes information into a two-dimensional array of cells (a table).</p>
+<p>A cell has two components:</p>
+<ul class="simple">
+<li><p>an address - specified given a column letter and row number</p></li>
+<li><p>a location - that can store a number, text, or formula</p></li>
+</ul>
+<p>The power of a spreadsheet is that we can write simple formulas (commands) to perform calculations and immediately see the results of those calculations.</p>
+<p>Spreadsheets are very common in business and reporting applications.</p>
+</div>
+<div class="section" id="excel-ribon">
+<h3>Excel Ribon<a class="headerlink" href="#excel-ribon" title="Permalink to this headline">¶</a></h3>
+<p><strong>ribbon</strong> The Excel ribbon is the strip of icons above the worksheet area. It replaces the menus and toolbars found in Excel 2003 and earlier.<br />
+<strong>ribbon tab</strong> contains multiple commands logically sub-divided into groups<br />
+<img src="../images/03Excel/ribbon.png" alt="ribbon" width="600" ><br />
+<a class="reference external" href="https://www.ablebits.com/office-addins-blog/2019/07/02/excel-ribbon-guide/">image source</a></p>
+</div>
+<div class="section" id="workbook-vs-worksheets">
+<h3>Workbook vs. worksheets<a class="headerlink" href="#workbook-vs-worksheets" title="Permalink to this headline">¶</a></h3>
+<p><strong>workbook</strong> A workbook is the name given to an Excel file and contains one or more worksheets.<br />
+<strong>worksheet</strong> A worksheet (or sheet/spreadsheet) is a single page in a file created with an electronic spreadsheet program.<br />
+For example 03ExcelPartI.xlsx is a <em>workbook</em> that contains two <em>worksheets</em>. The name of these worksheets are QuarterSales and AnnualSales.</p>
+</div>
+<div class="section" id="adding-and-renaming-worksheets">
+<h3>Adding and renaming worksheets<a class="headerlink" href="#adding-and-renaming-worksheets" title="Permalink to this headline">¶</a></h3>
+<p>To add a new worksheet we simply the plus sign located to the right of the worksheets.<br />
+<img src="../images/03Excel/rename.png" alt="rename" width="700" ><br />
+By default, the worksheets are named Sheet1, Sheet2, Sheet3, and so on, but you can change these names by double clicking on the tab and typing an alternate name.</p>
+<ul class="simple">
+<li><p>To Move a sheet, drag the sheet tab to the location that you want along the row of sheet tabs.</p></li>
+<li><p>To Copy a sheet</p>
+<ol class="simple">
+<li><p>Hold down Ctrl /Option (Windows/Mac).</p></li>
+<li><p>Drag the sheet tab to the location that you want the copied sheet to appear along the row of sheet tabs.
+<strong>Important</strong> Release the mouse button before you release Option /Ctrl .</p></li>
+</ol>
+</li>
+<li><p>To move/copy your worksheet to another workbook, you can right click the corresponding worksheet tab and select Move</p></li>
+<li><p>Copy. Select the desired workbook from the dropdown menu. Alternatively, you could follow the options outlined [here]
+(https://support.microsoft.com/en-us/office/move-or-copy-worksheets-or-worksheet-data-47207967-bbb2-4e95-9b5c-3c174aa69328?ui=en-us&amp;rs=en-us&amp;ad=us)</p></li>
+</ul>
+</div>
+<div class="section" id="spreadsheet-addressing">
+<h3>Spreadsheet Addressing<a class="headerlink" href="#spreadsheet-addressing" title="Permalink to this headline">¶</a></h3>
+<p>A cell is identified by a column letter and row number.
+<img src="../images/03Excel/ExcelSheet.png" alt="ExcelSheet" width="700" ><br />
+Notice how the <em>active cell</em> (the cell highlighted by the green rectangle in the spreadsheet) also displays its cell identifier in name
+box located to the left of the formula bar.</p>
+<ul class="simple">
+<li><p>The <em>rows</em> in a spreadsheet are <em>numbered</em> starting from 1.</p></li>
+<li><p>The <em>columns</em> are represented by <em>letters</em>.</p>
+<ul>
+<li><p><strong>A</strong> is column 1, <strong>B</strong> is column 2, … , <strong>Z</strong> is column 26, <strong>AA</strong> is column 27, …</p></li>
+</ul>
+</li>
+<li><p>A cell is identified by putting the column letter first then the row number.</p>
+<ul>
+<li><p>e.g. <strong>B3</strong> is the 2nd column and the 3rd row.
+Question: What column number is <strong>AD</strong>? How about <strong>BAD</strong>?<br />
+<img src="../images/03Excel/ColumnRef.png" alt="ColumnRef" width="250" ></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="spreadsheet-data-entry">
+<h3>Spreadsheet Data Entry<a class="headerlink" href="#spreadsheet-data-entry" title="Permalink to this headline">¶</a></h3>
+<p>An entry is added to a cell by clicking on it and typing in the data.</p>
+<ul class="simple">
+<li><p>The spreadsheet attempts to detect the data type and format it accordingly. It is also possible to manually <em>format</em> the data
+<img src="../images/03Excel/CellFormat.png" alt="CellFormat" width="600" ></p></li>
+</ul>
+</div>
+<div class="section" id="date-and-type-formats">
+<h3>Date and Type Formats<a class="headerlink" href="#date-and-type-formats" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Excel stores dates and time as a date serial number.</p></li>
+<li><p>The earliest date permitted by Excel is January 1, 1900 (which has a date serial number equal to 1).</p></li>
+<li><p><a class="reference external" href="https://support.microsoft.com/en-us/office/datevalue-function-df8b07d4-7761-4a93-bc33-b7471bbff252?ui=en-us&amp;rs=en-us&amp;ad=us">DATEVALUE()</a>
+function converts text to a date serial number which we can then format to display the day however we want</p></li>
+<li><p>Alternatively we could use the <a class="reference external" href="https://exceljet.net/excel-functions/excel-date-function">DATE(year, month, day)</a> function which takes the arguments:<br />
+<strong>year</strong> - Number for year.<br />
+<strong>month</strong> - Number for month.<br />
+<strong>day</strong> - Number for day.</p></li>
+<li><p>It is important to note that Excel dates require a year, month, and day.</p></li>
+<li><p>That is, if you are missing a year, for example, Excel won’t be able to format that cell as a date unless we provide a year.</p></li>
+<li><p>One trick is to give your data an arbitrary year that you hide when you format your cells.</p></li>
+<li><p>For example, we could replace January with January 1, 2019 and format the cell to only display the month.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cell Format</p></th>
+<th class="head"><p>Cell display</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>General</p></td>
+<td><p>January</p></td>
+<td><p>(treated as text)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Date</p></td>
+<td><p>2019-01-01</p></td>
+<td><p>(treated as serial number 43466)</p></td>
+</tr>
+<tr class="row-even"><td><p>Custom</p></td>
+<td><p>January</p></td>
+<td><p>(treated as serial number 43466)</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Formatting data helps users read and understand data and is especially important for numbers and dates.</p></li>
+<li><p>To change the format of a serial date, click the down arrow in the format drop down menu and select <strong>More Number Formats</strong>; this will open up the Format Cells pop-up box
+<img src="../images/03Excel/DateType.png" alt="DateType" width="400" ></p></li>
+<li><p>You can use either built-in or custom formats or [custom formatting]
+(https://www.ablebits.com/office-addins-blog/2015/03/11/change-date-format-excel/#custom-date-format) (see a summary of these on the next slide)</p></li>
+<li><p>For example, applying the custom format of dd/mmm-yy on the date January 1, 2005 would display 01/Jan-05.</p></li>
+<li><p>You can also accomplish this type of formatting using the <a class="reference external" href="https://www.ablebits.com/office-addins-blog/2015/04/08/convert-date-text-excel/">TEXT()</a>
+function. These cells, however, will be treated as text, not dates.</p></li>
+</ul>
+</div>
+<div class="section" id="custom-date-options">
+<h3>Custom Date Options<a class="headerlink" href="#custom-date-options" title="Permalink to this headline">¶</a></h3>
+<p>Here are some examples of custom formatting options. <a class="reference external" href="https://www.ablebits.com/office-addins-blog/2015/03/11/change-date-format-excel/#custom-date-format">Source: ablebits.com</a></p>
+<p><strong>Example (January 1, 2005)</strong></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Code</strong></p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Result</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>m</p></td>
+<td><p>Month number without a leading zero</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>mm</p></td>
+<td><p>Month number with a leading zero</p></td>
+<td><p>01</p></td>
+</tr>
+<tr class="row-even"><td><p>mmm</p></td>
+<td><p>Month name, short form</p></td>
+<td><p>Jan</p></td>
+</tr>
+<tr class="row-odd"><td><p>mmmm</p></td>
+<td><p>Month name, full form</p></td>
+<td><p>January</p></td>
+</tr>
+<tr class="row-even"><td><p>mmmmm</p></td>
+<td><p>Month as the first letter</p></td>
+<td><p>J <sup>1</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p>d</p></td>
+<td><p>Day number without a leading zero</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>dd</p></td>
+<td><p>Day number with a leading zero</p></td>
+<td><p>01</p></td>
+</tr>
+<tr class="row-odd"><td><p>ddd</p></td>
+<td><p>Day of the week, short form</p></td>
+<td><p>Mon</p></td>
+</tr>
+<tr class="row-even"><td><p>dddd</p></td>
+<td><p>Day of the week, full form</p></td>
+<td><p>Monday</p></td>
+</tr>
+<tr class="row-odd"><td><p>yy</p></td>
+<td><p>Year (last 2 digits)</p></td>
+<td><p>05</p></td>
+</tr>
+<tr class="row-even"><td><p>yyyy</p></td>
+<td><p>Year (4 digits)</p></td>
+<td><p>2005</p></td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup>(stands for January, June and July)</p>
+</div>
+<div class="section" id="currency-vs-accounting">
+<h3>Currency vs Accounting<a class="headerlink" href="#currency-vs-accounting" title="Permalink to this headline">¶</a></h3>
+<p>It is worth mentioning the difference between <em>Currency</em> and <em>Accounting</em> as they are very similar.</p>
+<ul class="simple">
+<li><p>Currency places the dollar sign to the immediate left of the number while Accounting places the dollar sign on the left edge of the cell.</p></li>
+<li><p>Currency displaces zeros as $0.00 while Accounting denotes zeros with dashes</p></li>
+<li><p>The Accounting format displays negative numbers in parentheses.
+<img src="../images/03Excel/currencyVsAccounting.png" alt="currencyVsAccounting" width="250" ></p></li>
+</ul>
+</div>
+<div class="section" id="spreadsheet-formatting-windows">
+<h3>Spreadsheet Formatting (Windows)<a class="headerlink" href="#spreadsheet-formatting-windows" title="Permalink to this headline">¶</a></h3>
+<p>A text editor shortcut will allow you to format cells in bold, italics, underline, fonts, colours, justify, etc.<br />
+<img src="../images/03Excel/FormatShortcut.png" alt="FormatShortcut" width="600" ></p>
+</div>
+<div class="section" id="try-it">
+<h3>Try It!<a class="headerlink" href="#try-it" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><strong>Exercise</strong> <br />
+Make a copy of the QuarterSales worksheet and call it QuarterSalesFormat. Format the headers of the QuarterSales worksheet to be <strong>bold</strong>, <ins>underlined</ins> and centered.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Exercise</strong> <br />
+Format all monetary cells to the format <em>Currency</em></p>
+</div></blockquote>
+</div>
+<div class="section" id="spreadsheet-selecting-multiple-cells">
+<h3>Spreadsheet Selecting Multiple Cells<a class="headerlink" href="#spreadsheet-selecting-multiple-cells" title="Permalink to this headline">¶</a></h3>
+<p>There are a number of ways of selecting multiple cells at a time:</p>
+<ol class="simple">
+<li><p>With the mouse, (left) click and drag mouse to select a rectangle region of cells.</p></li>
+<li><p>With keyboard, hold SHIFT key and use arrow keys to select a rectangle region of cells.</p></li>
+<li><p>With mouse and keyboard, while holding CTRL (windows)/Cmnd (mac) key, (left) click on individual cells to select non-contiguous cells.</p></li>
+<li><p>Click on a row number to select a whole row<sup>2</sup> or select the first column in that row and press SHIFT + Cmnd /Cntrl + :arrow_right:</p></li>
+<li><p>Click on a column header to select a whole column2 or select the first row in that column and SHIFT + Cmnd /Ctrl + :arrow_down:
+See more keyboard shortcuts <a class="reference external" href="https://exceljet.net/keyboard-shortcuts">here</a>. (eg. Cmnd /Ctrl + A select entire worksheet) <a class="reference external" href="https://www.youtube.com/watch?v=L9n3tbufCyk&amp;feature=youtu.be">See demo</a></p></li>
+</ol>
+<p><sup>2</sup> or until the first empty cell</p>
+</div>
+<div class="section" id="range-selecting-cells-example">
+<h3>Range Selecting Cells Example<a class="headerlink" href="#range-selecting-cells-example" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/SelectingCells.png"><img alt="SelectingCells" src="notes/week02/../images/03Excel/SelectingCells.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="selecting-non-contiguous">
+<h3>Selecting non-contiguous<a class="headerlink" href="#selecting-non-contiguous" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/SelectingIndCells.png"><img alt="SelectingIndCellss" src="notes/week02/../images/03Excel/SelectingIndCells.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="manipulating-cells">
+<h3>Manipulating Cells<a class="headerlink" href="#manipulating-cells" title="Permalink to this headline">¶</a></h3>
+<p>Once you have selected one or more cells, there are several common actions you can perform:</p>
+<ol class="simple">
+<li><p>DELETE</p></li>
+</ol>
+<ul class="simple">
+<li><p>delete the contents of all cells by pressing delete key</p></li>
+<li><p>delete the contents and the cell locations (then shift remaining) by selecting Edit menu, Delete… or Delete… pop-up menu (brought up by right click).</p></li>
+</ul>
+<ol class="simple">
+<li><p>Cut, Copy, Paste</p></li>
+</ol>
+<ul class="simple">
+<li><p>cut - copies selected cells to clipboard and removes from document (Cmnd /Ctrl + X )</p></li>
+<li><p>copy - copies selected cells to clipboard (Cmnd /Ctrl + C )</p></li>
+<li><p>paste - copies cells in clipboard to sheet starting at currently selected cell (Cmnd /Ctrl + V )</p></li>
+</ul>
+<ol class="simple">
+<li><p>Add selected cells to a formula (requires that you were previously constructing a formula before selecting the cells).</p></li>
+</ol>
+</div>
+<div class="section" id="cut-copy-paste">
+<h3>Cut, Copy, Paste<a class="headerlink" href="#cut-copy-paste" title="Permalink to this headline">¶</a></h3>
+<p>Alternatively you could use the command button shortcuts located in the <em>Home</em> tab on the ribbon.<br />
+<img src="../images/03Excel/CutCopyPaste.png" alt="CutCopyPaste" width="600" ></p>
+</div>
+<div class="section" id="paste-button-ribbon">
+<h3>Paste Button Ribbon<a class="headerlink" href="#paste-button-ribbon" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Some buttons in the ribbon open a menu with additional options.</p></li>
+<li><p>For example, the Paste button opens a menu with additional pasting options such as <strong>Paste Values</strong>, <strong>Formulas</strong>,…which will be useful to us later.
+<img src="../images/03Excel/pasteOpt.png" alt="pasteOpt" width="600" ></p></li>
+</ul>
+</div>
+<div class="section" id="manipulating-cells-filling">
+<h3>Manipulating Cells - Filling<a class="headerlink" href="#manipulating-cells-filling" title="Permalink to this headline">¶</a></h3>
+<p><em>Filling</em> combines copy and paste. There is a small box or tab beyond the cell’s lower right corner (fill handle). Grab it with the cursor and pull to other cells.<br />
+<img src="../images/03Excel/Filling.png" alt="Filling" width="600" ></p>
+<p>Double clicking that lower corner will quickly copy and paste that formula to the end of the data (or until the first blank row).<br />
+<img src="../images/03Excel/doubleClick.png" alt="doubleClick" width="600" ></p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=O8c9N6CIqWM&amp;feature=youtu.be">See demo on YouTube</a></p>
+</div>
+<div class="section" id="hiding-columns-and-rows">
+<h3>Hiding Columns and Rows<a class="headerlink" href="#hiding-columns-and-rows" title="Permalink to this headline">¶</a></h3>
+<p>You can hide a column or row by right-clicking on the column or row header and selecting <em>Hide</em>.</p>
+<ul class="simple">
+<li><p>The column/row still exists but will not be displayed or printed until we select <em>Unhide</em>. <a class="reference external" href="https://www.youtube.com/watch?v=2Z0kPQfhDbE&amp;feature=youtu.be">Link to my demo on YouTube</a><br />
+<img src="../images/03Excel/Hide.png" alt="Hide" width="600" ></p></li>
+</ul>
+</div>
+<div class="section" id="selecting-cells-question">
+<h3>Selecting Cells Question<a class="headerlink" href="#selecting-cells-question" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 1</strong><br />
+Which method allows you to select non-contiguous cells in a spreadsheet?<br />
+A) hold SHIFT key and use arrow keys<br />
+B) With the mouse left click on a cell and drag mouse<br />
+C) hold CTRL (windows)/Cmnd (mac) key and use arrow keys<br />
+D) hold CTRL (windows)/Cmnd (mac) key and left click on cells</p>
+</div>
+<div class="section" id="start-solutions-here">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#start-solutions-here" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 1</strong><br />
+Which method allows you to select non-contiguous cells in a spreadsheet?<br />
+A) hold SHIFT key and use arrow keys<br />
+B) With the mouse left click on a cell and drag mouse<br />
+C) hold CTRL (windows)/Cmnd (mac) key and use arrow keys<br />
+<strong>D) hold CTRL (windows)/Cmnd (mac) key and left click on cells</strong></p>
+</div>
+<div class="section" id="end-solutions-here">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#end-solutions-here" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="entering-formulas">
+<h3>Entering Formulas<a class="headerlink" href="#entering-formulas" title="Permalink to this headline">¶</a></h3>
+<p>A <em>formula</em> is any expression that begins with an equal sign (=).</p>
+<ul class="simple">
+<li><p>The equal sign means that a calculation must be done to compute the cell value.
+<img src="../images/03Excel/formula.png" alt="formula" width="600" ></p></li>
+</ul>
+</div>
+<div class="section" id="formula-expressions">
+<h3>Formula Expressions<a class="headerlink" href="#formula-expressions" title="Permalink to this headline">¶</a></h3>
+<p>A formula expression can consist of literals (numbers, text strings), operators, functions (eg. MAX(), AVERAGE()), and cell references.</p>
+<p>Simple mathematical expressions:</p>
+<ul class="simple">
+<li><p>= 1 + 5</p></li>
+<li><p>= 1.5 * 3.14 + 42</p></li>
+</ul>
+<p>Common functions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="o">=</span> <span class="n">ROUND</span><span class="p">(</span><span class="n">PI</span><span class="p">(),</span><span class="mi">2</span><span class="p">)</span> <span class="o">//</span> <span class="n">Result</span> <span class="ow">is</span> <span class="mf">3.14</span>
+ <span class="o">=</span> <span class="n">CONCATENATE</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="s2">&quot; World&quot;</span><span class="p">)</span> <span class="o">//</span> <span class="n">Hello</span> <span class="n">World</span>
+</pre></div>
+</div>
+<p>Other common functions for trigonometry, dates, and finance are available. See a full list of functions <a class="reference external" href="https://support.microsoft.com/en-us/office/excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188?ui=en-us&amp;rs=en-us&amp;ad=us">here</a></p>
+</div>
+<div class="section" id="using-formulas">
+<h3>Using Formulas<a class="headerlink" href="#using-formulas" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>In order to use functions correctly, you need to follow a certain structure, or <em>syntax</em>.</p></li>
+<li><p>The basic syntax for a function is the equals sign (=), the function name (eg, SUM), and one or more <em>arguments/inputs</em> within parenthesis. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">SUM</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Once we press ENTER (or leave the cell), it will display the result, i.e. <em>output</em>, of the formula (in this case is 6). Returning to that cell will display the formula in the formula bar.</p>
+</li>
+<li><p>N.B. if you function has no arguments, you will still need to type the parenthesis. For example =NOW() returns the current date and time as output.</p></li>
+</ul>
+</div>
+<div class="section" id="using-excel-functions">
+<h3>Using Excel Functions<a class="headerlink" href="#using-excel-functions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>You can get help on any function by searching its name in Excel’s drop down Help menu
+<img src="../images/03Excel/Help.png" alt="Help" width="800" ></p></li>
+<li><p>Alternatively, you can navigate to the <strong>Formulas</strong> tab in the ribbon and select the <img src="../images/03Excel/insertfunction.png" alt="insertfunction" width="30" > button (there is also a shortcut to this button directly beside the formula bar <img src="../images/03Excel/ficon.png" alt="insertfunction" width="30" >). This will bring up a <strong>Formula Builder</strong> window which contains the name of all the functions in Excel, with a search and description on how to use each function.</p></li>
+</ul>
+</div>
+<div class="section" id="arrays">
+<h3>Arrays<a class="headerlink" href="#arrays" title="Permalink to this headline">¶</a></h3>
+<p>Alternatively we could have created an array using {} to compute our sum:
+<code class="docutils literal notranslate"><span class="pre">=SUM({1,2,3})</span></code>
+This is equivalent to the following calculation:<br />
+<img src="../images/03Excel/sumarray.png" alt="sumarray" width="30" ><br />
+These examples and others can be found in DemoPartI.xlsx on Canvas</p>
+</div>
+<div class="section" id="cell-referencing">
+<h3>Cell Referencing<a class="headerlink" href="#cell-referencing" title="Permalink to this headline">¶</a></h3>
+<p>The power of formulas comes from using cell references (similar to variable names in programming).<br />
+Cell reference examples:</p>
+<ul class="simple">
+<li><p>= A1 + A2</p></li>
+<li><p>= B1 + A3 - A4</p></li>
+</ul>
+<p>Cell address will appear in diﬀerent coloured font within your formula for ease of viewing. In addition, the cell itself will be outlined with the same colour when the formula is selected.<br />
+<img src="../images/03Excel/colours.png" alt="colours" width="400" ></p>
+<p><strong>TIP</strong> Rather than typing out cell names while constructing a formula, you can select them using your mouse or keyboard as done on <a class="reference external" href="#Spreadsheet-Selecting-Multiple-Cells">this</a> slide. You can refer to a single cell, a range of cells, a location in another worksheet, or a location in another workbook.</p>
+<p><strong>Figure</strong>: Example of using cell references across worksheets. General syntax: <code class="docutils literal notranslate"><span class="pre">&lt;SheetName&gt;!&lt;CellAddress&gt;</span></code><br />
+<img src="../images/03Excel/cellref.png" alt="cellref" width="400" ></p>
+</div>
+<div class="section" id="formula-questions">
+<h3>Formula Questions<a class="headerlink" href="#formula-questions" title="Permalink to this headline">¶</a></h3>
+<p>Excel follows the BEDMAS order or operations (Brackets, Exponents, Division, Multiplication, Addition, Subtraction).</p>
+<p><strong>Example 2</strong><br />
+Question: A cell contains the following: <code class="docutils literal notranslate"><span class="pre">=2+4*3</span></code> What is the value of the cell?
+A) 14<br />
+B) 18<br />
+C) <code class="docutils literal notranslate"><span class="pre">=2+4*3</span></code><br />
+D) None of the above</p>
+</div>
+<div class="section" id="id1">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 2</strong><br />
+Question: A cell contains the following:<code class="docutils literal notranslate"><span class="pre">=2+4*3</span></code> What is the value of the cell?<br />
+<strong>A) 14</strong><br />
+B) 18<br />
+C) <code class="docutils literal notranslate"><span class="pre">=2+4*3</span></code><br />
+D) None of the above</p>
+</div>
+<div class="section" id="id2">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 3</strong>
+A cell contains the following: <code class="docutils literal notranslate"><span class="pre">=(2+4)*3^2</span></code> What is the value of the cell?<br />
+A) 38<br />
+B) 54<br />
+C) 324<br />
+D) None of the above</p>
+</div>
+<div class="section" id="id3">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 2</strong><br />
+A cell contains the following:<code class="docutils literal notranslate"><span class="pre">=(2+4)*3^2</span></code> What is the value of the cell?<br />
+A) 38<br />
+<strong>B) 54</strong><br />
+C) 324<br />
+D) None of the above</p>
+</div>
+<div class="section" id="id4">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id5">
+<h3>Using Excel Functions<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Excel will attempt to autocomplete your formulas.</p></li>
+<li><p>To accept a suggestion, press <code class="docutils literal notranslate"><span class="pre">TAB</span></code> .</p></li>
+<li><p>Excel will provide a guideline of how the function is used in the lower right corner of the cell. Optional arguments appear in
+square brackets []<br />
+<img src="../images/03Excel/sum.png" alt="sum" width="400" ></p></li>
+</ul>
+<p>For example, in <strong>H6</strong> we have <code class="docutils literal notranslate"><span class="pre">=POWER(G2,2)</span> <span class="pre">=</span> <span class="pre">252</span> <span class="pre">=</span> <span class="pre">625</span></code>. POWER is the function and G2 and 2 are the inputs and 625 is the output.<br />
+<img src="../images/03Excel/function.png" alt="function" width="600" ></p>
+</div>
+<div class="section" id="try-entering-formulas">
+<h3>Try Entering Formulas<a class="headerlink" href="#try-entering-formulas" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><strong>Exercise</strong> <br />
+Calculate the total Revenue in cell <strong>G13</strong>. Add the label of <strong>Total Revenue</strong>: to cell <strong>F13</strong>.</p>
+</div></blockquote>
+<p><strong>Tip</strong>: Try using the <img src="../images/03Excel/autosum.png" alt="autosum" width="30" > button (located in the <strong>Formula</strong> tab in the ribbon) to save time! <strong>Directions</strong>: Select a cell next to the numbers you want to sum (or simply select cell <strong>G13</strong>, click the AutoSum button, then press <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p>
+<blockquote>
+<div><p><strong>Exercise</strong> <br />
+Add a column for expenses and profit as below. (Expense is volume multiplied by cost and profit is revenue minus expense).<br />
+<img src="../images/03Excel/QuarterSalesTryIt.png" alt="QuarterSalesTryIt" width="600" ></p>
+</div></blockquote>
+</div>
+<div class="section" id="concatenation">
+<h3>Concatenation<a class="headerlink" href="#concatenation" title="Permalink to this headline">¶</a></h3>
+<p>String concatenation is when two or more strings are combined by appending them in order. The function to do this in Excel is CONCATENATE() or &amp; operator.<br />
+<img src="../images/03Excel/concatenate.png" alt="concatenate" width="600" ><br />
+Notice that we needed to add spaces ” ” in order for the words to be separated. In addition, numbers work as arguments too!</p>
+</div>
+<div class="section" id="titles-and-merged-cells">
+<h3>Titles and Merged Cells<a class="headerlink" href="#titles-and-merged-cells" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>On the previous slide I added a title to my spreadsheet. To do this:
+1. Click View from the toolbar menu and select Header and Footer.
+2. Click on the Add Header box and insert the desired text.
+3. To return to the default view, click View from the toolbar menu and select Normal.</p></li>
+<li><p>I also utilize the merge cell option in order to center text over a section of a spreadsheet. To do this:
+1. Highlight or select a range of cells.
+2. Right-click on the highlighted cells and select Format Cells….
+3. Click the Alignment tab and place a checkmark in the checkbox labeled Merge cells.</p></li>
+</ul>
+<p>Alternatively, you can merge and center a group of cells using the Merge and Center <img src="../images/03Excel/mergeandcenter.png" alt="mergeandcenter" width="30" > button located on the <code class="docutils literal notranslate"><span class="pre">Home</span></code> tab.</p>
+</div>
+<div class="section" id="formulas-question">
+<h3>Formulas Question<a class="headerlink" href="#formulas-question" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 4</strong> <br />
+A cell contains the following: =’ABC’+’DEF’. What is the value of the cell?<br />
+A) error<br />
+B) ABCDEF<br />
+C) ’ABC’+’DEF’</p>
+</div>
+<div class="section" id="id6">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 3</strong><br />
+A cell contains the following: =’ABC’+’DEF’. What is the value of the cell?<br />
+<strong>A) error</strong><br />
+B) ABCDEF<br />
+C) ’ABC’+’DEF’</p>
+</div>
+<div class="section" id="id7">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="lookup-function">
+<h3>LOOKUP function<a class="headerlink" href="#lookup-function" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The LOOKUP function searches for a value in either a row (or column) and returns a corresponding value from a neighbouring row (or column).
+- This function works like searching for numbers in a phonebook: by searching for their name in the phonebook, you can determine their listed phone number.</p></li>
+<li><p>VLOOKUP does the same thing, only it is restricted to <strong>V</strong>ertical (column) searches</p></li>
+<li><p>HLOOKUP on the other hand, is restricted to <strong>H</strong>orizontal (row) searches</p></li>
+<li><p>Some consider <a class="reference external" href="https://support.microsoft.com/en-us/office/lookup-function-446d94af-663b-451d-8251-369d5e3864cb?ui=en-us&amp;rs=en-us&amp;ad=us">LOOKUP</a> as better than VLOOKUP <a class="reference external" href="https://corporatefinanceinstitute.com/resources/excel/functions/lookup-vs-vlookup/">Source</a> while others consider <a class="reference external" href="https://support.microsoft.com/en-us/office/video-vlookup-when-and-how-to-use-it-9a86157a-5542-4148-a536-724823014785?ui=en-us&amp;rs=en-us&amp;ad=us">VLOOKUP</a> is an improved version of LOOKUP <a class="reference external" href="https://support.microsoft.com/en-us/office/lookup-function-446d94af-663b-451d-8251-369d5e3864cb?ui=en-us&amp;rs=en-us&amp;ad=us">Source</a>.</p></li>
+<li><p>We will go through the advantages and disadvantages of each.</p></li>
+</ul>
+<p>The LOOKUP function has the following form:<br />
+<code class="docutils literal notranslate"><span class="pre">LOOKUP(lookup_value,</span> <span class="pre">lookup_vector,</span> <span class="pre">[result_vector])</span></code></p>
+<ul class="simple">
+<li><p>lookup_value is the value we would like to match (eg. the name in our phonebook analogy)</p></li>
+<li><p>lookup_vector the corresponding <ins>column</ins> (or row) containing the values from which we are searching for lookup_vector (eg. the column of names in our phonebook analogy)</p></li>
+<li><p>result_vector the corresponding &lt;&gt;ins&gt;column</ins> (or row) containing the information we are trying to obtain (eg. the column of phone numbers in our phonebook analogy); this has to be the same size as the lookup_vector</p></li>
+</ul>
+<p>It is common that we store the lookup_value in a cell so that we might change it easily for future use of the formula.</p>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/lookupZoom.png"><img alt="lookupZoom" src="notes/week02/../images/03Excel/lookupZoom.png" style="width: 600px;" /></a>
+<p>Formula: <code class="docutils literal notranslate"><span class="pre">=LOOKUP(F2,</span> <span class="pre">A2:A6,C2:C6)</span></code>
+Output: <code class="docutils literal notranslate"><span class="pre">$2.99</span></code>
+<a class="reference external" href="https://www.youtube.com/watch?v=jvcK_nbxCZM&amp;feature=youtu.be">YouTube Demo</a></p>
+</div>
+<div class="section" id="a-comment-on-lookup-function">
+<h3>A comment on LOOKUP function<a class="headerlink" href="#a-comment-on-lookup-function" title="Permalink to this headline">¶</a></h3>
+<p><strong>Important</strong></p>
+<ul class="simple">
+<li><p>The values in lookup_vector must be placed in <strong>ascending order</strong>: … , -2, -1, 0, 1, 2, …, A-Z, FALSE, TRUE; otherwise, LOOKUP might not return the correct
+value.</p></li>
+<li><p>Uppercase and lowercase text are treated as equivalent.</p></li>
+</ul>
+<p><strong>Example 5</strong><br />
+Use the lookup function to determine the product ID of a certain product name.</p>
+<ol class="simple">
+<li><p>What happens when you try and look up the ID of <em>Pumpkin</em>?</p></li>
+<li><p>How can we fix this problem?</p></li>
+</ol>
+</div>
+<div class="section" id="vlookup-function">
+<h3>VLOOKUP function<a class="headerlink" href="#vlookup-function" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">VLOOKUP(lookup_value,</span> <span class="pre">table_array,</span> <span class="pre">col_index_num,[range_lookup])</span></code></p>
+<ul class="simple">
+<li><p>lookup_value is the value we would like to match (eg. the name in our phonebook analogy)</p></li>
+<li><p>table_array the corresponding <ins>array</ins> (or matrix) containing the values from which we are searching for <strong>and</strong> the information we are trying to obtain. (eg. a matrix contain the columns of names <strong>and</strong> phone numbers in our phonebook analogy)</p></li>
+<li><p>col_index_num corresponding to the column number containing the information we are trying to obtain (eg. the column of phone numbers in our phonebook analogy)</p></li>
+<li><p>range_lookup An [optional argument] indicating if you want exact (FALSE) or approximate (TRUE (default)) matching.<br />
+<img src="../images/03Excel/vlookupZoom.png" alt="vlookupZoom" width="700" ></p></li>
+</ul>
+<p>Formula: <code class="docutils literal notranslate"><span class="pre">=VLOOKUP(F2,A2:C6,3)</span></code><br />
+Output: <code class="docutils literal notranslate"><span class="pre">$2.99</span></code></p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=q575W8vM7FY&amp;feature=youtu.be">Youtube Demo</a></p>
+<p><strong>Some warnings about VLOOKUP</strong></p>
+<ul class="simple">
+<li><p>The column of lookup values (the equivalent lookup_vector from the LOOKUP example) is expected to be in the left-most column of the table_array.</p></li>
+<li><p>If the fourth optional argument range_lookup is left blank, it defaults to TRUE
+- FALSE allows only exact matches while TRUE allows for partial matches</p></li>
+<li><p>If range_lookup is TRUE (the default setting) the first row of the table must be sorted in ascending order.
+Otherwise, VLOOKUP may return an incorrect or unexpected value.<br />
+<code class="docutils literal notranslate"><span class="pre">N.B.</span> <span class="pre">HLOOKUP</span></code> works in the exact same way as <code class="docutils literal notranslate"><span class="pre">VLOOKUP</span></code> only now we look across rows instead of columns.<br />
+<img src="../images/03Excel/partialLookupZoom.png" alt="partialLookupZoom" width="500" ></p></li>
+</ul>
+<p>Formula: <code class="docutils literal notranslate"><span class="pre">=VLOOKUP(B9,A2:C6,2,TRUE&lt;sup&gt;3&lt;/sup&gt;)</span></code> where <strong>B9</strong> = 1.2<br />
+Output: <code class="docutils literal notranslate"><span class="pre">Apple</span></code><br />
+Formula: <code class="docutils literal notranslate"><span class="pre">=VLOOKUP(B9,A2:C6,2,FALSE)</span></code> where <strong>B9</strong> = 1.2<br />
+Output: <code class="docutils literal notranslate"><span class="pre">#N/A</span></code></p>
+<p><sup>3</sup>N.B doesn’t look for the “nearest” value but the greatest value smaller than or equal to the lookup value.</p>
+<p><strong>Example 6</strong></p>
+<ol class="simple">
+<li><p>Can you use vlookup function to determine the product ID of a certain product name?</p></li>
+<li><p>Use vlookup function to determine the price a certain product name. Use the default setting of <code class="docutils literal notranslate"><span class="pre">range_lookup</span> <span class="pre">=</span> <span class="pre">TRUE</span></code>?</p></li>
+<li><p>Test this function with the entry: <em>Pumpkin</em>.</p></li>
+<li><p>Test this function with the entry: <em>Pumpkin</em>, this time using <code class="docutils literal notranslate"><span class="pre">range_lookup</span> <span class="pre">=</span> <span class="pre">FALSE</span></code></p></li>
+</ol>
+</div>
+<div class="section" id="lookup-vs-vlookup">
+<h3>LOOKUP vs. VLOOKUP<a class="headerlink" href="#lookup-vs-vlookup" title="Permalink to this headline">¶</a></h3>
+<p>The <em>pros</em> of LOOKUP</p>
+<ul class="simple">
+<li><p>Accommodates left-to-right and right-to-left lookups</p></li>
+<li><p>Less restrictive in terms of lookup/result_vector</p></li>
+</ul>
+<p>The <em>cons</em> of LOOKUP</p>
+<ul class="simple">
+<li><p>Requires ascending ordered lookup_vector</p></li>
+<li><p>Partial matching (no option to for exact matches)</p></li>
+</ul>
+<p>The <em>pros</em> of VLOOKUP</p>
+<ul class="simple">
+<li><p>option to force exact matches</p></li>
+</ul>
+<p>The <em>cons</em> of VLOOKUP</p>
+<ul class="simple">
+<li><p>Accommodates only left-to-right lookups</p></li>
+<li><p>Requires a table (more restrictive)</p></li>
+<li><p>Requires ascending ordered lookup_vector</p></li>
+</ul>
+<p>Both have unexpected behaviour with duplicates</p>
+</div>
+<div class="section" id="index-function">
+<h3>INDEX function<a class="headerlink" href="#index-function" title="Permalink to this headline">¶</a></h3>
+<p>The syntax for the INDEX function in Microsoft Excel is:<br />
+‘INDEX( table, row_number, column_number )’
+It returns the value from within a table or range (i.e. an array of cells) at the given index. (Think of indexing a matrix in R using ‘mat[i,j]’ with i is your row_number and j is your col_number)</p>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/indexZoom.png"><img alt="indexZoom" src="notes/week02/../images/03Excel/indexZoom.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="id8">
+<h3>Formulas Question<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 7</strong>
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>CONCATENATE function can take 3 arguments.</p></li>
+<li><p>There is an Excel function that has 0 arguments.</p></li>
+<li><p>=INDEX({1,3,5},2) returns 5.</p></li>
+<li><p>=LOOKUP(5,{1,3,5},{“a”,”b”,”c”}) returns “c”.<br />
+A) 0<br />
+B) 1<br />
+C) 2<br />
+D) 3</p></li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 7</strong>
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>CONCATENATE function can take 3 arguments. :heavy_check_mark:</p></li>
+<li><p>There is an Excel function that has 0 arguments. :heavy_check_mark:</p></li>
+<li><p>=INDEX({1,3,5},2) returns 5.  :x:</p></li>
+<li><p>=LOOKUP(5,{1,3,5},{“a”,”b”,”c”}) returns “c”.  :heavy_check_mark:
+A) 0<br />
+B) 1<br />
+C) 2<br />
+<strong>D) 3</strong></p></li>
+</ol>
+</div>
+<div class="section" id="id10">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="advanced-spreadsheet-addressing">
+<h3>Advanced Spreadsheet Addressing<a class="headerlink" href="#advanced-spreadsheet-addressing" title="Permalink to this headline">¶</a></h3>
+<p>The dollar sign “$” is a symbol that indicates an <em>absolute address</em>.</p>
+<ul class="simple">
+<li><p>By default, addresses are “relative” in the sense that if they are in a formula that is copied to another cell, they will be changed relative to where they were copied from their origin.
+Example:</p></li>
+<li><p>Cell <strong>A1</strong> has the formula =A2+B1</p></li>
+<li><p>Copy contents of cell <strong>A1</strong> to cell <strong>C4</strong> (+ 2 columns + 3 rows).</p></li>
+<li><p>Formula changes to =C5+D4 because moved down three rows and over two columns. (eg. col<strong>A</strong> + 2col = <strong>C</strong>, row<strong>2</strong> + 3 = 5;
+hence <strong>A2</strong> changes to <strong>C5</strong>)<br />
+If cell <strong>A1</strong> had the formula =<span class="math notranslate nohighlight">\(A\)</span>2+<span class="math notranslate nohighlight">\(B\)</span>1, then the same formula would be copied in cell <strong>C4</strong>.</p></li>
+</ul>
+<p>There are three different ways you can specify an absolute address</p>
+<ul class="simple">
+<li><p>By row eg. =B$1 (column will change but row will not)</p></li>
+<li><p>By column eg. =$B1 (row will change but col will not)</p></li>
+<li><p>By cell (row and column) eg. =<span class="math notranslate nohighlight">\(B\)</span>1 (neither row nor col will change)</p></li>
+</ul>
+<blockquote>
+<div><p>Question: How would the formula =<span class="math notranslate nohighlight">\(A2+B\)</span>3 in cell <strong>D3</strong> be changed when copied to <strong>E5</strong>?</p>
+</div></blockquote>
+<p><strong>D3</strong> to <strong>E5</strong>: :arrow_right: one column, :arrow_down: two rows</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A2: + &lt;del&gt;:arrow_right: one column&lt;/del&gt;, :arrow_down: two rows = \)</span>A4</p></li>
+<li><p>B<span class="math notranslate nohighlight">\(3: + :arrow_right: one column, + &lt;del&gt;:arrow_down: two rows&lt;/del&gt; = C\)</span>3</p></li>
+</ul>
+<p><strong>Needs formatting</strong></p>
+<blockquote>
+<div><p>Answer: The copied formula would appear as <code class="docutils literal notranslate"><span class="pre">=$A4+C$3</span></code> in cell <strong>E5</strong></p>
+</div></blockquote>
+</div>
+<div class="section" id="formulas-and-reference-question">
+<h3>Formulas and Reference Question<a class="headerlink" href="#formulas-and-reference-question" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 8</strong> <br />
+Cell <strong>A1</strong> contains the following: =<span class="math notranslate nohighlight">\(B2+D\)</span>4. What is the formula if the cell is copied to cell D3?</p>
+<ul class="simple">
+<li><p>error</p></li>
+<li><p>=<span class="math notranslate nohighlight">\(B2+D\)</span>4</p></li>
+<li><p>=<span class="math notranslate nohighlight">\(B4+F\)</span>4</p></li>
+<li><p>=<span class="math notranslate nohighlight">\(B4+G\)</span>4<br />
+For more examples see the <strong>Absolute</strong> worksheet on DemoPartI</p></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 8</strong> <br />
+Cell <strong>A1</strong> contains the following: =<span class="math notranslate nohighlight">\(B2+D\)</span>4. What is the formula if the cell is copied to cell D3?</p>
+<ul class="simple">
+<li><p>error</p></li>
+<li><p>=<span class="math notranslate nohighlight">\(B2+D\)</span>4</p></li>
+<li><p>=<span class="math notranslate nohighlight">\(B4+F\)</span>4</p></li>
+<li><p><strong>=<span class="math notranslate nohighlight">\(B4+G\)</span>4</strong></p></li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="tips">
+<h3>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Tip:<br />
+You can change a cell from relative to absolute with the shortcut <code class="docutils literal notranslate"><span class="pre">F4</span></code> . You can continue to press F4 to have Excel cycle through the different reference types.<br />
+Tip:<br />
+To show all the formulas in a worksheet (rather then their result), click the <img src="../images/03Excel/showFormula.png" alt="showFormula" width="30" > button located in the Formulas tab in the ribbon.</p>
+</div></blockquote>
+</div>
+<div class="section" id="naming-cells">
+<h3>Naming Cells<a class="headerlink" href="#naming-cells" title="Permalink to this headline">¶</a></h3>
+<p>Instead of referring to cells by their address, you can give a cell a name and use that name in cell formulas.</p>
+<ul class="simple">
+<li><p>This makes it easier to read and understand formulas.</p></li>
+<li><p>Like programming variables where we use names instead of addresses to refer to data locations.</p></li>
+</ul>
+<p>Step for naming cells:</p>
+<ul class="simple">
+<li><p>Select the cell(s) you want to name</p></li>
+<li><p>Click the Name box located to the left of the formula bar</p></li>
+<li><p>Type a valid one-word name for the list, e.g. Hours œ Press <code class="docutils literal notranslate"><span class="pre">ENTER</span></code><br />
+<a class="reference external" href="https://www.youtube.com/watch?v=eEFbCBCLLFM&amp;feature=youtu.be">See YouTube demo here</a><br />
+Alternatively: click the letter of the column you want to change and then click the “Formulas” tab. Click “Deﬁne Name” in the Deﬁned Names group in the Ribbon to open the New Name window.</p></li>
+</ul>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/NameBox.png"><img alt="NameBox" src="notes/week02/../images/03Excel/NameBox.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="naming-rules">
+<h3>Naming Rules<a class="headerlink" href="#naming-rules" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>While these names can included numbers, the ﬁrst character must be a letter or an underscore.</p></li>
+<li><p>These names cannot include spaces or special characters beside underscores and periods.</p></li>
+<li><p>Finally this name should not conﬂict with an existing name in the workbook.</p></li>
+<li><p>For example, I wouldn’t want to use the name DAY1 since that already exists as a cell address by default.</p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>Try It!<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>Complete the following in the <em>NamedCells</em> worksheet in the DemoPartI workbook.</p>
+<p><strong>Example 9</strong><br />
+Rename <strong>A3</strong> <em>Day_1</em> and <strong>A9</strong> <em>Day_7</em>. Calculate the di ﬀ erence between these two dates using the <a class="reference external" href="https://exceljet.net/excel-functions/excel-datedif-function">DATEDIF</a> function.</p>
+<p><strong>Example 10</strong><br />
+Find the total hours using named cells. That is, rename the cells <strong>E3:E9</strong> <em>Total</em> and calculate <code class="docutils literal notranslate"><span class="pre">=SUM(Total)</span></code>.</p>
+<p><strong>Example 11</strong> (Advanced array formulas)<br />
+RecalculatetheTotalsusingthenamedcells. Thatis, renamethe cells <strong>C3:C9</strong> <em>Hours</em> and <strong>D3:D9</strong> <em>Rate</em>, and calculate <code class="docutils literal notranslate"><span class="pre">Hours*Rate</span></code>.</p>
+<p>To answer this last exercise, we will need to know more about <a class="reference external" href="#array-formulas">array formulas</a>.</p>
+</div>
+<div class="section" id="array-formulas">
+<h3>Array Formulas<a class="headerlink" href="#array-formulas" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>If you are using Oﬃce 2010 – Oﬃce 2019 array formulas require ﬁrst selecting the entire output range, then conﬁrming the formula with <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> +<code class="docutils literal notranslate"><span class="pre">Shift</span></code> +<code class="docutils literal notranslate"><span class="pre">Enter</span></code> . They are commonly referred to as CSE formulas.</p></li>
+<li><p>In Oﬃce 365 any formula that can return multiple results will automatically spill them either down, or across into neighboring cells by pressing <code class="docutils literal notranslate"><span class="pre">Enter</span> </code>.</p></li>
+<li><p>To see Total cost of each activity, select cells <strong>F3:F9</strong>, enter the formula <code class="docutils literal notranslate"><span class="pre">=Hours*Rate</span></code>, and then press <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> +<code class="docutils literal notranslate"><span class="pre">Shift</span></code> +<code class="docutils literal notranslate"><span class="pre">Enter</span></code> .</p></li>
+<li><p>N.B. To see the grand Total of all activities, we could select cell <strong>F10</strong> and enter the formula <code class="docutils literal notranslate"><span class="pre">=SUM(Hours*Rate)</span></code> and then press <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> +<code class="docutils literal notranslate"><span class="pre">Shift</span></code> +<code class="docutils literal notranslate"><span class="pre">Enter</span></code> .<br />
+Read more about array formulas <a class="reference external" href="https://support.microsoft.com/en-ie/office/guidelines-and-examples-of-array-formulas-7d94a64e-3ff3-4686-9372-ecfd5caa57c7?ui=en-us&amp;rs=en-ie&amp;ad=ie">here</a>. See my YouTube demo <a class="reference external" href="https://www.youtube.com/watch?v=rHqKVJJmuFs&amp;feature=youtu.be">here</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="aggregate-functions">
+<h3>Aggregate Functions<a class="headerlink" href="#aggregate-functions" title="Permalink to this headline">¶</a></h3>
+<p>An <em>aggregate</em> function computes a summary function over a range of cells. The values can either be data values or cell locations.<br />
+Common functions are:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">=MIN(&lt;value</span> <span class="pre">list&gt;)</span></code></p></td>
+<td><p>returns minimum value in list</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">=MAX(&lt;value</span> <span class="pre">list&gt;)</span></code></p></td>
+<td><p>returns maximum value in list</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">=SUM(&lt;value</span> <span class="pre">list&gt;)</span></code></p></td>
+<td><p>returns sum of all values in list</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">=AVERAGE(&lt;value</span> <span class="pre">list&gt;)</span></code></p></td>
+<td><p>returns average of values in list</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">=COUNT(&lt;value</span> <span class="pre">list&gt;)</span></code></p></td>
+<td><p>returns count of values in list</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">=MEDIAN(&lt;value</span> <span class="pre">list&gt;)</span></code></p></td>
+<td><p>returns median value of list</p></td>
+</tr>
+</tbody>
+</table>
+<p>If specifying an array, give the upper left and lower right corners, separated by a colon.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">AVERAGE(A3:E6)</span></code></p></td>
+<td><p>returns the average value in the array of 4 rows and 5 columns</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="aggregate-functions-example">
+<h3>Aggregate Functions Example<a class="headerlink" href="#aggregate-functions-example" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/aggregate.png"><img alt="aggregate" src="notes/week02/../images/03Excel/aggregate.png" style="width: 800px;" /></a>
+</div>
+<div class="section" id="id14">
+<h3>Try it!<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><strong>Exercise</strong><br />
+Find the a) maximum volume b) average price c) minimum cost and d) total revenue in the <em>QrSales</em> worksheet.</p>
+</div></blockquote>
+</div>
+<div class="section" id="aggregate-functions-question">
+<h3>Aggregate Functions Question<a class="headerlink" href="#aggregate-functions-question" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 12</strong><br />
+Assume the cells in the range A1:C4 each contain a number that is equal to their row number (e.g. <strong>B3</strong> contains 3). How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>The number of cells in the range is 12.</p></li>
+<li><p>The value of <code class="docutils literal notranslate"><span class="pre">SUM(A1:C4)</span></code> is 20.</p></li>
+<li><p>The value of <code class="docutils literal notranslate"><span class="pre">COUNTIF(A1:B4,&quot;&gt;2&quot;)</span></code> is 4.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AVERAGE(A1:C4)</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">MAX(C2:C3)</span></code><br />
+A) 0 B) 1 C) 2 D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id15">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 12</strong><br />
+Assume the cells in the range A1:C4 each contain a number that is equal to their row number (e.g. <strong>B3</strong> contains 3). How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>The number of cells in the range is 12. :heavy_check_mark:</p></li>
+<li><p>The value of <code class="docutils literal notranslate"><span class="pre">SUM(A1:C4)</span></code> is 20. :x:</p></li>
+<li><p>The value of <code class="docutils literal notranslate"><span class="pre">COUNTIF(A1:B4,&quot;&gt;2&quot;)</span></code> is 4. :heavy_check_mark:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AVERAGE(A1:C4)</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">MAX(C2:C3)</span></code> :x:<br />
+A) 0 B) 1 <strong>C) 2</strong> D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id16">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 13</strong><br />
+Assume the three cells in the range A1:C1 contain numbers. Which of these formula output results is ALWAYS the largest?<br />
+A) <code class="docutils literal notranslate"><span class="pre">MAX(A1:C1)</span></code><br />
+B) <code class="docutils literal notranslate"><span class="pre">MIN(A1:C1)</span> </code><br />
+C) <code class="docutils literal notranslate"><span class="pre">COUNT(A1:C1)</span></code><br />
+D) <code class="docutils literal notranslate"><span class="pre">SUM(A1:C1)</span></code><br />
+E) None of the above are always guaranteed to be the largest</p>
+</div>
+<div class="section" id="id17">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 13</strong><br />
+Assume the three cells in the range A1:C1 contain numbers. Which of these formula output results is ALWAYS the largest?<br />
+A) <code class="docutils literal notranslate"><span class="pre">MAX(A1:C1)</span></code><br />
+B) <code class="docutils literal notranslate"><span class="pre">MIN(A1:C1)</span> </code><br />
+C) <code class="docutils literal notranslate"><span class="pre">COUNT(A1:C1)</span></code><br />
+D) <code class="docutils literal notranslate"><span class="pre">SUM(A1:C1)</span></code><br />
+<strong>E) None of the above are always guaranteed to be the largest</strong></p>
+</div>
+<div class="section" id="id18">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="other-formatting-column-width">
+<h3>Other Formatting: Column Width<a class="headerlink" href="#other-formatting-column-width" title="Permalink to this headline">¶</a></h3>
+<p><em>Resizing columns/rows:</em><br />
+<img src="../images/03Excel/ColWidth.png" alt="ColWidth" width="800" ></p>
+<blockquote>
+<div><p>Auto-resize by double clicking on border between columns or selecting <strong>Format– &gt;Column–&gt;AutoFit Selection</strong>.<br />
+Drag the row/column border to manually resize.</p>
+</div></blockquote>
+<p>Lets see an example by doing this on the <em>Namecells</em> workbook in DemoPartI</p>
+</div>
+<div class="section" id="conditional-formatting">
+<h3>Conditional Formatting<a class="headerlink" href="#conditional-formatting" title="Permalink to this headline">¶</a></h3>
+<p><em>Conditional formatting</em> allows you to change the cell format based on data values. This is accessible under <strong>Format–&gt;Conditional Formatting</strong>.</p>
+<ul class="simple">
+<li><p>Other options: data bars, color scales, icon sets</p></li>
+</ul>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/CondFormat.png"><img alt="CondFormat" src="notes/week02/../images/03Excel/CondFormat.png" style="width: 800px;" /></a>
+<p>A shortcut to this feature (along with some great default options) can be found in the Conditional Formatting button <img src="../images/03Excel/CFbutton.png" alt="CFbutton" width="30" ><br />
+<img src="../images/03Excel/CFoptions.png" alt="CFoptions" width="300" ></p>
+</div>
+<div class="section" id="conditional-formatting-result">
+<h3>Conditional Formatting Result<a class="headerlink" href="#conditional-formatting-result" title="Permalink to this headline">¶</a></h3>
+<p>The format painter button allows you to copy formatting to many cells. Select the cell, click paint button, then highlight cells to have identical formatting.</p>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/FormatPainter.png"><img alt="FormatPainter" src="notes/week02/../images/03Excel/FormatPainter.png" style="width: 800px;" /></a>
+</div>
+<div class="section" id="try-it-conditional-formatting">
+<h3>Try it: Conditional Formatting<a class="headerlink" href="#try-it-conditional-formatting" title="Permalink to this headline">¶</a></h3>
+<p>Format Volume column to be:</p>
+<ol class="simple">
+<li><p>bold/green if volume &gt;50</p></li>
+<li><p>italics/red if volume &lt;10</p></li>
+<li><p>yellow background otherwise as below:<br />
+<img src="../images/03Excel/CondFormatTryIt.png" alt="CondFormatTryIt" width="800" ></p></li>
+</ol>
+<blockquote>
+<div><p>Question: Take the previous formatting and apply it to whole row:</p>
+</div></blockquote>
+<blockquote>
+<div><p>Hint: Highlight the whole table, go to Conditional Formatting, select the “Classic” option from the Style drop down menu and select “Use a formula to determine which cells to format”
+<img src="../images/03Excel/QSTryIt4.png" alt="QSTryIt4" width="800" ><br />
+<img src="../images/03Excel/condform2.png" alt="condform2" width="600" ><br />
+<img src="../images/03Excel/condform1.png" alt="condform1" width="600" ></p>
+</div></blockquote>
+</div>
+<div class="section" id="spreadsheet-for-data-management">
+<h3>Spreadsheet for Data Management<a class="headerlink" href="#spreadsheet-for-data-management" title="Permalink to this headline">¶</a></h3>
+<p>A spreadsheet is often used as a “database”. A <em>database</em> collects, stores and manages information so users can retrieve, add, update or remove such information.</p>
+<ul class="simple">
+<li><p>Examples: schedules and calendars, timesheets, expenses and ﬁnances, records, notes, and recipes, data research/analysis</p></li>
+</ul>
+<p>We can use a spreadsheet as a database by:</p>
+<ul class="simple">
+<li><p>Using a row to store all the information about something we want to represent.</p></li>
+<li><p>Giving each column a meaningful name. A column represents a property or feature of the object stored in the row.</p></li>
+<li><p>Using the formulas to calculate new facts from the data.</p></li>
+<li><p>Using sorting to organize the data by key features.</p></li>
+<li><p>Using simple ﬁltering (querying) to only show the most important data or data of interest.</p></li>
+</ul>
+</div>
+<div class="section" id="sorting-data">
+<h3>Sorting Data<a class="headerlink" href="#sorting-data" title="Permalink to this headline">¶</a></h3>
+<p>Data can be sorted by selecting the <strong>Sort</strong> option under the <strong>Data</strong> menu. Select the column(s) to sort on and order to sort by.<br />
+<img src="../images/03Excel/Sorting.png" alt="Sorting" width="800" ></p>
+</div>
+<div class="section" id="try-it-sorting-data">
+<h3>Try it: Sorting Data<a class="headerlink" href="#try-it-sorting-data" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Exercise: Sort the data by revenue (desc) then product (asc).</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/SortQ.png"><img alt="SortQ" src="notes/week02/../images/03Excel/SortQ.png" style="width: 800px;" /></a>
+</div>
+<div class="section" id="filtering">
+<h3>Filtering<a class="headerlink" href="#filtering" title="Permalink to this headline">¶</a></h3>
+<p>A <em>ﬁlter</em> shows a subset of the rows in the spreadsheet that pass a given condition (test).</p>
+<p>Select <strong>Auto Filter</strong> under the <strong>Data</strong> then <strong>Filter</strong> menu.</p>
+<p>Once you select <strong>Auto Filter</strong>, each column heading has a drop-down list. By selecting a ﬁltering criteria from the list, you can limit the rows that are displayed.</p>
+<p>It is possible to ﬁlter on more than one column at the same time.</p>
+</div>
+<div class="section" id="filter-example">
+<h3>Filter Example<a class="headerlink" href="#filter-example" title="Permalink to this headline">¶</a></h3>
+<p>Filter on Revenue column: Select value(s), Top 10, or custom ﬁlter.</p>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/CustomFilter.png"><img alt="CustomFilter" src="notes/week02/../images/03Excel/CustomFilter.png" style="width: 300px;" /></a>
+<p>Filter on Revenue column: Custom ﬁlter with Revenue &gt; 150</p>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/CustomFilter2.png"><img alt="CustomFilter2" src="notes/week02/../images/03Excel/CustomFilter2.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="try-it-filter-challenge">
+<h3>Try It: Filter Challenge<a class="headerlink" href="#try-it-filter-challenge" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Exercise: Filter the data so only products with volume &lt; 20 or revenue ≥ $500 are shown.</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/filterChallenge.png"><img alt="filterChallenge" src="notes/week02/../images/03Excel/filterChallenge.png" style="width: 800px;" /></a>
+</div>
+<div class="section" id="removing-duplicates">
+<h3>Removing Duplicates<a class="headerlink" href="#removing-duplicates" title="Permalink to this headline">¶</a></h3>
+<p>To remove duplicates, select your Data then Remove Duplicates from the <strong>Data</strong> tab in the ribbon.<br />
+<img src="../images/03Excel/RmDup.png" alt="RmDup" width="600" ><br />
+Note that we can also remove duplicates using a ﬁlter:<br />
+Data&gt;Sort&amp;Filter&gt;Advanced</p>
+<p>By default, it will look for duplicates over the all of the selected columns. You can delete entire rows based on particular columns by selecting them the pop-up window:<br />
+<img src="../images/03Excel/removedup.png" alt="removedup" width="300" ></p>
+<p>Notice how the Removing Duplicates feature is NOT case sensitive:<br />
+<img src="../images/03Excel/rmDup2.png" alt="rmDup2" width="600" ></p>
+</div>
+<div class="section" id="sorting-question">
+<h3>Sorting Question<a class="headerlink" href="#sorting-question" title="Permalink to this headline">¶</a></h3>
+<p>Question: Given this spreadsheet and sort order, what is the output?<br />
+<img src="../images/03Excel/SortingQ2.png" alt="SortingQ2" width="600" ><br />
+<img src="../images/03Excel/SortingQuestion.png" alt="SortingQuestion" width="100" ></p>
+<blockquote>
+<div><p>Clicker Question: Given this spreadsheet and sort order, what is the output?<br />
+<img src="../images/03Excel/SortingClickerQ.png" alt="SortingClickerQ" width="600" ></p>
+</div></blockquote>
+</div>
+<div class="section" id="id19">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Clicker Question: Given this spreadsheet and sort order, what is the output?<br />
+<img src="../images/03Excel/SortingClickerQ_answer.png" alt="SortingClickerQ_answer" width="600" ></p>
+</div></blockquote>
+</div>
+<div class="section" id="id20">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="sorting">
+<h3>Sorting<a class="headerlink" href="#sorting" title="Permalink to this headline">¶</a></h3>
+<p>If you want to make sorting on characters case sensitive, we need to select that in Options:</p>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/caseSensitive.png"><img alt="caseSensitive" src="notes/week02/../images/03Excel/caseSensitive.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="filtering-question">
+<h3>Filtering Question<a class="headerlink" href="#filtering-question" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 14</strong><br />
+Given this spreadsheet, how many of the sestatements are TRUE?<br />
+<img src="../images/03Excel/FilteringQ.png" alt="FilteringQ" width="300" ></p>
+<ol class="simple">
+<li><p>The data is sorted ascending by Number.</p></li>
+<li><p>Filter Number &gt; 3 shows 3 rows.</p></li>
+<li><p>Filter Letter &gt;= “c” shows 3 rows.</p></li>
+<li><p>Filter Number &lt; 3 ORLetter &gt; “b” shows 5 rows.<br />
+A) 0 B) 1 C) 2 D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id21">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 14</strong><br />
+Given this spreadsheet, how many of the sestatements are TRUE?<br />
+<img src="../images/03Excel/FilteringQ.png" alt="FilteringQ" width="300" ></p>
+<ol class="simple">
+<li><p>The data is sorted ascending by Number. :heavy_check_mark:</p></li>
+<li><p>Filter Number &gt; 3 shows 3 rows. :x:</p></li>
+<li><p>Filter Letter &gt;= “c” shows 3 rows. :heavy_check_mark:</p></li>
+<li><p>Filter Number &lt; 3 ORLetter &gt; “b” shows 5 rows. :heavy_check_mark:<br />
+A) 0 B) 1 C) 2 <strong>D) 3</strong> E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id22">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<p>N.B. The solution to the previous question required some <a class="reference external" href="https://www.ablebits.com/office-addins-blog/2016/09/07/excel-advanced-filter/">Advanced Filtering</a> options:</p>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/advancedFilter.png"><img alt="advancedFilter" src="notes/week02/../images/03Excel/advancedFilter.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="conclusion">
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h3>
+<p>Spreadsheets are general purpose tools for data analysis that consist of a table of cells which contain data and formulas.</p>
+<p>Formulas contain data values, cell references, and functions.</p>
+<ul class="simple">
+<li><p>Aggregate functions summarize multiple data values into a single value.</p></li>
+<li><p>Functions exist for statistics, string manipulation, lookup/indexing, and decisions.</p></li>
+</ul>
+</div>
+<div class="section" id="objectives">
+<h3>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Explain what a spreadsheet is.</p></li>
+<li><p>Explain how cells are addressed in a spreadsheet.</p></li>
+<li><p>List some of the ways to select cells in a spreadsheet.</p></li>
+<li><p>Define and explain: formula, function, argument, concatenation</p></li>
+<li><p>Use these functions: concatenate, lookup, index</p></li>
+<li><p>Explain the difference between an absolute and relative address.</p></li>
+<li><p>Explain how an aggregate function works. List some examples.</p></li>
+<li><p>Explain how to use conditional formatting.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="spreadsheets-microsoft-excel-part-2-of-3">
+<h2>Spreadsheets: Microsoft Excel Part 2 of 3<a class="headerlink" href="#spreadsheets-microsoft-excel-part-2-of-3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="charts">
+<h3>Charts<a class="headerlink" href="#charts" title="Permalink to this headline">¶</a></h3>
+<p>A <em>chart</em> is a graphical representation of spreadsheet data.</p>
+<p>Charts can help you visualize relationships between data and create maximum impact on your audience.</p>
+<p>When you create a chart, you can select from many chart types (eg, a stacked column chart or a 3-D exploded pie chart).</p>
+<p>To create a line/bar/pic/etc. chart, the user to supply the data that will be displayed.</p>
+<p>Once your data is selected, navigate to the <strong>Insert</strong> tab, then click the desired <strong>Chart</strong> Icon. You can either choose one from the <strong>Recommended Chart</strong> button or select from the variety of chart types.</p>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/barchart.png"><img alt="barchart" src="notes/week02/../images/03Excel/barchart.png" style="width: 800px;" /></a>
+<p>Sometimes the default graphic is not what we want,…</p>
+<p>For instance the recommended chart on the previous page shows an individual bar for each instance of the product type.</p>
+<p>We could instead create the total revenue for each product by selecting:</p>
+<ul class="simple">
+<li><p>The histogram icon <img src="../images/03Excel/histicon.png" alt="histicon" width="30" ></p></li>
+<li><p>Double clicking on the bars</p></li>
+<li><p>Selecting the Series Options icon: <img src="../images/03Excel/seriesopt.png" alt="seriesopt" height="30" ></p></li>
+<li><p>Selecting <em>By Category</em> in the <strong>Bins</strong> drop down menu.</p></li>
+</ul>
+</div>
+<div class="section" id="chart-options">
+<h3>Chart Options<a class="headerlink" href="#chart-options" title="Permalink to this headline">¶</a></h3>
+<p>After you create a chart, you can customize it by applying chart quick layouts or styles. The <strong>Chart Design</strong> tab also provides a number of features for modifying things like chart color/type/position/etc.</p>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/ChartTools2.png"><img alt="ChartTools2" src="notes/week02/../images/03Excel/ChartTools2.png" style="width: 800px;" /></a>
+<blockquote>
+<div><p><strong>Example 1</strong><br />
+Navigate to the <strong>Chart Design</strong> tab and relocate your chart to a new worksheet called <em>barchart</em>.</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/ChartTools2.png"><img alt="ChartTools2" src="notes/week02/../images/03Excel/ChartTools2.png" style="width: 800px;" /></a>
+</div>
+<div class="section" id="trendlines">
+<h3>Trendlines<a class="headerlink" href="#trendlines" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Trendlines can be easily added to a number of chart types.</p></li>
+<li><p>Click on chart, “Add Chart Element”….”Trendline”</p></li>
+</ul>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/trendline.png"><img alt="trendline" src="notes/week02/../images/03Excel/trendline.png" style="width: 800px;" /></a>
+<p>Trendlines can be easily added to any chart.</p>
+<ul class="simple">
+<li><p>Linear treadline for monthly revenue. Good choice?</p></li>
+</ul>
+<blockquote>
+<div><p>Probably not, as data appears to be seasonal
+<img src="../images/03Excel/trendline1.png" alt="Trendline1" width="300" > <img src="../images/03Excel/Trendlines2.png" alt="Trendlines2" width="300" ></p>
+</div></blockquote>
+</div>
+<div class="section" id="try-it-trendline">
+<h3>Try it! Trendline<a class="headerlink" href="#try-it-trendline" title="Permalink to this headline">¶</a></h3>
+<p>Of course it wouldn’t really make sense to add a linear trend to the previous line chart since the data do not appear linear.</p>
+<blockquote>
+<div><p>Apples</p>
+</div></blockquote>
+<ol class="simple">
+<li><p>Create a line chart that plots the revenue per month for only Apples using the Annual Sales data.</p></li>
+<li><p>Add a linear trendline.</p></li>
+<li><p>In Chart Design tab, select a design that displays the months on a 45 degree angle.</p></li>
+</ol>
+</div>
+<div class="section" id="try-it-chart">
+<h3>Try It: Chart<a class="headerlink" href="#try-it-chart" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Question:<br />
+Create a Pareto chart (option under the histogram icon) to make it easy to see the best selling product.<br />
+<img src="../images/03Excel/pareto.png" alt="pareto" width="800" ></p>
+</div></blockquote>
+</div>
+<div class="section" id="sparklines">
+<h3>Sparklines<a class="headerlink" href="#sparklines" title="Permalink to this headline">¶</a></h3>
+<p>A <em>sparkline</em> is a tiny chart in a worksheet cell for a quick data overview.</p>
+<ul class="simple">
+<li><p>Click Insert then select Sparklines…</p></li>
+<li><p>Displayed below is an example of a line and column sparkline.</p></li>
+<li><p>You can change the style in the Sparkline tab in the ribbon.<br />
+<img src="../images/03Excel/Sparklines.png" alt="Sparklines" width="800" ></p></li>
+</ul>
+</div>
+<div class="section" id="pivot-tabels">
+<h3>Pivot Tabels<a class="headerlink" href="#pivot-tabels" title="Permalink to this headline">¶</a></h3>
+<p><em>Pivot tables</em> allow for easily aggregating and exploring large data sets.</p>
+<ul class="simple">
+<li><p>For example, our data set can be summarized by revenue by month.<br />
+<img src="../images/03Excel/pivot.png" alt="pivot" width="800" ></p></li>
+</ul>
+</div>
+<div class="section" id="creating-a-pivot-table">
+<h3>Creating a Pivot Table<a class="headerlink" href="#creating-a-pivot-table" title="Permalink to this headline">¶</a></h3>
+<p>To create a pivot table</p>
+<ol class="simple">
+<li><p>Select the data (or click any single cell inside the data set).</p></li>
+<li><p>Navigate to the <strong>Insert</strong> tab, select the drop down <strong>Tables</strong> menu, and click the PivotTable icon.</p></li>
+<li><p>Click OK</p></li>
+<li><p>Add fields in the PivotTable Fields pane</p></li>
+</ol>
+<p><strong>Drag fields</strong> To get the total revenue for each month, drag the following fields to the different areas.</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Month</span></code> to the Rows area.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Revenue</span></code> to the Values area.</p></li>
+</ol>
+<p>The following dialog box appears. Excel automatically selects the data for you. The default location for a new pivot table is New Worksheet.<br />
+<img src="../images/03Excel/pivotOne.png" alt="pivotOne" width="800" ></p>
+<p><em>Pivot1</em> worksheet<br />
+<img src="../images/03Excel/pivot3.png" alt="pivot3" width="600" ><br />
+Add fields to pivot table.<br />
+Field may either be:</p>
+<ul class="simple">
+<li><p>ROWS value</p></li>
+<li><p>COLUMNS value</p></li>
+<li><p>Cell VALUES (aggregated)</p></li>
+<li><p>Used in a FILTERS (we could also filter using the drop down filter option; select the dropdown arrow located in cell A3, for example)<br />
+N.B Right click on a cell in the pivot table and select Show/Hide Fields List to show/hide the pop-up window on the right.</p></li>
+</ul>
+</div>
+<div class="section" id="pivot-table-example">
+<h3>Pivot Table Example<a class="headerlink" href="#pivot-table-example" title="Permalink to this headline">¶</a></h3>
+<p><em>Pivot2</em> worksheet<br />
+<img src="../images/03Excel/pivotExample.png" alt="pivotExample" width="600" ></p>
+<ul class="simple">
+<li><p>Categories are rows.</p></li>
+<li><p>Months are columns.</p></li>
+<li><p>Each cell is a sum of revenue per category for that month.</p></li>
+<li><p>We can filter on product (eg. filter out apples).</p></li>
+</ul>
+<p><em>Pivot3</em> worksheet<br />
+<img src="../images/03Excel/pivotThree.png" alt="pivotThree" width="600" ></p>
+<ul class="simple">
+<li><p>Notice that the same field can be used in VALUES multiple times</p></li>
+<li><p>In that way we can see multiple aggregate summaries (eg. total and count)</p></li>
+<li><p>To change the value aggregation function, click on the <img src="../images/03Excel/i.png" alt="i" width="30" > icon</p></li>
+<li><p>Notice that a field can NOT be used in ROWS/COLUMNS/FILTER at the same time.</p></li>
+</ul>
+</div>
+<div class="section" id="try-it-pivot-table">
+<h3>Try It: Pivot Table<a class="headerlink" href="#try-it-pivot-table" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Question:<br />
+Create a pivot table using the annual sales data that shows the total revenue per month by category/product.</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/TryItPivot.png"><img alt="TryItPivot" src="notes/week02/../images/03Excel/TryItPivot.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="pivot-charts">
+<h3>Pivot Charts<a class="headerlink" href="#pivot-charts" title="Permalink to this headline">¶</a></h3>
+<p>A pivot chart is a chart attached to a pivot table. Create it under <strong>Insert</strong> then <strong>Pivot Chart</strong>.
+<img src="../images/03Excel/pivChart.png" alt="pivChart" width="800" ></p>
+<p>Below we have chosen a 100% stacked bar chart type.<br />
+<img src="../images/03Excel/pivChart2.png" alt="pivChart2" width="800" ></p>
+</div>
+<div class="section" id="pivot-tables-question">
+<h3>Pivot Tables Question<a class="headerlink" href="#pivot-tables-question" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 2</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>A pivot table field can be used in ROWS and COLUMNS at the same time.</p></li>
+<li><p>A pivot table field can be used in VALUES more than once.</p></li>
+<li><p>In our sales spreadsheet example, if Product and Category are both used in ROWS then the order they are list does not matter.<br />
+A) 0 B) 1 C) 2 D) 3</p></li>
+</ol>
+</div>
+<div class="section" id="id23">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 2</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>A pivot table field can be used in ROWS and COLUMNS at the same time. :x:</p></li>
+<li><p>A pivot table field can be used in VALUES more than once. :heavy_check_mark:</p></li>
+<li><p>In our sales spreadsheet example, if Product and Category are both used in ROWS then the order they are list does not matter. :x:<br />
+A) 0 <strong>B) 1</strong> C) 2 D) 3</p></li>
+</ol>
+</div>
+<div class="section" id="id24">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="conditions-and-decisions">
+<h3>Conditions and Decisions<a class="headerlink" href="#conditions-and-decisions" title="Permalink to this headline">¶</a></h3>
+<p>A condition is an expression that is either TRUE or FALSE.</p>
+<p>Conditions are used to make decisions and perform different actions depending on the condition value.</p>
+<p>Excel condition and decision functions:<br />
+<code class="docutils literal notranslate"><span class="pre">FALSE()</span></code> returns FALSE<br />
+<code class="docutils literal notranslate"><span class="pre">TRUE()</span></code> returns TRUE<br />
+<code class="docutils literal notranslate"><span class="pre">AND(cond1,</span> <span class="pre">cond2)</span></code> returns TRUE if both cond1 and cond2 are true<br />
+<code class="docutils literal notranslate"><span class="pre">OR(cond1,</span> <span class="pre">cond2)</span></code> returns TRUE if either or both of cond1 and cond2 are true<br />
+<code class="docutils literal notranslate"><span class="pre">NOT(cond)</span></code> returns TRUE if cond is FALSE</p>
+</div>
+<div class="section" id="decisions-using-if">
+<h3>Decisions using IF()<a class="headerlink" href="#decisions-using-if" title="Permalink to this headline">¶</a></h3>
+<p>The IF() function is used to make a decision based on a condition</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">IF(condition,</span> <span class="pre">value_if_true,</span> <span class="pre">value_if_false)</span></code></p></li>
+</ul>
+<p>Example: If cell <strong>A2</strong> is less than 5, return 10 otherwise return 20.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"> <span class="pre">=</span> <span class="pre">IF(A2</span> <span class="pre">&lt;</span> <span class="pre">5,</span> <span class="pre">10,</span> <span class="pre">20)</span></code></p></li>
+</ul>
+<p>If the third argument is not specified, it’s default is FALSE()</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"> <span class="pre">=</span> <span class="pre">IF(A2</span> <span class="pre">&lt;</span> <span class="pre">5,</span> <span class="pre">10)</span> <span class="pre">returns</span> <span class="pre">FALSE()</span></code> if <strong>A2</strong> is ≥ 5</p></li>
+</ul>
+<p>The following statements are equivalent</p>
+<ul class="simple">
+<li><p>= IF(A2 &lt; 5, TRUE(), FALSE()) same as =A2 &lt; 5</p></li>
+</ul>
+<p>Hence if we just want to check if a condition is met, we don’t need the IF() function.</p>
+</div>
+<div class="section" id="try-it-if">
+<h3>Try it: <code class="docutils literal notranslate"><span class="pre">IF()</span></code><a class="headerlink" href="#try-it-if" title="Permalink to this headline">¶</a></h3>
+<p>Question: Create two conditions:</p>
+<ol class="simple">
+<li><p>If cell <strong>B2</strong> ≤ 10, then show <strong>C2</strong>, otherwise <strong>D2</strong>.</p></li>
+<li><p>If cell <strong>B2</strong>&lt; 15 and <strong>C2</strong>&gt; 20, return B2*C2, otherwise if D2 &lt; 10, return 1, else 4.<br />
+<img src="../images/03Excel/TryItIf2.png" alt="TryItIf2" width="600" ></p></li>
+</ol>
+</div>
+<div class="section" id="decision-using-if-question">
+<h3>Decision Using <code class="docutils literal notranslate"><span class="pre">IF()</span></code> Question<a class="headerlink" href="#decision-using-if-question" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 3</strong><br />
+How many of these statements are TRUE with <strong>A1</strong>=40, <strong>A2</strong>=10?</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">=AND(FALSE(),</span> <span class="pre">TRUE())</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">=OR(FALSE(),</span> <span class="pre">NOT(TRUE()))</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">=IF(A1=40,</span> <span class="pre">5,</span> <span class="pre">10)</span></code> returns 10.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">=IF(OR(A1=40,A2&gt;10),1,</span> <span class="pre">2)</span></code> returns 2.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">=IF(A2=10,IF(A1=40,FALSE()),TRUE())</span></code><br />
+A) 0 B) 1 C) 2 D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id25">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 3</strong><br />
+How many of these statements are TRUE with <strong>A1</strong>=40, <strong>A2</strong>=10?</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">=AND(FALSE(),</span> <span class="pre">TRUE())</span></code> :x:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">=OR(FALSE(),</span> <span class="pre">NOT(TRUE()))</span></code>  :x:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">=IF(A1=40,</span> <span class="pre">5,</span> <span class="pre">10)</span></code> returns 10.  :x:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">=IF(OR(A1=40,A2&gt;10),1,</span> <span class="pre">2)</span></code> returns 2.  :x:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">=IF(A2=10,IF(A1=40,FALSE()),TRUE())</span></code>  :x:<br />
+<strong>A) 0</strong> B) 1 C) 2 D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id26">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="what-if">
+<h3>What-If<a class="headerlink" href="#what-if" title="Permalink to this headline">¶</a></h3>
+<p><em>What-If</em> scenarios help understand different possibilities.<br />
+There are three kinds of What-If Analysis tools:<br />
+<strong>Scenarios</strong><br />
+<strong>Goal Seek</strong><br />
+<strong>Data Tables</strong><br />
+A what-if <em>scenario</em> is created under <strong>Data</strong> tab then <strong>What-If Analysis</strong> then <strong>Scenario Manager</strong>.</p>
+<p>To define a scenario, give it a name and list the cells that will change with this scenario.</p>
+<blockquote>
+<div><p>Tip
+It is usually a good idea to create a “Normal” scenario that you can go back to.</p>
+</div></blockquote>
+<p>Consider what happens with a cold winter and we predict to sell 50 jackets instead of the normal 15.<br />
+<img src="../images/03Excel/whatif1.png" alt="whatif1" width="300" >   <img src="../images/03Excel/whatif2.png" alt="whatif2" width="300" >  <img src="../images/03Excel/whatif3.png" alt="whatif3" width="300" ></p>
+<p>User can easily select scenario and see the result.<br />
+<img src="../images/03Excel/whatifexcel.png" alt="whatifexcel" width="600" > <img src="../images/03Excel/whatif2.png" alt="whatif2" width="300" ></p>
+</div>
+<div class="section" id="scenario-summary">
+<h3>Scenario Summary<a class="headerlink" href="#scenario-summary" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>After creating all of your scenarios, you can create a Scenario Summary Report.</p></li>
+<li><p>This report summaries how these scenarios impact a specified <strong>Result Cell</strong></p></li>
+<li><p>For instance, to see how the <em>Cold Winter</em> scenario affects total revenue when compared with the Normal
+1. go to the <strong>Data</strong> tab then <strong>What-If Analysis</strong> then <strong>Scenario Manager</strong>.
+2. Select <strong>Summary</strong> in the pop up window.
+3. Select the <strong>Scenario summary</strong> report type and specify the <strong>Result cell</strong> (the value of interest these scenarios will impact).</p></li>
+</ul>
+<p>A scenario report will display a summary in table form:<br />
+<img src="../images/03Excel/scwin.png" alt="scwin" width="200" > <img src="../images/03Excel/scsum.png" alt="scsum" width="400" ><br />
+<strong>Figure</strong>: Left: Step <strong>3</strong> from the previous slide. Right: the resulting Scenario Summary</p>
+</div>
+<div class="section" id="try-it-what-if">
+<h3>Try it: What-If<a class="headerlink" href="#try-it-what-if" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Question:<br />
+Create a what-if scenario that wherever chocolates are sold, the volume is double than normal. Examine how it affects our total revenue.<br />
+<img src="../images/03Excel/DoubleChocolate.png" alt="DoubleChocolate" width="600" ></p>
+</div></blockquote>
+</div>
+<div class="section" id="try-it-what-if-scenario-challenge">
+<h3>Try it: What-If Scenario Challenge<a class="headerlink" href="#try-it-what-if-scenario-challenge" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Question:<br />
+Create a what-if scenario in which all costs go up by 10% and volume down by 20%.<br />
+<img src="../images/03Excel/badcase.png" alt="badcase" width="600" ></p>
+</div></blockquote>
+</div>
+<div class="section" id="goal-seek-and-solver">
+<h3>Goal Seek and Solver<a class="headerlink" href="#goal-seek-and-solver" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Another way to ask Excel “what if” is by using the Goal Seek and Solver tools.</p></li>
+<li><p><em>Goal seek</em> is used to determine what <strong>value</strong> needs to be in an input cell to achieve a desired result in a formula cell.</p></li>
+<li><p><em>Solver</em> determines what <strong>values</strong> need to be in multiple input cells to achieve a desired result in a formula cell.
+- The Solver add-in is similar to Goal Seek, but it can accommodate more variables.</p></li>
+<li><p>These methods work to achieve a certain goal in the form of a formula output, while what-if scenarios looked at changing formula inputs.</p></li>
+</ul>
+</div>
+<div class="section" id="goal-seek">
+<h3>Goal Seek<a class="headerlink" href="#goal-seek" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Example: How many balls would we have to sell in January to have total revenue for first 3 months of $4000?</p>
+</div></blockquote>
+<ol class="simple">
+<li><p>Navigate to the <strong>Data</strong> tab, click <strong>What-If Analysis</strong>, and then click <strong>Goal Seek</strong>.</p></li>
+<li><p>In the <strong>Set cell</strong> box, enter the reference for the cell that contains the formula that you want to resolve, ie. <strong>G13</strong>.</p></li>
+<li><p>In the <strong>To value</strong> box, type the formula result that you want.<br />
+eg. 4000</p></li>
+<li><p>In the <strong>By changing</strong> cell box, enter the reference for the cell that contains the value that you want to adjust, ie, <strong>D4</strong><br />
+<img src="../images/03Excel/GoalSeek1.png" alt="GoalSeek1" width="800" ></p></li>
+</ol>
+<blockquote>
+<div><p>Answer: How many balls would we have to sell in January to have total revenue for first 3 months of $4000? Answer: 865
+<img src="../images/03Excel/GoalSeek2.png" alt="GoalSeek2" width="800" ></p>
+</div></blockquote>
+</div>
+<div class="section" id="add-ons">
+<h3>Add ons<a class="headerlink" href="#add-ons" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Goal Seek only allows a single input value, that is, we can only specify a single cell under the <em>By changing cell field</em>.</p></li>
+<li><p>In order to specify more than one input value we should instead use the Solver.</p></li>
+<li><p>To use the Solver Add-in, however, you first need to load it in Excel (<a class="reference external" href="https://support.microsoft.com/en-us/office/load-the-solver-add-in-in-excel-612926fc-d53b-46b4-872c-e24772f078ca?ui=en-us&amp;rs=en-us&amp;ad=us#OfficeVersion=Windows">click here</a> for instructions on Windows)
+1. On the <strong>Tools</strong> menu, select <strong>Excel Add-Ins</strong>.
+2. Select the <strong>Solver Add-in</strong> check box from the Add-Ins available box.<br />
+<img src="../images/03Excel/solveraddin.png" alt="solveraddin" width="200" ></p></li>
+<li><p>After you load the Solver add-in, the Solver button is available on the Data tab.</p></li>
+</ul>
+</div>
+<div class="section" id="solver">
+<h3>Solver<a class="headerlink" href="#solver" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Like Goal seek, Solver can be used to determine what values need to be changed to achieve a desired result. Unlike Goal seek, we can accommodate multiple cell values changing.</p></li>
+<li><p>In addition, rather than setting our desired result (called the objective cell) to a specific number, we could use Solver to find an optimal (maximum or minimum) value for a formula in one cell subject to certain constraints.</p></li>
+<li><p>Solver works with a group of cells, called decision variables.
+- These cells are necessarily inputs to the objective cell.
+- Solver adjusts these decision variable in order to obtain the desired result in your objective cell.</p></li>
+</ul>
+</div>
+<div class="section" id="solver-example">
+<h3>Solver Example<a class="headerlink" href="#solver-example" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>For example, lets assume that our final grades are calculated using the following breakdown:</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Assessment</p></th>
+<th class="head"><p>%</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Assignments</p></td>
+<td><p>10%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Midterm 1</p></td>
+<td><p>25%</p></td>
+</tr>
+<tr class="row-even"><td><p>Midterm 2</p></td>
+<td><p>25%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Exam</p></td>
+<td><p>40%</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Let’s assume we’ve already received 90% on the assignment component, 65% on midterm 1, and only midterm 2 and the exam remain.</p></li>
+<li><p>Let’s use Solver to determine a scenario in which our resulting final grade would be 75%.</p></li>
+</ul>
+<p>Consider the <em>Solver</em> starter worksheet on <strong>03ExcelPart2ii.xlsx</strong><br />
+<img src="../images/03Excel/solverF.png" alt="solverF" width="400" ></p>
+<ul class="simple">
+<li><p>Our final grade stored in <strong>D6</strong> is our objective cell.</p></li>
+<li><p><strong>B3</strong> and <strong>B5</strong> will be our decision variables.</p></li>
+<li><p>Notice how the calculation of D6 depends on <strong>B4</strong> and <strong>B5</strong>.</p></li>
+<li><p>Navigate to the <strong>Data</strong> tab and click on the Solver button.<br />
+<img src="../images/03Excel/addins.png" alt="addins" width="600" ></p></li>
+<li><p>Specify the objective cell, decision variables and any constraints in the the pop-up window.</p></li>
+<li><p>For this example our only constraints is that B3 and B5 must be <span class="math notranslate nohighlight">\(le; 100 and \)</span>ge; 0.<br />
+Sidenote other constraints include:<br />
+<strong>int</strong> Restricting cells to be an integer,<br />
+<strong>bin</strong> Restricting cells to be a binary digit (either 0 or 1)<br />
+<strong>dif</strong> Restrict cells to contain different (i.e. non-identical) value<br />
+<img src="../images/03Excel/solverparameters.png" alt="solverparameters" width="400" > <img src="../images/03Excel/solverresult.png" alt="solverresult" width="400" ></p></li>
+</ul>
+</div>
+<div class="section" id="id27">
+<h3>Solver<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
+<p>You may have noticed that there are three different solving methods using solver (as chosen in the <strong>Select a Solving Method</strong> drop-down menu:</p>
+<ol class="simple">
+<li><p>GRG Nonlinear</p></li>
+<li><p>Simplex LP</p></li>
+<li><p>Evolutionary.<br />
+A description of these methods are provided directly below the drop-down menu with further options available by clicking the <strong>Options</strong> button located to the right of this drop-down menu.
+If you are unsure which one to use, it is usually best to select the GRG Nonlinear engine.</p></li>
+</ol>
+</div>
+<div class="section" id="what-if-clicker-question">
+<h3>What-If Clicker Question<a class="headerlink" href="#what-if-clicker-question" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 4</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>We can only change a single cell in using Scenario Manager.</p></li>
+<li><p>We can only change a single cell in using Goal Seek.</p></li>
+<li><p>We can only change a single cell in using Solver. on the fitted line.<br />
+A) 0 B) 1 C) 2 D) 3</p></li>
+</ol>
+</div>
+<div class="section" id="id28">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 4</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>We can only change a single cell in using Scenario Manager. :x:</p></li>
+<li><p>We can only change a single cell in using Goal Seek. :heavy_check_mark:</p></li>
+<li><p>We can only change a single cell in using Solver. on the fitted line. :x:<br />
+A) 0 <strong>B) 1</strong> C) 2 D) 3</p></li>
+</ol>
+</div>
+<div class="section" id="id29">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="the-analysis-toolpak">
+<h3>The Analysis ToolPak<a class="headerlink" href="#the-analysis-toolpak" title="Permalink to this headline">¶</a></h3>
+<p>The <em>Analysis ToolPak</em> is an another Excel <em>add-in</em> that has a set of statistical and data analysis tools such as ANOVA, covariance, regression, and t-test.</p>
+<p>On a Windows: Analysis ToolPak is not installed by default.</p>
+<ul class="simple">
+<li><p>To install: <strong>File</strong> -&gt; <strong>Options</strong> -&gt; <strong>Add-Ins</strong></p></li>
+<li><p>Select <strong>Excel Add-ins</strong> in the <strong>Manage</strong>: box and select <strong>Go</strong> …</p></li>
+<li><p>Choose <strong>AnalysisToolPak</strong> and select OK</p></li>
+</ul>
+<p>On a mac: <strong>Tools</strong> –&gt; <strong>Excel Add-ins</strong> select AnalysisToolpak</p>
+</div>
+<div class="section" id="regression">
+<h3>Regression<a class="headerlink" href="#regression" title="Permalink to this headline">¶</a></h3>
+<p><em>Linear regression</em> models the relationship between a dependent variable Y and explanatory/independent variable(s) X.<br />
+Simple linear regression has one explanatory variable, X, and can be modelled using the equation<br />
+Y = β<sub>0</sub> + β<sub>1</sub>X + ε   (1)</p>
+<ul class="simple">
+<li><p>You can think of β<sub>0</sub> as the y-intercept (b) and β<sub>1</sub> as the slope (m) is an equation for a line y = m * x + b from high school.</p></li>
+<li><p>ε denotes the random error about the line which we cannot account for in our model<br />
+N.B. <em>Trend lines</em> are often calculated using linear regression.</p></li>
+<li><p>The technique provides a way to determine linear patterns in the data set.</p></li>
+<li><p>The so-called fitted model can be used to:
+1. determine the strength of the relationship between variables Y and X and/or
+2. predict the outcome variable Y for a new variable X.</p></li>
+<li><p>To address either of these points, we need the fitted model comprised of the estimates of the regression equation coefficients.</p></li>
+<li><p>β̂<sub>0</sub> and β̂<sub>1</sub> are the estimates for β̂<sub>0</sub> and β̂<sub>1</sub> respectively.</p></li>
+<li><p>the fitted line is given by Ŷ = β̂<sub>0</sub> + β̂<sub>1</sub>X</p></li>
+</ul>
+<blockquote>
+<div><p>N.B. To learn more on linear regression, I encourage you to take STAT 121/230 or read <a class="reference external" href="https://books.google.ca/books?id=i0DOBQAAQBAJ&amp;printsec=frontcover&amp;dq=Faraway%27s+Linear+Models+with+R+(2005,+p.+59).&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwinqMbTjq3iAhVhMX0KHedMCnkQ6AEIMjAB#v=onepage&amp;q&amp;f=false">Faraway’s Linear Models with R</a></p>
+</div></blockquote>
+</div>
+<div class="section" id="regression-in-excel-r-2-value">
+<h3>Regression in Excel- R^2 value<a class="headerlink" href="#regression-in-excel-r-2-value" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Regarding point 1. Excel regression function that will calculate R^2, the coefficient of determination which is a statistical measure of how close the data are to the fitted regression line.</p></li>
+<li><p>Mathematically speaking, this is the percentage of the variation in Y that is explained by a linear model.</p></li>
+<li><p>This range of this value is from 0–1.
+- A value of 0 indicates that the model explains none of the variability of the response data around its mean and
+- a value of 1 indicates that the model explains all the variability of the response data around its mean.</p></li>
+</ul>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/rsquared.png"><img alt="rsquared" src="notes/week02/../images/03Excel/rsquared.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="linear-regression-assumptions">
+<h3>Linear Regression assumptions<a class="headerlink" href="#linear-regression-assumptions" title="Permalink to this headline">¶</a></h3>
+<p>The legitimacy of this model depends on the following assumptions:</p>
+<ol class="simple">
+<li><p><strong>Linearity</strong>: The means of the values of X fall approximately on the straight line β<sub>0</sub> + β<sub>1</sub>X  for simple linear regression, fall approximately on the plane β<sub>0</sub> + β<sub>1</sub>X<sub>1</sub>; + β<sub>2</sub> X<sub>2</sub> for multiple linear regression, … (harder to visual in larger dimensions).</p></li>
+<li><p>The error terms ε ~<sup>i.i.d</sup> N(0; σ<sup>2</sup>). That is:
+- <strong>Normality</strong>: For each value of the explanatory variable (X) there is a subpopulation of response variables (Y ) that is normally distributed.
+- <strong>Constant variance (homoscedasticity)</strong>: All subpopulations have the same standard deviation σ<sup>2</sup>.
+- <strong>Independence</strong>: All observations are independent.<br />
+N.B. non-constant variance = heteroscedasticity</p></li>
+</ol>
+</div>
+<div class="section" id="regression-in-excel-testing-assumptions">
+<h3>Regression in Excel- Testing Assumptions<a class="headerlink" href="#regression-in-excel-testing-assumptions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>To check the <strong>linearity</strong> assumption for simple linear regression, it is always a good idea to plot your data in a scatterplot.</p></li>
+<li><p>To check the <strong>normality</strong> assumption, we can look at the <em>Normal Probability Plot</em> of residuals.
+- If the data are normal the points should form an approximate straight line.</p></li>
+<li><p>The <strong>constant variance</strong> assumption can be assessed using a <em>residual</em> plot (where a residual is the difference between our observed and predicted y, i.e. y<sub>i</sub> - ŷ<sub>i</sub> ).
+- A ‘good’ residual plot should show no pattern and look like random noise about 0.</p></li>
+<li><p>A pattern in the residual plot may suggests a violation of the <strong>independence</strong> assumption. Reason for this may include:
+- Time series data, related individuals (same family, same household).</p></li>
+</ul>
+</div>
+<div class="section" id="testing-assumptions-using-residual-plots">
+<h3>Testing Assumptions Using Residual Plots<a class="headerlink" href="#testing-assumptions-using-residual-plots" title="Permalink to this headline">¶</a></h3>
+<p><strong>Figure</strong>: Image taken from [Faraway’s Linear Models with R (2005, p. 59)](Figure: Image taken from Faraway’s Linear Models with R (2005, p. 59).).<br />
+<img src="../images/03Excel/resplot.png" alt="resplot" width="600" ></p>
+</div>
+<div class="section" id="testing-assumptions-using-normal-probability-plots">
+<h3>Testing Assumptions Using Normal Probability Plots<a class="headerlink" href="#testing-assumptions-using-normal-probability-plots" title="Permalink to this headline">¶</a></h3>
+<p><strong>Figure</strong>: The points on a “good” normal probability plots should fall approximately on a straight line. Images taken from <a class="reference external" href="https://www.slideshare.net/saqibshahzad26/26-assumptions">SlideShare</a><br />
+<img src="../images/03Excel/ppplot.png" alt="ppplot" width="600" ><br />
+<img src="../images/03Excel/notok.png" alt="notok" width="600" ></p>
+</div>
+<div class="section" id="regression-in-excel">
+<h3>Regression in Excel<a class="headerlink" href="#regression-in-excel" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><strong>Example:</strong><br />
+Given a data set of car weight and acceleration, determine if there is any relationship between them.<br />
+<img src="../images/03Excel/avsw2.png" alt="avsw2" width="600" ><br />
+Scatterplot shows weak relationship with no strong patterns, and we would expect to see this shown in the regression analysis.</p>
+</div></blockquote>
+<p>Regression computes constants m and b in formula:<br />
+acceleration = m*weight +b = β<sub>1</sub>*weight +β<sub>0</sub><br />
+Acceleration is the dependent variable and weight is the independent variable<br />
+<img src="../images/03Excel/Regression2.png" alt="Regression2" width="400" ><br />
+To start select, <strong>Data Analysis</strong> from the <strong>Data</strong> tab and then select <strong>Regression</strong> and <strong>OK</strong> .</p>
+</div>
+<div class="section" id="regression-example-settings">
+<h3>Regression Example Settings<a class="headerlink" href="#regression-example-settings" title="Permalink to this headline">¶</a></h3>
+<p>Settings:</p>
+<ul class="simple">
+<li><p>Response (dependent) data for the Input Y Range</p></li>
+<li><p>Columns for the explanatory (independent) data (X Range).</p></li>
+<li><p>For residual information select, Residuals,Standardized Residuals, and Residual Plots from the Residuals section.<br />
+<img src="../images/03Excel/RegressionSettings.png" alt="RegressionSettings" width="400" ><br />
+<img src="../images/03Excel/regpopup.png" alt="regpopup" width="400" ><br />
+If you select the column headers, be sure to select the Labels options to ensure they are treated as meta-data.<br />
+Notice that many of the features regarding the residuals are not selected by default.</p></li>
+</ul>
+</div>
+<div class="section" id="regression-example-results">
+<h3>Regression Example Results<a class="headerlink" href="#regression-example-results" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/RegressionResults.png"><img alt="RegressionResults" src="notes/week02/../images/03Excel/RegressionResults.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="notes/week02/../images/03Excel/RER1b.png"><img alt="RER1b" src="notes/week02/../images/03Excel/RER1b.png" style="width: 600px;" /></a>
+<p>All plots are placed to the right of the charts.<br />
+<img src="../images/03Excel/normalpp.png" alt="normalpp" width="600" ></p>
+<ul class="simple">
+<li><p>This is a “good” residual plot since it shows no obvious pattern and points are symmetrically distributed around a horizontal line with a roughly constant variance.</p></li>
+<li><p>The Normal Probability Plot shows some curvature in the tails indicating that the residuals are showing some departure from normality.</p></li>
+</ul>
+<p>As you can see, these are also the results obtained when fitting a trendline to the original scatterplot<br />
+<img src="../images/03Excel/trendlineinfo.png" alt="trendlineinfo" width="600" ></p>
+</div>
+<div class="section" id="try-it-regression">
+<h3>Try It: Regression<a class="headerlink" href="#try-it-regression" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Question:<br />
+Perform a regression analysis between weight (dependent) and displacement (independent) variable.<br />
+<img src="../images/03Excel/WvsD.png" alt="WvsD" width="600" ></p>
+</div></blockquote>
+<p><strong>Example 5</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>Regression can only be used when we have one dependent variable Y and one explanatory variable X.</p></li>
+<li><p>No assumptions are needed for the distribution of X in order to fit a linear regression model.</p></li>
+<li><p>Residual plots may be used to test linear model assumptions.</p></li>
+<li><p>A R2 value of 1 means that all points in our data set lie exactly on the fitted line.<br />
+A) 0 B) 1 C) 2 D) 3 E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id30">
+<h3>START SOLUTIONS HERE<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<p><strong>Example 5</strong><br />
+How many of the following statements are TRUE?</p>
+<ol class="simple">
+<li><p>Regression can only be used when we have one dependent variable Y and one explanatory variable X. :x:</p></li>
+<li><p>No assumptions are needed for the distribution of X in order to fit a linear regression model. :heavy_check_mark:</p></li>
+<li><p>Residual plots may be used to test linear model assumptions. :heavy_check_mark:</p></li>
+<li><p>A R2 value of 1 means that all points in our data set lie exactly on the fitted line. :heavy_check_mark:<br />
+A) 0 B) 1 C) 2 <strong>D) 3</strong> E) 4</p></li>
+</ol>
+</div>
+<div class="section" id="id31">
+<h3>END SOLUTIONS HERE<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id32">
+<h3>Conclusion<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
+<p><em>Spreadsheets</em> are general purpose tools for data analysis that consist of a table of cells which contain data and formulas.</p>
+<p>Formulas contain data values, cell references, and functions.</p>
+<ul class="simple">
+<li><p>Aggregate functions summarize multiple data values into a single value.</p></li>
+<li><p>Functions exist for statistics, string manipulation, lookup/indexing, and decisions.<br />
+Spreadsheets provide tools for data sorting, filtering, visualization using charts, and summarization (pivot tables).</p></li>
+</ul>
+<p>Also contain tools for what-if scenarios, goal seek, linear solvers, and statistical analysis tools.</p>
+</div>
+<div class="section" id="id33">
+<h3>Objectives<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Explain what a spreadsheet is.</p></li>
+<li><p>Explain how cells are addressed in a spreadsheet.</p></li>
+<li><p>List some of the ways to select cells in a spreadsheet.</p></li>
+<li><p>Define and explain: formula, function, argument, concatenation</p></li>
+<li><p>Use these functions: concatenate, lookup, index</p></li>
+<li><p>Explain the difference between an absolute and relative address.</p></li>
+<li><p>Explain how an aggregate function works. List some examples.</p></li>
+<li><p>Explain how to use conditional formatting.</p></li>
+<li><p>Use sorting and filtering.</p></li>
+<li><p>Be able to create and edit charts and use chart features: trendlines, sparklines</p></li>
+<li><p>Explain the usefulness of: what-if scenarios, goal seek, solver</p></li>
+<li><p>Use and create pivot tables and charts.</p></li>
+<li><p>Evaluate and create conditions. Use IF() to make decisions.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ubco-cmps/data301_course",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notes/week02"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Firas Moosvi & Patricia Lasserre<br/>
+        
+          <div class="extra_footer">
+            <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-168693744-4', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
