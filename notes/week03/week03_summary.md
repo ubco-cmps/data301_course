@@ -1,5 +1,7 @@
 (page_topic3)=
-Topic 3
+Week 3 Lecture Content
 =======================
 
-Notes about topic 3.
+Week 3 Lecture content will be published here shortly. 
+
+It will be on the Command Line and Jupyter Lab.
