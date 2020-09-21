@@ -19,7 +19,6 @@
       title: Introductions
     - file: notes/week02/week02_summary
       title: Week 2 - Introduction to Excel
-      expand_sections: true
       sections:
         - file: notes/week02/videos
         - file: notes/week02/Lecture2
@@ -31,15 +30,14 @@
               title: macOS
             - file: notes/week02/install_ds_stack_windows_part1
               title: Windows
-        - file: notes/week02/test
-    - file: class/week03/week03_summary
-      title: Week 3 - Excel analysis, Command Line, and Git
+    - file: notes/week03/week03_summary
+      title: Week 3 - Excel analysis and Command Line
       expand_sections: true
       sections:
         - file: notes/week03/videos
+        - file: notes/week03/lab1
         #- file: notes/week03/lecture
-        - file: notes/week03/lab3
-        - file: notes/week03/test        
+        #- file: notes/week03/test        
 
 - part: Course Feedback
   chapters:
