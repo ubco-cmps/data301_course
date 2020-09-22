@@ -112,9 +112,9 @@ The grading scheme for this course is:
 
 | Item               | Weight        | Due date(s)     |
 |--------------------|---------------|-----------------|
-| Lab Assignments    | 20% (10 x 2%) | TBD             |
-| Bi-weekly Tests    | 20% (5 x 4%)  | TBD             |
-| Project Milestones | 20% (5 x 4%)  | TBD             |
+| Lab Assignments    | 20% (10 x 2%) | Wednesdays the week after they were assigned |
+| Bi-weekly Tests    | 20% (5 x 4%)  | Thursday 6PM to Saturday at 6 PM             |
+| Project Milestones | 20% (5 x 4%)  | Friday at 6PM              |
 | Final Project      | 15%           | TBD             |
 | Final Exam         | 25%           | TBD (Take-home) |
 
