@@ -1,7 +1,8 @@
 (page_topic3)=
-Week 3 Lecture Content
+Week 3 Summary
 =======================
 
-Week 3 Lecture content will be published here shortly. 
-
-It will be on the Command Line and Jupyter Lab. 
+- [Watch course videos](./videos.md)
+- Attend Lab 1 (See Canvas for Collaborate Ultra Link)
+- [Complete Lab 1](./lab1.md)
+- [Attend Live lecture or watch video](./Lecture3.ipynb)

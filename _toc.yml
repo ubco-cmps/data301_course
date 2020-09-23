@@ -36,7 +36,8 @@
       sections:
         - file: notes/week03/videos
         - file: notes/week03/lab1
-        #- file: notes/week03/lecture
+        - file: notes/week03/Lecture3
+        
         #- file: notes/week03/test        
 
 - part: Course Feedback
