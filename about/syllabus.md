@@ -26,10 +26,10 @@ The [UBCO calendar description](http://www.calendar.ubc.ca/okanagan/courses.cfm?
 
 | Team Member                               | Pronounce as     | Contact   | Office Hour |
 |-------------------------------------------|------------------|-----------|-------------|
-| Dr. Firas Moosvi (he/his/him); Instructor | Fur-az Moose-vee | on Piazza | TBD         |
-| Roozbeh Eslami                            |                  | on Piazza | TBD         |
-| Biswapriyo (Bishwo) Chakrabarty           |                  | on Piazza | TBD         |
-| Amir Kalkhoran                            |                  | on Piazza | TBD         |
+| Dr. Firas Moosvi (he/his/him); Instructor | Fur-az Moose-vee | on Piazza | Wednesday 4:30 - 5:30 PM and Monday 5-6 PM |
+| Roozbeh Eslami                            |                  | on Piazza | Thursdays at 3 PM         |
+| Biswapriyo (Bishwo) Chakrabarty           |                  | on Piazza | Thursday at 8 AM        |
+| Amir Kalkhoran                            |                  | on Piazza | Friday at 7 AM         |
 
 
 ## Is this syllabus a contract? 
