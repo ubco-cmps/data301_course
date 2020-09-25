@@ -25,7 +25,5 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/fLVTxAdIFAw" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-[Lecture Slides](../../data_301_excel_analysis.pdf)
+[Lecture Slides](http://firas.moosvi.com/courses/data301/data_301_excel_intro_lecture2.pdf)
 ```
-
-... more coming soon
