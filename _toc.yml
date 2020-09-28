@@ -32,11 +32,24 @@
               title: Windows
     - file: notes/week03/week03_summary
       title: Week 3 - Excel analysis and Command Line
-      expand_sections: true
       sections:
         - file: notes/week03/videos
-        - file: notes/week03/lab1
         - file: notes/week03/Lecture3
+          title: Lecture 3
+        - file: notes/week03/lab1
+    - file: notes/week04/week04_summary
+      title: Week 4 - Introduction to Python
+      expand_sections: true
+      sections:
+        - file: notes/week04/videos
+        - file: notes/week04/Lecture4
+          title: Lecture 4
+        - file: notes/week04/lab
+          sections:
+            - file: notes/week02/install_ds_stack_mac_part1
+              title: macOS Part 2
+            - file: notes/week02/install_ds_stack_windows_part1
+              title: Windows Part 2
         
         #- file: notes/week03/test        
 

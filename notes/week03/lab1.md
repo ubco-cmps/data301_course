@@ -1,4 +1,4 @@
-Lab 1: Excel - Analyzing and Reporting Data
+Lab 1: Excel
 ===========================================
 
 ## Accept the lab
