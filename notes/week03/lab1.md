@@ -96,10 +96,10 @@ When complete, commit you changes to the remote repository (push all changes) an
 
 ### transform tab
 
-![lab1_transform.png](../images/lab1_transform.png?canvas_download=1)
+![lab1_transform.png](../../images/lab1_transform.png?canvas_download=1)
 
 ### chart sheet
 
-![lab1_chart.png](../images/lab1_chart.png?canvas_download=1)
+![lab1_chart.png](../../images/lab1_chart.png?canvas_download=1)
 
-![Histogram-boxplot.png](../images/Histogram-boxplot.png?canvas_download=1)
+![Histogram-boxplot.png](../../images/Histogram-boxplot.png?canvas_download=1)

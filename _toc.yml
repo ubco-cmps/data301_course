@@ -46,9 +46,9 @@
           title: Lecture 4
         - file: notes/week04/lab
           sections:
-            - file: notes/week02/install_ds_stack_mac_part1
+            - file: notes/week02/install_ds_stack_mac_part2
               title: macOS Part 2
-            - file: notes/week02/install_ds_stack_windows_part1
+            - file: notes/week02/install_ds_stack_windows_part2
               title: Windows Part 2
         
         #- file: notes/week03/test        
