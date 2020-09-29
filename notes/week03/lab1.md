@@ -84,22 +84,22 @@ When complete, commit you changes to the remote repository (push all changes) an
 
 ### rawdata sheet
 
-![lab1_rawdata.png](../images/lab1_rawdata.png?canvas_download=1)
+<img src="../../images/lab1_rawdata.png">
 
 ### data sheet
 
-![lab1_data.png](../images/lab1_data.png?canvas_download=1)
+<img src="../../images/lab1_data.png">
 
 ### summary sheet
 
-![lab1_summary.png](../images/lab1_summary.png?canvas_download=1)
+<img src="../../images/lab1_summary.png">
 
 ### transform tab
 
-![lab1_transform.png](../../images/lab1_transform.png?canvas_download=1)
+<img src="../../images/lab1_transform.png">
 
 ### chart sheet
 
-![lab1_chart.png](../../images/lab1_chart.png?canvas_download=1)
+<img src="../../images/lab1_chart.png">
 
-![Histogram-boxplot.png](../../images/Histogram-boxplot.png?canvas_download=1)
+<img src="../../images/Histogram-boxplot.png">
