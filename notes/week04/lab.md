@@ -4,6 +4,10 @@ After an admittedly stressful lab 1 in Excel, I thought it would be good to give
 
 This week, there are two tasks for you to do: continuing your machine set-up, and practicing the command-line through a game. 
 
+<div class="container youtube">
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/OrfFTdkghZ4" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 **This lab must be completed individually.**
 
 ## Accept the lab
@@ -17,7 +21,7 @@ To accept this lab on GitHub Classroom, [you must click this link](https://class
 - Create, modify, rename and delete files
 - Understand Git and Git fundamentals
 
-## Marking and Evaluation (15 marks)
+## Marking and Evaluation (20 marks)
 
 **Step 1: Accept the lab assignment**
 You can find the link to accept the lab on Canvas.
