@@ -5,7 +5,7 @@ After an admittedly stressful lab 1 in Excel, I thought it would be good to give
 This week, there are two tasks for you to do: continuing your machine set-up, and practicing the command-line through a game. 
 
 <div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/OrfFTdkghZ4" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/QtxwgG2u6Uc" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 **This lab must be completed individually.**
