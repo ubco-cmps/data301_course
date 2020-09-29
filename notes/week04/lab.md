@@ -6,6 +6,10 @@ This week, there are two tasks for you to do: continuing your machine set-up, an
 
 **This lab must be completed individually.**
 
+## Accept the lab
+
+To accept this lab on GitHub Classroom, [you must click this link](https://classroom.github.com/a/iswUpLNP).
+
 ## Objectives
 
 - Practice with command-line interfaces
@@ -149,8 +153,7 @@ git push
 
 #### 6. Submit the link to your GitHub.com repo to Canvas
 
-You're done! 
-
+You're done!
 
 ## Attribution
 
