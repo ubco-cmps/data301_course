@@ -1,17 +1,49 @@
 # Lab 2 - Command Line Practice
 
+After an admittedly stressful lab 1 in Excel, I thought it would be good to give you a nice treat with Lab 2. 
+
 This week, there are two tasks for you to do: continuing your machine set-up, and practicing the command-line through a game. 
 
-## Part 1: Setting up Python and Jupyter Lab (30%)
+**This lab must be completed individually.**
+
+## Objectives
+
+- Practice with command-line interfaces
+- Create and navigate directories
+- Create, modify, rename and delete files
+- Understand Git and Git fundamentals
+
+## Marking and Evaluation (15 marks)
+
+**Step 1: Accept the lab assignment**
+You can find the link to accept the lab on Canvas.
+
+**Step 2: Clone the repository on your local computer and navigate to that directory**
+
+As with Lab 1, you will need to clone the GitHub repository somewhere locally.
+The steps to do this are:
+
+1. `cd /path/to/where/you/want/labs`
+2. `git clone https://github.com/data301-2020-winter1/lab2-yourUserName`
+
+## Part 1: Setting up Python and Jupyter Lab (30% - 6 marks)
 
 Below are the instructions for you to continue installing software on your system. We will need this for the first python lecture this week.
 
 - [macOS Part 2](install_ds_stack_mac_part2.md)
 - [Windows Part 2](install_ds_stack_windows_part2.md)
 
-At the end, please include a screenshot of a working Jupyter Lab session locally on your computer with a python kernel to get full marks for this portion.
+At the end, please include a screenshot of a Terminal window, running a Jupyter Lab session locally on your computer, with a Python 3 kernel to get full marks for this portion.
 
-## Part 2: Practicing with Command Line (70%)
+Add the screenshot to the repository (remember to fix the name and add your own commit message):
+
+```
+git add screenshot.png
+git commit -m "Added Jupyter Lab screenshot"
+git push
+```
+
+## Part 2: Practicing with Command Line (70% - 14 marks)
 
 This will be updated soon with a video from me guiding you through a game called `Dashcrawl`.
 Stay tuned...
@@ -118,3 +150,10 @@ git push
 #### 6. Submit the link to your GitHub.com repo to Canvas
 
 You're done! 
+
+
+## Attribution
+
+The `bashcrawl` game was adapted from `@slackermedia` on GitLab.
+FULL Credit for the game goes to [Seth Kenlon](http://slackermedia.info/about/).
+The link to the game source code is [here](https://gitlab.com/slackermedia/bashcrawl).
