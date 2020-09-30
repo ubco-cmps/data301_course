@@ -25,4 +25,13 @@ Source: https: //www.w3schools.com/howto/howto_css_responsive_iframes.asp
 
 .dropdown-margin {
     margin: 0;
+    position: relative;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    /* Safari */
+    position: fixed;
+    top: 200px;
+    width: 300px;
 }
