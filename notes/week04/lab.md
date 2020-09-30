@@ -4,10 +4,6 @@ After an admittedly stressful lab 1 in Excel, I thought it would be good to give
 
 This week, there are two tasks for you to do: continuing your machine set-up, and practicing the command-line through a game. 
 
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/QtxwgG2u6Uc" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 **This lab must be completed individually.**
 
 ## Accept the lab
@@ -53,8 +49,11 @@ git push
 
 ## Part 2: Practicing with Command Line (70% - 14 marks)
 
-This will be updated soon with a video from me guiding you through a game called `Dashcrawl`.
-Stay tuned...
+Here is a guide to the first few steps of the activity.
+
+<div class="container youtube">
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/QtxwgG2u6Uc" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Here is a guide to the first few steps of the activity.
 
@@ -153,7 +152,7 @@ Run the following commands in your Terminal:
 
 ```
 git add .
-git commit -m "Added my dungeon map"
+git commit -m "Added my dungeon history"
 git push
 ```
 

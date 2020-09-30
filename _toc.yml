@@ -42,6 +42,9 @@
       expand_sections: true
       sections:
         - file: notes/week04/videos
+          sections:
+            - file: notes/week04/python1
+            - file: notes/week04/python2
         - file: notes/week04/Lecture4
           title: Lecture 4
         - file: notes/week04/lab
