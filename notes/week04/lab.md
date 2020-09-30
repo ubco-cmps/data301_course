@@ -117,6 +117,8 @@ git push
 
 #### 2. Run `tree`, and save the output to a file:
 
+**Update**: This has been made optional because it's not trivial to install `tree` on Windows. [This Piazza post](https://piazza.com/class/keqqsay6su15ea?cid=90) has some directions if you're interested in installing it.
+
 You may need to install tree (if you didn't already do it in the dungeon) with: `conda install -c conda-forge tree`
 
 ```
@@ -143,7 +145,7 @@ If there is, you can simply edit file or remove that command.
 **Note: Just because we're asking for the last 100 commands doesn't mean that we expect you to have 100 commands, you may have less and you may have more. That's fine.**
 
 ```
-history -100 > dungeonHistory.md
+history 100 > dungeonHistory.md
 ```
 #### 5. Commit the dungeon history to your repository 
 
