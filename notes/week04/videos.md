@@ -27,7 +27,6 @@ width: 750px
 name: MCL Python
 ---
 ```
-<a href="https://prog-learn.mds.ubc.ca/en"></a>
 
 ## Required Videos - Intermediate or Advanced Track
 
