@@ -8,9 +8,13 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 ```{admonition} Checklist of items
 :class: tip
 
-<input type="checkbox" id="week04_video1" class="box"><label>Python I</input></label>
+<input type="checkbox" id="week04_video1" class="box"><label>Python I - Basic</input></label>
 
-<input type="checkbox" id="week04_video2" class="box"><label>Python II</input></label>
+<input type="checkbox" id="week04_video2" class="box"><label>Python II - Basic </input></label>
+
+<input type="checkbox" id="week04_video3" class="box"><label>Python I - Intermediate</input></label>
+
+<input type="checkbox" id="week04_video4" class="box"><label>Python II - Intermediate</input></label>
 
 ```
 ````
@@ -29,7 +33,7 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 
 [The beginner track can be accessed here]().
 
-You should complete Module 1 and try to get through Module 5 before next week.
+You should complete Module 1 and try to get through Module 2 before next week.
 
 
 ## Required Videos - Intermediate or Advanced Track
