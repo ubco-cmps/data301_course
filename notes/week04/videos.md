@@ -17,16 +17,20 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 
 ## Required Videos - Beginner Track
 
-[The beginner track can be accessed here](https://prog-learn.mds.ubc.ca/en).
+```{dropdown} 1. Module 1 and 2
+    :container: + shadow
+    :title: bg-info text-white font-weight-bold
+    :open:
 
-You should complete Module 1 and try to get through half of Module 2 before next week.
+<img src="../../images/pythonMCL.png">
 
-```{figure} ../../images/pythonMCL.png
----
-width: 750px
-name: MCL Python
----
+[Lecture Notes](https://prog-learn.mds.ubc.ca/en)
 ```
+
+[The beginner track can be accessed here]().
+
+You should complete Module 1 and try to get through Module 5 before next week.
+
 
 ## Required Videos - Intermediate or Advanced Track
 
