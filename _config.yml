@@ -42,5 +42,6 @@ sphinx:
     html_extra_path: ['files']
   extra_extensions:
     - sphinx_thebe
+    
 parse:
   myst_extended_syntax: true

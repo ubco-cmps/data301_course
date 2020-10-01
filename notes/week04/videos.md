@@ -19,7 +19,12 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 The beginner track can be accessed:
 
 <a href="https://prog-learn.mds.ubc.ca/en">
-<img src="../../images/pythonMCL.png" width="600px">
+```{figure} ../../images/pythonMCL.png
+---
+width: 750px
+name: MCL Python
+---
+```
 </a>
 
 ## Required Videos - Intermediate or Advanced Track
