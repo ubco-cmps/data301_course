@@ -9,6 +9,7 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 :class: tip
 
 <input type="checkbox" id="week04_video1" class="box"><label>Python I</input></label>
+
 <input type="checkbox" id="week04_video2" class="box"><label>Python II</input></label>
 
 ```
@@ -16,16 +17,17 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 
 ## Required Videos - Beginner Track
 
-The beginner track can be accessed:
+[The beginner track can be accessed here](https://prog-learn.mds.ubc.ca/en).
 
-<a href="https://prog-learn.mds.ubc.ca/en">
+You should complete Module 1 and try to get through half of Module 2 before next week.
+
 ```{figure} ../../images/pythonMCL.png
 ---
 width: 750px
 name: MCL Python
 ---
 ```
-</a>
+<a href="https://prog-learn.mds.ubc.ca/en"></a>
 
 ## Required Videos - Intermediate or Advanced Track
 
