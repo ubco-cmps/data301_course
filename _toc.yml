@@ -41,12 +41,13 @@
       title: Week 4 - Introduction to Python
       expand_sections: true
       sections:
+        - file: notes/week04/Lecture4
+          title: Lecture 4
         - file: notes/week04/videos
+          expand_sections: false
           sections:
             - file: notes/week04/python1
             - file: notes/week04/python2
-        - file: notes/week04/Lecture4
-          title: Lecture 4
         - file: notes/week04/lab
           sections:
             - file: notes/week02/install_ds_stack_mac_part2
