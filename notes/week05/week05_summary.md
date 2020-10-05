@@ -1,5 +1,5 @@
 (page_topic5)=
-Topic 5
+Lecture 5
 =======================
 
-Notes about topic 5.
+Programming in Python
