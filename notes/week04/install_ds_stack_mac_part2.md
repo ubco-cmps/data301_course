@@ -29,7 +29,7 @@ Oh My Zsh is installed by running the following command in your Terminal:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-You may now customize your Terminal with themes by [following the directions here](sh -c "https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme".
+You may now customize your Terminal with themes by [following the directions here]("https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme"].
 
 ### Setting VS Code as the default editor
 
