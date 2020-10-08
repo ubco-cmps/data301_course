@@ -44,7 +44,7 @@ You should complete Module 3,4,5 before next week.
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/26YFLyMxXQ0" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-[Lecture Notes](https://firas.moosvi.com/courses/data301/notes/week04/python3.html)
+[Lecture Notes](https://firas.moosvi.com/courses/data301/notes/week05/python3.html)
 ```
 
 ```{dropdown} 2. Python IV
@@ -56,5 +56,5 @@ You should complete Module 3,4,5 before next week.
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/J0s7mogIhQM" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-[Lecture Notes](https://firas.moosvi.com/courses/data301/notes/week04/python2.html)
+[Lecture Notes](https://firas.moosvi.com/courses/data301/notes/week05/python4.html)
 ```
