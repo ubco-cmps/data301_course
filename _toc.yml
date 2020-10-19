@@ -13,7 +13,12 @@
     - file: getting-started/todo_list
       title: Things to do before start of course
 
-- part: Part 1 - Setting up
+- part: Course Project
+  chapters:
+    - file: project/milestone01
+      title: Milestone 1 - Dataset
+
+- part: Part 1 - Setting up and Excel
   chapters:
     - file: notes/week01/week01_summary
       title: Introductions
@@ -37,13 +42,15 @@
         - file: notes/week03/Lecture3
           title: Lecture 3
         - file: notes/week03/lab1
+
+- part: Part 2 - Python
+  chapters:
     - file: notes/week04/week04_summary
       title: Week 4 - Introduction to Python
       sections:
         - file: notes/week04/Lecture4
           title: Lecture 4
         - file: notes/week04/videos
-          expand_sections: false
           sections:
             - file: notes/week04/python1
             - file: notes/week04/python2
@@ -55,13 +62,21 @@
               title: Windows Part 2
     - file: notes/week05/week05_summary
       title: Week 5 - Programming in Python
-      expand_sections: true
       sections:
         - file: notes/week05/videos
         - file: notes/week05/Lecture5
           title: Lecture 5
-        - file: notes/week05/lab     
-
+        - file: notes/week05/lab    
+    - file: notes/week06/week06_summary
+      title: Week 6 - Week off!
+    - file: notes/week07/week07_summary
+      title: Week 7 - Data analysis in Python
+      expand_sections: true
+      sections:
+        - file: notes/week07/videos
+        - file: notes/week07/Lecture7
+        - file: project/milestone01
+          title: Milestone 1 released
 - part: Course Feedback
   chapters:
     - file: about/feedback
@@ -111,7 +126,3 @@
 #     - file: notes/labs
 #       title: Lab Stuff
 
-# - part: Final Project
-#   chapters:
-#     - file: notes/project
-#       title: Final Project

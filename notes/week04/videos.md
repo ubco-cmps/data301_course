@@ -30,11 +30,9 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 
 [Lecture Notes](https://prog-learn.mds.ubc.ca/en)
 ```
-
-[The beginner track can be accessed here]().
+[The beginner track can be accessed here](https://prog-learn.mds.ubc.ca/en).
 
 You should complete Module 1 and try to get through Module 2 before next week.
-
 
 ## Required Videos - Intermediate or Advanced Track
 

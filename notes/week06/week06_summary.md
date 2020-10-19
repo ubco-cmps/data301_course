@@ -1,5 +1,5 @@
 (page_topic6)=
-Topic 6
+Week 6
 =======================
 
-Notes about topic 6.
+There was no new content in Week 6.
