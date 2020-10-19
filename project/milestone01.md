@@ -184,6 +184,10 @@ Commit and push your changes often while you work to stay in sync.
 
 You should try to reach out to your teammates as soon as possible, Discord is a good choice, or Piazza, or via Canvas messages.
 
+Individual or Solo projects also have a "group number" for marking purposes.
+Everyone that has a 3 digit Group number is doing their projects solo.
+Actual "Groups" are at the bottom, in group numbers 6000 and above.
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
