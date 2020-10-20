@@ -29,7 +29,7 @@ Here is a 3-minute video on how to accept your GitHub Classroom group assignment
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/QxrA3taZdNM" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-- Accept the [Milestone 1 GitHub Classroom Group Project]() (this will be released in a few days after the groups are confirmed)
+- Accept the [Template Project group assignment](https://classroom.github.com/g/u_qE4Ryq)
 - I suggest you try working in `repl.it` for collaboratively editing your READMEs, but for now, work in your own Jupyter Notebooks
 - If you are working individually, name your team as "solo_###" where ### is the Group Number found at the end of this file
 - If you are working in a group of 3, first look to see if someone from your group has already created a team, look for `group_####`. If you see it, join that team.
