@@ -18,6 +18,11 @@
     - file: project/milestone01
       title: Milestone 1 - Dataset
 
+- part: Labs
+  chapters:
+    - file: notes/labs
+      title: Lab Links and Solutions
+
 - part: Part 1 - Setting up and Excel
   chapters:
     - file: notes/week01/week01_summary
@@ -77,10 +82,24 @@
         - file: notes/week07/Lecture7
         - file: project/milestone01
           title: Milestone 1 released
+    - file: notes/week08/week08_summary
+      title: Week 8 - Introduction to Data Visualization
+      expand_sections: true
+      sections:
+        - file: notes/week08/videos
+        - file: notes/week08/Seaborn_tutorial
+          title: Seaborn Tutorial
+        - file: notes/week08/Lecture8
+        - file: project/milestone02
+          title: Milestone 2 released
+        - file: notes/week08/lab4
+          title: Lab 4
+
 - part: Course Feedback
   chapters:
     - file: about/feedback
       title: Anonymous Feedback Form
+
 
 # - part: Part 1
 #   chapters:
@@ -120,9 +139,4 @@
 #       #
 #     - file: notes/midterm1-review
 #       title: Review
-
-# - part: Lab Materials
-#   chapters:
-#     - file: notes/labs
-#       title: Lab Stuff
 

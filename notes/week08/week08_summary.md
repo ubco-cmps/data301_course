@@ -1,5 +1,5 @@
 (page_topic8)=
-Topic 8
+Introduction to Data Visualization
 =======================
 
-Notes about topic 8.
+This week in class we will go through principles of effective visualizations, as well as the [`seaborn` visualization module](http://seaborn.pydata.org).
