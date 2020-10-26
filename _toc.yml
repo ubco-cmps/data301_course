@@ -76,7 +76,6 @@
       title: Week 6 - Week off!
     - file: notes/week07/week07_summary
       title: Week 7 - Data analysis in Python
-      expand_sections: true
       sections:
         - file: notes/week07/videos
         - file: notes/week07/Lecture7

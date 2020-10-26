@@ -15,5 +15,6 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 </div>
 
 [Companion Notebook](https://firas.moosvi.com/courses/data301/notes/week08/Seaborn_tutorial.html)
+
 [More of Derek's videos](https://www.youtube.com/channel/UCwRXb5dUK4cvsHbx-rGzSgw)
 ```
