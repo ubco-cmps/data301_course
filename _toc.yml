@@ -93,7 +93,7 @@
         - file: notes/week08/lab4
           title: Lab 4
     - file: notes/week09/week09_summary
-      title: Week 9 - Git (Lab 5) and Data Visualization with Seaborn (Lab 6) 
+      title: Week 9 - Git and Visualization with Seaborn
       expand_sections: true
       sections:
         - file: notes/week09/videos
