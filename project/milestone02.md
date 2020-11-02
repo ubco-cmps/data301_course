@@ -52,7 +52,7 @@ I am expecting everyone to get 100% on this task!
 ## Task 2: Introduction to Git merges, branches, and more (0%)
 
 After many years of searching, I have found the [**PERFECT** tutorial](http://learngitbranching.js.org) to help you get more familiar with git commands, particularly branching, and merging - things you will start encountering when you start collaboratively working on the projects.
-Rather than make this a milestone task though, I will be including it as part of Lab 5.
+Rather than make this a milestone task though, I will be including it as Lab 5.
 It's included here so you know that you should do this part of the lab before proceeding to Task 3 onwards.
 You are responsible for completing the following modules (at minimium):
 
