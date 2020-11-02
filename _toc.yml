@@ -17,6 +17,8 @@
   chapters:
     - file: project/milestone01
       title: Milestone 1 - Dataset
+    - file: project/milestone02
+      title: Milestone 2 - Data Analysis and Git
 
 - part: Labs
   chapters:
@@ -83,16 +85,24 @@
           title: Milestone 1 released
     - file: notes/week08/week08_summary
       title: Week 8 - Introduction to Data Visualization
-      expand_sections: true
       sections:
         - file: notes/week08/videos
         - file: notes/week08/Seaborn_tutorial
           title: Seaborn Tutorial
         - file: notes/week08/Lecture8
-        - file: project/milestone02
-          title: Milestone 2 released
         - file: notes/week08/lab4
           title: Lab 4
+    - file: notes/week09/week09_summary
+      title: Week 9 - Git (Lab 5) and Data Visualization with Seaborn (Lab 6) 
+      expand_sections: true
+      sections:
+        - file: notes/week09/videos
+        - file: project/milestone02
+          title: Milestone 2 released
+        - file: notes/week09/lecture
+        - file: notes/week09/lab
+          title: Lab 5 and 6
+
 
 - part: Course Feedback
   chapters:
