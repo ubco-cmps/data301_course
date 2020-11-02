@@ -70,7 +70,7 @@ You are responsible for completing the following modules (at minimium):
   - Exercise 5
   - Exercise 6
   - Exercise 7
-  - Exercise 7
+  - Exercise 8
 
 <img src="project-images/git_tutorial1.png" width="300px">
 <img src="project-images/git_tutorial2.png" width="300px">

@@ -3,7 +3,7 @@ title: DATA 301
 author: Firas Moosvi
 logo: images/logo.jpg
 copyright: ""
-exclude_patterns: ["LICENSE.md", "README.md", "source material","unused/*"]
+exclude_patterns: ["LICENSE.md", "README.md", "source material","unused/*", "binary files/*"]
 
 latex:
   latex_documents:
