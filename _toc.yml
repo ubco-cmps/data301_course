@@ -100,15 +100,13 @@
         - file: project/milestone02
           title: Milestone 2 released
         - file: notes/week09/lecture
-        - file: notes/week09/lab
+        - file: notes/week09/lab6
           title: Lab 5 and 6
-
 
 - part: Course Feedback
   chapters:
     - file: about/feedback
       title: Anonymous Feedback Form
-
 
 # - part: Part 1
 #   chapters:
