@@ -6,3 +6,5 @@ ghp-import
 sphinx-thebe
 pandas
 plotly
+seaborn
+pandas_profiling
