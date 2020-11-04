@@ -13,7 +13,7 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/LIgiOIlD8Cs" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-[Companion Slides](https://firas.moosvi.com/data301/Lecture9A_Communicating Analyses.pdf)
+[Companion Slides](https://firas.moosvi.com/data301/Lecture9A_Communicating_Analyses.pdf)
 ```
 
 ```{dropdown} Deeper dive into GroupBy
