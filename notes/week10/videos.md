@@ -13,13 +13,22 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
     :open:
 
 <div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/LIgiOIlD8Cs" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/jVdLoRJNSkc" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 [Companion Slides](https://firas.moosvi.com/data301/Lecture9A_Communicating_Analyses.pdf)
 ```
 
-## Optional Videos
+## Optional Resources
+
+Below are some optional resources if you're interested.
+
+### Full Tutorial 
+
+The full guide and tutorial to Tableau in tutorial form is [linked here](https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.htm). 
+This tutorial walks you through, from start to finish, through every interface element of the Tableau interface.
+
+### Alternate Video
 
 In case you want an 'alternate' video on the basics of Tableau, here is one I recommend based on the `titanic` dataset.
 
