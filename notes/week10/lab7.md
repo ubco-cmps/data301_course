@@ -12,10 +12,9 @@ This lab uses Tableau to visualize, analyze, and explore data sets. **This lab s
 ## Objectives
 
 1.  Explore the capabilities of Tableau for importing, formatting, and visualizing data sets.
-2.  Visualize data from an Excel spreadsheet including using bar charts, line charts, maps, and trend lines.
-3.  Connect to and retrieve data from a relational database.
-4.  Apply filtering, sorting, and aggregation in visualizations.
-5.  Create dashboards consisting of multiple related visualizations.
+1.  Visualize data from an Excel spreadsheet including using bar charts, line charts, maps, and trend lines.
+1.  Apply filtering, sorting, and aggregation in visualizations.
+1.  Create a dashboard consisting of multiple related visualizations.
 
 ## Installing Tableau
 
@@ -43,7 +42,6 @@ with minimal data wrangling done by the R package [DatateachR](https://github.co
 1. Locate the data and click "**Open**". This should connect your data and you should see a table. (You may need to click the "**Update Now**" button at the bottom)
 1. You can choose to rename your data source by clicking the title at the top.
 1. To start creating plots you can click "**Sheet 1**" at the bottom left of the window. 
-
 
 ### A2. Set the data types for the columns (2 marks)
 
