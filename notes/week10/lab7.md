@@ -1,5 +1,7 @@
 # DATA 301 Lab 7 - Visualization with Tableau
 
+Accept [lab 7 here](https://classroom.github.com/a/IN1wVevb).
+
 ## Instructions
 
 For this lab, the instructions are in this README file.
