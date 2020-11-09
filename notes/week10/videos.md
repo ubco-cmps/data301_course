@@ -16,7 +16,7 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/jVdLoRJNSkc" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-[Companion Slides](https://firas.moosvi.com/data301/Lecture9A_Communicating_Analyses.pdf)
+[Companion Slides](https://docs.google.com/presentation/d/1rTyl5_-MAjgimppsRoRSwzDqFY7bZsA4xO-Q4H6omZw/edit?ts=5ecc2dd0#slide=id.g88016e6d55_1_0)
 ```
 
 ## Optional Resources
