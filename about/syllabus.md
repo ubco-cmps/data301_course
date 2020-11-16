@@ -24,12 +24,12 @@ The [UBCO calendar description](http://www.calendar.ubc.ca/okanagan/courses.cfm?
 
 ## Contact the Teaching Team
 
-| Team Member                               | Pronounce as     | Contact   | Office Hour |
-|-------------------------------------------|------------------|-----------|-------------|
+| Team Member                               | Pronounce as     | Contact   | Office Hour                                |
+|-------------------------------------------|------------------|-----------|--------------------------------------------|
 | Dr. Firas Moosvi (he/his/him); Instructor | Fur-az Moose-vee | on Piazza | Wednesday 4:30 - 5:30 PM and Monday 5-6 PM |
-| Roozbeh Eslami                            |                  | on Piazza | Thursdays at 3 PM         |
-| Biswapriyo (Bishwo) Chakrabarty           |                  | on Piazza | Thursday at 8 AM        |
-| Amir Kalkhoran                            |                  | on Piazza | Friday at 7 AM         |
+| Roozbeh Eslami                            |                  | on Piazza | Thursdays at 3 PM                          |
+| Biswapriyo (Bishwo) Chakrabarty           |                  | on Piazza | Thursday at 8 AM                           |
+| Amir Kalkhoran                            |                  | on Piazza | Friday at 7 AM                             |
 
 
 ## Is this syllabus a contract? 
@@ -57,27 +57,28 @@ I invite you to be co-contributors to this syllabus, and use the tools provided 
 
 Any major changes to the syllabus (this page) will be documented here as well as the date the change was made. 
 
-| Change Date | Summary | Rationale |
-|-------------|---------|-----------|
-| September 16, 2020 | Increased project weight to 15% | To make things add up to 100 |
-| September 12, 2020         | Added TAs and clarified dates     | Requests from Associate Dean       |
-| October 13, 2020 | Changed from 5 milestones to 4 | Milestone 1 and 2 are combined together |
+| Change Date        | Summary                                                        | Rationale                               |
+|--------------------|----------------------------------------------------------------|-----------------------------------------|
+| September 16, 2020 | Increased project weight to 15%                                | To make things add up to 100            |
+| September 12, 2020 | Added TAs and clarified dates                                  | Requests from Associate Dean            |
+| October 13, 2020   | Changed from 5 milestones to 4                                 | Milestone 1 and 2 are combined together |
+| November 16, 2020  | Made Lab 8,9 optional, removed Test 5; adjusted grading scheme | Based on Student experience survey      |
 
 ## About this course
 
-| Name                   | Description                                    |
-|------------------------|------------------------------------------------|
-| Course                 | DATA 301, COSC 301, DATA 501                   |
-| Term                   | 2020/21 Winter Term 1                          |
-| Pre-requisites         | 3rd year status or COSC 111, 122               |
-| Co-requisites          | N/A                                            |
-| Additional course fees | None                                           |
-| Weekly meetings        | Wednesdays 15:30-16:30 on Zoom                 |
-| Lectures               | Online                                         |
-| Laboratory             | You **must** register for a laboratory section |
-| URL                    | https://firas.moosvi.com/courses/data301       |
-| Instructor             | Firas Moosvi                                   |
-| Office Hours           | Zoom (See Canvas sidebar for meeting links)                  |
+| Name                   | Description                                                   |
+|------------------------|---------------------------------------------------------------|
+| Course                 | DATA 301, COSC 301, DATA 501                                  |
+| Term                   | 2020/21 Winter Term 1                                         |
+| Pre-requisites         | 3rd year status or COSC 111, 122                              |
+| Co-requisites          | N/A                                                           |
+| Additional course fees | None                                                          |
+| Weekly meetings        | Wednesdays 15:30-16:30 on Zoom                                |
+| Lectures               | Online                                                        |
+| Laboratory             | You **must** register for a laboratory section                |
+| URL                    | https://firas.moosvi.com/courses/data301                      |
+| Instructor             | Firas Moosvi                                                  |
+| Office Hours           | Zoom (See Canvas sidebar for meeting links)                   |
 | Email                  | [Contact via Piazza](https://piazza.com/class/keqqsay6su15ea) |
 
 ## A message from your instructor
@@ -111,15 +112,15 @@ You should take this course to get an introduction to a very exciting field of d
 
 The grading scheme for this course is:
 
-| Item               | Weight        | Due date(s)     |
-|--------------------|---------------|-----------------|
-| Lab Assignments    | 20% (10 x 2%) | Fridays the week after they were assigned |
-| Bi-weekly Tests    | 20% (5 x 4%)  | Thursday 6PM to Saturday at 6 PM             |
-| Project Milestones | 20% (4 x 5%)  | Friday at 6PM              |
-| Final Project      | 15%           | TBD             |
-| Final Exam         | 25%           | TBD (Take-home) |
+| Item               | New Weight     | Original ~~Weight~~ | Due date(s)                               |
+|--------------------|----------------|---------------------|-------------------------------------------|
+| Lab Assignments    | 20% (8 x 2.5%) | <del>20% (10 x 2%)</del>   | Fridays the week after they were assigned |
+| Bi-weekly Tests    | 20% (4 x 5%)   | <s>20% (5 x 4%)</s>    | Thursday 6PM to Saturday at 6 PM          |
+| Project Milestones | no change      | 20% (4 x 5%)        | Friday at 6PM                             |
+| Final Project      | no change      | 15%                 | TBD                                       |
+| Final Exam         | no change      | 25%                 | TBD (Take-home)                           |
 
-There will be 5 tests in this course in an (approximately) bi-weekly schedule.
+There will be <del>5</del> 4 tests in this course in an (approximately) bi-weekly schedule.
 For each of the tests, there will be a bonus test exactly one week later and the better score of the Test-Bonus Test pair will be taken.
 
 ```{attention} 
