@@ -103,11 +103,10 @@
         - file: notes/week09/lab6
           title: Lab 5 and 6
 
-- part: Part 3 - Tableau and Databases
+- part: Part 3 - Tableau and Dashboards
   chapters:
     - file: notes/week10/week10_summary
       title: Week 10 - Tableau
-      expand_sections: true
       sections:
         - file: notes/week10/videos
         - file: project/milestone02
@@ -115,7 +114,16 @@
         - file: notes/week10/Lecture10
         - file: notes/week10/lab7
           title: Lab 7
-
+    - file: notes/week11/week11_summary
+      title: Week 11 - Bits and pieces
+      expand_sections: true
+      sections:
+        - file: notes/week11/videos
+        - file: notes/week09/Lecture11
+        - file: notes/week10/lab8
+          title: Lab 8 (optional)
+        - file: notes/week10/milestone03
+          title: Milestone03
 - part: Course Feedback
   chapters:
     - file: about/feedback
