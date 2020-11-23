@@ -2,6 +2,8 @@
 
 In this milestone you will be presenting all your hard-work to your fellow students! 
 
+There is no GH Classroom link to accept for this milestone or milestone 4.
+
 ## Due Date 
 
 The due date for this milestone is **Friday December 4, 2020**.

@@ -2,6 +2,8 @@
 
 In this milestone you will continue working on your class project, process the data for your dashboard, and get the repo ready final submission in Milestone 4.
 
+There is no GH Classroom link to accept for this milestone or milestone 4.
+
 ## Due Date 
 
 The due date for this milestone is **Friday November 27, 2020**.
@@ -42,10 +44,12 @@ I suggest you try to meet at least once during the next week to discuss this mil
 
 <img src="https://docs.github.com/assets/images/help/repository/repo-change-select.png" width="600px">
 
-
 ## Task 3: Process your data for your Tableau Dashboard (20%)
 
-You should prepare and process your data so that when you create your dashboard 
+You should prepare and process your data so that when you create your dashboard, you have to do minimal data wrangling or manipulation in Tableau.
+There are many different ways to deal with this, but I suggest you export a dataset that you can easily use in Tableau to plot whatever you need to in your dashboard.
+
+You should put the exported .csv files in the `data/processed` directory.
 
 ## Task 4: Create a release for your repository (15%)
 

@@ -1,5 +1,3 @@
 (page_topic11)=
-Topic 11
+Week 11 Summary
 =======================
-
-Notes about topic 11.
