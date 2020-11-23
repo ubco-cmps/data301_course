@@ -44,25 +44,25 @@ Briefly, here is how to create a release ([from the docs](https://docs.github.co
 
 1. To the right of the list of files, click Releases or Latest release.
 
-<img src="https://docs.github.com/assets/images/help/releases/release-link.png" width="800px">
+<img src="https://docs.github.com/assets/images/help/releases/release-link.png" width="600px">
 
 1. Click Draft a new release.
 
-<img src="https://docs.github.com/assets/images/help/releases/draft_release_button.png" width="800px">
+<img src="https://docs.github.com/assets/images/help/releases/draft_release_button.png" width="600px">
 
-1. Type a version number for your release. Versions are based on Git tags.
+2. Type a version number for your release. Versions are based on Git tags.
 
-<img src="https://docs.github.com/assets/images/help/releases/releases-tag-version.png" width="800px">
+<img src="https://docs.github.com/assets/images/help/releases/releases-tag-version.png" width="600px">
 
-1. Use the drop-down menu to select the branch that contains the project you want to release.
+3. Use the drop-down menu to select the branch that contains the project you want to release.
 
-<img src="https://docs.github.com/assets/images/help/releases/releases-tag-branch.png" width="800px">
+<img src="https://docs.github.com/assets/images/help/releases/releases-tag-branch.png" width="600px">
 
-1. Type a title and description for your release.
+4. Type a title and description for your release.
 
-<img src="https://docs.github.com/assets/images/help/releases/releases_description.png" width="800px">
+<img src="https://docs.github.com/assets/images/help/releases/releases_description.png" width="600px">
 
-1. Once you're ready to publicize your release, click Publish release. To work on the release later, click Save draft.
+5. Once you're ready to publicize your release, click Publish release. To work on the release later, click Save draft.
 
 ### Additional Information
 
@@ -87,15 +87,15 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 
 2. Under your repository name, click Settings.
 
-<img src="https://docs.github.com/assets/images/help/repository/repo-actions-settings.png" width="800px">
+<img src="https://docs.github.com/assets/images/help/repository/repo-actions-settings.png" width="600px">
 
 3. Under "Danger Zone", to the right of to "Change repository visibility", click Change visibility.
 
-<img src="https://docs.github.com/assets/images/help/repository/repo-change-vis.png" width="800px">
+<img src="https://docs.github.com/assets/images/help/repository/repo-change-vis.png" width="600px">
 
 4. Select a visibility.
 
-<img src="https://docs.github.com/assets/images/help/repository/repo-change-select.png" width="800px">
+<img src="https://docs.github.com/assets/images/help/repository/repo-change-select.png" width="600px">
 
 ## OPTIONAL Task 5: Give others feedback (0%)!
 
@@ -109,7 +109,6 @@ I'll try and facilitate this during our lecture this week, and also online on Pi
 As we progress through the course, you will be learning more and more about GitHub and how to work collaboratively on code.
 Since this is the first time many of you are using Git, I recommend that if you are working in a group, you avoid editing each others' files until you are more familiar with git.
 Below are a few things you may find useful as you continue your git journey.
-
 ### Git Branches
 
 Git branches were introduced in Milestone 2.
@@ -120,7 +119,7 @@ Once you have created a branch and "completed" a feature, it's time to merge the
 Of course, as you learned in the tutorial you can do this yourself, but in general it's a good idea for another teammate to review your work before it is merged into master. 
 This is where Pull Requests come in:
 
-<img src ="https://guides.github.com/activities/hello-world/pr-tab.gif" width="800px">
+<img src ="https://guides.github.com/activities/hello-world/pr-tab.gif" width="600px">
 
 To create pull requests (even students working solo can do this), [you can follow Steps 4 and 5 from here](https://guides.github.com/activities/hello-world/#pr), and then assign a reviewer (from your group) to look at your code.
 
@@ -130,19 +129,19 @@ From GitHub's documentation:
 
 > **Issues** are a great way to keep track of tasks, enhancements, and bugs for your projects. They’re kind of like email—except they can be shared and discussed with the rest of your team. Most software projects have a bug tracker of some kind. GitHub’s tracker is called Issues, and has its own section in every repository.
 
-<img src="https://guides.github.com/features/issues/navigation-highlight.png" width="800px">
+<img src="https://guides.github.com/features/issues/navigation-highlight.png" width="600px">
 
 > **Labels** are a great way to organize different types of issues. Issues can have as many labels as you want, and you can filter by one or many labels at once.
 
-<img src="https://guides.github.com/features/issues/labels-listing.png" width="800px">
+<img src="https://guides.github.com/features/issues/labels-listing.png" width="600px">
 
 > **Milestones**, are groups of issues that correspond to a project, feature, or time period. People use them in many different ways in software development.
 
-<img src="https://guides.github.com/features/issues/milestones.png" width="800px">
+<img src="https://guides.github.com/features/issues/milestones.png" width="600px">
 
 > Assignees are a great way to filter, categorize issues, and remember what you're responsible to do. Each issue can have an assignee — one person that’s responsible for moving the issue forward. Assignees are selected the same way milestones are, through the grey bar at the top of the issue. 
 
-<img src="https://docs.github.com/assets/images/help/repository/repo-change-vis.png" width="800px">
+<img src="https://docs.github.com/assets/images/help/repository/repo-change-vis.png" width="600px">
 
 You can change or add a milestone, an assignee, and labels by clicking their corresponding gears in the sidebar on the right.
 
