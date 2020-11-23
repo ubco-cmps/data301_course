@@ -19,6 +19,10 @@
       title: Milestone 1 - Dataset
     - file: project/milestone02
       title: Milestone 2 - Data Analysis and Git
+    - file: project/milestone03
+      title: Milestone 3 - Address feedback and Tableau prep
+    - file: project/milestone04
+      title: Milestone 4 - Present your project!
 
 - part: Labs
   chapters:
