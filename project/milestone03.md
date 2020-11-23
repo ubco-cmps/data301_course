@@ -24,62 +24,7 @@ I suggest you try to meet at least once during the next week to discuss this mil
 
 - You should spend the majority of time this week to address the feedback you have received from your TA.
 
-## Task 2: Process your data for your Tableau Dashboard (20%)
-
-You should prepare and process your data so that when you create your dashboard 
-
-## Task 3: Create a release for your repository (15%)
-
-Create a new release for your project called 0.1.0.
-
-As you progress through your project, you can add more releases, once you're happy with where you're at, I suggest creating a new release at 1.0 (perhaps just before you're submitting your final milestone?).
-
-### Creating a new release
-
-[Here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) are the instructions to create a release.
-
-Briefly, here is how to create a release ([from the docs](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository)):
-
-1. On GitHub, navigate to the main page of the repository.
-
-1. To the right of the list of files, click Releases or Latest release.
-
-<img src="https://docs.github.com/assets/images/help/releases/release-link.png" width="600px">
-
-1. Click Draft a new release.
-
-<img src="https://docs.github.com/assets/images/help/releases/draft_release_button.png" width="600px">
-
-2. Type a version number for your release. Versions are based on Git tags.
-
-<img src="https://docs.github.com/assets/images/help/releases/releases-tag-version.png" width="600px">
-
-3. Use the drop-down menu to select the branch that contains the project you want to release.
-
-<img src="https://docs.github.com/assets/images/help/releases/releases-tag-branch.png" width="600px">
-
-4. Type a title and description for your release.
-
-<img src="https://docs.github.com/assets/images/help/releases/releases_description.png" width="600px">
-
-5. Once you're ready to publicize your release, click Publish release. To work on the release later, click Save draft.
-
-### Additional Information
-
-When developers (like you!) are working on a software project that others will be using or viewing, they need a way to communicate with their users when new features are released and bugs are fixed.
-Typically, this is done by creating **version** and you're likely most familiar with this with your phone or laptop operating system (OS).
-For instance, if you have an iPhone the latest version of your OS is 14.2.1 - what do the 14, 2 and 1 mean?
-There are conventions, and the one that I suggest you follow is: [Semantic Versioning](https://semver.org).
-
-From semver.org, here is the summary:
-
-Given a version number MAJOR.MINOR.PATCH, increment the:
-
-1. MAJOR version when you make incompatible API changes,
-1. MINOR version when you add functionality in a backwards compatible manner, and
-1. PATCH version when you make backwards compatible bug fixes.
-
-## Task 4: Make your repository public (5%)
+## Task 2: Make your repository public (5%)
 
 [Here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/setting-repository-visibility#changing-a-repositorys-visibility) is how to make your repository public (within the Data 301 organization).
 
@@ -97,6 +42,61 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 
 <img src="https://docs.github.com/assets/images/help/repository/repo-change-select.png" width="600px">
 
+
+## Task 3: Process your data for your Tableau Dashboard (20%)
+
+You should prepare and process your data so that when you create your dashboard 
+
+## Task 4: Create a release for your repository (15%)
+
+Create a new release for your project called 0.1.0.
+
+As you progress through your project, you can add more releases, once you're happy with where you're at, I suggest creating a new release at 1.0 (perhaps just before you're submitting your final milestone?).
+
+### Creating a new release
+
+[Here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) are the instructions to create a release.
+
+Briefly, here is how to create a release ([from the docs](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository)):
+
+1. On GitHub, navigate to the main page of the repository.
+
+2. To the right of the list of files, click Releases or Latest release.
+
+<img src="https://docs.github.com/assets/images/help/releases/release-link.png" width="600px">
+
+3. Click Draft a new release.
+
+<img src="https://docs.github.com/assets/images/help/releases/draft_release_button.png" width="600px">
+
+4. Type a version number for your release. Versions are based on Git tags.
+
+<img src="https://docs.github.com/assets/images/help/releases/releases-tag-version.png" width="600px">
+
+5. Use the drop-down menu to select the branch that contains the project you want to release.
+
+<img src="https://docs.github.com/assets/images/help/releases/releases-tag-branch.png" width="600px">
+
+6. Type a title and description for your release.
+
+<img src="https://docs.github.com/assets/images/help/releases/releases_description.png" width="600px">
+
+7. Once you're ready to publicize your release, click Publish release. To work on the release later, click Save draft.
+
+### Additional Information
+
+When developers (like you!) are working on a software project that others will be using or viewing, they need a way to communicate with their users when new features are released and bugs are fixed.
+Typically, this is done by creating **version** and you're likely most familiar with this with your phone or laptop operating system (OS).
+For instance, if you have an iPhone the latest version of your OS is 14.2.1 - what do the 14, 2 and 1 mean?
+There are conventions, and the one that I suggest you follow is: [Semantic Versioning](https://semver.org).
+
+From semver.org, here is the summary:
+
+Given a version number MAJOR.MINOR.PATCH, increment the:
+
+1. MAJOR version when you make incompatible API changes,
+1. MINOR version when you add functionality in a backwards compatible manner, and
+1. PATCH version when you make backwards compatible bug fixes.
 ## OPTIONAL Task 5: Give others feedback (0%)!
 
 Many of your classmates are doing some very interesting projects with some cool datasets.
