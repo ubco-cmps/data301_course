@@ -17,7 +17,7 @@ Once the lab is ready for you to accept, click the below to accept the lab:
 | Lab 7 - Tableau             | Friday November 20 at 18:00  | [Accept Lab](https://classroom.github.com/a/IN1wVevb) | [Solutions released](../../lab_solutions/lab6_solutions/lab6_.twb)                                                                    |
 | Lab 8 - SQL I               | N/A                          | [Accept Lab](https://classroom.github.com/a/oTAk03Du) | [Solutions released](../../lab_solutions/lab8_solutions/lab8_solutions)                                                                    |
 | Lab 9 - SQL II              | N/A                          | [Accept Lab](https://classroom.github.com/a/82qj64Bn) | [Solutions released](../../lab_solutions/lab9_solutions/lab9_solutions)                                                                   |
-| Lab 10 - Project Dashboard  | N/A                          | [Accept Lab]()                                        | []()                                                                    |
+| Lab 10 - Project Dashboard  | N/A                          | [No lab to accept, submit dashboard on Project Repo](week12/lab10.md)    | N/A                                                                    |
 
 Once you click the link, a repository will automatically be created for you with some starter code.
 You can now work on the lab, make commits, and push them to GitHub as you please. 
