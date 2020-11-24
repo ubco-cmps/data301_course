@@ -112,13 +112,13 @@ You should take this course to get an introduction to a very exciting field of d
 
 The grading scheme for this course is:
 
-| Item               | New Weight     | Original ~~Weight~~ | Due date(s)                               |
-|--------------------|----------------|---------------------|-------------------------------------------|
-| Lab Assignments    | 20% (8 x 2.5%) | <del>20% (10 x 2%)</del>   | Fridays the week after they were assigned |
-| Bi-weekly Tests    | 20% (4 x 5%)   | <s>20% (5 x 4%)</s>    | Thursday 6PM to Saturday at 6 PM          |
-| Project Milestones | no change      | 20% (4 x 5%)        | Friday at 6PM                             |
-| Final Project      | no change      | 15%                 | TBD                                       |
-| Final Exam         | no change      | 25%                 | TBD (Take-home)                           |
+| Item               | New Weight     | Original ~~Weight~~      | Due date(s)                               |
+|--------------------|----------------|--------------------------|-------------------------------------------|
+| Lab Assignments    | 20% (8 x 2.5%) | <del>20% (10 x 2%)</del> | Fridays the week after they were assigned |
+| Bi-weekly Tests    | 20% (4 x 5%)   | <s>20% (5 x 4%)</s>      | Thursday 6PM to Saturday at 6 PM          |
+| Project Milestones | no change      | 20% (4 x 5%)             | Friday at 6PM                             |
+| Final Project      | no change      | 15%                      | Fridays the week after they were assigned |
+| Final Exam         | no change      | 25%                      | TBD (Take-home)                           |
 
 There will be <del>5</del> 4 tests in this course in an (approximately) bi-weekly schedule.
 For each of the tests, there will be a bonus test exactly one week later and the better score of the Test-Bonus Test pair will be taken.
