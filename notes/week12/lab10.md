@@ -26,7 +26,7 @@ The requirements for your Tableau dashboard are:
 [Instruction to Publish a workbook](https://help.tableau.com/current/pro/desktop/en-us/publish_workbooks_howto.htm) are reproduced here:
 
 ```{warning}
-In order to proceed with publishing your Tableau to our course site, you MUST first complete this survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_9ZxUaOaARQAAfIN). I will then have to invite you to the site (this will take **at least a day**). After you are invited, you will get an email that looks like this:
+In order to proceed with publishing your Tableau to our course site, [you MUST first complete this survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_9ZxUaOaARQAAfIN). I will then have to invite you to the site (this will take **at least a day**). After you are invited, you will get an email that looks like this:
 
 <img src="tableau_online.png" width="600px">
 
