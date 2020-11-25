@@ -126,8 +126,6 @@
           title: Lecture 11
         - file: notes/week11/lab8
           title: Lab 8 (optional)
-        - file: project/milestone03
-          title: Milestone 3
     - file: notes/week12/week12_summary
       title: Week 12 - Creating Effective Dashboards
       expand_sections: true
@@ -135,7 +133,8 @@
         - file: notes/week12/lab10
           title: Lab 10 - Create a Tableau Dashboard
         - file: notes/week12/Lecture12         
-
+        - file: project/milestone03
+          title: Milestone 3
 - part: Course Feedback
   chapters:
     - file: about/feedback
