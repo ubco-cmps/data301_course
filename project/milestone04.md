@@ -28,7 +28,7 @@ Other requirements:
 - All partners of a group must participate in the recording (you may combine three separate files into one submission).
 - Groups should choose one dashboard to present on together.
 - The presentation should be minimum a minimum four minutes and 30 seconds) and 6 minutes (absolute max - aim for 5 minutes).
-- 
+- Your recording does NOT have to have a high production value (editing, background sound, video titles etc..) so I would suggest not spending too much time on the non-dashboard component.
 
 In terms of format, you have two options:
 
