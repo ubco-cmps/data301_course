@@ -13,4 +13,5 @@ Unless specified explicitly, all content on this website is [CC-BY-SA 4.0](https
 - Dr. Irene Vrbik
 - Dr. Scott Fazackerley
 - Dr. Firas Moosvi
+- Dr. Patricia Lasserre
 - and others...
