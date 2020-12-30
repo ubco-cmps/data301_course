@@ -4,13 +4,13 @@
 
 # Course Syllabus
 
-This is the official syllabus and course outline for DATA 301, COSC 301, and DATA 501.
-For convenience, we will use DATA 301 in place of DATA301/501 and COSC 301.
+This is the official syllabus and course outline for DATA 301 and COSC 301. For convenience, we will refer to this course as DATA 301.
 
 ```{warning} Please note that this syllabus is currently under active development, there may be typos or missing sections; treat this as a draft until the course starts!
+
 ```
 
-## DATA 301 (3) Introduction to Data Analytics
+## COSC / DATA 301 (3) Introduction to Data Analytics
 
 The [UBCO calendar description](http://www.calendar.ubc.ca/okanagan/courses.cfm?code=DATA) of this course is: 
 
@@ -24,12 +24,12 @@ The [UBCO calendar description](http://www.calendar.ubc.ca/okanagan/courses.cfm?
 
 ## Contact the Teaching Team
 
-| Team Member                               | Pronounce as     | Contact   | Office Hour                                |
-|-------------------------------------------|------------------|-----------|--------------------------------------------|
-| Dr. Firas Moosvi (he/his/him); Instructor | Fur-az Moose-vee | on Piazza | Wednesday 4:30 - 5:30 PM and Monday 5-6 PM |
-| Roozbeh Eslami                            |                  | on Piazza | Thursdays at 3 PM                          |
-| Biswapriyo (Bishwo) Chakrabarty           |                  | on Piazza | Thursday at 8 AM                           |
-| Amir Kalkhoran                            |                  | on Piazza | Friday at 7 AM                             |
+| Team Member                                      | Pronounce as                                                 | Contact         | Office Hours                                      |
+| ------------------------------------------------ | ------------------------------------------------------------ | --------------- | ------------------------------------------------- |
+| Dr. Patricia Lasserre (she/her/hers); Instructor | [<img src="C:\Users\patri\Desktop\Teaching\COSC 301\speaker-vector-icon-600w-727899292.webp" style="zoom:5%;" />](./Myname.m4a) | on Ed Dashboard | <!--Wednesday 4:30 - 5:30 PM and Monday 5-6 PM--> |
+| TA1                                              |                                                              | on Ed Dashboard | <!--Thursdays at-->                               |
+| TA2                                              |                                                              | on Ed Dashboard | <!--Thursday at-->                                |
+| TA3                                              |                                                              | on Ed Dashboard | <!--Friday at-->                                  |
 
 
 ## Is this syllabus a contract? 
@@ -51,6 +51,7 @@ Having an adaptive and responsive syllabus is important to me as an instructor b
 I invite you to be co-contributors to this syllabus, and use the tools provided to add your own annotations, questions, and suggestions on making this syllabus work for you.
 
 ```{important} Please note that I have your best interests in mind, and it is highly unlikely that I will ever change a syllabus in a way that negatively affects the class, or even individual students. If you believe a syllabus change is affecting you negatively, please do not hesitate to reach out to me, or [submit your feedback anonymously here](https://ubc.ca1.qualtrics.com/jfe/form/SV_6FhZZZAe9WoKdnv).
+
 ```
 
 ## Changes to the syllabus since the start of Term
@@ -59,31 +60,35 @@ Any major changes to the syllabus (this page) will be documented here as well as
 
 | Change Date        | Summary                                                        | Rationale                               |
 |--------------------|----------------------------------------------------------------|-----------------------------------------|
-| September 16, 2020 | Increased project weight to 15%                                | To make things add up to 100            |
-| September 12, 2020 | Added TAs and clarified dates                                  | Requests from Associate Dean            |
-| October 13, 2020   | Changed from 5 milestones to 4                                 | Milestone 1 and 2 are combined together |
-| November 16, 2020  | Made Lab 8,9 optional, removed Test 5; adjusted grading scheme | Based on Student experience survey      |
+| January XX, 2020   | Added TAs                                        |             |
 
 ## About this course
 
 | Name                   | Description                                                   |
 |------------------------|---------------------------------------------------------------|
-| Course                 | DATA 301, COSC 301, DATA 501                                  |
-| Term                   | 2020/21 Winter Term 1                                         |
-| Pre-requisites         | 3rd year status or COSC 111, 122                              |
+| Course                 | DATA 301, COSC 301		                                 |
+| Term                   | 2020/21 Winter Term 2                                         |
+| Pre-requisites         | 3rd year standing or COSC 111, 122                            |
 | Co-requisites          | N/A                                                           |
 | Additional course fees | None                                                          |
-| Weekly meetings        | Wednesdays 15:30-16:30 on Zoom                                |
-| Lectures               | Online                                                        |
+| Weekly meetings        | Mondays 16:00-17:00 on Zoom                                   |
+| Lectures               | Online                 |
 | Laboratory             | You **must** register for a laboratory section                |
-| URL                    | https://firas.moosvi.com/courses/data301                      |
-| Instructor             | Firas Moosvi                                                  |
-| Office Hours           | Zoom (See Canvas sidebar for meeting links)                   |
-| Email                  | [Contact via Piazza](https://piazza.com/class/keqqsay6su15ea) |
+| URL	                 | Canvas			                         |
+| Instructor             | Patricia Lasserre                                             |
+| Tutorial/Office Hours  | Zoom (See Canvas sidebar for meeting links)                   |
+| Email                  | [Contact via Ed Discussion](https://us.edstem.org/join/DqqJzv) or Canvas if personal	|
 
 ## A message from your instructor
 
-Coming soon...
+```{note}
+Dear all,
+First, I hope you had a very nice break over the holiday season, and I wish you the best for 2021! It is important for me to have an understanding of your current learning environment to take this into account as much as possible. To do so, please fill in the following qualtrics [survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_cUNzO9CtQ5o29Hn). Looking forward to meeting you all on zoom!
+
+Pat
+```
+
+---
 <!--
 [<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://player.vimeo.com/video/148751763" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
@@ -112,16 +117,14 @@ You should take this course to get an introduction to a very exciting field of d
 
 The grading scheme for this course is:
 
-| Item               | New Weight     | Original ~~Weight~~      | Due date(s)                               |
-|--------------------|----------------|--------------------------|-------------------------------------------|
-| Lab Assignments    | 20% (8 x 2.5%) | <del>20% (10 x 2%)</del> | Fridays the week after they were assigned |
-| Bi-weekly Tests    | 20% (4 x 5%)   | <s>20% (5 x 4%)</s>      | Thursday 6PM to Saturday at 6 PM          |
-| Project Milestones | no change      | 20% (4 x 5%)             | Friday at 6PM                             |
-| Final Project      | no change      | 15%                      | Fridays the week after they were assigned |
-| Final Exam         | no change      | 25%                      | TBD (Take-home)                           |
+| Item               | Weight       | Due date(s)                               |
+| ------------------ | ------------ | ----------------------------------------- |
+| Lab Assignments    | 40% (8x 5%)  | Fridays the week after they were assigned |
+| Bi-weekly Tests    | 25% (5 x 5%) | Thursday 6PM to Saturday at 6 PM          |
+| Project Milestones | 20% (4 x 5%) | Friday at 6PM                             |
+| Final Project      | 15%          | Fridays the week after they were assigned |
 
-There will be <del>5</del> 4 tests in this course in an (approximately) bi-weekly schedule.
-For each of the tests, there will be a bonus test exactly one week later and the better score of the Test-Bonus Test pair will be taken.
+There will be 5 tests in this course in an (approximately) bi-weekly schedule. For each of the tests, there will be a second test exactly one week later. The resulting grade for the test will be either the first test, or the average of the two tests (if you choose to do the two tests).
 
 ```{attention} 
 All deadlines in this course have an automatic 48 hour grace period after the due dates listed above.
@@ -130,26 +133,22 @@ Any submissions submitted past the grace period will not be graded.
 
 ### Are there other requirements I need to know about to pass the course?
 
-- All students must satisfy ALL conditions to pass the course:
-    1. Pass the Lab component with a grade of at least 50%,
-    1. Pass the Test and Exam components (together) with a grade of at least 50%,
-    1. Pass the Final Project with a grade of at least 50%.
-
-- In addition to the requirements above, graduate students (i.e. those enrolled in DATA 501) must:
-    1. Earn an overall grade of 60% in the course, AND
-    1. Earn at least 60% on the Final Project,
+All students must satisfy ALL conditions to pass the course:
+1. Pass the Lab component with a grade of at least 50%,
+1. Pass the Tests with a grade of at least 50%,
+1. Pass the Project with a grade of at least 50%.
 
 If students do not satisfy the appropriate requirements, the student will be assigned a maximum overall grade of 45 in the course.
 
 ```{note} 
-I reserve the right to have slightly different expectations for the lab assignments and final project depending on whether students are enrolled in DATA 301, COSC 301, or DATA 501.
+I reserve the right to have slightly different expectations for the lab assignments and final project depending on whether students are enrolled in DATA 301, or COSC 301.
 ```
 
 ## Course Learning Outcomes (AKA what will I learn in this course?)
 
 1. Understand data representation formats and techniques and how to use them.
 1. Work with large datasets and learn to manipulate them programmatically. 
-1. Experience using a wide-range of data analytics tools including Excel, Python, SQL,
+1. Experience using a wide-range of data analytics tools including Excel, Python, SQL, R (tentative),
 and visualization packages and software.
 1. Develop a computational thinking approach to problem-solving and use programs to solve
 data tasks.
@@ -166,9 +165,9 @@ All of the course material, including videos, labs, and course notes will be ava
 
 ## How will this course be taught ?
 
-This course will be taught as a [Blended Learning classroom](https://en.wikipedia.org/wiki/Blended_learning) where some elements of a [flipped classroom](https://www.youtube-nocookie.com/embed/BCIxikOq73Q) will be mixed wih a more traditional coding classroom with live demos, clicker questions, and worksheets.
+This course will be taught as a [Blended Learning classroom](https://en.wikipedia.org/wiki/Blended_learning) where some elements of a [flipped classroom](https://www.youtube-nocookie.com/embed/BCIxikOq73Q) will be mixed with a more traditional coding classroom with live demos, clicker or poll questions, and worksheets.
 Briefly, this requires students to watch videos and engage with the assigned reading prior to the classroom meeting (knowledge transfer).
-During the class meeting, the instructor guides students through clicker questions, worksheet problems, and other activities to help the students make sense of the material (sense-making).
+During the class meeting, the instructor guides students through clicker (or poll) questions, worksheet problems, and other activities to help the students make sense of the material (sense-making).
 See {numref}`masterymodel1` for a mental model of how learning works {cite}`Ambrose2010`.
 
 ```{figure} ../images/masterymodel1.png
@@ -193,8 +192,7 @@ This table describes how I think each course activity should be classified betwe
 
 ### Want to know more about my teaching philosophy ?
 
-For a detailed description of my teaching philosophy and values (including a list of references and citations), you can [read it here](https://firas.moosvi.com/cv/teaching-philosophy/).
-Here are the key principles I intend to apply in this class:
+Here are the key principles of my teaching philosophy and my values that I intend to apply in this class:
 
 1. Student learning is vastly improved through active learning.
 1. Effective teaching is inclusive teaching.
@@ -204,12 +202,12 @@ Here are the key principles I intend to apply in this class:
 
 ## Course Communication
 
-- For lectures, labs, tutorials, and office hours we will be using Zoom.
-- For official course communication, we will be using [Canvas](https://canvas.ubc.ca/courses/63469) and [Piazza](https://canvas.ubc.ca/courses/63469/external_tools/201?display=borderless).
+- For lectures, labs, tutorials, and office hours we will be principally using Zoom. If group exercises are planned, I may elect to use collaborate ultra, in which case it will be clearly stated.
+- For official course communication, we will be using [Canvas](https://canvas.ubc.ca/courses/63469) and [Ed discussion](https://us.edstem.org/dashboard).
 - For unofficial chat, community building, sharing of tiktoks, cat videos, and general conversation, we will (optionally) be using a Discord server.
 
 ```{warning}
-Please note signing up for the Discord is **completely optional**! You will not miss anything course-related if you choose not to signup for this unofficial platform. 
+Please note signing up for Discord is **completely optional**! You will not miss anything course-related if you choose not to signup for this unofficial platform. 
 
 This tool stores data on servers that are located outside of Canada.
 UBC cannot guarantee the security of your personal information on servers located outside of Canada. 
@@ -218,15 +216,14 @@ Please exercise caution whenever using your personal information online.
 You may wish to use a pseudonym to protect your privacy if you have concerns, or decline to signup for this tool.
 ```
 
-### Sign up for a (free) Piazza account [Required]
+### Sign up for a (free) Ed discussion account [Recommended]
 
-This term we will be using Piazza for class discussion.
-The system is highly catered to getting you help fast and efficiently from classmates, the TA, and myself.
-Rather than emailing questions to the teaching staff, I encourage you to post your questions on Piazza.
+This term we will be using Ed Discussion for class discussion.
+The system is highly catered to getting you help fast and efficiently from classmates, the TAs, and myself. In particular, it allows to write and run code in the forum itself. Rather than emailing questions to the teaching staff, I encourage you to post your questions on the Ed discussion dashboard.
 
-*The Piazza tool is stored on servers outside Canada. When you access this site by clicking on the link through Canvas, you are being transferred to these servers. In order to protect your identity, UBC obfuscates your user ID before it is sent to the site. However, Piazza does require you to create an account on their servers. While Piazza adheres to strict U.S. privacy regulations (FERPA), UBC cannot guarantee security of your private details on servers outside of Canada. Please exercise caution whenever using personal information. You may wish to use a pseudonym to protect your privacy if you have concerns.*
+*The Ed discussion tool is stored on servers that are located outside of Canada. While Ed discussion adheres to strict U.S. privacy regulations (FERPA) and European privacy law (GDPR), UBC cannot guarantee security of your private details on servers located outside of Canada. Please exercise caution whenever using personal information. You may wish to use a pseudonym to protect your privacy if you have concerns, or decline to signup for this tool.*
 
-[Sign up for our class Piazza](https://piazza.com/ubc.ca/winterterm12020/data301).
+[Sign up for our class Ed discussion dashboard](https://us.edstem.org/join/DqqJzv).
 
 ### Sign up for the Slack or Discord team [Optional]
 
@@ -249,18 +246,19 @@ This is no problem, and I will not be personally offended or upset you need to d
 Below is some information that might be helpful for you in making the decision.
 
 ```{warning} Please note that it is the student's responsibility to check the withdrawal dates as [listed in the UBC Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?go=deadlines).
+
 ```
 
-| Withdrawal type                     | Effect on Transcript | Tuition refund                                                                                     |
-|-------------------------------------|----------------------|----------------------------------------------------------------------------------------------------|
-| Before September 21, 2020 11:59 PDT | None                 | 100% refund                                                                                        |
-| Before November 13, 2020 11:59 PDT  | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
-| After 11:59 PDT November 13, 2020 ^ | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
+| Withdrawal type                   | Effect on Transcript | Tuition refund                                               |
+| --------------------------------- | -------------------- | ------------------------------------------------------------ |
+| Before January 22, 2020 11:59 PDT | None                 | 100% refund                                                  |
+| Before March 26, 2020 11:59 PDT   | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
+| After 11:59 PDT March 26, 2020 ^  | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
 
 ^ Note: Withdrawal after this date cannot happen without approval from the Faculty (Email: fos.students.ubco@ubc.ca).
 
 There are factors other than money and your transcript to consider as well, including your mental health, graduation requirements/timelines, eligibility for student loans, bursaries, scholarships etc.
-I advise you to [read the full list of considerations](https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/) here and conslt with an Academic Advisor or your Program Advisor if you have additional questions.
+I advise you to [read the full list of considerations](https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/) here and consult with an Academic Advisor or your Program Advisor if you have additional questions.
 
 <!-- 
 ## How do I do well in this course? 
@@ -270,7 +268,7 @@ I advise you to [read the full list of considerations](https://students.ok.ubc.c
 
 ## What type of information will I collect about you in this course?
 
-Having taught [DSCI 541: Privacy, Ethics, and Security](https://github.com/UBC-MDS/DSCI_541_priv-eth-sec) in the UBC Master of Data Science in the past, I am very aware of the surveillance culture that has permeated our society and heralded the [End of Privacy](https://www.youtube.com/watch?v=NesTWiKfpD0) as we know it.
+Having taught DATA 553: Privacy, Ethics, and Security in the UBC Master of Data Science in the past, I am very aware of the surveillance culture that has permeated our society and heralded the [End of Privacy](https://www.youtube.com/watch?v=NesTWiKfpD0) as we know it.
 That being said, as an instructor, I care tremendously about your learning and the course-related data that is collected about you is extremely valuable. 
 Broadly speaking, this relatively new field is called **Learning Analytics**.
 [Learning Analytics](https://www.solaresearch.org/about/what-is-learning-analytics/) involves the collection and analysis of data about learners for the [express purpose](https://www.collinsdictionary.com/dictionary/english/the-express-purpose-of) of improving their learning by optimizing teaching and learning practices. 
@@ -278,9 +276,7 @@ Broadly speaking, this relatively new field is called **Learning Analytics**.
 In this course, we will be using the following learning technologies (privacy policies linked): 
 
 - [Canvas](https://faculty.canvas.ubc.ca/canvas-privacy/)
-- [Piazza](https://piazza.com/legal/privacy)
-- [Sli.do](https://www.sli.do/terms#privacy-policy)
-- [Hypothes.is](https://web.hypothes.is/privacy/)
+- [Ed discussion](https://us.edstem.org/privacy)
 
 All tools used in the course will be used in a [FIPPA-compliant](https://universitycounsel.ubc.ca/subject-areas/access-and-privacy-general/access-to-information/about-fippa/) manner, with your privacy top of mind. 
 New tools may be added to the course as the need arises, and I will update this section with the appropriate information and make an announcement if a new tool is added midway through a course.
@@ -290,13 +286,13 @@ In this course, I intend to use this information to:
 
 - view overall class progress (in aggregate),
 - track your personal progress in order to provide you with personalized feedback,
-- track participation in discussion forums
+- track participation in discussion forums,
 - improve the course and your learning, 
 - explore students actions in the course, 
 - provide you feedback on your progress.
 
 Unfortunately, at the moment it is not possible to opt-out of the data collection process, but if you like, you may opt-out of the process where *I use the data to give you personalized feedback*. 
-To opt-out, please [complete this form](https://ubc.ca1.qualtrics.com/jfe/form/SV_4SB8DCF8fnktkLb) at any point in the course. 
+To opt-out, please [complete this form](https://ubc.ca1.qualtrics.com/jfe/form/SV_ePfpR44YrSOPpJz) at any point in the course. 
 You may opt-out with my full support, I respect your decision and applaud you for your netizenship!
 
 ## What should I do if I need accommodations to be successful in this course?
@@ -331,11 +327,11 @@ No problem! There's not even any need to tell me, or ask for permission to miss 
 The course is designed to give you maximum flexibility: 
 
 - Every deadline has a 48-hour grace period that is automatically applied.
-- There is no late penalty if you use the grace period
+- There is no late penalty if you use the grace period.
 - You can use the grace period an unlimited amount of time in the course (though if it happens every week and for every assignment, I might check in with you and gently encourage you not to leave things to the last minute)
 
 ```{tip}
-Remember, if you miss a Test for whatever reason, you can make it up the following week in the bonus test!
+Remember, if you miss a Test outside of the grace period for whatever reason, you can make it up the following week in the second test!
 ```
 
 If you miss a deadline by more than the grace period, the general course policy is that you will get 0 on it.
@@ -376,11 +372,11 @@ In particular, I hope (and expect) that the following features of the course sho
 - 48 hour grace-period on all homework and lab due dates and deadlines.
 - Long testing window (48 hours) so you can start the tests whenever you're comfortable.
 - Timed tests have generous time limits (allowable time is 1.25x the estimated time).
-- Each test has a "bonus test" available one week later; for each test, we will take the better score of the pair.
-- No high-stakes exams (the single largest assessment item is the final exam at 25%).
+- Each test has a “second test” available one week later; if you do 2 tests, we will take the average score of the pair.
+- No high-stakes exams.
 - All course assessments are completely open book and open notes. 
-- Plenty of TA and instructor office hours and several outside of normal business hours.
-- Class website that outlines exactly what you should do when to help you manage your time.
+- <!--to check --> Plenty of TA and instructor office hours and several outside of normal business hours.
+- Class website and canvas schedule that outlines exactly what you should do when to help you manage your time.
 - Tonnes of supplemental materials including other instructional videos in case you want a different perspective.
 - Weekly prompt to accept the integrity pledge to keep you accountable.
 - A true willingness from the instructor (me) to help you learn and succeed in this course!
@@ -395,7 +391,7 @@ To make it even easier for you to decide what isn't allowed, below is a list of 
 
 - Asking others for their work in the course (whether question by question, or all at once)
 - Sending others your work in the course
-- Doing tests collaboratively (tests **must** be done by yourself and alone)
+- Doing tests collaboratively (tests **must** be done by yourself and alone unless explicitly part of the examination process)
 - Sending others your test questions and/or answers
 - Sharing any course material onto Chegg, Course Hero, Slader, or other similar sites
 - Searching for solutions to course material on Chegg, Course Hero, Slader, or other similar sites
@@ -509,6 +505,7 @@ For more information, [visit our website](https://security.ok.ubc.ca/safewalk/) 
 The syllabus was constructed and adapted from several other templates and examples.
 Below is the list of resources I have used to put this syllabus together:
 
+- COSC/DATA 301 (Instructor: [Dr. Firas Moosri](https://firas.moosvi.com/))
 - Physics 117 (Instructor: [Dr. Simon Bates](https://sites.google.com/site/simonpbates/home?authuser=0))
 - Psychology 417A-951 (Instructor: [Dr. Catherine Rawn](https://blogs.ubc.ca/catherinerawn/))
 - [Designing for Care, Dr. Jesse Stommell](https://www.jessestommel.com/designing-for-care/)
