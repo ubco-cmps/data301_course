@@ -1,4 +1,4 @@
-(page_Course_Schedule) = Course Schedule
+(page_Course_Schedule)= Course Schedule
 =======
 The following table provide a detailed view of the course schedule as it is currently planned. As mentioned earlier, this tentative schedule might evolve as the term advances.
 
