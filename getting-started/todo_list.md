@@ -3,13 +3,13 @@ Things to do at the start of the course
 
 There are several things you'll need to do at the start of the course to get set up with all the technology, accounts, and services we'll be using.
 I've split these tasks up into several chunks so it's a bit more manageable. 
-In the first chunk (Before the first class) are the same four things that you received through a Canvas Announcement.
+In the first chunk (Before the first class) are the same things that you received through a Canvas Announcement.
 
 ```{dropdown} <h3>Before the first class</h3>
 
 <label><input type="checkbox" id="todo1-1" class="box"> **1. [Complete the anonymous pre-course survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_cUNzO9CtQ5o29Hn)** </input></label> 
 
-There are two reasons for this survey: to get your feedback on a few course elements and to understand your current learning environments. Since we are all moving online forcibly, many of us may have challenges with available technology/equipment, or access to wireless internet (or power). The more I understand your circumstances (anonymously), the more I hope to do to accommodate everyone in the class. 
+There is a good reason for this survey: I want to understand your current learning environments. Since we are all moving online forcibly, many of us may have challenges with available technology/equipment, or access to wireless internet (or power). The more I understand your circumstances (anonymously), the more I hope to do to accommodate everyone in the class. 
 
 Again, this is optional but please fill it out!!
 
