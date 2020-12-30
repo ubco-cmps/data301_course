@@ -19,12 +19,13 @@ Survey link: [https://ubc.ca1.qualtrics.com/jfe/form/SV_cUNzO9CtQ5o29Hn](https:/
 
 It is now live on Canvas under the "Course Content" sidebar item. 
 
-<label><input type="checkbox" id="todo1-4" class="box"> **Login to the official course discussion dashboard (Ed discussion).** </input></label> 
+<label><input type="checkbox" id="todo1-3" class="box"> **Login to the official course discussion dashboard (Ed discussion).** </input></label> 
 
 Within the Canvas course, [click the "Ed discussion" menu item](https://canvas.ubc.ca/courses/63469/external_tools/201?display=borderless) on the left menubar - you will be asked to create an account.
 
 *The Ed discussion tool is stored on servers outside Canada. When you access this site by clicking on the link through Canvas, you are being transferred to these servers. In order to protect your identity, UBC obfuscates your user ID before it is sent to the site. However, Ed discussion does require you to create an account on their servers. While Ed discussion adheres to strict U.S. privacy regulations (FERPA) and European privacy law (GDPR), UBC cannot guarantee security of your private details on servers located outside of Canada. Please exercise caution whenever using personal information. You may wish to use a pseudonym to protect your privacy if you have concerns, or decline to signup for this tool.*
 
+```
 
 ```{dropdown} <h3>In the first week</h3>
 
