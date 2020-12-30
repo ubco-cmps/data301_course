@@ -48,10 +48,10 @@ and also:
 Interestingly, it is worth noting that a recent review of legal precedents suggests that syllabi are not considered contracts by the courts {cite}`Rumore2016`.
 
 Having an adaptive and responsive syllabus is important to me as an instructor because it allows me to be more flexible with what/how/when you learn, and respond to your feedback in a meaningful way.
-I invite you to be co-contributors to this syllabus, and use the tools provided to add your own annotations, questions, and suggestions on making this syllabus work for you.
+I invite you to be co-contributors to this syllabus, and use the tools provided to add your own questions, and suggestions on making this syllabus work for you.
 
-```{important} Please note that I have your best interests in mind, and it is highly unlikely that I will ever change a syllabus in a way that negatively affects the class, or even individual students. If you believe a syllabus change is affecting you negatively, please do not hesitate to reach out to me, or [submit your feedback anonymously here](https://ubc.ca1.qualtrics.com/jfe/form/SV_6FhZZZAe9WoKdnv).
-
+```{important} Please note that I have your best interests in mind, and it is highly unlikely that I will ever change a syllabus in a way that negatively affects the class, or even individual students. If you believe a syllabus change is affecting you negatively, please do not hesitate to reach out to me, or [submit your feedback anonymously here](https://ubc.ca1.qualtrics.com/jfe/form/SV_1SUW980Y13yaA2V).
+https://ubc.ca1.qualtrics.com/jfe/form/SV_1SUW980Y13yaA2V
 ```
 
 ## Changes to the syllabus since the start of Term
@@ -83,6 +83,7 @@ Any major changes to the syllabus (this page) will be documented here as well as
 
 ```{note}
 Dear all,
+
 First, I hope you had a very nice break over the holiday season, and I wish you the best for 2021! It is important for me to have an understanding of your current learning environment to take this into account as much as possible. To do so, please fill in the following qualtrics [survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_cUNzO9CtQ5o29Hn). Looking forward to meeting you all on zoom!
 
 Pat
