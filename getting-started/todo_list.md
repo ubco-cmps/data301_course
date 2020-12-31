@@ -19,7 +19,7 @@ Survey link: [https://ubc.ca1.qualtrics.com/jfe/form/SV_cUNzO9CtQ5o29Hn](https:/
 
 It is now live on Canvas under the "Course Content" sidebar item. 
 
-<label><input type="checkbox" id="todo1-3" class="box"> **Login to the official course discussion dashboard (Ed discussion).** </input></label> 
+<label><input type="checkbox" id="todo1-3" class="box"> **3. Login to the official course discussion dashboard (Ed discussion).** </input></label> 
 
 Within the Canvas course, [click the "Ed discussion" menu item](https://canvas.ubc.ca/courses/63469/external_tools/201?display=borderless) on the left menubar - you will be asked to create an account.
 
