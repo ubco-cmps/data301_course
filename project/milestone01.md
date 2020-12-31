@@ -210,8 +210,8 @@ Actual "Groups" are at the bottom, in group numbers 6000 and above.
     <tr>
       <th rowspan="29" valign="top">TA2</th>
       <th>Group 3003</th>
-      <td></td>
-      <td></td>
+      <td>test</td>
+      <td>test</td>
     </tr>
    </tbody>
 </table>
