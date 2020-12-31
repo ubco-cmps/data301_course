@@ -244,7 +244,7 @@ Actual "Groups" are at the bottom, in group numbers 6000 and above.
       <td>anamicasunder</td>
     </tr>
     <tr>
-      <th rowspan="29" valign="top">TA2</th>
+      <th rowspan="5" valign="top">TA2</th>
       <th>Group200</th>
       <td>Aiden</td>
       <td>aidenb1</td>
