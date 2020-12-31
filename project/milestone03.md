@@ -6,7 +6,7 @@ There is no GH Classroom link to accept for this milestone or milestone 4.
 
 ## Due Date 
 
-The due date for this milestone is **Friday November 27, 2020**.
+The due date for this milestone is **Friday March 19, 2020**.
 I suggest you try to meet at least once during the next week to discuss this milestone.
 
 ## Overall Expectations
