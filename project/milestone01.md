@@ -129,7 +129,7 @@ Consider the following questions to guide you in your exploration:
 - Why: What is the purpose of your dataset? Is it for transparency/accountability, public interest, fun, learning, etc...
 - How: How was your data collected? Was it a human collecting the data? Historical records digitized? Server logs?
 
-Additional Guidance: Your audience is fellow data scientists. You probably will not need more than 150 words to describe your dataset. All the questions above do not need to be answered, it's more to guide your exploration and think a little bit about the context of your data. It is also possible you will not know the answers to some of the questions above, that is FINE - data scientists are often faced with the challenge of analyzing data from unknown sources. Do your best, acknowledge the limitations of your data as well as your understanding of it. Also, make it clear what you're speculating about. For example, "I speculate that the {...column_name...} column must be related to {....} because {....}."
+**Additional Guidance:** Your audience is fellow data scientists. You probably will not need more than 150 words to describe your dataset. All the questions above do not need to be answered, it's more to guide your exploration and think a little bit about the context of your data. It is also possible you will not know the answers to some of the questions above, that is FINE - data scientists are often faced with the challenge of analyzing data from unknown sources. Do your best, acknowledge the limitations of your data as well as your understanding of it. Also, make it clear what you're speculating about. For example, "I speculate that the {...column_name...} column must be related to {....} because {....}."
 
 2. Describe your topic/interest in this dataset - answer in about 150-200 words
 
@@ -203,7 +203,7 @@ Actual "Groups" are at the bottom, in group numbers 6000 and above.
   </thead>
   <tbody>
     <tr>
-      <th rowspan="55" valign="top">Amir</th>
+      <th rowspan="55" valign="top">TA1</th>
       <th></th>
       <td></td>
       <td></td>
