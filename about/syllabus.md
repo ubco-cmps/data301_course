@@ -82,11 +82,7 @@ Any major changes to the syllabus (this page) will be documented here as well as
 ## A message from your instructor
 
 ```{note}
-Dear all,
 
-First, I hope you had a very nice break over the holiday season, and I wish you the best for 2021! It is important for me to have an understanding of your current learning environment to take this into account as much as possible. To do so, please fill in the following qualtrics [survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_cUNzO9CtQ5o29Hn). Looking forward to meeting you all on zoom!
-
-Pat
 ```
 
 ---
@@ -228,7 +224,7 @@ The system is highly catered to getting you help fast and efficiently from class
 
 ### Sign up for the Slack or Discord team [Optional]
 
-Invitation to [join the unofficial Data 301 Discord Server](https://discord.gg/VRQ9jQv)!
+Invitation to [join the unofficial Data 301 Discord Server](https://discord.gg/BJRnZqUTrx)!
 
 Here is a [Beginner's Guide to Discord](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord) and if you prefer watching a video:
 
