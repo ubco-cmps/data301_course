@@ -189,12 +189,19 @@ Actual "Groups" are at the bottom, in group numbers 6000 and above.
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>TA</th>
-      <th>GroupNumber</th>
+      <th></th>
+      <th></th>
       <th>Name</th>
       <th>GitHub</th>
     </tr>
+    <tr>
+      <th>TA</th>
+      <th>GroupNumber</th>
+      <th></th>
+      <th></th>
+    </tr>
   </thead>
+
   <tbody>
     <tr>
       <th rowspan="55" valign="top">TA1</th>
