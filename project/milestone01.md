@@ -161,7 +161,7 @@ Each group member must complete this form to report on the contributions of **yo
 That information can, if needed, be used to adjust final grades of individuals. 
 This is a report private between you and the instructors, meaning that none of your classmates will see this report.
 
-2. One person from the group will submit a URL to the team GitHub repository.
+1. One person from the group will submit a URL to the team GitHub repository.
 
 ## Working collaboratively in GitHub
 
