@@ -5,8 +5,8 @@ If you are working as a group, you will be expected to show proficiency in all t
 
 ## Due Date 
 
-The tentative due date for this milestone is **Friday November 13, 2020**.
-I suggest you try to meet at least two or three times during the next two weeks to discuss this milestone.
+The tentative due date for this milestone is **Friday March 5, 2021**.
+I suggest you try to meet at least three or four times during the next three weeks to discuss this milestone.
 
 ## Overall Expectations
 
