@@ -210,7 +210,7 @@ Actual "Groups" are at the bottom, in group numbers 6000 and above.
     </tr>
     <tr>
       <th></th>
-      <td>/td>
+      <td></td>
       <td></td>
     </tr>
    </tbody>
