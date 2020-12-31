@@ -203,7 +203,7 @@ Actual "Groups" are at the bottom, in group numbers 6000 and above.
   </thead>
   <tbody>
     <tr>
-      <th rowspan="55" valign="top">Ta1</th>
+      <th rowspan="8" valign="top">Ta1</th>
       <th>Group300</th>
       <td>Name1</td>
       <td>Unknown</td>
