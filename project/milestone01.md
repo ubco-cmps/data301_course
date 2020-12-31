@@ -208,7 +208,7 @@ Actual "Groups" are at the bottom, in group numbers 6000 and above.
       <td>Githubname</td>
     </tr>
     <tr>
-      <th> TA2 </th>
+      <th rowspan="55" valign="top"> TA2 </th>
       <th>Group 3003</th>
       <td></td>
       <td></td>
