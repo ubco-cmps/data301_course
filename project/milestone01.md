@@ -203,7 +203,7 @@ Actual "Groups" are at the bottom, in group numbers 6000 and above.
   </thead>
   <tbody>
     <tr>
-      <th rowspan="8" valign="top">Ta1</th>
+      <th rowspan="5" valign="top">Ta1</th>
       <th>Group300</th>
       <td>Name1</td>
       <td>Unknown</td>
@@ -215,85 +215,70 @@ Actual "Groups" are at the bottom, in group numbers 6000 and above.
     </tr>
     <tr>
       <th>Group6013</th>
-      <td>Izgi</td>
-      <td>izgiko</td>
+      <td>Name2</td>
+      <td>githubname</td>
     </tr>
     <tr>
       <th>Group6013</th>
-      <td>Ammar</td>
-      <td>ammarkale</td>
+      <td>Name3</td>
+      <td>githubname</td>
     </tr>
     <tr>
       <th>Group6013</th>
-      <td>Guilherme Durvan Antonio</td>
+      <td>Name4</td>
       <td>Unknown</td>
-    </tr>
-    <tr>
-      <th>Group6014</th>
-      <td>Senja</td>
-      <td>s-lieu</td>
-    </tr>
-    <tr>
-      <th>Group6014</th>
-      <td>Shila</td>
-      <td>shilarahman</td>
-    </tr>
-    <tr>
-      <th>Group6014</th>
-      <td>Anamica</td>
-      <td>anamicasunder</td>
     </tr>
     <tr>
       <th rowspan="5" valign="top">TA2</th>
       <th>Group200</th>
-      <td>Aiden</td>
-      <td>aidenb1</td>
+      <td>Name5</td>
+      <td>githubname</td>
     </tr>
     <tr>
       <th>Group201</th>
-      <td>Harsh</td>
+      <td>Name6</td>
+      <td>githubname</td>
+    </tr>
+    <tr>
+      <th>Group6001</th>
+      <td>Name7</td>
+      <td>unknown</td>
+    </tr>
+    <tr>
+      <th>Group6001</th>
+      <td>Name8</td>
       <td>Unknown</td>
     </tr>
     <tr>
       <th>Group6001</th>
-      <td>Shreyasi</td>
-      <td>shreyasichauhan19</td>
-    </tr>
-    <tr>
-      <th>Group6001</th>
-      <td>Elaine</td>
-      <td>Unknown</td>
-    </tr>
-    <tr>
-      <th>Group6001</th>
-      <td>Bob</td>
+      <td>Name8</td>
       <td>Unknown</td>
     </tr>
     <tr>
       <th rowspan="63" valign="top">TA3</th>
       <th>Group100</th>
-      <td>Abhineeth</td>
-      <td>aadiraju</td>
+      <td>Name9</td>
+      <td>githubname</td>
     </tr>
     <tr>
       <th>Group101</th>
-      <td>Garrett</td>
-      <td>veengren-s</td>
+      <td>Name10</td>
+      <td>githubname</td>
     </tr>
     <tr>
       <th>Group6003</th>
-      <td>Tanishq</td>
-      <td>tanishqaneja</td>
+      <td>Name11</td>
+      <td>unknown</td>
     </tr>
     <tr>
       <th>Group6003</th>
-      <td>Kris</td>
-      <td>Ackarino</td>
+      <td>Name12</td>
+      <td>githubname</td>
     </tr>
     <tr>
       <th>Group6003</th>
-      <td>Neilansh</td>
-      <td>Unknown</td>
+      <td>Name13</td>
+      <td>gitbubname</td>
     </tr>
   </tbody>
 </table>
