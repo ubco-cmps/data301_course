@@ -14,10 +14,6 @@ We provide these installation instructions to our students on the first day of t
 - [macOS](install_ds_stack_mac_part1.md)
 - [Windows](install_ds_stack_windows_part1.md)
 
-## Ubuntu users 
-
-If you are using Ubuntu or another Linux distribution, please contact Firas on Piazza for your slightly different instructions.
-
 ## Other operating systems
 
-If you are planning on attempting to complete this course on operating systems other than the ones listed above, contact Firas **immediately** to see if this course is suitable for you. 
+If you are planning on attempting to complete this course on operating systems other than the ones listed above, contact Pat **immediately** to see if this course is suitable for you. 
