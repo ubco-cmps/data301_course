@@ -9,7 +9,7 @@ Once the lab is ready for you to accept, click the link below to accept the lab:
 | Lab                         | Due Date                     | Link to Accept                                        | Solutions                                                               |
 |-----------------------------|------------------------------|-------------------------------------------------------|-------------------------------------------------------------------------|
 | Lab 1 - Excel               | Friday January 22 at 18:00 | [Accept Lab](https://classroom.github.com/a/jvxl7w8w) | [Solutions released]            |
-| Lab 2 - Command Line        | Friday January 29 at 18:00    | [Accept Lab](https://classroom.github.com/a/4jT_Sdxk) | N/A                                                                     |
+| Lab 2 - Command Line        | Friday January 29 at 18:00    | [Accept Lab](https://classroom.github.com/a/thEUGMkL) | N/A                                                                     |
 | Lab 3 - Python I            | Friday February 5 at 18:00   | [Accept Lab](https://classroom.github.com/a/_0r32sQn) | [Solutions released] |
 | Lab 4 - Python II           | Friday February 12 at 18:00   | [Accept Lab](https://classroom.github.com/a/TAb2B8d7) | [Solutions released] |
 | Lab 5 - Data Visualizations | Friday February 26 at 18:00  | [Accept Lab](https://classroom.github.com/a/kBZ7_9T-) | [Solutions released] |
