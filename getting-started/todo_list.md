@@ -29,10 +29,10 @@ Within the Canvas course, [click the "Ed discussion" menu item](https://canvas.u
 
 ```{dropdown} <h3>In the first week</h3>
 
-<label><input type="checkbox" id="todo1-2" class="box"> **2. [Complete Lab 0]()** </input></label>.
+<label><input type="checkbox" id="todo2-1" class="box"> **2. [Complete Lab 0](../notes/week02/lab.md)** </input></label>.
 
 There are no assigned labs the first week. However, I encourage you to use this time to install all the software necessary for the course so that you are ready with everything working next week. All the TAs are available during the lab time to supportyou through the process of installing the software on your home machine.
 
-This [lab]() is based on the material developped by others in the MDS program, which uses many of the same tools we will be using throughout the course.
+This [lab](../notes/week02/lab.md) is based on the material developped by others in the MDS program, which uses many of the same tools we will be using throughout the course.
 
 ```
