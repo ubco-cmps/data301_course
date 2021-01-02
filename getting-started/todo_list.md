@@ -33,6 +33,6 @@ Within the Canvas course, [click the "Ed discussion" menu item](https://canvas.u
 
 There are no assigned labs the first week. However, I encourage you to use this time to install all the software necessary for the course so that you are ready with everything working next week. All the TAs are available during the lab time to supportyou through the process of installing the software on your home machine.
 
-This [lab](../notes/week02/lab.md) is based on the material developped by others in the MDS program, which uses many of the same tools we will be using throughout the course.
+This [lab](../notes/week02/lab.md) is based on the material developped by my colleagues in the MDS program, which uses many of the same tools we will be using throughout the course.
 
 ```
