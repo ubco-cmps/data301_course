@@ -33,13 +33,6 @@
   chapters:
     - file: notes/week01/week01_summary
       title: Week 1 - Introductions
-        - file: notes/week02/lab
-          title: Install Instructions
-          sections:
-            - file: notes/week02/install_ds_stack_mac_part1
-              title: macOS
-            - file: notes/week02/install_ds_stack_windows_part1
-              title: Windows
     - file: notes/week02/week02_summary
       title: Week 2 - Introduction to Excel
       sections:
@@ -53,7 +46,6 @@
               title: macOS
             - file: notes/week02/install_ds_stack_windows_part1
               title: Windows
-        - file: notes/week03/lab1
     - file: notes/week03/week03_summary
       title: Week 3 - Excel analysis and Command Line
       sections:
