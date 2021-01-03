@@ -11,7 +11,7 @@
 - part: Getting started!
   chapters:
     - file: getting-started/todo_list
-      title: Things to do before start of course
+      title: Things to do before and at the of start of course
 
 - part: Course Project
   chapters:
@@ -32,7 +32,7 @@
 - part: Part 1 - Setting up and Excel
   chapters:
     - file: notes/week01/week01_summary
-      title: Introductions
+      title: Week 1 - Introductions
     - file: notes/week02/week02_summary
       title: Week 2 - Introduction to Excel
       sections:
