@@ -27,9 +27,9 @@ The [UBCO calendar description](http://www.calendar.ubc.ca/okanagan/courses.cfm?
 | Team Member                                      | Pronounce as                                                 | Contact         | Office Hours                                      |
 | ------------------------------------------------ | ------------------------------------------------------------ | --------------- | ------------------------------------------------- |
 | Dr. Patricia Lasserre (she/her/hers); Instructor | [<img src="C:\Users\patri\Desktop\Teaching\COSC 301\speaker-vector-icon-600w-727899292.webp" style="zoom:5%;" />](./Myname.m4a) | on Ed Dashboard | <!--Wednesday 4:30 - 5:30 PM and Monday 5-6 PM--> |
-| TA1                                              |                                                              | on Ed Dashboard | <!--Thursdays at-->                               |
-| TA2                                              |                                                              | on Ed Dashboard | <!--Thursday at-->                                |
-| TA3                                              |                                                              | on Ed Dashboard | <!--Friday at-->                                  |
+| Haneen Abu-Hijleh                                |                                                              | on Ed Dashboard | <!--Thursdays at-->                               |
+| Ladan Tazik                                      |                                                              | on Ed Dashboard | <!--Thursday at-->                                |
+| Amir Zeinali                                     |                                                              | on Ed Dashboard | <!--Friday at-->                                  |
 
 
 ## Is this syllabus a contract? 
