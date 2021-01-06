@@ -26,7 +26,7 @@ The [UBCO calendar description](http://www.calendar.ubc.ca/okanagan/courses.cfm?
 
 | Team Member                                      | Pronounce as                                                 | Contact         | Office Hours                                      |
 | ------------------------------------------------ | ------------------------------------------------------------ | --------------- | ------------------------------------------------- |
-| Dr. Patricia Lasserre (she/her/hers); Instructor | [<img src="" style="zoom:0.5%;" />](./Myname.m4a) | on Ed Dashboard | <!--Wednesday 4:30 - 5:30 PM and Monday 5-6 PM--> |
+| Dr. Patricia Lasserre (she/her/hers); Instructor | [<img src="./sound-icon" style="zoom:0.5%;" />](./Myname.m4a) | on Ed Dashboard | <!--Wednesday 4:30 - 5:30 PM and Monday 5-6 PM--> |
 | Haneen Abu-Hijleh; TA                            |                                                              | on Ed Dashboard | <!--Thursdays at-->                               |
 | Ladan Tazik; TA                                  |                                                              | on Ed Dashboard | <!--Thursday at-->                                |
 | Amir Zeinali; TA                                 |                                                              | on Ed Dashboard | <!--Friday at-->                                  |
@@ -60,7 +60,7 @@ Any major changes to the syllabus (this page) will be documented here as well as
 
 | Change Date        | Summary                                                        | Rationale                               |
 |--------------------|----------------------------------------------------------------|-----------------------------------------|
-| January XX, 2020   | Added TAs                                        |             |
+| January 05, 2021   | Added TAs                                        |             |
 
 ## About this course
 
