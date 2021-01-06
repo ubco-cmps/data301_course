@@ -8,14 +8,14 @@ Once the lab is ready for you to accept, click the link below to accept the lab:
 
 | Lab                         | Due Date                     | Link to Accept                                        | Solutions                                                               |
 |-----------------------------|------------------------------|-------------------------------------------------------|-------------------------------------------------------------------------|
-| Lab 1 - Excel               | Friday January 22 at 18:00 | [Accept Lab] | [Solutions released]            |
-| Lab 2 - Command Line        | Friday January 29 at 18:00    | [Accept Lab] | N/A                                                                     |
-| Lab 3 - Python I            | Friday February 5 at 18:00   | [Accept Lab] | [Solutions released] |
-| Lab 4 - Python II           | Friday February 12 at 18:00   | [Accept Lab] | [Solutions released] |
-| Lab 5 - Data Visualizations | Friday February 26 at 18:00  | [Accept Lab] | [Solutions released] |
-| Lab 6 - Tableau             | Friday March 12 at 18:00  | [Accept Lab] | [Solutions released]                                                                    |
-| Lab 7 - SQL I               | Friday March 26 at 18:00  | [Accept Lab] | [Solutions released]                                                                    |
-| Lab 8 - SQL II              | Friday April 2 at 18:00   | [Accept Lab] | [Solutions released]                                                                   |
+| Lab 1 - Excel               | Friday January 29 at 18:00 | [Accept Lab] | [Solutions released]            |
+| Lab 2 - Command Line        | Friday February 5 at 18:00    | [Accept Lab] | N/A                                                                     |
+| Lab 3 - Python I            | Friday February 12 at 18:00   | [Accept Lab] | [Solutions released] |
+| Lab 4 - Python II           | Friday February 26 at 18:00   | [Accept Lab] | [Solutions released] |
+| Lab 5 - Data Visualizations | Friday March 12 at 18:00  | [Accept Lab] | [Solutions released] |
+| Lab 6 - Tableau             | Friday March 26 at 18:00  | [Accept Lab] | [Solutions released]                                                                    |
+| Lab 7 - SQL I               | Friday April 2 at 18:00  | [Accept Lab] | [Solutions released]                                                                    |
+| Lab 8 - SQL II              | Friday April 9 at 18:00   | [Accept Lab] | [Solutions released]                                                                   |
 | Lab 10 - Project Dashboard  | N/A                          | [No lab to accept, submit dashboard on Project Repo](week12/lab10.md)    | N/A                                                                    |
 
 Once you click the link, a repository will automatically be created for you with some starter code.
