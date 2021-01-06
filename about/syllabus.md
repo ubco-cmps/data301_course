@@ -82,7 +82,10 @@ Any major changes to the syllabus (this page) will be documented here as well as
 ## A message from your instructor
 
 ```{note}
+Hello all,
+I hope you had a wonderful break. Happy New Year to all of you! Let's hope that 2021 will see us all coming back to campus !
 
+Pat
 ```
 
 ---
