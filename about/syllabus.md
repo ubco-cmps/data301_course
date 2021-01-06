@@ -26,10 +26,10 @@ The [UBCO calendar description](http://www.calendar.ubc.ca/okanagan/courses.cfm?
 
 | Team Member                                      | Pronounce as                                                 | Contact         | Office Hours                                      |
 | ------------------------------------------------ | ------------------------------------------------------------ | --------------- | ------------------------------------------------- |
-| Dr. Patricia Lasserre (she/her/hers); Instructor | [<img src="C:\Users\patri\Desktop\Teaching\COSC 301\speaker-vector-icon-600w-727899292.webp" style="zoom:5%;" />](./Myname.m4a) | on Ed Dashboard | <!--Wednesday 4:30 - 5:30 PM and Monday 5-6 PM--> |
-| TA1                                              |                                                              | on Ed Dashboard | <!--Thursdays at-->                               |
-| TA2                                              |                                                              | on Ed Dashboard | <!--Thursday at-->                                |
-| TA3                                              |                                                              | on Ed Dashboard | <!--Friday at-->                                  |
+| Dr. Patricia Lasserre (she/her/hers); Instructor | [sound](./Myname.m4a)                                        | on Ed Dashboard | <!--Wednesday 4:30 - 5:30 PM and Monday 5-6 PM--> |
+| Haneen Abu-Hijleh; TA                            |                                                              | on Ed Dashboard | <!--Thursdays at-->                               |
+| Ladan Tazik; TA                                  |                                                              | on Ed Dashboard | <!--Thursday at-->                                |
+| Amir Zeinali; TA                                 |                                                              | on Ed Dashboard | <!--Friday at-->                                  |
 
 
 ## Is this syllabus a contract? 
@@ -51,7 +51,7 @@ Having an adaptive and responsive syllabus is important to me as an instructor b
 I invite you to be co-contributors to this syllabus, and use the tools provided to add your own questions, and suggestions on making this syllabus work for you.
 
 ```{important} Please note that I have your best interests in mind, and it is highly unlikely that I will ever change a syllabus in a way that negatively affects the class, or even individual students. If you believe a syllabus change is affecting you negatively, please do not hesitate to reach out to me, or [submit your feedback anonymously here](https://ubc.ca1.qualtrics.com/jfe/form/SV_1SUW980Y13yaA2V).
-https://ubc.ca1.qualtrics.com/jfe/form/SV_1SUW980Y13yaA2V
+
 ```
 
 ## Changes to the syllabus since the start of Term
@@ -60,7 +60,7 @@ Any major changes to the syllabus (this page) will be documented here as well as
 
 | Change Date        | Summary                                                        | Rationale                               |
 |--------------------|----------------------------------------------------------------|-----------------------------------------|
-| January XX, 2020   | Added TAs                                        |             |
+| January 05, 2021   | Added TAs                                        |             |
 
 ## About this course
 
@@ -82,7 +82,10 @@ Any major changes to the syllabus (this page) will be documented here as well as
 ## A message from your instructor
 
 ```{note}
+Hello all,
+I hope you had a wonderful break. Happy New Year to all of you! Let's hope that 2021 will see us all coming back to campus !
 
+Pat
 ```
 
 ---
@@ -116,7 +119,7 @@ The grading scheme for this course is:
 
 | Item               | Weight       | Due date(s)                               |
 | ------------------ | ------------ | ----------------------------------------- |
-| Lab Assignments    | 40% (8x 5%)  | Fridays the week after they were assigned |
+| Lab Assignments    | 40% (8 x 5%) | Fridays the week after they were assigned |
 | Bi-weekly Tests    | 25% (5 x 5%) | Thursday 6PM to Saturday at 6 PM          |
 | Project Milestones | 20% (4 x 5%) | Friday at 6PM                             |
 | Final Project      | 15%          | Fridays the week after they were assigned |
