@@ -10,6 +10,7 @@ You are highly encouraged (but not required) to attend labs this week ([Lab 0](.
 
 This week you can get help installing the programs for this course. I strongly encourage you to do so. The lab is OPTIONAL and if you are able to get all the install instructions completed, there is no need for you to attend the lab this week and there is nothing to turn in at the end.
 
+I do encourage you however to test that all is working so that you can work with confidence during the term.
 
 ```
 
