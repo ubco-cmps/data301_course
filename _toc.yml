@@ -33,19 +33,27 @@
   chapters:
     - file: notes/week01/week01_summary
       title: Week 1 - Introductions
-    - file: notes/week02/week02_summary
-      title: Week 2 - Introduction to Excel
       sections:
-        - file: notes/week02/videos
-        - file: notes/week02/Lecture2
-          title: Lecture 2 - Excel
         - file: notes/week02/lab
           title: Install Instructions
           sections:
             - file: notes/week02/install_ds_stack_mac_part1
               title: macOS
             - file: notes/week02/install_ds_stack_windows_part1
-              title: Windows
+              title: Windows      
+    - file: notes/week02/week02_summary
+      title: Week 2 - Introduction to Excel
+      sections:
+        - file: notes/week02/videos
+        - file: notes/week02/Lecture2
+          title: Lecture 2 - Excel
+#        - file: notes/week02/lab
+#          title: Install Instructions
+#          sections:
+#            - file: notes/week02/install_ds_stack_mac_part1
+#              title: macOS
+#            - file: notes/week02/install_ds_stack_windows_part1
+#              title: Windows
     - file: notes/week03/week03_summary
       title: Week 3 - Excel analysis and Command Line
       sections:
@@ -98,7 +106,7 @@
           title: Lab 4
     - file: notes/week09/week09_summary
       title: Week 9 - Git and Visualization with Seaborn
-      expand_sections: true
+      #expand_sections: true
       sections:
         - file: notes/week09/videos
         - file: project/milestone02
@@ -128,7 +136,7 @@
           title: Lab 8 (optional)
     - file: notes/week12/week12_summary
       title: Week 12 - Creating Effective Dashboards
-      expand_sections: true
+      #expand_sections: true
       sections:
         - file: notes/week12/lab10
           title: Lab 10 - Create a Tableau Dashboard
