@@ -119,7 +119,7 @@ The grading scheme for this course is:
 
 | Item               | Weight       | Due date(s)                               |
 | ------------------ | ------------ | ----------------------------------------- |
-| Lab Assignments    | 40% (8x 5%)  | Fridays the week after they were assigned |
+| Lab Assignments    | 40% (8 x 5%) | Fridays the week after they were assigned |
 | Bi-weekly Tests    | 25% (5 x 5%) | Thursday 6PM to Saturday at 6 PM          |
 | Project Milestones | 20% (4 x 5%) | Friday at 6PM                             |
 | Final Project      | 15%          | Fridays the week after they were assigned |
