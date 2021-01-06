@@ -51,7 +51,7 @@ Having an adaptive and responsive syllabus is important to me as an instructor b
 I invite you to be co-contributors to this syllabus, and use the tools provided to add your own questions, and suggestions on making this syllabus work for you.
 
 ```{important} Please note that I have your best interests in mind, and it is highly unlikely that I will ever change a syllabus in a way that negatively affects the class, or even individual students. If you believe a syllabus change is affecting you negatively, please do not hesitate to reach out to me, or [submit your feedback anonymously here](https://ubc.ca1.qualtrics.com/jfe/form/SV_1SUW980Y13yaA2V).
-https://ubc.ca1.qualtrics.com/jfe/form/SV_1SUW980Y13yaA2V
+
 ```
 
 ## Changes to the syllabus since the start of Term
