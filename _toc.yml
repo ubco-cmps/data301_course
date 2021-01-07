@@ -15,14 +15,16 @@
 
 - part: Course Project
   chapters:
-    - file: project/milestone01
-      title: Milestone 1 - Dataset
-    - file: project/milestone02
-      title: Milestone 2 - Data Analysis and Git
-    - file: project/milestone03
-      title: Milestone 3 - Address feedback and Tableau prep
-    - file: project/milestone04
-      title: Milestone 4 - Present your project!
+     - file: project/introduction
+       title: Project Introduction 
+#    - file: project/milestone01
+#      title: Milestone 1 - Dataset
+#    - file: project/milestone02
+#      title: Milestone 2 - Data Analysis and Git
+#    - file: project/milestone03
+#      title: Milestone 3 - Address feedback and Tableau prep
+#    - file: project/milestone04
+#      title: Milestone 4 - Present your project!
 
 - part: Labs
   chapters:
@@ -43,101 +45,107 @@
               title: Windows      
             - file: notes/week01/JupyterLab_on_the_cloud
               title: Jupyter Lab on the cloud     
-    - file: notes/week02/week02_summary
-      title: Week 2 - Introduction to Excel
-      sections:
-        - file: notes/week02/videos
-        - file: notes/week02/Lecture2
-          title: Lecture 2 - Excel
-        - file: notes/week02/lab1
+ #     expand_sections: true
+ 
+ #   - file: notes/week02/week02_summary
+ #     title: Week 2 - Introduction to Excel
+ #     sections:
+ #       - file: notes/week02/videos
+ #       - file: notes/week02/Lecture2
+ #         title: Lecture 2 - Excel
+ #       - file: notes/week02/lab1
 
-    - file: notes/week03/week03_summary
-      title: Week 3 - Excel analysis and Command Line
-      sections:
-        - file: notes/week03/videos
-        - file: notes/week03/Lecture3
-          title: Lecture 3
-        - file: notes/week03/lab2
+ #   - file: notes/week03/week03_summary
+ #     title: Week 3 - Excel analysis and Command Line
+ #     sections:
+ #       - file: notes/week03/videos
+ #       - file: notes/week03/Lecture3
+ #         title: Lecture 3
+ #       - file: notes/week03/lab2
 
-- part: Part 2 - Python
-  chapters:
-    - file: notes/week04/week04_summary
-      title: Week 4 - Introduction to Python
-      sections:
-        - file: notes/week04/Lecture4
-          title: Lecture 4
-        - file: notes/week04/videos
-          sections:
-            - file: notes/week04/python1
-            - file: notes/week04/python2
-    - file: notes/week05/week05_summary
-      title: Week 5 - Programming in Python
-      sections:
-        - file: notes/week05/videos
-        - file: notes/week05/Lecture5
-          title: Lecture 5
-        - file: notes/week05/lab    
-    - file: notes/week06/week06_summary
-      title: Week 6 - Week off!
-    - file: notes/week07/week07_summary
-      title: Week 7 - Data analysis in Python
-      sections:
-        - file: notes/week07/videos
-        - file: notes/week07/Lecture7
-        - file: project/milestone01
-          title: Milestone 1 released
-    - file: notes/week08/week08_summary
-      title: Week 8 - Introduction to Data Visualization
-      sections:
-        - file: notes/week08/videos
-        - file: notes/week08/Seaborn_tutorial
-          title: Seaborn Tutorial
-        - file: notes/week08/Lecture8
-        - file: notes/week08/lab4
-          title: Lab 4
-    - file: notes/week09/week09_summary
-      title: Week 9 - Git and Visualization with Seaborn
-      #expand_sections: true
-      sections:
-        - file: notes/week09/videos
-        - file: project/milestone02
-          title: Milestone 2 released
-        - file: notes/week09/Lecture9
-        - file: notes/week09/lab6
-          title: Lab 5 and 6
+#- part: Part 2 - Python
+#  chapters:
+#    - file: notes/week04/week04_summary
+#      title: Week 4 - Introduction to Python
+#      sections:
+#        - file: notes/week04/Lecture4
+#          title: Lecture 4
+#        - file: notes/week04/videos
+#          sections:
+#            - file: notes/week04/python1
+#            - file: notes/week04/python2
+#    - file: notes/week05/week05_summary
+#      title: Week 5 - Programming in Python
+#      sections:
+#        - file: notes/week05/videos
+#        - file: notes/week05/Lecture5
+#          title: Lecture 5
+#        - file: notes/week05/lab    
+#    - file: notes/week06/week06_summary
+#      title: Week 6 - Week off!
+#    - file: notes/week07/week07_summary
+#      title: Week 7 - Data analysis in Python
+#      sections:
+#        - file: notes/week07/videos
+#        - file: notes/week07/Lecture7
+#        - file: project/milestone01
+#          title: Milestone 1 released
+#    - file: notes/week08/week08_summary
+#      title: Week 8 - Introduction to Data Visualization
+#      sections:
+#        - file: notes/week08/videos
+#        - file: notes/week08/Seaborn_tutorial
+#          title: Seaborn Tutorial
+#        - file: notes/week08/Lecture8
+#        - file: notes/week08/lab4
+#          title: Lab 4
+#    - file: notes/week09/week09_summary
+#      title: Week 9 - Git and Visualization with Seaborn
+#      #expand_sections: true
+#      sections:
+#        - file: notes/week09/videos
+#        - file: project/milestone02
+#          title: Milestone 2 released
+#        - file: notes/week09/Lecture9
+#        - file: notes/week09/lab6
+#          title: Lab 5 and 6
 
-- part: Part 3 - Tableau and Dashboards
-  chapters:
-    - file: notes/week10/week10_summary
-      title: Week 10 - Tableau
-      sections:
-        - file: notes/week10/videos
-        - file: project/milestone02
-          title: Milestone 2 released
-        - file: notes/week10/Lecture10
-        - file: notes/week10/lab7
-          title: Lab 7
-    - file: notes/week11/week11_summary
-      title: Week 11 - Bits and pieces
-      sections:
-        - file: notes/week11/videos
-        - file: notes/week11/Lecture11
-          title: Lecture 11
-        - file: notes/week11/lab8
-          title: Lab 8 (optional)
-    - file: notes/week12/week12_summary
-      title: Week 12 - Creating Effective Dashboards
-      #expand_sections: true
-      sections:
-        - file: notes/week12/lab10
-          title: Lab 10 - Create a Tableau Dashboard
-        - file: notes/week12/Lecture12         
-        - file: project/milestone03
-          title: Milestone 3
-- part: Course Feedback
-  chapters:
-    - file: about/feedback
-      title: Anonymous Feedback Form
+#- part: Part 3 - Tableau and Dashboards
+#  chapters:
+#    - file: notes/week10/week10_summary
+#      title: Week 10 - Tableau
+#      sections:
+#        - file: notes/week10/videos
+#        - file: project/milestone02
+#          title: Milestone 2 released
+#        - file: notes/week10/Lecture10
+#        - file: notes/week10/lab7
+#          title: Lab 7
+#    - file: notes/week11/week11_summary
+#      title: Week 11 - Bits and pieces
+#      sections:
+#        - file: notes/week11/videos
+#        - file: notes/week11/Lecture11
+#          title: Lecture 11
+#        - file: notes/week11/lab8
+#          title: Lab 8 (optional)
+#    - file: notes/week12/week12_summary
+#      title: Week 12 - Creating Effective Dashboards
+#      sections:
+#        - file: notes/week12/lab10
+#          title: Lab 10 - Create a Tableau Dashboard
+#        - file: notes/week12/Lecture12         
+#        - file: project/milestone03
+#          title: Milestone 3
+#- part: Course Feedback
+#  chapters:
+#    - file: about/feedback
+#      title: Anonymous Feedback Form
+
+
+
+
+
 
 # - part: Part 1
 #   chapters:

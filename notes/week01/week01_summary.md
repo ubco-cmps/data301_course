@@ -8,7 +8,7 @@ Hello students!  Welcome to Week 1 - this week will be talk about logistics and 
 
 This week we will be doing course introductions, I will be showing you how to navigate the course website, and how the course is set up. In terms of content, there won't much real content, just dealing with course administrative stuff.
 
-<label><input type="checkbox" id="week01_task2" class="box"> Attend the [lab](./lab.md) </input></label>
+<label><input type="checkbox" id="week01_task2" class="box"> Attend the **[lab](./lab.md)** this week</input></label>
 
 ```{tip}
 The lab is for installing and setting up all the software you need for the course.
