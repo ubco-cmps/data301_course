@@ -8,7 +8,7 @@ Once the lab is ready for you to accept, click the link below to accept the lab:
 
 | Lab                         | Due Date                     | Link to Accept                                        | Solutions                                                               |
 |-----------------------------|------------------------------|-------------------------------------------------------|-------------------------------------------------------------------------|
-| Lab 0 - Preparing for the Term | Friday January 18 at 18:00 | [Accept Lab](https://classroom.github.com/a/0vMuOuZl) | N/A
+| Lab 0 - Preparing for the Term | Friday January 22 at 18:00 | [Accept Lab](https://classroom.github.com/a/0vMuOuZl) | N/A
 | Lab 1 - Excel               | Friday January 29 at 18:00 | [Accept Lab](https://classroom.github.com/a/jvxl7w8w) | [Solutions released]            |
 | Lab 2 - Command Line        | Friday February 5 at 18:00    | [Accept Lab](https://classroom.github.com/a/thEUGMkL) | N/A                                                                     |
 | Lab 3 - Python I            | Friday February 12 at 18:00   | [Accept Lab](https://classroom.github.com/a/_0r32sQn) | [Solutions released] |

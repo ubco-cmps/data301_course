@@ -5,7 +5,7 @@
   chapters:
     - file: about/course_schedule
     - file: about/accommodations
-#    - file: about/doing_well
+    - file: about/doing_well
     - file: about/faq
 
 - part: Getting started!
@@ -34,33 +34,29 @@
     - file: notes/week01/week01_summary
       title: Week 1 - Introductions
       sections:
-        - file: notes/week02/lab
-          title: Install Instructions
+        - file: notes/week01/lab
+          title: Lab0 - Install Instructions
           sections:
-            - file: notes/week02/install_ds_stack_mac_part1
+            - file: notes/week01/install_ds_stack_mac
               title: macOS
-            - file: notes/week02/install_ds_stack_windows_part1
+            - file: notes/week01/install_ds_stack_windows
               title: Windows      
+
     - file: notes/week02/week02_summary
       title: Week 2 - Introduction to Excel
       sections:
         - file: notes/week02/videos
         - file: notes/week02/Lecture2
           title: Lecture 2 - Excel
-#        - file: notes/week02/lab
-#          title: Install Instructions
-#          sections:
-#            - file: notes/week02/install_ds_stack_mac_part1
-#              title: macOS
-#            - file: notes/week02/install_ds_stack_windows_part1
-#              title: Windows
+        - file: notes/week02/lab1
+
     - file: notes/week03/week03_summary
       title: Week 3 - Excel analysis and Command Line
       sections:
         - file: notes/week03/videos
         - file: notes/week03/Lecture3
           title: Lecture 3
-        - file: notes/week03/lab1
+        - file: notes/week03/lab2
 
 - part: Part 2 - Python
   chapters:
@@ -73,12 +69,6 @@
           sections:
             - file: notes/week04/python1
             - file: notes/week04/python2
-        - file: notes/week04/lab
-          sections:
-            - file: notes/week02/install_ds_stack_mac_part2
-              title: macOS Part 2
-            - file: notes/week02/install_ds_stack_windows_part2
-              title: Windows Part 2
     - file: notes/week05/week05_summary
       title: Week 5 - Programming in Python
       sections:
