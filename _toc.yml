@@ -41,7 +41,8 @@
               title: macOS
             - file: notes/week01/install_ds_stack_windows
               title: Windows      
-
+            - file: notes/week01/JupyterLab_on_the_cloud
+              title: Jupyter Lab on the cloud     
     - file: notes/week02/week02_summary
       title: Week 2 - Introduction to Excel
       sections:

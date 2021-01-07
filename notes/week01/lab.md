@@ -24,7 +24,7 @@ Contact your TA to perform this operation with them the first time.
 
 To accept this lab on GitHub Classroom, [you must click this link](https://classroom.github.com/a/0vMuOuZl). A short JupiterLab program is available to test you can run it and submit once tested.
 
-Here is a video (made by Dr. Moosvi) showing you how to accept the assignment and start working on it. The part of Notebook is not relevant for us this week.
+Here is a video (made by Dr. Moosvi) showing you how to accept the assignment and start working on it. You only need to start the video at 2:50 min and the part of Notebook is not relevant for us this week.
 
 <div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/OrfFTdkghZ4" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
