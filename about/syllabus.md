@@ -24,12 +24,11 @@ The [UBCO calendar description](http://www.calendar.ubc.ca/okanagan/courses.cfm?
 
 ## Contact the Teaching Team
 
-| Team Member                                      | Pronounce as                                                 | Contact         | Office Hours                                      |
-| ------------------------------------------------ | ------------------------------------------------------------ | --------------- | ------------------------------------------------- |
-| Dr. Patricia Lasserre (she/her/hers); Instructor | [sound](./Myname.m4a)                                        | on Ed Dashboard | <!--Wednesday 4:30 - 5:30 PM and Monday 5-6 PM--> |
-| Haneen Abu-Hijleh; TA                            |                                                              | on Ed Dashboard | <!--Thursdays at-->                               |
-| Ladan Tazik; TA                                  |                                                              | on Ed Dashboard | <!--Thursday at-->                                |
-| Amir Zeinali; TA                                 |                                                              | on Ed Dashboard | <!--Friday at-->                                  |
+| Dr. Patricia Lasserre (she/her/hers); Instructor | on Ed Dashboard | Wednesday 5:00PM - 6 PM and Friday 4:30-5:30 PM|
+| ------------------------------------------------ | ------------------ | ----------------------------------------------- |
+| Haneen Abu-Hijleh; TA                            | on Ed Dashboard | Tuesday 5:00PM - 6:00PM                         |
+| Ladan Tazik; TA                                  | on Ed Dashboard | Monday 11:00AM - Noon;                          |
+| Amir Zeinali; TA                                 | on Ed Dashboard | Thursday 7:00AM - 8:00AM                        |
 
 
 ## Is this syllabus a contract? 
@@ -112,7 +111,9 @@ Pay close attention to the supplementary videos and articles that will be linked
 You should take this course to get an introduction to a very exciting field of data analytics!
 ```
 
-(grading_practices) = 
+<!-- (grading_practices)= -->
+
+
 ## How will I be evaluated in this course?
 
 The grading scheme for this course is:
