@@ -19,6 +19,6 @@ You can access the slides and pre-recorded Data Representation lecture through [
 ```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week01_video3" class="box"> **Command line**</input></label></h4>  
 :open:
 
-You can access the slides and pre-recording of the Command Line lecture through [Canvas --> Modules --> Week 1 - Command line](https://canvas.ubc.ca/courses/64282/pages/monday-january-11-recording?module_item_id=2824642).
+You can access the slides and pre-recording of the Command Line lecture through [Canvas --> Modules --> Week 1 - Command line](https://canvas.ubc.ca/courses/64282/pages/week-1-command-line?module_item_id=2830190).
 
 ```
