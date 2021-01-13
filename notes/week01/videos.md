@@ -10,7 +10,7 @@ You can access the slides and recording of the live lecture through [Canvas --> 
 ```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week01_video2" class="box"> **Data Representation**</input></label></h4>  
 :open:
 
-You can access the slides and pre-recorded information on Data Representation through [Canvas --> Modules --> Week 1 - Data Representation](https://canvas.ubc.ca/courses/64282/pages/monday-january-11-recording?module_item_id=2824642). Note that there is a [file to download](./files.md) associated with those videos.
+You can access the slides and pre-recorded information on Data Representation through [Canvas --> Modules --> Week 1 - Data Representation](https://canvas.ubc.ca/courses/64282/pages/monday-january-11-recording?module_item_id=2824642). Note that one of the video mention a file to download. You can find it using Week1 - Introductions -> files.
 
 ```
 
