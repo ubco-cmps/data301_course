@@ -36,6 +36,10 @@
     - file: notes/week01/week01_summary
       title: Week 1 - Introductions
       sections:
+        - file: notes/week01/videos
+          title: videos
+        - file: notes/week01/files
+          title: files
         - file: notes/week01/lab
           title: Lab0 - Install Instructions
           sections:
@@ -44,7 +48,9 @@
             - file: notes/week01/install_ds_stack_windows
               title: Windows      
             - file: notes/week01/JupyterLab_on_the_cloud
-              title: Jupyter Lab on the cloud     
+              title: Jupyter Lab on the cloud    
+   
+
  #     expand_sections: true
  
  #   - file: notes/week02/week02_summary

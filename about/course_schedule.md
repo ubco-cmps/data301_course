@@ -19,6 +19,6 @@ The following table provide a detailed view of the course schedule as it is curr
 | 11     | March 22 - 28      | Introduction to Databases                             | Lab 7: SQL I                             |                                              | Bonus Test 4 | -                           |
 | 12     | March 29 - April 4 | Working with Databases                                | Lab 8: SQL II                            | -                                            | Test 5       | Databases                   |
 | 13     | April 5 - 11       | Introduction to R (tentative)                         | -                                        | -                                            | Bonus Test 5 | -                           |
-| 14     | April 11 - 13      | Poster Session                                        | Lab 10: Poster Session                   | Milestone 4: Final Project                   |              |                             |
+| 14     | April 11 - 13      | Poster Session                                        | Lab 9 : Poster Session                   | Milestone 4: Final Project                   |              |                             |
 
 

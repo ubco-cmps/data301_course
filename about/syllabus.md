@@ -5,10 +5,12 @@
 # Course Syllabus
 
 This is the official syllabus and course outline for DATA 301 and COSC 301. For convenience, we will refer to this course as DATA 301.
+<!--
 
 ```{warning} Please note that this syllabus is currently under active development, there may be typos or missing sections; treat this as a draft until the course starts!
 
 ```
+-->
 
 ## COSC / DATA 301 (3) Introduction to Data Analytics
 
@@ -57,9 +59,11 @@ I invite you to be co-contributors to this syllabus, and use the tools provided 
 
 Any major changes to the syllabus (this page) will be documented here as well as the date the change was made. 
 
-| Change Date        | Summary                                                        | Rationale                               |
-|--------------------|----------------------------------------------------------------|-----------------------------------------|
-| January 05, 2021   | Added TAs                                        |             |
+| Change Date      | Summary                                         | Rationale         |
+| ---------------- | ----------------------------------------------- | ----------------- |
+| January 05, 2021 | Added TAs                                       |                   |
+| January 12, 2021 | Renamed Lab 10 to Lab 9 in schedule             | Typo              |
+| January 12, 2021 | Removed Note indicating it was a draft syllabus | Class has started |
 
 ## About this course
 
