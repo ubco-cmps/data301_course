@@ -22,3 +22,11 @@ TAs are also available at different office hours during the week if you did not 
 ```{tip}
 Some of you might already know this content, but for the others, it gives you some background as to what is data, how it is represented on a computer, and why command line might be useful in this course. Take the time to quickly review the slides before watching the videos to check if you need a refresher or have never learned this content.
 ```
+
+## How to watch flipped lecture videos
+
+<div class="container youtube">
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/PPc8nY6Tcns" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Optional: [Showing the differences between a Traditional and a Flipped Classroom](https://www.youtube.com/watch?v=yzMFdDT6FSA).
