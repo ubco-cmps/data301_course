@@ -17,10 +17,8 @@ This lab is marked so the TA can ensure you have all you need for this class.
 TAs are also available at different office hours during the week if you did not finish the installation or are having difficulties with installation beyond the 2 hours lab.
 ```
 
-## List of things to finish this week
-
-<label><input type="checkbox" id="week01_task3" class="box"> Watch the **[introductory videos](./videos.md)**</input></label>
+<label><input type="checkbox" id="week01_task3" class="box"> Watch the **[pre-recorded videos](./videos.md)**</input></label>
 
 ```{tip}
-Some of you might already know this content, but for the others, it gives you some background as to what is data, how it is represented on a computer, and why command line might be useful in this course. Take the time to quickly review the slides before watching the videos if you need a refresher or never learned this.
+Some of you might already know this content, but for the others, it gives you some background as to what is data, how it is represented on a computer, and why command line might be useful in this course. Take the time to quickly review the slides before watching the videos to check if you need a refresher or have never learned this content.
 ```
