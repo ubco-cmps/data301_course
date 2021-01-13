@@ -59,11 +59,13 @@ I invite you to be co-contributors to this syllabus, and use the tools provided 
 
 Any major changes to the syllabus (this page) will be documented here as well as the date the change was made. 
 
-| Change Date      | Summary                                         | Rationale         |
-| ---------------- | ----------------------------------------------- | ----------------- |
-| January 05, 2021 | Added TAs                                       |                   |
-| January 12, 2021 | Renamed Lab 10 to Lab 9 in schedule             | Typo              |
-| January 12, 2021 | Removed Note indicating it was a draft syllabus | Class has started |
+| Change Date      | Summary                                                      | Rationale                                |
+| ---------------- | ------------------------------------------------------------ | ---------------------------------------- |
+| January 05, 2021 | Added TAs                                                    |                                          |
+| January 12, 2021 | Renamed Lab 10 to Lab 9 in schedule                          | Typo                                     |
+| January 12, 2021 | Removed Note indicating it was a draft syllabus              | Class has started                        |
+| January 12, 2021 | Explain Lab percentage (why 8x5% when there is 9 labs)       | Not clear that the worst lab won't count |
+| January 12, 2021 | Modified Course communication to state that Labs are done in Collaborate Ultra |                                          |
 
 ## About this course
 
@@ -122,12 +124,12 @@ You should take this course to get an introduction to a very exciting field of d
 
 The grading scheme for this course is:
 
-| Item               | Weight       | Due date(s)                               |
-| ------------------ | ------------ | ----------------------------------------- |
-| Lab Assignments    | 40% (8 x 5%) | Fridays the week after they were assigned |
-| Bi-weekly Tests    | 25% (5 x 5%) | Thursday 6PM to Saturday at 6 PM          |
-| Project Milestones | 20% (4 x 5%) | Friday at 6PM                             |
-| Final Project      | 15%          | Fridays the week after they were assigned |
+| Item               | Weight                                       | Due date(s)                               |
+| ------------------ | -------------------------------------------- | ----------------------------------------- |
+| Lab Assignments    | 40% (8 x 5%)  (the worst lab is not counted) | Fridays the week after they were assigned |
+| Bi-weekly Tests    | 25% (5 x 5%)                                 | Thursday 6PM to Saturday at 6 PM          |
+| Project Milestones | 20% (4 x 5%)                                 | Friday at 6PM                             |
+| Final Project      | 15%                                          | Fridays the week after they were assigned |
 
 There will be 5 tests in this course in an (approximately) bi-weekly schedule. For each of the tests, there will be a second test exactly one week later. The resulting grade for the test will be either the first test, or the average of the two tests (if you choose to do the two tests).
 
@@ -207,7 +209,7 @@ Here are the key principles of my teaching philosophy and my values that I inten
 
 ## Course Communication
 
-- For lectures, labs, tutorials, and office hours we will be principally using Zoom. If group exercises are planned, I may elect to use collaborate ultra, in which case it will be clearly stated.
+- For lectures, tutorials, and office hours we will be principally using Zoom. If group exercises are planned, I may elect to use collaborate ultra, in which case it will be clearly stated. Labs will be in Collaborate Ultra.
 - For official course communication, we will be using [Canvas](https://canvas.ubc.ca/courses/63469) and [Ed discussion](https://us.edstem.org/dashboard).
 - For unofficial chat, community building, sharing of tiktoks, cat videos, and general conversation, we will (optionally) be using a Discord server.
 
