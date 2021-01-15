@@ -49,17 +49,13 @@
               title: Windows      
             - file: notes/week01/JupyterLab_on_the_cloud
               title: Jupyter Lab on the cloud    
-   
-
- #     expand_sections: true
- 
- #   - file: notes/week02/week02_summary
- #     title: Week 2 - Introduction to Excel
- #     sections:
- #       - file: notes/week02/videos
- #       - file: notes/week02/Lecture2
- #         title: Lecture 2 - Excel
- #       - file: notes/week02/lab1
+    - file: notes/week02/week02_summary
+      title: Week 2 - Introduction to Excel
+      sections:
+        - file: notes/week02/videos
+        - file: notes/week02/Lecture2
+          title: Material for Lecture 2 - Excel 
+        - file: notes/week02/lab1
 
  #   - file: notes/week03/week03_summary
  #     title: Week 3 - Excel analysis and Command Line

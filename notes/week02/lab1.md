@@ -9,7 +9,7 @@ If you need a reminder on how to do so, the video is available [here](./week01/l
 
 ## Requirements
 
-In this lab, we will use Microsoft Excel to manipulate, transform, and analyze data. Please note that Microsoft Excel must be used to complete this lab. You should have installed Microsoft 365 during lab 0 (See instructions there). 
+In this lab, we will use Microsoft Excel to manipulate, transform, and analyze data. Please note that Microsoft Excel must be used to complete this lab. You should have installed Excel during lab 0. 
 
 **This lab is to be completed individually.**
 

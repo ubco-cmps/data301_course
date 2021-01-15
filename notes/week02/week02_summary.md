@@ -2,49 +2,39 @@
 Week 2 Summary
 =======================
 
-## How this course is organized
-
-Hello students! Welcome to Week 2 - this week we will dive right into the heart of the course and setup our machines for data analytics.
-
-I will be adding a video about how this course is organized, soon.
-
-<!-- <div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/_G7FybZQ5zE" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div> -->
-
-## How to watch flipped lecture videos
-
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/PPc8nY6Tcns" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-Optional: [Showing the differences between a Traditional and a Flipped Classroom](https://www.youtube.com/watch?v=yzMFdDT6FSA).
-
 ## List of things to do this week
 
 Below is a list of things you need to do this week, links to where you can do them, as well as roughly the order you should do it.
 Note that these are just SUGGESTIONS and you are by no means required to them this way. 
 I have put the labs at the end, but if your lab section is earlier in the week, you may want to shift things around.
 
-<label><input type="checkbox" id="week02_task1" class="box"> [**Complete the lab**](./lab.md) </input></label>
+<label><input type="checkbox" id="week02_task1" class="box"> [**Watch the pre-lecture videos**](./videos.md) </input></label>
 
 ```{tip}
-You are highly encouraged (but not required) to attend labs this week (Lab 0). 
+To ensure you have all the material in preparation for next week's lab on Excel, I would like you to listen to the 20 minutes video that explain how to enter data in Excel. This will allow you during the lecture to follow along with me as I show more complex actions that can be performed in Excel.
 
-This week you can get help installing the programs for this course. The lab is OPTIONAL and if you are able to get all the install instructions completed, there is no need for you to attend the lab this week and there is nothing to turn in at the end.
+If you already know Excel, you can just glance over it. There might be a couple of tips that you might not know.
 ```
-<label><input type="checkbox" id="week02_task1" class="box"> [**Attend the Lecture**](./lab.md) </input></label>
+
+<label><input type="checkbox" id="week02_task2" class="box"> **Attend the Lecture** </input></label>
 
 ```{tip}
-Ideally you will come to the lecture this week with your GitHub.com account. That is the minimum (though it would be great if your computer was also set up!).
+Ideally you will come to the lecture this week with your Excel open. You can download the file used in class to follow along in the file [sales.xlsx]([https://canvas.ubc.ca/courses/64282/files/12336918?module_item_id=2841388]). We will explore the functions you will need for the lab this week.
 ```
 
-<label><input type="checkbox" id="week02_task2" class="box"> [**Watch the post-lecture videos**](./videos.md) </input></label>
+<label><input type="checkbox" id="week02_task3" class="box"> [**Complete the lab**](./lab1.md) </input></label>
 
 ```{tip}
-After the lecture this week, I will post some additional videos for some additional context in preparation for next week's lab on Excel.
+The lab this week will make you explore some standard functions done when doing data analysis using Excel .
 ```
 
+<label><input type="checkbox" id="week02_task4" class="box"> [**Watch the post-lecture videos**](./videos.md) </input></label>
+
+```{tip}
+After the lecture this week, I will post some additional videos for more advanced features of Excel.
+```
+
+<!--
 <label><input type="checkbox" id="week02_task3" class="box"> [**Write the Practice Test (60 mins)**](./test.md) </input></label>
 
 ```{tip}
@@ -52,3 +42,4 @@ This week's test is NOT for marks. It is only here so you can see how the testin
 
 The content of the course is on the course policies, and some other silly questions (again, not for marks).
 ```
+-->
