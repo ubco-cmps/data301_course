@@ -1,29 +1,12 @@
 # Videos
 
-Below are the assigned videos for this week. 
-The videos are collapsible so once you're done with one, you can move to the next one.
-In the sidebar on the right, you can use the checklists to keep track of what's done.
-
-````{margin}
-```{admonition} Checklist of items
-:class: tip
-
-<input type="checkbox" id="week03_video13" class="box"><label>Excel Analysis</input></label>
-
+```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week02_video1" class="box"> **Excel: Advanced functionalities**</input></label></h4> 
+:open:
+To come soon...
+```
+```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week02_video2" class="box"> **Concept behind Git**</input></label></h4> 
+:open:
+If I have time, I'll do a short videoscribe to explain why git is so useful to know...
 
 ```
-````
 
-## Required Videos
-
-```{dropdown} 1. Data analysis with Excel
-    :container: + shadow
-    :title: bg-info text-white font-weight-bold
-    :open:
-
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/fLVTxAdIFAw" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-[Lecture Slides](http://firas.moosvi.com/courses/data301/data_301_excel_intro_lecture2.pdf)
-```
