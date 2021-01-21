@@ -59,9 +59,9 @@
 - part: Part 2 - Python
   chapters:
     - file: notes/week03/week03_summary
-      title: Week 3 - Command Line and Pythod Introduction
+      title: Week 3 - Command Line and Python Introduction
       sections:
-        - file: notes/week03/lecture4
+        - file: notes/week03/Lecture4
         - file: notes/week03/videos
         - file: notes/week03/lab2
 
