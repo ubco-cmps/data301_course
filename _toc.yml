@@ -56,11 +56,14 @@
         - file: notes/week02/Lecture2
           title: Material for Lecture 2 - Excel 
         - file: notes/week02/lab1
- #   - file: notes/week03/week03_summary
- #     title: Week 3 - Excel analysis and Command Line
- #     sections:
- #       - file: notes/week03/videos
- #       - file: notes/week03/lab2
+- part: Part 2 - Python
+  chapters:
+    - file: notes/week03/week03_summary
+      title: Week 3 - Command Line and Pythod Introduction
+      sections:
+        - file: notes/week03/lecture4
+        - file: notes/week03/videos
+        - file: notes/week03/lab2
 
 #- part: Part 2 - Python
 #  chapters:
