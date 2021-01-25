@@ -3,7 +3,7 @@ Lab 1: Excel
 
 ## Accept the lab
 
-To accept this lab on GitHub Classroom, [you must click this link](https://classroom.github.com/a/jvxl7w8w).
+To accept this lab on GitHub Classroom, [you must click this link](https://classroom.github.com/a/UynYznfO).
 
 If you need a reminder on how to do so, the video is available [here](./week01/lab.md)
 

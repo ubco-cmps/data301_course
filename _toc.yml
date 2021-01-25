@@ -62,6 +62,9 @@
       title: Week 3 - Command Line and Python Introduction
       sections:
         - file: notes/week03/Lecture4
+          sections:
+          - file: notes/week03/python1
+          - file: notes/week03/python2
         - file: notes/week03/videos
         - file: notes/week03/lab2
 

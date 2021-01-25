@@ -6,7 +6,7 @@ This week, Lab 2 will be short and consist in practicing the command-line throug
 
 ## Accept the lab
 
-To accept this lab on GitHub Classroom, [you must click this link]. (Link to come)
+To accept this lab on GitHub Classroom, [you must click this link](https://classroom.github.com/a/_MbwwHLF)
 
 ## Objectives
 

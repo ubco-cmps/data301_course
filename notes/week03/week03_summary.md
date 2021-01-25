@@ -9,7 +9,7 @@ Week 3 Summary
 Here are the videos that you must look at this week to start with Python. Make sure to try testing the commands.
 ```
 
-<label><input type="checkbox" id="week02_task1" class="box"> **[Read the Intro on this topic](./lecture4.ipynb)** </input></label>
+<label><input type="checkbox" id="week02_task1" class="box"> **[Read the Intro on this topic](https://firas.moosvi.com/courses/data301/notes/week03/Lecture4.html)** </input></label>
 
 ```{tip}
 This week we will start talking about Python, so that next week, you can get ready for your first lab using that language. Read this
@@ -21,7 +21,7 @@ This week we will start talking about Python, so that next week, you can get rea
 This week we will start talking about Python, so that next week, you can get ready for your first lab using that language.
 ```
 
-<label><input type="checkbox" id="week02_task4" class="box"> [**Attend Lab2**](./lab1.md) </input></label>
+<label><input type="checkbox" id="week02_task4" class="box"> [**Attend Lab2**](./lab2.md) </input></label>
 
 ```{tip}
 This lab is very short so that you can use the remaining time to complete [Lab1](./week02/lab1.md), and on starting to work on Python. 
@@ -29,7 +29,7 @@ This lab is very short so that you can use the remaining time to complete [Lab1]
 Link to accept the lab to come...
 ```
 
-<label><input type="checkbox" id="week02_task5" class="box"> [**Complete and submit Lab0**](../week1/lab.md) </input></label>
+<label><input type="checkbox" id="week02_task5" class="box"> [**Complete and submit Lab0**](../week01/lab.md) </input></label>
 
 ```{tip}
 If not already done, make sure to submit Lab0. Deadline is Friday (with 48 hrs extra for late submission).
