@@ -15,7 +15,7 @@ Here are the videos that you must look at this week to start with Python. Make s
 This week we will start talking about Python, so that next week, you can get ready for your first lab using that language. Read this
 ```
 
-<label><input type="checkbox" id="week02_task3" class="box"> **Attend Live lecture** </input></label>
+<label><input type="checkbox" id="week02_task3" class="box"> [**Attend Live lecture**](https://canvas.ubc.ca/courses/64282/pages/monday-january-26-recording) </input></label>
 
 ```{tip}
 This week we will start talking about Python, so that next week, you can get ready for your first lab using that language.
