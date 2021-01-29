@@ -35,10 +35,10 @@ Link to accept the lab to come...
 If not already done, make sure to submit Lab0. Deadline is Friday (with 48 hrs extra for late submission).
 ```
 
-<label><input type="checkbox" id="week02_task5" class="box"> **Do Test1**</input></label>
+<label><input type="checkbox" id="week02_task5" class="box"> [**Do Test1**](https://canvas.ubc.ca/courses/64282/quizzes/316646)</input></label>
 
 ```{tip}
-The test will be done in Canvas. Content will stop at what we have seen since the beginning up to Excell. Link to come...
+The test will be done in Canvas. Content will stop at what we have seen since the beginning up to Excel. 
 ```
 
 
