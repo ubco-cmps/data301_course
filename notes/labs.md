@@ -11,7 +11,7 @@ Once the lab is ready for you to accept, click the link below to accept the lab:
 | Lab 0 - Preparing for the Term | Friday January 22 at 18:00 | [Accept Lab](https://classroom.github.com/a/0vMuOuZl) | N/A
 | Lab 1 - Excel               | Friday January 29 at 18:00 | [Accept Lab](https://classroom.github.com/a/UynYznfO) | [Solutions released]            |
 | Lab 2 - Command Line        | Friday February 5 at 18:00    | [Accept Lab](https://classroom.github.com/a/_MbwwHLF) | N/A                                                                     |
-| Lab 3 - Python I            | Friday February 12 at 18:00   | [Accept Lab] | [Solutions released] |
+| Lab 3 - Python I            | Friday February 12 at 18:00   | [Accept Lab](https://classroom.github.com/a/_0r32sQn) | [Solutions released] |
 | Lab 4 - Python II           | Friday February 26 at 18:00   | [Accept Lab] | [Solutions released] |
 | Lab 5 - Data Visualizations | Friday March 12 at 18:00  | [Accept Lab]  | [Solutions released] |
 | Lab 6 - Tableau             | Friday March 26 at 18:00  | [Accept Lab] | [Solutions released]                                                                    |

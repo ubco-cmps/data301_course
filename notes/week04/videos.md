@@ -21,7 +21,7 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 
 ## Required Videos - Beginner Track
 
-```{dropdown} 1. Module 1 and 2
+```{dropdown} 1. Module 3, 4, 5
     :container: + shadow
     :title: bg-info text-white font-weight-bold
     :open:
@@ -30,32 +30,31 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 
 [Lecture Notes](https://prog-learn.mds.ubc.ca/en)
 ```
-[The beginner track can be accessed here](https://prog-learn.mds.ubc.ca/en).
 
-You should complete Module 1 and try to get through Module 2 before next week.
+You should complete Module 3,4,5 before next week.
 
 ## Required Videos - Intermediate or Advanced Track
 
-```{dropdown} 1. Python I
+```{dropdown} 1. Python III
     :container: + shadow
     :title: bg-info text-white font-weight-bold
     :open:
 
 <div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/yBAYduexjuA" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/26YFLyMxXQ0" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-[Lecture Notes](https://firas.moosvi.com/courses/data301/notes/week04/python1.html)
+[Lecture Notes](https://firas.moosvi.com/courses/data301/notes/week05/python3.html)
 ```
 
-```{dropdown} 2. Python II
+```{dropdown} 2. Python IV
     :container: + shadow
     :title: bg-info text-white font-weight-bold
     :open:
 
 <div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/7FLv1ACEl-E" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/J0s7mogIhQM" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-[Lecture Notes](https://firas.moosvi.com/courses/data301/notes/week04/python2.html)
+[Lecture Notes](https://firas.moosvi.com/courses/data301/notes/week05/python4.html)
 ```

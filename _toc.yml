@@ -67,18 +67,14 @@
           - file: notes/week03/python2
         - file: notes/week03/videos
         - file: notes/week03/lab2
-
-#- part: Part 2 - Python
-#  chapters:
-#    - file: notes/week04/week04_summary
-#      title: Week 4 - Introduction to Python
-#      sections:
-#        - file: notes/week04/Lecture4
-#          title: Lecture 4
-#        - file: notes/week04/videos
-#          sections:
-#            - file: notes/week04/python1
-#            - file: notes/week04/python2
+    - file: notes/week04/week04_summary
+      title: Week 4 - Programming in Python
+      sections:
+        - file: notes/week04/videos
+          sections:
+          - file: notes/week04/python3
+          - file: notes/week04/python4
+        - file: notes/week04/lab 
 #    - file: notes/week05/week05_summary
 #      title: Week 5 - Programming in Python
 #      sections:
