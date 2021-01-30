@@ -8,7 +8,7 @@ Where provided, try your best to match the **Sample Output** as best as you can.
 
 ## Accept the lab
 
-To accept this lab on GitHub Classroom, [you must click this link]((https://classroom.github.com/a/_0r32sQn).
+To accept this lab on GitHub Classroom, [you must click this link](https://classroom.github.com/a/_0r32sQn).
 
 ## Objectives
 

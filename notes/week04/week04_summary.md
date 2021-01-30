@@ -6,7 +6,7 @@ Week 3 Summary
 <label><input type="checkbox" id="week04_task1" class="box"> [**Complete and submit Lab1**](../week02/lab1.md) </input></label>
 
 ```{tip}
-If not already done, make sure to submit Lab1. Deadline is Friday January 28, 2021 (with 48 hrs extra for late submission).
+If not already done, make sure to submit Lab1. Deadline is Friday January 28, 2021 (with 48 hrs extra for late submission - no penalties).
 ```
 
 <label><input type="checkbox" id="week04_task2" class="box"> **Attend Live lecture** </input></label>
