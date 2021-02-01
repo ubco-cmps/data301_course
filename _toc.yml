@@ -17,8 +17,8 @@
   chapters:
      - file: project/introduction
        title: Project Introduction 
-#    - file: project/milestone01
-#      title: Milestone 1 - Dataset
+     - file: project/milestone01
+       title: Milestone 1 - Dataset
 #    - file: project/milestone02
 #      title: Milestone 2 - Data Analysis and Git
 #    - file: project/milestone03

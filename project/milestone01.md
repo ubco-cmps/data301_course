@@ -5,9 +5,9 @@ The most important task for this milestone is to select an appropriate dataset a
 
 I encourage you to use the Ed discussion dashboard if you have questions so I can either A) clarify the instructions before the milestone is released and B) answer your questions without too much back and forth.
 
-## Due Date 
+## Due Date
 
-The tentative due date for this milestone is **Friday February 5, 2021** (with the usual grace period).
+The due date for this milestone is **Wednesday February 10, 2021** (with the usual grace period).
 
 ## Overall Expectations
 
@@ -31,9 +31,9 @@ Here is a 3-minute video on how to accept your GitHub Classroom group assignment
 
 - Accept the [Template Project group assignment](https://classroom.github.com/g/ulPph4ws)
 - I suggest you try working in `repl.it` for collaboratively editing your READMEs, but for now, work in your own Jupyter Notebooks
-- If you are working individually, name your team as "solo_###" where ### is the Group Number found at the end of this file
-- If you are working in a group of 3, first look to see if someone from your group has already created a team, look for `group_####`. If you see it, join that team.
-  - If you do not, you are the first person accepting the assignment and you should create a team, call the team: `group_####` where #### is the four digit Group Number found at the bottom of this file.
+- If you are working individually, name your team as "solo_###" as per the table I sent you in Canvas.
+- If you are working in a group of 3, first look to see if someone from your group has already accepted the assignment and created a team, look for your`group_####`. If you see it, join that team.
+  - If you do not, you are the first person accepting the assignment and you should create a team, call the team: `group_####` as per the group name your team is called on Canvas.
 - In your GitHub repository create the following directories:
   - **Note: GitHub currently does not allow you to upload empty directories, so each directory must have a file in it (usually a README)**
   - `data` - all your data should go in this parent directory; a final data set may reside in this directory
@@ -64,7 +64,7 @@ Here is a 3-minute video on how to accept your GitHub Classroom group assignment
 
 1. ** YOU MUST HAVE YOUR DATA SET APPROVED BY YOUR ASSIGNED TA. **
 
-2. **Note: Though it may sound easy, it is not trivial to choose an interesting and relevant dataset. There are many, many thousands out there and the [tyranny of choice](https://www.economist.com/christmas-specials/2010/12/16/you-choose) is pretty overwhelming. I suggest you choose an "industry/sector" (health, technology, finance, sports, etc...), then set a 60 minute timer, start searching, and then choose one before the timer expires. You are welcome to post an issue on Piazza if you want advice or approval of a dataset.**
+2. **Note: Though it may sound easy, it is not trivial to choose an interesting and relevant dataset. There are many, many thousands out there and the [tyranny of choice](https://www.economist.com/christmas-specials/2010/12/16/you-choose) is pretty overwhelming. I suggest you choose an "industry/sector" (health, technology, finance, sports, etc...), then set a 60 minute timer, start searching, and then choose one before the timer expires. You are welcome to post an issue on Ed discussion if you want advice or approval of a dataset.**
 
 3. Here are the requirements for choosing a dataset:
 
@@ -82,16 +82,15 @@ Here is a 3-minute video on how to accept your GitHub Classroom group assignment
 **Interesting (to you)**
 
 - Make sure you have some basic interest in the subject matter!
-- There's nothing worse than doing a 6 week project on the a boring dataset (please don't pick a movies dataset)
+- There's nothing worse than doing a project on a boring dataset (please don't pick a movies dataset)
 - In the final weeks of the course you will be building a Dashboard with your data so choose wisely!
 
 **Add your dataset to the repository**
 
 - If your dataset is a file, and you have permission to redistribute it, you should add it to the `data/raw` directory
-- If your dataset is a file,
 
-Below are some examples of datasets you are welcome to use for your project: 
-  
+Below are some examples of datasets you are welcome to use for your project:
+
 - [Bike sharing](https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset)
 - [Medical expenses](https://gist.github.com/meperezcuello/82a9f1c1c473d6585e750ad2e3c05a41)
 - [Default of credit card](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients)
@@ -115,53 +114,46 @@ There are literally hundreds of thousands of datasets available, here are some p
 Once you choose your dataset, you will need to describe your dataset, as well as the topic(s) or research questions you are interested in.
 
 **If you are doing a group project, you should do this task together and only one response should be submitted.**
-Feel free to personalize it a bit though and add sentences or points about individual members of the team. 
+Feel free to personalize it a bit though and add sentences or points about individual members of the team.
 
 The answers to these questions should be placed in the project's **main** README.md file (located in the main repository).
 
-1. Describe your dataset in about 150-200 words
+1. Describe your dataset in about 150-200 words: Consider the following questions to guide you in your exploration:
+    - Who: Which company/agency/organization provided this data?
+    - What: What is in your data?
+    - When: When was your data collected (for example, for which years)?
+    - Why: What is the purpose of your dataset? Is it for transparency/accountability, public interest, fun, learning, etc...
+    - How: How was your data collected? Was it a human collecting the data? Historical records digitized? Server logs?
 
-Consider the following questions to guide you in your exploration:
-
-- Who: Which company/agency/organization provided this data?
-- What: What is in your data?
-- When: When was your data collected (for example, for which years)?
-- Why: What is the purpose of your dataset? Is it for transparency/accountability, public interest, fun, learning, etc...
-- How: How was your data collected? Was it a human collecting the data? Historical records digitized? Server logs?
-
-**Additional Guidance:** Your audience is fellow data scientists. You probably will not need more than 150 words to describe your dataset. All the questions above do not need to be answered, it's more to guide your exploration and think a little bit about the context of your data. It is also possible you will not know the answers to some of the questions above, that is FINE - data scientists are often faced with the challenge of analyzing data from unknown sources. Do your best, acknowledge the limitations of your data as well as your understanding of it. Also, make it clear what you're speculating about. For example, "I speculate that the {...column_name...} column must be related to {....} because {....}."
-
-2. Describe your topic/interest in this dataset - answer in about 150-200 words
-
-Some questions you may wish to consider:
-
-- What do you hope to do with your analytics project? 
+2. Describe your topic/interest in this dataset - answer in about 150-200 words. Some questions you may wish to consider:
+- What do you hope to do with your analytics project?
 - Why are you interested in this topic or dataset?
 - Do you have any questions you specifically want to explore?
-- Could you imagine building a user-facing [Dashboard](https://www.datapine.com/blog/data-dashboards-definition-examples-templates/) with this dataset? 
+- Could you imagine building a user-facing [Dashboard](https://www.datapine.com/blog/data-dashboards-definition-examples-templates/) with this dataset?
   - Note: In the final weeks of the course you will be building a Dashboard with your data so choose wisely!
+
+>**Additional Guidance:** Your audience is fellow data scientists. You probably will not need more than 150 words to describe your dataset. All the questions above do not need to be answered, it's more to guide your exploration and think a little bit about the context of your data. It is also possible you will not know the answers to some of the questions above, that is FINE - data scientists are often faced with the challenge of analyzing data from unknown sources. Do your best, acknowledge the limitations of your data as well as your understanding of it. Also, make it clear what you're speculating about. For example, "I speculate that the {...column_name...} column must be related to {....} because {....}."
 
 ## Task 4: Load your dataset from a file or URL (10%)
 
 - For this task, you should create a Jupyter notebook and load your data into a dataframe using Pandas.
 - If you are working in a group, each person in the team **must** include a separate Jupyter Notebook (`.ipynb` file) demonstrating proficiency with the things we ask you to do for each milestone.
-- Remember that others will be running your analysis notebook so it's important that the data is accessible to them. 
+- Remember that others will be running your analysis notebook so it's important that the data is accessible to them.
 - If your dataset isn't accessible as a URL, make sure to commit it directly into your repo.
 - If your dataset is only accessible as a URL, add it to this README: `data/README.md`
-  - You should name your files as follows to keep things organized: `analysis/firstname1/milestone1.ipynb`
+- You should name your files as follows to keep things organized: `analysis/firstname1/milestone1.ipynb`
 
 ## Task 5: Submission (10%)
 
 For each Milestone there will be two submissions on Canvas:
 
 1. Each team member will submit a teamwork reflection on Canvas.
-
-The purpose of this individual report is to give you an avenue to present your viewpoint as to how the project went, how the group worked together, and your role in the group.
-Each group member must complete this form to report on the contributions of **yourself** and the other group members.
-That information can, if needed, be used to adjust final grades of individuals. 
-This is a report private between you and the instructors, meaning that none of your classmates will see this report.
-
 2. One person from the group will submit a URL to the team GitHub repository.
+
+> The purpose of this individual report is to give you an avenue to present your viewpoint as to how the project went, how the group worked together, and your role in the group.
+> Each group member must complete this form to report on the contributions of **yourself** and the other group members.
+> That information can, if needed, be used to adjust final grades of individuals.
+> This is a report private between you and the instructors, meaning that none of your classmates will see this report.
 
 ## Working collaboratively in GitHub
 
@@ -171,7 +163,7 @@ Below are a few things you may find useful as you continue your git journey.
 
 ### How to pull the most recent changes to your computer
 
-If you edit your code on the GitHub web interface, or if another use commits to your repository, to update the repository with the most recent changes, you should **always start a working session by running this command** in your git repository (using either Terminal or GitBash): 
+If you edit your code on the GitHub web interface, or if another use commits to your repository, to update the repository with the most recent changes, you should **always start a working session by running this command** in your git repository (using either Terminal or GitBash):
 
 > `git pull`
 
@@ -183,102 +175,4 @@ Commit and push your changes often while you work to stay in sync.
 You should try to reach out to your teammates as soon as possible, Discord is a good choice, or Ed discussion, or via Canvas messages.
 
 Individual or Solo projects also have a "group number" for marking purposes.
-Everyone that has a 3 digit Group number is doing their projects solo.
-Actual "Groups" are at the bottom, in group numbers 6000 and above.
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th></th>
-      <th>Name</th>
-      <th>GitHub</th>
-    </tr>
-    <tr>
-      <th>TA</th>
-      <th>GroupNumber</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="5" valign="top">Ta1</th>
-      <th>Group300</th>
-      <td>Name1</td>
-      <td>Unknown</td>
-    </tr>
-    <tr>
-      <th>Group301</th>
-      <td>Name2</td>
-      <td>Unknown</td>
-    </tr>
-    <tr>
-      <th>Group6013</th>
-      <td>Name2</td>
-      <td>githubname</td>
-    </tr>
-    <tr>
-      <th>Group6013</th>
-      <td>Name3</td>
-      <td>githubname</td>
-    </tr>
-    <tr>
-      <th>Group6013</th>
-      <td>Name4</td>
-      <td>Unknown</td>
-    </tr>
-    <tr>
-      <th rowspan="5" valign="top">TA2</th>
-      <th>Group200</th>
-      <td>Name5</td>
-      <td>githubname</td>
-    </tr>
-    <tr>
-      <th>Group201</th>
-      <td>Name6</td>
-      <td>githubname</td>
-    </tr>
-    <tr>
-      <th>Group6001</th>
-      <td>Name7</td>
-      <td>unknown</td>
-    </tr>
-    <tr>
-      <th>Group6001</th>
-      <td>Name8</td>
-      <td>Unknown</td>
-    </tr>
-    <tr>
-      <th>Group6001</th>
-      <td>Name8</td>
-      <td>Unknown</td>
-    </tr>
-    <tr>
-      <th rowspan="63" valign="top">TA3</th>
-      <th>Group100</th>
-      <td>Name9</td>
-      <td>githubname</td>
-    </tr>
-    <tr>
-      <th>Group101</th>
-      <td>Name10</td>
-      <td>githubname</td>
-    </tr>
-    <tr>
-      <th>Group6003</th>
-      <td>Name11</td>
-      <td>unknown</td>
-    </tr>
-    <tr>
-      <th>Group6003</th>
-      <td>Name12</td>
-      <td>githubname</td>
-    </tr>
-    <tr>
-      <th>Group6003</th>
-      <td>Name13</td>
-      <td>gitbubname</td>
-    </tr>
-  </tbody>
-</table>
+Everyone that has a 3-digit Team number is doing their projects solo. Actual "Groups" have a 4-digit Team number. Your team number can be found in Canvas (As an announcement for the solo projects, in People for the group projects).
