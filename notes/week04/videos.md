@@ -33,7 +33,7 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 
 You should complete Module 3,4,5 before next week.
 
-## Required Videos - Intermediate or Advanced Track
+## Optional Videos - Intermediate or Advanced Track
 
 ```{dropdown} 1. Python III
     :container: + shadow
