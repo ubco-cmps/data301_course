@@ -59,14 +59,15 @@ I invite you to be co-contributors to this syllabus, and use the tools provided 
 
 Any major changes to the syllabus (this page) will be documented here as well as the date the change was made. 
 
-| Change Date      | Summary                                                      | Rationale                                                    |
-| ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| January 05, 2021 | Added TAs                                                    |                                                              |
-| January 12, 2021 | Renamed Lab 10 to Lab 9 in schedule                          | Typo                                                         |
-| January 12, 2021 | Removed Note indicating it was a draft syllabus              | Class has started                                            |
-| January 12, 2021 | Explain Lab percentage (why 8x5% when there is 9 labs)       | Not clear that the worst lab won't count                     |
-| January 12, 2021 | Modified Course communication to state that Labs are done in Collaborate Ultra |                                                              |
-| January 17, 2021 | Corrected deadline for Project                               | wrongly used weekly deadline. Corrected to the last day of class |
+| Change Date       | Summary                                                      | Rationale                                                    |
+| ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| January 05, 2021  | Added TAs                                                    |                                                              |
+| January 12, 2021  | Renamed Lab 10 to Lab 9 in schedule                          | Typo                                                         |
+| January 12, 2021  | Removed Note indicating it was a draft syllabus              | Class has started                                            |
+| January 12, 2021  | Explain Lab percentage (why 8x5% when there is 9 labs)       | Not clear that the worst lab won't count                     |
+| January 12, 2021  | Modified Course communication to state that Labs are done in Collaborate Ultra |                                                              |
+| January 17, 2021  | Corrected deadline for Project                               | Wrongly used weekly deadline. Corrected to the last day of class |
+| February 04, 2021 | Revised Scheduled based on delay on Lab 4                    | Reduce stress level for students.                            |
 
 ## About this course
 

@@ -7,7 +7,7 @@ I encourage you to use the Ed discussion dashboard if you have questions so I ca
 
 ## Due Date
 
-The due date for this milestone is **Wednesday February 10, 2021** (with the usual grace period).
+The due date for this milestone is **Friday, February 12, 2021** (with the usual grace period).
 
 ## Overall Expectations
 
@@ -145,10 +145,12 @@ The answers to these questions should be placed in the project's **main** README
 
 ## Task 5: Submission (10%)
 
-For each Milestone there will be two submissions on Canvas:
+**Solo Projects:** For each Milestone there will be one submission on Canvas to submit the URL to the Github repository. (Look for `Solo Projects - Milestone1`)
 
-1. Each team member will submit a teamwork reflection on Canvas.
-2. One person from the group will submit a URL to the team GitHub repository.
+**Group Projects:** For each Milestone there will be two submissions on Canvas:
+
+1. Each team member will submit a teamwork reflection on Canvas. (Look for the `Group Project - Teamwork document1`)
+2. One person from the group will submit a URL to the team GitHub repository. (Look for the `Group Project - Milestone1`)
 
 > The purpose of this individual report is to give you an avenue to present your viewpoint as to how the project went, how the group worked together, and your role in the group.
 > Each group member must complete this form to report on the contributions of **yourself** and the other group members.
