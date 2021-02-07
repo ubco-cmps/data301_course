@@ -1,8 +1,34 @@
 (page_topic5)=
 Week 5 Summary
 =======================
+## List of things to do this week
 
-- [Watch course videos](./videos.md)
-- Attend Lab 3 (See Canvas for Collaborate Ultra Link)
-- [Complete Lab 3](./lab.md)
-- [Attend Live lecture or watch video](./Lecture5.ipynb)
+<label><input type="checkbox" id="week05_task1" class="box"> [**Complete and submit Lab2**](../week03/lab2.md) </input></label>
+
+```{tip}
+If not already done, make sure to submit Lab2. Deadline is Friday February 5, 2021 (with 48 hrs extra for late submission - no penalties).
+```
+
+<label><input type="checkbox" id="week05_task2" class="box"> **Attend Live lecture** </input></label>
+
+```{tip}
+This week we will continue talking about Python. The link to the recordings will be added as soon as available. 
+```
+
+<label><input type="checkbox" id="week04_task3" class="box"> [**Work on Milestone 1**](../../project/milestone01.md) </input></label>
+
+```{tip}
+The schedule for the lab has changed so that you can use this week lab's time to work on the project. 
+```
+
+<label><input type="checkbox" id="week04_task4" class="box"> [**Watch the course videos**](./videos.md) </input></label>
+
+```{tip}
+I am not adding any more videos this week. It is the same as last week. However, I would like you to do the ones that are marked required. They will help you for the project. Make sure to try testing the commands.
+```
+
+<label><input type="checkbox" id="week02_task5" class="box"> [**Test2**](https://canvas.ubc.ca/courses/64282/quizzes/316650)</input></label>
+
+```{tip}
+The test will be done in Canvas. Content will be about python introduction, up to, but not including functions. 
+```

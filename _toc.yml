@@ -75,13 +75,11 @@
           - file: notes/week04/python3
           - file: notes/week04/python4
         - file: notes/week04/lab 
-#    - file: notes/week05/week05_summary
-#      title: Week 5 - Programming in Python
-#      sections:
-#        - file: notes/week05/videos
-#        - file: notes/week05/Lecture5
-#          title: Lecture 5
-#        - file: notes/week05/lab    
+    - file: notes/week05/week05_summary
+      title: Week 5 - Programming in Python
+      sections:
+        - file: notes/week05/videos
+        
 #    - file: notes/week06/week06_summary
 #      title: Week 6 - Week off!
 #    - file: notes/week07/week07_summary
