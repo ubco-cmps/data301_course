@@ -9,10 +9,10 @@ Week 5 Summary
 If not already done, make sure to submit Lab2. Deadline is Friday February 5, 2021 (with 48 hrs extra for late submission - no penalties).
 ```
 
-<label><input type="checkbox" id="week05_task2" class="box"> **Attend Live lecture** </input></label>
+<label><input type="checkbox" id="week05_task2" class="box"> [**Attend Live lecture**](https://canvas.ubc.ca/courses/64282/pages/monday-february-8-recording?module_item_id=2915800) </input></label>
 
 ```{tip}
-This week we will continue talking about Python. The link to the recordings will be added as soon as available. 
+This week I will answer questions on the test, lab, project, or python. Click the link above to access the recording. 
 ```
 
 <label><input type="checkbox" id="week04_task3" class="box"> [**Work on Milestone 1**](../../project/milestone01.md) </input></label>
