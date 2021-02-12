@@ -7,7 +7,7 @@ I encourage you to use the Ed discussion dashboard if you have questions so I ca
 
 ## Due Date
 
-The due date for this milestone is **Friday, February 12, 2021** (with the usual grace period).
+The due date for this milestone is **Friday, February 15, 2021** (with the usual grace period).
 
 ## Overall Expectations
 
