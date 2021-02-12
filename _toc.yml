@@ -79,9 +79,8 @@
       title: Week 5 - Programming in Python
       sections:
         - file: notes/week05/videos
-        
-#    - file: notes/week06/week06_summary
-#      title: Week 6 - Week off!
+    - file: notes/week06/week06_summary
+      title: Week 6 - Week off!
 #    - file: notes/week07/week07_summary
 #      title: Week 7 - Data analysis in Python
 #      sections:
