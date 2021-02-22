@@ -5,7 +5,8 @@ If you are working as a group, you will be expected to show proficiency in all t
 
 ## Due Date 
 
-The tentative due date for this milestone is **Friday March 5, 2021**.
+**Check Canvas for the due date on this milestone.**
+
 I suggest you try to meet at least three or four times during the next three weeks to discuss this milestone.
 
 ## Overall Expectations
@@ -49,10 +50,12 @@ I am expecting everyone to get 100% on this task!
 
 [Here is a nice guide](https://guides.github.com/features/mastering-markdown/) from GitHub about using Markdown in git repositories.
 
+Here is a [nice WYSIWYG application](https://typora.io/) to create markdown documents. It is free while it is in beta, and you can see both the resulting product and the source document. So it is nice when you are starting to create such files.
+
 ## Task 2: Introduction to Git merges, branches, and more (0%)
 
 After many years of searching, I have found the [**PERFECT** tutorial](http://learngitbranching.js.org) to help you get more familiar with git commands, particularly branching, and merging - things you will start encountering when you start collaboratively working on the projects.
-Rather than make this a milestone task though, I will be including it as Lab 5.
+Rather than make this a milestone task though, I will be including it as Lab 4.
 It's included here so you know that you should do this part of the lab before proceeding to Task 3 onwards.
 You are responsible for completing the following modules (at minimium):
 
@@ -126,7 +129,7 @@ df
 
 ### Step 2: Wrap your method chain(s) in a function
 
-A method chain converted to a function would like something like:
+A method chain converted to a function would be something like:
 
 ```
 def load_and_process(url_or_path_to_csv_file):
@@ -201,7 +204,7 @@ Here are three examples or guides:
   - [Guide 1](https://towardsdatascience.com/an-extensive-guide-to-exploratory-data-analysis-ddd99a03199e)
   - [Guide 2](https://towardsdatascience.com/exploratory-data-analysis-eda-a-practical-guide-and-template-for-structured-data-abfbf3ee3bd9)
   - [Guide 3](https://aiden-dataminer.medium.com/the-data-science-method-dsm-exploratory-data-analysis-bc84d4d8d3f9)
-  - Lab 4 had some elements of a rudimentary EDA (but we expect much more from you now!)
+  - Lab 5 had some elements of a rudimentary EDA (but we expect much more from you now!)
 
 ## Task 5. Conduct your analysis to help answer your research question(s) (40%)
 
@@ -224,7 +227,7 @@ Below are a few things you may find useful as you continue your git journey.
 
 ### Git Branches
 
-Git branches were introduced in Milestone 2.
+Git branches are introduced in Milestone 2.
 
 ### Pull requests
 

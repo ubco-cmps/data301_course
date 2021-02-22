@@ -15,12 +15,13 @@
 
 - part: Course Project
   chapters:
-     - file: project/introduction
-       title: Project Introduction 
-     - file: project/milestone01
-       title: Milestone 1 - Dataset
-#    - file: project/milestone02
-#      title: Milestone 2 - Data Analysis and Git
+    - file: project/introduction
+      title: Project Introduction 
+    - file: project/milestone01
+      title: Milestone 1 - Dataset
+    - file: project/milestone02
+      title: Milestone 2 - Data Analysis and Git
+
 #    - file: project/milestone03
 #      title: Milestone 3 - Address feedback and Tableau prep
 #    - file: project/milestone04
@@ -81,13 +82,10 @@
         - file: notes/week05/videos
     - file: notes/week06/week06_summary
       title: Week 6 - Week off!
-#    - file: notes/week07/week07_summary
-#      title: Week 7 - Data analysis in Python
-#      sections:
-#        - file: notes/week07/videos
-#        - file: notes/week07/Lecture7
-#        - file: project/milestone01
-#          title: Milestone 1 released
+    - file: notes/week07/week07_summary
+      title: Week 7 - Data analysis in Python
+      sections:
+        - file: notes/week07/videos
 #    - file: notes/week08/week08_summary
 #      title: Week 8 - Introduction to Data Visualization
 #      sections:
