@@ -85,6 +85,7 @@
     - file: notes/week07/week07_summary
       title: Week 7 - Data analysis in Python
       sections:
+        - file: notes/week07/Lecture7
         - file: notes/week07/videos
 #    - file: notes/week08/week08_summary
 #      title: Week 8 - Introduction to Data Visualization

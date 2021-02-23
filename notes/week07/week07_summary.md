@@ -3,11 +3,10 @@ Week 7 Summary
 =======================
 ## List of things to do this week
 
-
-<label><input type="checkbox" id="week07_task1" class="box"> **Attend Live lecture**</input></label>
+<label><input type="checkbox" id="week07_task1" class="box"> [**Attend Live lecture**](https://canvas.ubc.ca/courses/64282/pages/monday-february-22-recording?module_item_id=2968435)</input></label>
 
 ```{tip}
-This week will be talking about Functions in Python, as well as Pandas, Data Cleaning and Preparation. Link to the recording will be added as soon as ready.
+This week will be talking about Functions in Python, as well as Pandas, Data Cleaning and Preparation. You can view the [lecture](https://firas.moosvi.com/courses/data301/notes/week07/Lecture7.html) directly on the website through the menu or access the [jupyter notebook used in lecture](https://canvas.ubc.ca/courses/64282/files/13147911?module_item_id=2967985).
 ```
 
 <label><input type="checkbox" id="week07_task2" class="box"> [**Watch the course videos**](./videos.md) </input></label>
