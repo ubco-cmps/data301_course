@@ -3,10 +3,10 @@ Week 8 Summary
 =======================
 ## List of things to do this week
 
-<label><input type="checkbox" id="week08_task1" class="box"> **Attend Live lecture**</input></label>
+<label><input type="checkbox" id="week08_task1" class="box"> [**Attend Live lecture**](https://canvas.ubc.ca/courses/64282/pages/monday-march-1-recording?module_item_id=2984506)</input></label>
 
 ```{tip}
-This week we will be finish Pandas, Data Cleaning and Preparation. You can view the [lecture](https://firas.moosvi.com/courses/data301/notes/week07/Lecture7.html) directly on the website or access the [jupyter notebook used in lecture](https://canvas.ubc.ca/courses/64282/files/13147911?module_item_id=2967985). If you are comfortable with the topic and have completed the videos from last week, you do not need to attend. Recording will be added as soon as completed.
+This week we will be finish Pandas, Data Cleaning and Preparation. You can view the [lecture](https://firas.moosvi.com/courses/data301/notes/week07/Lecture7.html) directly on the website or access the [jupyter notebook used in lecture](https://canvas.ubc.ca/courses/64282/files/13147911?module_item_id=2967985). If you are comfortable with the topic and have completed the videos from last week, you do not need to attend. Note some [interesting links](./Lecture8.md) I used to prepare for the lecture.
 ```
 
 <label><input type="checkbox" id="week08_task2" class="box"> [**Complete the Seaborn tutorial**](https://firas.moosvi.com/courses/data301/notes/week08/Seaborn_tutorial.html) </input></label>
