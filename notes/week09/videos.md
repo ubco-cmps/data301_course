@@ -4,6 +4,12 @@ Below are the assigned videos for this week.
 The videos are collapsible so once you're done with one, you can move to the next one.
 In the sidebar on the right, you can use the checklists to keep track of what's done.
 
+## Required Videos
+
+### Communicating analyses with Data Visualizations
+
+A great video from Dr. Moosvi that presents all the type of charts that can be done to visualize data. 
+
 ```{dropdown} Communicating analyses with Data Visualizations: 
     :container: + shadow
     :title: bg-info text-white font-weight-bold
@@ -12,10 +18,8 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 <div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/LIgiOIlD8Cs" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-[Companion Slides](https://firas.moosvi.com/data301/Lecture9A_Communicating_Analyses.pdf)
 ```
-
+### GroupBy in Pandas
 ```{dropdown} Deeper dive into GroupBy
     :container: + shadow
     :title: bg-info text-white font-weight-bold
@@ -28,7 +32,7 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 [Companion Notebook (Skip to #14)](https://github.com/justmarkham/pandas-videos/blob/master/pandas.ipynb)
 ```
 
-## Optional Videos
+## Optional Video
 
 You may find some elements of this video useful for your projects and/or labs.
 

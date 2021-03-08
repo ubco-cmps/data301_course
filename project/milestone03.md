@@ -6,7 +6,7 @@ There is no GH Classroom link to accept for this milestone or milestone 4.
 
 ## Due Date 
 
-The due date for this milestone is **Friday March 19, 2021**.
+**Check Canvas for the due date on this milestone.**.
 I suggest you try to meet at least once during the next week to discuss this milestone.
 
 ## Overall Expectations
@@ -26,9 +26,9 @@ I suggest you try to meet at least once during the next week to discuss this mil
 
 - You should spend the majority of time this week to address the feedback you have received from your TA.
 
-## Task 2: Make your repository public (5%)
+## Task 2: Make your repository public (0%) 
 
-[Here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/setting-repository-visibility#changing-a-repositorys-visibility) is how to make your repository public (within the Data 301 organization).
+Your repository should already be public, but if not, [here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/setting-repository-visibility#changing-a-repositorys-visibility) is how to make your repository public (within the Data 301 organization).
 
 1. On GitHub, navigate to the main page of the repository.
 
@@ -51,7 +51,7 @@ There are many different ways to deal with this, but I suggest you export a data
 
 You should put the exported .csv files in the `data/processed` directory.
 
-## Task 4: Create a release for your repository (15%)
+## Task 4: Create a release for your repository (20%)
 
 Create a new release for your project called 0.1.0.
 
@@ -106,13 +106,14 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 Many of your classmates are doing some very interesting projects with some cool datasets.
 Since this is a course introducing you to Data Analytics, I think it would be very helpful for you to look at their analyses and results, think critically about it, and perhaps provide some useful feedback.
 
-I'll try and facilitate this during our lecture this week, and also online on Piazza.
+I'll add a process by which to do this this week.
 
 ## Working collaboratively in GitHub
 
 As we progress through the course, you will be learning more and more about GitHub and how to work collaboratively on code.
 Since this is the first time many of you are using Git, I recommend that if you are working in a group, you avoid editing each others' files until you are more familiar with git.
 Below are a few things you may find useful as you continue your git journey.
+
 ### Git Branches
 
 Git branches were introduced in Milestone 2.

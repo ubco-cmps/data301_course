@@ -21,9 +21,9 @@
       title: Milestone 1 - Dataset
     - file: project/milestone02
       title: Milestone 2 - Data Analysis and Git
+    - file: project/milestone03
+      title: Milestone 3 - Address feedback and Tableau prep
 
-#    - file: project/milestone03
-#      title: Milestone 3 - Address feedback and Tableau prep
 #    - file: project/milestone04
 #      title: Milestone 4 - Present your project!
 
@@ -93,31 +93,20 @@
         - file: notes/week08/Lecture8
         - file: notes/week08/Seaborn_tutorial
           title: Seaborn Tutorial
-
-#        - file: notes/week08/videos
-#        - file: notes/week08/Lecture8
-#    - file: notes/week09/week09_summary
-#      title: Week 9 - Git and Visualization with Seaborn
-#      #expand_sections: true
-#      sections:
-#        - file: notes/week09/videos
-#        - file: project/milestone02
-#          title: Milestone 2 released
-#        - file: notes/week09/Lecture9
-#        - file: notes/week09/lab6
-#          title: Lab 5 and 6
-
-#- part: Part 3 - Tableau and Dashboards
-#  chapters:
-#    - file: notes/week10/week10_summary
-#      title: Week 10 - Tableau
-#      sections:
-#        - file: notes/week10/videos
-#        - file: project/milestone02
-#          title: Milestone 2 released
+    - file: notes/week09/week09_summary
+      title: Week 9 - Visualization 
+      sections:
+        - file: notes/week09/videos
+        - file: notes/week09/Lecture9
+- part: Part 3 - Tableau and Dashboards
+  chapters:
+    - file: notes/week10/week10_summary
+      title: Week 10 - Tableau
+      sections:
+        - file: notes/week10/TableauLicense
+        - file: notes/week10/videos
+      
 #        - file: notes/week10/Lecture10
-#        - file: notes/week10/lab7
-#          title: Lab 7
 #    - file: notes/week11/week11_summary
 #      title: Week 11 - Bits and pieces
 #      sections:
