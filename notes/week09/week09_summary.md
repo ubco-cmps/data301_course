@@ -1,10 +1,10 @@
 (page_topic9)=
 Week 9 Summary
 =======================
-<label><input type="checkbox" id="week09_task1" class="box"> **Attend Live lecture**</input></label>
+<label><input type="checkbox" id="week09_task1" class="box"> [**Attend Live lecture**](https://canvas.ubc.ca/courses/64282/pages/monday-march-8-recording?module_item_id=2999537)</input></label>
 
 ```{tip}
-This week we will be talk about data visualization. The recording for the lecture will be posted as soon as ready. 
+This week we will be talk about data visualization.  
 ```
 
 <label><input type="checkbox" id="week09_task2" class="box"> [**Watch the videos**](./videos.md) </input></label>
