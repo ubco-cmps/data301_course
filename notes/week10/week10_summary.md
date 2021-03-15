@@ -34,9 +34,9 @@ There is a 1 hour workshop from Dr. Moosvi on a Demo on Tableau. This workshop i
 
 
 
-<label><input type="checkbox" id="week10_task5" class="box"> [**Work on Milestone3**](../../project/milestone03.md)</input></label>
+<label><input type="checkbox" id="week10_task5" class="box"> [**Work on Milestone2**](../../project/milestone02.md)</input></label>
 
 ```{tip}
-Make sure to look at all the feedback from the TAs for both previous milestones.
+Milestone 2 deadline extended until Wednesday 6PM. You can view the [project tutorial](../../project/projecttutorial.md) done by Amir on Sunday under Milestone2.
 ```
 

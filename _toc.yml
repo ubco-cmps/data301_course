@@ -21,6 +21,9 @@
       title: Milestone 1 - Dataset
     - file: project/milestone02
       title: Milestone 2 - Data Analysis and Git
+      sections: 
+      - file: project/projecttutorial
+        title: Project Tutorial
     - file: project/milestone03
       title: Milestone 3 - Address feedback and Tableau prep
 
