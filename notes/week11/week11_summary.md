@@ -2,40 +2,31 @@
 
 Week 11 Summary
 =======================
-<label><input type="checkbox" id="week10_task1" class="box"> **Live Lecture**</input></label>
+<label><input type="checkbox" id="week11_task1" class="box"> **Live Lecture**</input></label>
 
 ```{tip}
-Guest lecture - Brent Harris?  
+Guest lecture - Brent Harris is a data scientist that has extensive experience with Tableau. He will come to do a guest lecture.
 ```
 
 
 
-<label><input type="checkbox" id="week10_task2" class="box"> [**Download Tableau**](./TableauLicense.md) </input></label>
+<label><input type="checkbox" id="week11_task2" class="box"> [**Complete Lab6**](https://canvas.ubc.ca/courses/64282/assignments/791128) </input></label>
 
 ```{tip}
-If you have not done so already, install tableau. All the information you need is on the link.  
+The deadline will be extended for lab 6 to account for the delay and ensure that every student has been able to attend one lab with their TA before the deadline. Wait for the announcement on Canvas to accept the lab so that you have the new lab.
 ```
 
 
-
-<label><input type="checkbox" id="week10_task3" class="box"> [**Watch the videos**](./videos.md) </input></label>
+<label><input type="checkbox" id="week11_task3" class="box"> [**Work on Milestone3**](../../project/milestone03.md) </input></label>
 
 ```{tip}
-There is a 1 hour workshop from Dr. Moosvi on a Demo on Tableau. This workshop is very useful as it will give you a good introduction to tableau. Don't miss it.   
+Your TA will provide feedback on your project in github. Make sure to look at them. It is split into feedback that is required, and things that would be nice to do.  
 ```
 
 
-
-<label><input type="checkbox" id="week10_task4" class="box"> [**Complete Lab6**](https://canvas.ubc.ca/courses/64282/assignments/791128) </input></label>
-
-```{tip}
-  This week's lab will be about Tableau.
-```
-
-
-
-<label><input type="checkbox" id="week10_task5" class="box"> [**Work on Milestone2**](../../project/milestone02.md)</input></label>
+<label><input type="checkbox" id="week11_task4" class="box"> [**Complete Bonus Quiz4**](https://canvas.ubc.ca/courses/64282/quizzes/316657)</input></label>
 
 ```{tip}
-Milestone 2 deadline extended until Wednesday 6PM. You can view the project tutorial[**Work on Milestone2**](../../project/milestone02.md)(../../project/milestone02.md) done by [Amir](./videos.md) on Sunday under Milestone 2.
+Quiz 4 will be about EDA and principles of effective visualization as well as plots with Seaborn.
 ```
+

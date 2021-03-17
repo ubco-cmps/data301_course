@@ -108,10 +108,8 @@
       sections:
         - file: notes/week10/TableauLicense
         - file: notes/week10/videos
-      
-#        - file: notes/week10/Lecture10
-#    - file: notes/week11/week11_summary
-#      title: Week 11 - Bits and pieces
+    - file: notes/week11/week11_summary
+      title: Week 11 - Tableau - Guest lecture
 #      sections:
 #        - file: notes/week11/videos
 #        - file: notes/week11/Lecture11

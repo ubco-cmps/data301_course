@@ -40,3 +40,9 @@ There is a 1 hour workshop from Dr. Moosvi on a Demo on Tableau. This workshop i
 Milestone 2 deadline extended until Wednesday 6PM. You can view the [project tutorial](../../project/projecttutorial.md) done by Amir on Sunday under Milestone2.
 ```
 
+<label><input type="checkbox" id="week10_task4" class="box"> [**Complete Quiz4**](https://canvas.ubc.ca/courses/64282/quizzes/316655)</input></label>
+
+```{tip}
+Quiz 4 will be about EDA and principles of effective visualization as well as plots with Seaborn.
+```
+
