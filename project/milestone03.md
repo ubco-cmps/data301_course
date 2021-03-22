@@ -6,7 +6,7 @@ There is no GH Classroom link to accept for this milestone or milestone 4.
 
 ## Due Date 
 
-**Check Canvas for the due date on this milestone.**.
+**Check Canvas for the due date on this milestone.**
 I suggest you try to meet at least once during the next week to discuss this milestone.
 
 ## Overall Expectations
@@ -106,7 +106,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 Many of your classmates are doing some very interesting projects with some cool datasets.
 Since this is a course introducing you to Data Analytics, I think it would be very helpful for you to look at their analyses and results, think critically about it, and perhaps provide some useful feedback.
 
-I'll add a process by which to do this this week.
+By default your project directory is public. As so, all of you can access the directory of other groups and view their work. To provide feedback, create an issue in their github repository. They will see it the same way they (or you) see the TAs feedback. Make sure to phrase your feedback in a constructive way and do not repeat feedback already provided by TAs.
 
 ## Working collaboratively in GitHub
 

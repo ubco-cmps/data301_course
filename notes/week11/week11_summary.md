@@ -30,3 +30,8 @@ Your TA will provide feedback on your project in github. Make sure to look at th
 Quiz 4 will be about EDA and principles of effective visualization as well as plots with Seaborn.
 ```
 
+<label><input type="checkbox" id="week11_task5" class="box"> [**Prepare for Lab7**](./lab7prep.md)</input></label>
+
+```{tip}
+Make sure to fill in the short [survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_etwwurNao6VTE9w) ASAP as it will allow you to be ready for lab7 including viewing some sample dashboard from last term (can be found in [Prepare for Lab7](./lab7prep.md))
+```
