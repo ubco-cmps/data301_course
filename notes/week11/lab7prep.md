@@ -13,7 +13,7 @@ Once you have finished the survey, I will then have to invite you to the site (t
 
 After you are invited, you will get an email that looks like this:
 
-<img src="tableau_online.png" width="600px">
+![](./tableau_online.png)
 
 Once you have joined, you can then view the examples and follow the steps to publish your workbook.
 
