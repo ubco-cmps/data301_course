@@ -8,14 +8,17 @@ The [survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_etwwurNao6VTE9w) will be 
 2. To give you access to Tableau online. Tableau online will be used to publish the dashboard you will have produced on Tableau desktop. 
 
 ```{warning}
-Once you have finished the survey, I will then have to invite you to the site (this will take **at least a day**). After you are invited, you will get an email that looks like this:
+Once you have finished the survey, I will then have to invite you to the site (this will take **at least a day**). 
+```
+
+After you are invited, you will get an email that looks like this:
 
 <img src="tableau_online.png" width="600px">
 
 Once you have joined, you can then view the examples and follow the steps to publish your workbook.
-```
 
 ##  Examples of dashboards from previous years
+
 Once you have been invited to Tableau online and have logged in once, you will have access to some  examples of dashboards from last term. I encourage you to look at them before starting the lab. It might help you create your own dashboard for your own data.
 
 Examples:
