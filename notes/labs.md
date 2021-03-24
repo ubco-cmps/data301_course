@@ -15,7 +15,7 @@ Once the lab is ready for you to accept, click the link below to accept the lab:
 | Lab 4 - Python II           | Friday February 26 at 18:00   | [Accept Lab](https://classroom.github.com/a/p4ay_98T) | [Solutions released] |
 | Lab 5 - Data Visualizations | Friday March 12 at 18:00  | [Accept Lab](https://classroom.github.com/a/KnCEBpSJ) | [Solutions released] |
 | Lab 6 - Tableau             | Wednesday March 31 at 18:00  | [Accept Lab](https://classroom.github.com/a/-qyvQVnI) | [Solutions released]                                                                    |
-| Lab 7 - Project Dashboard               |  Friday April 9 at 18:00  | No lab to accept, submit dashboard on Project Repo |       |
+| Lab 7 - Project Dashboard               |  Friday April 9 at 18:00  | [Accept Lab](https://classroom.github.com/a/YEubZ0LZ) (lab work should be committed to the project repository)| N/A      |
 | Lab 8 - SQL  | N/A                          | Practice for quiz5    | [Accept Lab]          | [Solutions released]
 
 Once you click the link, a repository will automatically be created for you with some starter code.

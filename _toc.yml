@@ -26,9 +26,8 @@
         title: Project Tutorial
     - file: project/milestone03
       title: Milestone 3 - Address feedback and Tableau prep
-
-#    - file: project/milestone04
-#      title: Milestone 4 - Present your project!
+    - file: project/milestone04
+      title: Milestone 4 - Present your project!
 
 - part: Labs
   chapters:
@@ -112,6 +111,15 @@
       title: Week 11 - Tableau - Guest lecture
       sections:
         - file: notes/week11/lab7prep
+#        - file: notes/week12/lab7
+- part: Part 4 - Databases
+  chapters:
+    - file: notes/week12/week12_summary
+      title: Week 12 - Introduction Databases
+
+#      sections:
+#        - file: notes/week12/videos
+#        - file: notes/week12/lab8
 
 #      sections:
 #        - file: notes/week11/videos

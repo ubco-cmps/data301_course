@@ -2,10 +2,10 @@
 
 Week 11 Summary
 =======================
-<label><input type="checkbox" id="week11_task1" class="box"> **Live Lecture**</input></label>
+<label><input type="checkbox" id="week11_task1" class="box"> [**Live Lecture**](https://canvas.ubc.ca/courses/64282/pages/monday-march-22-recording?module_item_id=3037717)</input></label>
 
 ```{tip}
-Guest lecture - Brent Harris is a data scientist that has extensive experience with Tableau. He will come to do a guest lecture.
+Guest lecture - Brent Harris is a data scientist that has extensive experience with Tableau. View recording by clicking on the live lecture link.
 ```
 
 

@@ -2,8 +2,6 @@
 Week 12 Summary
 =======================
 
-This week in lecture we will talk about principles of effective dashboard design
-
 <label><input type="checkbox" id="week12_task1" class="box"> **Live Lecture**</input></label>
 
 ```{tip}
@@ -23,19 +21,15 @@ Your TA will provide feedback on your project in github. Make sure to look at th
 Note that this time, exceptionally, the deadline is Wednesday March 31, 6PM with a grade period of 48hrs (till Friday April 2, 6PM).
 ```
 
-<label><input type="checkbox" id="week11_task5" class="box"> [**Work on Lab7**](./lab7.md)</input></label>
+<label><input type="checkbox" id="week11_task5" class="box"> [**Work on Lab7**](https://canvas.ubc.ca/courses/64282/assignments/791130)</input></label>
 
 ```{tip}
-If not done so already, Make sure to fill in the short [survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_etwwurNao6VTE9w) ASAP.
+If not done so already, make sure to fill in the short [survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_etwwurNao6VTE9w) ASAP. You can start working on Lab7 as soon as you have finished Milestone3 and Lab6.
 ```
 
-<label><input type="checkbox" id="week11_task4" class="box"> [**Complete Bonus Quiz4**](https://canvas.ubc.ca/courses/64282/quizzes/316657)</input></label>
+<label><input type="checkbox" id="week11_task4" class="box"> [**Look at Milestone 4**](../../project/milestone04.md)</input></label>
 
 ```{tip}
-Quiz 4 will be about EDA and principles of effective visualization as well as plots with Seaborn.
+You will now have all information required to finish the project.
 ```
 
-
-- [Complete Lab 10](./lab10.md)
-- [Complete Milestone 3](../project/milestone3.md)
-- [Look at Milestone 4](../project/milestone4.md)
