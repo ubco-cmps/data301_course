@@ -111,11 +111,14 @@
       title: Week 11 - Tableau - Guest lecture
       sections:
         - file: notes/week11/lab7prep
-#        - file: notes/week12/lab7
 - part: Part 4 - Databases
   chapters:
     - file: notes/week12/week12_summary
       title: Week 12 - Introduction Databases
+    - file: notes/week13/week13_summary
+      title: Week 13 - Database Practice
+      sections:
+        - file: notes/week13/Lecture13
 
 #      sections:
 #        - file: notes/week12/videos

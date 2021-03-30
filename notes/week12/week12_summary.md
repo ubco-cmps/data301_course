@@ -2,10 +2,10 @@
 Week 12 Summary
 =======================
 
-<label><input type="checkbox" id="week12_task1" class="box"> **Live Lecture**</input></label>
+<label><input type="checkbox" id="week12_task1" class="box"> [**Live Lecture**](https://canvas.ubc.ca/courses/64282/pages/monday-march-29-recording)</input></label>
 
 ```{tip}
-We are now moving to a different topic, which is databases.
+We are now moving to a different topic, which is databases. The recording is accessible through the link above.
 ```
 
 
