@@ -4,7 +4,7 @@ Week 13 Summary
 
 We are reaching the end of term. I'll put both this week and the next two days of the last week in the same summary.
 
-<label><input type="checkbox" id="week13_task1" class="box"> **Listen and Practice with the video**</input></label>
+<label><input type="checkbox" id="week13_task1" class="box"> [**Listen and Practice with the video**](https://canvas.ubc.ca/courses/64282/pages/week-12-querying-a-database-example?module_item_id=3059764)</input></label>
 
 ```{tip}
 There is no lecture this week (Easter Monday), instead, there will be a recording of the remainder of the example (under preparation). 
