@@ -4,7 +4,7 @@ name: deploy-book-ubcocmps
 on:
   push:
     branches:
-    - master
+    - main
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
@@ -17,11 +17,18 @@ jobs:
     - name: Set up Python 3.7
       uses: actions/setup-python@v1
       with:
-        python-version: 3.7
+        python-version: 3.8
+
+    - name: cache installation
+      uses: actions/cache@v2
+      with:
+        path: ${{ env.pythonLocation }}
+        key: ${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ hashFiles('requirements.txt') }}
 
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
+        
     # Build the book
     - name: Build the book
       run: |
@@ -36,12 +43,10 @@ jobs:
         REMOTE_DIR: ${{ secrets.REMOTE_TARGET_UBCO }}
         LOCAL_DIR: "_build/html/"
         COURSE_NAME: "data301"
-        TERM: "2020WT2"
+        TERM: "2021_ST2"
       run: |
         mkdir ~/.ssh
         echo "$REMOTE_KEY" > ~/.ssh/id_rsa
         ssh-keyscan -H $REMOTE_HOST >> ~/.ssh/known_hosts
         chmod 600 ~/.ssh/id_rsa
-        pwd
-        ls -la
         rsync -avzr --delete $LOCAL_DIR $REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR/courses/$TERM/$COURSE_NAME
