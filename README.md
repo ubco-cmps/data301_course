@@ -1,3 +1,5 @@
+[![deploy-book](https://github.com/ubco-cmps/data301_course/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/ubco-cmps/data301_course/actions/workflows/main.yml)
+
 # DATA and COSC 301
 
 The course website is here: [firas.moosvi.com/courses/2021_ST2/data301](https://firas.moosvi.com/courses/2021_ST2/data301)
