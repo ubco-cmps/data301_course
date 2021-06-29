@@ -27,7 +27,7 @@ Additional details about the course are available on the <a href="{{ CANVAS_LINK
 
 **Phone:** {{ PHONE }}
 
-For information on how to contact your course instructor, including office hours, see the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
+For information on how to contact your course instructor, including office hours, see the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
 
 ## Course Description
 

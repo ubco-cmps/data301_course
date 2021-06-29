@@ -7,10 +7,10 @@ parts:
   - file: about/syllabus2
   - file: about/unsyllabus
   - file: about/course_schedule
-  - file: about/accommodations
-  - file: about/doing_well
   - file: getting-started/todo_list
     title: Start Here!
+  # - file: about/accommodations
+  # - file: about/doing_well
 # - caption: Course Project
 #   chapters:
 #   - file: project/introduction
