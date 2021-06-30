@@ -4,10 +4,24 @@ title: Course Unsyllabus
 parts:
 - caption: About this course
   chapters:
-  - file: about/unsyllabus
+  # - file: about/unsyllabus
   - file: about/course_schedule
 #   - file: getting-started/todo_list
 #     title: Start Here!
+
+# - caption: Week 1
+#   chapters:
+# - caption: Week 2
+#   chapters:
+# - caption: Week 3
+#   chapters:
+# - caption: Week 4
+#   chapters:
+# - caption: Week 5
+#   chapters:
+# - caption: Week 6
+#   chapters:
+
 # - caption: Week 1
 #   chapters:
 #   - file: notes/week01/week01_summary

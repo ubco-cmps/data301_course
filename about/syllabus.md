@@ -75,5 +75,8 @@ Details on deadlines and other course policies can be found on the {{ '[course w
 
 The tentative course schedule, subject to change, can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
 
+```{include} syllabus_bits/schedule.md
+```
+
 ```{include} syllabus_bits/policies.md
 ```
