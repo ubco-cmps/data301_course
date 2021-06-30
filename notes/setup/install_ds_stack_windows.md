@@ -31,7 +31,7 @@ Once you have completed these installation instructions, make sure to follow the
 - [Visual Studio Code](#visual-studio-code)
 - [Terminal](#terminal)
 - [Git and GitHub](#git-and-github)
-- [Python, Conda, and JupyterLab](#python\,-conda\,-and-jupyterlab)
+- [Python, Conda, and JupyterLab](#python)
 - [Test JupyterLab](#Test-JupyterLab)
 
 ## UBC Student Email

@@ -15,7 +15,7 @@ parts:
     sections:
     - file: notes/setup/install_ds_stack_mac
       title: macOS
-    - file: notes/setup/install_ds_windows
+    - file: notes/setup/install_ds_stack_windows
       title: Windows
     - file: notes/setup/install_ds_ubuntu
       title: Ubuntu
