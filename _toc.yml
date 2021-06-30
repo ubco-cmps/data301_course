@@ -9,6 +9,18 @@ parts:
 #   - file: getting-started/todo_list
 #     title: Start Here!
 
+- caption: Getting Started!
+  chapters:
+  - file: notes/setup/stack
+    sections:
+    - file: notes/setup/install_ds_stack_mac
+      title: macOS
+    - file: notes/setup/install_ds_windows
+      title: Windows
+    - file: notes/setup/install_ds_ubuntu
+      title: Ubuntu
+
+
 # - caption: Week 1
 #   chapters:
 # - caption: Week 2
