@@ -2,7 +2,7 @@
 
 ![](../images/UBCO_CMPS_header.jpg)
 
-**Department of Computer Science, Mathematics, Physics and Statistics**
+**Department of Computer Science, Mathematics, Physics, and Statistics**
 
 # Course Syllabus (Official)
 

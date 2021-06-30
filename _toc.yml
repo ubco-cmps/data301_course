@@ -4,11 +4,28 @@ title: Course Unsyllabus
 parts:
 - caption: About this course
   chapters:
-  - file: about/syllabus2
   - file: about/unsyllabus
   - file: about/course_schedule
-  - file: getting-started/todo_list
-    title: Start Here!
+#   - file: getting-started/todo_list
+#     title: Start Here!
+# - caption: Week 1
+#   chapters:
+#   - file: notes/week01/week01_summary
+#     sections:
+#     - file: notes/week01/videos
+#       title: Videos
+#     - file: notes/week01/files
+#       title: Files
+#     - file: notes/week01/lab
+#       title: Lab0 - Install Instructions
+#       sections:
+#       - file: notes/week01/install_ds_stack_mac
+#         title: macOS
+#       - file: notes/week01/install_ds_stack_windows
+#         title: Windows
+#       - file: notes/week01/JupyterLab_on_the_cloud
+#         title: Jupyter Lab on the cloud
+
   # - file: about/accommodations
   # - file: about/doing_well
 # - caption: Course Project
