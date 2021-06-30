@@ -1,5 +1,5 @@
 (page_install_ds_stack_macOS)=
-MDS software stack install instructions for macOS
+macOS Software Stack
 =======================
 
 These instructions will walk you through installing the required Data Science software stack for {{ COURSE_CODE }}. 
@@ -66,7 +66,7 @@ Make sure you are able to open VS Code by clicking on the application.
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
-<img src="../../images/vscode.png" alt = ""/>
+<img src="setup_images/vscode.png" alt = "Pointing to the left sidebar to where extensions can be installed."/>
 
 To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
 
@@ -265,7 +265,8 @@ conda install \
  "numpy=1.*" \
  "pandas=1.*" \
  "flake8=3.*" \
- "black=19.*"
+ "black=19.*" \
+ "nbconvert=6.*"
 ```
 
 `conda` will show you the packages that will be downloaded, and you can press enter to proceed with the installation.
