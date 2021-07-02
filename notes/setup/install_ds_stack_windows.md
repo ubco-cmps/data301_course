@@ -199,6 +199,24 @@ Then save the file and exit VS Code.
 
 > Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
 
+## Tree
+
+From the [Tree for Windows](http://gnuwin32.sourceforge.net/packages/tree.htm) page, "Tree is a recursive directory listing program that produces a depth indented listing of files."
+This is very useful to explore your directory and file structure to figure out which files are where.
+
+Unfortunately, `Tree` is not trivial to install on Windows, but it is definitely worth the 2-3 minutes it takes to install it.
+The steps [in detail are outlined here (with screenshots)](https://dev.to/flyingduck92/add-tree-to-git-bash-on-windows-10-1eb1).
+
+In brief, the steps are:
+
+1. Download the [Tree binaries](http://downloads.sourceforge.net/gnuwin32/tree-1.5.2.2-bin.zip)
+
+2. Unzip the file, and navigate to the `bin` directory, and find `tree.exe`.
+
+3. Move or copy the `tree.exe` file to this location: `C:\Program Files\Git\usr\bin`. 
+
+4. Restart GitBash and type in `tree`.
+
 ## Python
 
 We will be using Python for a large part of the course, and `conda` will be our Python package manager.
@@ -212,7 +230,7 @@ To install Python and the `conda` package manager, we will use the [Miniconda pl
 After the download has finished, run the installer and accept the default configuration for all pages.
 
 ```{warning}
-Make sure to check the box to add miniconda to the PATH. We will set this up later.
+Make sure to check the box to add miniconda to the PATH.
 ```
 
 After the installation is complete, open the Start Menu and search for the program called "Anaconda Prompt (miniconda3)".
