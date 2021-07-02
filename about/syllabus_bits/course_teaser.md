@@ -1,17 +1,8 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Ut blandit faucibus fermentum.
-Fusce porttitor congue dolor, eget efficitur neque ultricies at.
-Nulla suscipit convallis elit, eu consequat felis.
-Quisque et malesuada justo, dapibus commodo enim.
-Sed malesuada turpis sed nibh dictum, a interdum dui tincidunt.
-Duis consequat magna non tortor dictum facilisis.
-In hac habitasse platea dictumst.
-Phasellus eu eros libero.
-Phasellus rhoncus eros vel metus porttitor porta.
-In et tellus finibus, mollis nisi sed, auctor est.
-Sed placerat ex at ligula eleifend, ac dapibus neque euismod.
-Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat enim sed feugiat malesuada.
+This course is one of my favourite courses to teach at UBCO!
+It was initially created by Dr. Ramon Lawrence, and has since been updated by various folks including Dr. Patricia Lasserre, Dr. Firas Moosvi, Dr. Irene Vrbik, Dr. Scott Fazackerley, and others.
+It is a fantastic introduction to the field of Data Science and in this one course, you will be equipped to handle most of the common Data wrangling, processing, and analysis tasks.
+You will also be introduced to a variety of tools (tech stack) that are common in the industry, and we hope you use this course as a spring board to launch your interest in Data Science!
 
 ```{tip}
-Number one reason thing to take away from this is...
+Come for the data, stay for the fun! In this course you will be able to explore datasets that are of interest to you and also do some common processing tasks towards a data analysis.
 ```
