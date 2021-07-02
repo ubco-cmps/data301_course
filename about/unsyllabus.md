@@ -118,6 +118,7 @@ In this course, we will be using the following required learning technologies (p
 
 - [Canvas](https://faculty.canvas.ubc.ca/canvas-privacy/)
 - [Ed Discussion](https://edstem.org/privacy)
+- [Gradescope](https://www.gradescope.com/privacy)
 - [Sli.do](https://www.sli.do/terms#privacy-policy)
 
 All tools used in the course will be used in a [FIPPA-compliant](https://universitycounsel.ubc.ca/subject-areas/access-and-privacy-general/access-to-information/about-fippa/) manner, with your privacy top of mind. 
@@ -129,7 +130,7 @@ Even though the tools above are required for this course, if you have a moral or
 
 ### Sign up for a (free) Ed Discussion account [Required]
 
-In this course, we will be using {{ FORUM_LINK }} for class discussion.
+In this course, we will be using {{ FORUM_LINK }} for class discussions.
 The system is highly catered to getting you help fast and efficiently from classmates, the TA, and myself.
 Please do NOT email questions to the instructor and TAs unless it is a legitimate emergency (or if you cannot access Ed Discussion).
 
@@ -200,11 +201,13 @@ This table describes how I think each course activity should be classified betwe
 
 ## How do I do well in this course? 
 
-Here are some guidelines on preparing yourselves for this course:
+These guidelines were adapted from [Dr. Simon Bates' Physics 117 course from UBCV](https://sites.google.com/site/simonpbates/home?authuser=0)).
+
+To prepare yourselves for this course:
 
 1. Learning is a contact sport.
 2. Memorizing is not learning.
-3. Understanding is learning and understanding should be your goal.
+3. Understanding is learning, and understanding should be your goal (not grades).
 4. We’ll do lots of tests.
 
 And some ingredients for your success:
@@ -215,7 +218,7 @@ And some ingredients for your success:
 1. Practice.
 1. Collaborate.
 1. Do not be fooled by familiarity of the material.
-1. Math.
+
 
 ### ... but I've never been good at computer science!
 
