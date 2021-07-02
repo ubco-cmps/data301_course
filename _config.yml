@@ -82,7 +82,7 @@ sphinx:
       COURSE_LINK: "https://firas.moosvi.com/courses/2021_ST2/data301"
       # FORUM_LINK: "[Ed Discussion](https://edstem.org/us/join/H9z4gh)"
       FORUM_LINK: "[Ed Discussion (sign up for it here)](https://ubc.ca1.qualtrics.com/jfe/form/SV_1BTAIXiMPvBRR2K)"
-      ANALYTICS_OPTOUT: "[complete this form](https://ubc.ca1.qualtrics.com/jfe/form/xxxxxxxxxx)"
+      ANALYTICS_OPTOUT: "[complete this form](https://ubc.ca1.qualtrics.com/jfe/form/SV_0p6lP4TtNpJn410)"
       FORMAT: "Lectures and Labs and they will all be running online in this course."
       ASSOCIATE_HEAD: "Yves Lucet [yves.lucet@ubc.ca](mailto:yves.lucet@ubc.ca)"
       ANON_FEEDBACK: "[feedback form](https://ubc.ca1.qualtrics.com/jfe/form/SV_6FhZZZAe9WoKdnv)"
