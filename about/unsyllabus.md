@@ -20,15 +20,15 @@ If there is a lab and/or tutorial listed on the SSC for this course, You **must*
 
 ### Important Details
 
-| Name          | Description                                                                              |
-|---------------|------------------------------------------------------------------------------------------|
-| Course        | {{ COURSE_CODE }}                                                                        |
-| Term          | {{ TERM }}                                                                               |
-| Instructor    | {{ INSTRUCTOR }}                                                                         |
-| Lectures      | {{ MEETING_TIMES }} in {{ ROOM }}                                                        |
-| Student Hours | {{ ZOOM_LINK.replace('CANVAS_ID',CANVAS_ID) }} at various times (see below for schedule) |
-| Canvas URL    | {{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}                                         |
-| Course Forum  | Contact via private message on {{ FORUM_LINK }}                                          |
+| Name              | Description                                                                                                                                        |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Course            | {{ COURSE_CODE }}                                                                                                                                  |
+| Term              | {{ TERM }}                                                                                                                                         |
+| Instructor        | {{ INSTRUCTOR }}                                                                                                                                   |
+| Lectures          | {{ MEETING_TIMES }} in {{ ROOM }}                                                                                                                  |
+| Student Hours     | To get live 1 on 1 help in the course, use {{ ZOOM_LINK.replace('CANVAS_ID',CANVAS_ID) }} at various times (see below for schedule).               |
+| Canvas URL        | {{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}                                                                                                   |
+| Course Discussion | To ask any course-related questions, use private (personal, not useful for anyone else) or public (helpful for other) messages on {{ FORUM_LINK }} |
 
 ### How do I contact the teaching team?
 
@@ -50,6 +50,8 @@ A few other notes:
 - Any student may visit the student hour for any member of the teaching team (TA or instructor)! In other words, you can go to the student hour of ANY TA, not just the one whose lab/tutorial you are registered in. 
 
 ### A message from your instructor
+
+Will add a video message here soon.
 
 <!-- Closer to the start of the term, I will update the video below with an actual message to the students :-).
 Until then, enjoy being [Rick-Rolled](https://www.dictionary.com/e/slang/rickrolling/).
