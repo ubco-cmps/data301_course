@@ -20,7 +20,6 @@ parts:
     - file: notes/setup/install_ds_ubuntu
       title: Ubuntu
 
-
 # - caption: Week 1
 #   chapters:
 # - caption: Week 2
