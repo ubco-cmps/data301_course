@@ -6,17 +6,14 @@ We are using GitHub Classroom to provision the labs.
 You will first need to accept the invitation to join our GitHub Classroom.
 Once the lab is ready for you to accept, click the link below to accept the lab:
 
-| Lab                         | Due Date                     | Link to Accept                                        | Solutions                                                               |
-|-----------------------------|------------------------------|-------------------------------------------------------|-------------------------------------------------------------------------|
-| Lab 0 - Preparing for the Term | Friday January 22 at 18:00 | [Accept Lab](https://classroom.github.com/a/0vMuOuZl) | N/A
-| Lab 1 - Excel               | Friday January 29 at 18:00 | [Accept Lab](https://classroom.github.com/a/UynYznfO) | [Solutions released]            |
-| Lab 2 - Command Line        | Friday February 5 at 18:00    | [Accept Lab](https://classroom.github.com/a/_MbwwHLF) | N/A                                                                     |
-| Lab 3 - Python I            | Friday February 12 at 18:00   | [Accept Lab](https://classroom.github.com/a/_0r32sQn) | [Solutions released] |
-| Lab 4 - Python II           | Friday February 26 at 18:00   | [Accept Lab](https://classroom.github.com/a/p4ay_98T) | [Solutions released] |
-| Lab 5 - Data Visualizations | Friday March 12 at 18:00  | [Accept Lab](https://classroom.github.com/a/KnCEBpSJ) | [Solutions released] |
-| Lab 6 - Tableau             | Wednesday March 31 at 18:00  | [Accept Lab](https://classroom.github.com/a/-qyvQVnI) | [Solutions released]                                                                    |
-| Lab 7 - Project Dashboard               |  Friday April 9 at 18:00  | [Accept Lab](https://classroom.github.com/a/YEubZ0LZ) (lab work should be committed to the project repository)| N/A      |
-| Lab 8 - SQL  | N/A                          | Practice for quiz5    | [Accept Lab]          | [Solutions released]
+| Lab                                | Due Date            | Link to Accept | Solutions |
+|------------------------------------|---------------------|----------------|-----------|
+| Lab 1 - Markdown, Terminal, GitHub | Saturday, July 10th at 18:00 | [Accept Lab]() | TBD       |
+| Lab 2 - Python                     | Saturday, July 17th at 18:00 | [Accept Lab]() | TBD       |
+| Lab 3 - Data Analysis with Python  | Saturday, July 24th at 18:00 | [Accept Lab]() | TBD       |
+| Lab 4 - Data Visualization         | Saturday, July 31st at 18:00 | [Accept Lab]() | TBD       |
+| Lab 5 - Exploratory Data Analysis  | Saturday, Aug 7th at 18:00   | [Accept Lab]() | TBD       |
+| Lab 6 - Tableau and Excel          | Saturday, Aug 14th at 18:00  | [Accept Lab]() | TBD       |
 
 Once you click the link, a repository will automatically be created for you with some starter code.
 You can now work on the lab, make commits, and push them to GitHub as you please. 

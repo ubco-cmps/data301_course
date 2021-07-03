@@ -19,6 +19,10 @@ parts:
       title: Windows
     - file: notes/setup/install_ds_ubuntu
       title: Ubuntu
+- caption: Labs
+  chapters:
+  - file: notes/labs
+    title: Lab Links and Solutions
 
 # - caption: Week 1
 #   chapters:
