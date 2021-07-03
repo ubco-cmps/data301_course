@@ -58,7 +58,7 @@ sphinx:
     - substitution
     myst_substitutions:
       INSTRUCTOR: "Dr. Firas Moosvi (he/his/him)"
-      PRONOUNCE: "Fur-az Moose-vee"
+      PRONOUNCE: "[Fur-az Moose-vee](https://namedrop.io/firasmoosvi)"
       OFFICE: "ROOM 111"
       PHONE: "N/A"
       COURSE_CODE: "DATA 301 or COSC 301"
@@ -68,7 +68,7 @@ sphinx:
       PREREQS: "Either (a) third-year standing, or (b) one of COSC 111 or COSC 122."
       COREQS: "None"
       TERM: "2021 Summer Term 2"
-      ROOM: "Online (Zoom)"
+      ROOM: "Online (Zoom) - Lectures will be recorded and available"
       MEETING_TIMES: "Tuesday, Wednesday, and Friday from 12-2:30 PM"
       GRACE_PERIOD: "48 hour"
       W_DATE_1: "July 9, 2021 11:59 PDT"
