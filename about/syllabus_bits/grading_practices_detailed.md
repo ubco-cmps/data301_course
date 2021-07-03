@@ -4,7 +4,7 @@ The grading scheme for this course is:
 |---------------|----------------|-------------|
 | Learning Logs | 2% (5 x 0.4%)  | TBD         |
 | Labs          | 27% (6 x 4.5%) | TBD         |
-| Project       | 24% (6 x 4%)   | TBD         |
+| Project       | 24% (4 x 6%)   | TBD         |
 | Tests         | 27% (3 x 9%)   | TBD         |
 | Final Exam    | 20%            | TBD         |
 
