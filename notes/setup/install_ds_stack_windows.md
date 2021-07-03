@@ -31,6 +31,7 @@ Once you have completed these installation instructions, make sure to follow the
 - [Visual Studio Code](#visual-studio-code)
 - [Terminal](#terminal)
 - [Git and GitHub](#git-and-github)
+- [Tree](#tree)
 - [Python, Conda, and JupyterLab](#python)
 - [Test JupyterLab](#Test-JupyterLab)
 

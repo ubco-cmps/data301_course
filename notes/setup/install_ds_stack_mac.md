@@ -271,6 +271,15 @@ conda install \
 
 `conda` will show you the packages that will be downloaded, and you can press enter to proceed with the installation.
 
+## Tree
+
+"Tree is a recursive directory listing program that produces a depth indented listing of files."
+This is very useful to explore your directory and file structure to figure out which files are where.
+
+You can install the `tree` package using this command:
+
+`conda install -c conda-forge tree`
+
 ## Test JupyterLab 
 
 To test that your JupyterLab installation is functional, open a new Terminal window.
