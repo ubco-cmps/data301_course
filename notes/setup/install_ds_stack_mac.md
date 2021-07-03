@@ -5,13 +5,16 @@ macOS Software Stack
 These instructions will walk you through installing the required Data Science software stack for {{ COURSE_CODE }}. 
 Before starting, ensure that your laptop meets the minimum requirements:
 
-- Runs macOS Catalina (10.15.x) or macOS BigSur (11.4). BigSur is recommended.
+- Runs macOS Catalina (10.15.x) or macOS BigSur (11.4). BigSur is recommended; older operating systems are possible but not recommended unless there is no other choice.
 - Can connect to networks via a wireless connection
 - Has at least 25 GB disk space available
-- Has at least 8 GB of RAM
+- Has at least 4 GB of RAM (more is better, 8GB is recommended)
 - Uses a 64-bit CPU
 - Is at most 6 years old at the start of the program (4 years old or newer is recommended)
 - Student user has full administrative access to the computer
+
+If your compuer does not meet any of the requirements above, please don't just drop the course!!
+Let me know first and we can discuss alternate possibilities so you can still take the course.
 
 ## Installation notes
 

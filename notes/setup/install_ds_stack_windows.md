@@ -9,10 +9,13 @@ Before starting, ensure that your laptop meets the minimum requirements:
     - Currently enrolled UBC students with a valid CWL account [qualify for one license of Windows 10 Education](https://it.ubc.ca/services/desktop-print-services/software-licensing/windows-10-education).
 - Can connect to networks via a wireless connection.
 - Has at least 25 GB disk space available.
-- Has at least 8 GB of RAM.
+- Has at least 4 GB of RAM (more is recommended).
 - Uses a 64-bit CPU.
 - Is at most 6 years old at the start of the program (4 years old or newer is recommended).
 - Student user has full administrative access to the computer.
+
+If your compuer does not meet any of the requirements above, please don't just drop the course!!
+Let me know first and we can discuss alternate possibilities so you can still take the course.
 
 ## Installation notes
 
