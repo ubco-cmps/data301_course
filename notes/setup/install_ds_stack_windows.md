@@ -19,7 +19,7 @@ Let me know first and we can discuss alternate possibilities so you can still ta
 
 ## Installation notes
 
-If you have already installed Git, Latex, or any of the Python related packages please uninstall these and follow the instructions below to install and configure them correcty (make sure to also remove any user configuration files and backup them if desired).
+If you have already installed Git, Conda, or any of the Python related packages please uninstall these and follow the instructions below to install and configure them correcty (make sure to also remove any user configuration files and backup them if desired).
 In order to be able to support you effectively and minimize setup issues and software conflicts, we require all students to install the software stack the same way.
 
 In all the sections below, if you are presented with the choice to download either a 64-bit (also called x64) or a 32-bit (also called x86) version of the application **always** choose the 64-bit version.
