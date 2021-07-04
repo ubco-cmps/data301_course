@@ -24,8 +24,12 @@ parts:
   - file: notes/labs
     title: Lab Links and Solutions
 
-# - caption: Week 1
-#   chapters:
+- caption: Week 1
+  chapters:
+  - file: notes/week01/lab1/README
+    sections:
+    - file: notes/week01/lab1/lab1A/README
+    - file: notes/week01/lab1/lab1B/README
 # - caption: Week 2
 #   chapters:
 # - caption: Week 3
