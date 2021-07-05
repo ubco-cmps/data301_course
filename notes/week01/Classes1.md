@@ -1,4 +1,4 @@
-# Class 1
+# Classes
 
 ## Class 1A (Tuesday)
 
