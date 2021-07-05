@@ -26,7 +26,13 @@ parts:
 
 - caption: Week 1
   chapters:
+  - file: notes/week01/week01_summary
+    title: Summary
+  - file: notes/week01/videos
+    title: Videos
+  - file: notes/week01/lecture1
   - file: notes/week01/lab1/README
+    title: Lab 1
     sections:
     - file: notes/week01/lab1/lab1A/README
     - file: notes/week01/lab1/lab1B/README
