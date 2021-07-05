@@ -17,14 +17,12 @@ Notes/resources for Class 1A can be found [here](Class1A).
 
 Notes/resources for Class 1A can be found [here](Class1B).
 
-
 - Introduction to the Command Line
 - Introduction to the Jupyter Lab
 
 ## Class 1C (Friday)
 
 Notes/resources for Class 1A can be found [here](Class1C).
-
 
 - Introduction to Data Analytics
 - Data Representations

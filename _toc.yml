@@ -28,13 +28,13 @@ parts:
     - file: notes/week01/videos
       title: Videos
     - file: notes/week01/Classes1
-      sections:
-      - file: notes/week01/Class1A
-        title: Course Introduction
-      - file: notes/week01/Class1B
-        title: Command Line and JupyterLab
-      - file: notes/week01/Class1C
-        title: 
+      # sections:
+      # - file: notes/week01/Class1A
+      #   title: Course Introduction
+      # - file: notes/week01/Class1B
+      #   title: Command Line and JupyterLab
+      # - file: notes/week01/Class1C
+      #   title: Data
     - file: notes/week01/lab1/README
       title: Lab 1
       sections:
