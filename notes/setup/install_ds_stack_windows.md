@@ -140,7 +140,7 @@ git --version
 ```
 
 ```
-git version 2.28.0.windows.1
+git version 2.32.0.windows.1
 ```
 
 You can launch many windows programs from the Bash terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
