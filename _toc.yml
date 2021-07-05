@@ -19,23 +19,34 @@ parts:
       title: Windows
     - file: notes/setup/install_ds_ubuntu
       title: Ubuntu
+
+- caption: Weekly Content
+  chapters:
+  - file: notes/week01/week01_summary
+    title: Week 1
+    sections:
+    - file: notes/week01/videos
+      title: Videos
+    - file: notes/week01/Classes1
+      sections:
+      - file: notes/week01/Class1A
+        title: Course Introduction
+      - file: notes/week01/Class1B
+        title: Command Line and JupyterLab
+      - file: notes/week01/Class1C
+        title: 
+    - file: notes/week01/lab1/README
+      title: Lab 1
+      sections:
+      - file: notes/week01/lab1/lab1A/README
+      - file: notes/week01/lab1/lab1B/README
+
+
 - caption: Labs
   chapters:
   - file: notes/labs
     title: Lab Links and Solutions
 
-- caption: Week 1
-  chapters:
-  - file: notes/week01/week01_summary
-    title: Summary
-  - file: notes/week01/videos
-    title: Videos
-  - file: notes/week01/lecture1
-  - file: notes/week01/lab1/README
-    title: Lab 1
-    sections:
-    - file: notes/week01/lab1/lab1A/README
-    - file: notes/week01/lab1/lab1B/README
 # - caption: Week 2
 #   chapters:
 # - caption: Week 3
