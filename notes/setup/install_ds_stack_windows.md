@@ -64,7 +64,7 @@ In this course, you will need Microsoft Excel.
 
 The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis.
 You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
-Once the download is finished, click "Open with Archive utility", and move the extracted VS Code application from "Downloads" to "Applications".
+Once the download is finished, double click it to open and follow the installation instructions.
 Make sure you are able to open VS Code by clicking on the application.
 
 ### VS Code extensions
