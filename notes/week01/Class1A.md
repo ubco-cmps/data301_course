@@ -1,4 +1,22 @@
-# Test Heading
+# Class 1A - Introduction to Data 301
+
+- Course Introductions
+    - Course website
+    - Course policies
+    - How people learn
+    
+    
+- Introduction to Ed Discussion
+- Introduction to Slido
+- Introduction to Gradescope
+- Introduction to GitHub
+
+
+
+
+
+
+
 
 ## Course Outline
 
@@ -6,11 +24,6 @@
 
 The overall goal of this course is for you to: 
 > Understand data analytics and be able to apply data analysis to data sets using a variety of software tools and techniques.
-
-<img src="../images/01Intro/excel.png" alt="excel" height="48"> <img src="../images/01Intro/python.png" alt="python" height="48">
-<img src="../images/01Intro/sql.png" alt="sql" height="48"> <img src="../images/01Intro/Rlogo.png" alt="Rlogo" height="48">
-<img src="../images/01Intro/Tableau.png" alt="Tableau" height="48">
-
 
 * The most exciting aspect of data analytics is discovering and presenting useful data/information that can have an impact on business, society, etc.
 * This course will provide the tools and skills for you to perform your own data analysis when encountering problems in the real-world.
