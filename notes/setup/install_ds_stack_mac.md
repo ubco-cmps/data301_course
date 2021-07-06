@@ -53,8 +53,8 @@ Google Chrome is not recommended because of the [well-documented privacy and tra
 UBC students have free access to a Microsoft Office 365 annual subscription, which is renewed for students enrolled in at least one course.
 Office 365 includes Word, Excel, PowerPoint, Outlook, and OneNote, and is available on a variety of platforms.
 
-To get your free Office 365 license and download the installer files, visit [UBC IT] (https://it.ubc.ca/services/desktop-print-services/software-licensing/office-365-students) and click `Download Office 365`.
-Note that you will need your CWL login credentials in order to download the software and activate your license.
+To get your free Office 365 license and download the installer files, visit [UBC IT](https://it.ubc.ca/services/desktop-print-services/software-licensing/office-365-students) for the installation instructions.
+Note that you will need your CWL login credentials in order to download the software and activate your license from [portal.office.com](https://portal.office.com).
 
 In this course, you will need Microsoft Excel.
 
