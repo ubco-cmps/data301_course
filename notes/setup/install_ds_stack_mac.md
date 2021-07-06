@@ -73,9 +73,10 @@ The real magic of VS Code is in the extensions that let you add languages, debug
 
 To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
 
-- Python (everything Python: notebooks, debugging, linting, formatting, etc.)
-- markdownlint (markdown linting and style checking extension)
-- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
+- `Python`
+- `Python Extension Pack` (for notebooks, debugging, linting, formatting, etc.)
+- `markdownlint` (markdown linting and style checking extension)
+- (Optional) `Bracket Pair Colorizer 2` (add colour to help distinguish your brackets: (), [], {})
 
 [This video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
 
