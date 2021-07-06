@@ -277,7 +277,7 @@ In particular, I hope (and expect) that the following features of the course sho
 - Weekly learning logs, homework and reading reflections to make you think about your learning ([metacognition](https://cft.vanderbilt.edu/guides-sub-pages/metacognition/)).
 - Each test has a "bonus test" available one week later; for each test, we will take the better score of the pair.
 - No high-stakes exams (the single largest assessment item is the final exam).
-- All course assessments are completely open book and open notes. 
+- All course assessments are completely open book, open notes, and open web (except for cheating websites like Chegg, CourseHero, Slader, Bartleby, etc...)
 - Plenty of TA and instructor student hours and several outside of normal business hours.
 - Class website that outlines exactly what you should do when to help you manage your time.
 - Tonnes of supplemental materials including other instructional videos in case you want a different perspective.
