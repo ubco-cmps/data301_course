@@ -31,11 +31,11 @@ Once you have completed these installation instructions, make sure to follow the
 - [UBC Student Email](#ubc-student-email)
 - [Web browser](#web-browser)
 - [Microsoft Office](#microsoft-office)
+- [Python, Conda, and JupyterLab](#python)
 - [Visual Studio Code](#visual-studio-code)
 - [Terminal](#terminal)
 - [Git and GitHub](#git-and-github)
 - [Tree](#tree)
-- [Python, Conda, and JupyterLab](#python)
 - [Test JupyterLab](#Test-JupyterLab)
 
 ## UBC Student Email
@@ -59,6 +59,133 @@ To get your free Office 365 license and download the installer files, visit [UBC
 Note that you will need your CWL login credentials in order to download the software and activate your license from [portal.office.com](https://portal.office.com).
 
 In this course, you will need Microsoft Excel.
+
+
+## Python
+
+We will be using Python for a large part of the course, and `conda` will be our Python package manager.
+We will be using the [Miniconda installer (read more here)](https://docs.conda.io/en/latest/miniconda.html) to install both python and conda at the same time.
+Miniconda also provides us with a minimum number of useful packages so installation is quick, and relatively painless.
+
+### Installing `conda` and python
+
+We will be using Python for a large part of the program, and `conda` as our Python package manager.
+To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.8 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe).
+After the download has finished, run the installer and accept the default configuration for all pages.
+
+```{warning}
+Make sure to check the box to add miniconda to the PATH.
+```
+
+After the installation is complete, open the Start Menu and search for the program called "Anaconda Prompt (miniconda3)".
+When this opens you will see a prompt similar to `(base) C:\Users\your_name`.
+Type the following to check that your Python installation is working:
+
+```
+python --version
+```
+
+which should return something like this:
+
+```
+Python 3.8.3
+```
+
+> If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.8**.
+
+### Integrating Python with the Git Bash terminal
+
+```{warning}
+This part is very important!!!
+```
+
+To avoid having to open the separate Anaconda Prompt every time we want to use Python, we can make it available from the (Git Bash) terminal, which is what we will be using most of the time. To set this up, open the "Anaconda Prompt (miniconda3)" again and type:
+
+```
+conda init bash
+```
+
+You will see that this modified a few configuration files, which makes `conda` visible to the terminal. Close all open terminal windows and launch a new one, you should now see that the prompt string has changed to include the word `(base)` as in the screenshot below:
+
+<img src="C:\Users\patri\Desktop\Teaching\COSC301git\data301_course\notes\images\add-conda-env-to-ps1.png" alt = ""/>
+
+If you type
+
+```
+python --version
+```
+
+you should now see the same output as above:
+
+```
+Python 3.8.3
+```
+
+> Note that if you want to run Python interactively from the Git Bash terminal, you need to prepend the `winpty` command, so the full command would be `winpty python` (if you run this, note that you can exit the Python prompt by typing `exit()`). Running just `python` works on other setups, but will freeze the Git Bash terminal.
+
+Let's also check the version of the `conda` package manager. If you type
+
+```
+conda --version
+```
+
+you should see something like this
+
+```
+conda 4.8.3
+```
+
+> *Optional* One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
+>
+> ```
+> code "/c/Program Files/Git/etc/profile.d/git-prompt.sh"
+> ```
+>
+> Delete the line that reads the following (it should be line 13):
+>
+> ```
+> PS1="$PS1"'\n'       # new line
+> ```
+>
+> Click to save the file,
+> when VS Code prompts you that the saving failed,
+> click "Retry as Admin" and then "Yes".
+> That's it!
+> Now if you launch a new terminal instance,
+> you will see `(base)` on the same line as the rest of the prompt string as in the screenshot below.
+>
+
+<img src="setup_images/remove-newline-from-ps1.png" alt = "Decorative"/>
+
+### Essential Python packages
+
+`conda` installs Python packages from different online repositories which are called "channels".
+A package needs to go through thorough testing before it is included in the default channel,
+which is good for stability,
+but also means that new versions will be delayed and fewer packages are available overall.
+There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
+which provides more up to date packages
+To enable us to access the most up to date version of the Python packages we are going to use,
+we will add the more up to date  channel,
+To add the conda-forge channel by typing the following in the terminal:
+
+```
+conda config --add channels conda-forge
+```
+
+To install packages individually, we can now use the following command: `conda install <package-name>`. Let's install the key packages needed for the start of the MDS program:
+
+```
+conda install \
+ "jupyterlab=3.*" \
+ "numpy=1.*" \
+ "pandas=1.*" \
+ "flake8=3.*" \
+ "black=19.*" \
+ "nbconvert=6.*"
+```
+
+`conda` will show you the packages that will be downloaded, and you can press enter to proceed with the installation.
 
 ## Visual Studio Code
 
@@ -220,132 +347,6 @@ In brief, the steps are:
 3. Move or copy the `tree.exe` file to this location: `C:\Program Files\Git\usr\bin`. 
 
 4. Restart GitBash and type in `tree`.
-
-## Python
-
-We will be using Python for a large part of the course, and `conda` will be our Python package manager.
-We will be using the [Miniconda installer (read more here)](https://docs.conda.io/en/latest/miniconda.html) to install both python and conda at the same time.
-Miniconda also provides us with a minimum number of useful packages so installation is quick, and relatively painless.
-
-### Installing `conda` and python
-
-We will be using Python for a large part of the program, and `conda` as our Python package manager.
-To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.8 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe).
-After the download has finished, run the installer and accept the default configuration for all pages.
-
-```{warning}
-Make sure to check the box to add miniconda to the PATH.
-```
-
-After the installation is complete, open the Start Menu and search for the program called "Anaconda Prompt (miniconda3)".
-When this opens you will see a prompt similar to `(base) C:\Users\your_name`.
-Type the following to check that your Python installation is working:
-
-```
-python --version
-```
-
-which should return something like this:
-
-```
-Python 3.8.3
-```
-
-> If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.8**.
-
-### Integrating Python with the Git Bash terminal
-
-```{warning}
-This part is very important!!!
-```
-
-To avoid having to open the separate Anaconda Prompt every time we want to use Python, we can make it available from the (Git Bash) terminal, which is what we will be using most of the time. To set this up, open the "Anaconda Prompt (miniconda3)" again and type:
-
-```
-conda init bash
-```
-
-You will see that this modified a few configuration files, which makes `conda` visible to the terminal. Close all open terminal windows and launch a new one, you should now see that the prompt string has changed to include the word `(base)` as in the screenshot below:
-
-<img src="C:\Users\patri\Desktop\Teaching\COSC301git\data301_course\notes\images\add-conda-env-to-ps1.png" alt = ""/>
-
-If you type
-
-```
-python --version
-```
-
-you should now see the same output as above:
-
-```
-Python 3.8.3
-```
-
-> Note that if you want to run Python interactively from the Git Bash terminal, you need to prepend the `winpty` command, so the full command would be `winpty python` (if you run this, note that you can exit the Python prompt by typing `exit()`). Running just `python` works on other setups, but will freeze the Git Bash terminal.
-
-Let's also check the version of the `conda` package manager. If you type
-
-```
-conda --version
-```
-
-you should see something like this
-
-```
-conda 4.8.3
-```
-
-> *Optional* One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
->
-> ```
-> code "/c/Program Files/Git/etc/profile.d/git-prompt.sh"
-> ```
->
-> Delete the line that reads the following (it should be line 13):
->
-> ```
-> PS1="$PS1"'\n'       # new line
-> ```
->
-> Click to save the file,
-> when VS Code prompts you that the saving failed,
-> click "Retry as Admin" and then "Yes".
-> That's it!
-> Now if you launch a new terminal instance,
-> you will see `(base)` on the same line as the rest of the prompt string as in the screenshot below.
->
-
-<img src="setup_images/remove-newline-from-ps1.png" alt = "Decorative"/>
-
-### Essential Python packages
-
-`conda` installs Python packages from different online repositories which are called "channels".
-A package needs to go through thorough testing before it is included in the default channel,
-which is good for stability,
-but also means that new versions will be delayed and fewer packages are available overall.
-There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
-which provides more up to date packages
-To enable us to access the most up to date version of the Python packages we are going to use,
-we will add the more up to date  channel,
-To add the conda-forge channel by typing the following in the terminal:
-
-```
-conda config --add channels conda-forge
-```
-
-To install packages individually, we can now use the following command: `conda install <package-name>`. Let's install the key packages needed for the start of the MDS program:
-
-```
-conda install \
- "jupyterlab=2.*" \
- "numpy=1.*" \
- "pandas=1.*" \
- "flake8=3.*" \
- "black=19.*" \
- "nbconvert=6.*"
-```
-
-`conda` will show you the packages that will be downloaded, and you can press enter to proceed with the installation.
 
 ## Test JupyterLab 
 

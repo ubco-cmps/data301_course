@@ -30,10 +30,10 @@ Once you have completed these installation instructions, make sure to follow the
 - [UBC Student Email](#ubc-student-email)
 - [Web browser](#web-browser)
 - [Microsoft Office](#microsoft-office)
+- [Python, Conda, and JupyterLab](#python)
 - [Visual Studio Code](#visual-studio-code)
 - [Terminal](#terminal)
 - [Git and GitHub](#git-and-github)
-- [Python, Conda, and JupyterLab](#python)
 - [Test JupyterLab](#Test-JupyterLab)
 
 ## UBC Student Email
@@ -57,6 +57,67 @@ To get your free Office 365 license and download the installer files, visit [UBC
 Note that you will need your CWL login credentials in order to download the software and activate your license from [portal.office.com](https://portal.office.com).
 
 In this course, you will need Microsoft Excel.
+
+## Python
+
+We will be using Python for a large part of the course, and `conda` will be our Python package manager.
+We will be using the [Miniconda installer (read more here)](https://docs.conda.io/en/latest/miniconda.html) to install both python and conda at the same time.
+Miniconda also provides us with a minimum number of useful packages so installation is quick, and relatively painless.
+
+### Installing `conda` and python
+
+The latest Miniconda installer can be downloaded from here: [Miniconda macOSX 64-bit pkg install](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
+
+After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
+```
+conda --version
+```
+which should return something like this:
+
+```
+conda 4.8.2
+```
+
+> Note: If you see `zsh: command not found: conda`, see the section on [Terminal](#terminal) above to set your default Terminal shell to Bash as opposed to Zsh.
+
+Next, type the following to ask for the version of Python:
+```
+python --version
+```
+which should return something like this:
+
+```
+Python 3.8.3
+```
+
+> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.8** (or higher).
+
+### Essential Python packages
+
+`conda` installs Python packages from different online repositories which are called "channels".
+A package needs to go through thorough testing before it is included in the default channel, which is good for stability, but also means that new versions will be delayed and fewer packages are available overall.
+There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/), which provides more up-to-date packages.
+To enable us to access the most recent versions of the Python packages we are going to use, we will add this channel.
+To add the conda-forge channel type the following in a Terminal window:
+
+```
+conda config --add channels conda-forge
+```
+
+To install packages individually, we can now use the following command: `conda install "<package-name>"`.
+Let's install the key packages needed (you will note that we're also specifying certain versions of the package with `= X.Y`):
+
+```
+conda install \
+ "jupyterlab=3.*" \
+ "numpy=1.*" \
+ "pandas=1.*" \
+ "flake8=3.*" \
+ "black=19.*" \
+ "nbconvert=6.*"
+```
+
+`conda` will show you the packages that will be downloaded, and you can press enter to proceed with the installation.
 
 ## Visual Studio Code
 
@@ -213,67 +274,6 @@ git config --global user.email YOUR@EMAIL.com
 ```{note}
 To ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
 ```
-
-## Python
-
-We will be using Python for a large part of the course, and `conda` will be our Python package manager.
-We will be using the [Miniconda installer (read more here)](https://docs.conda.io/en/latest/miniconda.html) to install both python and conda at the same time.
-Miniconda also provides us with a minimum number of useful packages so installation is quick, and relatively painless.
-
-### Installing `conda` and python
-
-The latest Miniconda installer can be downloaded from here: [Miniconda macOSX 64-bit pkg install](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
-
-After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
-```
-conda --version
-```
-which should return something like this:
-
-```
-conda 4.8.2
-```
-
-> Note: If you see `zsh: command not found: conda`, see the section on [Terminal](#terminal) above to set your default Terminal shell to Bash as opposed to Zsh.
-
-Next, type the following to ask for the version of Python:
-```
-python --version
-```
-which should return something like this:
-
-```
-Python 3.8.3
-```
-
-> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.8** (or higher).
-
-### Essential Python packages
-
-`conda` installs Python packages from different online repositories which are called "channels".
-A package needs to go through thorough testing before it is included in the default channel, which is good for stability, but also means that new versions will be delayed and fewer packages are available overall.
-There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/), which provides more up-to-date packages.
-To enable us to access the most recent versions of the Python packages we are going to use, we will add this channel.
-To add the conda-forge channel type the following in a Terminal window:
-
-```
-conda config --add channels conda-forge
-```
-
-To install packages individually, we can now use the following command: `conda install "<package-name>"`.
-Let's install the key packages needed (you will note that we're also specifying certain versions of the package with `= X.Y`):
-
-```
-conda install \
- "jupyterlab=3.*" \
- "numpy=1.*" \
- "pandas=1.*" \
- "flake8=3.*" \
- "black=19.*" \
- "nbconvert=6.*"
-```
-
-`conda` will show you the packages that will be downloaded, and you can press enter to proceed with the installation.
 
 ## Tree
 
