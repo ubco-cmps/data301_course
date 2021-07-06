@@ -76,9 +76,9 @@ We will do our best to follow the plan outlined in this unsyllabus, but in case 
 
 Any major changes to the syllabus (this page) will be documented here, as well as the date the change was made. 
 
-| Change Date | Summary | Rationale |
-|-------------|---------|-----------|
-| TBD         | TBD     | TBD       |
+| Change Date | Summary                          | Rationale                         |
+|-------------|----------------------------------|-----------------------------------|
+| July 5      | Added days course items are due. | Changing from TBD to actual days. |
 
 ## About {{ COURSE_CODE }}
 
