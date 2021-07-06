@@ -28,9 +28,9 @@ parts:
     - file: notes/week01/videos
       title: Videos
     - file: notes/week01/Classes1
-      # sections:
-      # - file: notes/week01/Class1A
-      #   title: Course Introduction
+      sections:
+      - file: notes/week01/Class1A/Class1A
+        title: Course Introduction
       # - file: notes/week01/Class1B
       #   title: Command Line and JupyterLab
       # - file: notes/week01/Class1C
@@ -40,7 +40,8 @@ parts:
       sections:
       - file: notes/week01/lab1/lab1A/README
       - file: notes/week01/lab1/lab1B/README
-
+    - file: notes/week01/test0
+    - file: notes/week01/log
 
 - caption: Labs
   chapters:

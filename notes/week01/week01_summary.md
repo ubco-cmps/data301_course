@@ -4,7 +4,7 @@ Week 1
 
 Hello everyone!  Welcome to Week 1 - this week will be talk about logistics and set up our machines for data analytics.
 
-<label><input type="checkbox" id="week01_task1" class="box"> Read the course [syllabus](../../../../about/syllabus.md) and the unsyllabus](../../../../about/unsyllabus.md) </input></label>
+<label><input type="checkbox" id="week01_task1" class="box"> Read the course [syllabus](../../../../about/syllabus.md) and the [unsyllabus](../../../../about/unsyllabus.md) </input></label>
 
 <label><input type="checkbox" id="week01_task2" class="box"> Attend the lectures this week </input></label>
 
@@ -21,8 +21,6 @@ You are welcome to attend additional labs or Student Hours in the course if you 
 ```
 <label><input type="checkbox" id="week01_task4" class="box"> Watch the **[assigned videos](./videos.md)**</input></label>
 
-<label><input type="checkbox" id="week01_task5" class="box"> Complete the weekly **[Learning Log](./log.md)**</input></label>
+<label><input type="checkbox" id="week01_task5" class="box"> Complete **[Test 0](./test0.md)** on course policies and the syllabus</input></label>
 
-<label><input type="checkbox" id="week01_task6" class="box"> Complete **[Test 0](./test0.md)** on course policies and the syllabus</input></label>
-
-
+<label><input type="checkbox" id="week01_task6" class="box"> Complete the weekly **[Learning Log](./log.md)**</input></label>
