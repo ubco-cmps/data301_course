@@ -107,30 +107,6 @@ Enter the password, quit the terminal (`File-->Quit` or `Command+Q`), and open i
 
 You should now proceed to do some more configuration via the Terminal.
 
-### Setting VS Code as the default editor
-
-To make programs run from the Terminal (such as `git`) use VS Code by default, we will modify `~/.z_profile`. First, open it using VS Code:
-
-```
-code ~/.z_profile
-```
-
-```{note}
-If you see any existing lines in your `~/.z_profile` related to a previous Python or R installation, please remove these.
-```
-
-Paste the following lines to the new file that opens up:
-
-```
-# Set the default editor for programs launch from Terminal
-EDITOR="code --wait"
-VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
-```
-
-Then save the file and exit VS Code.
-
-> Most Terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
-
 ### Configure VS Code to launch from the Terminal
 
 1. Launch VS Code.
@@ -157,6 +133,30 @@ x64
 ```
 
 [Manual install instructions are here, but remember you're using the zsh now!](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) steps as well.
+
+### Setting VS Code as the default editor
+
+To make programs run from the Terminal (such as `git`) use VS Code by default, we will modify `~/.z_profile`. First, open it using VS Code:
+
+```
+code ~/.z_profile
+```
+
+```{note}
+If you see any existing lines in your `~/.z_profile` related to a previous Python or R installation, please remove these.
+```
+
+Paste the following lines to the new file that opens up:
+
+```
+# Set the default editor for programs launch from Terminal
+EDITOR="code --wait"
+VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
+```
+
+Then save the file and exit VS Code.
+
+> Most Terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
 
 ### [Optional] Install Ohmyzsh to get Terminal colours, and highlighting
 
