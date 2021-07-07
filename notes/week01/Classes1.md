@@ -25,4 +25,4 @@ Notes/resources for Class 1B can be found [here](Class1B/Class1B).
 Notes/resources for Class 1C can be found [here](Class1C/Class1C).
 
 - Introduction to Data Analytics
-- Data Representations
+- Data Representation
