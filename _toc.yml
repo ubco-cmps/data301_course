@@ -33,7 +33,7 @@ parts:
         title: Course Introduction
       - file: notes/week01/Class1B/Class1B
         title: Command Line and JupyterLab
-      - file: notes/week01/Class1C
+      - file: notes/week01/Class1C/Class1C
         title: Git and Data Representation
     - file: notes/week01/lab1/README
       title: Lab 1
