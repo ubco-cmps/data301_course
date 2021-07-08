@@ -43,6 +43,27 @@ parts:
     - file: notes/week01/test0
     - file: notes/week01/log
 
+  - file: notes/week02/week02_summary
+    title: Week 1
+    sections:
+    - file: notes/week02/videos
+      title: Videos
+    - file: notes/week02/Classes2
+      sections:
+      - file: notes/week02/Class1A/Class1A
+        title: Course Introduction
+      - file: notes/week02/Class1B/Class1B
+        title: Command Line and JupyterLab
+      - file: notes/week02/Class1C/Class1C
+        title: Git and Data Representation
+    - file: notes/week02/lab1/README
+      title: Lab 1
+      sections:
+      - file: notes/week02/lab1/lab1A/README
+      - file: notes/week02/lab1/lab1B/README
+    - file: notes/week02/test0
+    - file: notes/week02/log
+
 - caption: Labs
   chapters:
   - file: notes/labs
