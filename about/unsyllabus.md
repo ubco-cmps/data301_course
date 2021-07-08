@@ -76,10 +76,11 @@ We will do our best to follow the plan outlined in this unsyllabus, but in case 
 
 Any major changes to the syllabus (this page) will be documented here, as well as the date the change was made. 
 
-| Change Date | Summary                                                           | Rationale                         |
-|-------------|-------------------------------------------------------------------|-----------------------------------|
-| July 5      | Added days course items are due.                                  | Changing from TBD to actual days. |
-| July 7      | Added clarification that the max mark is 100% on any course item. | Address issue with Bonus marks    |
+| Change Date | Summary                                                           | Rationale                                  |
+|-------------|-------------------------------------------------------------------|--------------------------------------------|
+| July 5      | Added days course items are due.                                  | Changing from TBD to actual days.          |
+| July 7      | Added clarification that the max mark is 100% on any course item. | Address issue with Bonus marks             |
+| July 8      | Added Git content on Test 1.                                      | Need to assess basic competencies with git |
 
 ## About {{ COURSE_CODE }}
 
