@@ -1,4 +1,4 @@
-# Test 0
+# Test 1
 
 You will find Test 1 on Canvas.
 
@@ -9,7 +9,8 @@ Content you should review for Test 1 includes:
         - "It is important to realize that in this course, you will not explicitly be tested on any git commands except `add`, `commit`,`fetch`,`push`,`pull`,`branch`."
     - Basics of python programming
         - Here are some **sample** topics that may be tested (this is not the exhaustive list):
+            - Python syntax
             - Valid names of variables
+            - Lists and Dictionaries
             - Loops
             - Conditionals
-            - 
