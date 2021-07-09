@@ -60,7 +60,7 @@ parts:
       title: Lab 2
       sections:
       - file: notes/week02/lab2/lab2A/README
-      - file: notes/week02/lab2/lab2B/README
+      - file: notes/week02/lab2/lab2B
     - file: notes/week02/test1
     - file: notes/week02/log
 
