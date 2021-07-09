@@ -69,6 +69,11 @@ parts:
   - file: notes/labs
     title: Lab Links and Solutions
 
+- caption: Course Feedback
+  chapters:
+  - file: about/feedback
+    title: Anonymous Feedback Form
+    
 # - caption: Week 2
 #   chapters:
 # - caption: Week 3
