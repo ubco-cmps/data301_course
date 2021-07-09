@@ -46,8 +46,8 @@ parts:
   - file: notes/week02/week02_summary
     title: Week 2
     sections:
-    # - file: notes/week02/videos
-    #   title: Videos
+    - file: notes/week02/videos
+      title: Videos
     - file: notes/week02/Classes2
       # sections:
       # - file: notes/week02/Class2A/Class2A
@@ -73,7 +73,7 @@ parts:
   chapters:
   - file: about/feedback
     title: Anonymous Feedback Form
-    
+
 # - caption: Week 2
 #   chapters:
 # - caption: Week 3
