@@ -1,24 +1,25 @@
 # Milestone 4 - Present your Dashboard!
 
-In this milestone you will be finalizing your submission and presenting all your hard-work to your fellow students as a Dashboard!
+In this milestone you will be presenting all your hard-work to your fellow students! 
+
+There is no GH Classroom link to accept for this milestone or milestone 4.
+
+## Due Date 
+
+The due date for this milestone is **Friday December 4, 2020**.
 
 ## Overall Expectations
 
-- Every time you resume working on a project, you should run `git pull` to pull down any changes that may have occurred since the last time you worked on the project.
-- You should be committing to git every time you work on this project, and 
+- You should be committing to git every time you work on this project.
 - On average, all team members should be contributing to the project equally!
-- Each team member is responsible for their own research question(s), but the data processing, wrangling, and cleaning steps can be shared.
-- Commit messages should be meaningful. We will look at them. It's OK if one or two are less meaningful, but most should provide a short phrase to remind yourself (and others looking at your repository) what the changes were.
+- git commit messages should be meaningful. These will be marked. It's OK if one or two are less meaningful, but most should be.
 - Use GitHub issues to communicate and document major decisions 
-- Your question, analysis and visualizations should make sense, be well-formed, and it does not have to be complicated.
+- Your question, analysis and visualizations should make sense. It doesn't have to be complicated.
 - You should use proper grammar and full sentences in your READMEs. Point form may occur, but should be less than 30% of your written documents.
-- You must use proper English, spelling, and grammar and you should write concisely.
-- There should be a plan in place to to deal with any teamwork conflicts and issues.
+- You must use proper English, spelling, and grammar.
+- You should write concisely. 
 
-## Task 1: Create a Dashboard
-
-
-## Task 2: Present your dashboard (30%)
+## Task 1: Present your dashboard (100%)
 
 Project presentations will be 5 minutes each in the form of either a video screencast, or a live presentation during lecture (whether your project is done solo, or in a group).
 

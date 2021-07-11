@@ -1,63 +1,83 @@
-# Milestone 2 - Data Analysis
+# Milestone 2 - Data Analysis and Git
 
 In this milestone you will be expected to process and clean your dataset, do exploratory data analysis (EDA), create some data visualizations, and work with method chaining in Pandas. 
 If you are working as a group, you will be expected to show proficiency in all the areas above, **without a duplication of efforts**.
 
+## Due Date 
+
+The tentative due date for this milestone is **Friday November 13, 2020**.
+I suggest you try to meet at least two or three times during the next two weeks to discuss this milestone.
+
 ## Overall Expectations
 
-- Every time you resume working on a project, you should run `git pull` to pull down any changes that may have occurred since the last time you worked on the project.
-- You should be committing to git every time you work on this project, and 
+- You should be committing to git every time you work on this project.
 - On average, all team members should be contributing to the project equally!
-- Each team member is responsible for their own research question(s), but the data processing, wrangling, and cleaning steps can be shared.
-- Commit messages should be meaningful. We will look at them. It's OK if one or two are less meaningful, but most should provide a short phrase to remind yourself (and others looking at your repository) what the changes were.
+- git commit messages should be meaningful. These will be marked. It's OK if one or two are less meaningful, but most should be.
 - Use GitHub issues to communicate and document major decisions 
-- Your question, analysis and visualizations should make sense, be well-formed, and it does not have to be complicated.
+- Your question, analysis and visualizations should make sense. It doesn't have to be complicated.
 - You should use proper grammar and full sentences in your READMEs. Point form may occur, but should be less than 30% of your written documents.
-- You must use proper English, spelling, and grammar and you should write concisely.
-- There should be a plan in place to to deal with any teamwork conflicts and issues.
+- You must use proper English, spelling, and grammar.
+- You should write concisely. 
 
-## Task 1. Set up an "Analysis Pipeline" (20%)
+## Task 1: Introduction to Markdown (5%)
 
-**Each person in a group should do this Task in their own Jupyter notebook!**
+You may already know of this, but Jupyter Notebooks are an extremely powerful tool to help you create executable, and human-readable documents that contain code, text/narrative, images/plots, and longer explanatory paragraphs.
 
-Often when Data Scientists do analyses with the same or similar datasets, they set up an "analysis pipeline".
-This has several advantages:
+Here is a list of elements that are available in markdown:
 
-- record the steps so you can remember what you did.
-- allows you to repeat the steps reproducibly, without doing a bunch of manual and repetitive work.
-- make changes to thes series of processing steps so you can improve and iterate.
-- troubleshoot and debug errors in your processing.
-- allows others to reproduce your analysis.
-- if your data changes, you can update your outputs (report, images, etc...) easily without redoing all your processing.
-- allows you to spend more effort and energy on your analysis and visualizations (if you do a good job with the pipeline).
+- Multi-level Headers (``, `##`, `###`, `####` etc...)
+- Bold text (surround with `**bold text**`)
+- Italic text (surround with `*italic text*`)
+- Unordered lists (`- text` or `* text`, `+ text`)
+- Ordered lists (`1. text`)
+- Images (`![path_to_image.png]`)
+- Code (surround code in markdown cells with `single line` or ``` multi-line code ```)
+- Quoted text (start line with `> text`)
+- Links (`[text placeholder](https:/cbc.ca)`)
+- Math symbols using $$\latex$$ (surround with `$$` like: `$$\lambda`)
+- Horizontal Line (three dashes: `---`)
 
-### Common steps of a Data Analysis Pipeline
+There are two parts of this Task:
 
-Here are some common steps of an analysis pipeline (the order isn't set, and not all elements are necessary):
+1. You should use at least three of the above elements somewhere in all the various README files that exist in your project.
 
-1. Load Data
-    - Check file types and encodings.
-    - Check delimiters (space, comma, tab).
-    - Skip rows and columns as needed.
-2. Clean Data
-    - Remove columns not being used.
-    - Deal with "incorrect" data.
-    - Deal with missing data.
-3. Process Data
-    - Create any new columns needed that are combinations or aggregates of other columns (examples include weighted averages, categorizations, groups, etc...).
-    - Find and replace operations (examples inlcude replacing the string 'Strongly Agree' with the number 5).
-    - Other substitutions as needed.
-    - Deal with outliers.
-4. Wrangle Data
-    - Restructure data format (columns and rows).
-    - Merge other data sources into your dataset.
-5. Exploratory Data Analysis (not required for this Task).
-6. Data Analysis (not required for this Task).
-7. Export reports/data analyses and visualizations (not required for this Task).
+2. Each person in a group (in their analysis folder) should have a notebook demonstrating the use of at least three of those elements so we know you know how to use markdown in your projects.
 
-For this Task, I will only ask you to set up a partial pipeline for the data loading, cleaning, processing, and wrangling steps.
+I am expecting everyone to get 100% on this task!
 
-## Task 2. Method Chaining and writing Python programs (10%)
+### Additional Information
+
+[Here is a nice guide](https://guides.github.com/features/mastering-markdown/) from GitHub about using Markdown in git repositories.
+
+## Task 2: Introduction to Git merges, branches, and more (0%)
+
+After many years of searching, I have found the [**PERFECT** tutorial](http://learngitbranching.js.org) to help you get more familiar with git commands, particularly branching, and merging - things you will start encountering when you start collaboratively working on the projects.
+Rather than make this a milestone task though, I will be including it as Lab 5.
+It's included here so you know that you should do this part of the lab before proceeding to Task 3 onwards.
+You are responsible for completing the following modules (at minimium):
+
+- "Main: Introduction Sequence" <- This should mostly be review
+  - Exercise 1
+  - Exercise 2
+  - Exercise 3
+  - Exercise 4
+
+- "Remote: Push & Pull -- Git Remotes"
+  - Exercise 1
+  - Exercise 2
+  - Exercise 3
+  - Exercise 4
+  - Exercise 5
+  - Exercise 6
+  - Exercise 7
+  - Exercise 8
+
+<img src="project-images/git_tutorial1.png" width="300px">
+<img src="project-images/git_tutorial2.png" width="300px">
+
+I am super excited about it (it's almost as exciting as `bashcrawl` from Lab 2).
+
+## Task 3. Method Chaining and Python Programs (25%)
 
 By now you probably have done several steps to load, clean, process, wrangle your data, and then save it to disk, in a notebook. 
 You will now use "method chaining" to re-do those steps in fewer lines, and more compact code in new (cells) within your Jupyter Notebook.
@@ -73,7 +93,7 @@ I would target about 5 methods in a chain, though this is a flexible suggestion 
 
 This [article](https://pandasninja.com/2019/04/how-to-write-neat-pandas-code/) has a nice tutorial on method chaining.
 
-Here is an example of method chaining (description below the code) adapted from [here](https://towardsdatascience.com/the-unreasonable-effectiveness-of-method-chaining-in-pandas-15c2109e3c69):
+Adapted from [another article](https://towardsdatascience.com/the-unreasonable-effectiveness-of-method-chaining-in-pandas-15c2109e3c69), here is an example of method chaining (description below the code):
 
 ```
 import pandas as pd
@@ -102,6 +122,7 @@ df
 > It then filters a wine that has an alcohol content of more than 14. 
 > In the end, it sorts the data frame based on alcohol content and displays the columns that we are interested in. 
 > If the same were to be repeated without Method Chaining, a new data frame must be created and stored at each step.
+
 
 ### Step 2: Wrap your method chain(s) in a function
 
@@ -159,7 +180,7 @@ This will reduce the need for you and others to repeat yourself, and allow you t
 
 - [This article](https://realpython.com/absolute-vs-relative-python-imports/#relative-imports) is a very comprehensive guide to importing files and functions in python. Much of this is beyond the scope of DATA 301, but for those interested and curious, that is a very useful resource.
 
-## Task 3: Conduct an Exploratory Data Analysis (EDA) on your dataset (30%)
+## Task 4: Conduct an Exploratory Data Analysis (EDA) on your dataset (30%)
 
 If you are working in groups, each person should do their EDA separately and independently. 
 You have chosen rich datasets and there should be plenty of different features for each of you to explore.
@@ -182,7 +203,7 @@ Here are three examples or guides:
   - [Guide 3](https://aiden-dataminer.medium.com/the-data-science-method-dsm-exploratory-data-analysis-bc84d4d8d3f9)
   - Lab 4 had some elements of a rudimentary EDA (but we expect much more from you now!)
 
-## Task 4. Conduct your analysis to help answer your research question(s) (30%)
+## Task 5. Conduct your analysis to help answer your research question(s) (40%)
 
 Armed with your EDA, you should now be ready to conduct a thorough analysis to answer your research question(s).
 This section can be completed together as a group (and only one file should be submitted) but you may (and are encouraged) to try this yourself first, and then combine them together in one submission.

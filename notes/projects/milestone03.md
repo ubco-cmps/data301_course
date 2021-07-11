@@ -2,18 +2,23 @@
 
 In this milestone you will continue working on your class project, process the data for your dashboard, and get the repo ready final submission in Milestone 4.
 
+There is no GH Classroom link to accept for this milestone or milestone 4.
+
+## Due Date 
+
+The due date for this milestone is **Friday November 27, 2020**.
+I suggest you try to meet at least once during the next week to discuss this milestone.
+
 ## Overall Expectations
 
-- Every time you resume working on a project, you should run `git pull` to pull down any changes that may have occurred since the last time you worked on the project.
-- You should be committing to git every time you work on this project, and 
+- You should be committing to git every time you work on this project.
 - On average, all team members should be contributing to the project equally!
-- Each team member is responsible for their own research question(s), but the data processing, wrangling, and cleaning steps can be shared.
-- Commit messages should be meaningful. We will look at them. It's OK if one or two are less meaningful, but most should provide a short phrase to remind yourself (and others looking at your repository) what the changes were.
+- git commit messages should be meaningful. These will be marked. It's OK if one or two are less meaningful, but most should be.
 - Use GitHub issues to communicate and document major decisions 
-- Your question, analysis and visualizations should make sense, be well-formed, and it does not have to be complicated.
+- Your question, analysis and visualizations should make sense. It doesn't have to be complicated.
 - You should use proper grammar and full sentences in your READMEs. Point form may occur, but should be less than 30% of your written documents.
-- You must use proper English, spelling, and grammar and you should write concisely.
-- There should be a plan in place to to deal with any teamwork conflicts and issues.
+- You must use proper English, spelling, and grammar.
+- You should write concisely. 
 
 ## Task 1: Address project feedback (60%)
 
@@ -89,14 +94,13 @@ Typically, this is done by creating **version** and you're likely most familiar 
 For instance, if you have an iPhone the latest version of your OS is 14.2.1 - what do the 14, 2 and 1 mean?
 There are conventions, and the one that I suggest you follow is: [Semantic Versioning](https://semver.org).
 
-From [semver.org](https://semver.org), here is the summary:
+From semver.org, here is the summary:
 
 Given a version number MAJOR.MINOR.PATCH, increment the:
 
 1. MAJOR version when you make incompatible API changes,
 1. MINOR version when you add functionality in a backwards compatible manner, and
 1. PATCH version when you make backwards compatible bug fixes.
-
 ## OPTIONAL Task 5: Give others feedback (0%)!
 
 Many of your classmates are doing some very interesting projects with some cool datasets.
@@ -109,7 +113,6 @@ I'll try and facilitate this during our lecture this week, and also online on Pi
 As we progress through the course, you will be learning more and more about GitHub and how to work collaboratively on code.
 Since this is the first time many of you are using Git, I recommend that if you are working in a group, you avoid editing each others' files until you are more familiar with git.
 Below are a few things you may find useful as you continue your git journey.
-
 ### Git Branches
 
 Git branches were introduced in Milestone 2.

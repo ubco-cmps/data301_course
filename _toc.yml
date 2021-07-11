@@ -1,10 +1,10 @@
 format: jb-book
-root: about/syllabus
+root: about/unsyllabus
 title: Course Unsyllabus
 parts:
 - caption: About this course
   chapters:
-  - file: about/unsyllabus
+  - file: about/syllabus
   - file: about/course_schedule
 #   - file: getting-started/todo_list
 #     title: Start Here!
