@@ -29,4 +29,4 @@ You are welcome to attend additional labs or Student Hours in the course if you 
 
 <label><input type="checkbox" id="week06_task5" class="box"> Complete **[Test 3](./test3.md)** and [Bonus Test 3](./test3_bonus.md)on course policies and the syllabus</input></label>
 
-<label><input type="checkbox" id="week06_task6" class="box"> Complete the weekly **[Learning Log](./log.md)**</input></label>
+<label><input type="checkbox" id="week06_task6" class="box"> No Learning Log due this week, the final exam will have some course reflection questions.</input></label>

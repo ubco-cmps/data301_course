@@ -120,7 +120,7 @@ parts:
       #   title: Command Line and JupyterLab
       # - file: notes/week05/Class5C/Class5C
       #   title: Git and Data Representation
-    - file: notes/week05/lab3/README
+    - file: notes/week05/lab5/README
       title: Lab 5
       sections:
       - file: notes/week05/lab5/lab5/lab5A
