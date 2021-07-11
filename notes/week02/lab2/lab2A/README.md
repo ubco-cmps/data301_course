@@ -1,4 +1,4 @@
-# DATA 301 Lab 2A
+# Lab 2A: Practicing Git
 
 ## Task 1: GitHub Tutorial
 
