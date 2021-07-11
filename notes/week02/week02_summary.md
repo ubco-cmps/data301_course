@@ -6,19 +6,13 @@ Hello!
 
 We're into the thick of things now!
 
-Welcome to Week 2 - this week will be practicing with Git, and getting started with Python.
+Welcome to Week 2 - this week, we will be practicing with Git, and getting started with Python.
 
-More details coming soon...
+<label><input type="checkbox" id="week02_task1" class="box"> Review feedback you received, reflect on it, and make corrections to your repo if needed. </input></label>
 
-<!--
+<label><input type="checkbox" id="week02_task2" class="box"> Attend the [Classes](classes.md) this week </input></label>
 
-<label><input type="checkbox" id="week02_task1" class="box"> Read the course [syllabus](../../../../about/syllabus.md) and the [unsyllabus](../../../../about/unsyllabus.md) </input></label>
-
-<label><input type="checkbox" id="week02_task2" class="box"> Attend the lectures this week </input></label>
-
-This week we will be doing course introductions, I will also be showing you how to navigate the course website, and how the course is set up, how to use GitHub, and the Terminal.
-
-<label><input type="checkbox" id="week02_task3" class="box"> Attend the first **[lab](./lab1/README.md)** this week</input></label>
+<label><input type="checkbox" id="week02_task3" class="box"> Attend the **[lab](./lab1/README.md)** this week</input></label>
 
 ```{tip}
 The labs will be organized as semi-structured help sessions.
@@ -29,8 +23,6 @@ You are welcome to attend additional labs or Student Hours in the course if you 
 ```
 <label><input type="checkbox" id="week02_task4" class="box"> Watch the **[assigned videos](./videos.md)**</input></label>
 
-<label><input type="checkbox" id="week02_task5" class="box"> Complete **[Test 0](./test0.md)** on course policies and the syllabus</input></label>
+<label><input type="checkbox" id="week02_task5" class="box"> Complete **[Test 0](./test1.md)** on course policies and the syllabus</input></label>
 
 <label><input type="checkbox" id="week02_task6" class="box"> Complete the weekly **[Learning Log](./log.md)**</input></label>
-
--->

@@ -10,15 +10,13 @@ Welcome to Week 6 - this week will be practicing with Git, and getting started w
 
 More details coming soon...
 
-<!--
+<label><input type="checkbox" id="week06_task1" class="box"> Review feedback you received, reflect on it, and make corrections to your repo if needed. </input></label>
 
-<label><input type="checkbox" id="week06_task1" class="box"> Read the course [syllabus](../../../../about/syllabus.md) and the [unsyllabus](../../../../about/unsyllabus.md) </input></label>
-
-<label><input type="checkbox" id="week06_task2" class="box"> Attend the lectures this week </input></label>
+<label><input type="checkbox" id="week06_task2" class="box"> Attend the [Classes](classes.md) this week </input></label>
 
 This week we will be doing course introductions, I will also be showing you how to navigate the course website, and how the course is set up, how to use GitHub, and the Terminal.
 
-<label><input type="checkbox" id="week06_task3" class="box"> Attend the first **[lab](./lab1/README.md)** this week</input></label>
+<label><input type="checkbox" id="week06_task3" class="box"> Attend the first **[lab](./lab6/README.md)** this week</input></label>
 
 ```{tip}
 The labs will be organized as semi-structured help sessions.
@@ -29,8 +27,6 @@ You are welcome to attend additional labs or Student Hours in the course if you 
 ```
 <label><input type="checkbox" id="week06_task4" class="box"> Watch the **[assigned videos](./videos.md)**</input></label>
 
-<label><input type="checkbox" id="week06_task5" class="box"> Complete **[Test 0](./test0.md)** on course policies and the syllabus</input></label>
+<label><input type="checkbox" id="week06_task5" class="box"> Complete **[Test 3](./test3.md)** and [Bonus Test 3](./test3_bonus.md)on course policies and the syllabus</input></label>
 
 <label><input type="checkbox" id="week06_task6" class="box"> Complete the weekly **[Learning Log](./log.md)**</input></label>
-
--->

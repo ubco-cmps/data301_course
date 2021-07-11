@@ -27,7 +27,7 @@ parts:
     sections:
     - file: notes/week01/videos
       title: Videos
-    - file: notes/week01/Classes1
+    - file: notes/week01/Classes
       sections:
       - file: notes/week01/Class1A/Class1A
         title: Course Introduction
@@ -48,7 +48,7 @@ parts:
     sections:
     - file: notes/week02/videos
       title: Videos
-    - file: notes/week02/Classes2
+    - file: notes/week02/Classes
       # sections:
       # - file: notes/week02/Class2A/Class2A
       #   title: Course Introduction
@@ -70,7 +70,7 @@ parts:
     sections:
     - file: notes/week03/videos
       title: Videos
-    - file: notes/week03/Classes3
+    - file: notes/week03/Classes
       # sections:
       # - file: notes/week03/Class3A/Class3A
       #   title: Course Introduction
@@ -91,7 +91,7 @@ parts:
     sections:
     - file: notes/week04/videos
       title: Videos
-    - file: notes/week04/Classes4
+    - file: notes/week04/Classes
       # sections:
       # - file: notes/week04/Class4A/Class4A
       #   title: Course Introduction
@@ -112,7 +112,7 @@ parts:
     sections:
     - file: notes/week05/videos
       title: Videos
-    - file: notes/week05/Classes5
+    - file: notes/week05/Classes
       # sections:
       # - file: notes/week05/Class5A/Class5A
       #   title: Course Introduction
@@ -133,7 +133,7 @@ parts:
     sections:
     - file: notes/week06/videos
       title: Videos
-    - file: notes/week06/Classes6
+    - file: notes/week06/Classes
       # sections:
       # - file: notes/week06/Class6A/Class6A
       #   title: Course Introduction
