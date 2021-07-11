@@ -1,4 +1,4 @@
-# Class 3
+# Classes
 
 ## Class 3A (Tuesday)
 

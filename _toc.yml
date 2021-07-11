@@ -125,7 +125,7 @@ parts:
       sections:
       - file: notes/week05/lab5/lab5/lab5A
       - file: notes/week05/lab5/lab5B/lab5B
-    - file: notes/week05/test2
+    - file: notes/week05/test2_bonus
     - file: notes/week05/log
 
   - file: notes/week06/week06_summary
@@ -147,6 +147,7 @@ parts:
       - file: notes/week06/lab6/lab6/lab6
       - file: notes/week06/lab6/lab6B/lab6B
     - file: notes/week06/test3
+    - file: notes/week06/test3_bonus
     - file: notes/week06/log
 
 - caption: Labs

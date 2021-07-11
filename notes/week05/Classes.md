@@ -1,4 +1,4 @@
-# Class 5
+# Classes
 
 ## Class 5A (Tuesday)
 

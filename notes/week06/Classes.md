@@ -1,4 +1,4 @@
-# Class 6
+# Classes
 
 ## Class 6A (Tuesday)
 

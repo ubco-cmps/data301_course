@@ -1,4 +1,4 @@
-# Class 4
+# Classes
 
 ## Class 4A (Tuesday)
 
