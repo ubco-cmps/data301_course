@@ -64,7 +64,6 @@ parts:
     - file: notes/week02/test1
     - file: notes/week02/log
 
-
   - file: notes/week03/week03_summary
     title: Week 3
     sections:
@@ -150,10 +149,19 @@ parts:
     - file: notes/week06/test3_bonus
     - file: notes/week06/log
 
+- caption: Project
+  chapters:
+  - file: project/introduction
+
 - caption: Labs
   chapters:
   - file: notes/labs
     title: Lab Links and Solutions
+    sections:
+    - file: project/milestone01
+    - file: project/milestone02
+    - file: project/milestone03
+    - file: project/milestone04
 
 - caption: Course Feedback
   chapters:

@@ -38,12 +38,42 @@ Please do not join a group without talking to the other member(s) first and disc
 
 There is a little bit of additional work needed to form a team, so we can make sure that all team members are on the same page, and teamwork can happen harmoniously.
 
+To create a group of two or three, here's what you need to do:
 
+1. Use the [Ed Discussion megathread]() to post an "ad" looking for a team to join, or partners for your team.
+2. Get in touch with your potential team members (you can message anyone in the class via the Canvas Inbox). 
+3. Share contact details with each other, and arrange for an initial meeting (Zoom, phone, instagram live, whatever y'all use these days). 
+    - I will give you some class time to make the initial contact and exchange information.
+4. In your initial meeting discuss the following items:
+    - What are your interests and goals with this project (datasets, research questions, what you want to learn)?
+    - How much time will you be able to dedicate to this project?
+    - What timezone(s) are you going to be in?
+    - How frequently will you meet or discuss the project?
+    - What are each of your strengths and weaknesses?
+    - What will you do if there is a conflict or if issues arises within the team?
+    - Do you all agree to stay in touch, and keep everyone informed despite how busy you are? I suggest setting a response time, say a response time of ~ 12-24 hours.
+    - Do you think you will be able to work together for this project?
+5. Once your initial meeting is done and you have answered those questions together, one person in the team should create a Private Ed Discussion post, copy/paste this message, and fill in these details:
 
-## Task: Fill in the Survey
+> Hi Dr. Moosvi,
+> 
+> Here is the information you requested on our team:
+> 
+> Team Members  and timezone: 
+> - Student 1 (me) is in Kelowna, and is in the same timezone as Kelowna.
+> - Student 2 is in Toronto, and is three hours ahead of Kelowna.
+> - Student 3 is Edmonton, and is 1 hour ahead of Kelowna.
+>
+> I can confirm that we have had our first meeting and we discussed all of the questions above:
+> 
+> Were all members of the group present at the meeting? Your Answer Here
+> 
+> What is the dataset or area/sector that you are interested in doing a project together? Your Answer Here
+> 
+> What will you do if there is a conflict or if issues arise within the team?: Your Answer Here
+> 
+> Do you think you will be able to work together for this project? Your Answer Here
+> 
+> We will await your response to confirm that we can form a group together. 
 
-
-As much as possible, I would like to create teams that can work well together. To do so, I will ask you a few questions so that I can do better than just a random assignment to a team.
-
-Please [fill in the following survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_efYTZXeg9ajTYDr) by **Friday January 22, 2021** (end of day). The survey is very short and should take only a couple of minutes (maximum 5 minutes). If you do not complete the survey, I will be assign you randomly to a group.
-
+6. Once you receive the "go-ahead" from me, then you can join the group on Canvas, and accept the GitHub Template project link.

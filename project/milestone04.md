@@ -15,12 +15,17 @@ In this milestone you will be finalizing your submission and presenting all your
 - You must use proper English, spelling, and grammar and you should write concisely.
 - There should be a plan in place to to deal with any teamwork conflicts and issues.
 
-## Task 1: Create a Dashboard
+## Task 1: Create a Dashboard using Tableau (70%)
 
+Create a dashboard (using your `processed` dataset - i.e. you do not have to do the data cleaning, wrangling, processing again) to create a Dashboard using Tableau.
+There are no requirements for this Dashboard, but please remember that you will be graded based on the quality of your dashboard, and how well it answers your research questions and/or helps with the exploratory data analysis.
+I suggest you take this opportunity to explore as many of the features that make sense for your project, and get help from us when you need it!
 
 ## Task 2: Present your dashboard (30%)
 
-Project presentations will be 5 minutes each in the form of either a video screencast, or a live presentation during lecture (whether your project is done solo, or in a group).
+Details of the presentation will be coming soon...
+
+<!-- Project presentations will be 5 minutes each in the form of either a video screencast, or a live presentation during lecture (whether your project is done solo, or in a group).
 
 Other requirements:
 
@@ -66,11 +71,11 @@ You can install them by following the [instructions here](https://it.ubc.ca/serv
 
 ### Examples of dashboard screencasts
 
-Coming soon...
+Coming soon... -->
 
 ### Submitting Milestone 4
 
-You will submit Milestone 4 on Canvas.
+You will submit Milestone 4 on Gradescope.
 
 ## Working collaboratively in GitHub
 
