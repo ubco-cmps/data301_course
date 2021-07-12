@@ -24,7 +24,7 @@ The most important task for this milestone is to select an appropriate dataset a
 
 - The first step is to create/join a GitHub repository. 
     - Discuss with your partner(s) to determine which of you will accept the initial repository link (only one person in a group should accept the link).
-    - If you are the first person in the group, click this link to accept the [Template Project GitHub Classroom]().
+    - If you are the first person in the group, click this link to accept the [Template Project GitHub Classroom](https://classroom.github.com/g/kAD2P_UM).
     - Make sure you set the name of your repository to be exactly this: `groupXX-project` and then let your team member(s) know the name of your group.
     - Other team member(s) should search for their group name and join it.
 
