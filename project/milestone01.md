@@ -114,7 +114,7 @@ There are literally hundreds of thousands of datasets available, I will point yo
 - ~[Any YouTube Data](https://www.kaggle.com/rsrishav/youtube-trending-video-dataset)~
 - ~[Spotify Dataset](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks)~
 
-## Task 3. Introduce and describe your dataset and topic. (20%)**
+## Task 3. Introduce and describe your dataset and topic. (20%)
 
 Once you choose your dataset, you will need to describe your dataset, as well as the topic(s) or research questions you are interested in.
 
