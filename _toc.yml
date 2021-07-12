@@ -149,6 +149,11 @@ parts:
     - file: notes/week06/test3_bonus
     - file: notes/week06/log
 
+- caption: Labs
+  chapters:
+  - file: notes/labs
+    title: Lab Links and Solutions
+
 - caption: Project
   chapters:
   - file: project/introduction
@@ -157,11 +162,6 @@ parts:
     - file: project/milestone02
     - file: project/milestone03
     - file: project/milestone04
-
-- caption: Labs
-  chapters:
-  - file: notes/labs
-    title: Lab Links and Solutions
 
 - caption: Course Feedback
   chapters:

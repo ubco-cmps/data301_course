@@ -154,14 +154,12 @@ Some questions you may wish to consider:
 
 For each Milestone there will be two submissions on Gradescope:
 
-1) Each team member will also submit a teamwork reflection on Gradescope.
-
-The purpose of this individual report is to give you an avenue to present your viewpoint as to how the project went, how the group worked together, and your role in the group.
-Each group member must complete this form to report on the contributions of **yourself** and the other group members.
-That information can, if needed, be used to adjust final grades of individuals. 
-This is a report private between you and the instructors, meaning that none of your classmates will see this report.
-
-2) One person from the group will submit a URL to the team GitHub repository.
+1. Each team member will also submit a teamwork reflection on Gradescope.
+> The purpose of this individual report is to give you an avenue to present your viewpoint as to how the project went, how the group worked together, and your role in the group.
+> Each group member must complete this form to report on the contributions of **yourself** and the other group members.
+> That information can, if needed, be used to adjust final grades of individuals. 
+> This is a report private between you and the instructors, meaning that none of your classmates will see this report.
+2. One person from the group will submit a URL to the team GitHub repository.
 
 ## Working collaboratively in GitHub
 
