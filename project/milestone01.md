@@ -53,9 +53,6 @@ The most important task for this milestone is to select an appropriate dataset a
 ```
   <!-- - `LICENSE`: As you create a new repository, [you will be asked to choose a license](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository#applying-a-license-to-a-repository-with-an-existing-license). I suggest choosing the **MIT** license unless you have a strong preference otherwise -->
 
-
-<img src="https://docs.github.com/assets/images/help/repository/repository-license-picker.png" width="600px">
-
 ## Task 2. Choosing a topic and a dataset and get it approved (30%)
 
 1. **YOU MUST HAVE YOUR DATA SET APPROVED BY A TA or the instructor.**
