@@ -2,6 +2,10 @@
 Labs
 =======================
 
+<head>
+	<base target="_blank">
+</head>
+
 We are using GitHub Classroom to provision the labs. 
 You will first need to accept the lab so the "starter code" is copied to your repository.
 Click links below to accept the labs, I expect they will be released by Monday morning of each week.
