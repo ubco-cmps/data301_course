@@ -1,4 +1,4 @@
-# Milestone 1
+# Milestone 1 - Find Dataset
 
 In this milestone you will be expected to choose a dataset appropriate for the DATA 301 project.
 The most important task for this milestone is to select an appropriate dataset and load your data.
@@ -24,17 +24,18 @@ The most important task for this milestone is to select an appropriate dataset a
     - Make sure you set the name of your repository to be exactly this: `groupXX-project` and then let your team member(s) know the name of your group.
     - Other team member(s) should search for their group name and join it.
 
-- Here is description of the file and folder structure of this project: 
+- Once you accept the project template, I have created all the directories below, but you should know what they are. Here is description of the file and folder structure of this project: 
   - `data` - your data files should be split up into "raw" and "processed":
     - `data/raw` - raw data should go in this directory; you should add the original source file here. Always keep the original data file without editing.
     - `data/processed` - You can add cleaned up, and processed data files in this directory.
   - `images` - any external images you use should be in this directory so things are organized.
   - `analysis` - all Jupyter Notebook files should be kept in this parent directory.
-    - `analysis/firstname1/` : Teammate 1 should have their draft or work in progress Jupyter Notebooks stored here. This will not be marked, but will be checked to ensure all teammates are contributing to the project.
-    - `analysis/firstname2/` : Teammate 2 should have their draft or work in progress Jupyter Notebooks stored here. This will not be marked, but will be checked to ensure all teammates are contributing to the project.
-    - `analysis/firstname3/` : Teammate 3 should have their draft or work in progress Jupyter Notebooks stored here. This will not be marked, but will be checked to ensure all teammates are contributing to the project.
+    - `analysis/firstname1/` : Teammate 1 should have their draft or work in progress Jupyter Notebooks stored here. This will not be marked, but will be checked to ensure all teammates are contributing to the project. Remember to rename this to your names or an alias.
+    - `analysis/firstname2/` : Teammate 2 should have their draft or work in progress Jupyter Notebooks stored here. This will not be marked, but will be checked to ensure all teammates are contributing to the project. Remember to rename this to your names or an alias.
+    - `analysis/firstname3/` : Teammate 3 should have their draft or work in progress Jupyter Notebooks stored here. This will not be marked, but will be checked to ensure all teammates are contributing to the project. Remember to rename this to your names or an alias.
     - `analysis/submitted/`
-    - Note: Students working individually do not need to have subdirectories within the analysis directory.
+    - Note: Students working individually do not need to have subdirectories within the analysis directory and you can safely delete the other directories.
+    - You may add additional subdirectories within the current structure, but try to avoid creating any directories in the project root. If you have questions about this, you 
 - In your GitHub repository, you should have the following files:
   - README files describing what is happening (or going to happen) in each directory:
     - `data/README.md` : One sentence explaining what will be in this directory
@@ -45,14 +46,20 @@ The most important task for this milestone is to select an appropriate dataset a
     - `README.md`: This file should contain all the important information someone needs to know about your project
   - `CODE_OF_CONDUCT.md`: This file allows you to set standards for how people should interact with your repository, and signals to others that this is a welcoming and inclusive project; it should also outline procedures for handling abuse.
     - [Follow the steps here to use a Code of Conduct template](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/adding-a-code-of-conduct-to-your-project)
-  - `LICENSE`: As you create a new repository, [you will be asked to choose a license](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository#applying-a-license-to-a-repository-with-an-existing-license). I suggest choosing the **MIT** license unless you have a strong preference otherwise
-  - **Note: GitHub currently does not allow you to upload empty directories, so each directory has a README file that you should populate with relevant information**
+    - `LICENSE`: Your repository currently has a default license called the [MIT license](https://choosealicense.com/licenses/mit/). I suggest choosing the **MIT** license unless you have a strong preference otherwise.
+
+```{warning}
+ **Note: GitHub currently does not allow you to upload empty directories, so each directory has a README file that you should populate with relevant information**
+```
+  <!-- - `LICENSE`: As you create a new repository, [you will be asked to choose a license](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository#applying-a-license-to-a-repository-with-an-existing-license). I suggest choosing the **MIT** license unless you have a strong preference otherwise -->
+
 
 <img src="https://docs.github.com/assets/images/help/repository/repository-license-picker.png" width="600px">
 
 ## Task 2. Choosing a topic and a dataset and get it approved (30%)
 
-1. ** YOU MUST HAVE YOUR DATA SET APPROVED BY A TA or the instructor. **
+1. **YOU MUST HAVE YOUR DATA SET APPROVED BY A TA or the instructor.**
+    - To get a dataset approved, create a private Ed Discussion Post, select the "Project" category, and then "Dataset Approval" and fill out the template. Feel free to add image attachments and links as needed. The requirements to choose a dataset are below.
 
 2. **Note: Though it may sound easy, it is not trivial to choose an interesting and relevant dataset. There are many, many thousands out there and the [tyranny of choice](https://www.economist.com/christmas-specials/2010/12/16/you-choose) is pretty overwhelming. I suggest you choose an "industry/sector" (health, technology, finance, sports, etc...), then set a 60 minute timer, start searching, and then choose one before the timer expires. You are welcome to post an issue on Ed Discussion if you want advice or approval of a dataset.**
 

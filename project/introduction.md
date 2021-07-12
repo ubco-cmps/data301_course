@@ -54,7 +54,6 @@ To create a group of two or three, here's what you need to do:
     - Do you all agree to stay in touch, and keep everyone informed despite how busy you are? I suggest setting a response time, say a response time of ~ 12-24 hours.
     - Do you think you will be able to work together for this project?
 5. Once your initial meeting is done and you have answered those questions together, one person in the team should create a Private Ed Discussion post, copy/paste this message, and fill in these details:
-
 > Hi Dr. Moosvi,
 > 
 > Here is the information you requested on our team:
@@ -74,6 +73,8 @@ To create a group of two or three, here's what you need to do:
 > 
 > Do you think you will be able to work together for this project? Your Answer Here
 > 
-> We will await your response to confirm that we can form a group together. 
+> We will await your response to confirm that we can form a group together.
 
-6. Once you receive the "go-ahead" from me, then you can join the group on Canvas, and accept the GitHub Template project link.
+```{tip}
+Once you receive the "go-ahead" from me (hopefully within 24-36 hours), then you can join the group on Canvas, and accept the GitHub Template project link.
+```

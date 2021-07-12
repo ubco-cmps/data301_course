@@ -152,16 +152,16 @@ parts:
 - caption: Project
   chapters:
   - file: project/introduction
-
-- caption: Labs
-  chapters:
-  - file: notes/labs
-    title: Lab Links and Solutions
     sections:
     - file: project/milestone01
     - file: project/milestone02
     - file: project/milestone03
     - file: project/milestone04
+
+- caption: Labs
+  chapters:
+  - file: notes/labs
+    title: Lab Links and Solutions
 
 - caption: Course Feedback
   chapters:
