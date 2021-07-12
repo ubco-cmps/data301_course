@@ -26,9 +26,9 @@ Click links below to accept the labs, I expect they will be released by Monday m
 |-------------------|-------------------------------|--------------------------------|
 | Template Project  | N/A                           | [Accept Project](https://classroom.github.com/g/kAD2P_UM)             |
 | Milestone 1       | Thursday, July 15th at 18:00  | None (continue using template) |
-| Milestone 2       | Thursday, July 22nd at 18:00  | None (continue using template) |
-| Milestone 3       | Thursday, July 29th at 18:00  | None (continue using template) |
-| Milestone 4       | Thursday, August 5th at 18:00 | None (continue using template) |
+| Milestone 2       | Thursday, July 29th at 18:00  | None (continue using template) |
+| Milestone 3       | Thursday, August 5th at 18:00  | None (continue using template) |
+| Milestone 4       | Thursday, August 12th at 18:00 | None (continue using template) |
 
 Once you click the link, a repository will automatically be created for you with some starter code.
 You can now work on the repo, make commits, and push them to GitHub as you please. 
