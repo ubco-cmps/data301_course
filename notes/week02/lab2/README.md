@@ -57,13 +57,13 @@ For Lab2B, you should explain all the questions.
 
 ### Lab 2-specific suggestions for Explainer Video:
 
-- You can choose to divide up the 5-7 mins as you like, but I prefer if you spend a little bit more time explaining Lab 3B than Lab3A. There are several questions where there is some option for freedom, creativity, and exploration so you can showcase your choices.
+- You can choose to divide up the 5-7 mins as you like, but just remember that for Lab2A, you only need to explain **ONE** module, the "Merging in Git" one.
 
-- Please do not explain the quadratic equation, how the `tree` command works, etc... Focus your explanations on your solutions and assume we know what the questions are asking.
+- You should explain all of Lab2B.
 
 - Have fun!
 
-Note that you only need to create ONE video per lab (so Lab 2A and 2B should be shown in ONE video).
+- Note that you only need to create ONE video per lab (so Lab 2A and 2B should be shown in ONE video).
 
 ### Link to your Explainer video:
 
