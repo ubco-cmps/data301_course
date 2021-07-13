@@ -49,9 +49,9 @@ parts:
     - file: notes/week02/videos
       title: Videos
     - file: notes/week02/Classes
-      # sections:
-      # - file: notes/week02/Class2A/Class2A
-      #   title: Course Introduction
+      sections:
+      - file: notes/week02/Class2A/Class2A
+        title: Introduction to Python
       # - file: notes/week02/Class2B/Class2B
       #   title: Command Line and JupyterLab
       # - file: notes/week02/Class2C/Class2C
