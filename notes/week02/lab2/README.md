@@ -27,7 +27,7 @@ I have recorded a video to get you started with this lab: [Click here to view th
 
 ## Lab 2 Explainer Video
 
-Similar to last week, for each of the labs you submit, you will need to an "Explainer Video" showing highlights of your assignments.
+For each of the labs you submit from now on, you will need to an "Explainer Video" showing highlights of your assignments.
 
 Note that you only need to create ONE video per lab (so Lab 2A and 2B should be shown in ONE video).
 For Lab2A, you should only explain *one* activity: "Main" --> "Merging in Git".
