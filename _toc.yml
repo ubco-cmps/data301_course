@@ -52,8 +52,8 @@ parts:
       sections:
       - file: notes/week02/Class2A/Class2A
         title: Introduction to Python
-      # - file: notes/week02/Class2B/Class2B
-      #   title: Command Line and JupyterLab
+      - file: notes/week02/Class2B/Class2B
+        title: Project and Git/GitHub
       # - file: notes/week02/Class2C/Class2C
       #   title: Git and Data Representation
     - file: notes/week02/lab2/README
