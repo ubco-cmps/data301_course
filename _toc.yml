@@ -51,11 +51,11 @@ parts:
     - file: notes/week02/Classes
       sections:
       - file: notes/week02/Class2A/Class2A
-        title: Introduction to Python
+        title: Introduction to Python I
       - file: notes/week02/Class2B/Class2B
         title: Project and Git/GitHub
-      # - file: notes/week02/Class2C/Class2C
-      #   title: Git and Data Representation
+      - file: notes/week02/Class2C/Class2C
+        title: Introduction to Python II
     - file: notes/week02/lab2/README
       title: Lab 2
       sections:
