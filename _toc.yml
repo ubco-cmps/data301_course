@@ -70,13 +70,10 @@ parts:
     - file: notes/week03/videos
       title: Videos
     - file: notes/week03/Classes
-      # sections:
-      # - file: notes/week03/Class3A/Class3A
-      #   title: Course Introduction
-      # - file: notes/week03/Class3B/Class3B
-      #   title: Command Line and JupyterLab
-      # - file: notes/week03/Class3C/Class3C
-      #   title: Git and Data Representation
+      sections:
+      - file: notes/week03/Class3A/Class3A
+      - file: notes/week03/Class3B/Class3B
+      - file: notes/week03/Class3C/Class3C
     - file: notes/week03/lab3/README
       title: Lab 3
       sections:
