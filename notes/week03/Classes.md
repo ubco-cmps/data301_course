@@ -2,16 +2,19 @@
 
 ## Class 3A (Tuesday)
 
-- Python Functions
-- Imports in Python
+- How to do Data Analysis
+- Installing and Using Pandas
+- Data Manipulation with Pandas
+- Introducing DataFrames
+- Creating a DataFrame
+- Operating on Data in Pandas
 
 ## Class 3B (Wednesday)
 
-- Introduction to Pandas
-- Tidy Data
+- Visualizing Data using `seaborn` and `pandas`
+- Handling Missing Data
+- Combining Datasets: Concat and Append
 
 ## Class 3C (Friday)
 
-- Practice with Pandas
-- Data Cleaning
-- Data Wrangling
+- Merge and Join Data in Pandas
