@@ -25,7 +25,7 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 ````
 ## Required Videos
 
-There are no required videos this week
+There are no required videos this week.
 
 ## Optional Videos
 

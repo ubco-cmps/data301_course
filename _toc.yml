@@ -88,13 +88,10 @@ parts:
     - file: notes/week04/videos
       title: Videos
     - file: notes/week04/Classes
-      # sections:
-      # - file: notes/week04/Class4A/Class4A
-      #   title: Course Introduction
-      # - file: notes/week04/Class4B/Class4B
-      #   title: Command Line and JupyterLab
-      # - file: notes/week04/Class4C/Class4C
-      #   title: Git and Data Representation
+      sections:
+      - file: notes/week04/Class4A/Class4A
+      - file: notes/week04/Class4B/Class4B
+      - file: notes/week04/Class4C/Class4C
     - file: notes/week04/lab3/README
       title: Lab 4
       sections:
