@@ -67,6 +67,8 @@ parts:
   - file: notes/week03/week03_summary
     title: Week 3
     sections:
+    - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_0vnAttgPuXwT6cu
+      title: (Anonymous) Mid-Course Feedback
     - file: notes/week03/videos
       title: Videos
     - file: notes/week03/Classes
