@@ -94,10 +94,10 @@ parts:
       - file: notes/week04/Class4A/Class4A
       - file: notes/week04/Class4B/Class4B
       - file: notes/week04/Class4C/Class4C
-    - file: notes/week04/lab3/README
+    - file: notes/week04/lab4/README
       title: Lab 4
       sections:
-      - file: notes/week04/lab4/lab4/lab4A
+      - file: notes/week04/lab4/lab4A/lab4A
       - file: notes/week04/lab4/lab4B/lab4B
     - file: notes/week04/test2
     - file: notes/week04/log
@@ -118,7 +118,7 @@ parts:
     - file: notes/week05/lab5/README
       title: Lab 5
       sections:
-      - file: notes/week05/lab5/lab5/lab5A
+      - file: notes/week05/lab5/lab5A/lab5A
       - file: notes/week05/lab5/lab5B/lab5B
     - file: notes/week05/test2_bonus
     - file: notes/week05/log
@@ -139,7 +139,7 @@ parts:
     - file: notes/week06/lab6/README
       title: Lab 6
       sections:
-      - file: notes/week06/lab6/lab6/lab6
+      - file: notes/week06/lab6/lab6A/lab6A
       - file: notes/week06/lab6/lab6B/lab6B
     - file: notes/week06/test3
     - file: notes/week06/test3_bonus
