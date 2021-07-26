@@ -4,11 +4,9 @@ Week 6
 
 Hello!
 
-We're into the thick of things now!
+We're nearing the end now!
 
-Welcome to Week 6 - this week will be practicing with Git, and getting started with Python.
-
-More details coming soon...
+Welcome to Week 6 - this week will be wrapping things up with the course, learning about Tableau, and I'll be giving you some parting thoughts about Data Analytics.
 
 <label><input type="checkbox" id="week06_task1" class="box"> Review feedback you received, reflect on it, and make corrections to your repo if needed. </input></label>
 

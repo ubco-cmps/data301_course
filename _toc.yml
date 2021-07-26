@@ -108,18 +108,12 @@ parts:
     - file: notes/week05/videos
       title: Videos
     - file: notes/week05/Classes
-      # sections:
-      # - file: notes/week05/Class5A/Class5A
-      #   title: Course Introduction
-      # - file: notes/week05/Class5B/Class5B
-      #   title: Command Line and JupyterLab
-      # - file: notes/week05/Class5C/Class5C
-      #   title: Git and Data Representation
+      sections:
+      - file: notes/week05/Class5A/Class5A
+      - file: notes/week05/Class5B/Class5B
+      - file: notes/week05/Class5C/Class5C
     - file: notes/week05/lab5/README
       title: Lab 5
-      sections:
-      - file: notes/week05/lab5/lab5A/lab5A
-      - file: notes/week05/lab5/lab5B/lab5B
     - file: notes/week05/test2_bonus
     - file: notes/week05/log
 

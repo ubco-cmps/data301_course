@@ -4,11 +4,7 @@ Week 5
 
 Hello!
 
-We're into the thick of things now!
-
-Welcome to Week 5 - this week will be practicing with Git, and getting started with Python.
-
-More details coming soon...
+We're switching gears this week, and doing some data analysis with another very popular tool: Microsoft Excel.
 
 <label><input type="checkbox" id="week05_task1" class="box"> Review feedback you received, reflect on it, and make corrections to your repo if needed. </input></label>
 
