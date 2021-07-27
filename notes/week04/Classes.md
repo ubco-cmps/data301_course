@@ -6,6 +6,7 @@
 
 ## Class 4B (Wednesday)
 
+- Catch-up Class on Python and Pandas
 - Introduction to Data Visualizations with Seaborn
 - Using Seaborn to create Data Visualizations
 
