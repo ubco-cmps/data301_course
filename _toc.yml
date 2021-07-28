@@ -93,6 +93,7 @@ parts:
       sections:
       - file: notes/week04/Class4A/Class4A
       - file: notes/week04/Class4B/Class4B
+      - file: notes/week04/Class4B/Class4B-questions
       - file: notes/week04/Class4C/Class4C
     - file: notes/week04/lab4/README
       title: Lab 4
