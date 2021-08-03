@@ -31,4 +31,5 @@ Please watch this video BEFORE Class 4B on Wednesday! Class time will be used fo
 
 [More of Derek's videos](https://www.youtube.com/channel/UCwRXb5dUK4cvsHbx-rGzSgw)
 ```
+
 ## Optional Videos
