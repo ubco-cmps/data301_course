@@ -31,7 +31,7 @@ You may see some references to Sli.do in the slides below - you can safely ignor
 
 ### Slides
 
-<iframe src="../../data_301_excel_analysis.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
+<iframe src="../../data_301_excel_intro_lecture2.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
 
 ### Excel file using in lecture.
 
@@ -41,7 +41,7 @@ You can download the [Excel file used in lecture here](https://github.com/ubco-m
 
 - Advanced analysis with Microsoft Excel
 
-<iframe src="../../data_301_excel_intro_lecture2.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
+<iframe src="../../data_301_excel_analysis.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
 
 ## Class 5C (Friday)
 
