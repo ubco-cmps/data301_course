@@ -34,7 +34,7 @@ Hayley created the first draft of this workshop, and it was adapted in the summe
 
 - Download the latest version of Tableau Desktop (you do not need Tableau Prep Builder).
 - Click on the link above and select “Download Tableau Desktop”. On the form, enter your school email address for Business E-mail and enter the name of your school for Organization.
-- Activate with your product key: `TCHO-57EF-BE10-52AA-AE8F`
+- Activate with your product key: `TC5G-4C0E-1EB0-4E28-0DE0`
 - If you already have a copy of Tableau Desktop installed: update your license in the application: Help menu → Manage Product Keys
 
 ## Task 2: Load in the `street_trees` Data.
