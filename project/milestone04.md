@@ -21,28 +21,22 @@ Create a dashboard (using your `processed` dataset - i.e. you do not have to do 
 There are no requirements for this Dashboard, but please remember that you will be graded based on the quality of your dashboard, and how well it answers your research questions and/or helps with the exploratory data analysis.
 I suggest you take this opportunity to explore as many of the features that make sense for your project, and get help from us when you need it!
 
+**Each group should only make ONE Tableau Dashboard, but you can work on it separately and then combine it at the end for the final submission. I suggest using multiple "tabs" in Tableau to split up research questions or parts of the dashboard.**
+
 ## Task 2: Present your dashboard (30%)
 
-Details of the presentation will be coming soon...
+For this Task, you will record an Explainer video (similar to the lab explainer videos) showing your Tableau Dashboard.
 
-<!-- Project presentations will be 5 minutes each in the form of either a video screencast, or a live presentation during lecture (whether your project is done solo, or in a group).
+- Individual project presentations should be 3-4 minutes long.
+- Groups of 2 project presentations should be 5-7 minutes long.
+- Groups of 3 project presentations should be 7-10 minutes long.
+
+should  each in the form of an Explainer video (whether your project is done solo, or in a group).
 
 Other requirements:
 
-- All partners of a group must participate in the recording (you may combine three separate files into one submission).
-- Groups should choose one dashboard to present on together.
-- The presentation should be minimum a minimum four minutes and 30 seconds) and 6 minutes (absolute max - aim for 5 minutes).
-- Your recording does NOT have to have a high production value (editing, background sound, video titles etc..) so I would suggest not spending too much time on the non-dashboard component.
-
-In terms of format, you have two options:
-
-1. Present your project dashboard (lab 10) live during the last class of the term.
-
-- Sign up for this [here](https://ubc.ca1.qualtrics.com/jfe/form/SV_9NdQHgYiZwnqeEJ). There are a limited number of spots, this will be a combination of by invitation and first-come first served! 
-
-2. Record a video screencast of your dashboard.
-
-- Your video should be uploaded to a cloud sharing site (YouTube (preferred), Vimeo, Google Drive, Dropbox, Sync.com, etc...)
+- All members of a group must participate in the Explainer Video (you may have multiple tabs in your Tableau Dashboard).
+- Your recording does NOT have to have a high production value (editing, background sound, video titles etc..) and I would suggest not spending too much time on the non-dashboard component.
 
 ### Rubric for grading Project Dashboard Presentations
 
@@ -51,27 +45,10 @@ We want to see your Tableau dashboard, get a walk-through of the key features, a
 
 Here is the rubric for how we will grade these 5 minute videos (or live presentations if you choose):
 
-- [10%] : Timely submission of a video link or file by the deadline (Dec. 4, 6 PM) and before the grace period ends.
+- [10%] : Timely submission of a video link or file by the deadline and before the grace period ends.
 - [20%] : Clear explanation of the project research questions and information about the dataset.
 - [50%] : Guided walk-through of the key features of the Tableau Dashboard.
 - [30%] : Show how your dashboard data answer your research questions.
-### Options for recording screenshots
-
-**Option 1 (recommended):** The best way to record screencasts is to just start a zoom meeting (with just yourself or your team mates) and record the meeting with Zoom. Then once the Zoom meeting is over, you will have a recording of the meeting on your computer.
-
-**Option 2:** UBC has licenses for Techsmith's Snagit and Camtasia available for all student. Both of these are excellent tools for recording screencasts.
-
-You can install them by following the [instructions here](https://it.ubc.ca/services/desktop-print-services/software-licensing/snagit-and-camtasia-installation-instructions#connect).
-
-**Option 3:** On macOS you can use Quicktime to record a screencast. [Instructions for this are here](https://support.apple.com/en-ca/guide/quicktime-player/qtp97b08e666/mac).
-
-**Option 4:** On Windows 10 you can use Gamebar to record a screencast. [Instructions for this are here](https://www.lifewire.com/windows-10-game-bar-4150524).
-
-**Option 5:** Many other options exist including [OBS](https://obsproject.com) or even holding up your smart phone and recording what you see on your computer screen. 
-
-### Examples of dashboard screencasts
-
-Coming soon... -->
 
 ### Submitting Milestone 4
 
