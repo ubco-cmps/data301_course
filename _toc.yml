@@ -133,9 +133,6 @@ parts:
       #   title: Git and Data Representation
     - file: notes/week06/lab6/README
       title: Lab 6
-      sections:
-      - file: notes/week06/lab6/lab6A/lab6A
-      - file: notes/week06/lab6/lab6B/lab6B
     - file: notes/week06/test3
     - file: notes/week06/test3_bonus
     - file: notes/week06/log
