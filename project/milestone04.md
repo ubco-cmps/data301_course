@@ -31,8 +31,6 @@ For this Task, you will record an Explainer video (similar to the lab explainer 
 - Groups of 2 project presentations should be 5-7 minutes long.
 - Groups of 3 project presentations should be 7-10 minutes long.
 
-should  each in the form of an Explainer video (whether your project is done solo, or in a group).
-
 Other requirements:
 
 - All members of a group must participate in the Explainer Video (you may have multiple tabs in your Tableau Dashboard).
