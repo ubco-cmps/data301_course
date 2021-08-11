@@ -33,3 +33,12 @@ Click links below to accept the labs, I expect they will be released by Monday m
 Once you click the link, a repository will automatically be created for you with some starter code.
 You can now work on the repo, make commits, and push them to GitHub as you please. 
 Once the deadline and the grace period has passed, you will no longer be able to push any changes.
+
+## OPTIONAL Labs
+
+These are somewhat more advanced topics that are no longer part of DATA 301, the labs are here if you'd like to explore them further.
+
+| Lab            | Due Date | Link to Accept                                        | Solutions   |
+|----------------|----------|-------------------------------------------------------|-------------|
+| Lab 7 - SQL I  | N/A      | [Accept Lab](https://classroom.github.com/a/f1xZ7yjO) | In the repo |
+| Lab 8 - SQL II | N/A      | [Accept Lab](https://classroom.github.com/a/ms8opBeA) | In the repo |
