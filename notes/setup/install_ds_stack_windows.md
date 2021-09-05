@@ -29,6 +29,7 @@ Once you have completed these installation instructions, make sure to follow the
 ## Table of Contents
 
 - [UBC Student Email](#ubc-student-email)
+- [Zoom](#zoom) (Latest Version of Zoom)
 - [Web browser](#web-browser)
 - [Microsoft Office](#microsoft-office)
 - [Terminal](#terminal)
@@ -50,6 +51,28 @@ You are welcome to use most modern browsers that have a WebKit or Gecko backend.
 [Safari](https://www.apple.com/ca/safari/), [Firefox](https://www.mozilla.org/en-CA/firefox/new/?redirect_source=firefox-com), [Vivaldi](https://vivaldi.com), [Brave](https://brave.com), [Edge](https://www.microsoft.com/en-us/edge) are all recommended.
 Google Chrome is not recommended because of the [well-documented privacy and tracking issues with Google](https://www.forbes.com/sites/zakdoffman/2021/03/20/stop-using-google-chrome-on-apple-iphone-12-pro-max-ipad-and-macbook-pro/).
 
+## Zoom
+
+We will be using Zoom in this course for the classes, as well as the labs, and student hours.
+It is *very* important that you have the most recent version of Zoom installed, as we will be using many of the features that are only available in more recent versions.
+
+The latest version of Zoom as of Sept 2021 is: `5.7.6 (1320)`. 
+You can ensure you have the latest version of Zoom by clicking "Check for Updates" as shown in the screenshot below (on a Windows machine, your screenshot will look slightly different).
+
+<img src="setup_images/zoom.png" alt = "Zoom 'Check for Updates' showing the latest version of Zoom is installed."/>
+
+```{important}
+Please note that if you have been relying on the "web version" of Zoom that works only in a browser, this will not work for this course!
+Please make sure to download the Zoom desktop client for your operating system to fully participate in the course.
+```
+
+## GitHub.com account
+
+Sign up for a free account at [GitHub.com](https://github.com/) if you don't have one already.
+Your GitHub username is important, here's how to find your username:
+
+<img src="setup_images/github_account.png" alt = "Pointing to the top right once you log into GitHub.com to identify your username."/>
+
 ## Microsoft Office
 
 UBC students have free access to a Microsoft Office 365 annual subscription, which is renewed for students enrolled in at least one course.
@@ -58,7 +81,12 @@ Office 365 includes Word, Excel, PowerPoint, Outlook, and OneNote, and is availa
 To get your free Office 365 license and download the installer files, visit [UBC IT](https://it.ubc.ca/services/desktop-print-services/software-licensing/office-365-students) for the installation instructions.
 Note that you will need your CWL login credentials in order to download the software and activate your license from [portal.office.com](https://portal.office.com).
 
-In this course, you will need Microsoft Excel.
+In this course, you will only need Microsoft Excel, but you're welcome to install other apps as well.
+
+```{important}
+You will not be able to use Google Sheets, Apple Numbers, or LibreOffice Calc to do the Excel portion of this course.
+If you have trouble installing it, please let the instructor know.
+```
 
 ## Terminal
 
@@ -66,13 +94,16 @@ Unfortunately, one of the major problems with using the Windows operating system
 No worries though, luckily most of the tools we use in this course are open source, so the community has worked hard to shore up deficiencies in the Microsoft ecosystem (until Windows subsystem for Linux is a more mature product).
 
 The replacement for the Command Prompt we will use in this course is called "GitBash".
+The latest version of GitBash for Windows is: `2.33.0(2)`.
 
 ```{attention}
-"GitBash" is relatively old software, but it is very reliable and works very well. If you are feeling brave and want to setup `zsh` on Windows, you can [try these instructions here](https://dev.to/zinox9/installing-zsh-on-windows-37em). Note that these instructions are experimental and support from the teaching team is limited. But if you can get it to work or run into any issues, let me know! I hope to adopt zsh on windows next term.
+"GitBash" is relatively old software, but it is very reliable and works very well. 
+If you are feeling brave and want to setup `zsh` (the next generation Terminal, with many improvements) on Windows, you can [try these instructions here](https://dev.to/zinox9/installing-zsh-on-windows-37em).
+Note that these instructions are experimental and support from the teaching team is limited. But if you can get it to work or run into any issues, let me know.
+I hope to adopt zsh on windows fully next time I teach this course.
 ```
 
 Briefly, we will be using the Bash shell to interact with our computers via a command line interface, and Git to keep a version history of our files and upload to/download from to GitHub.
-Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it.
 
 Go to <https://git-scm.com/download/win> and download the windows version of GitBash. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
 
@@ -86,7 +117,8 @@ If you wish to pin Git Bash to the taskbar, you need to search for the program i
 ```
 
 ```{note}
-After installation, test if you were successful by opening the GitBash program. Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just the "Terminal").
+After installation, test if you were successful by opening the GitBash program.
+Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just the "Terminal").
 ```
 
 <img src="setup_images/gitbash.png" alt = ""/>
@@ -125,13 +157,13 @@ git version 2.32.0.windows.1
 ## Python
 
 We will be using Python for a large part of the course, and `conda` will be our Python package manager.
-We will be using the [Miniconda installer (read more here)](https://docs.conda.io/en/latest/miniconda.html) to install both python and conda at the same time.
-Miniconda also provides us with a minimum number of useful packages so installation is quick, and relatively painless.
 
 ### Installing `conda` and python
 
 We will be using Python for a large part of the program, and `conda` as our Python package manager.
-To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.8 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe).
+To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [**Python 3.9** (or higher) 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe).
+Miniconda also provides us with a minimum number of useful packages so installation is quick, and relatively painless.
+
 After the download has finished, run the installer and accept the default configuration for all pages.
 
 ```{warning}
@@ -149,10 +181,11 @@ python --version
 which should return something like this:
 
 ```
-Python 3.8.3
+Python 3.9.5
 ```
 
-> If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.8**.
+> If instead you see `Python 2.7.X` you installed the wrong version.
+Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.9**.
 
 ### Integrating Python with the Git Bash terminal
 
@@ -168,7 +201,7 @@ conda init bash
 
 You will see that this modified a few configuration files, which makes `conda` visible to the terminal. Close all open terminal windows and launch a new one, you should now see that the prompt string has changed to include the word `(base)` as in the screenshot below:
 
-<img src="C:\Users\patri\Desktop\Teaching\COSC301git\data301_course\notes\images\add-conda-env-to-ps1.png" alt = ""/>
+<img src="setup_images/add-conda-env-to-ps1.png" alt = ""/>
 
 If you type
 
@@ -179,7 +212,7 @@ python --version
 you should now see the same output as above (you may see a higher version of python, that's fine:
 
 ```
-Python 3.9.2
+Python 3.9.5
 ```
 
 > Note that if you want to run Python interactively from the Git Bash terminal, you need to prepend the `winpty` command, so the full command would be `winpty python` (if you run this, note that you can exit the Python prompt by typing `exit()`). Running just `python` works on other setups, but will freeze the Git Bash terminal.
@@ -234,19 +267,23 @@ To add the conda-forge channel by typing the following in the terminal:
 conda config --add channels conda-forge
 ```
 
-To install packages individually, we can now use the following command: `conda install <package-name>`. Let's install the key packages needed for the start of the MDS program:
+To install packages individually, we can now use the following command: `conda install -c conda-forge <package-name>`.
+Let's install the key packages needed (you will note that we're also specifying certain versions of the package with `= X.Y`).
+Each command is on a new line and should be run one-by-one.
 
 ```
-conda install \
- "jupyterlab=3.*" \
- "numpy=1.*" \
- "pandas=1.*" \
- "flake8=3.*" \
- "black=19.*" \
- "nbconvert=6.*"
+conda install -c conda-forge "jupyterlab=3.*"
+conda install -c conda-forge "numpy=1.*" \
+conda install -c conda-forge "pandas=1.*" \
+conda install -c conda-forge "flake8=3.*" \
+conda install -c conda-forge "black=19.*" \
+conda install -c conda-forge "nbconvert=6.*"
+conda install -c conda-forge "seaborn"
 ```
 
-`conda` will show you the packages that will be downloaded, and you can press enter to proceed with the installation.
+`conda` will show you the packages that will be downloaded, and you may need to press `enter` or `Y` (for yes) to proceed with the installation.
+We are specifying that we should use the "conda-forge" source because it typically has more recent and updated package versions.
+This may take a while to complete.
 
 ## Visual Studio Code
 
@@ -257,7 +294,9 @@ Make sure you are able to open VS Code by clicking on the application.
 
 ### VS Code extensions
 
-The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
+The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow.
+Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them.
+From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
 <img src="setup_images/vscode.png" alt = "Pointing to the left sidebar to where extensions can be installed."/>
 
@@ -273,12 +312,14 @@ To install an extension, you simply search for it in the search bar, click the e
 
 We will use the publicly available [GitHub.com](https://github.com/).
 
-Sign up for a free account at [GitHub.com](https://github.com/) if you don't have one already.
+You should already have your GitHub.com username
 
 ### Install Git on your computer
 
 Although Git and GitBash are two separate programs, Git is packaged with GitBash and so you've already installed it.
 Time to configure it.
+
+### Create your GitHub "Personal Access Token"
 
 
 ### Configuring Git user info

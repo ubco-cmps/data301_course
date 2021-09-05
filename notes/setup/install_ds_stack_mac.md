@@ -29,6 +29,8 @@ Once you have completed these installation instructions, make sure to follow the
 
 - [UBC Student Email](#ubc-student-email)
 - [Web browser](#web-browser)
+- [Zoom](#zoom) (Latest Version of Zoom)
+- [GitHub.com account](#github)
 - [Microsoft Office](#microsoft-office)
 - [Python, Conda, and JupyterLab](#python)
 - [Visual Studio Code](#visual-studio-code)
@@ -47,6 +49,27 @@ To do so navigate to [https://it.ubc.ca/services/email-voice-internet/ubc-studen
 You are welcome to use most modern browsers that have a WebKit or Gecko backend.
 [Safari](https://www.apple.com/ca/safari/), [Firefox](https://www.mozilla.org/en-CA/firefox/new/?redirect_source=firefox-com), [Vivaldi](https://vivaldi.com), [Brave](https://brave.com), [Edge](https://www.microsoft.com/en-us/edge) are all recommended.
 Google Chrome is not recommended because of the [well-documented privacy and tracking issues with Google](https://www.forbes.com/sites/zakdoffman/2021/03/20/stop-using-google-chrome-on-apple-iphone-12-pro-max-ipad-and-macbook-pro/).
+
+## Zoom
+
+We will be using Zoom in this course for the classes, as well as the labs, and student hours.
+It is *very* important that you have the most recent version of Zoom installed, as we will be using many of the features that are only available in more recent versions.
+
+The latest version of Zoom as of Sept 2021 is: `5.7.6 (1320)`. 
+You can ensure you have the latest version of Zoom by clicking "Check for Updates" as shown in the screenshot below.
+
+<img src="setup_images/zoom.png" alt = "Zoom 'Check for Updates' showing the latest version of Zoom is installed."/>
+
+```{important}
+Please note that if you have been relying on the "web version" of Zoom that works only in a browser, this will not work for this course! Please make sure to download the Zoom desktop client for your operating system to fully participate in the course.
+```
+
+## GitHub.com account
+
+Sign up for a free account at [GitHub.com](https://github.com/) if you don't have one already.
+Your GitHub username is important, here's how to find your username:
+
+<img src="setup_images/github_account.png" alt = "Pointing to the top right once you log into GitHub.com to identify your username."/>
 
 ## Microsoft Office
 
@@ -87,10 +110,10 @@ python --version
 which should return something like this:
 
 ```
-Python 3.8.3
+Python 3.9.5
 ```
 
-> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.8** (or higher).
+> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.9** (or higher).
 
 ### Essential Python packages
 
@@ -108,16 +131,19 @@ To install packages individually, we can now use the following command: `conda i
 Let's install the key packages needed (you will note that we're also specifying certain versions of the package with `= X.Y`):
 
 ```
-conda install \
- "jupyterlab=3.*" \
- "numpy=1.*" \
- "pandas=1.*" \
- "flake8=3.*" \
- "black=19.*" \
- "nbconvert=6.*"
+conda install -c conda-forge conda install
+conda install -c conda-forge "jupyterlab=3.*"
+conda install -c conda-forge "numpy=1.*"
+conda install -c conda-forge "pandas=1.*"
+conda install -c conda-forge "flake8=3.*"
+conda install -c conda-forge "black=19.*"
+conda install -c conda-forge "nbconvert=6.*"
+conda install -c conda-forge "seaborn"
 ```
 
-`conda` will show you the packages that will be downloaded, and you can press enter to proceed with the installation.
+`conda` will show you the packages that will be downloaded, and you may need to press `enter` or `Y` (for yes) to proceed with the installation.
+We are specifying that we should use the "conda-forge" source because it typically has more recent and updated package versions.
+This may take a while to complete.
 
 ## Visual Studio Code
 
@@ -233,11 +259,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 We will use the publicly available [GitHub.com](https://github.com/).
 
-Sign up for a free account at [GitHub.com](https://github.com/) if you don't have one already.
-
 ### Install Git on your computer
 
-We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if your Git is older than this version, we ask you to update it using the Xcode command line tools (not all of Xcode), which includes Git.
+We will be using the command line version of Git.
+Some of the Git commands we will use are only available since Git 2.23, so if your Git is older than this version, we ask you to update it using the Xcode command line tools (not all of Xcode), which includes Git.
 
 Open Terminal and type the following command to install Xcode command line tools:
 

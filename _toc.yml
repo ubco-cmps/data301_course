@@ -15,8 +15,8 @@ parts:
       title: macOS
     - file: notes/setup/install_ds_stack_windows
       title: Windows
-    - file: notes/setup/install_ds_ubuntu
-      title: Ubuntu
+    # - file: notes/setup/install_ds_ubuntu
+    #   title: Ubuntu
 
 # - caption: Weekly Content
 #   chapters:
@@ -140,9 +140,9 @@ parts:
 #   - file: notes/labs
 #     title: Lab Links and Solutions
 
-- caption: Project
-  chapters:
-  - file: project/introduction
+# - caption: Project
+#   chapters:
+#   - file: project/introduction
     # sections:
     # - file: project/milestone01
     # - file: project/milestone02
