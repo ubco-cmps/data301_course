@@ -312,15 +312,12 @@ To install an extension, you simply search for it in the search bar, click the e
 
 We will use the publicly available [GitHub.com](https://github.com/).
 
-You should already have your GitHub.com username
+You should already have your GitHub.com username, you will need that for this question.
 
 ### Install Git on your computer
 
 Although Git and GitBash are two separate programs, Git is packaged with GitBash and so you've already installed it.
 Time to configure it.
-
-### Create your GitHub "Personal Access Token"
-
 
 ### Configuring Git user info
 
@@ -335,6 +332,37 @@ git config --global user.email YOUR@EMAIL.com
 ```{note}
 To ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
 ```
+
+### Create your GitHub "Personal Access Token"
+
+This is a bit tricky, so please make sure you follow these directions carefully.
+
+1. Create a Personal Access Token on GitHub.com by clicking this link: https://github.com/settings/tokens/new; make sure to COPY the token that they give you, it is basically a special password that you can use in the Terminal. Detailed steps are:
+
+- Log in to GitHub.com, 
+- Click your picture in the top right, 
+- Click Settings, 
+- Click Developer Settings
+- Click "Personal access tokens", set the appropriate permissions at the "repo" level (see gif below):
+
+<img src="setup_images/github_PAT.gif">
+
+- Click "Generate new token"
+- Save this token somewhere on your computer, you will need it when you clone a repository to your computer.
+- Don't share your token with anyone and protect it like it's your password! You will not be able to come back to this page to get your token. If you forget it, or lose it, you can just delete the token and create another one.
+
+### Clone your first repository on your computer!
+
+Open a GitBash Terminal window, and then run the following command:
+
+```
+git clone https://github.com/data301-2021-winter1/test.git
+```
+
+Here you will be prompted for your GitHub.com username, and your PAT (personal access token) as your password.
+
+Hopefully, if things work, you should be able to see a new folder created at that location.
+We will be talking more about what exactly you did over the next week and a bit, don't worry!
 
 ### Launch VS Code from GitBash
 
