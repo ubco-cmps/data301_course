@@ -6,8 +6,6 @@ parts:
   chapters:
   - file: about/syllabus
   - file: about/course_schedule
-#   - file: getting-started/todo_list
-#     title: Start Here!
 
 - caption: Getting Started!
   chapters:
@@ -20,136 +18,136 @@ parts:
     - file: notes/setup/install_ds_ubuntu
       title: Ubuntu
 
-- caption: Weekly Content
-  chapters:
-  - file: notes/week01/week01_summary
-    title: Week 1
-    sections:
-    - file: notes/week01/videos
-      title: Videos
-    - file: notes/week01/Classes
-      sections:
-      - file: notes/week01/Class1A/Class1A
-        title: Course Introduction
-      - file: notes/week01/Class1B/Class1B
-        title: Command Line and JupyterLab
-      - file: notes/week01/Class1C/Class1C
-        title: Git and Data Representation
-    - file: notes/week01/lab1/README
-      title: Lab 1
-      sections:
-      - file: notes/week01/lab1/lab1A/README
-      - file: notes/week01/lab1/lab1B/README
-    - file: notes/week01/test0
-    - file: notes/week01/log
+# - caption: Weekly Content
+#   chapters:
+#   - file: notes/week01/week01_summary
+#     title: Week 1
+#     sections:
+#     - file: notes/week01/videos
+#       title: Videos
+#     - file: notes/week01/Classes
+#       sections:
+#       - file: notes/week01/Class1A/Class1A
+#         title: Course Introduction
+#       - file: notes/week01/Class1B/Class1B
+#         title: Command Line and JupyterLab
+#       - file: notes/week01/Class1C/Class1C
+#         title: Git and Data Representation
+#     - file: notes/week01/lab1/README
+#       title: Lab 1
+#       sections:
+#       - file: notes/week01/lab1/lab1A/README
+#       - file: notes/week01/lab1/lab1B/README
+#     - file: notes/week01/test0
+#     - file: notes/week01/log
 
-  - file: notes/week02/week02_summary
-    title: Week 2
-    sections:
-    - file: notes/week02/videos
-      title: Videos
-    - file: notes/week02/Classes
-      sections:
-      - file: notes/week02/Class2A/Class2A
-        title: Introduction to Python I
-      - file: notes/week02/Class2B/Class2B
-        title: Project and Git/GitHub
-      - file: notes/week02/Class2C/Class2C
-        title: Introduction to Python II
-    - file: notes/week02/lab2/README
-      title: Lab 2
-      sections:
-      - file: notes/week02/lab2/lab2A/README
-      - file: notes/week02/lab2/lab2B/lab2B
-    - file: notes/week02/test1
-    - file: notes/week02/log
+#   - file: notes/week02/week02_summary
+#     title: Week 2
+#     sections:
+#     - file: notes/week02/videos
+#       title: Videos
+#     - file: notes/week02/Classes
+#       sections:
+#       - file: notes/week02/Class2A/Class2A
+#         title: Introduction to Python I
+#       - file: notes/week02/Class2B/Class2B
+#         title: Project and Git/GitHub
+#       - file: notes/week02/Class2C/Class2C
+#         title: Introduction to Python II
+#     - file: notes/week02/lab2/README
+#       title: Lab 2
+#       sections:
+#       - file: notes/week02/lab2/lab2A/README
+#       - file: notes/week02/lab2/lab2B/lab2B
+#     - file: notes/week02/test1
+#     - file: notes/week02/log
 
-  - file: notes/week03/week03_summary
-    title: Week 3
-    sections:
-    - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_0vnAttgPuXwT6cu
-      title: (Anonymous) Mid-Course Feedback
-    - file: notes/week03/videos
-      title: Videos
-    - file: notes/week03/Classes
-      sections:
-      - file: notes/week03/Class3A/Class3A
-      - file: notes/week03/Class3B/Class3B
-      - file: notes/week03/Class3C/Class3C
-    - file: notes/week03/lab3/README
-      title: Lab 3
-      sections:
-      - file: notes/week03/lab3/lab3A/lab3A
-      - file: notes/week03/lab3/lab3B/lab3B
-    - file: notes/week03/test1_bonus
-    - file: notes/week03/log
+#   - file: notes/week03/week03_summary
+#     title: Week 3
+#     sections:
+#     - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_0vnAttgPuXwT6cu
+#       title: (Anonymous) Mid-Course Feedback
+#     - file: notes/week03/videos
+#       title: Videos
+#     - file: notes/week03/Classes
+#       sections:
+#       - file: notes/week03/Class3A/Class3A
+#       - file: notes/week03/Class3B/Class3B
+#       - file: notes/week03/Class3C/Class3C
+#     - file: notes/week03/lab3/README
+#       title: Lab 3
+#       sections:
+#       - file: notes/week03/lab3/lab3A/lab3A
+#       - file: notes/week03/lab3/lab3B/lab3B
+#     - file: notes/week03/test1_bonus
+#     - file: notes/week03/log
 
-  - file: notes/week04/week04_summary
-    title: Week 4
-    sections:
-    - file: notes/week04/videos
-      title: Videos
-    - file: notes/week04/Classes
-      sections:
-      - file: notes/week04/Class4A/Class4A
-      - file: notes/week04/Class4B/Class4B
-      - file: notes/week04/Class4B/Class4B-questions
-      - file: notes/week04/Class4C/Class4C
-    - file: notes/week04/lab4/README
-      title: Lab 4
-      sections:
-      - file: notes/week04/lab4/lab4A/lab4A
-      - file: notes/week04/lab4/lab4B/lab4B
-    - file: notes/week04/test2
-    - file: notes/week04/log
+#   - file: notes/week04/week04_summary
+#     title: Week 4
+#     sections:
+#     - file: notes/week04/videos
+#       title: Videos
+#     - file: notes/week04/Classes
+#       sections:
+#       - file: notes/week04/Class4A/Class4A
+#       - file: notes/week04/Class4B/Class4B
+#       - file: notes/week04/Class4B/Class4B-questions
+#       - file: notes/week04/Class4C/Class4C
+#     - file: notes/week04/lab4/README
+#       title: Lab 4
+#       sections:
+#       - file: notes/week04/lab4/lab4A/lab4A
+#       - file: notes/week04/lab4/lab4B/lab4B
+#     - file: notes/week04/test2
+#     - file: notes/week04/log
 
-  - file: notes/week05/week05_summary
-    title: Week 5
-    sections:
-    - file: notes/week05/videos
-      title: Videos
-    - file: notes/week05/Classes
-      sections:
-      - file: notes/week05/Class5A/Class5A
-      - file: notes/week05/Class5B/Class5B
-      - file: notes/week05/Class5C/Class5C
-    - file: notes/week05/lab5/README
-      title: Lab 5
-    - file: notes/week05/test2_bonus
-    - file: notes/week05/log
+#   - file: notes/week05/week05_summary
+#     title: Week 5
+#     sections:
+#     - file: notes/week05/videos
+#       title: Videos
+#     - file: notes/week05/Classes
+#       sections:
+#       - file: notes/week05/Class5A/Class5A
+#       - file: notes/week05/Class5B/Class5B
+#       - file: notes/week05/Class5C/Class5C
+#     - file: notes/week05/lab5/README
+#       title: Lab 5
+#     - file: notes/week05/test2_bonus
+#     - file: notes/week05/log
 
-  - file: notes/week06/week06_summary
-    title: Week 6
-    sections:
-    - file: notes/week06/videos
-      title: Videos
-    - file: notes/week06/Classes
-      # sections:
-      # - file: notes/week06/Class6A/Class6A
-      #   title: Course Introduction
-      # - file: notes/week06/Class6B/Class6B
-      #   title: Command Line and JupyterLab
-      # - file: notes/week06/Class6C/Class6C
-      #   title: Git and Data Representation
-    - file: notes/week06/lab6/README
-      title: Lab 6
-    - file: notes/week06/test3
-    - file: notes/week06/test3_bonus
-    - file: notes/week06/log
+#   - file: notes/week06/week06_summary
+#     title: Week 6
+#     sections:
+#     - file: notes/week06/videos
+#       title: Videos
+#     - file: notes/week06/Classes
+#       # sections:
+#       # - file: notes/week06/Class6A/Class6A
+#       #   title: Course Introduction
+#       # - file: notes/week06/Class6B/Class6B
+#       #   title: Command Line and JupyterLab
+#       # - file: notes/week06/Class6C/Class6C
+#       #   title: Git and Data Representation
+#     - file: notes/week06/lab6/README
+#       title: Lab 6
+#     - file: notes/week06/test3
+#     - file: notes/week06/test3_bonus
+#     - file: notes/week06/log
 
-- caption: Labs
-  chapters:
-  - file: notes/labs
-    title: Lab Links and Solutions
+# - caption: Labs
+#   chapters:
+#   - file: notes/labs
+#     title: Lab Links and Solutions
 
 - caption: Project
   chapters:
   - file: project/introduction
-    sections:
-    - file: project/milestone01
-    - file: project/milestone02
-    - file: project/milestone03
-    - file: project/milestone04
+    # sections:
+    # - file: project/milestone01
+    # - file: project/milestone02
+    # - file: project/milestone03
+    # - file: project/milestone04
 
 - caption: Course Feedback
   chapters:
