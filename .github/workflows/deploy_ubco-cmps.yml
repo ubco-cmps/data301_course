@@ -43,7 +43,7 @@ jobs:
         REMOTE_DIR: ${{ secrets.REMOTE_TARGET_UBCO }}
         LOCAL_DIR: "_build/html/"
         COURSE_NAME: "data301"
-        TERM: "2021_ST2"
+        TERM: "2021_WT1"
       run: |
         mkdir ~/.ssh
         echo "$REMOTE_KEY" > ~/.ssh/id_rsa
