@@ -126,6 +126,7 @@ In this course, we will be using the following required learning technologies (p
 - [Canvas](https://faculty.canvas.ubc.ca/canvas-privacy/)
 - [Ed Discussion](https://edstem.org/privacy)
 - [Gradescope](https://www.gradescope.com/privacy)
+- [GitHub](https://docs.github.com/en/github/site-policy/github-privacy-statement)
 <!-- - [Sli.do](https://www.sli.do/terms#privacy-policy) -->
 
 All tools used in the course will be used in a [FIPPA-compliant](https://universitycounsel.ubc.ca/subject-areas/access-and-privacy-general/access-to-information/about-fippa/) manner, with your privacy top of mind. 
@@ -146,6 +147,15 @@ The Ed Discussion tool is stored on servers outside Canada. When you access this
 ```
 
 Sign up for {{ FORUM_LINK }} using our unique course link.
+
+### Sign up for a (free) GitHub.com account [Required]
+
+GitHub is the world's largest, and most popular cloud-based service that allows programmers to host and share code in any language.
+In this course, we will be using GitHub to release your labs and you will be using your GitHub.com accounts to edit and submit your labs.
+
+```{warning}
+GitHub is a cloud-based tool where your personal data is stored on servers outside Canada. When you create an account on GitHub, you are being transferred to these servers. While GitHub adheres to strict U.S. privacy regulations (FERPA), UBC cannot guarantee security of your private details on servers outside of Canada. If you are not comfortable with your personal data residing on servers outside Canada, to protect your identity, UBC suggests creating a pseudonym to protect your privacy. With this, and any other cloud-based tools/services, please exercise caution whenever sharing your personal information.
+```
 
 ### What type of information will I collect about you in this course?
 
