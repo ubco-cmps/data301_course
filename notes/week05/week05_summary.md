@@ -4,7 +4,7 @@ Week 5
 
 Hello!
 
-We're switching gears this week, and doing some data analysis with another very popular tool: Microsoft Excel.
+Welcome to Week 5 - this week, we will doing some Exploratory Data Analysis.
 
 <label><input type="checkbox" id="week05_task1" class="box"> Review feedback you received, reflect on it, and make corrections to your repo if needed. </input></label>
 
@@ -21,6 +21,6 @@ You are welcome to attend additional labs or Student Hours in the course if you 
 ```
 <label><input type="checkbox" id="week05_task4" class="box"> Watch the **[assigned videos](./videos.md)**</input></label>
 
-<label><input type="checkbox" id="week05_task5" class="box"> Complete **[Bonus Test 2](./test2_bonus.md)**</input></label>
+<label><input type="checkbox" id="week05_task5" class="box"> Complete **[Bonus Test 1](./test1_bonus.md)**</input></label>
 
 <label><input type="checkbox" id="week05_task6" class="box"> Complete the weekly **[Learning Log](./log.md)**</input></label>

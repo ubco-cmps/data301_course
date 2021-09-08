@@ -2,15 +2,16 @@
 Week 1
 =======================
 
-Hello everyone!  Welcome to Week 1 - this week will be talk about logistics and set up our machines for data analytics.
+Hello everyone!
+
+Welcome to Week 1 - this week we will be talk about logistics and set up our machines for data analytics.
 
 <label><input type="checkbox" id="week01_task1" class="box"> Read the course [syllabus](../../../../about/syllabus.md) and the [unsyllabus](../../../../about/unsyllabus.md) </input></label>
 
 <label><input type="checkbox" id="week01_task2" class="box"> Attend the lectures this week </input></label>
 
-This week we will be doing course introductions, I will also be showing you how to navigate the course website, and how the course is set up, how to use GitHub, and the Terminal.
 
-<label><input type="checkbox" id="week01_task3" class="box"> Attend the first **[lab](./lab1/README.md)** this week</input></label>
+<label><input type="checkbox" id="week01_task3" class="box"> Attend the **[lab](./lab1/README.md)** this week</input></label>
 
 ```{tip}
 The labs will be organized as semi-structured help sessions.

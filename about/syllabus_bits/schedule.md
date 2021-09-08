@@ -14,5 +14,5 @@ The exact details are subject to change, so this is roughly the plan we will try
 | 9  | Nov 1 - 7       | Choosing an appropriate visualization              | Lab 8  | LL8  | -                  | Test 3         | Python and Pandas          |
 | 10 | Nov 8 - 14      | Reading week <br />(no new material)               | -      | -    | -                  | (Bonus Test 3) | -                          |
 | 11 | Nov 15 - 21     | Introduction to Tableau                            | Lab 9  | LL9  | PM 4               | -              | -                          |
-| 12 | Nov 22 - 28     | Introduction to Microsoft Excel                    | Lab 10 | LL10 | PM 5               | Test 4         | Data Visualiaion and Excel |
+| 12 | Nov 22 - 28     | Introduction to Microsoft Excel                    | Lab 10 | LL10 | PM 5               | Test 4         | Data Visualization and Excel |
 | 13 | Nov 29 - Dec 8  | Review and recap <br />(no new material)           | -      | LL11 | -                  | (Bonus Test 4) | -                          |

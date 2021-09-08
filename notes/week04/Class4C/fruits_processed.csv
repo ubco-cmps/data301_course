@@ -1,0 +1,4 @@
+Fruit Name,Mass(g),Colour,Rating,Score,Score2,Status
+Apple,200,Red,8,400,450.0,discard
+Banana,250,Yellow,9,450,512.5,keep
+Cantoloupe,600,Orange,10,500,650.0,keep

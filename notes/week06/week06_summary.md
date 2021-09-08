@@ -4,17 +4,11 @@ Week 6
 
 Hello!
 
-We're nearing the end now!
-
-Welcome to Week 6 - this week will be wrapping things up with the course, learning about Tableau, and I'll be giving you some parting thoughts about Data Analytics.
+Welcome to Week 6 - this week you will get a break to catchup on the material we have covered so far. You can also use this week to continue working on your project, or catch up on your other courses.
 
 <label><input type="checkbox" id="week06_task1" class="box"> Review feedback you received, reflect on it, and make corrections to your repo if needed. </input></label>
 
 <label><input type="checkbox" id="week06_task2" class="box"> Attend the [Classes](classes.md) this week </input></label>
-
-This week we will be doing course introductions, I will also be showing you how to navigate the course website, and how the course is set up, how to use GitHub, and the Terminal.
-
-<label><input type="checkbox" id="week06_task3" class="box"> Attend the first **[lab](./lab6/README.md)** this week</input></label>
 
 ```{tip}
 The labs will be organized as semi-structured help sessions.
