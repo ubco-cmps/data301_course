@@ -25,10 +25,8 @@ parts:
     sections:
     # - file: notes/week01/videos
     #   title: Videos
-    - file: notes/week01/Classes
-      sections:
-      - file: notes/week01/Class1A/Class1A
-        title: Course Introduction
+    - file: notes/week01/Class1A/Class1A
+      title: Course Introduction
 #       - file: notes/week01/Class1B/Class1B
 #         title: Command Line and JupyterLab
 #       - file: notes/week01/Class1C/Class1C
