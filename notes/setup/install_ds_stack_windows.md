@@ -32,9 +32,10 @@ Once you have completed these installation instructions, make sure to follow the
 - [Zoom](#zoom) (Latest Version of Zoom)
 - [Web browser](#web-browser)
 - [Microsoft Office](#microsoft-office)
+- [Visual Studio Code](#visual-studio-code)
 - [Terminal](#terminal)
 - [Python, Conda, and JupyterLab](#python)
-- [Visual Studio Code](#visual-studio-code)
+- [Configuring VS Code extensions](Configuring-VS-Code-extensions)
 - [Git and GitHub](#git-and-github)
 - [Tree](#tree)
 - [Test JupyterLab](#Test-JupyterLab)
@@ -87,6 +88,13 @@ In this course, you will only need Microsoft Excel, but you're welcome to instal
 You will not be able to use Google Sheets, Apple Numbers, or LibreOffice Calc to do the Excel portion of this course.
 If you have trouble installing it, please let the instructor know.
 ```
+
+## Visual Studio Code
+
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis.
+You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
+Once the download is finished, double click it to open and follow the installation instructions.
+Make sure you are able to open VS Code by clicking on the application.
 
 ## Terminal
 
@@ -285,14 +293,8 @@ conda install -c conda-forge "seaborn"
 We are specifying that we should use the "conda-forge" source because it typically has more recent and updated package versions.
 This may take a while to complete.
 
-## Visual Studio Code
 
-The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis.
-You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
-Once the download is finished, double click it to open and follow the installation instructions.
-Make sure you are able to open VS Code by clicking on the application.
-
-### VS Code extensions
+## Configuring VS Code extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow.
 Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them.
