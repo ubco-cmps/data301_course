@@ -101,7 +101,7 @@ which should return something like this:
 conda 4.8.2
 ```
 
-> Note: If you see `zsh: command not found: conda`, see the section on [Terminal](#terminal) above to set your default Terminal shell to Bash as opposed to Zsh.
+> Note: If you see `zsh: command not found: conda`, try the following>: Open a new Terminal (it should be zsh), then type: `source /Users/YOURUSERNAME/opt/anaconda3/bin/activate` (make sure you change YOURUSERNAME to your username). Then enter the following command `conda init zsh`. The error should now be fixed.
 
 Next, type the following to ask for the version of Python:
 ```
