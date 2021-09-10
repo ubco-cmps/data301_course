@@ -29,14 +29,6 @@ Additional details about the course are available on the {{ '[course website]({l
 
 For information on how to contact your course instructor, including office hours, see the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
 
-```{figure} ../images/construction.jpeg
----
-width: 750px
-name: Under Construction.
----
-This course website is currently under construction. It will continue to be updated and will be released closer to the course start date. [Photo by Mabel Amber from Pexels](https://www.pexels.com/photo/traffic-red-blue-sign-117602/). 
-```
-
 ## Course Description
 
 ```{include} syllabus_bits/calendar_entry.md
