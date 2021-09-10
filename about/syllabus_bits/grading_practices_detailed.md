@@ -8,7 +8,7 @@ The grading scheme for this course is:
 | Tests         | 24% (4 x 6%)                  | Friday 6 PM - Sunday 6PM      |
 | Final Exam    | 15%                           | Online during the Exam Period |
 
-There will be 3 tests in this course in an (approximately) bi-weekly schedule.
+There will be 4 tests in this course in an (approximately) bi-weekly schedule.
 For each of the tests, there will be a bonus test one week later and the better score of the Test-Bonus Test pair will be taken.
 
 ```{attention} 
