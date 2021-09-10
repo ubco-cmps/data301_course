@@ -101,7 +101,7 @@ which should return something like this:
 conda 4.8.2
 ```
 
-> Note: If you see `zsh: command not found: conda`, try the following>: Open a new Terminal (it should be zsh), then type: `source /Users/YOURUSERNAME/opt/anaconda3/bin/activate` (make sure you change YOURUSERNAME to your username). Then enter the following command `conda init zsh`. The error should now be fixed.
+> Note: If you see `zsh: command not found: conda`, try the following>: Open a new Terminal (it should be zsh), then type: `source /Users/YOURUSERNAME/opt/miniconda/bin/activate` OR `source ~/opt/miniconda/bin/activate` depending on whether you installed for all users, or just your user (make sure to also change YOURUSERNAME to your username). Then enter the following command `conda init zsh`. The error should now be fixed.
 
 Next, type the following to ask for the version of Python:
 ```
@@ -131,7 +131,6 @@ To install packages individually, we can now use the following command: `conda i
 Let's install the key packages needed (you will note that we're also specifying certain versions of the package with `= X.Y`):
 
 ```
-conda install -c conda-forge conda install
 conda install -c conda-forge "jupyterlab=3.*"
 conda install -c conda-forge "numpy=1.*"
 conda install -c conda-forge "pandas=1.*"
@@ -322,7 +321,7 @@ This is a bit tricky, so please make sure you follow these directions carefully.
 
 ### Clone your first repository on your computer!
 
-Open a GitBash Terminal window, and then run the following command:
+Open a Terminal window, and then run the following command:
 
 ```
 git clone https://github.com/data301-2021-winter1/test.git
