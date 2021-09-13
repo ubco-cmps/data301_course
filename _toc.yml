@@ -133,10 +133,10 @@ parts:
 #     - file: notes/week06/test3_bonus
 #     - file: notes/week06/log
 
-# - caption: Labs
-#   chapters:
-#   - file: notes/labs
-#     title: Lab Links and Solutions
+- caption: Labs
+  chapters:
+  - file: notes/labs
+    title: Lab Links and Solutions
 
 # - caption: Project
 #   chapters:
