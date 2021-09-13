@@ -101,7 +101,7 @@ which should return something like this:
 conda 4.8.2
 ```
 
-> Note: If you see `zsh: command not found: conda`, try the following>: Open a new Terminal (it should be zsh), then type: `source /Users/YOURUSERNAME/opt/miniconda/bin/activate` OR `source ~/opt/miniconda/bin/activate` depending on whether you installed for all users, or just your user (make sure to also change YOURUSERNAME to your username). Then enter the following command `conda init zsh`. The error should now be fixed.
+> Note: If you see `zsh: command not found: conda`, try the following>: Open a new Terminal (it should be zsh), then type: `source /Users/YOURUSERNAME/opt/miniconda3/bin/activate` OR `source ~/opt/miniconda3/bin/activate` depending on whether you installed for all users, or just your user (make sure to also change YOURUSERNAME to your username). Then enter the following command `conda init zsh`. The error should now be fixed.
 
 Next, type the following to ask for the version of Python:
 ```
