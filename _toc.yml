@@ -23,10 +23,10 @@ parts:
   - file: notes/week01/week01_summary
     title: Week 1
     sections:
-    # - file: notes/week01/videos
-    #   title: Videos
     - file: notes/week01/Class1A/Class1A
       title: Course Introduction
+    # - file: notes/week01/videos
+    #   title: Videos
 #       - file: notes/week01/Class1B/Class1B
 #         title: Command Line and JupyterLab
 #       - file: notes/week01/Class1C/Class1C
@@ -38,6 +38,16 @@ parts:
 #       - file: notes/week01/lab1/lab1B/README
 #     - file: notes/week01/test0
 #     - file: notes/week01/log
+
+- caption: Weekly Content
+  chapters:
+  - file: notes/week02/week02_summary
+    title: Week 2
+    sections:
+    - file: notes/week02/Class2A/Class2A
+      title: Command Line and JupyterLab
+    - file: notes/week02/Class2B/Class2B
+      title: File System
 
 #   - file: notes/week02/week02_summary
 #     title: Week 2
