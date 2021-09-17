@@ -45,9 +45,11 @@ parts:
     title: Week 2
     sections:
     - file: notes/week02/Class2A/Class2A
-      title: Command Line and JupyterLab
+      title: Class 1 - Command Line and JupyterLab
     - file: notes/week02/Class2B/Class2B
-      title: File System
+      title: Class 2 - File System
+    - file: notes/week02/Class2C/Class2C
+      title: Class 3 - JupyterLab and the Project
 
 #   - file: notes/week02/week02_summary
 #     title: Week 2
