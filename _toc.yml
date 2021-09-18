@@ -49,16 +49,22 @@ parts:
       title: B. File System
     - file: notes/week02/Class2C/Class2C
       title: C. JupyterLab and the Project
-    - file: notes/week02/lab1/README
+    - file: notes/week02/lab/README
       title: Lab 1
+      sections:
+        - file: notes/week02/lab/Task1.md
+        - file: notes/week02/lab/Task2.md
     - file: notes/week02/log
   - file: notes/week03/week03_summary
     title: Week 3
     sections:
     - file: notes/week03/videos
       title: Videos
-    - file: notes/week03/lab2/README
+    - file: notes/week03/lab/README
       title: Lab 2
+      sections:
+        - file: notes/week03/lab/Task1.md
+        - file: notes/week03/lab/Task2.md
     - file: notes/week03/log
     # - file: notes/week03/Class3A/Class3A
     #   title: Class 1 - Introduction to Version Control with Git
