@@ -66,12 +66,12 @@ parts:
         - file: notes/week03/lab/Task1.md
         - file: notes/week03/lab/Task2.md
     - file: notes/week03/log
-    # - file: notes/week03/Class3A/Class3A
-    #   title: Class 1 - Introduction to Version Control with Git
-    # - file: notes/week03/Class3B/Class3B
-    #   title: Class 2 - More Practice with Git
-    # - file: notes/week03/Class3C/Class3C
-    #   title: Class 3 - Practical life with Git + Project
+    - file: notes/week03/Class3A/Class3A
+      title: Class 1 - Introduction to Version Control with Git
+    - file: notes/week03/Class3B/Class3B
+      title: Class 2 - More Practice with Git
+    - file: notes/week03/Class3C/Class3C
+      title: Class 3 - Practical life with Git + Project
 
 
 #   - file: notes/week02/week02_summary
