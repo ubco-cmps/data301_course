@@ -5,9 +5,10 @@ You will find Test 1 on Canvas.
 Content you should review for Test 1 includes:
 
 - Commandline and Terminal
-    - Commands we discussed in Lecture 1B, more advanced commands from the BashCrawl game from lab will not be assessed
+    - Commands we discussed in Class, more advanced commands from the BashCrawl game from lab will not be assessed
 - Basics of git
-    - "It is important to realize that in this course, you will not explicitly be tested on any git commands except `add`, `commit`,`fetch`,`push`,`pull`,`branch`."
+    - "It is important to realize that in this course, you will not explicitly be tested on any git commands except `add`, `commit`,`fetch`,`push`,`pull`,`branch`, `merge`"
+    - Other concepts such as a "Pull Request", a "Fork", "Code review" are fair game to be tested.
 
 ```{important}
 Remember that for every Test, there is also a Bonus Test and we will take the better of the two scores so there is no harm in doing both Tests. A Test and a Bonus Test will be on essentially the same material.

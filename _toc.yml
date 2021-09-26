@@ -73,6 +73,25 @@ parts:
     - file: notes/week03/Class3C/Class3C
       title: Class 3 - Practical life with Git + Project
 
+  - file: notes/week04/week04_summary
+    title: Week 4
+    sections:
+    - file: notes/week04/videos
+      title: Videos
+    - file: notes/week04/lab/README
+      title: Lab 3
+      sections:
+        - file: notes/week04/lab/Task1.md
+        - file: notes/week04/lab/Task2.md
+    - file: notes/week04/log
+    - file: notes/week04/Class4A/Class4A
+      title: Class 1 - Introduction to Python
+    - file: notes/week04/Class4B/Class4B
+      title: Class 2 - More Python
+    - file: notes/week04/Class4C/Class4C
+      title: Class 3 - Loading Data with Python
+
+
 
 #   - file: notes/week02/week02_summary
 #     title: Week 2
