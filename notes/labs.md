@@ -15,7 +15,7 @@ Click links below to accept the labs, I expect they will be released by Monday m
 |-------------------------------------------------|-------------------------------|-------------------------------------------------------|
 | Lab 1 - Course Setup Markdown, Terminal, GitHub | Saturday, Sept 18th at 18:00 | [Accept Lab](https://classroom.github.com/a/e_jTvuMI) |
 | Lab 2 - BashCrawl                               | Saturday, Sept 25th at 18:00 | [Accept Lab](https://classroom.github.com/a/1TPS2K-i) |
-| Lab 3 - Git Tutorial                            | Saturday, Oct 2nd at 18:00   | Accept Lab[](https://classroom.github.com/a/GbriOWrn) |
+| Lab 3 - Git Tutorial                            | Saturday, Oct 2nd at 18:00   | [Accept Lab](https://classroom.github.com/a/GbriOWrn) |
 | Lab 4 - Python I                                | Saturday, Oct 9th at 18:00   | Accept Lab[](https://classroom.github.com/a/frtdg-Dw) |
 | Lab 5 - Python II                               | Saturday, Oct 23rd at 18:00  | Accept Lab[](https://classroom.github.com/a/YLCPvZWw) |
 | Lab 6 - Loading and Merging Data                | Saturday, Oct 30th at 18:00  | Accept Lab[](https://classroom.github.com/a/EPwsZ0qF) |
