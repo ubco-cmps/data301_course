@@ -15,15 +15,23 @@ In this milestone you will be finalizing your submission and presenting all your
 - You must use proper English, spelling, and grammar and you should write concisely.
 - There should be a plan in place to to deal with any teamwork conflicts and issues.
 
-## Task 1: Create a Dashboard using Tableau (70%)
+## Task 1: Process your data for your Tableau Dashboard
+
+You should prepare and process your data so that when you create your dashboard, you have to do minimal data wrangling or manipulation in Tableau.
+There are many different ways to deal with this, but I suggest you export a dataset that you can easily use in Tableau to plot whatever you need to in your dashboard.
+
+You should put the exported .csv files in the `data/processed` directory.
+
+## Task 2: Create a Dashboard using Tableau
 
 Create a dashboard (using your `processed` dataset - i.e. you do not have to do the data cleaning, wrangling, processing again) to create a Dashboard using Tableau.
 There are no requirements for this Dashboard, but please remember that you will be graded based on the quality of your dashboard, and how well it answers your research questions and/or helps with the exploratory data analysis.
 I suggest you take this opportunity to explore as many of the features that make sense for your project, and get help from us when you need it!
+You should place the Tableau file in the `dashboard` folder. 
 
 **Each group should only make ONE Tableau Dashboard, but you can work on it separately and then combine it at the end for the final submission. I suggest using multiple "tabs" in Tableau to split up research questions or parts of the dashboard.**
 
-## Task 2: Present your dashboard (30%)
+## Task 3: Present your dashboard
 
 For this Task, you will record an Explainer video (similar to the lab explainer videos) showing your Tableau Dashboard.
 
@@ -48,7 +56,7 @@ Here is the rubric for how we will grade these 5 minute videos (or live presenta
 - [50%] : Guided walk-through of the key features of the Tableau Dashboard.
 - [30%] : Show how your dashboard data answer your research questions.
 
-### Submitting Milestone 4
+## Submitting Milestone 4
 
 You will submit Milestone 4 on Gradescope.
 
