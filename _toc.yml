@@ -212,7 +212,7 @@ parts:
 - caption: Labs
   chapters:
   - file: notes/labs
-    title: Lab Links and Solutions
+    title: GitHub Classroom Links
 
 - caption: Project
   chapters:
