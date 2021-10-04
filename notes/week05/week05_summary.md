@@ -10,7 +10,7 @@ Welcome to Week 5 - this week, we will doing some Exploratory Data Analysis.
 
 <label><input type="checkbox" id="week05_task2" class="box"> Attend the [Classes](classes.md) this week </input></label>
 
-<label><input type="checkbox" id="week05_task3" class="box"> Attend the **[lab](./lab5README.md)** this week</input></label>
+<label><input type="checkbox" id="week05_task3" class="box"> Attend the **[lab](./lab/README.md)** this week</input></label>
 
 ```{tip}
 The labs will be organized as semi-structured help sessions.
