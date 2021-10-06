@@ -109,9 +109,9 @@ parts:
     - file: notes/week05/Class5A/Class5A
       title: Class 1 - Introduction to Pandas
     - file: notes/week05/Class5B/Class5B
-      title: Class 2 - More Python
+      title: Class 2 - More Pandas
     - file: notes/week05/Class5C/Class5C
-      title: Class 3 - Loading Data with Python
+      title: Class 3 - Advanced Pandas
 
 
 
