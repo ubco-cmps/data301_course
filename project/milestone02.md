@@ -19,7 +19,7 @@ In this milestone you will be expected to setup the repository, clone it to your
 
 The first step is to create/join a GitHub repository:
 - Discuss with your partner(s) to determine which of you will accept the initial repository link (only one person in a group should accept the link).
-- If you are the first person in the group, click this link to accept the [Template Project GitHub Classroom](https://firas.moosvi.com/courses/2021_WT2/data301/notes/labs.html).
+- If you are the first person in the group, click this link to accept the [Template Project GitHub Classroom](https://firas.moosvi.com/courses/2021_WT1/data301/notes/labs.html).
 - Make sure you set the name of your repository to be exactly this: `groupXX-project` and then let your team member(s) know the name of your group.
 - Other team member(s) should search for their group name and join it.
 
