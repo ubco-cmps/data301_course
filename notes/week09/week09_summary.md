@@ -11,7 +11,7 @@ Welcome to Week 9 - now that you know how to create Data Visualizations, the nex
 <label><input type="checkbox" id="week09_task2" class="box"> Attend the [Classes](classes.md) this week </input></label>
 
 
-<label><input type="checkbox" id="week09_task3" class="box"> Attend the **[lab](./lab8/README.md)** this week</input></label>
+<label><input type="checkbox" id="week09_task3" class="box"> Attend the **[lab](./lab/README.md)** this week</input></label>
 
 ```{tip}
 The labs will be organized as semi-structured help sessions.

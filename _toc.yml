@@ -67,11 +67,11 @@ parts:
         - file: notes/week03/lab/Task2.md
     - file: notes/week03/log
     - file: notes/week03/Class3A/Class3A
-      title: Class 1 - Introduction to Version Control with Git
+      title: A. Introduction to Version Control with Git
     - file: notes/week03/Class3B/Class3B
-      title: Class 2 - More Practice with Git
+      title: B. More Practice with Git
     - file: notes/week03/Class3C/Class3C
-      title: Class 3 - Practical life with Git + Project
+      title: C. Practical life with Git + Project
 
   - file: notes/week04/week04_summary
     title: Week 4
@@ -85,11 +85,11 @@ parts:
         - file: notes/week04/lab/Task2.md
     - file: notes/week04/log
     - file: notes/week04/Class4A/Class4A
-      title: Class 1 - Introduction to Python
+      title: A. Introduction to Python
     - file: notes/week04/Class4B/Class4B
-      title: Class 2 - More Python
+      title: B. More Python
     - file: notes/week04/Class4C/Class4C
-      title: Class 3 - Loading Data with Python
+      title: C. Loading Data with Python
 
   - file: notes/week05/week05_summary
     title: Week 5
@@ -107,15 +107,40 @@ parts:
           title: Task 3
     - file: notes/week05/log
     - file: notes/week05/Class5A/Class5A
-      title: Class 1 - Introduction to Pandas
+      title: A. Introduction to Pandas
     - file: notes/week05/Class5B/Class5B
-      title: Class 2 - More Pandas
+      title: B. More Pandas
     - file: notes/week05/Class5C/Class5C
-      title: Class 3 - Advanced Pandas
+      title: C. Advanced Pandas
     - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_8iEcSIGW3MWw8eO
       title: Mid-course Feedback (Anonymous)
 
+  - file: notes/week06/week06_summary
+    title: Week 6 (Break!)
 
+  - file: notes/week07/week07_summary
+    title: Week 7
+    sections:
+    - file: notes/week07/videos
+      title: Videos
+    - file: notes/week07/lab/README
+      title: Lab 5
+      sections:
+        - file: notes/week07/lab/Task1
+          title: Task 1
+        - file: notes/week07/lab/Task2
+          title: Task 2
+        - file: notes/week07/lab/Task3
+          title: Task 3
+        - file: notes/week07/lab/Task4
+          title: Task 4
+    - file: notes/week07/log
+    - file: notes/week07/Class7A/Class7A
+      title: A. Functions in Python
+    - file: notes/week07/Class7B/Class7B
+      title: B. More Functions
+    - file: notes/week07/Class7C/Class7C
+      title: C. Organizing Code
 
 #   - file: notes/week02/week02_summary
 #     title: Week 2

@@ -4,14 +4,14 @@ Week 7
 
 Hello!
 
-Welcome to Week 7 - this week we will be learning how to program with Python and Pandas.
+Welcome to Week 7 - this week we will be learning how to write functions with Python and Pandas.
 
 <label><input type="checkbox" id="week07_task1" class="box"> Review feedback you received, reflect on it, and make corrections to your repo if needed. </input></label>
 
 <label><input type="checkbox" id="week07_task2" class="box"> Attend the [Classes](classes.md) this week </input></label>
 
 
-<label><input type="checkbox" id="week07_task3" class="box"> Attend the **[lab](./lab6/README.md)** this week</input></label>
+<label><input type="checkbox" id="week07_task3" class="box"> Attend the **[lab](./lab/README.md)** this week</input></label>
 
 ```{tip}
 The labs will be organized as semi-structured help sessions.

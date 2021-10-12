@@ -10,7 +10,7 @@ Welcome to Week 8 - this week we will be continuing our journey with some exciti
 
 <label><input type="checkbox" id="week08_task2" class="box"> Attend the [Classes](classes.md) this week </input></label>
 
-<label><input type="checkbox" id="week08_task3" class="box"> Attend the **[lab](./lab7/README.md)** this week</input></label>
+<label><input type="checkbox" id="week08_task3" class="box"> Attend the **[lab](./lab/README.md)** this week</input></label>
 
 ```{tip}
 The labs will be organized as semi-structured help sessions.
