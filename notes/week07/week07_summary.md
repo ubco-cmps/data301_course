@@ -22,8 +22,8 @@ You are welcome to attend additional labs or Student Hours in the course if you 
 ```
 <label><input type="checkbox" id="week07_task4" class="box"> Watch the **[assigned videos](./videos.md)**</input></label>
 
-<label><input type="checkbox" id="week07_task3" class="box"> Attend the **[lab](./lab6/README.md)** this week</input></label>
+<label><input type="checkbox" id="week07_task3" class="box"> Attend the **[lab](./lab/README.md)** this week</input></label>
 
-<label><input type="checkbox" id="week07_task5" class="box"> Complete **[Test 2](./test2.md)**</input></label>
+<label><input type="checkbox" id="week07_task5" class="box"> Complete **[Test 2](./test.md)**</input></label>
 
-<label><input type="checkbox" id="week07_task6" class="box"> No Learning Log due this week, the final exam will have some course reflection questions.</input></label>
+<label><input type="checkbox" id="week07_task6" class="box"> Complete the weekly **[Learning Log](./log.md)**</input></label>
