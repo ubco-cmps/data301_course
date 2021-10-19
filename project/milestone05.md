@@ -90,7 +90,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 1. MINOR version when you add functionality in a backwards compatible manner, and
 1. PATCH version when you make backwards compatible bug fixes.
 
-## OPTIONAL Task 5: Give others feedback!
+## OPTIONAL Task 4: Give others feedback!
 
 Many of your classmates are doing some very interesting projects with some cool datasets.
 Since this is a course introducing you to Data Analytics, I think it would be very helpful for you to look at their analyses and results, think critically about it, and perhaps provide some useful feedback.
