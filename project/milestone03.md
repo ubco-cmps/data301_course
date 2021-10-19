@@ -21,9 +21,7 @@ If you are working as a group, you will be expected to show proficiency in all t
 If you are working in groups, each person should do their EDA separately and independently. 
 You have chosen rich datasets and there should be plenty of different features for each of you to explore.
 
-**Note: The EDA task (Task 4) is different from the Analysis task (Task 5). The EDA is "exploratory" in nature, and is done at a superficial level to get counts of columns, limits, ranges, understand the data distribution, and a cursory look at the relationships between the columns. Think of it as a 'quick and dirty' analysis of your data in preparation for a more thorough analysis.**
-
-You should use the `project_functions` to store any functions (including method chains) rather than defining them in your notebook. 
+**Note: The EDA task (Task 1) is different from the Analysis task (Task 4). The EDA is "exploratory" in nature, and is done at a superficial level to get counts of columns, limits, ranges, understand the data distribution, and a cursory look at the relationships between the columns. Think of it as a 'quick and dirty' analysis of your data in preparation for a more thorough analysis.**
 
 - As a rough guideline, **each** EDA should:
 
@@ -160,13 +158,13 @@ Within your Jupyter Notebook, test your function to make sure it returns the out
 
 ### Step 3: Move your function into a new .py file
 
-- Inside your `notebooks` directory, create a new directory called `scripts`; you will place any `.py` files from your project within this directory.
-- Create a new file `project_functions.py` (or other suitable name) and add the module imports you may need (`pandas`, `numpy`, etc...).
-- Copy the `load_and_process` function into the `project_functions.py` file.
+- Inside your `notebooks` directory each person in the group will create a `project_functions.py` file.
+- Create a new file `project_functions1.py`, `project_functions2.py`, `project_functions3.py` (one for each student) and add the module imports you may need (`pandas`, `numpy`, etc...).
+- Copy the `load_and_process` function into your `project_functions.py` file.
 - Save the file.
 - Add and commit it to your repository.
 - Push it up to GitHub so that your teammates can also see this file.
-- Each member of a group should now create a new Jupyter Notebook file (in their analysis folder) `import` the `project_functions` file, and use the `load_and_process` function
+- Each member of a group should now `import` the `project_functions` file in their `analysis.ipynb` file, and use the `load_and_process` function
 - A Jupyter Notebook cell should look something like:
 
 ```
@@ -184,7 +182,7 @@ This will reduce the need for you and others to repeat yourself, and allow you t
 - [This article](https://realpython.com/absolute-vs-relative-python-imports/#relative-imports) is a very comprehensive guide to importing files and functions in python. Much of this is beyond the scope of DATA 301, but for those interested and curious, that is a very useful resource.
 
 
-## Task 4. Conduct your analysis to help answer your research question(s) (30%)
+## Task 4. Conduct your analysis to help answer your research question(s)
 
 Armed with your EDA, you should now be ready to conduct a thorough analysis to answer your research question(s).
 This section can be completed together as a group (and only one file should be submitted) but you may (and are encouraged) to try this yourself first, and then combine them together in one submission.
