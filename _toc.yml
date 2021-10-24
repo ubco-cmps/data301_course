@@ -145,7 +145,7 @@ parts:
     title: Week 8
     sections:
     - file: notes/week08/lab/README
-      title: Lab 5
+      title: Lab 6
       sections:
         - file: notes/week08/lab/Task1
           title: Task 1
@@ -160,7 +160,7 @@ parts:
       title: A. Introduction to Data Visulization
     - file: notes/week08/Class8B/Class8B
       title: B. Seaborn I
-    - file: notes/week08/Class8B/Class8B
+    - file: notes/week08/Class8C/Class8C
       title: C. Seaborn II
     - file: notes/week08/test
 
