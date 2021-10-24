@@ -21,6 +21,6 @@ You are welcome to attend additional labs or Student Hours in the course if you 
 ```
 <label><input type="checkbox" id="week08_task4" class="box"> Watch the **[assigned videos](./videos.md)**</input></label>
 
-<label><input type="checkbox" id="week08_task5" class="box"> Complete **[Test 3](./test3.md)** and [Bonus Test 3](./test3_bonus.md)on course policies and the syllabus</input></label>
+<label><input type="checkbox" id="week08_task5" class="box"> Complete **[Bonus Test 2](./test.md)** if you need to</input></label>
 
-<label><input type="checkbox" id="week08_task6" class="box"> No Learning Log due this week, the final exam will have some course reflection questions.</input></label>
+<label><input type="checkbox" id="week08_task6" class="box">Complete the Learning Log</input></label>
