@@ -144,6 +144,7 @@ parts:
   - file: notes/week08/week08_summary
     title: Week 8
     sections:
+    - file: notes/week08/videos
     - file: notes/week08/lab/README
       title: Lab 6
       sections:
@@ -155,7 +156,6 @@ parts:
           title: Task 3
         - file: notes/week08/lab/Task4
           title: Task 4
-    - file: notes/week08/log
     - file: notes/week08/Class8A/Class8A
       title: A. Introduction to Data Visulization
     - file: notes/week08/Class8B/Class8B
@@ -163,8 +163,8 @@ parts:
     - file: notes/week08/Class8C/Class8C
       title: C. Seaborn II
     - file: notes/week08/test
-
-
+    - file: notes/week08/log
+    
 #   - file: notes/week02/week02_summary
 #     title: Week 2
 #     sections:
