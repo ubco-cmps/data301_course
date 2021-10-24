@@ -140,6 +140,31 @@ parts:
     - file: notes/week07/Class7C/Class7C
       title: C. Organizing Code
     - file: notes/week07/test
+
+  - file: notes/week08/week08_summary
+    title: Week 8
+    sections:
+    - file: notes/week08/lab/README
+      title: Lab 5
+      sections:
+        - file: notes/week08/lab/Task1
+          title: Task 1
+        - file: notes/week08/lab/Task2
+          title: Task 2
+        - file: notes/week08/lab/Task3
+          title: Task 3
+        - file: notes/week08/lab/Task4
+          title: Task 4
+    - file: notes/week08/log
+    - file: notes/week08/Class8A/Class8A
+      title: A. Introduction to Data Visulization
+    - file: notes/week08/Class8B/Class8B
+      title: B. Seaborn I
+    - file: notes/week08/Class8B/Class8B
+      title: C. Seaborn II
+    - file: notes/week08/test
+
+
 #   - file: notes/week02/week02_summary
 #     title: Week 2
 #     sections:
