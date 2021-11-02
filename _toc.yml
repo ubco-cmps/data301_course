@@ -157,13 +157,33 @@ parts:
         - file: notes/week08/lab/Task4
           title: Task 4
     - file: notes/week08/Class8A/Class8A
-      title: A. Introduction to Data Visulization
+      title: A. Introduction to Data Visualization
     - file: notes/week08/Class8B/Class8B
       title: B. Seaborn
     - file: notes/week08/Class8C/Class8C
       title: C. Creating Effective Visualizations
     - file: notes/week08/test
     - file: notes/week08/log
+
+  - file: notes/week09/week09_summary
+    title: Week 8
+    sections:
+    - file: notes/week09/videos
+    - file: notes/week09/lab/README
+      title: Lab 6
+      sections:
+        - file: notes/week09/lab/Task1
+          title: Task 1
+        - file: notes/week09/lab/Task2
+          title: Task 2
+    - file: notes/week09/Class9A/Class8A
+      title: A. Motivating EDA
+    - file: notes/week09/Class8B/Class8B
+      title: B. Seaborn
+    - file: notes/week09/Class8C/Class8C
+      title: C. Creating Effective Visualizations
+    - file: notes/week09/test
+    - file: notes/week09/log
     
 #   - file: notes/week02/week02_summary
 #     title: Week 2
