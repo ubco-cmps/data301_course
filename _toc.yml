@@ -178,12 +178,89 @@ parts:
           title: Task 2
     - file: notes/week09/Class9A/Class9A
       title: A. Motivating EDA
-    - file: notes/week09/Class8B/Class9B
+    - file: notes/week09/Class9B/Class9B
       title: B. Tableau
-    - file: notes/week09/Class8C/Class9C
+    - file: notes/week09/Class9C/Class9C
       title: C. Review
     - file: notes/week09/test
     - file: notes/week09/log
+
+  - file: notes/week10/week10_summary
+    title: Week 10
+  - file: notes/week10/test
+  - file: notes/week10/log
+
+  - file: notes/week11/week11_summary
+    title: Week 11
+    sections:
+    - file: notes/week11/videos
+    - file: notes/week11/lab/README
+      title: Lab 8
+      sections:
+        - file: notes/week11/lab/Task2
+          title: Task 1 and 2
+        - file: notes/week11/lab/Task3
+          title: Task 3
+        - file: notes/week11/lab/Task4
+          title: Task 4
+        - file: notes/week11/lab/Task5
+          title: Task 5
+    - file: notes/week11/Class11A/Class11A
+      title: A. 
+    - file: notes/week11/Class11B/Class11B
+      title: B. 
+    - file: notes/week11/Class11C/Class11C
+      title: C. 
+    - file: notes/week11/test
+    - file: notes/week11/log
+
+  - file: notes/week12/week12_summary
+    title: Week 12
+    sections:
+    - file: notes/week12/videos
+    - file: notes/week12/lab/README
+      title: Lab 9
+      sections:
+        - file: notes/week12/lab/Task2
+          title: Task 1
+        - file: notes/week12/lab/Task3
+          title: Task 2
+        - file: notes/week12/lab/Task4
+          title: Task 3
+        - file: notes/week12/lab/Task5
+          title: Task 4
+    - file: notes/week12/Class12A/Class12A
+      title: A. 
+    - file: notes/week12/Class12B/Class12B
+      title: B. 
+    - file: notes/week12/Class12C/Class12C
+      title: C. 
+    - file: notes/week12/test
+    - file: notes/week12/log
+
+  - file: notes/week13/week13_summary
+    title: Week 13
+    sections:
+    - file: notes/week13/videos
+    - file: notes/week13/lab/README
+      title: Lab 10
+      sections:
+        - file: notes/week13/lab/Task1
+          title: Task 1
+        - file: notes/week13/lab/Task2
+          title: Task 2
+        - file: notes/week13/lab/Task3
+          title: Task 3
+        - file: notes/week13/lab/Task4
+          title: Task 4
+    - file: notes/week13/Class13A/Class13A
+      title: A. 
+    - file: notes/week13/Class13B/Class13B
+      title: B. 
+    - file: notes/week13/Class13C/Class13C
+      title: C. 
+    - file: notes/week13/test
+    - file: notes/week13/log
     
 #   - file: notes/week02/week02_summary
 #     title: Week 2
