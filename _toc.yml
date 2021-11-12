@@ -221,14 +221,16 @@ parts:
     - file: notes/week12/lab/README
       title: Lab 9
       sections:
-        - file: notes/week12/lab/Task2
+        - file: notes/week12/lab/Task1
           title: Task 1
-        - file: notes/week12/lab/Task3
+        - file: notes/week12/lab/Task2
           title: Task 2
-        - file: notes/week12/lab/Task4
+        - file: notes/week12/lab/Task3
           title: Task 3
-        - file: notes/week12/lab/Task5
+        - file: notes/week12/lab/Task4
           title: Task 4
+        - file: notes/week12/lab/Task5
+          title: Task 5
     - file: notes/week12/Class12A/Class12A
       title: A. 
     - file: notes/week12/Class12B/Class12B
