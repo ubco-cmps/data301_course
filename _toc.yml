@@ -187,8 +187,9 @@ parts:
 
   - file: notes/week10/week10_summary
     title: Week 10
-  - file: notes/week10/test
-  - file: notes/week10/log
+    sections:
+    - file: notes/week10/test
+    - file: notes/week10/log
 
   - file: notes/week11/week11_summary
     title: Week 11
