@@ -1,3 +1,3 @@
-# Class 11A - Example Tableau Dashboards
+# Class 11B - Introduction to Dashboard Design
 
-In this class we looked at some examples of Tableau Dashboards that students submitted in the past.
+<iframe src="../../Lecture11B_Dashboard_Design.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
