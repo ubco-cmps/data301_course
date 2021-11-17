@@ -207,11 +207,11 @@ parts:
         - file: notes/week11/lab/Task5
           title: Task 5
     - file: notes/week11/Class11A/Class11A
-      title: A. 
+      title: A. Tableau Dashboards
     - file: notes/week11/Class11B/Class11B
-      title: B. 
+      title: B. Principles of Effective Dashboard Design
     - file: notes/week11/Class11C/Class11C
-      title: C. 
+      title: C. Example Dashboards
     - file: notes/week11/test
     - file: notes/week11/log
 
