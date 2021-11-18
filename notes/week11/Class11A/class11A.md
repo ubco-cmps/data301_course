@@ -1,3 +1,3 @@
-# Class 11B - Introduction to Dashboard Design
+# Class 11A - Tableau Dashboards
 
-<iframe src="../../Lecture11B_Dashboard_Design.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
+In this class we reviewed the guidelines for Milestone 4 and I shared some Tableau dashboards from previous years to give you some guidance on what you should be creating.
