@@ -13,6 +13,6 @@ The exact details are subject to change, so this is roughly the plan we will try
 | 8  | Oct 25 - Oct 31 | Data Visualization                                 | Lab 6  | LL6  | PM 3               | (Bonus Test 2) |                              |
 | 9  | Nov 1 - 7       | Choosing an appropriate visualization              | Lab 7  | LL7  | -                  | Test 3         | Python and Pandas            |
 | 10 | Nov 8 - 14      | Reading week <br />(no new material)               | -      | -    | -                  | (Bonus Test 3) | -                            |
-| 11 | Nov 15 - 21     | Tableau and Microsoft Excel                        | Lab 8  | LL8  | PM 4               | Test 4         | Data Visualization and Excel |
-| 12 | Nov 22 - 28     | Microsoft Excel & Project Wrap-up                  | Lab 9  | LL9  | PM 5               | (Bonus Test 4) | -                            |
-| 13 | Nov 29 - Dec 8  | Project Wrap-up and Review <br />(no new material) | Lab 10 | LL10 | -                  | -              | -                            |
+| 11 | Nov 15 - 21     | Tableau and Microsoft Excel                        | Lab 8  | LL8  | PM 4               | -              | -                            |
+| 12 | Nov 22 - 28     | Microsoft Excel & Project Wrap-up                  | Lab 9  | LL9  | PM 5               | Test 4         | Data Visualization and Excel |
+| 13 | Nov 29 - Dec 8  | Project Wrap-up and Review <br />(no new material) | Lab 10 | LL10 | -                  | (Bonus Test 4) | -                            |
