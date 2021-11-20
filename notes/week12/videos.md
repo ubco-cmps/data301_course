@@ -14,7 +14,7 @@ You can download the [Excel file used in lecture here](https://github.com/ubco-m
 
 ### Slides
 
-<iframe src="../../../data_301_excel_intro_lecture2.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
+<iframe src="../../data_301_excel_intro_lecture2.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
 
 ### Video
 
@@ -44,4 +44,4 @@ You can download the [Excel file used in lecture here](https://github.com/ubco-m
 
 - Advanced analysis with Microsoft Excel
 
-<iframe src="../../../data_301_excel_analysis.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
+<iframe src="../../data_301_excel_analysis.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
