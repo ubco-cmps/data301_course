@@ -22,7 +22,7 @@ Click links below to accept the labs, I expect they will be released by Monday m
 | Lab 7 - Data Analysis                           | Saturday, Nov 6th at 18:00   | [Accept Lab](https://classroom.github.com/a/16ksGqJ4) |
 | Lab 8 - Data Visualization                      | Saturday, Nov 20th at 18:00  | [Accept Lab](https://classroom.github.com/a/XGtNurl3) |
 | Lab 9 - Tableau                                 | Saturday, Nov 27th at 18:00  | [Accept Lab](https://classroom.github.com/a/FQiLf1me) |
-| Lab 10 - Excel                                  | Saturday, Dec 4th at 18:00   | Accept Lab[](https://classroom.github.com/a/tQIAYH2E) |
+| Lab 10 - Excel                                  | Saturday, Dec 4th at 18:00   | [Accept Lab](https://classroom.github.com/a/tQIAYH2E) |
 
 ## Project
 
