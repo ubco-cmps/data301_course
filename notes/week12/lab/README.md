@@ -18,7 +18,7 @@ This lab uses Tableau to visualize, analyze, and explore data sets. There is an 
 
 - Download the latest version of Tableau Desktop (you do not need Tableau Prep Builder).
 - Click on the link above and select “Download Tableau Desktop”. On the form, enter your school email address for Business E-mail and enter the name of your school for Organization.
-- Activate with your product key: `TCVS-4FCA-D5A0-C0ED-06A3`
+- Activate with your product key: `TC8K-A745-0070-5BFB-E8D5`
 - If you already have a copy of Tableau Desktop installed: update your license in the application: Help menu → Manage Product Keys
 
 ## Submission Instructions
