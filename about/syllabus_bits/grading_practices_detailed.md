@@ -19,7 +19,3 @@ Any submissions submitted past the grace period will not be graded (with some ex
 ```{note}
 Important: The maximum mark you can get on each item is 100%. Bonus marks are not transferable to other labs.
 ```
-
-```{note}
-Note: Any requests for changes to final exams must be sent to the office of the Associate Dean of Students (bsasdeansoffice.ubco@ubc.ca).
-```

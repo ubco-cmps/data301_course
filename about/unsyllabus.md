@@ -34,6 +34,8 @@
 ```{include} syllabus_bits/schedule.md
 ```
 
+<div class="page_break"> </div>
+
 ## Getting Help
 
 ```{include} unsyllabus_bits/getting_help.md
@@ -83,6 +85,8 @@
 
 ```{include} unsyllabus_bits/acknowledgements.md
 ```
+
+<div class="page_break"> </div>
 
 ## References
 

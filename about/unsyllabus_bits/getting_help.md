@@ -26,5 +26,3 @@ Until then, enjoy being [Rick-Rolled](https://www.dictionary.com/e/slang/rickrol
 
 ```{include} syllabus_bits/course_teaser.md
 ```
-
-<div class="page_break"> </div>

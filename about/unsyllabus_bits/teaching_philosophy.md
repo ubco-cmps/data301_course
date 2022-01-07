@@ -15,7 +15,7 @@ See {numref}`masterymodel1` for a mental model of how learning works {cite}`Ambr
 
 ```{figure} ../images/masterymodel1.png
 ---
-width: 750px
+width: 650px
 name: masterymodel1
 ---
 To develop mastery in a concept, students must first acquire the necessary skills, then practice integrating them, and finally know when to apply what they have learned. This figure was adapted from Figure 4.1 of the book "How Learning Works".
