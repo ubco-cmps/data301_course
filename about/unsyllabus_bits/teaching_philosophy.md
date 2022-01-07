@@ -28,7 +28,7 @@ The terms "knowledge transfer" and "sense-making" applied in this context is gen
 
 ```{figure} ../images/masterymodel2.png
 ---
-height: 500px
+height: 400px
 name: masterymodel2
 ---
 This table describes how I think each course activity should be classified between knowledge transfer and sense-making.
