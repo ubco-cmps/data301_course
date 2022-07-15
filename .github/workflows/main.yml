@@ -14,10 +14,10 @@ jobs:
     - uses: actions/checkout@v2
 
     # Install dependencies
-    - name: Set up Python 3.8
+    - name: Set up Python 3.9
       uses: actions/setup-python@v1
       with:
-        python-version: 3.8
+        python-version: 3.9
 
     - name: cache installation
       uses: actions/cache@v2
@@ -41,8 +41,8 @@ jobs:
         REMOTE_KEY: ${{ secrets.SERVER_SSH_KEY }}
         REMOTE_DIR: ${{ secrets.REMOTE_TARGET }}
         LOCAL_DIR: "_build/html/"
-        COURSE_NAME: "data301"
-        TERM: "2021_WT1"
+        COURSE_NAME: "cosc301"
+        TERM: "2022_WT1"
       run: |
         mkdir ~/.ssh
         echo "$REMOTE_KEY" > ~/.ssh/id_rsa
