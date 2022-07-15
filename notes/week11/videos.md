@@ -11,9 +11,7 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 ```{admonition} Checklist of items
 :class: tip
 
-<input type="checkbox" id="week06_video1" class="box"><label>6.1 Tableau Workshop</input></label>
-
-```
+<input type="checkbox" id="week06_video1" class="box"><label>6.1 Tableau Workshop</input></label>```
 ````
 
 ```{dropdown} 11.1 Tableau Workshop 

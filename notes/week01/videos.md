@@ -20,8 +20,8 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 ## Required Videos
 
 ```{dropdown} 1.1: Create a GitHub Account
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
     :open:
 
     If you have already created a GitHub.com account, you do not need to watch this video.
@@ -34,8 +34,8 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 ```
 
 ```{dropdown} 1.2: Working on a Lab on GitHub Classroom
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
 <div class="container youtube">
 <iframe src="https://player.vimeo.com/video/570973310?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Working on a Lab with GitHub Classroom"></iframe>
@@ -44,8 +44,8 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 ```
 
 ```{dropdown} 1.3: Submitting your GitHub Classroom assignment via Gradescope
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
 This **video will start at the 2 minute and 8 second mark** as the stuff before is not relevant for this course.
 
@@ -56,8 +56,8 @@ This **video will start at the 2 minute and 8 second mark** as the stuff before 
 ```
 
 ```{dropdown} 1.4: Introduction to Lab 1B
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
 <div class="container youtube">
 <iframe src="https://player.vimeo.com/video/570825537" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Data 301 Lab Introduction - BashCrawl"></iframe>

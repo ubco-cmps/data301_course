@@ -8,9 +8,7 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 ```{admonition} Checklist of items
 :class: tip
 
-<input type="checkbox" id="week04_video1" class="box"><label>4.1 Seaborn Tutorial by Derek Banas</input></label>
-
-```
+<input type="checkbox" id="week04_video1" class="box"><label>4.1 Seaborn Tutorial by Derek Banas</input></label>```
 ````
 ## Required Videos
 

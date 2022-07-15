@@ -14,8 +14,8 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 ## Required Videos
 
 ```{dropdown} 5.1: Python Pandas Data Science Tutorial
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
     Here is an outline of the timestamps of this video (clickable links in the [YouTube Video description](https://www.youtube.com/watch?v=vmEHCJofslg&feature=emb_title))
 

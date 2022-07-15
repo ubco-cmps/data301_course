@@ -28,8 +28,8 @@ Please watch the first two videos BEFORE the first class on Monday!
 ```
 
 ```{dropdown} 3.1: Why Use Git?
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
     :open:
 
 <div class="container youtube">
@@ -38,8 +38,8 @@ Please watch the first two videos BEFORE the first class on Monday!
 ```
 
 ```{dropdown} 3.2: How Git Works
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
 <div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/iNP_KmOFqXs" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -51,8 +51,8 @@ Please watch the remaining videos BEFORE the Wednesday's class! We will be doing
 ```
 
 ```{dropdown} 3.3: Creating a repository
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
     Note: It is important you know how to create a repository for your own personal projects. However in this course, you will always get a "GitHub Classroom link" that will create a repository with some starter code.
 
@@ -62,8 +62,8 @@ Please watch the remaining videos BEFORE the Wednesday's class! We will be doing
 ```
 
 ```{dropdown} 3.4: Staging Files
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
 <div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/KngvG8WzYLU" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -71,8 +71,8 @@ Please watch the remaining videos BEFORE the Wednesday's class! We will be doing
 ```
 
 ```{dropdown} 3.5: Making Commits
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
 <div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/Fhgga2s_RmM" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -82,8 +82,8 @@ Please watch the remaining videos BEFORE the Wednesday's class! We will be doing
 ## Optional Videos
 
 ```{dropdown} 3.6: Quick Introduction to Jupyter Notebooks
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
 <div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/jZ952vChhuI" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

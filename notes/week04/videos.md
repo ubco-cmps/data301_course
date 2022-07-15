@@ -30,8 +30,8 @@ There are no required videos this week.
 ## Optional Videos
 
 ```{dropdown} 4.1 Math & Variables in Python
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
     :open:
 
 <div class="container youtube">
@@ -40,8 +40,8 @@ There are no required videos this week.
 ```
 
 ```{dropdown} 4.2: Conditional Statements (if, elif, else) in Python
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
 <div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/vsVGPcfxEiA" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -49,8 +49,8 @@ There are no required videos this week.
 ```
 
 ```{dropdown} 4.3: Functions in Python
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
     Note: It is important you know how to create a repository for your own personal projects. However in this course, you will always get a "GitHub Classroom link" that will create a repository with some starter code.
 
@@ -60,8 +60,8 @@ There are no required videos this week.
 ```
 
 ```{dropdown} 4.4: Lists & Tuples in Python
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
 <div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/_zFI6ytHHdY" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -69,8 +69,8 @@ There are no required videos this week.
 ```
 
 ```{dropdown} 4.5: For Loops & While Loops in Python
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
 <div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/WPF5M_Ic6Fc" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
