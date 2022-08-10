@@ -41,8 +41,8 @@ jobs:
         REMOTE_KEY: ${{ secrets.SERVER_SSH_KEY }}
         REMOTE_DIR: ${{ secrets.REMOTE_TARGET }}
         LOCAL_DIR: "_build/html/"
-        COURSE_NAME: "cosc301"
-        TERM: "2022_WT1"
+        COURSE_NAME: "data301"
+        TERM: "2022_WT2"
       run: |
         mkdir ~/.ssh
         echo "$REMOTE_KEY" > ~/.ssh/id_rsa
