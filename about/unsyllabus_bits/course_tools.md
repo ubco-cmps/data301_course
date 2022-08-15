@@ -8,7 +8,7 @@ In this course, we will be using the following required learning technologies (p
 - [Ed Discussion](https://edstem.org/privacy)
 - [Gradescope](https://www.gradescope.com/privacy)
 - [GitHub](https://docs.github.com/en/github/site-policy/github-privacy-statement)
-<!-- - [Sli.do](https://www.sli.do/terms#privacy-policy) -->
+- [Sli.do](https://www.slido.com/terms?experience_id=1&utm_campaign=_eid-007-control&utm_source=www.slido.com-_ab#privacy-policy)
 
 All tools used in the course will be used in a [FIPPA-compliant](https://universitycounsel.ubc.ca/subject-areas/access-and-privacy-general/access-to-information/about-fippa/) manner, with your privacy top of mind. 
 New tools may be added to the course as the need arises, and I will update this section with the appropriate information and make an announcement if a new tool is added midway through a course.
@@ -16,6 +16,15 @@ New tools may be added to the course as the need arises, and I will update this 
 ```{warning}
 Even though the tools above are required for this course, if you have a moral or legal objection to my use of these tools, please do reach out to me and we can likely find an acceptable accommodation.
 ```
+
+### Link your Canvas account to Gradescope [Required]
+
+On the left sidebar in Canvas, click on Gradescope.
+<img src="../images/GradescopeAccount.gif" width="40%">
+
+You should then be guided through a series of steps to create an account, set a password, and link it to our course. 
+
+This is **very** important for you to do as it'll be our primary mechanism for delivering you feedback in this course.
 
 ### Sign up for a (free) Ed Discussion account [Required]
 
@@ -36,6 +45,19 @@ In this course, we will be using GitHub to release your labs and you will be usi
 
 ```{warning}
 GitHub is a cloud-based tool where your personal data is stored on servers outside Canada. When you create an account on GitHub, you are being transferred to these servers. While GitHub adheres to strict U.S. privacy regulations (FERPA), UBC cannot guarantee security of your private details on servers outside of Canada. If you are not comfortable with your personal data residing on servers outside Canada, to protect your identity, UBC suggests creating a pseudonym to protect your privacy. With this, and any other cloud-based tools/services, please exercise caution whenever sharing your personal information.
+```
+
+### Download the Sli.do app (Optional)
+
+During classes I will periodically ask questions to students and we will be using [Sli.do](https://sli.do) as our audience response system.
+This interface for Sli.do is very intuitive and it does not require creation of an account.
+You can use Slido on any browser including a laptop, tablet, or mobile device.
+Below is a demo of what you can expect the Slido experience to be like (video credit to [Sli.do](https://www.slido.com/_next/static/media/aedeb61313e69817.mp4)):
+
+<img src="../images/slido.gif">
+
+```{tip}
+It is your choice how you want to interact with the tool, but you can [download the iOS](https://apps.apple.com/ca/app/slido-q-a-and-polling/id954596240) or [download the Android app](https://play.google.com/store/apps/details?id=com.slido.app).
 ```
 
 ### What type of information will I collect about you in this course?
