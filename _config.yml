@@ -18,7 +18,6 @@ html:
   use_repository_button: true
   use_issues_button: true
   use_edit_page_button: true
-  google_analytics_id: UA-168693744-4
   baseurl : "https://firas.moosvi.com/courses/2021_WT1/data301"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   comments:
     hypothesis: false
@@ -66,22 +65,22 @@ sphinx:
       TITLE: "Introduction to Data Analytics"
       PREREQS: "Either (a) third-year standing, or (b) one of COSC 111 or COSC 122."
       COREQS: "None"
-      TERM: "2021 Winter Term 1"
-      ROOM: "Online (Zoom) - Lectures will be recorded and available on Canvas."
-      MEETING_TIMES: "Monday, Wednesday, Friday from 2-3 PM"
+      TERM: "2022 Winter Term 1"
+      ROOM: "L 305"
+      MEETING_TIMES: "Tuesday, Thursday 3:30-5 PM"
       GRACE_PERIOD: "48 hour"
-      W_DATE_1: "11:59 PDT on September 20, 2021"
-      W_DATE_2: "11:59 PDT on November 12, 2021"
-      W_DATE_3: "November 12, 2021"
-      EXAM_PERIOD: "Saturday December 11th - Wednesday, December 22"
-      CANVAS_ID: "81264"
+      W_DATE_1: "11:59 PDT on September 19, 2022"
+      W_DATE_2: "11:59 PDT on November 18, 2022"
+      W_DATE_3: "November 18, 2022"
+      EXAM_PERIOD: "Sunday December 11th - Thursday, December 22"
+      CANVAS_ID: "107737"
       CANVAS_LINK: "https://canvas.ubc.ca/courses/CANVAS_ID"
       ZOOM_LINK: "[Zoom](https://canvas.ubc.ca/courses/CANVAS_ID/external_tools/15408)"
       ANNOUNCEMENTS_LINK: "[Canvas Announcements](https://canvas.ubc.ca/courses/CANVAS_ID/announcements)"
-      COURSE_LINK: "https://firas.moosvi.com/courses/2021_WT1/data301"
+      COURSE_LINK: "https://firas.moosvi.com/courses/cosc301/2022_WT1/"
       FORUM_LINK: "[Ed Discussion](https://edstem.org/us/join/dHvJFC)"
       #FORUM_LINK: "[Ed Discussion (sign up for it here)](https://ubc.ca1.qualtrics.com/jfe/form/SV_1BTAIXiMPvBRR2K)"
       ANALYTICS_OPTOUT: "[complete this form](https://ubc.ca1.qualtrics.com/jfe/form/SV_0p6lP4TtNpJn410)"
-      FORMAT: "Lectures and Labs will all be running online in this course."
-      ASSOCIATE_HEAD: "Yves Lucet [yves.lucet@ubc.ca](mailto:yves.lucet@ubc.ca)"
+      FORMAT: "Lectures and Labs will all be running in-person in this course."
+      ASSOCIATE_HEAD: "Dr. Yves Lucet [yves.lucet@ubc.ca](mailto:yves.lucet@ubc.ca) or the Department Head Dr. John Braun at [cmps.depthead@ubc.ca](cmps.depthead@ubc.ca)"
       ANON_FEEDBACK: "[feedback form](https://ubc.ca1.qualtrics.com/jfe/form/SV_6updBKL1SNYvV6m)"

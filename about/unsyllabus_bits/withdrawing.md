@@ -7,8 +7,8 @@ Below is some information that might be helpful for you in making the decision.
 | Withdrawal type        | Effect on Transcript | Tuition refund                                                                                     |
 |------------------------|----------------------|----------------------------------------------------------------------------------------------------|
 | Before {{ W_DATE_1 }}  | None                 | 100% refund                                                                                        |
-| Before {{ W_DATE_2 }}  | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
-| After {{ W_DATE_3 }} ^ | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
+| Before {{ W_DATE_2 }}  | W on transcript      | [See policy details](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
+| After {{ W_DATE_3 }} ^ | W on transcript      | [See policy details](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
 
 ^ Note: Withdrawal after this date cannot happen without approval from the Faculty (Email: fos.students.ubco@ubc.ca).
 
