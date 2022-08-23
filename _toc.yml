@@ -1,9 +1,11 @@
 format: jb-book
-root: about/unsyllabus
+root: about/pre_term
 title: Course Unsyllabus
-# parts:
-# - caption: About this course
-#   chapters:
+
+parts:
+- caption: About this course
+  chapters:
+  - file: about/unsyllabus
 #   - file: about/syllabus
 #   - file: about/course_schedule
 
