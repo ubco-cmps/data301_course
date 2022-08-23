@@ -8,8 +8,8 @@
 Welcome to {{ COURSE_CODE }}, {{ TITLE }} !
 I am very excited that you've decided to enrol in my class.
 Whether it's your choice to take this course, or if your were forced into it by your program/degree is not really that important - you're here now, and you're welcomed!
-Many of you are entering your first year of university in a new city, and maybe even a new country!
-To the students local to the area, you have a big responsibility to help your fellow students feel welcome and at home, in their new home.
+Since this is an upper-level course, there are higher expectations of you self-directing a lot of your own learning.
+There will be plenty of opportunities to work together in teams, explore things that are beyond the scope of the course, and do some really cool work.
 Everyone should try and make the effort to make some new friends, study partners, and acquaintances.
 We're emerging from a lockdowns and online learning, so don't think you're the only one whose social skills have severely deteriorated over the past few years!
 Take the time to introduce yourselves, share your favourite places to go, hangout, eat, socialize etc.
