@@ -144,8 +144,16 @@ Even in those cases, unless they tell you otherwise and insist, it's usually wis
     :class-container: sd-shadow-lg
     :color: primary
 
-Unfortunately I do not have an answer for you yet - I understand this is probably a really stressful experience and it's definitely not your fault but we're working on it.
-I will let you know as soon as we can once we have official word on the process for this.
+I understand this is probably a really stressful experience, and there are all sorts of issues with travel delays and visa problems, not to mention the fact that the pandemic is still around. It's definitely not your fault.
+
+I'll do my best to make sure the class is setup so that if some students aren't able to be in class within the first few days can still catch up and not be disadvantaged.
+```
+
+```{dropdown} What can I do if my study-permit is delayed and I can't be in Kelowna for the majority of the term?
+    :class-container: sd-shadow-lg
+    :color: primary
+
+Unfortunately, we have been told that we cannot make accommodations for students that cannot be in Kelowna for the term because classes are being held in-person.
 ```
 
 ```{dropdown} Do I need to buy anything for this course?
