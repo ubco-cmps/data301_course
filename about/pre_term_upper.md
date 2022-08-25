@@ -32,6 +32,7 @@ Here is a list of things you can do (but don't have to) before the term starts:
 ```{dropdown} 📧 1. Sign up for a UBC Student Email address!
     :class-container: sd-shadow-lg
     :color: success
+    :name: email
 
 As a student of UBC you are entitled to a free, secure, institutional email address: **<your_cwl>@student.ubc.ca**.
 But, to claim it, you must first activate it.
@@ -61,6 +62,7 @@ This account will also grant you access to a range of other UBC services includi
 ```{dropdown} 🖨 2. Set yourself up to Print on Campus
     :class-container: sd-shadow-lg
     :color: success
+    :name: print
 
 UBCO has a super sweet printing process that is fast and convenient!
 You can print from anywhere on campus and then go to your closest printer to pick up your documents.
@@ -73,6 +75,7 @@ You'll never know when you need it!
 ```{dropdown} 🖊 3. Create a Hypothesis account (Optional)
     :class-container: sd-shadow-lg
     :color: success
+    :name: hypothesis
 
 There's a really awesome tool called [hypothes.is](https://hypothes.is) - when enabled, it allows anyone to highlight and comment on any website.
 I have turned this feature on for our unsyllabus because I want to know what you think of the unsyllabus in our course!
@@ -101,6 +104,7 @@ If you created a Hypothes.is account, **select this bolded text** and make a com
 ````{dropdown} How do I address my professors at UBCO?
     :class-container: sd-shadow-lg
     :color: primary
+    :name: how_to_address_professors
     :open:
 
 ```{tip}
@@ -143,6 +147,7 @@ Even in those cases, unless they tell you otherwise and insist, it's usually wis
 ```{dropdown} What if I cannot be in Kelowna by the start of the term?
     :class-container: sd-shadow-lg
     :color: primary
+    :name: missing_class_start
 
 I understand this is probably a really stressful experience, and there are all sorts of issues with travel delays and visa problems, not to mention the fact that the pandemic is still around. It's definitely not your fault.
 
@@ -152,6 +157,7 @@ I'll do my best to make sure the class is setup so that if some students aren't 
 ```{dropdown} What can I do if my study-permit is delayed and I can't be in Kelowna for the majority of the term?
     :class-container: sd-shadow-lg
     :color: primary
+    :name: missing_term
 
 Unfortunately, we have been told that we cannot make accommodations for students that cannot be in Kelowna for the term because classes are being held in-person.
 ```
@@ -159,6 +165,7 @@ Unfortunately, we have been told that we cannot make accommodations for students
 ```{dropdown} Do I need to buy anything for this course?
     :class-container: sd-shadow-lg
     :color: primary
+    :name: buy_anything
 
 No, you do not need to purchase anything for this course.
 
@@ -168,6 +175,7 @@ It would be helpful if you had access to a computing device as we'll be conducti
 ```{dropdown} Which textbook are we using for this course?
     :class-container: sd-shadow-lg
     :color: primary
+    :name: textbook
 
 {{ TEXTBOOK }}
 ```
@@ -175,6 +183,7 @@ It would be helpful if you had access to a computing device as we'll be conducti
 ```{dropdown} Will lectures be recorded so I can re-watch them to study?
     :class-container: sd-shadow-lg
     :color: primary
+    :name: recorded_lectures
 
 Yes, lectures will be recorded and posted - mostly for students that miss the class and want to catch up on missed announcements.
 
@@ -185,6 +194,7 @@ It will be far more beneficial for you to try doing more problems and come to st
 ````{dropdown} What should I do if the course is full and I'm on the waitlist for the class?
     :class-container: sd-shadow-lg
     :color: primary
+    :name: waitlist
 
 If the course is full, please register to the waitlist and monitor the SSC for an open seat.
 Should a mass seat release be approved by the Department Head, all waitlisted students will be notified by email to register on a first-come, first-served basis.
@@ -203,6 +213,7 @@ If you have specific questions, I suggest contacting the department cmps.okanaga
 ````{dropdown} What if I can't register in the lab/tutorial I want?
     :class-container: sd-shadow-lg
     :color: primary
+    :name: lab_tutorial
 
 Unfortunately, there are no waitlists for labs or tutorial sections.
 I suggest you definitely register for the course and keep monitoring the space in the section you want (maybe once or twice a week?).
@@ -221,6 +232,7 @@ If by the start of term, you're still not in a lab/tutorial, then I suggest cont
 ```{dropdown} Is this course hard? Will I fail?
     :class-container: sd-shadow-lg
     :color: primary
+    :name: hard_course
 
 I have done my best to setup this course so that if you are willing (and able) to put the work in, you will leave this course with a good grades!
 I can pretty much guarantee that - there are lots of opportunities for you to work collaboratively with your peers during the lectures and on homework assignments.
@@ -232,6 +244,7 @@ If you come in with good work ethic, the right attitude, and sufficient motivati
 ```{dropdown} Is attendance mandatory in lectures and labs?
     :class-container: sd-shadow-lg
     :color: primary
+    :name: attendance
 
 - Attendance is **highly recommended** in lectures and labs, but not required.
 - Labs will not be recorded, Lectures will be recorded and made available via Canvas.
