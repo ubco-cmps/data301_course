@@ -18,6 +18,10 @@ I do not necessarily need to know all the personal details, just a high-level su
 
 I'm sure we will come to some agreement, generally the earlier you let me know of any special circumstances or accommodation, the more I'll be able to do for you!
 
+```{tip}
+Remember, if you miss a Test for whatever reason, you can make it up the following week in the bonus test!
+```
+
 ### What if I have to miss a deadline because of a wedding, birthday, funeral, religious holiday, or personal event ?
 
 No problem! There's not even any need to tell me, or ask for permission to miss deadlines.
@@ -27,14 +31,21 @@ The course is designed to give you maximum flexibility:
 - There is no late penalty if you use the grace period
 - You can use the grace period an unlimited amount of time in the course (though if it happens every week and for every assignment, I might check in with you and gently encourage you not to leave things to the last minute)
 
+If you miss a deadline by more than the grace period, the general course policy is that you will not be able to get full credit for it, and in many cases, may even get a 0 for it.
+In the cases of Tests, it is not possible to get partial credit, or complete it at times other than within the scheduled window.
+In some cases, I reserve the right to grant an extension or make alternate accommodations as needed.
+
 ```{tip}
-Remember, if you miss a Test for whatever reason, you can make it up the following week in the bonus test!
+All students should be aware of UBC's policy on [Academic Accommodation for all Students’ Religious Observances and for the Cultural Observances of First Nations, Métis, and Inuit Students](https://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,362,0,0).
+
+Specifically, the policy states:
+
+> The University provides reasonable and appropriate accommodation for a student who must be absent from classes (including lectures, discussions, tutorials, laboratories, clinical placements, etc.) and scheduled examinations in order to participate in observances of significance in keeping with the practices of the student’s own sincerely-held religious beliefs and/or the cultural traditions of First Nations, Métis, and Inuit students;
+
+Please ensure you read through the rest of the policy and to determine whether it applies to you.
 ```
 
-If you miss a deadline by more than the grace period, the general course policy is that you will get 0 on it.
-In some cases, I reserve the right to grant an extension, or provide an alternate assignment.
-
-### What should I do if I need accommodations to be successful in this course?
+### What should I do if I need other accommodations to be successful in this course?
 
 Accommodations are intended to remove barriers experienced by individuals with disabilities.
 As a matter of principle, UBC is committed to promoting human rights, equity and diversity, and it also has a legal duty under the BC Human Rights Code to make its goods and services available in a manner that does not discriminate.

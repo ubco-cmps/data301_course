@@ -2,6 +2,10 @@
 
 ![](../images/UBCO_CMPS_header.jpg)
 
+You can [download the official Course Syllabus here]().
+For more details about the reason we have a Syllabus and an [Unsyllabus](unsyllabus), you can [read the explanation here](syllabus-vs-unsyllabus).
+
+<!-- 
 **Department of Computer Science, Mathematics, Physics, and Statistics**
 
 # Course Syllabus (Official)
@@ -81,4 +85,5 @@ The tentative course schedule, subject to change, can be found on the {{ '[cours
 ```
 
 ```{include} syllabus_bits/policies.md
-```
+``` -->
+
