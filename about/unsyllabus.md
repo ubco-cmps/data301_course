@@ -12,7 +12,7 @@ name: Under Construction.
 ---
 This course website is currently under construction. It will continue to be updated and will be released closer to the course start date. [Photo by Mabel Amber from Pexels](https://www.pexels.com/photo/traffic-red-blue-sign-117602/). 
 ```
-<!-- 
+<!--
 ```{include} unsyllabus_bits/main_nav.md
 ```
 
@@ -29,6 +29,13 @@ This course website is currently under construction. It will continue to be upda
 
 ```{include} syllabus_bits/teaching_team.md
 ```
+
+(syllabus-vs-unsyllabus)=
+## Syllabus vs. Unsyllabus
+
+```{include} unsyllabus_bits/why_syllabus_unsyllabus.md
+```
+
 (evaluation)=
 ## Evaluation
 
@@ -60,12 +67,6 @@ This course website is currently under construction. It will continue to be upda
 ## Getting Help
 
 ```{include} unsyllabus_bits/getting_help.md
-```
-
-(syllabus-vs-unsyllabus)=
-## Syllabus vs. Unsyllabus
-
-```{include} unsyllabus_bits/why_syllabus_unsyllabus.md
 ```
 
 <div class="page_break"> </div>

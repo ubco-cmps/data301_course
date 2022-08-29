@@ -1,3 +1,17 @@
+```{warning}
+I will be the first to acknowledge that my courses are usually heavily reliant on learning technologies.
+I strongly believe that learning technologies are essential (for me) to give you my students a good experience in the course.
+Many times during the course you may be frustrated why we need to use so many different tools, and why there isn't one tool that does everything.
+Believe me, this frustrates me too (particularly because each of your instructors will be using different tools depending on their needs), and is something that I'm working on improving.
+At the moment, the reality is that many learning technologies often only do *one thing* very well.
+This of course means that other functionalities take a back-seat and exist merely to check a box on their marketing website (just to say they have the feature).
+
+**In all of my courses, before selecting a learning technology, I do a very careful scan of the landscape, weigh the pros and cons, consider the privacy and convenience aspects, and then select the ones that I believe will best support my teaching goals at minimal inconvenience to students.**
+
+I hope you will be patient with all the tools used in this course, I hope I can demonstrate value to you by using them in our course.
+If you have any feedback about my usage of the tools, I'd be happy to [get your (anonymous) feedback](page_feedback) and though it may not always be possible to make changes mid-semester, I will certainly keep your feedback in mind as I plan the next iteration of this course.
+```
+
 There is no cost to the student for any of the tools used in this course.
 
 ### Required Tools

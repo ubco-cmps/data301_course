@@ -12,5 +12,9 @@ Below is some information that might be helpful for you in making the decision.
 
 ^ Note: Withdrawal after this date cannot happen without approval from the Faculty (Email: fos.students.ubco@ubc.ca).
 
-There are factors other than money and your transcript to consider as well, including your mental health, graduation requirements/timelines, eligibility for student loans, bursaries, scholarships etc.
-I advise you to [read the full list of considerations](https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/) here and consult with an Academic Advisor or your Program Advisor if you have additional questions.
+There are factors other than money and your transcript to consider as well, including your mental health, graduation requirements/timelines, [course load requirements](https://students.ok.ubc.ca/courses-money-enrolment/finances/student-loans-and-grants/course-load-requirements/), eligibility for student loans, bursaries, scholarships etc. 
+I advise you to [read a list of some considerations](https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/) here and consult with an Academic Advisor or your Program Advisor if you have additional questions.
+
+```{warning}
+International students have additional factors to consider when withdrawing - you are urged to follow-up with a GEO advisor (geo.ubco@ubc.ca) and see the [frequently asked questions here](https://students.ok.ubc.ca/new-to-ubc/immigration-documentation/immigration-impacts-of-withdrawing/).
+```

@@ -1,5 +1,5 @@
 # Book settings
-title: DATA 301
+title: COSC 301
 author: Firas Moosvi
 logo: images/logo.jpg
 copyright: ""
@@ -18,7 +18,7 @@ html:
   use_repository_button: true
   use_issues_button: true
   use_edit_page_button: true
-  baseurl : "https://firas.moosvi.com/courses/2021_WT1/data301"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  baseurl : "https://firas.moosvi.com/courses/2022_WT1/data301"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   comments:
     hypothesis: false
     utterances:
@@ -73,7 +73,7 @@ sphinx:
       W_DATE_2: "11:59 PDT on November 18, 2022"
       W_DATE_3: "November 18, 2022"
       EXAM_PERIOD: "Sunday December 11th - Thursday, December 22"
-      CANVAS_ID: "107737"
+      CANVAS_ID: "100277"
       CANVAS_LINK: "https://canvas.ubc.ca/courses/CANVAS_ID"
       ZOOM_LINK: "[Zoom](https://canvas.ubc.ca/courses/CANVAS_ID/external_tools/15408)"
       ANNOUNCEMENTS_LINK: "[Canvas Announcements](https://canvas.ubc.ca/courses/CANVAS_ID/announcements)"
