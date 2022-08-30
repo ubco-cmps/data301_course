@@ -104,7 +104,7 @@ If you created a Hypothes.is account, **select this bolded text** and make a com
 ````{dropdown} How do I address my professors at UBCO?
     :class-container: sd-shadow-lg
     :color: primary
-    :name: how_to_address_professors
+    :name: how-to-address-professors
     :open:
 
 ```{tip}
@@ -147,7 +147,7 @@ Even in those cases, unless they tell you otherwise and insist, it's usually wis
 ```{dropdown} What if I cannot be in Kelowna by the start of the term?
     :class-container: sd-shadow-lg
     :color: primary
-    :name: missing_class_start
+    :name: missing-class-start
 
 I understand this is probably a really stressful experience, and there are all sorts of issues with travel delays and visa problems, not to mention the fact that the pandemic is still around. It's definitely not your fault.
 
@@ -157,7 +157,7 @@ I'll do my best to make sure the class is setup so that if some students aren't 
 ```{dropdown} What can I do if my study-permit is delayed and I can't be in Kelowna for the majority of the term?
     :class-container: sd-shadow-lg
     :color: primary
-    :name: missing_term
+    :name: missing-term
 
 Unfortunately, we have been told that we cannot make accommodations for students that cannot be in Kelowna for the term because classes are being held in-person.
 ```
@@ -165,7 +165,7 @@ Unfortunately, we have been told that we cannot make accommodations for students
 ```{dropdown} Do I need to buy anything for this course?
     :class-container: sd-shadow-lg
     :color: primary
-    :name: buy_anything
+    :name: buy-anything
 
 No, you do not need to purchase anything for this course.
 
@@ -183,7 +183,7 @@ It would be helpful if you had access to a computing device as we'll be conducti
 ```{dropdown} Will lectures be recorded so I can re-watch them to study?
     :class-container: sd-shadow-lg
     :color: primary
-    :name: recorded_lectures
+    :name: recorded-lectures
 
 Yes, lectures will be recorded and posted - mostly for students that miss the class and want to catch up on missed announcements.
 
@@ -213,7 +213,7 @@ If you have specific questions, I suggest contacting the department cmps.okanaga
 ````{dropdown} What if I can't register in the lab/tutorial I want?
     :class-container: sd-shadow-lg
     :color: primary
-    :name: lab_tutorial
+    :name: lab-tutorial
 
 Unfortunately, there are no waitlists for labs or tutorial sections.
 I suggest you definitely register for the course and keep monitoring the space in the section you want (maybe once or twice a week?).
@@ -232,7 +232,7 @@ If by the start of term, you're still not in a lab/tutorial, then I suggest cont
 ```{dropdown} Is this course hard? Will I fail?
     :class-container: sd-shadow-lg
     :color: primary
-    :name: hard_course
+    :name: hard-course
 
 I have done my best to setup this course so that if you are willing (and able) to put the work in, you will leave this course with a good grades!
 I can pretty much guarantee that - there are lots of opportunities for you to work collaboratively with your peers during the lectures and on homework assignments.
