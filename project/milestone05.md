@@ -95,7 +95,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 Many of your classmates are doing some very interesting projects with some cool datasets.
 Since this is a course introducing you to Data Analytics, I think it would be very helpful for you to look at their analyses and results, think critically about it, and perhaps provide some useful feedback.
 
-I'll try and facilitate this during our lecture this week, and also online on Piazza.
+I'll try and facilitate this during our lecture this week, and also online on {{ FORUM_LINK }}.
 
 ## Appendix
 

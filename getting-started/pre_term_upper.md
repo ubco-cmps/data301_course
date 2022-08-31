@@ -159,7 +159,7 @@ I'll do my best to make sure the class is setup so that if some students aren't 
     :color: primary
     :name: missing-term
 
-Unfortunately, we have been told that we cannot make accommodations for students that cannot be in Kelowna for the term because classes are being held in-person.
+You can find more advice about some next steps you can take [on this page that's managed by UBC](https://you.ubc.ca/applying-ubc/blog/after-youve-been-admitted/what-to-do-if-your-study-permit-hasnt-arrived-yet/).
 ```
 
 ```{dropdown} Do I need to buy anything for this course?
