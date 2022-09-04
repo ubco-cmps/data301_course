@@ -234,8 +234,8 @@ If by the start of term, you're still not in a lab/tutorial, then I suggest cont
     :color: primary
     :name: hard-course
 
-I have done my best to setup this course so that if you are willing (and able) to put the work in, you will leave this course with a good grades!
-I can pretty much guarantee that - there are lots of opportunities for you to work collaboratively with your peers during the lectures and on homework assignments.
+I have done my best to setup this course so that if you are willing (and able) to put the work in, you will leave this course with a good grade!
+PI can pretty much guarantee that - there are lots of opportunities for you to work collaboratively with your peers during the lectures and on homework assignments.
 There will be frequent tests (roughly every two weeks) in this course and you will always have an opportunity to redo your test for a higher grade.
 
 If you come in with good work ethic, the right attitude, and sufficient motivation, you will do really well - I promise!
