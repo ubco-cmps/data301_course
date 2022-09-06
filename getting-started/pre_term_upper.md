@@ -101,6 +101,14 @@ If you created a Hypothes.is account, **select this bolded text** and make a com
 
 ## Frequently asked questions (before the term starts)
 
+```{dropdown} When do labs start?
+    :class-container: sd-shadow-lg
+    :color: primary
+    :name: textbook
+
+Physical labs will not be held until Week 2 of the course. See the `ref`{page_Course_Schedule} for more information.
+```
+
 ````{dropdown} How do I address my professors at UBCO?
     :class-container: sd-shadow-lg
     :color: primary

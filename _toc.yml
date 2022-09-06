@@ -6,8 +6,12 @@ parts:
 - caption: About this course
   chapters:
   - file: about/unsyllabus
-#   - file: about/syllabus
+  - file: about/syllabus
 #   - file: about/course_schedule
+
+# - caption: Tools
+#   chapters:
+#   - file: tools/ed_discussion/ed_discussion
 
 # - caption: Getting Started!
 #   chapters:

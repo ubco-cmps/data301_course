@@ -2,7 +2,9 @@
 
 ![](../images/UBCO_CMPS_header.jpg)
 
-You can [download the official Course Syllabus here]().
+# Course Syllabus (Official)
+
+You can [download the official Course Syllabus here](../cosc301_2022WT1.pdf).
 For more details about the reason we have a Syllabus and an [Unsyllabus](unsyllabus), you can [read the explanation here](syllabus-vs-unsyllabus).
 
 <!-- 
