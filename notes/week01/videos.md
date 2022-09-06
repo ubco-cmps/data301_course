@@ -55,16 +55,6 @@ This **video will start at the 2 minute and 8 second mark** as the stuff before 
 </div>
 ```
 
-```{dropdown} 1.4: Introduction to Lab 1B
-    :class-container: sd-shadow-lg
-    :color: primary
-
-<div class="container youtube">
-<iframe src="https://player.vimeo.com/video/570825537" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Data 301 Lab Introduction - BashCrawl"></iframe>
-<script src="https://player.vimeo.com/api/player.js"></script>
-</div>
-```
-
 ## Optional Videos
 
 None this week.

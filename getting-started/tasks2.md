@@ -43,6 +43,19 @@ This is **very** important for you to do as it'll be our primary mechanism for d
 <img src="../images/GradescopeAccount.gif">
 ```
 
+```{dropdown} 7. Create a GitHub.com account
+    :class-container: sd-shadow-lg
+    :color: primary
+
+You should then be guided through a series of steps to create an account, set a password, and link it to our course.
+If you do not see this button on Canvas, it will appear in a few days so check back.
+
+This is **very** important for you to do as it'll be our primary mechanism for delivering you feedback in this course.
+
+<img src="../images/GradescopeAccount.gif">
+```
+
+
 ```{dropdown} 7. Start setting up your computer (Lab 1)
     :class-container: sd-shadow-lg
     :color: primary

@@ -259,7 +259,7 @@ Oh My Zsh is installed by running the following command in your Terminal:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-You may now customize your Terminal with themes (see [screenshots of themes here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)) by [following the directions here]("https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme"].
+You may now customize your Terminal with themes (see [screenshots of themes here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)) by [following the directions here](https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme].
 Selecting a theme is optional, the default one is pretty good as it is!
 
 ## Git and GitHub

@@ -4,7 +4,7 @@ The exact details are subject to change, so this is roughly the plan we will try
 | #  | Week            | Topics                                             | Lab    | Logs | Project Milestones | Tests (Thursdays, in person) | Concepts Tested              |
 |----|-----------------|----------------------------------------------------|--------|------|--------------------|------------------------------|------------------------------|
 | 1  | Sept 6-11       | Introduction to Data Analytics <br /> Course Setup | Lab 1  | LL1  | -                  | -                            | -                            |
-| 2  | Sept 12-18      | Command-line <br /> and Jupyter Notebook           | Lab 2  | LL2  | -                  | Test 0                       | Course policies-             |
+| 2  | Sept 12-18      | Command-line <br /> and Jupyter Notebook           | Lab 2  | LL2  | -                  | Test 0                       | Course policies              |
 | 3  | Sept 19-25      | Introduction to Version Control with Git           | Lab 3  | LL3  | PM 1               | -                            | -                            |
 | 4  | Sept 26 - Oct 2 | Introduction to Python                             | Lab 4  | LL4  | -                  | Test 1                       | Command Line and Git         |
 | 5  | Oct 3 - 9       | Working with Data in Python                        | Lab 5  | LL5  | PM 2               | (Bonus Test 1)               | -                            |

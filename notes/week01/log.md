@@ -1,3 +1,3 @@
 # Learning Log
 
-There is no Learning Log this week.
+The Learning Log for this week will be released closer to the end of the week.
