@@ -28,12 +28,12 @@ parts:
     title: In the first week
   - file: getting-started/faq
     title: Frequently Asked Questions
-#   - file: notes/setup/stack
-#     sections:
-#     - file: notes/setup/install_ds_stack_mac
-#       title: macOS
-#     - file: notes/setup/install_ds_stack_windows
-#       title: Windows
+  - file: notes/setup/stack
+    sections:
+    - file: notes/setup/install_ds_stack_mac
+      title: macOS Setup Instructions
+    - file: notes/setup/install_ds_stack_windows
+      title: Windows Setup Instructions
 #     # - file: notes/setup/install_ds_ubuntu
 #     #   title: Ubuntu
 
