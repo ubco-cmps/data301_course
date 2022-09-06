@@ -62,6 +62,31 @@ In this course, we will be using GitHub to release your labs and you will be usi
 GitHub is a cloud-based tool where your personal data is stored on servers outside Canada. When you create an account on GitHub, you are being transferred to these servers. While GitHub adheres to strict U.S. privacy regulations (FERPA), UBC cannot guarantee security of your private details on servers outside of Canada. If you are not comfortable with your personal data residing on servers outside Canada, to protect your identity, UBC suggests creating a pseudonym to protect your privacy. With this, and any other cloud-based tools/services, please exercise caution whenever sharing your personal information.
 ```
 
+### Sign up for a Hypothesis Account (Optional)
+
+There's a really awesome tool called [hypothes.is](https://hypothes.is) - when enabled, it allows anyone to highlight and comment on any website.
+I have turned this feature on for our unsyllabus because I want to know what you think of the unsyllabus in our course!
+Yes, it's *our* course, we're in this together and there are some opportunities for you to determine how we do things in this course.
+I want your thoughts, feedback, and opinions on how you want the course to go this term.
+Similarly, if you have any questions about any part of the unsyllabus, the best place to ask it is right in the document itself.
+If you have a good idea for a change to the unsyllabus - I'd love to hear them, and even adopt them if they fit within the goals of the course.
+I strongly believe that you are now in charge of your own education, and I am just a guide to help point you in the right direction!
+
+Here's an animated gif of how to annotate (you'll need to sign up for a free account):
+
+<img src="../images/hypothesis_annotation.gif" width="100%">
+<br/>
+
+This is an experiment, and I encourage you to make comments and highlights on our unsyllabus.
+Let's see how it goes!
+Remember that your classmates will be able to see your comments too, so feel free to interact with them on here as well - we're in this together.
+Don't be shy, but please also be respectful and courteous.
+
+```{warning}
+The Hypothes.is web annotation tool stores data that it collects on servers outside Canada. When you access or use this site through Canvas, you are being transferred to these servers. However, none of your course work information is shared with Hypothes.is. Though Hypothes.is requires you to create an account on their servers, but it is **not** necessary for you to use your real name or email address because UBC cannot guarantee security of your private details on servers outside of Canada. You may wish to use a pseudonym to protect your privacy if you have concerns. Please exercise caution whenever giving away your personal information.
+```
+
+
 <!-- 
 ### Download the Sli.do app (Optional)
 
