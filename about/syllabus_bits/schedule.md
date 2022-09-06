@@ -19,5 +19,5 @@ The exact details are subject to change, so this is roughly the plan we will try
 | 14 | Dec 5 - Dec 8   | Final Exam Details <br />(no new material)         | -      | -    | -                  | (Bonus Test 4)               | -                            |
 
 ```{note}
-Labs start in the second week of the course!
+Labs will start in the second week of the course!
 ```

@@ -33,7 +33,7 @@ And some time after you studied it? This is the acid test for learning and it is
 - We’ll do lots of tests.
 
 Why? Because research shows testing improves learning.  
-It might seem counterintuitive, but by taking a test, what we recall becomes more recallable in the future.  
+It might seem counter-intuitive, but by taking a test, what we recall becomes more recallable in the future.  
 In a sense, you are practicing what you are going to need to do for the final.
 
 ## Ingredients for your success 
@@ -48,7 +48,7 @@ Lectures will not present material; they will reinforce and consolidate your und
 If you have never taken a course like this, you might consider thinking a bit more about how to best prepare for the classes.
 
 - Prepare Read the material for this weeks pre-reading carefully ahead of the classes that follow.  
-Don’t skim it, don’t hunt for answers to the quiz; make notes and engage in discussions on Perusall for things you don’t understand.  
+Don’t skim it, don’t hunt for answers to the quiz; make notes and engage in discussions on {{ FORUM_LINK }} for things you don’t understand.  
 You need some basic familiarity or fluency with the content before we can make the most of the precious class time we have together.  
 
 - Engage Engage with us, with your peers and yourself.  
@@ -62,7 +62,7 @@ Practice not just solving but how to get started on problems.
  Work with a problem solving strategy so you don’t have to say ‘I don’t know where to start’
 
 - Collaborate Your peers are a fantastic resource for your understanding.  
-Don’t get isolated; form a study group, use Piazza and Perusall, go to the Drop-in sessions.  
+Don’t get isolated; form a study group, use {{ FORUM_LINK }}, go to the Drop-in student-hour, or any of the lab sessions.
 Try not to fall behind (it’s hard to catch up if you do) but do talk to us if you really are struggling.  
 
 - Be careful and don’t be fooled by the familiarity of some of this material.  
@@ -70,9 +70,3 @@ You may have seen most of it before.
 This may lead you to expect that you have little new to learn here.  
 We found that students come with huge misconceptions about seemingly familiar ideas.  
 You need to be prepared to let go of them if you are to really master these foundations of the subject and this course.  
-
-- And finally, math.  
-You need a relevant math co-requisite for this course (one of MATH 100, 102, 104, 110, 120, 180, 184).  
-We will assume that you are comfortable with the following (and can do them quickly and easily): scientific notation, unit conversions, order of magnitude estimates, significant figures, trig, algebra, sketching and interpreting graphs, basic differentiation (and a touch of integration too).  
-Early in the course, you will get a chance to diagnose any gaps in your own math knowledge.  
-

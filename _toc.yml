@@ -1,5 +1,5 @@
 format: jb-book
-root: getting-started/pre_term_upper
+root: getting-started/unsyllabus
 title: Course Unsyllabus
 
 parts:
@@ -7,14 +7,27 @@ parts:
   chapters:
   - file: about/unsyllabus
   - file: about/syllabus
-#   - file: about/course_schedule
+  - file: about/course_schedule
+  - file: about/accommodations
+  - file: about/doing_well
 
-# - caption: Tools
-#   chapters:
-#   - file: tools/ed_discussion/ed_discussion
+- caption: Tools
+  chapters:
+  - file: tools/ed_discussion/ed_discussion
 
-# - caption: Getting Started!
-#   chapters:
+parts:
+- caption: Getting Started
+  chapters:
+  - file: getting-started/pre_term_upper
+    title: Before the term starts
+  - file: getting-started/tasks1
+    title: Before the first class
+  - file: getting-started/tasks2
+    title: After the first class
+  - file: getting-started/tasks3
+    title: In the first week
+  - file: getting-started/faq
+    title: Frequently Asked Questions
 #   - file: notes/setup/stack
 #     sections:
 #     - file: notes/setup/install_ds_stack_mac
