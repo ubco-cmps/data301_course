@@ -5,17 +5,15 @@ title: Course Unsyllabus
 parts:
 - caption: About this course
   chapters:
-  - file: about/unsyllabus
-  - file: about/syllabus
   - file: about/course_schedule
   - file: about/accommodations
   - file: about/doing_well
+  - file: about/syllabus
 
 - caption: Tools
   chapters:
   - file: tools/ed_discussion/ed_discussion
 
-parts:
 - caption: Getting Started
   chapters:
   - file: getting-started/pre_term_upper
