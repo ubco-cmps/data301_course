@@ -16,6 +16,12 @@ Before starting, ensure that your laptop meets the minimum requirements:
 If your computer does not meet any of the requirements above, please don't just drop the course!!
 Let me know first and we can discuss alternate possibilities so you can still take the course.
 
+```tip
+Before starting, I suggest updating your Mac to the latest version your laptop can run:
+
+<img src="setup_images/updatemacOS.gif">
+```
+
 ## Installation notes
 
 If you have already installed Git, Latex, or any of the Python related packages please uninstall these and follow the instructions below to install and configure them correcty (make sure to also remove any user configuration files and backup them if desired).
@@ -29,14 +35,14 @@ Once you have completed these installation instructions, make sure to follow the
 
 - [UBC Student Email](#ubc-student-email)
 - [Web browser](#web-browser)
-- [Zoom](#zoom) (Latest Version of Zoom)
+- [Zoom](#zoom)
 - [GitHub.com account](#github)
 - [Microsoft Office](#microsoft-office)
 - [Python, Conda, and JupyterLab](#python)
 - [Visual Studio Code](#visual-studio-code)
 - [Terminal](#terminal)
 - [Git and GitHub](#git-and-github)
-- [Test JupyterLab](#Test-JupyterLab)
+- [Test JupyterLab](#test-jupyterlab)
 
 ## UBC Student Email
 
@@ -167,7 +173,8 @@ To install an extension, you simply search for it in the search bar, click the e
 - `Python`
 - `Python Extension Pack` (for notebooks, debugging, linting, formatting, etc.)
 - `markdownlint` (markdown linting and style checking extension)
-- (Optional) `Bracket Pair Colorizer 2` (add colour to help distinguish your brackets: (), [], {})
+
+<img src="setup_images/vscode_python.png" alt = "Pointing to the VS Code for Python extension by Microsoft in the list of extensions. Click 'Install'"/>
 
 [This video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
 
@@ -339,6 +346,23 @@ Here you will be prompted for your GitHub.com username, and your PAT (personal a
 
 Hopefully, if things work, you should be able to see a new folder created at that location.
 We will be talking more about what exactly you did over the next week and a bit, don't worry!
+
+
+```tip
+If after running the code above, you see the error message:
+
+> fatal: destination path 'test' already exists and is not an empty directory. 
+
+It means that you already attempted a clone before, and there is already a directory called `test` where you are trying to clone this repository.
+You will first need to delete that directory to try again.
+
+Open an Explorer window on your computer, navigate to the directory, right click the `test` directory, and then delete the directory.
+Alternatively, from the command line you can try:
+
+> rm -rf test
+
+which will "remove" the directory called "test". The "-" is to specify additional options: `r` means "recursively" for all the files in the directory, and `f` means "force" which means don't ask me for confirmation after deleting each file and folder.
+```
 
 ## Tree
 

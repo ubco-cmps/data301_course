@@ -14,8 +14,14 @@ Before starting, ensure that your laptop meets the minimum requirements:
 - Is at most 6 years old at the start of the program (4 years old or newer is recommended).
 - Student user has full administrative access to the computer.
 
-If your compuyer does not meet any of the requirements above, please don't just drop the course!!
+If your computer does not meet any of the requirements above, please don't just drop the course!!
 Let me know first and we can discuss alternate possibilities so you can still take the course.
+
+```tip
+Before starting, I suggest updating your Windows operating system to the latest version your laptop can run:
+
+[See here](https://support.microsoft.com/en-us/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a) on how to update your Windows 11 machine to the latest version.
+```
 
 ## Installation notes
 
@@ -29,16 +35,16 @@ Once you have completed these installation instructions, make sure to follow the
 ## Table of Contents
 
 - [UBC Student Email](#ubc-student-email)
-- [Zoom](#zoom) (Latest Version of Zoom)
+- [Zoom](#zoom)
 - [Web browser](#web-browser)
 - [Microsoft Office](#microsoft-office)
 - [Visual Studio Code](#visual-studio-code)
 - [Terminal](#terminal)
 - [Python, Conda, and JupyterLab](#python)
-- [Configuring VS Code extensions](Configuring-VS-Code-extensions)
+- [Configuring VS Code extensions](#vscode-extensions)
 - [Git and GitHub](#git-and-github)
 - [Tree](#tree)
-- [Test JupyterLab](#Test-JupyterLab)
+- [Test JupyterLab](#test-jupyterlab)
 
 ## UBC Student Email
 
@@ -291,7 +297,7 @@ We are specifying that we should use the "conda-forge" source because it typical
 This may take a while to complete.
 
 
-## Configuring VS Code extensions
+## VSCode extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow.
 Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them.
@@ -299,11 +305,16 @@ From within VS Code you can open up the [Extension Marketplace (read more here)]
 
 <img src="setup_images/vscode.png" alt = "Pointing to the left sidebar to where extensions can be installed."/>
 
-To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
+To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install".
+There are extensions available to make almost any workflow or task you are interested in more efficient!
+Here we are interested in setting up VS Code as a Python IDE.
+To do this, search for and install the following extensions:
 
-- Python (everything Python: notebooks, debugging, linting, formatting, etc.)
-- markdownlint (markdown linting and style checking extension)
-- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
+- `Python`
+- `Python Extension Pack` (for notebooks, debugging, linting, formatting, etc.)
+- `markdownlint` (markdown linting and style checking extension)
+
+<img src="setup_images/vscode_python.png" alt = "Pointing to the VS Code for Python extension by Microsoft in the list of extensions. Click 'Install'"/>
 
 [This video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
 
@@ -362,6 +373,22 @@ Here you will be prompted for your GitHub.com username, and your PAT (personal a
 
 Hopefully, if things work, you should be able to see a new folder created at that location.
 We will be talking more about what exactly you did over the next week and a bit, don't worry!
+
+```tip
+If after running the code above, you see the error message:
+
+> fatal: destination path 'test' already exists and is not an empty directory. 
+
+It means that you already attempted a clone before, and there is already a directory called `test` where you are trying to clone this repository.
+You will first need to delete that directory to try again.
+
+Open an Explorer window on your computer, navigate to the directory, right click the `test` directory, and then delete the directory.
+Alternatively, from the command line you can try:
+
+> rm -rf test
+
+which will "remove" the directory called "test". The "-" is to specify additional options: `r` means "recursively" for all the files in the directory, and `f` means "force" which means don't ask me for confirmation after deleting each file and folder.
+```
 
 ### Launch VS Code from GitBash
 
