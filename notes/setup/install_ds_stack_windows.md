@@ -5,8 +5,8 @@ Windows Software Stack
 These instructions will walk you through installing the required Data Science software stack for {{ COURSE_CODE }}. 
 Before starting, ensure that your laptop meets the minimum requirements:
 
-- Runs the latest version of Windows 10 available for your system.
-    - Currently enrolled UBC students with a valid CWL account [qualify for one license of Windows 10 Education](https://it.ubc.ca/services/desktop-print-services/software-licensing/windows-10-education).
+- Runs the latest version of Windows 11 available for your system.
+    - Currently enrolled UBC students with a valid CWL account [qualify for one license of Windows 11 Education](https://it.ubc.ca/services/desktop-print-services/software-licensing/windows-education).
 - Can connect to networks via a wireless connection.
 - Has at least 25 GB disk space available.
 - Has at least 4 GB of RAM (more is recommended).
@@ -14,13 +14,13 @@ Before starting, ensure that your laptop meets the minimum requirements:
 - Is at most 6 years old at the start of the program (4 years old or newer is recommended).
 - Student user has full administrative access to the computer.
 
-If your compuer does not meet any of the requirements above, please don't just drop the course!!
+If your compuyer does not meet any of the requirements above, please don't just drop the course!!
 Let me know first and we can discuss alternate possibilities so you can still take the course.
 
 ## Installation notes
 
-If you have already installed Git, Conda, or any of the Python related packages please uninstall these and follow the instructions below to install and configure them correcty (make sure to also remove any user configuration files and backup them if desired).
-In order to be able to support you effectively and minimize setup issues and software conflicts, we require all students to install the software stack the same way.
+Unless you really know what you are doing, if you have already installed Git, Conda, or any of the Python related packages below, I **strongly** advise you to please uninstall these and follow the instructions below to re-install and configure them correctly (make sure to also remove any user configuration files and backup them if desired).
+In order to be able to support you effectively and minimize setup issues and software conflicts, we suggest students to install the software stack the same way (even though there are better ways).
 
 In all the sections below, if you are presented with the choice to download either a 64-bit (also called x64) or a 32-bit (also called x86) version of the application **always** choose the 64-bit version.
 
@@ -57,7 +57,7 @@ Google Chrome is not recommended because of the [well-documented privacy and tra
 We will be using Zoom in this course for the classes, as well as the labs, and student hours.
 It is *very* important that you have the most recent version of Zoom installed, as we will be using many of the features that are only available in more recent versions.
 
-The latest version of Zoom as of Sept 2021 is: `5.7.6 (1320)`. 
+The latest version of Zoom as of Sept 2022 is: `5.11.10 (102279)`. 
 You can ensure you have the latest version of Zoom by clicking "Check for Updates" as shown in the screenshot below (on a Windows machine, your screenshot will look slightly different).
 
 <img src="setup_images/zoom.png" alt = "Zoom 'Check for Updates' showing the latest version of Zoom is installed."/>
@@ -102,7 +102,7 @@ Unfortunately, one of the major problems with using the Windows operating system
 No worries though, luckily most of the tools we use in this course are open source, so the community has worked hard to shore up deficiencies in the Microsoft ecosystem (until Windows subsystem for Linux is a more mature product).
 
 The replacement for the Command Prompt we will use in this course is called "GitBash".
-The latest version of GitBash for Windows is: `2.33.0(2)`.
+The latest version of GitBash for Windows is: `2.37.3`.
 
 ```{attention}
 "GitBash" is relatively old software, but it is very reliable and works very well. 
@@ -234,7 +234,7 @@ conda --version
 you should see something like this
 
 ```
-conda 4.8.3
+conda 4.12.0
 ```
 
 > *Optional* One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
@@ -262,31 +262,28 @@ conda 4.8.3
 ### Essential Python packages
 
 `conda` installs Python packages from different online repositories which are called "channels".
-A package needs to go through thorough testing before it is included in the default channel,
-which is good for stability,
-but also means that new versions will be delayed and fewer packages are available overall.
-There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
-which provides more up to date packages
-To enable us to access the most up to date version of the Python packages we are going to use,
-we will add the more up to date  channel,
-To add the conda-forge channel by typing the following in the terminal:
+A package needs to go through thorough testing before it is included in the default channel, which is good for stability, but also means that new versions will be delayed and fewer packages are available overall.
+There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/), which provides more up-to-date packages.
+To enable us to access the most recent versions of the Python packages we are going to use, we will add this channel.
+To add the conda-forge channel type the following in a Terminal window:
 
 ```
 conda config --add channels conda-forge
 ```
 
-To install packages individually, we can now use the following command: `conda install -c conda-forge <package-name>`.
+To install packages individually, we need to use the following command: `conda install -c conda-forge "<package-name>"`.
+The part about `conda install` tells the `conda` package manager to install a particular package, and the `-c` part is an extra "option" that tells `conda` to look in the `conda-forge` channel (which usually has the latest updated packages).
 Let's install the key packages needed (you will note that we're also specifying certain versions of the package with `= X.Y`).
-Each command is on a new line and should be run one-by-one.
+You should copy and paste each line below in your Terminal to install the following packages:
 
 ```
 conda install -c conda-forge "jupyterlab=3.*"
-conda install -c conda-forge "numpy=1.*" \
-conda install -c conda-forge "pandas=1.*" \
-conda install -c conda-forge "flake8=3.*" \
-conda install -c conda-forge "black=19.*" \
+conda install -c conda-forge "numpy=1.*"
+conda install -c conda-forge "pandas=1.*"
+conda install -c conda-forge "black=19.*"
 conda install -c conda-forge "nbconvert=6.*"
 conda install -c conda-forge "seaborn"
+conda install -c conda-forge "pre-commit"
 ```
 
 `conda` will show you the packages that will be downloaded, and you may need to press `enter` or `Y` (for yes) to proceed with the installation.
@@ -347,7 +344,7 @@ This is a bit tricky, so please make sure you follow these directions carefully.
 - Click Developer Settings
 - Click "Personal access tokens", set the appropriate permissions at the "repo" level (see gif below):
 
-<img src="setup_images/github_PAT.gif">
+<img src="setup_images/Github_create_PAT.gif">
 
 - Click "Generate new token"
 - Save this token somewhere on your computer, you will need it when you clone a repository to your computer.
@@ -358,7 +355,7 @@ This is a bit tricky, so please make sure you follow these directions carefully.
 Open a GitBash Terminal window, and then run the following command:
 
 ```
-git clone https://github.com/data301-2021-winter1/test.git
+git clone https://github.com/firasm/test.git
 ```
 
 Here you will be prompted for your GitHub.com username, and your PAT (personal access token) as your password.
@@ -375,8 +372,8 @@ code --version
 ```
 
 ```
-1.57.1
-507ce72a4466fbb27b715c3722558bb15afa9f48
+1.71
+e4503b30fc78200f846c62cf8091b76ff5547662
 x64
 ```
 

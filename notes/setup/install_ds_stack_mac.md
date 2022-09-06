@@ -13,7 +13,7 @@ Before starting, ensure that your laptop meets the minimum requirements:
 - Is at most 6 years old at the start of the program (4 years old or newer is recommended)
 - Student user has full administrative access to the computer
 
-If your compuer does not meet any of the requirements above, please don't just drop the course!!
+If your computer does not meet any of the requirements above, please don't just drop the course!!
 Let me know first and we can discuss alternate possibilities so you can still take the course.
 
 ## Installation notes
@@ -55,7 +55,7 @@ Google Chrome is not recommended because of the [well-documented privacy and tra
 We will be using Zoom in this course for the classes, as well as the labs, and student hours.
 It is *very* important that you have the most recent version of Zoom installed, as we will be using many of the features that are only available in more recent versions.
 
-The latest version of Zoom as of Sept 2021 is: `5.7.6 (1320)`. 
+The latest version of Zoom as of Sept 2022 is: `5.11.10 (102279)`. 
 You can ensure you have the latest version of Zoom by clicking "Check for Updates" as shown in the screenshot below.
 
 <img src="setup_images/zoom.png" alt = "Zoom 'Check for Updates' showing the latest version of Zoom is installed."/>
@@ -98,10 +98,12 @@ conda --version
 which should return something like this:
 
 ```
-conda 4.8.2
+conda 4.12.0
 ```
 
-> Note: If you see `zsh: command not found: conda`, try the following>: Open a new Terminal (it should be zsh), then type: `source /Users/YOURUSERNAME/opt/miniconda3/bin/activate` OR `source ~/opt/miniconda3/bin/activate` depending on whether you installed for all users, or just your user (make sure to also change YOURUSERNAME to your username). Then enter the following command `conda init zsh`. The error should now be fixed.
+```{note}
+Note: If you see `zsh: command not found: conda`, try the following>: Open a new Terminal (it should be zsh), then type: `source /Users/YOURUSERNAME/opt/miniconda3/bin/activate` OR `source ~/opt/miniconda3/bin/activate` depending on whether you installed for all users, or just your user (make sure to also change YOURUSERNAME to your username). Then enter the following command `conda init zsh`. The error should now be fixed.
+```
 
 Next, type the following to ask for the version of Python:
 ```
@@ -110,10 +112,12 @@ python --version
 which should return something like this:
 
 ```
-Python 3.9.5
+Python 3.9.7
 ```
 
-> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.9** (or higher).
+```{note}
+Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.9** (or higher).
+```
 
 ### Essential Python packages
 
@@ -127,21 +131,22 @@ To add the conda-forge channel type the following in a Terminal window:
 conda config --add channels conda-forge
 ```
 
-To install packages individually, we can now use the following command: `conda install "<package-name>"`.
-Let's install the key packages needed (you will note that we're also specifying certain versions of the package with `= X.Y`):
+To install packages individually, we need to use the following command: `conda install -c conda-forge "<package-name>"`.
+The part about `conda install` tells the `conda` package manager to install a particular package, and the `-c` part is an extra "option" that tells `conda` to look in the `conda-forge` channel (which usually has the latest updated packages).
+Let's install the key packages needed (you will note that we're also specifying certain versions of the package with `= X.Y`).
+You should copy and paste each line below in your Terminal to install the following packages:
 
 ```
 conda install -c conda-forge "jupyterlab=3.*"
 conda install -c conda-forge "numpy=1.*"
 conda install -c conda-forge "pandas=1.*"
-conda install -c conda-forge "flake8=3.*"
 conda install -c conda-forge "black=19.*"
 conda install -c conda-forge "nbconvert=6.*"
 conda install -c conda-forge "seaborn"
+conda install -c conda-forge "pre-commit"
 ```
 
 `conda` will show you the packages that will be downloaded, and you may need to press `enter` or `Y` (for yes) to proceed with the installation.
-We are specifying that we should use the "conda-forge" source because it typically has more recent and updated package versions.
 This may take a while to complete.
 
 ## Visual Studio Code
@@ -170,8 +175,8 @@ To install an extension, you simply search for it in the search bar, click the e
 
 Apple recently changed the Mac default shell in the Terminal to Zsh - though the [reasons for this](https://thenextweb.com/dd/2019/06/04/why-does-macos-catalina-use-zsh-instead-of-bash-licensing/) are complicated, it is a huge improvement over the out-dated Bash version that came pre-installed on macOS.
 
-If you are already on macOS BigSur, this change is made for you. 
-But if you are on Catalina, you should switch your shell. 
+If you are already on macOS Monterey (macOS 12.5) or Big Sur (macOS 11.x), this change is already made for you. 
+But if you are on Catalina (macOS 10.x), you should switch your shell. 
 
 To check which shell you are running, open a new Terminal (`Applications-->Utilities-->Terminal` or activate Spotlight and type in Terminal).
 You will see a new window pop up and a blinking cursor.
@@ -213,9 +218,9 @@ code --version
 you should see something like this if you were successful:
 
 ```
-1.57.1
+1.71
 507ce72a4466fbb27b715c3722558bb15afa9f48
-x64
+arm64 (or x64)
 ```
 
 [Manual install instructions are here, but remember you're using the zsh now!](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) steps as well.
@@ -244,15 +249,18 @@ Then save the file and exit VS Code.
 
 > Most Terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
 
-### [Optional] Install Ohmyzsh to get Terminal colours, and highlighting
+### Install Ohmyzsh to get Terminal colours, and highlighting
 
-You may now customize your Terminal with themes (see [screenshots of themes here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)) by [following the directions here]("https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme"].
+Install `Ohmyzsh` to add Terminal colours, highlighting and other cool features.
 
 Oh My Zsh is installed by running the following command in your Terminal: 
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+
+You may now customize your Terminal with themes (see [screenshots of themes here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)) by [following the directions here]("https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme"].
+Selecting a theme is optional, the default one is pretty good as it is!
 
 ## Git and GitHub
 
@@ -280,7 +288,7 @@ git --version
 you should see something like this (does not have to be the exact same version) if you were successful:
 
 ```
-git version 2.30.1 (Apple Git-130)
+git version 2.37.2
 ```
 
 ```{note}
@@ -313,7 +321,7 @@ This is a bit tricky, so please make sure you follow these directions carefully.
 - Click Developer Settings
 - Click "Personal access tokens", set the appropriate permissions at the "repo" level (see gif below):
 
-<img src="setup_images/github_PAT.gif">
+<img src="setup_images/Github_create_PAT.gif">
 
 - Click "Generate new token"
 - Save this token somewhere on your computer, you will need it when you clone a repository to your computer.
@@ -324,7 +332,7 @@ This is a bit tricky, so please make sure you follow these directions carefully.
 Open a Terminal window, and then run the following command:
 
 ```
-git clone https://github.com/data301-2021-winter1/test.git
+git clone https://github.com/firasm/test.git
 ```
 
 Here you will be prompted for your GitHub.com username, and your PAT (personal access token) as your password.
