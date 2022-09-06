@@ -1,18 +1,18 @@
 # Task 1 - Set up your computer
 
-First, you should follow the [install instructions on the course website](https://firas.moosvi.com/courses/2021_WT1/data301/notes/setup/stack.html#).
+First, you should follow the [install instructions on the course website](https://firas.moosvi.com/courses/cosc301/2022_WT1/notes/setup/stack.html#).
 
 Below are the instructions for you to continue installing software on your system. We will need this for the first python lecture this week.
 
-- [macOS](https://firas.moosvi.com/courses/2021_WT1/data301/notes/setup/install_ds_stack_mac.html)
-- [Windows](https://firas.moosvi.com/courses/2021_WT1/data301/notes/setup/install_ds_stack_windows.html)
+- [macOS](https://firas.moosvi.com/courses/cosc301/2022_WT1/notes/setup/install_ds_stack_mac.html)
+- [Windows](https://firas.moosvi.com/courses/cosc301/2022_WT1/notes/setup/install_ds_stack_windows.html)
 
 ## Getting Started
 
 Once you are done with the install instructions, you can get started with the rest of Lab 1.
 
 ## Task 1.1: Accept the lab assignment
-You can find the link to accept the lab on Canvas, under "Course Content" and then "Lab Links and Solutions".
+You can find the link to accept the lab on Canvas, under "Course Content" and then "Lab Links".
 
 - You can get your clone URL from GitHub:
 
@@ -22,19 +22,19 @@ You can find the link to accept the lab on Canvas, under "Course Content" and th
 
 - Open a new Terminal - when you do, generally you will start in your home directory (on Windows this will be `C:\Users\yourusername\` and on macOS and Ubuntu this wil be `/Users/yourusername`). You can check your home directory by typing `pwd` (print working directory) and hitting enter.
 
-![Animation of opening a Terminal, navigate to the location you want to organize your Data 301 stuff (for example: `~/school/year3/data301`) and then clone a GitHub url.](navigating.gif)
+![Animation of opening a Terminal, navigate to the location you want to organize your Data 301 stuff (for example: `~/school/year3/cosc301`) and then clone a GitHub url.](navigating.gif)
 
 - To navigate to a new directory, you will need to use the `cd` command and use tab-completion to find the directory on your computer where you cloned this lab:
 
 ```
-cd ~/school/year3/data301/lab1-github-username
+cd ~/school/year3/cosc301/lab1-github-username
 ```
 **Note: you may choose a different directory structure, based on how you keep your coursework organized on your machine. If you do not currently organize your coursework in a particular way, I suggest using the structure above.
 
 - You will then need to clone the GitHub repository somewhere locally (I suggest a directory structure like the one I above):
 
 ```
-git clone https://github.com/data301-2021-winter1/lab1-YOUR_USER_NAME.git
+git clone https://github.com/firasm/test.git
 ```
 
 ![](images/lab_accept.png)
@@ -53,7 +53,8 @@ C) A new Python notebook (click on "Python" to create a new Python notebook).
 
 ![](images/terminal_clone.png)
 
-Remember to adjust the name of your screenshot file (it should match exactly, including the extension. Mine is `.png`, yours could be a jpg, or bmp or tiff) and add your own commit message):
+Remember to adjust the name of your screenshot file (it should match exactly, including the extension.
+Mine is `.png`, yours could be a jpg, or bmp or tiff) and add your own commit message):
 
 ```
 git add screenshot.png

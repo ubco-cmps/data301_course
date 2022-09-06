@@ -1,7 +1,7 @@
-# DATA 301 Lab 1
+# Lab 1
 
-Lab 1 of this course has two tasks.
-The first task is [installing the tech stack](https://firas.moosvi.com/courses/2021_WT1/data301/notes/setup/stack.html), and the second task is practicing Markdown syntax.
+Lab 1 of this course has three tasks.
+The first task is [installing the tech stack](https://firas.moosvi.com/courses/2021_ST2/data301/notes/setup/stack.html), and the second and third tasks are to practice Markdown syntax.
 
 ## Submission Instructions
 
@@ -27,8 +27,8 @@ Those same instructions are summarized here in text:
 
 1. If this is your first time using Gradescope, you will need to set a password:
 
-In the confirmation email you received from Gradescope, click the set your password link.
-Enter the same password in the password and password confirmation fields, and click Set Password.
+    In the confirmation email you received from Gradescope, click the set your password link.
+    Enter the same password in the password and password confirmation fields, and click Set Password.
 
 1. You can now access Gradescope through your Canvas course.
 
