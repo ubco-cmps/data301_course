@@ -35,6 +35,8 @@ Even though the tools above are required for this course, if you have a moral or
 ### Link your Canvas account to Gradescope [Required]
 
 On the left sidebar in Canvas, click on Gradescope.
+
+
 <img src="../images/GradescopeAccount.gif" width="40%">
 
 You should then be guided through a series of steps to create an account, set a password, and link it to our course. 
