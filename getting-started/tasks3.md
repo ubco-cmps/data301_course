@@ -35,4 +35,4 @@ Go through the "Sample Week" on the course website to get familiar with the cour
 
 ## Frequently asked questions
 
-See the `ref`{page_FAQ} for answers to common questions.
+See the {ref}`page_FAQ` for answers to common questions.

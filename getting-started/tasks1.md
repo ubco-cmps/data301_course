@@ -46,4 +46,4 @@ Rest, recover, heal from everything you've been through over the last year.
 
 ## Frequently asked questions
 
-See the `ref`{page_FAQ} for answers to common questions.
+See the {ref}`page_FAQ` for answers to common questions.

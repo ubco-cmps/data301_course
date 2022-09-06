@@ -46,4 +46,4 @@ This is **very** important for you to do as it'll be our primary mechanism for d
 
 ## Frequently asked questions
 
-See the `ref`{page_FAQ} for answers to common questions.
+See the {ref}`page_FAQ` for answers to common questions.
