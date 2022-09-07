@@ -25,7 +25,7 @@ I encourage you to read it - you'll also find out *why* I call it the **UN**syll
     :class-container: sd-shadow-lg
     :color: primary
 
-On the [Student Service Center](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=COSC&course=122), you can find the time, building, and room number of your lab.
+On the [Student Service Center](https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=DATA&course=301), you can find the time, building, and room number of your lab.
 
 Once you know the building and room number, you can use the [UBCO online interactive maps](https://maps.ok.ubc.ca) to find the building.
 It'll be worth it for you to spend some time figuring out where you need to be so you're not stressed out the first week!
