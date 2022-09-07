@@ -181,7 +181,7 @@ Miniconda also provides us with a minimum number of useful packages so installat
 After the download has finished, run the installer and accept the default configuration for all pages.
 
 ```{warning}
-Make sure to check the box to add miniconda to the PATH.
+Make sure to check the box to add miniconda to the PATH. There is a big scary warning that says this is "Not Recommended" ; you can ignore that warning, and make sure that checkbox is clicked!
 ```
 
 After the installation is complete, open the Start Menu and search for the program called "Anaconda Prompt (miniconda3)".
