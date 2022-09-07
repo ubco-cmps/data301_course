@@ -2,6 +2,10 @@
 macOS Software Stack
 =======================
 
+<head>
+	<base target="_blank">
+</head>
+
 These instructions will walk you through installing the required Data Science software stack for {{ COURSE_CODE }}. 
 Before starting, ensure that your laptop meets the minimum requirements:
 
