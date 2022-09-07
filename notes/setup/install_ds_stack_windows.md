@@ -43,7 +43,7 @@ Once you have completed these installation instructions, make sure to follow the
 - [Web browser](#web-browser)
 - [Microsoft Office](#microsoft-office)
 - [Visual Studio Code](#visual-studio-code)
-- [Terminal](#terminal)
+- [Terminal](#terminal-gitbash)
 - [Python, Conda, and JupyterLab](#python)
 - [Configuring VS Code extensions](#vscode-extensions)
 - [Git and GitHub](#git-and-github)
@@ -106,7 +106,7 @@ You can download and install the macOS version of VS Code from the VS code websi
 Once the download is finished, double click it to open and follow the installation instructions.
 Make sure you are able to open VS Code by clicking on the application.
 
-## Terminal
+## Terminal (GitBash)
 
 Unfortunately, one of the major problems with using the Windows operating system is that the "Command Prompt" that comes with the operating system is severely deficient. 
 No worries though, luckily most of the tools we use in this course are open source, so the community has worked hard to shore up deficiencies in the Microsoft ecosystem (until Windows subsystem for Linux is a more mature product).
@@ -123,10 +123,11 @@ I hope to adopt zsh on windows fully next time I teach this course.
 
 Briefly, we will be using the Bash shell to interact with our computers via a command line interface, and Git to keep a version history of our files and upload to/download from to GitHub.
 
-Go to <https://git-scm.com/download/win> and download the windows version of GitBash. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
+Go to <https://git-scm.com/download/win> and download the windows version of GitBash.
+After the download has finished, run the installer and **accept the default configuration for all pages except for the following**:
 
-- *Optional* On the **Select Components** page, check "On the Desktop" under "Additional icons".
 - On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
+- *Optional* On the **Select Components** page, check "On the Desktop" under "Additional icons".
 
 <img src="setup_images/vscode-as-git-editor.png" alt = ""/>
 
@@ -137,6 +138,7 @@ If you wish to pin Git Bash to the taskbar, you need to search for the program i
 ```{note}
 After installation, test if you were successful by opening the GitBash program.
 Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just the "Terminal").
+From now on, all commands should be entered into the GitBash program (not Anaconda Command Prompt, or Command Prompt, or PowerShell etc...).
 ```
 
 <img src="setup_images/gitbash.png" alt = ""/>
@@ -185,7 +187,7 @@ Miniconda also provides us with a minimum number of useful packages so installat
 After the download has finished, run the installer and accept the default configuration for all pages.
 
 ```{warning}
-Make sure to check the box to add miniconda to the PATH. There is a big scary warning that says this is "Not Recommended" ; you can ignore that warning, and make sure that checkbox is clicked!
+Make sure to check the box to add Miniconda to the PATH. There is a big scary warning that says this is "Not Recommended" ; you can ignore that warning, and make sure that checkbox is clicked!
 ```
 
 After the installation is complete, open the Start Menu and search for the program called "Anaconda Prompt (miniconda3)".
