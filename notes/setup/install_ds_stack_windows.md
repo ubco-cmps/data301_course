@@ -9,7 +9,7 @@ Windows Software Stack
 These instructions will walk you through installing the required Data Science software stack for {{ COURSE_CODE }}. 
 Before starting, ensure that your laptop meets the minimum requirements:
 
-- Runs the latest version of Windows 11 available for your system.
+- Runs the latest version of Windows 10 or 11 available for your system.
     - Currently enrolled UBC students with a valid CWL account [qualify for one license of Windows 11 Education](https://it.ubc.ca/services/desktop-print-services/software-licensing/windows-education).
 - Can connect to networks via a wireless connection.
 - Has at least 25 GB disk space available.
@@ -21,7 +21,8 @@ Before starting, ensure that your laptop meets the minimum requirements:
 If your computer does not meet any of the requirements above, please don't just drop the course!!
 Let me know first and we can discuss alternate possibilities so you can still take the course.
 
-```tip
+
+```{tip}
 Before starting, I suggest updating your Windows operating system to the latest version your laptop can run:
 
 [See here](https://support.microsoft.com/en-us/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a) on how to update your Windows 11 machine to the latest version.
@@ -380,7 +381,7 @@ Here you will be prompted for your GitHub.com username, and your PAT (personal a
 Hopefully, if things work, you should be able to see a new folder created at that location.
 We will be talking more about what exactly you did over the next week and a bit, don't worry!
 
-```tip
+```{tip}
 If after running the code above, you see the error message:
 
 > fatal: destination path 'test' already exists and is not an empty directory. 
