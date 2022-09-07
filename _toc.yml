@@ -10,10 +10,6 @@ parts:
   - file: about/doing_well
   - file: about/syllabus
 
-- caption: Tools
-  chapters:
-  - file: tools/ed_discussion/ed_discussion
-
 - caption: Getting Started
   chapters:
   - file: getting-started/pre_term_upper
@@ -315,7 +311,11 @@ parts:
 #     - file: practice/13_debugging_exercise
 #       title: 11. Debugging
 
-# - caption: Course Feedback
-#   chapters:
-#   - file: about/feedback
-#     title: Anonymous Feedback Form
+- caption: Tools
+  chapters:
+  - file: tools/ed_discussion/ed_discussion
+
+- caption: Course Feedback
+  chapters:
+  - file: about/feedback
+    title: Anonymous Feedback Form
