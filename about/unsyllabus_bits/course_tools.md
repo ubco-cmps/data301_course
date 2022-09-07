@@ -76,8 +76,13 @@ I strongly believe that you are now in charge of your own education, and I am ju
 
 Here's an animated gif of how to annotate (you'll need to sign up for a free account):
 
-<img src="../images/hypothesis_annotation.gif" width="100%">
-<br/>
+```{figure} ../images/hypothesis.gif
+---
+height: 450px
+name: hypothesis
+---
+Gif showing you how to annotate using hypothesis.
+```
 
 This is an experiment, and I encourage you to make comments and highlights on our unsyllabus.
 Let's see how it goes!
