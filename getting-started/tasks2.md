@@ -52,11 +52,11 @@ If you do not see this button on Canvas, it will appear in a few days so check b
 
 This is **very** important for you to do as it'll be our primary mechanism for delivering you feedback in this course.
 
-<img src="../images/GradescopeAccount.gif">
+<img src="../images/github_account.gif">
 ```
 
 
-```{dropdown} 7. Start setting up your computer (Lab 1)
+```{dropdown} 8. Start setting up your computer (Lab 1)
     :class-container: sd-shadow-lg
     :color: primary
 

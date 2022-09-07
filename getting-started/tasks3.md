@@ -4,7 +4,7 @@
 There are several things you'll need to do at the start of the course to get set up with all the technology, accounts, and services we'll be using.
 I've split these tasks up into several chunks so it's a bit more manageable. 
 
-```{dropdown} 8. Submit your first Lab (L1) on Gradescope
+```{dropdown} 9. Submit your first Lab (L1) on Gradescope
     :class-container: sd-shadow-lg
     :color: primary
     :open:
@@ -13,7 +13,7 @@ Remember Lab 1 is the steps required to setup your computer and install the nece
 We will be using the Gradescope platform to **submit** your weekly labs.
 ```
 
-```{dropdown} 9. Complete the first Learning Log (LL01) on Gradescope.
+```{dropdown} 10. Complete the first Learning Log (LL01) on Gradescope.
     :class-container: sd-shadow-lg
     :color: primary
     :open:
@@ -23,7 +23,7 @@ This assignment will help you get familiar with answering "Learning Log" questio
 I will respond to your learning logs over the weekend, and next week, show you how to access your feedback.
 ```
 
-```{dropdown} 10. Get Familiar with the course pattern.
+```{dropdown} 11. Get Familiar with the course pattern.
     :class-container: sd-shadow-lg
     :color: primary
     :open:
