@@ -4,7 +4,7 @@
 
 # Course Syllabus (Official)
 
-You can [download the official Course Syllabus here](../cosc301_2022WT1.pdf).
+You can [download the official Course Syllabus here](https://github.com/ubco-cmps/data301_course/raw/main/files/cosc301_2022WT1.pdf).
 For more details about the reason we have a Syllabus and an [Unsyllabus](unsyllabus), you can [read the explanation here](syllabus-vs-unsyllabus).
 
 <!-- 
