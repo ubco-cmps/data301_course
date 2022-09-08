@@ -358,7 +358,7 @@ Hopefully, if things work, you should be able to see a new folder created at tha
 We will be talking more about what exactly you did over the next week and a bit, don't worry!
 
 
-```tip
+```{tip}
 If after running the code above, you see the error message:
 
 > fatal: destination path 'test' already exists and is not an empty directory. 
