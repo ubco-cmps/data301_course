@@ -50,9 +50,6 @@ name: PAT
 View your feedback on Gradescope
 ```
 
-### Demo of GitHub
-
-
 ### Demo of Ed Discussion
 
 ```{card} Request an invite to Ed Discussion using a non-UBC email
@@ -61,7 +58,23 @@ View your feedback on Gradescope
 If you have been unsuccessful using your UBC email address to join Ed Discussion, you may provide an alternate email address here.
 ```
 
+## Tour of Visual Studio Code
+
+VS Code (or Visual Studio Code) is the IDE, or "Interactive Development Environment" we will be using in this course.
+Though it is not required for you to use it (you can accomplish the same things in other IDEs like PyCharm, Atom, etc...), I suggest giving it a shot and see how you like it!
+In this live demo, I'll show you around the editor and how you can use it for your work:
+
+- Opening a Folder vs. opening an individual file
+- Opening a Terminal in VS Code
+    - On Windows, you may need to do an extra step to link your GitBash terminal to VS Code
+- Sidebar for files
+- Search
+- Extensions
+- Customizing colours, editor layout, other settings
+
+## Accept your first lab
 
 
 ## Introduction to Markdown
 
+- Why use Markdown 

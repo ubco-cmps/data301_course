@@ -36,12 +36,17 @@ parts:
   - file: notes/week01/week01_summary
     title: Week 1
     sections:
+    - file: notes/week01/videos
     - file: notes/week01/Class1A/Class1A
       title: A. Course Introduction
     - file: notes/week01/Class1B/Class1B
       title: B. Tech Stack & Markdown
+    - file: notes/week01/lab/README
+      title: Lab 1
+      sections:
+        - file: notes/week01/lab/Task1.md
+        - file: notes/week01/lab/Task2.md
     - file: notes/week01/log
-    - file: notes/week01/videos
 
 #   - file: notes/week02/week02_summary
 #     title: Week 2
@@ -268,10 +273,10 @@ parts:
 #     - file: notes/week13/test
 #     - file: notes/week13/log
 
-# - caption: Labs
-#   chapters:
-#   - file: notes/labs
-#     title: GitHub Classroom Links
+- caption: Labs
+  chapters:
+  - file: notes/labs
+    title: GitHub Classroom Links
 
 # - caption: Project
 #   chapters:

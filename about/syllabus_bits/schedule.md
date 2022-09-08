@@ -15,7 +15,7 @@ The exact details are subject to change, so this is roughly the plan we will try
 | 10 | Nov 7 - 13      | Reading week <br />(no new material)               | -      | -    | -                  | -                            | -                            |
 | 11 | Nov 14 - 20     | Tableau                                            | Lab 9  | LL9  | PM 4               | Test 3                       | Python and Pandas            |
 | 12 | Nov 21 - 27     | Microsoft Excel                                    | Lab 10 | LL10 | -                  | (Bonus Test 3)               | -                            |
-| 13 | Nov 28 - Dec 4  | Project Wrap-up and Review <br />(no new material) | Lab 11 | LL11 | PM 5               | Test 4                       | Data Visualization and Excel |
+| 13 | Nov 28 - Dec 4  | Project Wrap-up and Review <br />(no new material) | -      | LL11 | PM 5               | Test 4                       | Data Visualization and Excel |
 | 14 | Dec 5 - Dec 8   | Final Exam Details <br />(no new material)         | -      | -    | -                  | (Bonus Test 4)               | -                            |
 
 ```{note}

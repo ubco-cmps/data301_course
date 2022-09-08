@@ -12,17 +12,27 @@ Below are the instructions for you to continue installing software on your syste
 Once you are done with the install instructions, you can get started with the rest of Lab 1.
 
 ## Task 1.1: Accept the lab assignment
-You can find the link to accept the lab on Canvas, under "Course Content" and then "Lab Links".
+
+- You will find the link to accept the lab on Canvas, under "Course Content ▶ GitHub Classroom Links".
+
+![Animated gif showing you where to find your lab links on Canvas, "Course Content ▶ Lab"](images/accept_activities.gif)
+
+Just click on the "Accept Lab" link, and it will take you to the page on GitHub.com where you will complete your lab.
+
+```{important}
+For some labs clicking the link will take yoccu to an intermediate page where you'll be asked to wait till your "repository" is being created. Just be patient for a few seconds, and once it's done you should reload and the repository will be there for you. This whole process shouldn't take longer than 30 seconds.
+```
+You can find the link to accept the lab on Canvas, under "Course Content" and then "GitHub Classroom Links".
 
 - You can get your clone URL from GitHub:
 
-![](cloneURL.png)
+![](images/cloneURL.png)
 
 ## Task 1.2: Use the clone URL and clone the Lab 1 repository on your local computer and navigate to that directory
 
 - Open a new Terminal - when you do, generally you will start in your home directory (on Windows this will be `C:\Users\yourusername\` and on macOS and Ubuntu this wil be `/Users/yourusername`). You can check your home directory by typing `pwd` (print working directory) and hitting enter.
 
-![Animation of opening a Terminal, navigate to the location you want to organize your Data 301 stuff (for example: `~/school/year3/cosc301`) and then clone a GitHub url.](navigating.gif)
+![Animation of opening a Terminal, navigate to the location you want to organize your Data 301 stuff (for example: `~/school/year3/cosc301`) and then clone a GitHub url.](images/navigating.gif)
 
 - To navigate to a new directory, you will need to use the `cd` command and use tab-completion to find the directory on your computer where you cloned this lab:
 
