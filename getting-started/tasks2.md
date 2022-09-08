@@ -55,7 +55,6 @@ This is **very** important for you to do as it'll be our primary mechanism for d
 <img src="../images/github_account.gif">
 ```
 
-
 ```{dropdown} 8. Start setting up your computer (Lab 1)
     :class-container: sd-shadow-lg
     :color: primary

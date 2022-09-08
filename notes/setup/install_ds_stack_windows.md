@@ -362,7 +362,13 @@ This is a bit tricky, so please make sure you follow these directions carefully.
 - Click Developer Settings
 - Click "Personal access tokens", set the appropriate permissions at the "repo" level (see gif below):
 
-<img src="setup_images/Github_create_PAT.gif">
+```{figure} setup_images/Github_create_PAT.gif
+---
+height: 450px
+name: PAT
+---
+Personal Access Token settings
+```
 
 - Click "Generate new token"
 - Save this token somewhere on your computer, you will need it when you clone a repository to your computer.

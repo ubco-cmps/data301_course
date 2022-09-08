@@ -20,7 +20,7 @@ Before starting, ensure that your laptop meets the minimum requirements:
 If your computer does not meet any of the requirements above, please don't just drop the course!!
 Let me know first and we can discuss alternate possibilities so you can still take the course.
 
-```tip
+```{tip}
 Before starting, I suggest updating your Mac to the latest version your laptop can run:
 
 <img src="setup_images/updatemacOS.gif">
@@ -332,7 +332,13 @@ This is a bit tricky, so please make sure you follow these directions carefully.
 - Click Developer Settings
 - Click "Personal access tokens", set the appropriate permissions at the "repo" level (see gif below):
 
-<img src="setup_images/Github_create_PAT.gif">
+```{figure} setup_images/Github_create_PAT.gif
+---
+height: 450px
+name: PAT
+---
+Personal Access Token settings
+```
 
 - Click "Generate new token"
 - Save this token somewhere on your computer, you will need it when you clone a repository to your computer.
