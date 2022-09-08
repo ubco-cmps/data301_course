@@ -42,7 +42,7 @@ This course website is currently under construction. It will continue to be upda
 (evaluation)=
 ## Evaluation
 
-```{include} syllabus_bits/grading_practices_detailed.md
+```{include} unsyllabus_bits/grading_practices_detailed.md
 ```
 
 (passing-requirements)=
