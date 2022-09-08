@@ -20,7 +20,7 @@ Once you are done with the install instructions, you can get started with the re
 Just click on the "Accept Lab" link, and it will take you to the page on GitHub.com where you will complete your lab.
 
 ```{important}
-For some labs clicking the link will take yoccu to an intermediate page where you'll be asked to wait till your "repository" is being created. Just be patient for a few seconds, and once it's done you should reload and the repository will be there for you. This whole process shouldn't take longer than 30 seconds.
+For some labs clicking the link will take you to an intermediate page where you'll be asked to wait till your "repository" is being created. Just be patient for a few seconds, and once it's done you should reload and the repository will be there for you. This whole process shouldn't take longer than 30 seconds.
 ```
 You can find the link to accept the lab on Canvas, under "Course Content" and then "GitHub Classroom Links".
 
