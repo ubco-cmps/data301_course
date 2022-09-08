@@ -74,7 +74,35 @@ In this live demo, I'll show you around the editor and how you can use it for yo
 
 ## Accept your first lab
 
+The first thing you will generally need to do when a lab is released is to "accept it".
+This means that you'll get a "copy" of the lab instructions and the folder where you are meant to do work.
+
+- You will find the link to accept the lab on Canvas, under "Course Content ▶ GitHub Classroom Links".
+
+![Animated gif showing you where to find your lab links on Canvas, "Course Content ▶ Lab"](images/accept_activities.gif)
+
+Just click on the "Accept Lab" link, and it will take you to the page on GitHub.com where you will complete your lab.
+
+```{important}
+For some labs clicking the link will take you to an intermediate page where you'll be asked to wait till your "repository" is being created. Just be patient for a few seconds, and once it's done you should reload and the repository will be there for you. This whole process shouldn't take longer than 30 seconds.
+```
+- You can get your "Clone URL" from GitHub:
+
+![](images/cloneURL.png)
 
 ## Introduction to Markdown
 
-- Why use Markdown 
+- What is Markdown?
+- Key Features of Markdown
+- Why use Markdown?
+- Key Limitations of Markdown
+- Visual Studio Code Markdown Preview
+- [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+
+## Learning Log 1
+
+Learning Log 1 will be available to you after the last class of the week is over.
+
+```{important}
+That's it, see you next week! Remember to continue working on the "Setup" of your machines and visit the labs to get extra help!
+```
