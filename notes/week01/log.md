@@ -1,3 +1,3 @@
-# Learning Log
+# Learning Log 1
 
-The Learning Log for this week will be released closer to the end of the week.
+The Learning Log will be [available on Gradescope after the last class of the week](https://www.gradescope.ca/courses/5934).
