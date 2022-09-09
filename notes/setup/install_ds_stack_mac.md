@@ -340,6 +340,15 @@ name: PAT
 Personal Access Token settings
 ```
 
+
+```{figure} setup_images/repo.png
+---
+height: 450px
+name: PAT
+---
+Personal Access Token settings
+```
+
 - Click "Generate new token"
 - Save this token somewhere on your computer, you will need it when you clone a repository to your computer.
 - Don't share your token with anyone and protect it like it's your password! You will not be able to come back to this page to get your token. If you forget it, or lose it, you can just delete the token and create another one.
