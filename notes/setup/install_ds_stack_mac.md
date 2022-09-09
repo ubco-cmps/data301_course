@@ -42,9 +42,9 @@ Once you have completed these installation instructions, make sure to follow the
 - [Zoom](#zoom)
 - [GitHub.com account](#github)
 - [Microsoft Office](#microsoft-office)
-- [Python, Conda, and JupyterLab](#python)
 - [Visual Studio Code](#visual-studio-code)
 - [Terminal](#terminal)
+- [Python, Conda, and JupyterLab](#python)
 - [Git and GitHub](#git-and-github)
 - [Test JupyterLab](#test-jupyterlab)
 
@@ -90,74 +90,6 @@ To get your free Office 365 license and download the installer files, visit [UBC
 Note that you will need your CWL login credentials in order to download the software and activate your license from [portal.office.com](https://portal.office.com).
 
 In this course, you will need Microsoft Excel.
-
-## Python
-
-We will be using Python for a large part of the course, and `conda` will be our Python package manager.
-We will be using the [Miniconda installer (read more here)](https://docs.conda.io/en/latest/miniconda.html) to install both python and conda at the same time.
-Miniconda also provides us with a minimum number of useful packages so installation is quick, and relatively painless.
-
-### Installing `conda` and python
-
-The latest Miniconda installer can be downloaded from here: [Miniconda macOSX 64-bit pkg install](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
-
-After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
-```
-conda --version
-```
-which should return something like this:
-
-```
-conda 4.12.0
-```
-
-```{note}
-Note: If you see `zsh: command not found: conda`, try the following>: Open a new Terminal (it should be zsh), then type: `source /Users/YOURUSERNAME/opt/miniconda3/bin/activate` OR `source ~/opt/miniconda3/bin/activate` depending on whether you installed for all users, or just your user (make sure to also change YOURUSERNAME to your username). Then enter the following command `conda init zsh`. The error should now be fixed.
-```
-
-Next, type the following to ask for the version of Python:
-```
-python --version
-```
-which should return something like this:
-
-```
-Python 3.9.7
-```
-
-```{note}
-Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.9** (or higher).
-```
-
-### Essential Python packages
-
-`conda` installs Python packages from different online repositories which are called "channels".
-A package needs to go through thorough testing before it is included in the default channel, which is good for stability, but also means that new versions will be delayed and fewer packages are available overall.
-There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/), which provides more up-to-date packages.
-To enable us to access the most recent versions of the Python packages we are going to use, we will add this channel.
-To add the conda-forge channel type the following in a Terminal window:
-
-```
-conda config --add channels conda-forge
-```
-
-To install packages individually, we need to use the following command: `conda install -c conda-forge "<package-name>"`.
-The part about `conda install` tells the `conda` package manager to install a particular package, and the `-c` part is an extra "option" that tells `conda` to look in the `conda-forge` channel (which usually has the latest updated packages).
-Let's install the key packages needed (you will note that we're also specifying certain versions of the package with `= X.Y`).
-You should copy and paste each line below in your Terminal to install the following packages:
-
-```
-conda install -c conda-forge "jupyterlab=3.*"
-conda install -c conda-forge "numpy=1.*"
-conda install -c conda-forge "pandas=1.*"
-conda install -c conda-forge "black=19.*"
-conda install -c conda-forge "nbconvert=6.*"
-conda install -c conda-forge "seaborn"
-conda install -c conda-forge "pre-commit"
-```
-
-`conda` will show you the packages that will be downloaded, and you may need to press `enter` or `Y` (for yes) to proceed with the installation.
-This may take a while to complete.
 
 ## Visual Studio Code
 
@@ -272,6 +204,74 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 You may now customize your Terminal with themes (see [screenshots of themes here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)) by [following the directions here](https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme].
 Selecting a theme is optional, the default one is pretty good as it is!
+
+## Python
+
+We will be using Python for a large part of the course, and `conda` will be our Python package manager.
+We will be using the [Miniconda installer (read more here)](https://docs.conda.io/en/latest/miniconda.html) to install both python and conda at the same time.
+Miniconda also provides us with a minimum number of useful packages so installation is quick, and relatively painless.
+
+### Installing `conda` and python
+
+The latest Miniconda installer can be downloaded from here: [Miniconda macOSX 64-bit pkg install](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
+
+After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
+```
+conda --version
+```
+which should return something like this:
+
+```
+conda 4.12.0
+```
+
+```{note}
+Note: If you see `zsh: command not found: conda`, try the following>: Open a new Terminal (it should be zsh), then type: `source /Users/YOURUSERNAME/opt/miniconda3/bin/activate` OR `source ~/opt/miniconda3/bin/activate` depending on whether you installed for all users, or just your user (make sure to also change YOURUSERNAME to your username). Then enter the following command `conda init zsh`. The error should now be fixed.
+```
+
+Next, type the following to ask for the version of Python:
+```
+python --version
+```
+which should return something like this:
+
+```
+Python 3.9.7
+```
+
+```{note}
+Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.9** (or higher).
+```
+
+### Essential Python packages
+
+`conda` installs Python packages from different online repositories which are called "channels".
+A package needs to go through thorough testing before it is included in the default channel, which is good for stability, but also means that new versions will be delayed and fewer packages are available overall.
+There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/), which provides more up-to-date packages.
+To enable us to access the most recent versions of the Python packages we are going to use, we will add this channel.
+To add the conda-forge channel type the following in a Terminal window:
+
+```
+conda config --add channels conda-forge
+```
+
+To install packages individually, we need to use the following command: `conda install -c conda-forge "<package-name>"`.
+The part about `conda install` tells the `conda` package manager to install a particular package, and the `-c` part is an extra "option" that tells `conda` to look in the `conda-forge` channel (which usually has the latest updated packages).
+Let's install the key packages needed (you will note that we're also specifying certain versions of the package with `= X.Y`).
+You should copy and paste each line below in your Terminal to install the following packages:
+
+```
+conda install -c conda-forge "jupyterlab=3.*"
+conda install -c conda-forge "numpy=1.*"
+conda install -c conda-forge "pandas=1.*"
+conda install -c conda-forge "black=19.*"
+conda install -c conda-forge "nbconvert=6.*"
+conda install -c conda-forge "seaborn"
+conda install -c conda-forge "pre-commit"
+```
+
+`conda` will show you the packages that will be downloaded, and you may need to press `enter` or `Y` (for yes) to proceed with the installation.
+This may take a while to complete.
 
 ## Git and GitHub
 
