@@ -360,7 +360,14 @@ This is a bit tricky, so please make sure you follow these directions carefully.
 - Click your picture in the top right, 
 - Click Settings, 
 - Click Developer Settings
-- Click "Personal access tokens", set the appropriate permissions at the "repo" level (see gif below):
+- Click "Personal access tokens", set the appropriate permissions at the "repo" level (see image below):
+
+```{figure} setup_images/repo.png
+---
+name: PAT
+---
+Personal Access Token settings
+```
 
 ```{figure} setup_images/Github_create_PAT.gif
 ---
