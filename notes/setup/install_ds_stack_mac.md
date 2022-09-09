@@ -340,7 +340,7 @@ name: PAT
 Personal Access Token settings
 ```
 
-```{figure} setup_images/Github_create_PAT.gif
+```{figure} setup_images/GithubcreatePAT.gif
 ---
 height: 450px
 name: PAT2
