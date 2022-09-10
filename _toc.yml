@@ -12,24 +12,23 @@ parts:
 
 - caption: Getting Started
   chapters:
-  - file: getting-started/pre_term_upper
-    title: Before the term starts
-  - file: getting-started/tasks1
-    title: Before the first class
-  - file: getting-started/tasks2
-    title: After the first class
-  - file: getting-started/tasks3
-    title: In the first week
   - file: getting-started/faq
     title: Frequently Asked Questions
+    sections:
+    - file: getting-started/pre_term_upper
+      title: Before the term starts
+    - file: getting-started/tasks1
+      title: Before the first class
+    - file: getting-started/tasks2
+      title: After the first class
+    - file: getting-started/tasks3
+      title: In the first week
   - file: notes/setup/stack
     sections:
     - file: notes/setup/install_ds_stack_mac
       title: macOS Setup Instructions
     - file: notes/setup/install_ds_stack_windows
       title: Windows Setup Instructions
-#     # - file: notes/setup/install_ds_ubuntu
-#     #   title: Ubuntu
 
 - caption: Weekly Content
   chapters:
@@ -48,38 +47,35 @@ parts:
         - file: notes/week01/lab/Task2.md
     - file: notes/week01/log
 
-#   - file: notes/week02/week02_summary
-#     title: Week 2
-#     sections:
-#     - file: notes/week02/Class2A/Class2A
-#       title: A. Command Line and JupyterLab
-#     - file: notes/week02/Class2B/Class2B
-#       title: B. File System
-#     - file: notes/week02/Class2C/Class2C
-#       title: C. JupyterLab and the Project
-#     - file: notes/week02/lab/README
-#       title: Lab 1
-#       sections:
-#         - file: notes/week02/lab/Task1.md
-#         - file: notes/week02/lab/Task2.md
-#     - file: notes/week02/log
-#   - file: notes/week03/week03_summary
-#     title: Week 3
-#     sections:
-#     - file: notes/week03/videos
-#       title: Videos
-#     - file: notes/week03/lab/README
-#       title: Lab 2
-#       sections:
-#         - file: notes/week03/lab/Task1.md
-#         - file: notes/week03/lab/Task2.md
-#     - file: notes/week03/log
-#     - file: notes/week03/Class3A/Class3A
-#       title: A. Introduction to Version Control with Git
-#     - file: notes/week03/Class3B/Class3B
-#       title: B. More Practice with Git
-#     - file: notes/week03/Class3C/Class3C
-#       title: C. Practical life with Git + Project
+  - file: notes/week02/week02_summary
+    title: Week 2
+    sections:
+    - file: notes/week02/Class2A/Class2A
+    - file: notes/week02/Class2B/Class2B
+    - file: notes/week02/lab/README
+      title: Lab 1
+      sections:
+        - file: notes/week02/lab/Task1.md
+        - file: notes/week02/lab/Task2.md
+    - file: notes/week02/log
+
+  # - file: notes/week03/week03_summary
+  #   title: Week 3
+  #   sections:
+  #   - file: notes/week03/videos
+  #     title: Videos
+  #   - file: notes/week03/lab/README
+  #     title: Lab 2
+  #     sections:
+  #       - file: notes/week03/lab/Task1.md
+  #       - file: notes/week03/lab/Task2.md
+  #   - file: notes/week03/log
+  #   - file: notes/week03/Class3A/Class3A
+  #     title: A. Introduction to Version Control with Git
+  #   - file: notes/week03/Class3B/Class3B
+  #     title: B. More Practice with Git
+  #   - file: notes/week03/Class3C/Class3C
+  #     title: C. Practical life with Git + Project
 
 #   - file: notes/week04/week04_summary
 #     title: Week 4
