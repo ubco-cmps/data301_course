@@ -37,9 +37,7 @@ parts:
     sections:
     - file: notes/week01/videos
     - file: notes/week01/Class1A/Class1A
-      title: A. Course Introduction
     - file: notes/week01/Class1B/Class1B
-      title: B. Tech Stack & Markdown
     - file: notes/week01/lab/README
       title: Lab 1
       sections:
