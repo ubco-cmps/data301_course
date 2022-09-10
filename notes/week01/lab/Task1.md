@@ -32,7 +32,7 @@ You can find the link to accept the lab on Canvas, under "Course Content" and th
 
 - Open a new Terminal - when you do, generally you will start in your home directory (on Windows this will be `C:\Users\yourusername\` and on macOS and Ubuntu this wil be `/Users/yourusername`). You can check your home directory by typing `pwd` (print working directory) and hitting enter.
 
-![Animation of opening a Terminal, navigate to the location you want to organize your Data 301 stuff (for example: `~/school/year3/cosc301`) and then clone a GitHub url.](images/navigating.gif)
+![Animation of opening a Terminal, navigate to the location you want to organize your COSC 301 stuff (for example: `~/school/year3/cosc301`) and then clone a GitHub url.](images/navigating.gif)
 
 - To navigate to a new directory, you will need to use the `cd` command and use tab-completion to find the directory on your computer where you cloned this lab:
 

@@ -1,4 +1,4 @@
-# DATA 301 Lab 4
+# Lab 4
 
 ## Instructions for Lab 4
 

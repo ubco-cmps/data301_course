@@ -55,7 +55,7 @@ And you're done!
 ## Attribution
 
 This seminar was conducted in collaboration with [Hayley Boyce](https://www.hayleyfboyce.com). 
-Hayley created the first draft of this workshop, and it was adapted in the summer of 2020 for DATA 301 and DATA 532.
+Hayley created the first draft of this workshop, and it was adapted in the summer of 2020 for COSC 301 and DATA 532.
 
 
 

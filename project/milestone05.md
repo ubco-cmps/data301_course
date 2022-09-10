@@ -23,7 +23,7 @@ In this milestone you will continue working on your class project, process the d
 
 ## Task 2: Make your repository public 
 
-[Here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/setting-repository-visibility#changing-a-repositorys-visibility) is how to make your repository public (within the Data 301 organization).
+[Here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/setting-repository-visibility#changing-a-repositorys-visibility) is how to make your repository public (within the COSC 301 organization).
 
 1. On GitHub, navigate to the main page of the repository.
 

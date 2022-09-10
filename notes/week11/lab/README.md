@@ -1,4 +1,4 @@
-# DATA 301 Lab 8
+# Lab 8
 
 For this lab, you will need to open `Task2`,`Task3`,`Task4`, and `Task5` and follow the instructions within the Jupyter Notebook.
 

@@ -1,4 +1,4 @@
-# DATA 301 Lab 6
+# Lab 6
 
 This lab has has four tasks.
 Complete each task in the appropriate `.ipynb` file, these are the only files that will be graded for this lab.

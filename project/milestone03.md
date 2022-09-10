@@ -179,7 +179,7 @@ This will reduce the need for you and others to repeat yourself, and allow you t
 
 #### Additional Reading on Relative imports AKA "what did I just do?"
 
-- [This article](https://realpython.com/absolute-vs-relative-python-imports/#relative-imports) is a very comprehensive guide to importing files and functions in python. Much of this is beyond the scope of DATA 301, but for those interested and curious, that is a very useful resource.
+- [This article](https://realpython.com/absolute-vs-relative-python-imports/#relative-imports) is a very comprehensive guide to importing files and functions in python. Much of this is beyond the scope of COSC 301, but for those interested and curious, that is a very useful resource.
 
 
 ## Task 4. Conduct your analysis to help answer your research question(s)

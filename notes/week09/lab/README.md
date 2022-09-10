@@ -1,4 +1,4 @@
-# DATA 301 Lab 7
+# Lab 7
 
 For this lab, you will need to open `Task1.ipynb` and `Task2.ipynb`; then follow the instructions within the Jupyter Notebook.
 

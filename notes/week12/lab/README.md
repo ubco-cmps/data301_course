@@ -1,4 +1,4 @@
-# DATA 301 Lab 9 - TABLEAU DASHBOARD
+# Lab 9 - TABLEAU DASHBOARD
 
 ## Instructions
 

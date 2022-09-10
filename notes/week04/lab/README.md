@@ -1,4 +1,4 @@
-# DATA 301 Lab 3
+# Lab 3
 
 This lab has has two tasks.
 The first task is to complete modules in a [Git tutorial](https://learngitbranching.js.org/) under the 'main' tab, and the second task is to complete the modules under the 'remote' tab.

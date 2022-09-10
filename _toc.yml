@@ -39,7 +39,7 @@ parts:
     - file: notes/week01/Class1A/Class1A
     - file: notes/week01/Class1B/Class1B
     - file: notes/week01/lab/README
-      title: Lab 1
+      title: Lab 2
       sections:
         - file: notes/week01/lab/Task1.md
         - file: notes/week01/lab/Task2.md

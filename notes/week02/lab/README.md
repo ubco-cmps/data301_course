@@ -1,4 +1,4 @@
-# DATA 301 Lab 2
+# Lab 2
 
 This lab has has two tasks.
 The first task is to reproduce a directory structure with Terminal commands, and the second task is to play a game that will teach you more about the Terminal.

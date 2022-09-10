@@ -4,7 +4,7 @@
   <base target="_blank">
 </head>
 
-In this milestone you will be expected to choose a dataset appropriate for the DATA 301 project.
+In this milestone you will be expected to choose a dataset appropriate for the COSC 301 project.
 The most important task for this milestone is to select an appropriate dataset.
 
 ## Overall Expectations
