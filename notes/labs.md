@@ -14,7 +14,7 @@ Click links below to accept the labs, I expect they will be released by Monday m
 | Lab                                             | Due Date                     | Link to Accept                                        |
 |-------------------------------------------------|------------------------------|-------------------------------------------------------|
 | Lab 1 - Course Setup Markdown, Terminal, GitHub | Saturday, Sept 17th at 18:00 | [Accept Lab](https://classroom.github.com/a/NUMX5Dj7) |
-| Lab 2 - BashCrawl                               | Saturday, Sept 24th at 18:00 | Accept Lab[](https://classroom.github.com/a/) |
+| Lab 2 - BashCrawl                               | Saturday, Sept 24th at 18:00 | [Accept Lab](https://classroom.github.com/a/u1ek8Mx2) |
 | Lab 3 - Git Tutorial                            | Saturday, Oct 1st at 18:00   | Accept Lab[](https://classroom.github.com/a/) |
 | Lab 4 - Python                                  | Saturday, Oct 8th at 18:00   | Accept Lab[](https://classroom.github.com/a/) |
 | Lab 5 - Pandas, numpy, and random               | Saturday, Oct 22nd at 18:00  | Accept Lab[](https://classroom.github.com/a/) |

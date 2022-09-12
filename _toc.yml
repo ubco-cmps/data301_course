@@ -51,7 +51,7 @@ parts:
     - file: notes/week02/Class2A/Class2A
     - file: notes/week02/Class2B/Class2B
     - file: notes/week02/lab/README
-      title: Lab 1
+      title: Lab 2
       sections:
         - file: notes/week02/lab/Task1.md
         - file: notes/week02/lab/Task2.md
