@@ -100,13 +100,6 @@ You will not be able to use Google Sheets, Apple Numbers, or LibreOffice Calc to
 If you have trouble installing it, please let the instructor know.
 ```
 
-## Visual Studio Code
-
-The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis.
-You can download and install the Windows version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
-Once the download is finished, double click it to open and follow the installation instructions.
-Make sure you are able to open VS Code by clicking on the application.
-
 ## Terminal (GitBash)
 
 Unfortunately, one of the major problems with using the Windows operating system is that the "Command Prompt" that comes with the operating system is severely deficient. 
@@ -174,6 +167,14 @@ git --version
 ```
 git version 2.32.0.windows.1
 ```
+
+## Visual Studio Code
+
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis.
+You can download and install the Windows version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
+Once the download is finished, double click it to open and follow the installation instructions.
+Make sure you are able to open VS Code by clicking on the application.
+
 
 ## Python
 
