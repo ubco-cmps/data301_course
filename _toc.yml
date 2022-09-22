@@ -266,15 +266,15 @@ parts:
   - file: notes/labs
     title: GitHub Classroom Links
 
-# - caption: Project
-#   chapters:
-#   - file: project/introduction
-#     sections:
-#     - file: project/milestone01
-#     - file: project/milestone02
-#     - file: project/milestone03
-#     - file: project/milestone04
-#     - file: project/milestone05
+- caption: Project
+  chapters:
+  - file: project/introduction
+    sections:
+    - file: project/milestone01
+    - file: project/milestone02
+    - file: project/milestone03
+    - file: project/milestone04
+    - file: project/milestone05
 
 
 # - caption: Extra Practice with Python

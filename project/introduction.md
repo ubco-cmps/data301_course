@@ -17,11 +17,11 @@ Definition: "Intrinsic motivation refers to people’s spontaneous tendencies to
 
 ## Logistics
 
+We will do an activity in class to help you formulate your groups.
+
 ### Group Size
 
-The project can be done as a group of 2, or as a group of 3.
+The optimal group size for this project is a group of 3.
 I encourage you to work in a group, and I expect that you will learn a lot more working collaboratively, including how to use `Git` and `GitHub` in a team setting.
 This will be an excellent skill to put on your CV, and it will also be much closer to what happens in real life.
-In non-pandemic times, this is a group project and students don't have the option to do it individually.
-In pandemic times, I can understand that time zones and your personal situations might make group work difficult, so you may choose the individual project option.
 In **very rare cases**, individual groups will be permitted, by request only and by arrangement with the instructor.

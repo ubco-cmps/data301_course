@@ -37,7 +37,6 @@ Here are three examples or guides:
   - [Guide 3](https://aiden-dataminer.medium.com/the-data-science-method-dsm-exploratory-data-analysis-bc84d4d8d3f9)
   - Lab 4 had some elements of a rudimentary EDA (but we expect much more from you now!)
 
-
 ## Task 2. Set up an "Analysis Pipeline" 
 
 **Each person in a group should do this Task in their own Jupyter notebook!**

@@ -20,34 +20,72 @@ The most important task for this milestone is to select an appropriate dataset.
 
 There is a little bit of additional work needed to form a team, so we can make sure that all team members are on the same page, and teamwork can happen harmoniously.
 
+### Considerations when looking for a team
+
+It may be very tempting, but try to avoid making a group with people you already know and have worked with in the past.
+I know this will be really hard, but group dynamics are very tricky and in my experience people that don't know each other from before tend to approach the project and the code of conduct differently.
+
+#### Consideration 1: Interest in the topic
+
+As I've said, the **most important** thing you should look for in a team member, is an interest in the topic of whatever dataset you end up choosing.
+
+#### Consideration 2: Diversity of knowledge, experience, and skills
+
+Here is a self-assessment form that each members of your group should do.
+
+| Traits                                            | Beginner | Novice | Expert |
+|---------------------------------------------------|----------|--------|--------|
+| General familiarity with technology               |          |        |        |
+| Programming (any language)                        |          |        |        |
+| Presentations and communication                   |          |        |        |
+| Organization and Logistics                        |          |        |        |
+| Design/Aesthetic skills                           |          |        |        |
+| Attention to Detail                               |          |        |        |
+
+The ideal group would have a healthy mix of traits in each of the group members.
+It's very unlikely that one person will be an "expert" in everything, and we want to make sure the group experience is such that everyone can learn and benefit in different ways.
+We are not going to police your groups, but the groups that I "worry about" the most, are those where all members declare themselves as "experts".
+
+#### Consideration 3: Availability 
+
+You should work with group members with whom you can easily find a weekly timeslot to meet, ideally in person and on campus.
+There is nothing more frustrating than group members who can't find a time to work on things simultaneously.
+If you are a morning person, try to find others who want to work in the mornings.
+If you stay up till 3 AM every night, it will likely not make a good match to work with team members who want to meet at 8 AM.
+
+#### Consideration 4: Goals for the project
+
+You should work with group members with shared goals on what your final objective is.
+Your objective could be as simple as "do the bare minimum to pass the project", or "do as much as I can given my heavy course and work load" (make sure to define what "as much as I can" means), or "try everything, and aim to do the best I can", or "my goal is to make something I'm proud of that I can show my future employers".
+Consider all those options above and make sure your team members are on the same page.
+
 ### How to find or create a group
 
 To find or create a group of two or three, here's what you need to do:
 
-1. Use the Ed Discussion megathread to post an "ad" looking for a team to join, or partners for your team.
+1. Use Ed Discussion to post an "ad" looking for a team to join, or partners for your team.
 2. Get in touch with your potential team members (you can message anyone in the class via the Canvas Inbox). 
 3. Share contact details with each other, and arrange for an initial meeting (Zoom, phone, instagram live, whatever y'all use these days). 
     - I will give you some class time to make the initial contact and exchange information.
 4. In your initial meeting discuss the following items:
     - What are your interests and goals with this project (datasets, research questions, what you want to learn)?
     - How much time will you be able to dedicate to this project?
-    - What timezone(s) are you going to be in?
     - How frequently will you meet or discuss the project?
     - What are each of your strengths and weaknesses?
     - What will you do if there is a conflict or if issues arises within the team?
     - Do you all agree to stay in touch, and keep everyone informed despite how busy you are? I suggest setting a response time, say a response time of ~ 12-24 hours.
     - Do you think you will be able to work together for this project?
     - I suggest looking over Milestone 1 as a team and coming up with your answers together.
-5. Once your initial meeting is done and you have answered those questions together, one person in the team should submit Milestone 1 on Gradescope and answer all the questions. 
+5. Once your initial meeting is done and you have answered those questions together, **one person in the team should submit Milestone 1 on Gradescope** and answer all the questions. 
 
-You should try to reach out to your teammates as soon as possible via Canvas messages, Whatsapp, Snapchat, Instagram, canary bird, email, text, etc.
+You should try to reach out to your teammates as soon as possible via Ed Discussion, Canvas messages, Whatsapp, Snapchat, Instagram, canary bird, email, text, etc.
 
-### Join a Group
+### Join a Group on Canvas
 
-All students (even those doing the project individually) must join a group so you can be assigned a group number. 
+All students (even those doing the project individually) must join a "group" on Canvas so you can be assigned a group number. 
 Group numbers are sequential from 1 onwards.
-Please try to join groups sequentially - i.e. don't join group 55 when the next available group is 4.
-Please do not join a group without talking to the other member(s) first and discussing a plan (see below).
+Please try to join groups sequentially - i.e. don't join group 55 when the next available group is 6.
+**Please do not join a group without talking to the other member(s) first and discussing a plan (see below).**
 
 <img src="images/projects.png">
 
