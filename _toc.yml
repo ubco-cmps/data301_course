@@ -80,6 +80,7 @@ parts:
         - file: notes/week04/lab/Task1
         - file: notes/week04/lab/Task2
         - file: notes/week04/lab/Task3
+    - file: notes/week04/test1
     - file: notes/week04/log
     # - file: notes/week04/Class4A/Class4A
     #   title: A. Introduction to Python
