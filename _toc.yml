@@ -69,23 +69,24 @@ parts:
     - file: notes/week03/log
     - file: notes/week03/Class3A/Class3A
     - file: notes/week03/Class3B/Class3B
-#   - file: notes/week04/week04_summary
-#     title: Week 4
-#     sections:
-#     - file: notes/week04/videos
-#       title: Videos
-#     - file: notes/week04/lab/README
-#       title: Lab 3
-#       sections:
-#         - file: notes/week04/lab/Task1.md
-#         - file: notes/week04/lab/Task2.md
-#     - file: notes/week04/log
-#     - file: notes/week04/Class4A/Class4A
-#       title: A. Introduction to Python
-#     - file: notes/week04/Class4B/Class4B
-#       title: B. More Python
-#     - file: notes/week04/Class4C/Class4C
-#       title: C. Loading Data with Python
+  - file: notes/week04/week04_summary
+    title: Week 4
+    sections:
+    - file: notes/week04/videos
+      title: Videos
+    - file: notes/week04/lab/README
+      title: Lab 4
+      sections:
+        - file: notes/week04/lab/Task1
+        - file: notes/week04/lab/Task2
+        - file: notes/week04/lab/Task3
+    - file: notes/week04/log
+    # - file: notes/week04/Class4A/Class4A
+    #   title: A. Introduction to Python
+    # - file: notes/week04/Class4B/Class4B
+    #   title: B. More Python
+    # - file: notes/week04/Class4C/Class4C
+    #   title: C. Loading Data with Python
 
 #   - file: notes/week05/week05_summary
 #     title: Week 5

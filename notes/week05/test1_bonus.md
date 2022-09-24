@@ -4,17 +4,14 @@ You will find Bonus Test 1 on Canvas.
 
 Content you should review for Bonus Test 1 includes:
 
-- Commandline and Terminal
-    - Commands we discussed in Lecture 1B, more advanced commands from the BashCrawl game from lab will not be assessed
-- Basics of git
-    - "It is important to realize that in this course, you will not explicitly be tested on any git commands except `add`, `commit`,`fetch`,`push`,`pull`,`branch`."
-- Basics of python programming
-    - Here are some **sample** topics that may be tested (this is not the exhaustive list):
-        - Python syntax
-        - Valid names of variables
-        - Lists and Dictionaries
-        - Loops
-        - Conditionals
+- Markdown Syntax
+- Questions about Data 301 Tech Stack
+- Command line and Terminal
+    - Commands we discussed in Class, more advanced commands from the BashCrawl game from lab will not be assessed
+    - File sizes
+- Fundamentals of git
+    - "It is important to realize that in this course, you will not explicitly be tested on any git commands except `add`, `commit`,`fetch`,`push`,`pull`,`branch`, `merge`"
+    - Other concepts such as a "Pull Request", a "Fork", "Code review" are fair game to be tested.
 
 ```{important}
 Remember that for every Test, there is also a Bonus Test and we will take the better of the two scores so there is no harm in doing both Tests. A Test and a Bonus Test will be on essentially the same material.
@@ -28,7 +25,7 @@ You will likely not get your Test results back before the Bonus Test, so please 
 
 Read them carefully! By clicking START you are agreeing to these conditions:
 
-- You will have 90 minutes to complete the test (unless you have an accommodation from the DRC).
+- You will have 75 minutes to complete the test (unless you have an accommodation from the DRC).
 - You must complete the test BY YOURSELF (no friends, no tutors, no classmates, no humans - cats and dogs in the room are fine).
 - You will not be able to ask us questions during the quiz - do your best with your best interpretation of the question.
 - The test is open-book, open-notes, open-web EXCEPT you CANNOT use websites that help you cheat such as Chegg, Course Hero, Slader and other similar websites that have tutors answering questions you upload (Stack Overflow is allowed).
@@ -39,4 +36,3 @@ Read them carefully! By clicking START you are agreeing to these conditions:
 - Do NOT share test questions with your anyone - that IS CHEATING.
 - Do not be anxious about the test! If you don’t do well - review the material and try again next week - we will take the better of the two scores!
 - Overall, do not stress! You will be fine :-)
-
