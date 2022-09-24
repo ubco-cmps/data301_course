@@ -88,21 +88,23 @@ parts:
     # - file: notes/week04/Class4C/Class4C
     #   title: C. Loading Data with Python
 
-#   - file: notes/week05/week05_summary
-#     title: Week 5
-#     sections:
-#     - file: notes/week05/videos
-#       title: Videos
-#     - file: notes/week05/lab/README
-#       title: Lab 4
-#       sections:
-#         - file: notes/week05/lab/Task1
-#           title: Task 1
-#         - file: notes/week05/lab/Task2
-#           title: Task 2
-#         - file: notes/week05/lab/Task3
-#           title: Task 3
-#     - file: notes/week05/log
+  - file: notes/week05/week05_summary
+    title: Week 5
+    sections:
+    - file: notes/week05/videos
+      title: Videos
+    - file: notes/week05/lab/README
+      title: Lab 4
+      sections:
+        - file: notes/week05/lab/Task1
+          title: Task 1
+        - file: notes/week05/lab/Task2
+          title: Task 2
+        - file: notes/week05/lab/Task3
+          title: Task 3
+        - file: notes/week05/lab/Task4
+          title: Task 4
+    - file: notes/week05/log
 #     - file: notes/week05/Class5A/Class5A
 #       title: A. Introduction to Pandas
 #     - file: notes/week05/Class5B/Class5B
