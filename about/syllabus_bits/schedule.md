@@ -26,11 +26,11 @@ Labs will start in the second week of the course!
 
 | Test/Bonus Test | Date                   | Time          | Duration   |
 |-----------------|------------------------|---------------|------------|
-| Test 1          | Thursday Sept 29, 2022 | 15:35 - 17:00 | 75 minutes |
-| Bonus Test 1    | Thursday Oct 6, 2022   | 15:35 - 17:00 | 75 minutes |
-| Test 2          | Thursday Oct 27, 2022  | 15:35 - 17:00 | 75 minutes |
-| Bonus Test 2    | Thursday Nov 3, 2022   | 15:35 - 17:00 | 75 minutes |
-| Test 3          | Thursday Nov 17, 2022  | 15:35 - 17:00 | 75 minutes |
-| Bonus Test 3    | Thursday Nov 24, 2022  | 15:35 - 17:00 | 75 minutes |
-| Test 4          | Thursday Dec 1, 2022   | 15:35 - 17:00 | 75 minutes |
-| Bonus Test 4    | Thursday Dec 5, 2022   | 15:35 - 17:00 | 75 minutes |
+| Test 1          | Thursday Sept 29, 2022 | 15:35 - 16:50 | 75 minutes |
+| Bonus Test 1    | Thursday Oct 6, 2022   | 15:35 - 16:50 | 75 minutes |
+| Test 2          | Thursday Oct 27, 2022  | 15:35 - 16:50 | 75 minutes |
+| Bonus Test 2    | Thursday Nov 3, 2022   | 15:35 - 16:50 | 75 minutes |
+| Test 3          | Thursday Nov 17, 2022  | 15:35 - 16:50 | 75 minutes |
+| Bonus Test 3    | Thursday Nov 24, 2022  | 15:35 - 16:50 | 75 minutes |
+| Test 4          | Thursday Dec 1, 2022   | 15:35 - 16:50 | 75 minutes |
+| Bonus Test 4    | Thursday Dec 8, 2022   | 15:35 - 16:50 | 75 minutes |
