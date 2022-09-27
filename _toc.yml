@@ -82,8 +82,8 @@ parts:
         - file: notes/week04/lab/Task3
     - file: notes/week04/test1
     - file: notes/week04/log
-    # - file: notes/week04/Class4A/Class4A
-    #   title: A. Introduction to Python
+    - file: notes/week04/Class4A/Class4A
+      title: A. Introduction to Python
     # - file: notes/week04/Class4B/Class4B
     #   title: B. More Python
     # - file: notes/week04/Class4C/Class4C
