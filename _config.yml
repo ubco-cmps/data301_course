@@ -29,10 +29,10 @@ html:
           All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
       </div>
 
-# launch_buttons:
-#   notebook_interface : "jupyterlab"
-#   binderhub_url      : "https://mybinder.org"
-#   thebe              : true
+launch_buttons:
+  notebook_interface : "jupyterlab"
+  binderhub_url      : "https://mybinder.org"
+  thebe              : true
 
 repository: 
   url          : https://github.com/ubco-cmps/data301_course
@@ -46,8 +46,8 @@ sphinx:
     html_show_copyright: false
     html_extra_path: ['files']
     bibtex_reference_style: author_year
-    html_theme_options:
-      show_navbar_depth: 2
+    # html_theme_options:
+    #   show_navbar_depth: 2
     myst_enable_extensions: 
     - amsmath
     - colon_fence
