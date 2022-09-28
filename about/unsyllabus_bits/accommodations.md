@@ -1,3 +1,4 @@
+(accommodations)=
 ### What if I miss labs, tests, or the exam due to an illness, health, or other personal situations?
 
 Normally, most deadlines in this course have a generous grace period.
