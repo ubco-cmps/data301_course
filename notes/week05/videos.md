@@ -51,5 +51,7 @@ Here is an outline of the timestamps of this video (clickable links in the [YouT
 
 You can download the [`pokemon.csv` dataset here](https://github.com/firasm/bits/raw/master/pokemon.csv) and [this notebook here](https://github.com/ubco-cmps/data301_course/raw/main/notes/week05/week05_pokemon.ipynb).
 
+<!-- 
 ```{jupyterlite} week05_pokemon.ipynb
 ```
+-->
