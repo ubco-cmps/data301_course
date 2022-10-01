@@ -8,3 +8,4 @@ pandas
 plotly
 seaborn
 pandas_profiling
+jupyterlite_sphinx
