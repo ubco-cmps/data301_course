@@ -25,17 +25,3 @@ You are welcome to attend additional labs or Student Hours in the course if you 
 <label><input type="checkbox" id="week04_task5" class="box"> Complete **[Test 1](./test1.md)**</input></label>
 
 <label><input type="checkbox" id="week04_task7" class="box"> Complete the weekly **[Learning Log](./log.md)**</input></label>
-
-## Additional resources for learning Python
-
-### Slides Part 1
-
-<iframe src="../../Lecture4_Python1.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
-
-### Slides Part 2
-
-<iframe src="../../Lecture5_Python2.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
-
-### Slides Part 3
-
-<iframe src="../../Lecture5B_Python_extra.pdf" width="100%" height="800px" frameBorder="0"> </iframe>

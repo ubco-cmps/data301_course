@@ -76,3 +76,17 @@ There are no required videos this week.
 <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/WPF5M_Ic6Fc" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 ```
+
+## Additional resources for learning Python
+
+### Slides Part 1
+
+<iframe src="../../Lecture4_Python1.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
+
+### Slides Part 2
+
+<iframe src="../../Lecture5_Python2.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
+
+### Slides Part 3
+
+<iframe src="../../Lecture5B_Python_extra.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
