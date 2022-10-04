@@ -87,7 +87,6 @@ parts:
     #   title: B. More Python
     # - file: notes/week04/Class4C/Class4C
     #   title: C. Loading Data with Python
-
   - file: notes/week05/week05_summary
     title: Week 5
     sections:
@@ -114,8 +113,13 @@ parts:
     - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_5v8bprKq7Wgpk90
       title: Mid-course Feedback (Anonymous)
 
-#   - file: notes/week06/week06_summary
-#     title: Week 6 (Break!)
+- caption: Course Feedback
+  chapters:
+  - file: about/feedback
+    title: Anonymous Feedback Form
+
+  - file: notes/week06/week06_summary
+    title: Week 6 (Break!)
 
 #   - file: notes/week07/week07_summary
 #     title: Week 7
@@ -310,8 +314,3 @@ parts:
 - caption: Tools
   chapters:
   - file: tools/ed_discussion/ed_discussion
-
-- caption: Course Feedback
-  chapters:
-  - file: about/feedback
-    title: Anonymous Feedback Form
