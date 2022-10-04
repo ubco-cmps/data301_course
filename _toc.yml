@@ -105,14 +105,14 @@ parts:
         - file: notes/week05/lab/Task4
           title: Task 4
     - file: notes/week05/log
-#     - file: notes/week05/Class5A/Class5A
-#       title: A. Introduction to Pandas
-#     - file: notes/week05/Class5B/Class5B
-#       title: B. More Pandas
-#     - file: notes/week05/Class5C/Class5C
-#       title: C. Advanced Pandas
-#     - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_8iEcSIGW3MWw8eO
-#       title: Mid-course Feedback (Anonymous)
+    - file: notes/week05/Class5A/Class5A
+      title: A. Introduction to Pandas
+    - file: notes/week05/Class5B/Class5B
+      title: B. More Pandas
+    - file: notes/week05/Class5C/Class5C
+      title: C. Advanced Pandas
+    - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_5v8bprKq7Wgpk90
+      title: Mid-course Feedback (Anonymous)
 
 #   - file: notes/week06/week06_summary
 #     title: Week 6 (Break!)
