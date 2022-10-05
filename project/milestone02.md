@@ -22,6 +22,12 @@ The first step is to create/join a GitHub repository:
 - If you are the first person in the group, click this link to accept the Template Project GitHub Classroom where you normally accept your Labs.
 - Make sure you set the name of your repository to be exactly this: `groupYY` (where `YY` is your Canvas group number) and then let your team member(s) know the name of your group.
 - Other team member(s) should search for their group name and join it.
+- Each team member should then `clone` the repo locally on their computer, and run the following steps:
+    - Open a terminal and `cd` into the project repo: `cd project-groupYY` (or something similar).
+    - Type in `git status` to make sure they're on the `main` branch, and then run `git pull` to pull down the latest from GitHub.
+    - Make sure pre-commit is installed, in a Terminal type in `conda install -c conda-forge pre-commit`.
+    - In the same Terminal, type `pre-commit install` to install the pre-commit hooks I have added to this repo to protect you from accidentally committing large files to the repo, committing files that contain merge conflicts (without resolving them), and hopefully, preventing you from committing broken Jupyter notebook files.
+    - Note: pre-commit is outside the scope of this course, but it's a very cool system. You're welcome to [read more about it here](https://pre-commit.com)
 
 ## Task 2: Repository Setup - Introduce and describe your dataset and topic
 

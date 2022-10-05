@@ -28,7 +28,7 @@ Click links below to accept the labs, I expect they will be released by Monday m
 
 | Project Milestone | Due Date                     | Link to Accept                                    |
 |-------------------|------------------------------|---------------------------------------------------|
-| Template Project  | N/A                          | [Accept Project](https://classroom.github.com/a/r839dXkR) |
+| Template Project  | N/A                          | [Accept Project](https://classroom.github.com/a/LpAAsC5t) |
 | Milestone 1       | Thursday,  at 18:00 | None (continue using repo)                        |
 | Milestone 2       | Thursday,  at 18:00   | None (continue using repo)                        |
 | Milestone 3       | Thursday,  at 18:00  | None (continue using repo)                        |
