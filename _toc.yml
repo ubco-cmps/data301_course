@@ -93,7 +93,7 @@ parts:
     - file: notes/week05/videos
       title: Videos
     - file: notes/week05/lab/README
-      title: Lab 4
+      title: Lab 5
       sections:
         - file: notes/week05/lab/Task1
           title: Task 1
