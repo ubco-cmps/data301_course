@@ -123,6 +123,8 @@ parts:
 
   - file: notes/week07/week07_summary
     title: Week 7
+  - file: notes/week07/videos
+    title: Videos
     sections:
     - file: notes/week07/lab/README
       title: Lab 5
