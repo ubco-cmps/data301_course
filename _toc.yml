@@ -112,15 +112,8 @@ parts:
       title: C. Advanced Pandas
     - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_5v8bprKq7Wgpk90
       title: Mid-course Feedback (Anonymous)
-
-- caption: Course Feedback
-  chapters:
-  - file: about/feedback
-    title: Anonymous Feedback Form
-
   - file: notes/week06/week06_summary
     title: Week 6 (Break!)
-
   - file: notes/week07/week07_summary
     title: Week 7
   - file: notes/week07/videos
@@ -269,6 +262,11 @@ parts:
 #       title: C. 
 #     - file: notes/week13/test
 #     - file: notes/week13/log
+
+- caption: Course Feedback
+  chapters:
+  - file: about/feedback
+    title: Anonymous Feedback Form
 
 - caption: Labs
   chapters:
