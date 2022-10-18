@@ -119,18 +119,17 @@ parts:
     sections:
     - file: notes/week07/videos
       title: Videos
+    - file: notes/week07/lab/README
+      title: Lab 5
       sections:
-      - file: notes/week07/lab/README
-        title: Lab 5
-        sections:
-          - file: notes/week07/lab/Task1
-            title: Task 1
-          - file: notes/week07/lab/Task2
-            title: Task 2
-          - file: notes/week07/lab/Task3
-            title: Task 3
-          - file: notes/week07/lab/Task4
-            title: Task 4
+        - file: notes/week07/lab/Task1
+          title: Task 1
+        - file: notes/week07/lab/Task2
+          title: Task 2
+        - file: notes/week07/lab/Task3
+          title: Task 3
+        - file: notes/week07/lab/Task4
+          title: Task 4
       - file: notes/week07/log
       - file: notes/week07/Class7A/Class7A
         title: Functions in Python
