@@ -137,7 +137,7 @@ parts:
     #   title: B. More Functions
     # - file: notes/week07/Class7C/Class7C
     #   title: C. Organizing Code
-    # - file: notes/week07/test
+ - file: notes/week07/test
 
 #   - file: notes/week08/week08_summary
 #     title: Week 8
