@@ -133,11 +133,12 @@ parts:
     - file: notes/week07/log
     - file: notes/week07/Class7A/Class7A
       title: Functions in Python
+    - file: notes/week07/test
+
     # - file: notes/week07/Class7B/Class7B
     #   title: B. More Functions
     # - file: notes/week07/Class7C/Class7C
     #   title: C. Organizing Code
- - file: notes/week07/test
 
 #   - file: notes/week08/week08_summary
 #     title: Week 8
