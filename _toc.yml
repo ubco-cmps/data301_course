@@ -133,36 +133,31 @@ parts:
     - file: notes/week07/log
     - file: notes/week07/Class7A/Class7A
       title: Functions in Python
-    - file: notes/week07/test
 
     # - file: notes/week07/Class7B/Class7B
     #   title: B. More Functions
     # - file: notes/week07/Class7C/Class7C
     #   title: C. Organizing Code
 
-#   - file: notes/week08/week08_summary
-#     title: Week 8
-#     sections:
-#     - file: notes/week08/videos
-#     - file: notes/week08/lab/README
-#       title: Lab 6
-#       sections:
-#         - file: notes/week08/lab/Task1
-#           title: Task 1
-#         - file: notes/week08/lab/Task2
-#           title: Task 2
-#         - file: notes/week08/lab/Task3
-#           title: Task 3
-#         - file: notes/week08/lab/Task4
-#           title: Task 4
-#     - file: notes/week08/Class8A/Class8A
-#       title: A. Introduction to Data Visualization
-#     - file: notes/week08/Class8B/Class8B
-#       title: B. Seaborn
-#     - file: notes/week08/Class8C/Class8C
-#       title: C. Creating Effective Visualizations
-#     - file: notes/week08/test
-#     - file: notes/week08/log
+  - file: notes/week08/week08_summary
+    title: Week 8
+    sections:
+    - file: notes/week08/videos
+    - file: notes/week08/lab/README
+      title: Lab 6
+      sections:
+        - file: notes/week08/lab/Task1
+          title: Task 1
+        - file: notes/week08/lab/Task2
+          title: Task 2
+        - file: notes/week08/lab/Task3
+          title: Task 3
+        - file: notes/week08/lab/Task4
+          title: Task 4
+    - file: notes/week08/Class8A/Class8A
+      title: A. Introduction to Data Visualization
+    - file: notes/week08/test
+    - file: notes/week08/log
 
 #   - file: notes/week09/week09_summary
 #     title: Week 9
