@@ -156,6 +156,8 @@ parts:
           title: Task 4
     - file: notes/week08/Class8A/Class8A
       title: A. Introduction to Data Visualization
+    - file: notes/week08/Class8B/Class8B
+      title: B. Seaborn
     - file: notes/week08/test
     - file: notes/week08/log
 
