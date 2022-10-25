@@ -12,10 +12,6 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 ````
 ## Required Videos
 
-```{attention}
-Please watch this video BEFORE Class 8B on Wednesday! Class time will be used for Q&A and demos based on student questions!
-```
-
 ```{dropdown} 8.1 Seaborn Tutorial by Derek Banas
     :container: + shadow
     :title: bg-info text-white font-weight-bold
