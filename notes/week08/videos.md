@@ -13,8 +13,8 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 ## Required Videos
 
 ```{dropdown} 8.1 Seaborn Tutorial by Derek Banas
-    :container: + shadow
-    :title: bg-info text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
     :open:
 
 <div class="container youtube">
