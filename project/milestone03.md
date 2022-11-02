@@ -46,7 +46,7 @@ This has several advantages:
 
 - record the steps so you can remember what you did.
 - allows you to repeat the steps reproducibly, without doing a bunch of manual and repetitive work.
-- make changes to thes series of processing steps so you can improve and iterate.
+- make changes to the series of processing steps so you can improve and iterate.
 - troubleshoot and debug errors in your processing.
 - allows others to reproduce your analysis.
 - if your data changes, you can update your outputs (report, images, etc...) easily without redoing all your processing.
@@ -66,7 +66,7 @@ Here are some common steps of an analysis pipeline (the order isn't set, and not
     - Deal with missing data.
 3. Process Data
     - Create any new columns needed that are combinations or aggregates of other columns (examples include weighted averages, categorizations, groups, etc...).
-    - Find and replace operations (examples inlcude replacing the string 'Strongly Agree' with the number 5).
+    - Find and replace operations (examples include replacing the string 'Strongly Agree' with the number 5).
     - Other substitutions as needed.
     - Deal with outliers.
 4. Wrangle Data
@@ -184,7 +184,7 @@ This will reduce the need for you and others to repeat yourself, and allow you t
 ## Task 4. Conduct your analysis to help answer your research question(s)
 
 Armed with your EDA, you should now be ready to conduct a thorough analysis to answer your research question(s).
-This section can be completed together as a group (and only one file should be submitted) but you may (and are encouraged) to try this yourself first, and then combine them together in one submission.
+This section can be completed together as a group. ~~(and only one file should be submitted) but you may (and are encouraged) to try this yourself first, and then combine them together in one submission.~~
 
 Each group will have a different data analysis product, however some guidelines to keep you on the right track:
 
@@ -232,19 +232,19 @@ From GitHub's documentation:
 
 > **Issues** are a great way to keep track of tasks, enhancements, and bugs for your projects. They’re kind of like email—except they can be shared and discussed with the rest of your team. Most software projects have a bug tracker of some kind. GitHub’s tracker is called Issues, and has its own section in every repository.
 
-<img src="https://guides.github.com/features/issues/navigation-highlight.png" width="600px">
+<!-- <img src="https://guides.github.com/features/issues/navigation-highlight.png" width="600px"> -->
 
 > **Labels** are a great way to organize different types of issues. Issues can have as many labels as you want, and you can filter by one or many labels at once.
 
-<img src="https://guides.github.com/features/issues/labels-listing.png" width="600px">
+<!-- <img src="https://guides.github.com/features/issues/labels-listing.png" width="600px"> -->
 
 > **Milestones**, are groups of issues that correspond to a project, feature, or time period. People use them in many different ways in software development.
 
-<img src="https://guides.github.com/features/issues/milestones.png" width="600px">
+<!-- <img src="https://guides.github.com/features/issues/milestones.png" width="600px"> -->
 
 > Assignees are a great way to filter, categorize issues, and remember what you're responsible to do. Each issue can have an assignee — one person that’s responsible for moving the issue forward. Assignees are selected the same way milestones are, through the grey bar at the top of the issue. 
 
-<img src="https://guides.github.com/features/issues/example-issue.png" width="600px">
+<!-- <img src="https://guides.github.com/features/issues/example-issue.png" width="600px"> -->
 
 You can change or add a milestone, an assignee, and labels by clicking their corresponding gears in the sidebar on the right.
 

@@ -86,19 +86,19 @@ From GitHub's documentation:
 
 > **Issues** are a great way to keep track of tasks, enhancements, and bugs for your projects. They’re kind of like email—except they can be shared and discussed with the rest of your team. Most software projects have a bug tracker of some kind. GitHub’s tracker is called Issues, and has its own section in every repository.
 
-<img src="https://guides.github.com/features/issues/navigation-highlight.png" width="600px">
+<!-- <img src="https://guides.github.com/features/issues/navigation-highlight.png" width="600px"> -->
 
 > **Labels** are a great way to organize different types of issues. Issues can have as many labels as you want, and you can filter by one or many labels at once.
 
-<img src="https://guides.github.com/features/issues/labels-listing.png" width="600px">
+<!-- <img src="https://guides.github.com/features/issues/labels-listing.png" width="600px"> -->
 
 > **Milestones**, are groups of issues that correspond to a project, feature, or time period. People use them in many different ways in software development.
 
-<img src="https://guides.github.com/features/issues/milestones.png" width="600px">
+<!-- <img src="https://guides.github.com/features/issues/milestones.png" width="600px"> -->
 
 > Assignees are a great way to filter, categorize issues, and remember what you're responsible to do. Each issue can have an assignee — one person that’s responsible for moving the issue forward. Assignees are selected the same way milestones are, through the grey bar at the top of the issue. 
 
-<img src="https://guides.github.com/features/issues/example-issue.png" width="600px">
+<!-- <img src="https://guides.github.com/features/issues/example-issue.png" width="600px"> -->
 
 You can change or add a milestone, an assignee, and labels by clicking their corresponding gears in the sidebar on the right.
 

@@ -21,7 +21,28 @@ In this milestone you will continue working on your class project, process the d
 
 - You should spend the majority of time this week to address the feedback you have received from your TA.
 
-## Task 2: Make your repository public 
+## Task 2: Final Report: Create a single **markdown** file that will be your final report.
+
+- Once you're done your analysis and you've addressed all the TA and instructor feedback to improve your project, you will export your final figures as PNG (or JPEG) files, and then consolidate your findings into a single markdown file.
+
+- The name of your markdown file should be: `final_report_groupYY.md` (replace `YY` with your group number), and it should be located in the **root** of your project repository.
+
+- This markdown file is a major deliverable and will require some coordination amongst your teammates to ensure that it is a cohesive and complete document, that provides a summary of all your hard work.
+
+- This markdown file should NOT have **any** code in it, it is meant to be a narrative/summary of your exploratory data analysis, as well as your actual analyses. 
+
+- You should of course, link to your jupyter notebooks because a portion of your audience will be interested in digging deeper into the analysis and looking at the code.
+    - For example, this can look like: "You can [find the full analysis notebook here, including the code and the data here](https://direct-link-to-your-notebook.ca)
+
+- Here are the **suggested sections** of your Final Report:
+    - **Introduction**: A short paragraph introducing your project to the audience and a motivation for why this project is important. It's fine to say your group has an interest in this topic and were keen to explore it more.
+    - **Exploratory Data Analysis**: A summary of the **highlights** of your EDA, where you can show some visualizations of the exploratory data analysis your group did.
+    - **Question 1 + Results**: Clearly state your research question, and include 2-3 visualizations that helped you answer your research question. You can create multi-panel figures, but each of your visualizations must speak directly to your research question, and any insights you were able to get from it should be clearly articulated in the figure caption/description.
+    - **Question 2 + Results**: Same as above.
+    - **Question 3 + Results**: Same as above.
+    - **Summary/Conclusion**: A brief paragraph that highlights your key results and what you learned from doing this project.
+
+## Task 3: Make your repository public 
 
 [Here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/setting-repository-visibility#changing-a-repositorys-visibility) is how to make your repository public (within the COSC 301 organization).
 
@@ -39,7 +60,7 @@ In this milestone you will continue working on your class project, process the d
 
 <img src="https://docs.github.com/assets/images/help/repository/repo-change-select.png" width="600px">
 
-## Task 3: Create a release for your repository 
+## Task 4: Create a release for your repository 
 
 Create a new release for your project called 0.1.0.
 
@@ -90,7 +111,7 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 1. MINOR version when you add functionality in a backwards compatible manner, and
 1. PATCH version when you make backwards compatible bug fixes.
 
-## OPTIONAL Task 4: Give others feedback!
+## OPTIONAL Task 5: Give others feedback!
 
 Many of your classmates are doing some very interesting projects with some cool datasets.
 Since this is a course introducing you to Data Analytics, I think it would be very helpful for you to look at their analyses and results, think critically about it, and perhaps provide some useful feedback.
@@ -125,19 +146,19 @@ From GitHub's documentation:
 
 > **Issues** are a great way to keep track of tasks, enhancements, and bugs for your projects. They’re kind of like email—except they can be shared and discussed with the rest of your team. Most software projects have a bug tracker of some kind. GitHub’s tracker is called Issues, and has its own section in every repository.
 
-<img src="https://guides.github.com/features/issues/navigation-highlight.png" width="600px">
+<!-- <img src="https://guides.github.com/features/issues/navigation-highlight.png" width="600px"> -->
 
 > **Labels** are a great way to organize different types of issues. Issues can have as many labels as you want, and you can filter by one or many labels at once.
 
-<img src="https://guides.github.com/features/issues/labels-listing.png" width="600px">
+<!-- <img src="https://guides.github.com/features/issues/labels-listing.png" width="600px"> -->
 
 > **Milestones**, are groups of issues that correspond to a project, feature, or time period. People use them in many different ways in software development.
 
-<img src="https://guides.github.com/features/issues/milestones.png" width="600px">
+<!-- <img src="https://guides.github.com/features/issues/milestones.png" width="600px"> -->
 
 > Assignees are a great way to filter, categorize issues, and remember what you're responsible to do. Each issue can have an assignee — one person that’s responsible for moving the issue forward. Assignees are selected the same way milestones are, through the grey bar at the top of the issue. 
 
-<img src="https://docs.github.com/assets/images/help/repository/repo-change-vis.png" width="600px">
+<!-- <img src="https://docs.github.com/assets/images/help/repository/repo-change-vis.png" width="600px"> -->
 
 You can change or add a milestone, an assignee, and labels by clicking their corresponding gears in the sidebar on the right.
 

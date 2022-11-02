@@ -99,7 +99,7 @@ Once you update your README file, the next step is to understand what each of th
 - If your dataset isn't accessible as a URL, make sure to commit it directly into your repo.
 - If your dataset is only accessible as a URL, add it to this README: `data/README.md`
   - You should name your files as follows to keep things organized: `notebooks/analysis1.ipynb`
-  - If your jyputer notebook gets very long you may consider breaking it up. Just make sure you keep a simple naming convention like `analysis1a.ipynb`.
+  - If your Jupyter notebook gets very long you may consider breaking it up. Just make sure you keep a simple naming convention like `analysis1a.ipynb`.
 
 ## Submission
 
