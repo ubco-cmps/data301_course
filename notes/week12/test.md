@@ -1,12 +1,11 @@
-# Bonus Test 4
+# Bonus Test 3
 
-You will find Bonus Test 4 on Canvas.
+You will find Bonus Test 3 on PrairieLearn.
 
-Content you should review for Bonus Test 4 includes:
+Content you should review for Bonus Test 3 includes:
 
-- Data Visualization using Seaborn
-- Principles of Effective Visualizations
-- Microsoft Excel
+- Functions in Python
+- Data Wrangling with Pandas
 
 ```{important}
 Remember that for every Test, there is also a Bonus Test and we will take the better of the two scores so there is no harm in doing both Tests. A Test and a Bonus Test will be on essentially the same material.
