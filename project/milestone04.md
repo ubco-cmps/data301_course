@@ -29,15 +29,14 @@ There are no requirements for this Dashboard, but please remember that you will 
 I suggest you take this opportunity to explore as many of the features that make sense for your project, and get help from us when you need it!
 You should place the Tableau file in the `dashboard` folder. 
 
-**Each group should only make ONE Tableau Dashboard, but you can work on it separately and then combine it at the end for the final submission. I suggest using multiple "tabs" in Tableau to split up research questions or parts of the dashboard.**
+**Each person in the group should have their own Tableau Dashboard, but if you can find a way to combine it into one dashboard, that's also fine. I suggest using multiple "tabs" in Tableau to split up research questions or parts of the dashboard.**
 
 ## Task 3: Present your dashboard
 
-For this Task, you will record an Explainer video (similar to the lab explainer videos) showing your Tableau Dashboard.
+For this Task, you will record a video showing your Tableau Dashboard.
 
-- Individual project presentations should be 3-4 minutes long.
-- Groups of 2 project presentations should be 5-7 minutes long.
 - Groups of 3 project presentations should be 7-10 minutes long.
+- Groups of 2 project presentations should be 5-7 minutes long.
 
 Other requirements:
 
