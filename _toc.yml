@@ -200,6 +200,7 @@ parts:
           title: Task 5
     - file: notes/week11/Class11A/Class11A
       title: A. Tableau Dashboards
+    - file: notes/week11/Review
     - file: notes/week11/test
     - file: notes/week11/log
 
