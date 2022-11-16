@@ -5,8 +5,8 @@
 ### Video
 
 ```{dropdown} 5.1 Introduction to Excel I
-    :container: + shadow
-    :title: bg-info text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
     :open:
 
 <div class="container youtube">
@@ -25,8 +25,8 @@ You can download the [Excel file used in lecture here](https://github.com/ubco-m
 ## Introduction to Microsoft Excel II
 
 ```{dropdown} 5.2 Introduction to Excel II
-    :container: + shadow
-    :title: bg-info text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
     :open:
 
 <div class="container youtube">
