@@ -87,7 +87,7 @@ Your resubmission request can be submitted on {{ FORUM_LINK }}.
 There is no limit to the number of resubmissions you are allowed to use for each assignment, but we reserve the right to decline your resubmission if your reflection is not up to our specifications.
 
 ```{note}
-Note: The last day to submit resubmissions is the last day of the course. No exceptions!
+Note: The last day to submit resubmissions is the last day of the term. No exceptions!
 ``` 
 
 (real_world_deadline_policy)=

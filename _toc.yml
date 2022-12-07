@@ -223,10 +223,13 @@ parts:
           title: Task 5
     - file: notes/week12/test
     - file: notes/week12/log
-
   - file: notes/week13/week13_summary
     title: Week 13
     sections:
+    - file: notes/week13/Class13A/Class13A
+      title: A. Retrospective + Final Exam Details
+    - file: notes/week13/test
+    - file: notes/week13/log
     - file: notes/week13/lab/README
       title: Lab 10
       sections:
@@ -238,14 +241,6 @@ parts:
           title: Task 3
         - file: notes/week13/lab/Task4
           title: Task 4
-    - file: notes/week13/test
-    - file: notes/week13/log
-    - file: notes/week13/Class13A/Class13A
-      title: A. Retrospective + Final Exam Details
-    # - file: notes/week13/Class13B/Class13B
-    #   title: B. 
-    # - file: notes/week13/Class13C/Class13C
-    #   title: C. 
 
 
 - caption: Course Feedback
