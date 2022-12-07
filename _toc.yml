@@ -200,7 +200,6 @@ parts:
           title: Task 5
     - file: notes/week11/Class11A/Class11A
       title: A. Tableau Dashboards
-    - file: notes/week11/Review
     - file: notes/week11/test
     - file: notes/week11/log
 
@@ -245,7 +244,7 @@ parts:
     title: Week 14 (Review)
     sections:
       - file: notes/week11/Review
-        title: Old Review
+        title: Review (from Week 11)
 
 - caption: Course Feedback
   chapters:
