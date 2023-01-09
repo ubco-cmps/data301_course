@@ -32,6 +32,11 @@ See [this page](email) for more information on claiming your UBC Student Email.
 <img src="../images/EdDiscussion.gif">
 ```
 
+## Frequently asked questions
+
+See the {ref}`page_FAQ` for answers to common questions.
+
+<!-- 
 ```{dropdown} 3. [Required] Take a break!
     :class-container: sd-shadow-lg
     :color: primary
@@ -42,8 +47,4 @@ Rest, recover, heal from everything you've been through over the last year.
 <img src="../images/outside.jpeg">
 
 [Photo by A Little & Tiny Man from Pexels](https://www.pexels.com/photo/woman-in-black-hijab-headscarf-walking-on-field-789555/)
-```
-
-## Frequently asked questions
-
-See the {ref}`page_FAQ` for answers to common questions.
+``` -->

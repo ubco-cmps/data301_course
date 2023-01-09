@@ -15,7 +15,7 @@ Please be aware, it is not required for you to complete this form, and that you 
 Note: If you are enrolled in multiple classes with me, you may want to fill this out multiple times because your answers may be different depending on the class you're taking!
 
 ```{card} Who's in Class survey (anonymous)
-:link: https://ubc.ca1.qualtrics.com/jfe/form/SV_7Oi7FwTWO2N5gMK?course=cosc301&term=2022_WT1
+:link: https://ubc.ca1.qualtrics.com/jfe/form/SV_7Oi7FwTWO2N5gMK?course=data301&term=2022_WT2
 
 Click here to access the survey and complete it anonymously.
 ```
@@ -53,7 +53,7 @@ View your feedback on Gradescope
 ### Demo of Ed Discussion
 
 ```{card} Request an invite to Ed Discussion using a non-UBC email
-:link: https://ubc.ca1.qualtrics.com/jfe/form/SV_bjBcTik01NqJ9A2?course=cosc301&term=2022_WT1
+:link: https://ubc.ca1.qualtrics.com/jfe/form/SV_bjBcTik01NqJ9A2?course=data301&term=2022_WT2
 
 If you have been unsuccessful using your UBC email address to join Ed Discussion, you may provide an alternate email address here.
 ```

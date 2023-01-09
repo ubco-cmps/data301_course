@@ -1,6 +1,9 @@
 This is the tentative plan for {{ COURSE_CODE }} this term.
 The exact details are subject to change, so this is roughly the plan we will try to follow.
 
+This will be updated soon...
+
+<!-- 
 | #  | Week            | Topics                                             | Lab    | Logs | Project Milestones | Tests (Thursdays, in person) | Concepts Tested              |
 |----|-----------------|----------------------------------------------------|--------|------|--------------------|------------------------------|------------------------------|
 | 1  | Sept 6-11       | Introduction to Data Analytics <br /> Course Setup | Lab 1  | LL1  | -                  | -                            | -                            |
@@ -17,6 +20,7 @@ The exact details are subject to change, so this is roughly the plan we will try
 | 12 | Nov 21 - 27     | Microsoft Excel                                    | Lab 10 | LL10 | -                  | (Bonus Test 3)               | -                            |
 | 13 | Nov 28 - Dec 4  | Project Wrap-up and Review <br />(no new material) | -      | LL11 | PM 5               | Test 4                       | Data Visualization and Excel |
 | 14 | Dec 5 - Dec 8   | Final Exam Details <br />(no new material)         | -      | -    | -                  | (Bonus Test 4)               | -                            |
+ -->
 
 ```{note}
 Labs will start in the second week of the course!
@@ -24,6 +28,8 @@ Labs will start in the second week of the course!
 
 ## Test Dates and times
 
+This will be updated soon...
+<!-- 
 | Test/Bonus Test | Date                   | Time          | Duration   |
 |-----------------|------------------------|---------------|------------|
 | Test 1          | Thursday Sept 29, 2022 | 15:35 - 16:50 | 75 minutes |
@@ -33,4 +39,5 @@ Labs will start in the second week of the course!
 | Test 3          | Thursday Nov 17, 2022  | 15:35 - 16:50 | 75 minutes |
 | Bonus Test 3    | Thursday Nov 24, 2022  | 15:35 - 16:50 | 75 minutes |
 | Test 4          | Thursday Dec 1, 2022   | 15:35 - 16:50 | 75 minutes |
-| Bonus Test 4    | Thursday Dec 8, 2022   | 15:35 - 16:50 | 75 minutes |
+| Bonus Test 4    | Thursday Dec 8, 2022   | 15:35 - 16:50 | 75 minutes | 
+-->

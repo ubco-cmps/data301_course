@@ -7,13 +7,13 @@ In the first chunk (Before the first class) are the same things that you receive
 
 ```{dropdown} <h3>Before the first class</h3>
 
-<label><input type="checkbox" id="todo1-1" class="box"> **1. [Complete the anonymous pre-course survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_cUNzO9CtQ5o29Hn)** </input></label> 
+<label><input type="checkbox" id="todo1-1" class="box"> **1. [Complete the anonymous pre-course survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_7Oi7FwTWO2N5gMK?course=data301&term=2022_WT2)** </input></label> 
 
 There is a good reason for this survey: I want to understand your current learning environments. Since we are all moving online forcibly, many of us may have challenges with available technology/equipment, or access to wireless internet (or power). The more I understand your circumstances (anonymously), the more I hope to do to accommodate everyone in the class. 
 
 Again, this is optional but please fill it out!!
 
-Survey link: [https://ubc.ca1.qualtrics.com/jfe/form/SV_cUNzO9CtQ5o29Hn](https://ubc.ca1.qualtrics.com/jfe/form/SV_cUNzO9CtQ5o29Hn)
+Survey link: [https://ubc.ca1.qualtrics.com/jfe/form/SV_7Oi7FwTWO2N5gMK?course=data301&term=2022_WT2](https://ubc.ca1.qualtrics.com/jfe/form/SV_7Oi7FwTWO2N5gMK?course=data301&term=2022_WT2)
 
 <label><input type="checkbox" id="todo1-2" class="box"> **2. Have a look at the Syllabus.** </input></label> 
 

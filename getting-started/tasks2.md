@@ -4,7 +4,6 @@
 There are several things you'll need to do at the start of the course to get set up with all the technology, accounts, and services we'll be using.
 I've split these tasks up into several chunks so it's a bit more manageable. 
 
-
 ```{dropdown} 4. Read the Unsyllabus
     :class-container: sd-shadow-lg
     :color: primary
@@ -31,6 +30,7 @@ Once you know the building and room number, you can use the [UBCO online interac
 It'll be worth it for you to spend some time figuring out where you need to be so you're not stressed out the first week!
 ```
 
+<!-- 
 ```{dropdown} 6. On the left sidebar in Canvas, click on Gradescope
     :class-container: sd-shadow-lg
     :color: primary
@@ -42,8 +42,10 @@ This is **very** important for you to do as it'll be our primary mechanism for d
 
 <img src="../images/GradescopeAccount.gif">
 ```
+-->
 
-```{dropdown} 7. Create a GitHub.com account
+
+```{dropdown} 6. Create a GitHub.com account
     :class-container: sd-shadow-lg
     :color: primary
 
@@ -55,7 +57,7 @@ This is **very** important for you to do as it'll be our primary mechanism for d
 <img src="../images/github_account.gif">
 ```
 
-```{dropdown} 8. Start setting up your computer (Lab 1)
+```{dropdown} 7. Start setting up your computer (Lab 1)
     :class-container: sd-shadow-lg
     :color: primary
 
@@ -65,7 +67,6 @@ The teaching team is available via {{ FORUM_LINK }} to support you through the p
 This [lab](../notes/week01/lab.md) is based on the material developed by my colleagues in the MDS program, which uses many of the same tools we will be using throughout the course.
 
 ```
-
 
 ## Frequently asked questions
 

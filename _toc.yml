@@ -29,242 +29,242 @@ parts:
     - file: notes/setup/install_ds_stack_windows
       title: Windows Setup Instructions
 
-- caption: Weekly Content
-  chapters:
-  - file: notes/week01/week01_summary
-    title: Week 1
-    sections:
-    - file: notes/week01/videos
-    - file: notes/week01/Class1A/Class1A
-    - file: notes/week01/Class1B/Class1B
-    - file: notes/week01/lab/README
-      title: Lab 2
-      sections:
-        - file: notes/week01/lab/Task1.md
-        - file: notes/week01/lab/Task2.md
-    - file: notes/week01/log
+# - caption: Weekly Content
+#   chapters:
+#   - file: notes/week01/week01_summary
+#     title: Week 1
+#     sections:
+#     - file: notes/week01/videos
+#     - file: notes/week01/Class1A/Class1A
+#     - file: notes/week01/Class1B/Class1B
+#     - file: notes/week01/lab/README
+#       title: Lab 2
+#       sections:
+#         - file: notes/week01/lab/Task1.md
+#         - file: notes/week01/lab/Task2.md
+#     - file: notes/week01/log
 
-  - file: notes/week02/week02_summary
-    title: Week 2
-    sections:
-    - file: notes/week02/Class2A/Class2A
-    - file: notes/week02/Class2B/Class2B
-    - file: notes/week02/lab/README
-      title: Lab 2
-      sections:
-        - file: notes/week02/lab/Task1.md
-        - file: notes/week02/lab/Task2.md
-    - file: notes/week02/log
-  - file: notes/week03/week03_summary
-    title: Week 3
-    sections:
-    - file: notes/week03/videos
-      title: Videos
-    - file: notes/week03/lab/README
-      title: Lab 3
-      sections:
-        - file: notes/week03/lab/Task1.md
-        - file: notes/week03/lab/Task2.md
-    - file: notes/week03/log
-    - file: notes/week03/Class3A/Class3A
-    - file: notes/week03/Class3B/Class3B
-  - file: notes/week04/week04_summary
-    title: Week 4
-    sections:
-    - file: notes/week04/videos
-      title: Videos
-    - file: notes/week04/lab/README
-      title: Lab 4
-      sections:
-        - file: notes/week04/lab/Task1
-        - file: notes/week04/lab/Task2
-        - file: notes/week04/lab/Task3
-    - file: notes/week04/test1
-    - file: notes/week04/log
-    - file: notes/week04/Class4A/Class4A
-      title: A. Introduction to Python
-    # - file: notes/week04/Class4B/Class4B
-    #   title: B. More Python
-    # - file: notes/week04/Class4C/Class4C
-    #   title: C. Loading Data with Python
-  - file: notes/week05/week05_summary
-    title: Week 5
-    sections:
-    - file: notes/week05/videos
-      title: Videos
-    - file: notes/week05/lab/README
-      title: Lab 5
-      sections:
-        - file: notes/week05/lab/Task1
-          title: Task 1
-        - file: notes/week05/lab/Task2
-          title: Task 2
-        - file: notes/week05/lab/Task3
-          title: Task 3
-        - file: notes/week05/lab/Task4
-          title: Task 4
-    - file: notes/week05/log
-    - file: notes/week05/Class5A/Class5A
-      title: A. Introduction to Pandas
-    - file: notes/week05/Class5B/Class5B
-      title: B. More Pandas
-    - file: notes/week05/Class5C/Class5C
-      title: C. Advanced Pandas
-    - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_5v8bprKq7Wgpk90
-      title: Mid-course Feedback (Anonymous)
-  - file: notes/week06/week06_summary
-    title: Week 6 (Break!)
-  - file: notes/week07/week07_summary
-    title: Week 7
-    sections:
-    - file: notes/week07/videos
-      title: Videos
-    - file: notes/week07/lab/README
-      title: Lab 5
-      sections:
-      - file: notes/week07/lab/Task1
-        title: Task 1
-      - file: notes/week07/lab/Task2
-        title: Task 2
-      - file: notes/week07/lab/Task3
-        title: Task 3
-      - file: notes/week07/lab/Task4
-        title: Task 4
-    - file: notes/week07/log
-    - file: notes/week07/Class7A/Class7A
-      title: Functions in Python
+#   - file: notes/week02/week02_summary
+#     title: Week 2
+#     sections:
+#     - file: notes/week02/Class2A/Class2A
+#     - file: notes/week02/Class2B/Class2B
+#     - file: notes/week02/lab/README
+#       title: Lab 2
+#       sections:
+#         - file: notes/week02/lab/Task1.md
+#         - file: notes/week02/lab/Task2.md
+#     - file: notes/week02/log
+#   - file: notes/week03/week03_summary
+#     title: Week 3
+#     sections:
+#     - file: notes/week03/videos
+#       title: Videos
+#     - file: notes/week03/lab/README
+#       title: Lab 3
+#       sections:
+#         - file: notes/week03/lab/Task1.md
+#         - file: notes/week03/lab/Task2.md
+#     - file: notes/week03/log
+#     - file: notes/week03/Class3A/Class3A
+#     - file: notes/week03/Class3B/Class3B
+#   - file: notes/week04/week04_summary
+#     title: Week 4
+#     sections:
+#     - file: notes/week04/videos
+#       title: Videos
+#     - file: notes/week04/lab/README
+#       title: Lab 4
+#       sections:
+#         - file: notes/week04/lab/Task1
+#         - file: notes/week04/lab/Task2
+#         - file: notes/week04/lab/Task3
+#     - file: notes/week04/test1
+#     - file: notes/week04/log
+#     - file: notes/week04/Class4A/Class4A
+#       title: A. Introduction to Python
+#     # - file: notes/week04/Class4B/Class4B
+#     #   title: B. More Python
+#     # - file: notes/week04/Class4C/Class4C
+#     #   title: C. Loading Data with Python
+#   - file: notes/week05/week05_summary
+#     title: Week 5
+#     sections:
+#     - file: notes/week05/videos
+#       title: Videos
+#     - file: notes/week05/lab/README
+#       title: Lab 5
+#       sections:
+#         - file: notes/week05/lab/Task1
+#           title: Task 1
+#         - file: notes/week05/lab/Task2
+#           title: Task 2
+#         - file: notes/week05/lab/Task3
+#           title: Task 3
+#         - file: notes/week05/lab/Task4
+#           title: Task 4
+#     - file: notes/week05/log
+#     - file: notes/week05/Class5A/Class5A
+#       title: A. Introduction to Pandas
+#     - file: notes/week05/Class5B/Class5B
+#       title: B. More Pandas
+#     - file: notes/week05/Class5C/Class5C
+#       title: C. Advanced Pandas
+#     - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_5v8bprKq7Wgpk90
+#       title: Mid-course Feedback (Anonymous)
+#   - file: notes/week06/week06_summary
+#     title: Week 6 (Break!)
+#   - file: notes/week07/week07_summary
+#     title: Week 7
+#     sections:
+#     - file: notes/week07/videos
+#       title: Videos
+#     - file: notes/week07/lab/README
+#       title: Lab 5
+#       sections:
+#       - file: notes/week07/lab/Task1
+#         title: Task 1
+#       - file: notes/week07/lab/Task2
+#         title: Task 2
+#       - file: notes/week07/lab/Task3
+#         title: Task 3
+#       - file: notes/week07/lab/Task4
+#         title: Task 4
+#     - file: notes/week07/log
+#     - file: notes/week07/Class7A/Class7A
+#       title: Functions in Python
 
-    # - file: notes/week07/Class7B/Class7B
-    #   title: B. More Functions
-    # - file: notes/week07/Class7C/Class7C
-    #   title: C. Organizing Code
+#     # - file: notes/week07/Class7B/Class7B
+#     #   title: B. More Functions
+#     # - file: notes/week07/Class7C/Class7C
+#     #   title: C. Organizing Code
 
-  - file: notes/week08/week08_summary
-    title: Week 8
-    sections:
-    - file: notes/week08/videos
-    - file: notes/week08/lab/README
-      title: Lab 6
-      sections:
-        - file: notes/week08/lab/Task1
-          title: Task 1
-        - file: notes/week08/lab/Task2
-          title: Task 2
-        - file: notes/week08/lab/Task3
-          title: Task 3
-        - file: notes/week08/lab/Task4
-          title: Task 4
-    - file: notes/week08/Class8A/Class8A
-      title: A. Introduction to Data Visualization
-    - file: notes/week08/Class8B/Class8B
-      title: B. Seaborn
-    - file: notes/week08/test
-    - file: notes/week08/log
+#   - file: notes/week08/week08_summary
+#     title: Week 8
+#     sections:
+#     - file: notes/week08/videos
+#     - file: notes/week08/lab/README
+#       title: Lab 6
+#       sections:
+#         - file: notes/week08/lab/Task1
+#           title: Task 1
+#         - file: notes/week08/lab/Task2
+#           title: Task 2
+#         - file: notes/week08/lab/Task3
+#           title: Task 3
+#         - file: notes/week08/lab/Task4
+#           title: Task 4
+#     - file: notes/week08/Class8A/Class8A
+#       title: A. Introduction to Data Visualization
+#     - file: notes/week08/Class8B/Class8B
+#       title: B. Seaborn
+#     - file: notes/week08/test
+#     - file: notes/week08/log
 
-  - file: notes/week09/week09_summary
-    title: Week 9
-    sections:
-    - file: notes/week09/lab/README
-      title: Lab 7
-      sections:
-        - file: notes/week09/lab/Task1
-          title: Task 1
-        - file: notes/week09/lab/Task2
-          title: Task 2
-    - file: notes/week09/Class9A/Class9A
-      title: A. Motivating EDA and Review
-#     - file: notes/week09/Class9B/Class9B
-#       title: B. Tableau
-#     - file: notes/week09/Class9C/Class9C
-#       title: C. Review
-    - file: notes/week09/test
-    - file: notes/week09/log
+#   - file: notes/week09/week09_summary
+#     title: Week 9
+#     sections:
+#     - file: notes/week09/lab/README
+#       title: Lab 7
+#       sections:
+#         - file: notes/week09/lab/Task1
+#           title: Task 1
+#         - file: notes/week09/lab/Task2
+#           title: Task 2
+#     - file: notes/week09/Class9A/Class9A
+#       title: A. Motivating EDA and Review
+# #     - file: notes/week09/Class9B/Class9B
+# #       title: B. Tableau
+# #     - file: notes/week09/Class9C/Class9C
+# #       title: C. Review
+#     - file: notes/week09/test
+#     - file: notes/week09/log
 
-  - file: notes/week10/week10_summary
-    title: Week 10
+#   - file: notes/week10/week10_summary
+#     title: Week 10
 
-  - file: notes/week11/week11_summary
-    title: Week 11
-    sections:
-    - file: notes/week11/videos
-    - file: notes/week11/lab/README
-      title: Lab 8
-      sections:
-        - file: notes/week11/lab/Task2
-          title: Task 1 and 2
-        - file: notes/week11/lab/Task3
-          title: Task 3
-        - file: notes/week11/lab/Task4
-          title: Task 4
-        - file: notes/week11/lab/Task5
-          title: Task 5
-    - file: notes/week11/Class11A/Class11A
-      title: A. Tableau Dashboards
-    - file: notes/week11/test
-    - file: notes/week11/log
+#   - file: notes/week11/week11_summary
+#     title: Week 11
+#     sections:
+#     - file: notes/week11/videos
+#     - file: notes/week11/lab/README
+#       title: Lab 8
+#       sections:
+#         - file: notes/week11/lab/Task2
+#           title: Task 1 and 2
+#         - file: notes/week11/lab/Task3
+#           title: Task 3
+#         - file: notes/week11/lab/Task4
+#           title: Task 4
+#         - file: notes/week11/lab/Task5
+#           title: Task 5
+#     - file: notes/week11/Class11A/Class11A
+#       title: A. Tableau Dashboards
+#     - file: notes/week11/test
+#     - file: notes/week11/log
 
-  - file: notes/week12/week12_summary
-    title: Week 12
-    sections:
-    - file: notes/week12/class12
-    - file: notes/week12/lab/README
-      title: Lab 9
-      sections:
-        - file: notes/week12/lab/Task1
-          title: Task 1
-        - file: notes/week12/lab/Task2
-          title: Task 2
-        - file: notes/week12/lab/Task3
-          title: Task 3
-        - file: notes/week12/lab/Task4
-          title: Task 4
-        - file: notes/week12/lab/Task5
-          title: Task 5
-    - file: notes/week12/test
-    - file: notes/week12/log
-  - file: notes/week13/week13_summary
-    title: Week 13
-    sections:
-    - file: notes/week13/Class13A/Class13A
-      title: A. Retrospective + Final Exam Details
-    - file: notes/week13/test
-    - file: notes/week13/log
-    - file: notes/week13/lab/README
-      title: Lab 10
-      sections:
-        - file: notes/week13/lab/Task1
-          title: Task 1
-        - file: notes/week13/lab/Task2
-          title: Task 2
-        - file: notes/week13/lab/Task3
-          title: Task 3
-        - file: notes/week13/lab/Task4
-          title: Task 4
-  - file: notes/week14/Review
-    title: Week 14 (Review)
-    sections:
-      - file: notes/week11/Review
-        title: Review (from Week 11)
+#   - file: notes/week12/week12_summary
+#     title: Week 12
+#     sections:
+#     - file: notes/week12/class12
+#     - file: notes/week12/lab/README
+#       title: Lab 9
+#       sections:
+#         - file: notes/week12/lab/Task1
+#           title: Task 1
+#         - file: notes/week12/lab/Task2
+#           title: Task 2
+#         - file: notes/week12/lab/Task3
+#           title: Task 3
+#         - file: notes/week12/lab/Task4
+#           title: Task 4
+#         - file: notes/week12/lab/Task5
+#           title: Task 5
+#     - file: notes/week12/test
+#     - file: notes/week12/log
+#   - file: notes/week13/week13_summary
+#     title: Week 13
+#     sections:
+#     - file: notes/week13/Class13A/Class13A
+#       title: A. Retrospective + Final Exam Details
+#     - file: notes/week13/test
+#     - file: notes/week13/log
+#     - file: notes/week13/lab/README
+#       title: Lab 10
+#       sections:
+#         - file: notes/week13/lab/Task1
+#           title: Task 1
+#         - file: notes/week13/lab/Task2
+#           title: Task 2
+#         - file: notes/week13/lab/Task3
+#           title: Task 3
+#         - file: notes/week13/lab/Task4
+#           title: Task 4
+#   - file: notes/week14/Review
+#     title: Week 14 (Review)
+#     sections:
+#       - file: notes/week11/Review
+#         title: Review (from Week 11)
 
 - caption: Course Feedback
   chapters:
   - file: about/feedback
     title: Anonymous Feedback Form
 
-- caption: Labs
-  chapters:
-  - file: notes/labs
-    title: GitHub Classroom Links
+# - caption: Labs
+#   chapters:
+#   - file: notes/labs
+#     title: GitHub Classroom Links
 
-- caption: Project
-  chapters:
-  - file: project/introduction
-    sections:
-    - file: project/milestone01
-    - file: project/milestone02
-    - file: project/milestone03
-    - file: project/milestone04
-    - file: project/milestone05
+# - caption: Project
+#   chapters:
+#   - file: project/introduction
+#     sections:
+#     - file: project/milestone01
+#     - file: project/milestone02
+#     - file: project/milestone03
+#     - file: project/milestone04
+#     - file: project/milestone05
 
 
 # - caption: Extra Practice with Python

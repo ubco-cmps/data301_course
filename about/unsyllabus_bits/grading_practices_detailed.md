@@ -2,10 +2,10 @@ The grading scheme for this course is:
 
 | Item          | Weight                       | Due date(s)                  |
 |---------------|------------------------------|------------------------------|
-| Learning Logs | 10% (10 x 1%)                | Sundays at 6 PM              |
-| Labs          | 30% (10 x 3%)                | Saturdays at 6 PM            |
-| Project       | 25% (2% / 5% / 5% / 5% / 8%) | Variable                     |
-| Tests         | 20% (4 x 5%)                 | Thursdays during class       |
+| Learning Logs | 10% (10 x 1%)                | TBD at 6 PM              |
+| Labs          | 30% (10 x 3%)                | TBD at 6 PM            |
+| Project       | 25%                          | Variable                     |
+| Tests         | 20% (4 x 5%)                 | TBD       |
 | Final Exam    | 15%                          | TBD (during the exam period) |
 
 There will be 4 tests in this course in an (approximately) bi-weekly schedule.

@@ -41,7 +41,7 @@ Once the deadline and the grace period has passed, you will no longer be able to
 
 ## OPTIONAL Labs
 
-These are somewhat more advanced topics that are no longer part of COSC 301, the labs are here if you'd like to explore them further.
+These are somewhat more advanced topics that are no longer part of DATA 301, the labs are here if you'd like to explore them further.
 
 | Lab             | Due Date | Link to Accept                                 | Solutions   |
 |-----------------|----------|------------------------------------------------|-------------|

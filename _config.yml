@@ -1,5 +1,5 @@
 # Book settings
-title: COSC 301
+title: DATA 301
 author: Firas Moosvi
 logo: images/logo.jpg
 copyright: ""
@@ -18,7 +18,7 @@ html:
   use_repository_button: true
   use_issues_button: true
   use_edit_page_button: true
-  baseurl : "https://firas.moosvi.com/courses/2022_WT1/data301"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  baseurl : "https://firas.moosvi.com/courses/2022_WT2/data301"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   comments:
     hypothesis: true
     # utterances:
@@ -62,29 +62,29 @@ sphinx:
       PRONOUNCE: "[Fur-az Moose-vee](https://namedrop.io/firasmoosvi)"
       OFFICE: "SCI 393"
       PHONE: "N/A"
-      COURSE_CODE: "COSC 301"
+      COURSE_CODE: "DATA 301"
       SECTION: "001"
       CREDITS: "3"
       TITLE: "Introduction to Data Analytics"
       PREREQS: "Either (a) third-year standing, or (b) one of COSC 111 or COSC 122."
       COREQS: "None"
-      TERM: "2022 Winter Term 1"
-      ROOM: "L 305"
-      MEETING_TIMES: "Tuesday, Thursday 3:30-5 PM"
+      TERM: "2022 Winter Term 2"
+      ROOM: "EME 0050"
+      MEETING_TIMES: "Monday, Wednesday, Friday 10-11 AM"
       GRACE_PERIOD: "48 hour"
-      W_DATE_1: "11:59 PDT on September 19, 2022"
-      W_DATE_2: "11:59 PDT on November 18, 2022"
-      W_DATE_3: "November 18, 2022"
-      EXAM_PERIOD: "Sunday December 11th - Thursday, December 22"
-      CANVAS_ID: "100277"
+      W_DATE_1: "11:59 PDT on January 23, 2023"
+      W_DATE_2: "11:59 PDT on March 24, 2023"
+      W_DATE_3: "March 24, 2023"
+      EXAM_PERIOD: "Monday, April 17 - Friday, April 28"
+      CANVAS_ID: "107737"
       CANVAS_LINK: "https://canvas.ubc.ca/courses/CANVAS_ID"
       ZOOM_LINK: "[Zoom](https://canvas.ubc.ca/courses/CANVAS_ID/external_tools/15408)"
-      LAB_SCHEDULE_HERE: "[Lab Schedule here](https://courses.students.ubc.ca/cs/courseschedule?tname=subj-course&course=301&campuscd=UBCO&dept=COSC&pname=subjarea)"
+      LAB_SCHEDULE_HERE: "[Lab Schedule here](https://courses.students.ubc.ca/cs/courseschedule?tname=subj-course&course=301&campuscd=UBCO&dept=DATA&pname=subjarea)"
       ANNOUNCEMENTS_LINK: "[Canvas Announcements](https://canvas.ubc.ca/courses/CANVAS_ID/announcements)"
-      COURSE_LINK: "https://firas.moosvi.com/courses/cosc301/2022_WT1/"
-      FORUM_LINK: "[Ed Discussion (sign up using your cwl@student.ubc.ca email here)](https://edstem.org/us/join/2EAPsv)"
+      COURSE_LINK: "https://firas.moosvi.com/courses/data301/2022_WT2/"
+      FORUM_LINK: "[Ed Discussion (sign up using your cwl@student.ubc.ca email here)](https://edstem.org/us/join/83aTXJ)"
       ANALYTICS_OPTOUT: "[complete this form](https://ubc.ca1.qualtrics.com/jfe/form/SV_0p6lP4TtNpJn410)"
       FORMAT: "Lectures and Labs will all be running in-person in this course."
       ASSOCIATE_HEAD: "Dr. Yves Lucet [yves.lucet@ubc.ca](mailto:yves.lucet@ubc.ca) or the Department Head Dr. John Braun at [cmps.depthead@ubc.ca](cmps.depthead@ubc.ca)"
-      ANON_FEEDBACK: "[feedback form](https://ubc.ca1.qualtrics.com/jfe/form/SV_0824TfIWX0twm5o?course=cosc301&term=2022_WT1)"
+      ANON_FEEDBACK: "[feedback form](https://ubc.ca1.qualtrics.com/jfe/form/SV_0824TfIWX0twm5o?course=data301&term=2022_WT2)"
       TEXTBOOK: "We will not be needing a textbook for this course as you will be provided all the notes you need via the course website."

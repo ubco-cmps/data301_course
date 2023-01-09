@@ -28,7 +28,7 @@ random_page () {
         0)
             cat << EOF
 
-View the world in color [**Optional for COSC 301!!**]!
+View the world in color [**Optional for DATA 301!!**]!
 
 If you have a modern, color terminal, you can view the
 output of the ls command in color!  This will still be a
@@ -182,7 +182,7 @@ EOF
     4)
         cat << EOF
 
-[**Optional for COSC 301!!**] Use the tmux terminal multiplexer!
+[**Optional for DATA 301!!**] Use the tmux terminal multiplexer!
 
 tmux is a terminal multiplexer, which allows the user to
 manage sessions, windows, and panes within the terminal.
@@ -253,7 +253,7 @@ EOF
     5)
         cat << EOF
 
-[**Optional for COSC 301!!**]Learn simple brace expansion and for loops!
+[**Optional for DATA 301!!**]Learn simple brace expansion and for loops!
 
 Let's say you have several files, named like so:
 

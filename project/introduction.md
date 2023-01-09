@@ -1,4 +1,4 @@
-# COSC 301 Project
+# DATA 301 Project
 
 ## Introduction
 

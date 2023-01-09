@@ -4,13 +4,13 @@
 There are several things you'll need to do at the start of the course to get set up with all the technology, accounts, and services we'll be using.
 I've split these tasks up into several chunks so it's a bit more manageable. 
 
-```{dropdown} 9. Submit your first Lab (L1) on Gradescope
+```{dropdown} 9. Submit your first Lab (L1) on PrairieLearn
     :class-container: sd-shadow-lg
     :color: primary
     :open:
 
 Remember Lab 1 is the steps required to setup your computer and install the necessary software.
-We will be using the Gradescope platform to **submit** your weekly labs.
+We will be using the PrairieLearn platform to **submit** your weekly labs.
 ```
 
 ```{dropdown} 10. Complete the first Learning Log (LL01) on Gradescope.
@@ -19,7 +19,7 @@ We will be using the Gradescope platform to **submit** your weekly labs.
     :open:
 
 Once you're done everything else in the week and **after Thursday's class**, you should have access to the first Learning Log.
-This assignment will help you get familiar with answering "Learning Log" questions and tasks on the Gradescope platform.
+This assignment will help you get familiar with answering "Learning Log" questions and tasks on the PrairieLearn platform.
 I will respond to your learning logs over the weekend, and next week, show you how to access your feedback.
 ```
 
