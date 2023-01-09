@@ -7,7 +7,13 @@ In the first chunk (Before the first class) are the same things that you receive
 
 ```{dropdown} <h3>Before the first class</h3>
 
-<label><input type="checkbox" id="todo1-1" class="box"> **1. [Complete the anonymous pre-course survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_7Oi7FwTWO2N5gMK?course=data301&term=2022_WT2)** </input></label> 
+<label><input type="checkbox" id="todo1-1" class="box"> **1. [Complete the Ed Discussion Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_bjBcTik01NqJ9A2?course=data301&term=2022_WT2)** </input></label> 
+
+You will be invited to Ed Discussion based on the email you enter here! I will invite folks a couple of times a day.
+
+[Survey link:](https://ubc.ca1.qualtrics.com/jfe/form/SV_bjBcTik01NqJ9A2?course=data301&term=2022_WT2)
+
+<label><input type="checkbox" id="todo1-1" class="box"> **2. [Complete the anonymous pre-course survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_7Oi7FwTWO2N5gMK?course=data301&term=2022_WT2)** </input></label> 
 
 There is a good reason for this survey: I want to understand your current learning environments. Since we are all moving online forcibly, many of us may have challenges with available technology/equipment, or access to wireless internet (or power). The more I understand your circumstances (anonymously), the more I hope to do to accommodate everyone in the class. 
 
