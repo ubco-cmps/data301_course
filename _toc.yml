@@ -13,17 +13,16 @@ parts:
   chapters:
   - file: getting-started/faq
     title: Frequently Asked Questions
-    sections:
-    - file: getting-started/pre_term_upper
-      title: Before the term starts
-    - file: getting-started/tasks1
-      title: Before the first class
-    - file: getting-started/tasks2
-      title: After the first class
-    - file: getting-started/tasks3
-      title: In the first week
-    - file: getting-started/todo_list
-      title: Todo list!
+  - file: getting-started/pre_term_upper
+    title: Before the term starts
+  - file: getting-started/tasks1
+    title: Before the first class
+  - file: getting-started/tasks2
+    title: After the first class
+  - file: getting-started/tasks3
+    title: In the first week
+  - file: getting-started/todo_list
+    title: Todo list!
   - file: notes/setup/stack
     sections:
     - file: notes/setup/install_ds_stack_mac
