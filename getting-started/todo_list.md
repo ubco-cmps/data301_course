@@ -5,7 +5,10 @@ There are several things you'll need to do at the start of the course to get set
 I've split these tasks up into several chunks so it's a bit more manageable. 
 In the first chunk (Before the first class) are the same things that you received through a Canvas Announcement.
 
-```{dropdown} <h3>Before the first class</h3>
+```{dropdown} <h3>During the first class</h3>
+    :class-container: sd-shadow-lg
+    :color: primary
+    :open:
 
 <label><input type="checkbox" id="todo1-1" class="box"> **1. [Complete the Ed Discussion Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_bjBcTik01NqJ9A2?course=data301&term=2022_WT2)** </input></label> 
 
@@ -34,12 +37,15 @@ Within the Canvas course, [click the "Ed discussion" menu item](https://canvas.u
 ```
 
 ```{dropdown} <h3>In the first week</h3>
+    :class-container: sd-shadow-lg
+    :color: primary
+    :open:
+
 <label><input type="checkbox" id="todo2-1" class="box"> **1. Attend the first class on Monday.** </input></label> 
 
 <label><input type="checkbox" id="todo2-2" class="box"> **2. [Complete Lab 1](../notes/week01/lab.md)** </input></label>.
 
-There is an assigned labs the first week to install all the software necessary for the course so that you are ready with everything working next week. All the TAs are available during the lab time to support you through the process of installing the software on your home machine.
+There is an assigned lab the first week to install all the software necessary for the course so that you are ready with everything working next week. Starting in Week 2, all the TAs will be available during the lab time to support you through the process of installing the software on your home machine.
 
 This [lab](../notes/week01/lab.md) is based on the material developed by my colleagues in the MDS program, which uses many of the same tools we will be using throughout the course.
-
 ```
