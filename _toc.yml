@@ -22,6 +22,8 @@ parts:
       title: After the first class
     - file: getting-started/tasks3
       title: In the first week
+    - file: getting-started/todo_list
+      title: Todo list!
   - file: notes/setup/stack
     sections:
     - file: notes/setup/install_ds_stack_mac
