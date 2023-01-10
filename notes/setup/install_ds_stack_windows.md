@@ -370,7 +370,7 @@ name: PAT
 Personal Access Token settings
 ```
 
-<img src="images/GitHubcreatePAT.gif">
+<img src="setup_images/GitHubcreatePAT.gif">
 
 - Click "Generate new token"
 - Save this token somewhere on your computer, you will need it when you clone a repository to your computer.
