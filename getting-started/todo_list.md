@@ -14,7 +14,7 @@ In the first chunk (Before the first class) are the same things that you receive
 
 You will be invited to Ed Discussion based on the email you enter here! I will invite folks a couple of times a day.
 
-[Survey link:](https://ubc.ca1.qualtrics.com/jfe/form/SV_bjBcTik01NqJ9A2?course=data301&term=2022_WT2)
+[Survey link](https://ubc.ca1.qualtrics.com/jfe/form/SV_bjBcTik01NqJ9A2?course=data301&term=2022_WT2)
 
 <label><input type="checkbox" id="todo1-1" class="box"> **2. [Complete the anonymous pre-course survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_7Oi7FwTWO2N5gMK?course=data301&term=2022_WT2)** </input></label> 
 

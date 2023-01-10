@@ -20,16 +20,34 @@ It's fairly intuitive, but the Centre for Teaching, Learning, and Technology has
 <img src="../images/Canvas_login.gif">
 ```
 
-```{dropdown} 2. Join Ed Discussion and say hi!
+```{dropdown} 2. Create an account on GitHub.com (if you don't already have one)
     :class-container: sd-shadow-lg
     :color: primary
 
-You will be able to join Ed Discussion if you use UBC Student Email.
-It is possible to also join using another email, but this is **NOT** recommended.
+In this course, we will be using GitHub for our labs and assignments.
+This will be explained later in the first week, for now just create an account (if you do not already have one, you can continue using an existing account).
 
-See [this page](email) for more information on claiming your UBC Student Email. 
+Here is a quick video to show you how to create a GitHub account:
 
-<img src="../images/EdDiscussion.gif">
+<div class="container youtube">
+<iframe src="https://player.vimeo.com/video/570761241?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Creating a GitHub Account"></iframe>
+<script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+```
+
+```{dropdown} 3. Complete the anonymous pre-course survey
+    :class-container: sd-shadow-lg
+    :color: primary
+
+At the start of every course, I like to hear a little bit from my students and collect some information about them.
+There is a good reason for this survey: I want to understand your current learning environments. Since we are all moving online forcibly, many of us may have challenges with available technology/equipment, or access to wireless internet (or power).
+The more I understand your circumstances (anonymously), the more I hope to do to accommodate everyone in the class.
+
+Again, this is optional but please fill it out!!
+
+[Survey link](https://ubc.ca1.qualtrics.com/jfe/form/SV_7Oi7FwTWO2N5gMK?course=data301&term=2022_WT2)
+
+Sometime in the first week of the course, I will use the email addresses you provide to invite you to our course Discussion platform (Ed Discussion).
 ```
 
 ## Frequently asked questions

@@ -9,7 +9,7 @@ macOS Software Stack
 These instructions will walk you through installing the required Data Science software stack for {{ COURSE_CODE }}. 
 Before starting, ensure that your laptop meets the minimum requirements:
 
-- Runs macOS Catalina (10.15.x) or macOS BigSur (11.4). BigSur is recommended; older operating systems are possible but not recommended unless there is no other choice.
+- Runs macOS Catalina (10.15.x), macOS BigSur (11.4) or newer. macOS Monterey (12.x) is recommended; older operating systems are possible but not recommended unless there is no other choice.
 - Can connect to networks via a wireless connection
 - Has at least 25 GB disk space available
 - Has at least 4 GB of RAM (more is better, 8GB is recommended)
@@ -340,13 +340,7 @@ name: PAT
 Personal Access Token settings
 ```
 
-```{figure} setup_images/GithubcreatePAT.gif
----
-height: 450px
-name: PAT2
----
-Personal Access Token settings
-```
+<img src="images/GitHubcreatePAT.gif">
 
 - Click "Generate new token"
 - Save this token somewhere on your computer, you will need it when you clone a repository to your computer.
