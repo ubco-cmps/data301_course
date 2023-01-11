@@ -50,7 +50,7 @@ Here are some [key features](https://twitter.com/siwelwerd/status/14729404739249
 ````{attention}
 For **only the Labs**, {numref}`specifications_rubric` shows a handy guide to help you understand this grading system: 
 
-```{figure} ../images/specifications_rubric.pdf
+```{figure} ../images/specifications_rubricv2.pdf
 ---
 height: 400px
 name: specifications_rubric
@@ -76,9 +76,7 @@ Some hidden toggle content!
 ````{attention}
 For **only the Labs** this term, you will be able to resubmit as many times as you like after you receive feedback, **provided that you did not receive an Incomplete (or I) on your first submission**.
 
-```{caution}
-If you think your work is not of high enough quality to earn a level past **I**, you should submit a [deadline extension request](real_world_deadline_policy) instead - be sure to justify how the extra time will be used to improve your submission!
-```
+**If you think your work is not of high enough quality to earn a level past **I**, you should submit a [deadline extension request](real_world_deadline_policy) instead - be sure to justify how the extra time will be used to improve your submission!**
 ````
 
 Before you resubmit, you will first need to reflect on your initial submission, and explain how you corrected your work after receiving feedback from the TAs.
@@ -115,9 +113,7 @@ So what do we do?
 **For only the Labs**, students can (privately) request a deadline extension beyond the {{ GRACE_PERIOD }} no-penalty grace period via {{ FORUM_LINK }}. 
 You will be required to provide a detailed description **of your plan** to complete the lab assignment with the new requested deadline, and **how the additional time will result in a higher-quality product** than what you can submit by the deadline.
 
-```{note}
-Note: Assignments deadline extensions cannot be granted beyond the last day of classes. This is non-negotiable!
-```
+**Note: Assignments deadline extensions cannot be granted beyond the last day of classes. This is non-negotiable!**
 
 In general, reasonable deadline extension requests will *usually* be granted, and you **do not** need to provide a reason or excuse for *why* you need the extension. There will be no late marks taken off for submissions that have approved extension requests.
 That being said, I suggest not relying on this too much because it will set you back and if you fall too far behind, there's a danger of running out of time to catch up.
