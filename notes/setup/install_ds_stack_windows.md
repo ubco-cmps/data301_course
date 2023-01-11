@@ -373,7 +373,7 @@ Personal Access Token settings
 <img src="setup_images/GitHubcreatePAT.gif">
 
 - Click "Generate new token"
-- Save this token somewhere on your computer, you will need it when you clone a repository to your computer.
+- Save this token somewhere on your computer, you will need it when you clone a **private** repository to your computer.
 - Don't share your token with anyone and protect it like it's your password! You will not be able to come back to this page to get your token. If you forget it, or lose it, you can just delete the token and create another one.
 
 ### Clone your first repository on your computer!
@@ -383,8 +383,6 @@ Open a GitBash Terminal window, and then run the following command:
 ```
 git clone https://github.com/firasm/test.git
 ```
-
-Here you will be prompted for your GitHub.com username, and your PAT (personal access token) as your password.
 
 Hopefully, if things work, you should be able to see a new folder created at that location.
 We will be talking more about what exactly you did over the next week and a bit, don't worry!
