@@ -16,7 +16,7 @@ First, let's get ready by creating a new file to practice in:
 You can do this in one line using this command:
 
 ```
-code activity.md
+code activity_task2.md
 ```
 If this does not open a blank file in VS Code, I suggest revisiting the install instructions to make sure that you can open VS Code from the Terminal.
 

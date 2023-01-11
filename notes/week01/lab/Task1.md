@@ -37,7 +37,7 @@ You can find the link to accept the lab on Canvas, under "Course Content" and th
 - To navigate to a new directory, you will need to use the `cd` command and use tab-completion to find the directory on your computer where you cloned this lab:
 
 ```
-cd ~/school/year3/cosc301/lab1-github-username
+cd ~/school/year3/data301/lab1-github-username
 ```
 **Note: you may choose a different directory structure, based on how you keep your coursework organized on your machine. If you do not currently organize your coursework in a particular way, I suggest using the structure above.
 

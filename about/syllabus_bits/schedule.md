@@ -39,7 +39,6 @@ Labs will start in the second week of the course!
 | Bonus Test 4    | TBD                    | TBD         | 50 minutes |
 
 
-
 <!-- This is the Term 1 schedule -->
 
 <!--

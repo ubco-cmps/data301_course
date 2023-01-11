@@ -33,7 +33,7 @@ else:
     print('Number is greater than 5.')
 ```
 1. Add a horizontal line using `---`.
-1. Add a clickable link in the `activity.md` file like this: [link text](https://cbc.ca).
+1. Add a clickable link in the `activity_task3.md` file like this: [link text](https://cbc.ca).
 1. Add a local (i.e. on your computer/repository) image to this file like this:
 ```
 ![description of image](dir.png)
@@ -63,11 +63,9 @@ git commit -m "Finished Task 3 markdown syntax."
 git push
 ```
 
-## Task 3.3: Submit your Lab on Gradescope
+## Task 3.3: Submit your Lab on PrairieLearn
 
-See [the README file](./README.md) on instructions, and a video on how to submit your lab on Gradescope.
-
-**NOTE: If you make any changes to your GitHub repository, you MUST re-submit on Gradescope to make sure we grade the latest version of your repository. You may submit on Gradescope as many times as you like.**
+See [the README file](./README.md) on instructions, and a video on how to submit your lab on PrairieLearn.
 
 That's it! 
 Nice and easy, lots of new things learned...

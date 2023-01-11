@@ -28,20 +28,20 @@ parts:
     - file: notes/setup/install_ds_stack_windows
       title: Windows Setup Instructions
 
-# - caption: Weekly Content
-#   chapters:
-#   - file: notes/week01/week01_summary
-#     title: Week 1
-#     sections:
-#     - file: notes/week01/videos
-#     - file: notes/week01/Class1A/Class1A
-#     - file: notes/week01/Class1B/Class1B
+- caption: Weekly Content
+  chapters:
+  - file: notes/week01/week01_summary
+    title: Week 1
+    sections:
+    - file: notes/week01/videos
+    - file: notes/week01/Class1A/Class1A
+    - file: notes/week01/Class1B/Class1B
 #     - file: notes/week01/lab/README
-#       title: Lab 2
+#       title: Lab 1
 #       sections:
 #         - file: notes/week01/lab/Task1.md
 #         - file: notes/week01/lab/Task2.md
-#     - file: notes/week01/log
+    - file: notes/week01/log
 
 #   - file: notes/week02/week02_summary
 #     title: Week 2
