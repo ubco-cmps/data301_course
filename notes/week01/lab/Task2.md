@@ -16,7 +16,7 @@ First, let's get ready by creating a new file to practice in:
 You can do this in one line using this command:
 
 ```
-code activity_task2.md
+code activity.md
 ```
 If this does not open a blank file in VS Code, I suggest revisiting the install instructions to make sure that you can open VS Code from the Terminal.
 
@@ -33,9 +33,10 @@ Here's the effect of the preview extension you installed in VS Code:
 - Add a level 2 heading using "##".
 - Add a level 3 heading using "###".
 - Add a level 4 heading using "####".
-- Write a sentence (any sentence) after each of the four headings and sub-headings you created. You can [generate and use random sentences here](https://www.lipsum.com).
-- Make a single word in one of the sentences you wrote above **bold** by surrounding them in `**`.
-- Make a single word in one of the sentences you wrote above *italics by surrounding them in `*`.
+- Write a sentence (any sentence) after each of the four headings you created. You can [generate and use random sentences here](https://www.lipsum.com). Each random sentence is just like a divider between the heading lines of different levels. There should be eight sentences in total, with headings and sentences interleaved.
+- Make a single word in one of the sentences (not the headings) you wrote above **bold** by surrounding them in `**`.
+- Make a single word in one of the sentences (not the headings) you wrote above *italics* by surrounding them in `*`.
+
 - Create an unordered list of your favourite fruits:
 ```
 - Apple
@@ -46,12 +47,12 @@ Here's the effect of the preview extension you installed in VS Code:
 - Create an ordered list of your favourite subjects amongst the following: Physics, Chemistry, Biology, Math, Computer Science, English, Literature.
 ```
 1. Physics
-1. Computer Science
-1. Literature
-1. English
-1. Math
-1. Chemistry
-1. Biology
+2. Computer Science
+3. Literature
+4. English
+5. Math
+6. Chemistry
+7. Biology
 ```
 
 ### Add, commit, and push your changes to GitHub
@@ -64,3 +65,5 @@ git add .
 git commit -m "Finished Task 2 markdown syntax."
 git push
 ```
+
+Onwards to [Task 3](./Task3.md)!

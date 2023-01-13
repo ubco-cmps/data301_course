@@ -3,7 +3,8 @@
 
 ## Announcements
 
-- Everyone should be on Ed Discussion
+- Everyone should be on Ed Discussion by now!
+    - If you are not, please complete the Ed Discussion survey (discussed in Class1A).
 - Course (and Test) Schedule is now released
 - Still considering what to do with Bonus Tests (stay tuned!)
 - Labs will begin next week!

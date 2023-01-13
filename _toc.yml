@@ -36,11 +36,13 @@ parts:
     - file: notes/week01/videos
     - file: notes/week01/Class1A/Class1A
     - file: notes/week01/Class1B/Class1B
-#     - file: notes/week01/lab/README
-#       title: Lab 1
-#       sections:
-#         - file: notes/week01/lab/Task1.md
-#         - file: notes/week01/lab/Task2.md
+    - file: notes/week01/Class1C/Class1C
+    - file: notes/week01/lab/README
+      title: Lab 1
+      sections:
+        - file: notes/week01/lab/Task1.md
+        - file: notes/week01/lab/Task2.md
+        - file: notes/week01/lab/Task3.md
     - file: notes/week01/log
 
 #   - file: notes/week02/week02_summary
