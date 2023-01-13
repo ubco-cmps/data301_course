@@ -9,16 +9,16 @@ This will be updated soon...
 | 1  | Jan 9 - 15      | Introduction to Data Analytics <br /> Course Setup | Lab 1 (on your own) | LL1  | -                  | -                            | -                             |
 | 2  | Jan 16 - 22     | Command-line <br /> and Jupyter Notebook           | Lab 2               | LL2  | -                  | Test 0                       | Course policies               |
 | 3  | Jan 23 - 30     | Introduction to Python                             | Lab 3               | LL3  | PM 1               | -                            | -                             |
-| 4  | Jan 30 - Feb 6  | Working with Data in Python                        | Lab 4               | LL4  | -                  | Test 1                       | Command Line and Python       |
-| 5  | Feb 6 - 13      | Exploratory Data Analysis                          | Lab 5               | LL5  | PM 2               | (Bonus Test 1)               | -                             |
-| 6  | Feb 13 - 20     | Introduction to Version Control with Git           | Lab 6               | LL6  | PM 3               | Test 2                       | Python and Git                |
-| 7  | Feb 20 - 27     | Reading Week <br />(no new material)               | -                   | -    | -                  | -                            | -                             |
-| 8  | Feb 27 - Mar 6  | Data Visualization                                 | Lab 7               | LL7  | PM 4               | (Bonus Test 2)               | -                             |
-| 9  | Mar 6 - 13      | Programming in Python                              | Lab 8               | LL8  | -                  | Test 3                       | Data Visualization and Pandas |
-| 10 | Mar 13 - 20     | Catch-up week <br />(no new material)              | -                   | -    | -                  | -                            | -                             |
-| 11 | Mar 20 - 27     | Tableau                                            | Lab 9               | LL9  | PM 5               | (Bonus Test 3)               |                               |
-| 12 | Mar 27 - Apr 3  | Microsoft Excel                                    | Lab 10              | LL10 | -                  | Test 4                       | Python Programming and Excel  |
-| 13 | Apr 3 - 10      | Project Wrap-up and Review <br />(no new material) | -                   | LL11 | PM 6               | (Bonus Test 4)               | -                             |
+| 4  | Jan 31 - Feb 6  | Working with Data in Python                        | Lab 4               | LL4  | -                  | Test 1                       | Command Line and Python       |
+| 5  | Feb 7 - 13      | Exploratory Data Analysis                          | Lab 5               | LL5  | PM 2               | (Bonus Test 1)               | -                             |
+| 6  | Feb 14 - 20     | Introduction to Version Control with Git           | Lab 6               | LL6  | PM 3               | Test 2                       | Python and Git                |
+| 7  | Feb 21 - 27     | Reading Week <br />(no new material)               | -                   | -    | -                  | -                            | -                             |
+| 8  | Feb 28 - Mar 6  | Data Visualization                                 | Lab 7               | LL7  | PM 4               | (Bonus Test 2)               | -                             |
+| 9  | Mar 7 - 13      | Programming in Python                              | Lab 8               | LL8  | -                  | Test 3                       | Data Visualization and Pandas |
+| 10 | Mar 14 - 20     | Catch-up week <br />(no new material)              | -                   | -    | -                  | -                            | -                             |
+| 11 | Mar 21 - 27     | Tableau                                            | Lab 9               | LL9  | PM 5               | (Bonus Test 3)               |                               |
+| 12 | Mar 28 - Apr 3  | Microsoft Excel                                    | Lab 10              | LL10 | -                  | Test 4                       | Python Programming and Excel  |
+| 13 | Apr 4 - 10      | Project Wrap-up and Review <br />(no new material) | -                   | LL11 | PM 6               | (Bonus Test 4)               | -                             |
 | 14 | Apr 11 - Apr 13 | Final Exam Details <br />(no new material)         | -                   | -    | -                  | -                            | -                             |
 
 ```{note}
