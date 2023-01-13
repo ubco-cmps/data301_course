@@ -192,19 +192,6 @@ Then save the file and exit VS Code.
 
 > Most Terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
 
-### Install Ohmyzsh to get Terminal colours, and highlighting
-
-Install `Ohmyzsh` to add Terminal colours, highlighting and other cool features.
-
-Oh My Zsh is installed by running the following command in your Terminal: 
-
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-You may now customize your Terminal with themes (see [screenshots of themes here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)) by [following the directions here](https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme].
-Selecting a theme is optional, the default one is pretty good as it is!
-
 ## Python
 
 We will be using Python for a large part of the course, and `conda` will be our Python package manager.
@@ -319,6 +306,19 @@ git config --global user.email YOUR@EMAIL.com
 ```{note}
 To ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
 ```
+
+### Install Ohmyzsh to get Terminal colours, and highlighting
+
+Install `Ohmyzsh` to add Terminal colours, highlighting and other cool features.
+
+Oh My Zsh is installed by running the following command in your Terminal: 
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+You may now customize your Terminal with themes (see [screenshots of themes here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)) by [following the directions here](https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme).
+Selecting a theme is optional, the default one is pretty good as it is!
 
 ### Create your GitHub "Personal Access Token"
 
