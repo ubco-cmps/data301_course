@@ -3,6 +3,7 @@
 
 ## Announcements
 
+- Everyone should be on Ed Discussion
 - Course (and Test) Schedule is now released
 - Still considering what to do with Bonus Tests (stay tuned!)
 - Labs will begin next week!
@@ -12,6 +13,20 @@
 ## Logistics
 
 During class we will go through some logistics, and then go through some terminology.
+
+## Tour of Visual Studio Code
+
+VS Code (or Visual Studio Code) is the IDE, or "Interactive Development Environment" we will be using in this course.
+Though it is not required for you to use it (you can accomplish the same things in other IDEs like PyCharm, Atom, etc...), I suggest giving it a shot and see how you like it!
+In this live demo, I'll show you around the editor and how you can use it for your work:
+
+- Opening a Folder vs. opening an individual file
+- Opening a Terminal in VS Code
+    - On Windows, you may need to do an extra step to link your GitBash terminal to VS Code
+- Sidebar for files
+- Search
+- Extensions
+- Customizing colours, editor layout, other settings
 
 ## Accept your first lab
 
@@ -31,6 +46,13 @@ For some labs clicking the link will take you to an intermediate page where you'
 
 ![](images/cloneURL.png)
 
+## Tour of PrairieLearn
+
+PrairieLearn is the platform we will be using to submit (and get feedback on) all the work you'll be doing this semester.
+We are still setting it up, so some of the dates might appear a bit wonky, but give us a few days and things will show up correctly.
+Today, we'll finish off class by doing "Test 0" together.
+I will give you a password during class (if you miss class, watch the zoom recording to get the password!) and you'll do a "Course policies" test that is **not for marks**.
+Remember that the Test will be open book, open notes, and open web (with some exceptions) so feel free to refer back to the syllabus.
 
 ## Reminder: Learning Log 1
 

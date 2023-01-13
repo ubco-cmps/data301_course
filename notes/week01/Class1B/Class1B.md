@@ -95,20 +95,6 @@ It is worth your time to go through the [tutorial](https://commonmark.org/help/t
 
 - Finally, remember to use the Visual Studio Code Markdown Preview to see how your Markdown renders!
 
-## Tour of Visual Studio Code
-
-VS Code (or Visual Studio Code) is the IDE, or "Interactive Development Environment" we will be using in this course.
-Though it is not required for you to use it (you can accomplish the same things in other IDEs like PyCharm, Atom, etc...), I suggest giving it a shot and see how you like it!
-In this live demo, I'll show you around the editor and how you can use it for your work:
-
-- Opening a Folder vs. opening an individual file
-- Opening a Terminal in VS Code
-    - On Windows, you may need to do an extra step to link your GitBash terminal to VS Code
-- Sidebar for files
-- Search
-- Extensions
-- Customizing colours, editor layout, other settings
-
 ## Reminder: Learning Log 1
 
 Learning Log 1 will be available to you after the last class of the week is over.
