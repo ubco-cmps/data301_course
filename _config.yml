@@ -72,7 +72,7 @@ sphinx:
       ROOM: "EME 0050"
       MEETING_TIMES: "Monday, Wednesday, Friday 10-11 AM"
       GRACE_PERIOD: "48 hour"
-      W_DATE_1: "11:59 PDT on January 23, 2023"
+      W_DATE_1: "11:59 PDT on January 20, 2023"
       W_DATE_2: "11:59 PDT on March 24, 2023"
       W_DATE_3: "March 24, 2023"
       EXAM_PERIOD: "Monday, April 17 - Friday, April 28"
