@@ -45,17 +45,17 @@ parts:
         - file: notes/week01/lab/Task3.md
     - file: notes/week01/log
 
-#   - file: notes/week02/week02_summary
-#     title: Week 2
-#     sections:
-#     - file: notes/week02/Class2A/Class2A
-#     - file: notes/week02/Class2B/Class2B
-#     - file: notes/week02/lab/README
-#       title: Lab 2
-#       sections:
-#         - file: notes/week02/lab/Task1.md
-#         - file: notes/week02/lab/Task2.md
-#     - file: notes/week02/log
+  - file: notes/week02/week02_summary
+    title: Week 2
+    sections:
+    - file: notes/week02/Class2A/Class2A
+    # - file: notes/week02/Class2B/Class2B
+    - file: notes/week02/lab/README
+      title: Lab 2
+      sections:
+        - file: notes/week02/lab/Task1.md
+        - file: notes/week02/lab/Task2.md
+    - file: notes/week02/log
 #   - file: notes/week03/week03_summary
 #     title: Week 3
 #     sections:

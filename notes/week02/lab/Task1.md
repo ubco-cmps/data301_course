@@ -6,13 +6,13 @@ For this task, you will be reproducing a particular directory structure with a s
 
 In case you missed the installation instructions to install tree, they are linked here:
 
-- On Windows, if you cannot find the tree command, please follow the instructions in the [setup guide](https://firas.moosvi.com/courses/cosc301/2022_WT1/notes/setup/install_ds_stack_windows.html#tree).
+- On Windows, if you cannot find the tree command, please follow the instructions in the [setup guide](https://firas.moosvi.com/courses/data301/2022_WT2/notes/setup/install_ds_stack_windows.html#tree).
 
 - On Linux or macOS, you may need to install tree (if you didn't already do it in the dungeon) with: `conda install -c conda-forge tree`.
 
 ## A. Create Directory Structure
 
-The files should be named the same way, but you can leave them empty if you want.
+The files should be **named and structured the same way**, but you can leave them empty if you want.
 
 <img src="images/dir.png" width="350px">
 
@@ -31,7 +31,7 @@ You may need the following commands:
 - [`mkdir`](https://man7.org/linux/man-pages/man1/mkdir.1.html): make directory (note the `-p` option)
 - [`ls`](https://man7.org/linux/man-pages/man1/ls.1.html): list directory contents
 - [`touch`](https://man7.org/linux/man-pages/man1/touch.1.html): create an empty file with a specific name
-- `code`/`pico`/`nano`/`vim`: edit the file in a text editor
+- `code`: edit the file in Visual Studio Code
 
 ## B. Run `tree`
 

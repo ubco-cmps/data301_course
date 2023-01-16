@@ -8,17 +8,12 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 ```{admonition} Checklist of items
 :class: tip
 
-<input type="checkbox" id="week04_video1" class="box"><label>1.1: Create a GitHub Account</input></label>
+<input type="checkbox" id="week04_video1" class="box"><label>2.1: Working on a Lab on GitHub Classroom</input></label>
 
-<input type="checkbox" id="week02_video1" class="box"><label>2.1: Introduction to Lab 2</input></label>
-
-<input type="checkbox" id="week02_video2" class="box"><label>2.2: Submitting your GitHub Classroom assignment via Gradescope</input></label>
-
-<input type="checkbox" id="week02_video3" class="box"><label>2.3: Introduction to Lab 1B</input></label>
+<input type="checkbox" id="week02_video1" class="box"><label>2.2: Introduction to Lab 2</input></label>
 ```
 ````
 ## Required Videos
-
 
 ```{dropdown} 2.1: Working on a Lab on GitHub Classroom
     :class-container: sd-shadow-lg
@@ -30,6 +25,7 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 </div>
 ```
 
+<!-- 
 ```{dropdown} 2.2: Submitting your GitHub Classroom assignment via Gradescope
     :class-container: sd-shadow-lg
     :color: primary
@@ -41,8 +37,11 @@ This **video will start at the 2 minute and 8 second mark** as the stuff before 
 <script src="https://player.vimeo.com/api/player.js"></script>
 </div>
 ```
+-->
 
-```{dropdown} 2.3: Introduction to Lab 2
+
+
+```{dropdown} 2.2: Introduction to Lab 2
     :class-container: sd-shadow-lg
     :color: primary
 

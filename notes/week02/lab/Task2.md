@@ -15,7 +15,7 @@ Much of the information in the game is beyond the scope of this course, so take 
 
 I have recorded a video to get you started with this lab: [Click here to view the video](https://vimeo.com/570825537).
 
-<div style="padding:55.42% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/570825537?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DATA 301 Lab Introduction - BashCrawl"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:55.42% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/570825537?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:250%;height:250%;" title="Data 301 Lab Introduction - BashCrawl"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ## BashCrawl
 
@@ -73,6 +73,8 @@ Here is a text guide of the first few steps of the game:
 When you're done exploring the dungeon there are several things I want you to do:
 
 #### 1. Commit everything to your repository and push to the cloud:
+  
+**VERY IMPORTANT: Please `cd` to your main lab directory before running any of the following commands! Please move any created files in the main lab directory, NOT anywhere in the entrance folder.**
 
 ```
 git add .
@@ -81,6 +83,8 @@ git push
 ```
 
 #### 2. Run `tree`, and then save the output to a file :
+  
+**VERY IMPORTANT: Please `cd` to your main lab directory before running any of the following commands! Please move any created files in the main lab directory, NOT anywhere in the entrance folder.**
 
 ```
 tree
@@ -88,6 +92,8 @@ tree > mydungeonmap.txt
 ```
 
 #### 3. Commit the dungeon map to your repository 
+  
+**VERY IMPORTANT: Please `cd` to your main lab directory before running any of the following commands! Please move any created files in the main lab directory, NOT anywhere in the entrance folder.**
 
 Run the following commands in your Terminal:
 
@@ -98,6 +104,8 @@ git push
 ```
 
 #### 4. Save the last 250 commands from your Terminal
+  
+**VERY IMPORTANT: Please `cd` to your main lab directory before running any of the following commands! Please move any created files in the main lab directory, NOT anywhere in the entrance folder.**
 
 We want to see some serious effort with the dungeon map, so we are asking for the last 250 commands you entered into the Terminal.
 Please open this file and do a quick check to make sure there is no sensitive information in this file (like passwords or private messages).
@@ -110,7 +118,9 @@ history -250 > dungeonHistory.txt
 ```
 **Note: On Windows, you may not need the `-` to show the last few commands.**
 
-#### 5. Commit the dungeon history to your repository 
+#### 5. Commit the dungeon history to your repository
+  
+**VERY IMPORTANT: Please `cd` to your main lab directory before running any of the following commands! Please move any created files in the main lab directory, NOT anywhere in the entrance folder.**
 
 Run the following commands in your Terminal:
 

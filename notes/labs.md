@@ -14,7 +14,7 @@ Click links below to accept the labs, I expect they will be released by Monday m
 | Lab                                             | Due Date                      | Link to Accept                                        |
 |-------------------------------------------------|-------------------------------|-------------------------------------------------------|
 | Lab 1 - Course Setup Markdown, Terminal, GitHub | Wednesday January 18 at 18:00 | [Accept Lab](https://classroom.github.com/a/amfaKryg) |
-| Lab 2 - BashCrawl                               | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 2 - BashCrawl                               | Wednesday January 25 at 18:00               | [Accept Lab](https://classroom.github.com/a/SGFLdZMJ)                                        |
 | Lab 3 - Git Tutorial                            | Wednesday 18:00               | [Accept Lab]()                                        |
 | Lab 4 - Introduction to Python                  | Wednesday 18:00               | [Accept Lab]()                                        |
 | Lab 5 - Pandas, numpy, and random               | Wednesday 18:00               | [Accept Lab]()                                        |
