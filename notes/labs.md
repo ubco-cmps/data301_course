@@ -11,18 +11,18 @@ You will first need to accept the lab so the "starter code" is copied to your re
 Click links below to accept the labs, I expect they will be released by Monday morning of each week.
 
 ## Labs
-| Lab                                             | Due Date                     | Link to Accept                                        |
-|-------------------------------------------------|------------------------------|-------------------------------------------------------|
+| Lab                                             | Due Date                      | Link to Accept                                        |
+|-------------------------------------------------|-------------------------------|-------------------------------------------------------|
 | Lab 1 - Course Setup Markdown, Terminal, GitHub | Wednesday January 18 at 18:00 | [Accept Lab](https://classroom.github.com/a/amfaKryg) |
-| Lab 2 - BashCrawl                               | Wednesday 18:00 | [Accept Lab]() |
-| Lab 3 - Git Tutorial                            | Wednesday 18:00   | [Accept Lab]() |
-| Lab 4 - Introduction to Python                  | Wednesday 18:00   | [Accept Lab]() |
-| Lab 5 - Pandas, numpy, and random               | Wednesday 18:00  | [Accept Lab]() |
-| Lab 6 - Python Functions                        | Wednesday 18:00  | [Accept Lab]() |
-| Lab 7 - Data Analysis                           | Wednesday 18:00   | [Accept Lab]() |
-| Lab 8 - Data Visualization                      | Wednesday 18:00  | [Accept Lab]() |
-| Lab 9 - Tableau                                 | Wednesday 18:00  | [Accept Lab]() |
-| Lab 10 - Excel                                  | Wednesday 18:00   | [Accept Lab]() |
+| Lab 2 - BashCrawl                               | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 3 - Git Tutorial                            | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 4 - Introduction to Python                  | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 5 - Pandas, numpy, and random               | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 6 - Python Functions                        | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 7 - Data Analysis                           | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 8 - Data Visualization                      | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 9 - Tableau                                 | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 10 - Excel                                  | Wednesday 18:00               | [Accept Lab]()                                        |
 
 ## Project
 
@@ -35,10 +35,8 @@ Click links below to accept the labs, I expect they will be released by Monday m
 | Milestone 5       | Thursday,  at 18:00  | None (continue using repo)                        |
 | Milestone 6       | Thursday,  at 18:00  | None (continue using repo)                        |
 
-
 Once you click the link, a repository will automatically be created for you with some starter code.
 You can now work on the repo, make commits, and push them to GitHub as you please. 
-Once the deadline and the grace period has passed, you will no longer be able to push any changes.
 
 ## OPTIONAL Labs
 
