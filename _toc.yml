@@ -49,8 +49,8 @@ parts:
     title: Week 2
     sections:
     - file: notes/week02/Class2A/Class2A
-    - file: notes/week02/Class2C/Class2C
-#    - file: notes/week02/Class2B/Class2B
+    - file: notes/week02/Class2B/Class2B
+   - file: notes/week02/Class2C/Class2C
     - file: notes/week02/lab/README
       title: Lab 2
       sections:
@@ -258,11 +258,11 @@ parts:
   - file: notes/labs
     title: GitHub Classroom Links
 
-# - caption: Project
-#   chapters:
-#   - file: project/introduction
-#     sections:
-#     - file: project/milestone01
+- caption: Project
+  chapters:
+  - file: project/introduction
+    sections:
+    - file: project/milestone01
 #     - file: project/milestone02
 #     - file: project/milestone03
 #     - file: project/milestone04
