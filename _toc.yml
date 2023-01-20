@@ -50,7 +50,7 @@ parts:
     sections:
     - file: notes/week02/Class2A/Class2A
     - file: notes/week02/Class2B/Class2B
-   - file: notes/week02/Class2C/Class2C
+    - file: notes/week02/Class2C/Class2C
     - file: notes/week02/lab/README
       title: Lab 2
       sections:
