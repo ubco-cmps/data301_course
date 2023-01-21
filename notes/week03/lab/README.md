@@ -1,7 +1,14 @@
-# Lab 3
+# Lab 4
 
-This lab has has two tasks.
-The first task is to complete modules in a [Git tutorial](https://learngitbranching.js.org/) under the 'main' tab, and the second task is to complete the modules under the 'remote' tab.
+## Instructions for Lab 4
+
+For this lab, there are three tasks:
+
+- [Task 1](Task1.ipynb)
+- [Task 2](Task2.ipynb)
+- [Task 3](Task3.ipynb)
+
+you will need to each of them and follow the instructions within to complete the lab.
 
 ## Submission Instructions
 
@@ -27,8 +34,8 @@ Those same instructions are summarized here in text:
 
 1. If this is your first time using Gradescope, you will need to set a password:
 
-In the confirmation email you received from Gradescope, click the set your password link.
-Enter the same password in the password and password confirmation fields, and click Set Password.
+    In the confirmation email you received from Gradescope, click the set your password link.
+    Enter the same password in the password and password confirmation fields, and click Set Password.
 
 1. You can now access Gradescope through your Canvas course.
 
@@ -48,3 +55,7 @@ You may resubmit as many times as you like before the deadline + grace period, b
 You are all done with this Lab!
 
 Congratulations!
+
+## Attribution
+
+- Thanks to colleagues such as Amir Zeinali, and Dr. Ramon Lawrence for input on these exercises.
