@@ -5,4 +5,4 @@ Any major changes to the syllabus (this page) will be documented here, as well a
 
 | Change Date | Summary | Rationale |
 |-------------|---------|-----------|
-|             |         |           |
+| Jan 24, 2023 | Minor modifications to the lab topics and the schedule | I decided to do data analysis with pandas before visualization and python stuff this year.           |

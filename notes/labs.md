@@ -16,6 +16,22 @@ Click links below to accept the labs, I expect they will be released by Monday m
 | Lab 1 - Course Setup Markdown, Terminal, GitHub | Wednesday January 18 at 18:00 | [Accept Lab](https://classroom.github.com/a/amfaKryg) |
 | Lab 2 - BashCrawl                               | Wednesday January 25 at 18:00 | [Accept Lab](https://classroom.github.com/a/SGFLdZMJ) |
 | Lab 3 - Git Tutorial                            | Wednesday February 1 at 18:00 | [Accept Lab](https://classroom.github.com/a/QTaCSeBU) |
+| Lab 4 - Introduction to Python and Pandas       | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 5 - Pandas and EDA                          | Wednesday 18:00               | [Accept Lab]()                                    |
+| Lab 6 - Data Visualization                      | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 7 - Data Analysis                           | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 8 - Python Functions                        | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 9 - Tableau                                 | Wednesday 18:00               | [Accept Lab]()                                        |
+| Lab 10 - Excel                                  | Wednesday 18:00               | [Accept Lab]()                                        |
+
+
+<!-- 
+
+| Lab                                             | Due Date                      | Link to Accept                                        |
+|-------------------------------------------------|-------------------------------|-------------------------------------------------------|
+| Lab 1 - Course Setup Markdown, Terminal, GitHub | Wednesday January 18 at 18:00 | [Accept Lab](https://classroom.github.com/a/amfaKryg) |
+| Lab 2 - BashCrawl                               | Wednesday January 25 at 18:00 | [Accept Lab](https://classroom.github.com/a/SGFLdZMJ) |
+| Lab 3 - Git Tutorial                            | Wednesday February 1 at 18:00 | [Accept Lab](https://classroom.github.com/a/QTaCSeBU) |
 | Lab 4 - Introduction to Python                  | Wednesday 18:00               | [Accept Lab]()                                        |
 | Lab 5 - Pandas, numpy, and random               | Wednesday 18:00               | [Accept Lab]()                                        |
 | Lab 6 - Python Functions                        | Wednesday 18:00               | [Accept Lab]()                                        |
@@ -23,6 +39,10 @@ Click links below to accept the labs, I expect they will be released by Monday m
 | Lab 8 - Data Visualization                      | Wednesday 18:00               | [Accept Lab]()                                        |
 | Lab 9 - Tableau                                 | Wednesday 18:00               | [Accept Lab]()                                        |
 | Lab 10 - Excel                                  | Wednesday 18:00               | [Accept Lab]()                                        |
+
+
+
+-->
 
 ## Project
 
