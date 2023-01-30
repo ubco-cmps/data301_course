@@ -184,7 +184,6 @@ This will reduce the need for you and others to repeat yourself, and allow you t
 ## Task 4. Conduct your analysis to help answer your research question(s)
 
 Armed with your EDA, you should now be ready to conduct a thorough analysis to answer your research question(s).
-This section can be completed together as a group. ~~(and only one file should be submitted) but you may (and are encouraged) to try this yourself first, and then combine them together in one submission.~~
 
 Each group will have a different data analysis product, however some guidelines to keep you on the right track:
 
@@ -196,9 +195,9 @@ Each group will have a different data analysis product, however some guidelines 
 
 ## Submission
 
-1. **One person in the group** should submit your repository snapshot on Gradescope. Once you submit it, you may continue to work on the next milestone. Remember to add your group members' names or they will get 0!
+1. **One person in the group** should submit your repository snapshot on PrairieLearn. Once you submit it, you may continue to work on the next milestone. Remember to add your group members' names or they will get 0!
 
-1. Each team member will also submit a teamwork reflection in their weekly learning logs (also on Gradescope).
+1. Each team member will also submit a teamwork reflection in their weekly learning logs (also on PrairieLearn).
 > The purpose of this individual report is to give you an avenue to present your viewpoint as to how the project went, how the group worked together, and your role in the group.
 > Each group member must complete this form to report on the contributions of **yourself** and the other group members.
 > That information can, if needed, be used to adjust final grades of individuals. 

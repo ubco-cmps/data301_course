@@ -1,4 +1,4 @@
-# Milestone 1 - Form Team, Find Dataset, and Load Dataset
+# Milestone 1 - Form Team and Find Dataset
 
 <head>
   <base target="_blank">
@@ -183,7 +183,7 @@ The first step is to create/join a GitHub repository:
     - `data/raw` - raw data should go in this directory; you should add the original source file here. Always keep the original data file without editing.
     - `data/processed` - You can add cleaned up, and processed data files in this directory.
   - `images` - any external images you use should be in this directory so things are organized.
-  - `notebooks` - all Jupyter Notebook files should be kept in this parent directory. Keep this folder organized and have as few notebooks in here as possible.
+  - `analysis` - all Jupyter Notebook files should be kept in this parent directory. Keep this folder organized and have as few notebooks in here as possible.
     - `notebooks/analysis1.ipynb` : Teammate 1 should have Jupyter Notebook work stored here. Remember to change the header in this file to your names or an alias. Don't change the name of this file.
     - `notebooks/analysis2.ipynb` : Teammate 2 should have Jupyter Notebook work stored here. Remember to change the header in this file to your names or an alias. Don't change the name of this file.
     - `notebooks/analysis3.ipynb` : Teammate 3 should have Jupyter Notebook work stored here. Remember to change the header in this file to your names or an alias. Don't change the name of this file.
@@ -206,9 +206,6 @@ The first step is to create/join a GitHub repository:
  **Note: GitHub currently does not allow you to upload empty directories, so each directory has a README file that you should populate with relevant information**
 ```
 ## Task 4: Create a project vision statement
-
-**The vision statement should be placed in the `project_vision.md` file in the project repository.**
-You are welcome to update the vision as your project evolves and changes.
 
 Creating a project vision statement is an essential aspect of good project planning.
 In this section, I will be referencing [Dovile Misevičiūtė's excellent article](https://teamhood.com/project-management/project-vision-statement-make-sure-it-works/) on project vision statements.
