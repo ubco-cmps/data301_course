@@ -271,6 +271,8 @@ parts:
 #     - file: project/milestone03
 #     - file: project/milestone04
 #     - file: project/milestone05
+#     - file: project/milestone06
+
 
 
 # - caption: Extra Practice with Python
