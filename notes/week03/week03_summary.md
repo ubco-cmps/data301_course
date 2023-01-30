@@ -20,6 +20,6 @@ You are welcome to attend additional labs or Student Hours in the course if you 
 ```
 <label><input type="checkbox" id="week04_task4" class="box"> Watch the Optional **[videos](./videos.md)**</input></label>
 
-<label><input type="checkbox" id="week04_task5" class="box"> Start on **[Milestone 2](../project/milestone01.md)**</input></label>
+<label><input type="checkbox" id="week04_task5" class="box"> Start on **[Milestone 1](../project/milestone01.md)**</input></label>
 
 <label><input type="checkbox" id="week04_task6" class="box"> Complete the weekly **[Learning Log](./log.md)**</input></label>
