@@ -102,5 +102,5 @@ To contract for an `A+` project, you should do everything above plus:
     - At least three advanced operations (for e.g anonymous or lambda functions in `assign` or `apply` functions)
     - At least two method chains
 - Effective use of Git branches, code reviews, Pull Requests (and approvers)
-- Extra “flair” and effort]
+- Extra “flair” and effort
 - Visit Project student hours 4 or more times for feedback (and implement it)
