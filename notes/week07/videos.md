@@ -9,6 +9,7 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 :class: tip
 
 <input type="checkbox" id="week07_video1" class="box"><label>Functions in Python</input></label>
+<input type="checkbox" id="week07_video2" class="box"><label>Conditionals and Comparisons in Python</input></label>
 ```
 ````
 ## Required Videos

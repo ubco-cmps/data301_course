@@ -1,7 +1,16 @@
-# Lab 3
+# Lab 4
 
-This lab has has two tasks.
-The first task is to complete modules in a [Git tutorial](https://learngitbranching.js.org/) under the 'main' tab, and the second task is to complete the modules under the 'remote' tab.
+## Instructions for Lab 4
+
+For this lab, there are five tasks:
+
+- [Task 1](Task1.ipynb)
+- [Task 2](Task2.ipynb)
+- [Task 3](Task3.ipynb)
+- [Task 4](Task4.ipynb)
+- [Task 5](Task5.ipynb)
+
+you will need to each of them and follow the instructions within to complete the lab.
 
 ## Submission Instructions
 
@@ -24,3 +33,7 @@ Those same instructions are summarized here in text:
 That's it! You are all done with this Lab!
 
 Congratulations!
+
+## Attribution
+
+- Thanks to colleagues such as Amir Zeinali, and Dr. Ramon Lawrence for input on these exercises.
