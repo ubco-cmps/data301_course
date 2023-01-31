@@ -11,7 +11,7 @@ Content you should review for Bonus Test 1 includes:
     - File sizes
 - Fundamentals of git
     - "It is important to realize that in this course, you will not explicitly be tested on any git commands except `add`, `commit`,`fetch`,`push`,`pull`,`branch`, `merge`"
-    - Other concepts such as a "Pull Request", a "Fork", "Code review" are fair game to be tested.
+    - (Moved to a future Test) ~~Other concepts such as a "Pull Request", a "Fork", "Code review" are fair game to be tested.~~
 
 ```{important}
 Remember that for every Test, there is also a Bonus Test and we will take the better of the two scores so there is no harm in doing both Tests. A Test and a Bonus Test will be on essentially the same material.
