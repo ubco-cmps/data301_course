@@ -4,7 +4,7 @@ The exact details are subject to change, so this is roughly the plan we will try
 This will be updated soon...
 
 <!-- This is the Term 2 schedule -->
-| #  | Week            | Topics                                                     | Lab                 | Logs | Project Milestones | Tests (Thursdays, in person) | Concepts Tested               |
+| #  | Week            | Topics                                                     | Lab                 | Logs | Project Milestones | Tests (Wednesdays, in person) | Concepts Tested               |
 |----|-----------------|------------------------------------------------------------|---------------------|------|--------------------|------------------------------|-------------------------------|
 | 1  | Jan 9 - 15      | Introduction to Data Analytics <br /> Course Setup         | Lab 1 (on your own) | LL1  | -                  | -                            | -                             |
 | 2  | Jan 16 - 22     | Command-line <br /> and Jupyter Notebook                   | Lab 2               | LL2  | -                  | Test 0                       | Course policies               |
