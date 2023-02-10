@@ -1,6 +1,6 @@
 # Test 2
 
-You will find Test 2 on Canvas.
+You will find Test 2 on PrairieLearn.
 
 Here are some **sample** topics that may be tested (this is not the exhaustive list).
 
@@ -20,7 +20,7 @@ Remember that for every Test, there is also a Bonus Test and we will take the be
 ```
 
 ```{warning}
-You will likely not get your Test results back before the Bonus Test, so please plan accordingly. Once the Test is over, you will however be able to see the questions you got.
+You will likely not get all of your Test results back before the Bonus Test, so please plan accordingly. Once the Test is over, you will however be able to see the questions you got.
 ```
 
 ## Test Rules

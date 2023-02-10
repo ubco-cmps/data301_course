@@ -1,6 +1,6 @@
 # Bonus Test 1
 
-You will find Bonus Test 1 on Canvas.
+You will find Bonus Test 1 on PrairieLearn.
 
 Content you should review for Bonus Test 1 includes:
 

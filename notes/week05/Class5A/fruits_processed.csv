@@ -2,3 +2,10 @@ Fruit Name,Mass(g),Colour,Rating,Score,Score2,Status
 Apple,200,Red,8,400,20050.0,discard
 Banana,250,Yellow,9,450,22562.5,keep
 Cantoloupe,600,Orange,10,500,25150.0,keep
+Cranberry,50, Red,6,300,15012.5,discard
+Blueberry,20, Blue,9,450,22505.0,discard
+Strawberry,120, Red,10,500,25030.0,discard
+Papaya,220, Green,8,400,20055.0,discard
+Lemon,200, Yellow,9,450,22550.0,discard
+Avocado,300, Green,7,350,17575.0,keep
+Jackfruit,500, Yellow,8,400,20125.0,keep

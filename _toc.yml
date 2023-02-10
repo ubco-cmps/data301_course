@@ -79,6 +79,10 @@ parts:
     sections:
     - file: notes/week04/videos
       title: Videos
+    - file: notes/week04/Class4A/Class4A
+      title: A. Lists, Tuples, Dictionaries, Conditionals
+    - file: notes/week04/Class4C/Class4C
+      title: B. Loops, Comprehensions, Pandas
     - file: notes/week04/lab/README
       title: Lab 4
       sections:
@@ -89,15 +93,17 @@ parts:
         - file: notes/week04/lab/Task5
     - file: notes/week04/test
     - file: notes/week04/log
-    - file: notes/week04/Class4A/Class4A
-      title: A. Lists, Tuples, Dictionaries, Conditionals
-    - file: notes/week04/Class4C/Class4C
-      title: B. Loops, Comprehensions, Pandas
   - file: notes/week05/week05_summary
     title: Week 5
     sections:
     - file: notes/week05/videos
       title: Videos
+    - file: notes/week05/Class5A/Class5A
+      title: A. Introduction to Pandas
+    - file: notes/week05/Class5B/Class5B
+      title: B. More Pandas
+    - file: notes/week05/Class5B/Wrangling_notes
+      title: Notes on Missing Data
     - file: notes/week05/lab/README
       title: Lab 5
       sections:
@@ -109,36 +115,39 @@ parts:
           title: Task 3
         - file: notes/week05/lab/Task4
           title: Task 4
+    - file: notes/week05/test
     - file: notes/week05/log
-    - file: notes/week05/Class5A/Class5A
-      title: A. Introduction to Pandas
-#     - file: notes/week05/Class5B/Class5B
-#       title: B. More Pandas
 #     - file: notes/week05/Class5C/Class5C
 #       title: C. Advanced Pandas
-#     - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_5v8bprKq7Wgpk90
-#       title: Mid-course Feedback (Anonymous)
-#   - file: notes/week06/week06_summary
-#     title: Week 6 (Break!)
+
+  - file: notes/week06/week06_summary
+    title: Week 6
+    sections:
+    - file: notes/week06/videos
+      title: Videos
+#     - file: notes/week08/Class8A/Class8A
+#       title: A. Introduction to Data Visualization
+    - file: notes/week06/Class6B/Class6B
+      title: B. Seaborn Tutorial
+    # - file: notes/week06/lab/README
+    #   title: Lab 6
+    #   sections:
+    #     - file: notes/week06/lab/Task1
+    #       title: Task 1
+    #     - file: notes/week06/lab/Task2
+    #       title: Task 2
+    #     - file: notes/week06/lab/Task3
+    #       title: Task 3
+    #     - file: notes/week06/lab/Task4
+    #       title: Task 4
+    - file: notes/week06/test
+    - file: notes/week06/log
+    # - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_5v8bprKq7Wgpk90
+    #   title: Mid-course Feedback (Anonymous)
+
 #   - file: notes/week07/week07_summary
-#     title: Week 7
-#     sections:
-#     - file: notes/week07/videos
-#       title: Videos
-#     - file: notes/week07/lab/README
-#       title: Lab 5
-#       sections:
-#       - file: notes/week07/lab/Task1
-#         title: Task 1
-#       - file: notes/week07/lab/Task2
-#         title: Task 2
-#       - file: notes/week07/lab/Task3
-#         title: Task 3
-#       - file: notes/week07/lab/Task4
-#         title: Task 4
-#     - file: notes/week07/log
-#     - file: notes/week07/Class7A/Class7A
-#       title: Functions in Python
+#     title: Week 7 (Break!)
+
 
 #     # - file: notes/week07/Class7B/Class7B
 #     #   title: B. More Functions

@@ -1,4 +1,4 @@
-# Lab 6
+# Lab 5
 
 This lab has has four tasks.
 Complete each task in the appropriate `.ipynb` file, these are the only files that will be graded for this lab.

@@ -8,21 +8,30 @@ In the sidebar on the right, you can use the checklists to keep track of what's 
 ```{admonition} Checklist of items
 :class: tip
 
-<input type="checkbox" id="week04_video1" class="box"><label>4.1 Seaborn Tutorial by Derek Banas</input></label>
+<input type="checkbox" id="week07_video1" class="box"><label>Functions in Python</input></label>
+<input type="checkbox" id="week07_video2" class="box"><label>Conditionals and Comparisons in Python</input></label>
 ```
 ````
 ## Required Videos
 
-```{dropdown} 8.1 Seaborn Tutorial by Derek Banas
+```{dropdown} 7.1: Functions in Python
     :class-container: sd-shadow-lg
     :color: primary
     :open:
 
 <div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/6GUZXDef2U0" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.vibby.com/embed/vib?vib=Qk287K9a6&prePlayMenu=false" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-[Companion Notebook](Class8B/Class8B)
-
-[More of Derek's videos](https://www.youtube.com/channel/UCwRXb5dUK4cvsHbx-rGzSgw)
 ```
+
+```{dropdown} 7.2: Conditionals and Comparisons in Python
+    :class-container: sd-shadow-lg
+    :color: primary
+    :open:
+
+<div class="container youtube">
+<iframe class="responsive-iframe" src="https://www.vibby.com/embed/vib?vib=myJyIt9pp&prePlayMenu=false" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+```
+
+
