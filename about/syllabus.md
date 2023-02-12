@@ -4,10 +4,10 @@
 
 # Course Syllabus (Official)
 
-The official course syllabus will be available shortly.
+<!-- The official course syllabus will be available shortly.-->
 
-<!-- You can [download the official Course Syllabus here](https://github.com/ubco-cmps/data301_course/raw/main/files/cosc301_2022WT1.pdf).
-For more details about the reason we have a Syllabus and an [Unsyllabus](unsyllabus), you can [read the explanation here](syllabus-vs-unsyllabus). -->
+You can [download the official Course Syllabus here](https://github.com/ubco-cmps/data301_course/raw/main/files/data301_official_syllabus_2022WT2.pdf).
+For more details about the reason we have a Syllabus and an [Unsyllabus](unsyllabus), you can [read the explanation here](syllabus-vs-unsyllabus).
 
 <!-- 
 **Department of Computer Science, Mathematics, Physics, and Statistics**
