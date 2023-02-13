@@ -21,6 +21,6 @@ You are welcome to attend additional labs or Student Hours in the course if you 
 ```
 <label><input type="checkbox" id="week05_task4" class="box"> Watch the **[assigned videos](./videos.md)**</input></label>
 
-<label><input type="checkbox" id="week05_task5" class="box"> Complete **[Bonus Test 1](./test1_bonus.md)**</input></label>
+<label><input type="checkbox" id="week05_task5" class="box"> Complete **[Bonus Test 1](./test.md)**</input></label>
 
 <label><input type="checkbox" id="week05_task6" class="box"> Complete the weekly **[Learning Log](./log.md)**</input></label>
