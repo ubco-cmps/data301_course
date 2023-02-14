@@ -128,8 +128,8 @@ parts:
     sections:
     - file: notes/week06/videos
       title: Videos
-#     - file: notes/week08/Class8A/Class8A
-#       title: A. Introduction to Data Visualization
+    - file: notes/week06/Class6A/Class6A
+      title: A. Introduction to Data Visualization
     - file: notes/week06/Class6B/Class6B
       title: B. Seaborn Tutorial
     - file: notes/week06/lab/README
