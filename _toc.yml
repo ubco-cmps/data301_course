@@ -120,8 +120,6 @@ parts:
           title: Task 4
     - file: notes/week05/test
     - file: notes/week05/log
-#     - file: notes/week05/Class5C/Class5C
-#       title: C. Advanced Pandas
 
   - file: notes/week06/week06_summary
     title: Week 6
@@ -132,6 +130,10 @@ parts:
       title: A. Introduction to Data Visualization
     - file: notes/week06/Class6B/Class6B
       title: B. Seaborn Tutorial
+    - file: notes/week05/Class5C/Class5C
+      title: C. More Pandas
+    - file: notes/week06/Class6D/Class6D
+      title: D. Creating Effective Visualizations
     - file: notes/week06/lab/README
       title: Lab 6
       sections:
@@ -143,11 +145,11 @@ parts:
           title: Task 3
     - file: notes/week06/test
     - file: notes/week06/log
-    # - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_5v8bprKq7Wgpk90
-    #   title: Mid-course Feedback (Anonymous)
+    - url: https://ubc.ca1.qualtrics.com/jfe/form/SV_3PBde00H935eOlo
+      title: Mid-course Feedback (Anonymous)
 
-#   - file: notes/week07/week07_summary
-#     title: Week 7 (Break!)
+  - file: notes/week07/week07_summary
+    title: Week 7 (Break!)
 
 
 #     # - file: notes/week07/Class7B/Class7B
