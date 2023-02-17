@@ -280,7 +280,7 @@ parts:
     sections:
     - file: project/milestone01
     - file: project/milestone02
-#     - file: project/milestone03
+    - file: project/milestone03
 #     - file: project/milestone04
 #     - file: project/milestone05
 #     - file: project/milestone06

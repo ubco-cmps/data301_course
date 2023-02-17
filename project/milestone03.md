@@ -1,7 +1,8 @@
-# Milestone 3 - Data Analysis
+# Milestone 3 - Exploratory Data Analysis (EDA)
 
-In this milestone you will be expected to process and clean your dataset, do exploratory data analysis (EDA), create some data visualizations, and work with method chaining in Pandas. 
+In this milestone you will be expected to process and clean your dataset, do exploratory data analysis (EDA).
 If you are working as a group, you will be expected to show proficiency in all the areas above, **without a duplication of efforts**.
+In other words, every member of the group should do their own exploratory data analysis and should be reasonably different and the submitted work should be different from your teammates' work.
 
 ## Overall Expectations
 
@@ -21,7 +22,7 @@ If you are working as a group, you will be expected to show proficiency in all t
 If you are working in groups, each person should do their EDA separately and independently. 
 You have chosen rich datasets and there should be plenty of different features for each of you to explore.
 
-**Note: The EDA task (Task 1) is different from the Analysis task (Task 4). The EDA is "exploratory" in nature, and is done at a superficial level to get counts of columns, limits, ranges, understand the data distribution, and a cursory look at the relationships between the columns. Think of it as a 'quick and dirty' analysis of your data in preparation for a more thorough analysis.**
+**Note: The EDA task (Task 1) is different from the Analysis task (Milestone 4). The EDA is "exploratory" in nature, and is done at a superficial level to get counts of columns, limits, ranges, understand the data distribution, and a cursory look at the relationships between the columns. Think of it as a 'quick and dirty' analysis of your data in preparation for a more thorough analysis.**
 
 - As a rough guideline, **each** EDA should:
 
@@ -35,169 +36,31 @@ Here are three examples or guides:
   - [Guide 1](https://towardsdatascience.com/an-extensive-guide-to-exploratory-data-analysis-ddd99a03199e)
   - [Guide 2](https://towardsdatascience.com/exploratory-data-analysis-eda-a-practical-guide-and-template-for-structured-data-abfbf3ee3bd9)
   - [Guide 3](https://aiden-dataminer.medium.com/the-data-science-method-dsm-exploratory-data-analysis-bc84d4d8d3f9)
-  - Lab 4 had some elements of a rudimentary EDA (but we expect much more from you now!)
+  - Lab 4 and 5 had some elements of a rudimentary EDA (but we expect much more from you now!)
 
-## Task 2. Set up an "Analysis Pipeline" 
+## Task 2: Refine your research questions
 
-**Each person in a group should do this Task in their own Jupyter notebook!**
+Once you have gone through a couple of rounds of EDA, you are ready to properly and fully formulate your research questions.
 
-Often when Data Scientists do analyses with the same or similar datasets, they set up an "analysis pipeline".
-This has several advantages:
+- You may have found that through your EDA you already answered your questions because they were more trivial than you thought, in this case you should come up with additional questions along the same track to demonstrate your proficiency with python, pandas, and seaborn (depending on your contracted grade).
 
-- record the steps so you can remember what you did.
-- allows you to repeat the steps reproducibly, without doing a bunch of manual and repetitive work.
-- make changes to the series of processing steps so you can improve and iterate.
-- troubleshoot and debug errors in your processing.
-- allows others to reproduce your analysis.
-- if your data changes, you can update your outputs (report, images, etc...) easily without redoing all your processing.
-- allows you to spend more effort and energy on your analysis and visualizations (if you do a good job with the pipeline).
+- On the other hand, you may have found through your EDA that your research questions are impossible to address with your dataset due to limitations with the data, or for other logistical reasons (initially misinterpreting your dataset).
+In this case, you should pivot and hopefully your EDA showed you another potential path forward with a new research question or angle
+    - This is fine and to be expected when trying to come up with research questions on a dataset you haven't worked with before!
 
-### Common steps of a Data Analysis Pipeline
+- For this task, you should clearly identify what your research questions are in your respective `analysisX.ipynb` files.
+    - Note, EACH person in the group member should have their own research question(s) to guide their analysis in their own Jupyter notebook.
 
-Here are some common steps of an analysis pipeline (the order isn't set, and not all elements are necessary):
+- You should **bold** your research question so it's easy to identify, it should be at most, one or two sentences
 
-1. Load Data
-    - Check file types and encodings.
-    - Check delimiters (space, comma, tab).
-    - Skip rows and columns as needed.
-2. Clean Data
-    - Remove columns not being used.
-    - Deal with "incorrect" data.
-    - Deal with missing data.
-3. Process Data
-    - Create any new columns needed that are combinations or aggregates of other columns (examples include weighted averages, categorizations, groups, etc...).
-    - Find and replace operations (examples include replacing the string 'Strongly Agree' with the number 5).
-    - Other substitutions as needed.
-    - Deal with outliers.
-4. Wrangle Data
-    - Restructure data format (columns and rows).
-    - Merge other data sources into your dataset.
-5. Exploratory Data Analysis (not required for this Task).
-6. Data Analysis (not required for this Task).
-7. Export reports/data analyses and visualizations (not required for this Task).
-
-For this Task, I will only ask you to set up a partial pipeline for the data loading, cleaning, processing, and wrangling steps.
-
-## Task 3. Method Chaining and writing Python programs 
-
-By now you probably have done several steps to load, clean, process, wrangle your data, and then save it to disk, in a notebook. 
-You will now use "method chaining" to re-do those steps in fewer lines, and more compact code in new (cells) within your Jupyter Notebook.
-Once you are confident that your method chain works as expected, you will then move it to a separate `.py` file and then run the file from within your notebook.
-An example of this will be shown in Lab 5.
-Here are the steps you need to take:
-
-### Step 1: Build and test your method chain(s)
-
-Method chaining allows you to apply multiple processing steps to your dataframe in a fewer lines of code so it is more readable.
-You should avoid having too many methods in your chain, as the more you have in a single chain, the harder it is to debug or troubleshoot.
-I would target about 5 methods in a chain, though this is a flexible suggestion and you should do what makes your analysis the most readable and group your chains based on their purpose (e.g., loading/cleaning, processing, etc...).
-
-This [article](https://pandasninja.com/2019/04/how-to-write-neat-pandas-code/) has a nice tutorial on method chaining.
-
-Here is an example of method chaining (description below the code) adapted from [here](https://towardsdatascience.com/the-unreasonable-effectiveness-of-method-chaining-in-pandas-15c2109e3c69):
-
-```
-import pandas as pd
-import numpy as np
-from sklearn.datasets import load_wine
-
-data = load_wine() # this a data file that gets loaded
-
-# Method chaining begins
-
-df = (   
-    pd.DataFrame(data.data,columns=data.feature_names)
-    .rename(columns={"color_intensity": "ci"})
-    .assign(color_filter=lambda x: np.where((x.hue > 1) & (x.ci > 7), 1, 0))
-    .loc[lambda x: x['alcohol']>14]
-    .sort_values("alcohol", ascending=False)
-    .reset_index(drop=True)
-    .loc[:, ["alcohol", "ci", "hue"]]
-)
-
-df
-```
-
-> The code above starts with loading the data, then renaming color intensity for its shorter form ci. 
-> It then creates a new column 'color filter' based on values on hue and ci, using the `assign` function. 
-> It then filters a wine that has an alcohol content of more than 14. 
-> In the end, it sorts the data frame based on alcohol content and displays the columns that we are interested in. 
-> If the same were to be repeated without Method Chaining, a new data frame must be created and stored at each step.
-
-### Step 2: Wrap your method chain(s) in a function
-
-A method chain converted to a function would like something like:
-
-```
-def load_and_process(url_or_path_to_csv_file):
-
-    # Method Chain 1 (Load data and deal with missing data)
-
-    df1 = (
-          pd.read_csv(url_or_path_to_csv_file)
-          .rename(...)
-          .dropna(...)
-          # etc...
-      )
-
-    # Method Chain 2 (Create new columns, drop others, and do processing)
-
-    df2 = (
-          df1
-          .assign(...)
-      )
-
-    # Make sure to return the latest dataframe
-
-    return df2 
-
-```
-
-Within your Jupyter Notebook, test your function to make sure it returns the output you expect.
-
-### Step 3: Move your function into a new .py file
-
-- Inside your `notebooks` directory each person in the group will create a `project_functions.py` file.
-- Create a new file `project_functions1.py`, `project_functions2.py`, `project_functions3.py` (one for each student) and add the module imports you may need (`pandas`, `numpy`, etc...).
-- Copy the `load_and_process` function into your `project_functions.py` file.
-- Save the file.
-- Add and commit it to your repository.
-- Push it up to GitHub so that your teammates can also see this file.
-- Each member of a group should now `import` the `project_functions` file in their `analysis.ipynb` file, and use the `load_and_process` function
-- A Jupyter Notebook cell should look something like:
-
-```
-from .. import project_functions # This is called a relative import
-df = project_functions.load_and_process(url_or_path_to_csv_file)
-df
-```
-Congratulations! You have now written your first python module!
-The advantage of this is that you can now more easily use the power of git to version your method chains.
-You are welcome to add more custom utility functions to the `project_functions` file, especially those that your teammates will use. 
-This will reduce the need for you and others to repeat yourself, and allow you to build up your functions over time.
-
-#### Additional Reading on Relative imports AKA "what did I just do?"
-
-- [This article](https://realpython.com/absolute-vs-relative-python-imports/#relative-imports) is a very comprehensive guide to importing files and functions in python. Much of this is beyond the scope of DATA 301, but for those interested and curious, that is a very useful resource.
-
-
-## Task 4. Conduct your analysis to help answer your research question(s)
-
-Armed with your EDA, you should now be ready to conduct a thorough analysis to answer your research question(s).
-
-Each group will have a different data analysis product, however some guidelines to keep you on the right track:
-
-- You should remain focused on your research question(s) - it is very easy to get lost down rabbit holes in data analyses projects.
-- If you find that your research questions are not that interesting, or you find more interesting questions (especially after your EDA) you may revise them, or add more. 
-- Use the lab times, as well as our office hours (TAs and instructors), to get help and guidance on your analyses.
-- You should experiment with "plenty of" data visualizations to try and visualize your dataset and answer your research questions.
-- Give us a narrative/story of your explorations as you go along, in-line with your data - use the new Markdown skills you learned!
+- Now that you have a better idea of what your research questions will be, you should come up with a revised analysis plan. The analysis plan should include details such as how you plan to further clean or process your data, additional columns you may need to add, different ways to reshape or pivot your data, different ways to aggregate your data, etc... to answer your research questions.
+    - As part of this Milestone, you **do not have to implement your analysis plan**, but you should summarize it in a few steps.
 
 ## Submission
 
-1. **One person in the group** should submit your repository snapshot on PrairieLearn. Once you submit it, you may continue to work on the next milestone. Remember to add your group members' names or they will get 0!
+1. You should submit your repository snapshot on Prairielearn. Once you submit it, you may continue to work on the next milestone in the group repository, we will grade the commit closest to your submission time.
 
-1. Each team member will also submit a teamwork reflection in their weekly learning logs (also on PrairieLearn).
+1. Each team member will also submit a teamwork reflection in their weekly learning logs (also on Prairielearn).
 > The purpose of this individual report is to give you an avenue to present your viewpoint as to how the project went, how the group worked together, and your role in the group.
 > Each group member must complete this form to report on the contributions of **yourself** and the other group members.
 > That information can, if needed, be used to adjust final grades of individuals. 
@@ -249,9 +112,15 @@ You can change or add a milestone, an assignee, and labels by clicking their cor
 
 #### How to pull the most recent changes to your computer
 
-If you edit your code on the GitHub web interface, or if another user commits to your repository, to update the repository with the most recent changes, you should **always start a working session by running this command** in your git repository (using either Terminal or GitBash): 
+If you edit your code on the GitHub web interface, or if another use commits to your repository, to update the repository with the most recent changes, you should **always start a working session by running this command** in your git repository (using either Terminal or GitBash): 
 
 > `git pull`
 
 This will make sure your local computer is updated with any changes.
+If you expect that some of the same files have been edited (or if your `git pull` fails), you can try:
+
+```
+git pull --no-ff
+```
+
 Commit and push your changes often while you work to stay in sync.
