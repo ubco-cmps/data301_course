@@ -150,13 +150,6 @@ parts:
 
   - file: notes/week07/week07_summary
     title: Week 7 (Break!)
-
-
-#     # - file: notes/week07/Class7B/Class7B
-#     #   title: B. More Functions
-#     # - file: notes/week07/Class7C/Class7C
-#     #   title: C. Organizing Code
-
   - file: notes/week08/week08_summary
     title: Week 8
     sections:
