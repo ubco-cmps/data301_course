@@ -1,6 +1,6 @@
-# Milestone 5 - Address Feedback and Refine project
+# Milestone 5 - Present your Dashboard!
 
-In this milestone you will continue working on your class project, process the data for your dashboard, and get the repo ready final submission in Milestone 4.
+In this milestone you will be finalizing your submission and presenting all your hard-work to your fellow students as a Dashboard!
 
 ## Overall Expectations
 
@@ -15,122 +15,61 @@ In this milestone you will continue working on your class project, process the d
 - You must use proper English, spelling, and grammar and you should write concisely.
 - There should be a plan in place to to deal with any teamwork conflicts and issues.
 
-## Task 1: Address project feedback
+## Task 1: Process your data for your Tableau Dashboard
 
-- Your assigned project TA should have created an issue in your repository with some feedback for you to address on your milestone.
+You should prepare and process your data so that when you create your dashboard, you have to do minimal data wrangling or manipulation in Tableau.
+There are many different ways to deal with this, but I suggest you export a dataset that you can easily use in Tableau to plot whatever you need to in your dashboard.
 
-- You should spend the majority of time this week to address the feedback you have received from your TA.
+You should put the exported .csv files in the `data/processed` directory.
 
-## Task 2: Final Report: Create a single **markdown** file that will be your final report.
+## Task 2: Create a Dashboard using Tableau
 
-- Once you're done your analysis and you've addressed all the TA and instructor feedback to improve your project, you will export your final figures as PNG (or JPEG) files, and then consolidate your findings into a single markdown file.
+Create a dashboard (using your `processed` dataset - i.e. you do not have to do the data cleaning, wrangling, processing again) to create a Dashboard using Tableau.
+There are no requirements for this Dashboard, but please remember that you will be graded based on the quality of your dashboard, and how well it answers your research questions and/or helps with the exploratory data analysis.
+I suggest you take this opportunity to explore as many of the features that make sense for your project, and get help from us when you need it!
+You should place the Tableau file in the `dashboard` folder. 
 
-- The name of your markdown file should be: `final_report_groupYY.md` (replace `YY` with your group number), and it should be located in the **root** of your project repository.
+**Each person in the group should have their own Tableau Dashboard, but if you can find a way to combine it into one dashboard, that's also fine. I suggest using multiple "tabs" in Tableau to split up research questions or parts of the dashboard.**
 
-- This markdown file is a major deliverable and will require some coordination amongst your teammates to ensure that it is a cohesive and complete document, that provides a summary of all your hard work.
+## Task 3: Present your dashboard
 
-- This markdown file should NOT have **any** code in it, it is meant to be a narrative/summary of your exploratory data analysis, as well as your actual analyses. 
+For this Task, you will record a video showing your Tableau Dashboard.
 
-- You should of course, link to your jupyter notebooks because a portion of your audience will be interested in digging deeper into the analysis and looking at the code.
-    - For example, this can look like: "You can [find the full analysis notebook here, including the code and the data here](https://direct-link-to-your-notebook.ca)
+- Groups of 3 project presentations should be 7-10 minutes long.
+- Groups of 2 project presentations should be 5-7 minutes long.
 
-- Here are the **suggested sections** of your Final Report:
-    - **Introduction**: A short paragraph introducing your project to the audience and a motivation for why this project is important. It's fine to say your group has an interest in this topic and were keen to explore it more.
-    - **Exploratory Data Analysis**: A summary of the **highlights** of your EDA, where you can show some visualizations of the exploratory data analysis your group did.
-    - **Question 1 + Results**: Clearly state your research question, and include 2-3 visualizations that helped you answer your research question. You can create multi-panel figures, but each of your visualizations must speak directly to your research question, and any insights you were able to get from it should be clearly articulated in the figure caption/description.
-    - **Question 2 + Results**: Same as above.
-    - **Question 3 + Results**: Same as above.
-    - **Summary/Conclusion**: A brief paragraph that highlights your key results and what you learned from doing this project.
+Other requirements:
 
-## Task 3: Make your repository public 
+- All members of a group must participate in the Explainer Video (you may have multiple tabs in your Tableau Dashboard).
+- Your recording does NOT have to have a high production value (editing, background sound, video titles etc..) and I would suggest not spending too much time on the non-dashboard component.
 
-[Here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/setting-repository-visibility#changing-a-repositorys-visibility) is how to make your repository public (within the DATA 301 organization).
+### Project Dashboard Presentations
 
-1. On GitHub, navigate to the main page of the repository.
+It is very important for you to know that we are NOT looking for hollywood production value here.
+We want to see your Tableau dashboard, get a walk-through of the key features, and hopefully see some enthusiasm about your project.
 
-2. Under your repository name, click Settings.
+Here is the how you should allocate your efforts for these short videos:
 
-<img src="https://docs.github.com/assets/images/help/repository/repo-actions-settings.png" width="600px">
+- [10%] : Timely submission of a video link or file by the deadline and before the grace period ends.
+- [20%] : Clear explanation of the project research questions and information about the dataset.
+- [50%] : Guided walk-through of the key features of the Tableau Dashboard.
+- [30%] : Show how your dashboard data answer your research questions.
 
-3. Under "Danger Zone", to the right of to "Change repository visibility", click Change visibility.
+## Submitting Milestone 5
 
-<img src="https://docs.github.com/assets/images/help/repository/repo-change-vis.png" width="600px">
+You will submit a link to your video for Milestone 4 on Prairielearn.
 
-4. Select a visibility.
-
-<img src="https://docs.github.com/assets/images/help/repository/repo-change-select.png" width="600px">
-
-## Task 4: Create a release for your repository 
-
-Create a new release for your project called 0.1.0.
-
-As you progress through your project, you can add more releases, once you're happy with where you're at, I suggest creating a new release at 1.0 (perhaps just before you're submitting your final milestone?).
-
-### Creating a new release
-
-[Here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) are the instructions to create a release.
-
-Briefly, here is how to create a release ([from the docs](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository)):
-
-1. On GitHub, navigate to the main page of the repository.
-
-2. To the right of the list of files, click Releases or Latest release.
-
-<img src="https://docs.github.com/assets/images/help/releases/release-link.png" width="600px">
-
-3. Click Draft a new release.
-
-<img src="https://docs.github.com/assets/images/help/releases/draft_release_button.png" width="600px">
-
-4. Type a version number for your release. Versions are based on Git tags.
-
-<img src="https://docs.github.com/assets/images/help/releases/releases-tag-version.png" width="600px">
-
-5. Use the drop-down menu to select the branch that contains the project you want to release.
-
-<img src="https://docs.github.com/assets/images/help/releases/releases-tag-branch.png" width="600px">
-
-6. Type a title and description for your release.
-
-<img src="https://docs.github.com/assets/images/help/releases/releases_description.png" width="600px">
-
-7. Once you're ready to publicize your release, click Publish release. To work on the release later, click Save draft.
-
-### Additional Information
-
-When developers (like you!) are working on a software project that others will be using or viewing, they need a way to communicate with their users when new features are released and bugs are fixed.
-Typically, this is done by creating **version** and you're likely most familiar with this with your phone or laptop operating system (OS).
-For instance, if you have an iPhone the latest version of your OS is 14.2.1 - what do the 14, 2 and 1 mean?
-There are conventions, and the one that I suggest you follow is: [Semantic Versioning](https://semver.org).
-
-From [semver.org](https://semver.org), here is the summary:
-
-Given a version number MAJOR.MINOR.PATCH, increment the:
-
-1. MAJOR version when you make incompatible API changes,
-1. MINOR version when you add functionality in a backwards compatible manner, and
-1. PATCH version when you make backwards compatible bug fixes.
-
-## OPTIONAL Task 5: Give others feedback!
-
-Many of your classmates are doing some very interesting projects with some cool datasets.
-Since this is a course introducing you to Data Analytics, I think it would be very helpful for you to look at their analyses and results, think critically about it, and perhaps provide some useful feedback.
-
-I'll try and facilitate this during our lecture this week, and also online on {{ FORUM_LINK }}.
-
-## Appendix
-
-### Working collaboratively in GitHub
+## Working collaboratively in GitHub
 
 As we progress through the course, you will be learning more and more about GitHub and how to work collaboratively on code.
 Since this is the first time many of you are using Git, I recommend that if you are working in a group, you avoid editing each others' files until you are more familiar with git.
 Below are a few things you may find useful as you continue your git journey.
 
-#### Git Branches
+### Git Branches
 
 Git branches were introduced in Milestone 2.
 
-#### Pull requests
+### Pull requests
 
 Once you have created a branch and "completed" a feature, it's time to merge the feature back to the `main` (or `master`) branch.
 Of course, as you learned in the tutorial you can do this yourself, but in general it's a good idea for another teammate to review your work before it is merged into master. 
@@ -158,15 +97,21 @@ From GitHub's documentation:
 
 > Assignees are a great way to filter, categorize issues, and remember what you're responsible to do. Each issue can have an assignee — one person that’s responsible for moving the issue forward. Assignees are selected the same way milestones are, through the grey bar at the top of the issue. 
 
-<!-- <img src="https://docs.github.com/assets/images/help/repository/repo-change-vis.png" width="600px"> -->
+<!-- <img src="https://guides.github.com/features/issues/example-issue.png" width="600px"> -->
 
 You can change or add a milestone, an assignee, and labels by clicking their corresponding gears in the sidebar on the right.
 
-### How to pull the most recent changes to your computer
+#### How to pull the most recent changes to your computer
 
-If you edit your code on the GitHub web interface, or if another user commits to your repository, to update the repository with the most recent changes, you should **always start a working session by running this command** in your git repository (using either Terminal or GitBash): 
+If you edit your code on the GitHub web interface, or if another use commits to your repository, to update the repository with the most recent changes, you should **always start a working session by running this command** in your git repository (using either Terminal or GitBash): 
 
 > `git pull`
 
 This will make sure your local computer is updated with any changes.
+If you expect that some of the same files have been edited (or if your `git pull` fails), you can try:
+
+```
+git pull --no-ff
+```
+
 Commit and push your changes often while you work to stay in sync.

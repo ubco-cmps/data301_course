@@ -1,6 +1,7 @@
-# Milestone 4 - Present your Dashboard!
+# Milestone 4 - Visualizations, Analysis, and Pipeline.
 
-In this milestone you will be finalizing your submission and presenting all your hard-work to your fellow students as a Dashboard!
+In this milestone you will be expected to create some data visualizations, and work with method chaining in Pandas. 
+If you are working as a group, you will be expected to show proficiency in all the areas above, **without a duplication of efforts**.
 
 ## Overall Expectations
 
@@ -15,61 +16,185 @@ In this milestone you will be finalizing your submission and presenting all your
 - You must use proper English, spelling, and grammar and you should write concisely.
 - There should be a plan in place to to deal with any teamwork conflicts and issues.
 
-## Task 1: Process your data for your Tableau Dashboard
+## Task 1. Set up an "Analysis Pipeline" 
 
-You should prepare and process your data so that when you create your dashboard, you have to do minimal data wrangling or manipulation in Tableau.
-There are many different ways to deal with this, but I suggest you export a dataset that you can easily use in Tableau to plot whatever you need to in your dashboard.
+**Each person in a group should do this Task in their own Jupyter notebook!**
 
-You should put the exported .csv files in the `data/processed` directory.
+Often when Data Scientists do analyses with the same or similar datasets, they set up an "analysis pipeline".
+This has several advantages:
 
-## Task 2: Create a Dashboard using Tableau
+- record the steps so you can remember what you did.
+- allows you to repeat the steps reproducibly, without doing a bunch of manual and repetitive work.
+- make changes to the series of processing steps so you can improve and iterate.
+- troubleshoot and debug errors in your processing.
+- allows others to reproduce your analysis.
+- if your data changes, you can update your outputs (report, images, etc...) easily without redoing all your processing.
+- allows you to spend more effort and energy on your analysis and visualizations (if you do a good job with the pipeline).
 
-Create a dashboard (using your `processed` dataset - i.e. you do not have to do the data cleaning, wrangling, processing again) to create a Dashboard using Tableau.
-There are no requirements for this Dashboard, but please remember that you will be graded based on the quality of your dashboard, and how well it answers your research questions and/or helps with the exploratory data analysis.
-I suggest you take this opportunity to explore as many of the features that make sense for your project, and get help from us when you need it!
-You should place the Tableau file in the `dashboard` folder. 
+### Common steps of a Data Analysis Pipeline
 
-**Each person in the group should have their own Tableau Dashboard, but if you can find a way to combine it into one dashboard, that's also fine. I suggest using multiple "tabs" in Tableau to split up research questions or parts of the dashboard.**
+Here are some common steps of an analysis pipeline (the order isn't set, and not all elements are necessary):
 
-## Task 3: Present your dashboard
+1. Load Data
+    - Check file types and encodings.
+    - Check delimiters (space, comma, tab).
+    - Skip rows and columns as needed.
+2. Clean Data
+    - Remove columns not being used.
+    - Deal with "incorrect" data.
+    - Deal with missing data.
+3. Process Data
+    - Create any new columns needed that are combinations or aggregates of other columns (examples include weighted averages, categorizations, groups, etc...).
+    - Find and replace operations (examples include replacing the string 'Strongly Agree' with the number 5).
+    - Other substitutions as needed.
+    - Deal with outliers.
+4. Wrangle Data
+    - Restructure data format (columns and rows).
+    - Merge other data sources into your dataset.
+5. Exploratory Data Analysis (not required for this Task).
+6. Data Analysis (not required for this Task).
+7. Export reports/data analyses and visualizations (not required for this Task).
 
-For this Task, you will record a video showing your Tableau Dashboard.
+For this Task, I will only ask you to set up a partial pipeline for the data loading, cleaning, processing, and wrangling steps.
 
-- Groups of 3 project presentations should be 7-10 minutes long.
-- Groups of 2 project presentations should be 5-7 minutes long.
+## Task 2. Method Chaining and writing Python programs
 
-Other requirements:
+**Note: Depending on the grade you contracted for the project, the steps listed below may or may not be required for you. I suggest you give it a shot, and then update your contracted grade in Milestone 4 if you would like to include this as part of your project.**
 
-- All members of a group must participate in the Explainer Video (you may have multiple tabs in your Tableau Dashboard).
-- Your recording does NOT have to have a high production value (editing, background sound, video titles etc..) and I would suggest not spending too much time on the non-dashboard component.
+By now you probably have done several steps to load, clean, process, wrangle your data, and then save it to disk, in a notebook. 
+You will now use "method chaining" to re-do those steps in fewer lines, and more compact code in new (cells) within your Jupyter Notebook.
+Once you are confident that your method chain works as expected, you will then move it to a separate `.py` file and then run the file from within your notebook.
+An example of this will be shown in Lab 5.
+Here are the steps you need to take:
 
-### Rubric for grading Project Dashboard Presentations
+### Step 1: Build and test your method chain(s)
 
-It is very important for you to know that we are NOT looking for hollywood production value here.
-We want to see your Tableau dashboard, get a walk-through of the key features, and hopefully see some enthusiasm about your project.
+Method chaining allows you to apply multiple processing steps to your dataframe in a fewer lines of code so it is more readable.
+You should avoid having too many methods in your chain, as the more you have in a single chain, the harder it is to debug or troubleshoot.
+I would target about 5 methods in a chain, though this is a flexible suggestion and you should do what makes your analysis the most readable and group your chains based on their purpose (e.g., loading/cleaning, processing, etc...).
 
-Here is the rubric for how we will grade these 5 minute videos (or live presentations if you choose):
+This [article](https://pandasninja.com/2019/04/how-to-write-neat-pandas-code/) has a nice tutorial on method chaining.
 
-- [10%] : Timely submission of a video link or file by the deadline and before the grace period ends.
-- [20%] : Clear explanation of the project research questions and information about the dataset.
-- [50%] : Guided walk-through of the key features of the Tableau Dashboard.
-- [30%] : Show how your dashboard data answer your research questions.
+Here is an example of method chaining (description below the code) adapted from [here](https://towardsdatascience.com/the-unreasonable-effectiveness-of-method-chaining-in-pandas-15c2109e3c69):
 
-## Submitting Milestone 4
+```
+import pandas as pd
+import numpy as np
+from sklearn.datasets import load_wine
 
-You will submit Milestone 4 on Gradescope.
+data = load_wine() # this a data file that gets loaded
 
-## Working collaboratively in GitHub
+# Method chaining begins
+
+df = (   
+    pd.DataFrame(data.data,columns=data.feature_names)
+    .rename(columns={"color_intensity": "ci"})
+    .assign(color_filter=lambda x: np.where((x.hue > 1) & (x.ci > 7), 1, 0))
+    .loc[lambda x: x['alcohol']>14]
+    .sort_values("alcohol", ascending=False)
+    .reset_index(drop=True)
+    .loc[:, ["alcohol", "ci", "hue"]]
+)
+
+df
+```
+
+> The code above starts with loading the data, then renaming color intensity for its shorter form ci. 
+> It then creates a new column 'color filter' based on values on hue and ci, using the `assign` function. 
+> It then filters a wine that has an alcohol content of more than 14. 
+> In the end, it sorts the data frame based on alcohol content and displays the columns that we are interested in. 
+> If the same were to be repeated without Method Chaining, a new data frame must be created and stored at each step.
+
+### Step 2: Wrap your method chain(s) in a function
+
+A method chain converted to a function would like something like:
+
+```
+def load_and_process(url_or_path_to_csv_file):
+
+    # Method Chain 1 (Load data and deal with missing data)
+
+    df1 = (
+          pd.read_csv(url_or_path_to_csv_file)
+          .rename(...)
+          .dropna(...)
+          # etc...
+      )
+
+    # Method Chain 2 (Create new columns, drop others, and do processing)
+
+    df2 = (
+          df1
+          .assign(...)
+      )
+
+    # Make sure to return the latest dataframe
+
+    return df2 
+
+```
+
+Within your Jupyter Notebook, test your function to make sure it returns the output you expect.
+
+### Step 3: Move your function into a new .py file
+
+- Inside your `analysis/code/` directory each person in the group will create a `project_functions.py` file.
+- Create a new file `project_functions1.py`, `project_functions2.py`, `project_functions3.py` (one for each student) and add the module imports you may need (`pandas`, `numpy`, etc...).
+- Copy the `load_and_process` function into your `project_functions.py` file.
+- Save the file.
+- Add and commit it to your repository.
+- Push it up to GitHub so that your teammates can also see this file.
+- Each member of a group should now `import` the `project_functions` file in their `analysis.ipynb` file, and use the `load_and_process` function
+- A Jupyter Notebook cell should look something like (with the appropriate relative import):
+
+```
+from .. import project_functions # This is called a relative import
+df = project_functions.load_and_process(url_or_path_to_csv_file)
+df
+```
+
+Congratulations! You have now written your first python module!
+The advantage of this is that you can now more easily use the power of git to version your method chains.
+You are welcome to add more custom utility functions to the `project_functions` file, especially those that your teammates will use. 
+This will reduce the need for you and others to repeat yourself, and allow you to build up your functions over time.
+
+**Note: See an example of how to do project imports in this demo repository: https://github.com/firasm/demo_project_imports.**
+
+
+#### Additional Reading on Relative imports AKA "what did I just do?"
+
+- [This article](https://realpython.com/absolute-vs-relative-python-imports/#relative-imports) is a very comprehensive guide to importing files and functions in python. Much of this is beyond the scope of DATA 301, but for those interested and curious, that is a very useful resource.
+
+## Task 3. Conduct your analysis to help answer your research question(s)
+
+Armed with your EDA, you should now be ready to conduct a thorough analysis to answer your research question(s).
+
+Each group will have a different data analysis product, however some guidelines to keep you on the right track:
+
+- You should remain focused on your research question(s) - it is very easy to get lost down rabbit holes in data analyses projects.
+- You should apply the principles of creating effective data visualizations and **all** visualizations must have appropriate titles, labels, larger font sizes to improve readability, a caption that summarizes what's shown in the figure, as well as your observations.
+- If you find that your research questions are not that interesting, or you find more interesting questions (especially after your EDA) you may revise them, or add more. 
+- Use the project student hours (TAs and instructors), to get help and guidance on your analyses.
+- You should experiment with "plenty of" data visualizations to try and visualize your dataset and answer your research questions.
+- Give us a narrative/story of your explorations as you go along, in-line with your data - use the Markdown skills you learned early in the term!
+
+## Submission
+
+1. You should submit your repository snapshot on Prairielearn. Once you submit it, you may continue to work on the next milestone in the group repository, we will grade the commit closest to your submission time.
+
+## Appendix
+
+### Working collaboratively in GitHub
 
 As we progress through the course, you will be learning more and more about GitHub and how to work collaboratively on code.
 Since this is the first time many of you are using Git, I recommend that if you are working in a group, you avoid editing each others' files until you are more familiar with git.
 Below are a few things you may find useful as you continue your git journey.
 
-### Git Branches
+#### Git Branches
 
 Git branches were introduced in Milestone 2.
 
-### Pull requests
+#### Pull requests
 
 Once you have created a branch and "completed" a feature, it's time to merge the feature back to the `main` (or `master`) branch.
 Of course, as you learned in the tutorial you can do this yourself, but in general it's a good idea for another teammate to review your work before it is merged into master. 
@@ -79,7 +204,7 @@ This is where Pull Requests come in:
 
 To create pull requests (even students working solo can do this), [you can follow Steps 4 and 5 from here](https://guides.github.com/activities/hello-world/#pr), and then assign a reviewer (from your group) to look at your code.
 
-### Git Issues, Milestones, Labels, and Assignees
+#### Git Issues, Milestones, Labels, and Assignees
 
 From GitHub's documentation:
 
@@ -101,11 +226,17 @@ From GitHub's documentation:
 
 You can change or add a milestone, an assignee, and labels by clicking their corresponding gears in the sidebar on the right.
 
-### How to pull the most recent changes to your computer
+#### How to pull the most recent changes to your computer
 
-If you edit your code on the GitHub web interface, or if another user commits to your repository, to update the repository with the most recent changes, you should **always start a working session by running this command** in your git repository (using either Terminal or GitBash): 
+If you edit your code on the GitHub web interface, or if another use commits to your repository, to update the repository with the most recent changes, you should **always start a working session by running this command** in your git repository (using either Terminal or GitBash): 
 
 > `git pull`
 
 This will make sure your local computer is updated with any changes.
+If you expect that some of the same files have been edited (or if your `git pull` fails), you can try:
+
+```
+git pull --no-ff
+```
+
 Commit and push your changes often while you work to stay in sync.
