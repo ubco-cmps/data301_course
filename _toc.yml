@@ -166,6 +166,7 @@ parts:
         - file: notes/week08/lab/Task4
           title: Task 4
     - file: notes/week08/Class8A/Practicing EDA_worksheet
+    - file: notes/week08/Class8A/Practicing EDA
     # - file: notes/week08/Class8A/Class8A
     #   title: A. Introduction to Data Visualization
     # - file: notes/week08/Class8B/Class8B
