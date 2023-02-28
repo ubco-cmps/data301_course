@@ -1,6 +1,6 @@
 # Lab 7
 
-For this lab, you will need to open `Task1.ipynb` and `Task2.ipynb`; then follow the instructions within the Jupyter Notebook.
+For this lab, you will need to open the Jupyter notebooks then follow the instructions within.
 
 ## Submission Instructions
 
