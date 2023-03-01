@@ -167,10 +167,11 @@ parts:
           title: Task 4
     - file: notes/week08/Class8A/Practicing EDA_worksheet
     - file: notes/week08/Class8A/Practicing EDA
-    # - file: notes/week08/Class8A/Class8A
-    #   title: A. Introduction to Data Visualization
-    # - file: notes/week08/Class8B/Class8B
-    #   title: B. Seaborn
+      title: A. Practicing EDA
+    - file: notes/week06/Class6C/Class6D
+      title: B. Principles of Effective Data Visualization
+    - file: notes/week08/Class8C/class
+      title: C. Git and Version Control
     - file: notes/week08/test
     - file: notes/week08/log
 
