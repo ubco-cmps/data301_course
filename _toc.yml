@@ -8,6 +8,11 @@ parts:
   - file: about/course_schedule
   - file: about/doing_well
   - file: about/syllabus
+  
+- caption: Labs
+  chapters:
+  - file: notes/labs
+    title: GitHub Classroom Links
 
 - caption: Getting Started
   chapters:
@@ -264,11 +269,6 @@ parts:
   chapters:
   - file: about/feedback
     title: Anonymous Feedback Form
-
-- caption: Labs
-  chapters:
-  - file: notes/labs
-    title: GitHub Classroom Links
 
 - caption: Project
   chapters:
