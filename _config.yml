@@ -20,7 +20,7 @@ html:
   use_edit_page_button: true
   baseurl : "https://firas.moosvi.com/courses/2022_WT2/data301"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   comments:
-    hypothesis: false
+    hypothesis: true
     # utterances:
     #   repo: "ubco-cmps/data301_course"
   extra_footer : |
