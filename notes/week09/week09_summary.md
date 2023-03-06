@@ -4,7 +4,7 @@ Week 9
 
 Hello!
 
-Welcome to Week 9 - now that you know how to create Data Visualizations, the next step is to learn how to select appropriate visualizations to answer your research question.
+Welcome to Week 9.
 
 <label><input type="checkbox" id="week09_task1" class="box"> Review feedback you received, reflect on it, and make corrections to your repo if needed. </input></label>
 
