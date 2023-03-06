@@ -180,24 +180,28 @@ parts:
     - file: notes/week08/test
     - file: notes/week08/log
 
-#   - file: notes/week09/week09_summary
-#     title: Week 9
-#     sections:
-#     - file: notes/week09/lab/README
-#       title: Lab 7
-#       sections:
-#         - file: notes/week09/lab/Task1
-#           title: Task 1
-#         - file: notes/week09/lab/Task2
-#           title: Task 2
-#     - file: notes/week09/Class9A/Class9A
-#       title: A. Motivating EDA and Review
-# #     - file: notes/week09/Class9B/Class9B
-# #       title: B. Tableau
-# #     - file: notes/week09/Class9C/Class9C
-# #       title: C. Review
-#     - file: notes/week09/test
-#     - file: notes/week09/log
+  - file: notes/week09/week09_summary
+    title: Week 9
+    sections:
+    - file: notes/week09/lab/README
+      title: Lab 8
+      sections:
+        - file: notes/week09/lab/Task1
+          title: Task 1
+        - file: notes/week09/lab/Task2
+          title: Task 2
+        - file: notes/week09/lab/Task3
+          title: Task 3
+        - file: notes/week09/lab/Task4
+          title: Task 4
+        - file: notes/week09/lab/Task5
+          title: Task 5
+    - file: notes/week09/Class9A/Class9A
+      title: A. Programming in Python I
+    - file: notes/week09/Class9C/Class9C
+      title: C. Programming in Python II
+    - file: notes/week09/test
+    - file: notes/week09/log
 
 #   - file: notes/week10/week10_summary
 #     title: Week 10

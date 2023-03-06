@@ -1,12 +1,12 @@
-# Test 4
+# Test 3
 
-You will find Test 4 and Bonus Test 4 on PrairieLearn.
+You will find Test 3 and Bonus Test 3 on PrairieLearn.
 
-Content you should review for Test 4 includes:
+Content you should review for Test 3 includes:
 
 - Data Visualization using Seaborn
+- Wrangling with Pandas
 - Principles of Effective Visualizations
-- Microsoft Excel
 
 ```{important}
 Remember that for every Test, there is also a Bonus Test and we will take the better of the two scores so there is no harm in doing both Tests. A Test and a Bonus Test will be on essentially the same material.
