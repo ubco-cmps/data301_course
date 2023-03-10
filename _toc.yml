@@ -203,8 +203,8 @@ parts:
     - file: notes/week09/test
     - file: notes/week09/log
 
-#   - file: notes/week10/week10_summary
-#     title: Week 10
+  - file: notes/week10/week10_summary
+    title: Week 10
 
 #   - file: notes/week11/week11_summary
 #     title: Week 11
