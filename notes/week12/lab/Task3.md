@@ -1,29 +1,23 @@
-## Task 3: Time Series
+# Task 3
 
-### 3.1. Trees planted by Year 
-Create a new sheet called `C1` and plot the number of trees planted and the date they were planted so our two columns of interest are `date_plated` and `tree_id`. **Add a filter so that the `root_barrier` is set to N**.
+### 3.1 - Transformation 
 
-#### Instructions 
-1. Drag the `date_planted` variable to the "**Columns**" toolbar and again the `tree_id` to "**Rows**". We are again interested in the amount of trees planted at selected dates so once again we want to transform this to a "**Count**" type "**Measure**".  
-2. Since `date_planted` is a continuous variable, it's a good idea to right-click and transform this into a **Continuous** Dimension. 
-3. This automatically generates the number of trees planted at each year (but there are **null** values!)
-4. We can change this to:
-    - month - discrete (Top month choice when right-clicking)  which aggregates months together for all years 
-    - month - continuous (Bottom month choice when right-clicking) which will make a sequential plot.
-5. Combining scatterplot onto our line graph by adding an identical `tree_id` to rows and converting it to a counting measurement again. At first, we should get 2 graphs on top of each other. We can right-click one of them and select "**Dual Axis**".
-This will superimpose one on another with a left and a right axis title. We can hide the one on the right by right-clicking the axis and unticking the "**Show Header**" option. 
-6. To change the colour of the line and the points, we need to make sure we change the colour of both measures by selecting the "**All**" tab under the "**Marks**" card on the right.      
-7. Don't forget to give it a **title** and edit the **y-axis** label as we did earlier.
+Create a fourth sheet called _transform_ that contains a table where each row is a time and each column contains values for the sensor. (**Hint:** Insert a table or use Cell References to get the data, i.e. don't just copy paste the data) 
 
-### Output
+ - Create data table.
+ - Replace missing values with NA(). [More info](http://www.criticaltosuccess.com/when-data-points-are-bad-or-missing-how-do-you-create-a-usable-and-decent-looking-excel-chart/) and [Using ISNA() function](http://www.extendoffice.com/documents/excel/2487-excel-conditional-formatting-if-na.html#a1)
+- Add sparklines in last column for each row.
+- Add conditional formatting so that cells with **#N/A** are filled in **red** and cells with values **>= 90** are filled in **green**.
 
-![](images/time_series1.png)
 
-### 3.2. Trees planted by Month 
+### `transform` tab
 
-Create a new sheet called `C2` that has the count of trees planted by month over the years. In other words, across all years, January trees should be reported together.
-**Add a filter so that the `root_barrier` is set to N**.
+Your final output for the _transform_ sheet should look similar to the screenshot provided below:
 
-### Output
 
-![](images/time_series2.png)
+![lab1_transform.png](images/lab1_transform.png)
+
+#### **SUBMISSION DETAILS:**
+
+1. Submit ONE Screenshot of the `transform` sheet with cell **B2** selected so we can see what formula you used in the formula bar. 
+

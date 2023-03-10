@@ -1,26 +1,10 @@
-# Lab 9 - Tableau Dashboard
+# Lab 10: Excel - Analyzing and Reporting Data
 
-## Instructions
-
-This lab uses Tableau to visualize, analyze, and explore data sets. There is an accompanying video as part of this lab. There are 5 tasks in this lab.
-**This lab should be done individually.**
-
-## Important links
-
-- [Seminar outline](./data/seminar_outline.md)
-- [Google slides for presentation](https://docs.google.com/presentation/d/1rTyl5_-MAjgimppsRoRSwzDqFY7bZsA4xO-Q4H6omZw/edit?ts=5ecc2dd0#slide=id.p1)
-- [Follow along building a dashboard](./tableau_workshop.md)
-
-## Getting a free Academic License for Tableau
-
-- [Visit this page](https://www.tableau.com/academic/students)
-- Click on "GET TABLEAU FOR FREE"
-- Fill out the form, you do **NOT** need to enter in a valid address and you do **NOT** need to put in your real birthdate
-- You will need to use your school email address, and add the name of your school "University of British Columbia Okanagan"
-- You will receive instructions to verify your student status, and then a product key
-- Download and Install Tableau (you do not need to use Tableau Prep Builder).
+In this Lab, we will shift gears a bit and you will be working with Microsoft Excel to practice your data analysis skills.
 
 ## Submission Instructions
+
+**Please add your screenshots in the main directory (`./`) and they will automatically be imported into PrairieLearn. Any files added to the `images` directory will not be graded.**
 
 Once you are done with his lab, **you will need to submit your repository for grading on PrairieLearn**.
 

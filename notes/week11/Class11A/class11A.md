@@ -8,11 +8,11 @@ Students enrolled at UBCO are entitled to get a 1-year free license of Tableau.
 To get your license code, [sign up here](https://www.tableau.com/academic/students#form).
 
 
-## Milestone 4 Samples
+## Milestone 5 Samples
 
 In this recorded video I've described in detail, three different Tableau Dashboards
 
-```{dropdown} Milestone 4 Samples
+```{dropdown} Milestone 5 Samples
     :class-container: sd-shadow-lg
     :color: primary
     :open:

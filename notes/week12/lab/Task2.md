@@ -1,48 +1,40 @@
+# Task 2 
 
-## Task 2. Bar Charts in Tableau.
+## **2.1 - Summary**
 
+Create a third sheet called _summary_ that contains the following items: 
 
-### 2.1. Tree count 
+- Count of readings in **B3** 
 
-Make a new worksheet called `B1` by going to the menu bar under "**Worksheet**" and clicking "**New Worksheet**" (Or Command+T on a Mac, Ctrl+T on Windows). 
+- Maximum reading value in **B4**
 
-We are going to make a bar chart for the number of trees in each neighbourhood. 
+- Minimum reading value in **B5**
 
-#### Instructions 
-1. Since we are interested in the neighbourhood, we are going to drag from the left-hand side under the heading "**Tables**" the column named `neighbourhood_name` to the "**Column**" toolbar. 
-1. We are interested in the count of the trees in each neighbourhood, so I like to use the index to count the rows but you can use multiple different columns here. Drag the `tree_id` to the "**Rows**" toolbar.
-1. We need to convert this variable to a "**Measure**" specifically a "**Count**". We can do this by right-clicking on it. 
-1. Voila! A bar chart! 
-1. Let's change the colour. Go to the mark card and select a new colour. 
-1. Let' edit our y-axis label. Right-click on the axis and click "**Edit Axis...**" Under "**Axis**", you can edit your axis "**Title**".
-1. You can edit the title in two ways by editing the sheet name or by editing the title. I prefer to edit the sheet name by double-clicking the sheet at the bottom. 
-1. You can sort the bars by clicking the icon beside the axis title. 
-1. Let's convert it to a verticle bar chart. On the toolbar right above "**Columns**" you'll see a "Swap rows and columns" icon. This transposes your graph so the x and y-axes are flipped (remember keep your text description values on the y-axis so you don't have to turn your head to read them.
+- Average reading in **B6** 
 
-#### Sample Output
+- Maximum reading by any sensor at **site 2** in **B8**. **Hint**: Ctrl+Shift+Enter will be useful. See: [Array Output using Ctrl+Shift+Enter](http://superuser.com/questions/674566/when-to-use-ctrlshiftenter-and-when-to-use-enter-in-excel)
 
-![](images/bar_chart.png)
+- Number of readings for **sensor 2** at **site 1** in **B10**. Note: Include **all** readings including readings that were out of range/errors/blank.
 
+- Mention in cell **B12** if **Sensor 1** at **Site 1** has any data trend (none , exponential, linear, etc).
+ 
+- Similarly, in cell **B13** mention if **Sensor 2** at **Site 1** has any data trends
 
+- Finally, in cell **B14** mention if **Sensor 3** at **Site 1** has any data trends
 
-### 2.2. Tree diameter 
-
-Create a new sheet called `B2` and plot the average `diameter` of the tree trunks of each `genus_name` type.
-
-This is very similar to how you would make a bar plot with one minor difference we no longer are using a "**Count**" "**Measure**" but instead perhaps "**Average**", "**Median**", "**Max**" or "**Min**". 
+    - **Hint** For the data trends look at the appropriate charts and trendlines made in Task 4. 
 
 
-#### Instructions 
+### `summary` sheet
 
-1. Drag from the left-hand side under the heading "**Tables**" the column named `genus_type` to the "**Column**" toolbar. 
-2. We want the mean diameter for each genus so we can drag `diameter` to the "**Rows**" toolbar.
-3. This is where things differ. We right click the `diameter`  and transform the "**Measure**" to "**Average**". 
-4. Instead of using a bar chart, trying a dot plot would be more ideal. We can convert it by clicking the dropdown menu under the "**Marks**" card. Selecting "**Circle**" or "**Shape**" will instantly convert it.     
-
-_💡You can add your own shape icons by adding a folder to your "My Tableau Repository" folder under "Shapes"_ 
+Your output for the _summary_ sheet should look similar to the screenshot provided below:
 
 
-#### Sample Output
+![lab1_summary.png](images/lab1_summary.png)
 
-![](images/bar_chart.png)
+#### **SUBMISSION DETAILS:**
+
+1. Submit ONE Screenshot of the `summary` sheet with cell **B8** selected so we can see what formula you used in the formula bar. 
+
+1. Submit ONE Screenshot of the `summary` sheet with cell **B10** selected so we can see what formula you used in the formula bar. 
 

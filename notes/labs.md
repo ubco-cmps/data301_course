@@ -21,8 +21,8 @@ Click links below to accept the labs, I expect they will be released by Monday m
 | Lab 6 - Data Visualization                      | Wednesday February 22 at 18:00 | [Accept Lab](https://classroom.github.com/a/eLzZWLnC) |
 | Lab 7 - Data Analysis                           | Wednesday March 8 at 18:00     | [Accept Lab](https://classroom.github.com/a/NwORHcnr) |
 | Lab 8 - Python Functions                        | Wednesday March 15 at 18:00    | [Accept Lab](https://classroom.github.com/a/EUZaryq2) |
-| Lab 9 - Tableau                                 | Wednesday March 22 at 18:00    | Accept Lab[](https://classroom.github.com/a/-Dgk86Te) |
-| Lab 10 - Excel                                  | Wednesday March 29 at 18:00    | [Accept Lab]()                                        |
+| Lab 9 - Tableau                                 | Wednesday March 22 at 18:00    | [Accept Lab](https://classroom.github.com/a/-Dgk86Te) |
+| Lab 10 - Excel                                  | Wednesday March 29 at 18:00    | [Accept Lab](https://classroom.github.com/a/irywdTAf) |
 
 
 <!-- 

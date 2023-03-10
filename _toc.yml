@@ -206,45 +206,45 @@ parts:
   - file: notes/week10/week10_summary
     title: Week 10
 
-#   - file: notes/week11/week11_summary
-#     title: Week 11
-#     sections:
-#     - file: notes/week11/videos
-#     - file: notes/week11/lab/README
-#       title: Lab 8
-#       sections:
-#         - file: notes/week11/lab/Task2
-#           title: Task 1 and 2
-#         - file: notes/week11/lab/Task3
-#           title: Task 3
-#         - file: notes/week11/lab/Task4
-#           title: Task 4
-#         - file: notes/week11/lab/Task5
-#           title: Task 5
-#     - file: notes/week11/Class11A/Class11A
-#       title: A. Tableau Dashboards
-#     - file: notes/week11/test
-#     - file: notes/week11/log
+  - file: notes/week11/week11_summary
+    title: Week 11
+    sections:
+    - file: notes/week11/videos
+    - file: notes/week11/lab/README
+      title: Lab 9
+      sections:
+        - file: notes/week11/lab/Task1
+          title: Task 1
+        - file: notes/week11/lab/Task2
+          title: Task 2
+        - file: notes/week11/lab/Task3
+          title: Task 3
+        - file: notes/week11/lab/Task4
+          title: Task 4
+        - file: notes/week11/lab/Task5
+          title: Task 5
+    - file: notes/week11/Class11A/Class11A
+      title: A. Tableau Dashboards
+    - file: notes/week11/test
+    - file: notes/week11/log
 
-#   - file: notes/week12/week12_summary
-#     title: Week 12
-#     sections:
-#     - file: notes/week12/class12
-#     - file: notes/week12/lab/README
-#       title: Lab 9
-#       sections:
-#         - file: notes/week12/lab/Task1
-#           title: Task 1
-#         - file: notes/week12/lab/Task2
-#           title: Task 2
-#         - file: notes/week12/lab/Task3
-#           title: Task 3
-#         - file: notes/week12/lab/Task4
-#           title: Task 4
-#         - file: notes/week12/lab/Task5
-#           title: Task 5
-#     - file: notes/week12/test
-#     - file: notes/week12/log
+  - file: notes/week12/week12_summary
+    title: Week 12
+    sections:
+    - file: notes/week12/class12
+    - file: notes/week12/lab/README
+      title: Lab 10
+      sections:
+        - file: notes/week12/lab/Task1
+          title: Task 1
+        - file: notes/week12/lab/Task2
+          title: Task 2
+        - file: notes/week12/lab/Task3
+          title: Task 3
+        - file: notes/week12/lab/Task4
+          title: Task 4
+    - file: notes/week12/test
+    - file: notes/week12/log
 #   - file: notes/week13/week13_summary
 #     title: Week 13
 #     sections:
@@ -252,17 +252,7 @@ parts:
 #       title: A. Retrospective + Final Exam Details
 #     - file: notes/week13/test
 #     - file: notes/week13/log
-#     - file: notes/week13/lab/README
-#       title: Lab 10
-#       sections:
-#         - file: notes/week13/lab/Task1
-#           title: Task 1
-#         - file: notes/week13/lab/Task2
-#           title: Task 2
-#         - file: notes/week13/lab/Task3
-#           title: Task 3
-#         - file: notes/week13/lab/Task4
-#           title: Task 4
+
 #   - file: notes/week14/Review
 #     title: Week 14 (Review)
 #     sections:

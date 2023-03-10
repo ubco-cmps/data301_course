@@ -11,7 +11,7 @@ You can take an arbitrary number of plots in sheets and lay them out in a "Dashb
 
 ### Sample Output
 
-Here is a sample dashboard, you do not have to create one exactly like this one, but you should include at least 2 filters, and at least 4 plot elements.
+Here is a sample dashboard, you do not have to create one exactly like this one, but you should include **at least 2 filters and 4 plot elements.**
 
 ![](images/dashboard.png)
 
@@ -40,7 +40,7 @@ If you want to use a highlight something on a plot and have it act as a filter o
 
 ## Submission
 
-Include the Tableau Workbook file (.twb) in the main Lab 9 directory and push on github. In addition, upload all screenshots of each worksheet in the tableau workbook on **Gradescope**, i.e upload separate **screenshots** of worksheets:
+Include the Tableau Workbook file (.twbx) in the main Lab 9 directory and push on github. In addition, upload all screenshots of each worksheet in the tableau workbook on **Gradescope**, i.e upload separate **screenshots** of worksheets:
 1. B1 (task 2.1)
 1. B2 (task 2.2)
 1. C1 (task 3.1)
@@ -48,7 +48,8 @@ Include the Tableau Workbook file (.twb) in the main Lab 9 directory and push on
 1. Plot of the planted trees on a map of Vancouver (task 4.1)
 1. Dashboard (task 5) 
 
-Grading will be done based on the screenshots you submit so please don't forget to include all necessary screenshots on Gradescope.
+Grading will be done based on the screenshots you submit so please don't forget to include all necessary screenshots on Gradescope. Do not add the screenshots in the **images** folder, instead add the screenshots in the main lab 9 repo (everything inside **images** will be excluded from Gradescope) 
+
 And you're done!
 
 
