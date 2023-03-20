@@ -33,7 +33,7 @@ You should place the Tableau file in the `dashboard` folder.
 
 ## Task 3: Present your dashboard
 
-For this Task, you will record a video showing your Tableau Dashboard.
+For this Task, you will record a video (Explainer video) showing your Tableau Dashboard.
 
 - Groups of 3 project presentations should be 7-10 minutes long.
 - Groups of 2 project presentations should be 5-7 minutes long.
@@ -48,16 +48,23 @@ Other requirements:
 It is very important for you to know that we are NOT looking for hollywood production value here.
 We want to see your Tableau dashboard, get a walk-through of the key features, and hopefully see some enthusiasm about your project.
 
-Here is the how you should allocate your efforts for these short videos:
+Here is how you should allocate your efforts for these short videos:
 
 - [10%] : Timely submission of a video link or file by the deadline and before the grace period ends.
 - [20%] : Clear explanation of the project research questions and information about the dataset.
 - [50%] : Guided walk-through of the key features of the Tableau Dashboard.
 - [30%] : Show how your dashboard data answer your research questions.
 
+### Recording your Dashboard Presentation
+
+[Here is a video](https://vimeo.com/572836174) that you can watch to go through the entire process of creating an Explainer Video.
+I highly recommend you to use Zoom's screenshare and record functionality as it's by far the **easiest** way to record your video.
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/572844177?h=cc715e5c86&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="How to: Create and Share Explainer Videos (Edited)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 ## Submitting Milestone 5
 
-You will submit a link to your video for Milestone 4 on Prairielearn.
+You will submit a link to your video for Milestone 5 on Prairielearn.
 
 ## Working collaboratively in GitHub
 
