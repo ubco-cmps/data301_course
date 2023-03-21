@@ -9,3 +9,4 @@ plotly
 seaborn
 pandas_profiling
 jupyterlite_sphinx
+docutils<0.18
