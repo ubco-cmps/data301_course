@@ -20,6 +20,6 @@ We will then take attendance mostly for tracking purposes, but attendance is not
 If we see that you're missing labs and not performing well in the course, we may reach out to you about the missed lab attendance.
 You are welcome to attend additional labs or Student Hours in the course if you need extra help.
 ```
-<label><input type="checkbox" id="week11_task4" class="box"> Watch the **[assigned videos](./videos.md)**</input></label>
+<label><input type="checkbox" id="week11_task4" class="box"> Watch the **[assigned videos](videos.md)**</input></label>
 
-<label><input type="checkbox" id="week11_task5" class="box"> Complete **[Test 3](./test3.md)** and [Bonus Test 3](./test3_bonus.md)on course policies and the syllabus</input></label>
+<label><input type="checkbox" id="week11_task5" class="box"> Complete **[Test 3](test3.md)** and [Bonus Test 3](test3_bonus.md)on course policies and the syllabus</input></label>

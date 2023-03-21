@@ -223,7 +223,7 @@ parts:
           title: Task 4
         - file: notes/week11/lab/Task5
           title: Task 5
-    - file: notes/week11/Class11A/Class11A
+    - file: notes/week11/Class11/Class11A
       title: A. Tableau Dashboards
     - file: notes/week11/test
     - file: notes/week11/log
