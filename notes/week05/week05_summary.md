@@ -8,7 +8,7 @@ Welcome to Week 5 - this week, we will doing some Exploratory Data Analysis.
 
 <label><input type="checkbox" id="week05_task1" class="box"> Review feedback you received, reflect on it, and make corrections to your repo if needed. </input></label>
 
-<label><input type="checkbox" id="week05_task2" class="box"> Attend the [Classes](classes.md) this week </input></label>
+<label><input type="checkbox" id="week05_task2" class="box"> Attend the Classes this week </input></label>
 
 <label><input type="checkbox" id="week05_task3" class="box"> Attend the **[lab](./lab/README.md)** this week</input></label>
 

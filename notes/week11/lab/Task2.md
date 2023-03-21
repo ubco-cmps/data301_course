@@ -1,14 +1,14 @@
+# Task 2. Bar Charts in Tableau.
 
-## Task 2. Bar Charts in Tableau.
 
-
-### 2.1. Tree count 
+## 2.1. Tree count 
 
 Make a new worksheet called `B1` by going to the menu bar under "**Worksheet**" and clicking "**New Worksheet**" (Or Command+T on a Mac, Ctrl+T on Windows). 
 
 We are going to make a bar chart for the number of trees in each neighbourhood. 
 
-#### Instructions 
+### Instructions 
+
 1. Since we are interested in the neighbourhood, we are going to drag from the left-hand side under the heading "**Tables**" the column named `neighbourhood_name` to the "**Column**" toolbar. 
 1. We are interested in the count of the trees in each neighbourhood, so I like to use the index to count the rows but you can use multiple different columns here. Drag the `tree_id` to the "**Rows**" toolbar.
 1. We need to convert this variable to a "**Measure**" specifically a "**Count**". We can do this by right-clicking on it. 
@@ -23,16 +23,13 @@ We are going to make a bar chart for the number of trees in each neighbourhood.
 
 ![](images/bar_chart.png)
 
-
-
-### 2.2. Tree diameter 
+## 2.2. Tree diameter 
 
 Create a new sheet called `B2` and plot the average `diameter` of the tree trunks of each `genus_name` type.
 
 This is very similar to how you would make a bar plot with one minor difference we no longer are using a "**Count**" "**Measure**" but instead perhaps "**Average**", "**Median**", "**Max**" or "**Min**". 
 
-
-#### Instructions 
+### Instructions 
 
 1. Drag from the left-hand side under the heading "**Tables**" the column named `genus_type` to the "**Column**" toolbar. 
 2. We want the mean diameter for each genus so we can drag `diameter` to the "**Rows**" toolbar.
@@ -40,7 +37,6 @@ This is very similar to how you would make a bar plot with one minor difference 
 4. Instead of using a bar chart, trying a dot plot would be more ideal. We can convert it by clicking the dropdown menu under the "**Marks**" card. Selecting "**Circle**" or "**Shape**" will instantly convert it.     
 
 _💡You can add your own shape icons by adding a folder to your "My Tableau Repository" folder under "Shapes"_ 
-
 
 ### Sample Output
 

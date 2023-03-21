@@ -275,32 +275,32 @@ parts:
     - file: project/milestone05
 #     - file: project/milestone06
 
-# - caption: Extra Practice with Python
-#   chapters:
-#   - file: practice/intro
-#     sections:
-#     - file: practice/01_strings_exercise
-#       title: 1. Strings
-#     - file: practice/02_numbers_exercise
-#       title: 2. Numbers
-#     - file: practice/03_conditionals_exercise
-#       title: 3. Conditionals
-#     - file: practice/04_lists_exercise
-#       title: 4. Lists
-#     - file: practice/05_dictionaries_exercise
-#       title: 5. Dictionaries
-#     - file: practice/06_for_loops_exercise
-#       title: 6. Loops
-#     - file: practice/07_functions_exercise
-#       title: 7. Functions
-#     - file: practice/10_file_io_exercise
-#       title: 8. File input/output
-#     - file: practice/11_classes_exercise
-#       title: 9. Classes
-#     - file: practice/12_exceptions_exercise
-#       title: 10. Exceptions
-#     - file: practice/13_debugging_exercise
-#       title: 11. Debugging
+- caption: Extra Practice with Python
+  chapters:
+  - file: practice/intro
+    sections:
+    - file: practice/01_strings_exercise
+      title: 1. Strings
+    - file: practice/02_numbers_exercise
+      title: 2. Numbers
+    - file: practice/03_conditionals_exercise
+      title: 3. Conditionals
+    - file: practice/04_lists_exercise
+      title: 4. Lists
+    - file: practice/05_dictionaries_exercise
+      title: 5. Dictionaries
+    - file: practice/06_for_loops_exercise
+      title: 6. Loops
+    - file: practice/07_functions_exercise
+      title: 7. Functions
+    - file: practice/10_file_io_exercise
+      title: 8. File input/output
+    - file: practice/11_classes_exercise
+      title: 9. Classes
+    - file: practice/12_exceptions_exercise
+      title: 10. Exceptions
+    - file: practice/13_debugging_exercise
+      title: 11. Debugging
 
 - caption: Tools
   chapters:

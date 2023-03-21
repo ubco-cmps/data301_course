@@ -10,7 +10,7 @@ Welcome to Week 3 - this week, we will be working on Version Control with Git.
 
 <label><input type="checkbox" id="week03_task4" class="box"> Watch the **[assigned videos](./videos.md)** - you should try to watch these videos by Wednesday's class at the latest!</input></label>
 
-<label><input type="checkbox" id="week03_task2" class="box"> Attend the [Classes](classes.md) this week </input></label>
+<label><input type="checkbox" id="week03_task2" class="box"> Attend the Classes this week </input></label>
 
 <label><input type="checkbox" id="week03_task3" class="box"> Attend the **[lab](./lab/README.md)** this week</input></label>
 

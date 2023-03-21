@@ -1,9 +1,8 @@
-
-## Task 5. Putting it all Together in a Dashboard
+# Task 5. Putting it all Together in a Dashboard
 
 You can take an arbitrary number of plots in sheets and lay them out in a "Dashboard". This part of the lab guides you on how to do this.
 
-### 5.1. Making a Dashboard 
+## 5.1. Making a Dashboard 
 
 1. Create a new dashboard by clicking "**Dashboard**" in the top menu bar and selecting "**New Dashboard**"
 2. Before you do anything else, under the "**Size**" heading, click the triangle beside "Desktop Browser (1000x800)". Change "**Fixed Size**" to "**Automatic**". This will now make sure your dashboard adjusts to all monitor sizes. 
@@ -30,6 +29,7 @@ Here is a sample dashboard, you do not have to create one exactly like this one,
 7. You can "**Customize**" The filter styles to include certain features as well. 
 
 #### One Filter For Multiple Graphs
+
 - If you want to use a single filter for multiple plots, you can do so using the "**Apply to Worksheet**" option. 
 - This gives you the ability to select which sheet to also be filtered on this column or you can apply to "**All Using This Data Source**". 
 
@@ -40,7 +40,8 @@ If you want to use a highlight something on a plot and have it act as a filter o
 
 ## Submission
 
-Include the Tableau Workbook file (.twbx) in the main Lab 9 directory and push on github. In addition, upload all screenshots of each worksheet in the tableau workbook on **Gradescope**, i.e upload separate **screenshots** of worksheets:
+Include the Tableau Workbook file (.twbx) in the main Lab 9 directory and push on github.
+
 1. B1 (task 2.1)
 1. B2 (task 2.2)
 1. C1 (task 3.1)
@@ -48,10 +49,10 @@ Include the Tableau Workbook file (.twbx) in the main Lab 9 directory and push o
 1. Plot of the planted trees on a map of Vancouver (task 4.1)
 1. Dashboard (task 5) 
 
-Grading will be done based on the screenshots you submit so please don't forget to include all necessary screenshots on Gradescope. Do not add the screenshots in the **images** folder, instead add the screenshots in the main lab 9 repo (everything inside **images** will be excluded from Gradescope) 
+Grading will be done based on the screenshots you submit so please don't forget to include all necessary screenshots in your GitHub repo.
+Do not add the screenshots in the **images** folder, instead add the screenshots in the main lab 9 repo.
 
 And you're done!
-
 
 ## Attribution
 

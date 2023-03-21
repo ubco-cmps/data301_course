@@ -1,9 +1,10 @@
-## Task 3: Time Series
+# Task 3: Time Series
 
-### 3.1. Trees planted by Year 
+## 3.1. Trees planted by Year 
 Create a new sheet called `C1` and plot the number of trees planted and the date they were planted so our two columns of interest are `date_plated` and `tree_id`. **Add a filter so that the `root_barrier` is set to N**.
 
-#### Instructions 
+### Instructions 
+
 1. Drag the `date_planted` variable to the "**Columns**" toolbar and again the `tree_id` to "**Rows**". We are again interested in the amount of trees planted at selected dates so once again we want to transform this to a "**Count**" type "**Measure**".  
 2. Since `date_planted` is a continuous variable, it's a good idea to right-click and transform this into a **Continuous** Dimension. 
 3. This automatically generates the number of trees planted at each year (but there are **null** values!)
@@ -19,7 +20,7 @@ This will superimpose one on another with a left and a right axis title. We can 
 
 ![](images/time_series1.png)
 
-### 3.2. Trees planted by Month 
+## 3.2. Trees planted by Month 
 
 Create a new sheet called `C2` that has the count of trees planted by month over the years. In other words, across all years, January trees should be reported together.
 **Add a filter so that the `root_barrier` is set to N**.

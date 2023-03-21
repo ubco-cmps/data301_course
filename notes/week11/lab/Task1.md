@@ -1,6 +1,6 @@
 # Task 1 -  Load in the `street_trees` Data.
 
-### 1.1. Load the data
+## 1.1. Load the data
 
 We have provided you with [data](https://github.com/firasm/bits/blob/master/street_trees.csv) obtained from [The City of Vancouver's Open Data Portal](https://opendata.vancouver.ca/explore/dataset/street-trees/information/?disjunctive.species_name&disjunctive.common_name&disjunctive.height_range_id)
 with minimal data wrangling done by the R package [DatateachR](https://github.com/UBC-MDS/datateachr).
@@ -14,11 +14,11 @@ with minimal data wrangling done by the R package [DatateachR](https://github.co
 1. To start creating plots you can click "**Sheet 1**" at the bottom left of the window. 
 
 
-### 1.2. Set the data types for the columns 
+## 1.2. Set the data types for the columns 
 
 Tableau automatically assigns variable types to your columns, however, sometimes it doesn't guess correctly.
 
-#### Instructions 
+### Instructions 
 
 1. We need to change the last 3 columns in our data `date_planted`, `latitude` and `longitude`. 
 1. Scroll to the right and click on the icon (ABC) to the left of `date_planted` and convert it to **Date**. 

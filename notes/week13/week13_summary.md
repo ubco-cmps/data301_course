@@ -10,7 +10,7 @@ Welcome to Week 13 - this week will be wrapping things up with the course, and I
 
 <label><input type="checkbox" id="week13_task1" class="box"> Review feedback you received, reflect on it, and make corrections to your repo if needed. </input></label>
 
-<label><input type="checkbox" id="week13_task2" class="box"> Attend the [Classes](classes.md) this week </input></label>
+<label><input type="checkbox" id="week13_task2" class="box"> Attend the Classes this week </input></label>
 
 <label><input type="checkbox" id="week13_task3" class="box"> Attend the **[lab](./lab/README.md)** this week</input></label>
 

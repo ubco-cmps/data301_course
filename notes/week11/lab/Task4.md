@@ -1,9 +1,8 @@
-## Task 4. Maps (Choropleths)
-
+# Task 4. Maps (Choropleths)
 
 This, and creating dashboards, is where Tableau really shines!
 
-### 4.1. Map of the trees planted 
+## 4.1. Map of the trees planted 
 
 Plot the location of the planted trees on a map of Vancouver.
 
