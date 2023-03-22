@@ -2,10 +2,10 @@
 
 You will find Test 4 on PrairieLearn.
 
-Content you should review for Bonus Test 3 includes:
+Content you should review for Test 4 includes:
 
-- Microsoft Excel
 - Functions in Python
+- Microsoft Excel (little bit)
 
 ```{important}
 Remember that for every Test, there is also a Bonus Test and we will take the better of the two scores so there is no harm in doing both Tests. A Test and a Bonus Test will be on essentially the same material.
