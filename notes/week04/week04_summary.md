@@ -9,6 +9,7 @@ Welcome to Week 4 - this week, we will working on learning some more Python and 
 <label><input type="checkbox" id="week04_task1" class="box"> Review feedback you received, reflect on it, and make corrections to your repo if needed. </input></label>
 
 <label><input type="checkbox" id="week04_task2" class="box"> Attend the Classes this week </input></label>
+
 <label><input type="checkbox" id="week04_task3" class="box"> Attend the **[lab](./lab4/README.md)** this week</input></label>
 
 ```{tip}
