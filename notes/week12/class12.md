@@ -1,8 +1,6 @@
-# Videos
+# Week 12 - Microsoft Excel
 
-## Week 12 - Microsoft Excel
-
-### Video
+## Video
 
 ```{dropdown} 5.1 Introduction to Excel I
     :class-container: sd-shadow-lg
@@ -14,7 +12,7 @@
 </div>
 ```
 
-### Excel file using in class.
+### Excel file used in class.
 
 You can download the [Excel file used in lecture here](https://github.com/ubco-mds-2020/data_530/raw/master/sales.xlsx)
 
