@@ -35,3 +35,7 @@ You can download the [Excel file used in lecture here](https://github.com/ubco-m
 ### Slides
 
 <iframe src="../../data_301_excel_analysis.pdf" width="100%" height="800px" frameBorder="0"> </iframe>
+
+## Final Exam Details
+
+<iframe src="../../Class12C.pdf" width="100%" height="800px" frameBorder="0"> </iframe>

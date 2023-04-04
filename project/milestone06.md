@@ -1,6 +1,8 @@
 # Milestone 6 - Address Feedback and Refine project
 
-In this milestone you will continue working on your class project, process the data for your dashboard, and get the repo ready final submission in Milestone 4.
+In this milestone you will continue working on your class project, process the data for your dashboard, and get the repo ready final submission in Milestone 6.
+
+**You should spend time making sure you meet all the specifications for your contracted grade this week to address the feedback you have received from your TA.**
 
 ## Overall Expectations
 
@@ -17,9 +19,7 @@ In this milestone you will continue working on your class project, process the d
 
 ## Task 1: Address project feedback
 
-- Your assigned project TA should have created an issue in your repository with some feedback for you to address on your milestone.
-
-- You should spend the majority of time this week to address the feedback you have received from your TA.
+- Your assigned project TA should have created an issue in your repository with some feedback for you to address on your milestone. You should address this feedback to the best of your ability.
 
 ## Task 2: Final Report: Create a single **markdown** file that will be your final report.
 
@@ -110,13 +110,6 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 1. MAJOR version when you make incompatible API changes,
 1. MINOR version when you add functionality in a backwards compatible manner, and
 1. PATCH version when you make backwards compatible bug fixes.
-
-## OPTIONAL Task 5: Give others feedback!
-
-Many of your classmates are doing some very interesting projects with some cool datasets.
-Since this is a course introducing you to Data Analytics, I think it would be very helpful for you to look at their analyses and results, think critically about it, and perhaps provide some useful feedback.
-
-I'll try and facilitate this during our lecture this week, and also online on {{ FORUM_LINK }}.
 
 ## Appendix
 
