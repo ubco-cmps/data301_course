@@ -50,7 +50,7 @@ We want to see your Tableau dashboard, get a walk-through of the key features, a
 
 Here is how you should allocate your efforts for these short videos:
 
-- [10%] : Timely submission of a video link or file by the deadline and before the grace period ends.
+- [10%] : Timely submission of a video link or file by the deadline.
 - [20%] : Clear explanation of the project research questions and information about the dataset.
 - [50%] : Guided walk-through of the key features of the Tableau Dashboard.
 - [30%] : Show how your dashboard data answer your research questions.
