@@ -79,7 +79,7 @@ To contract for a `B` project, you should do everything above plus:
     - Examples coming soon...
 - Equitable labour distribution
     - All students in the group should be putting in roughly the same amount of work on the project
-- Visit instructor or Project TA student hours at least twice for feedback (and implement it)
+- Visit instructor or Project TA student hours at least ~~twice~~ once (updated) for feedback (and implement it)
 
 ### Contract for an `A` project (88%)
 
@@ -92,7 +92,7 @@ To contract for an `A` project, you should do everything above plus:
 - Deep analysis and insightful commentary
 - Effective use of GitHub issues
 - Sophisticated Tableau Dashboard
-- Visit instructor or Project TA student hours at least 3 times for feedback (and implement it)
+- Visit instructor or Project TA student hours at least ~~3~~ 2 (updated) times for feedback (and implement it)
 
 ### Contract for an `A+` project (100%)
 
@@ -103,4 +103,4 @@ To contract for an `A+` project, you should do everything above plus:
     - At least two method chains
 - Effective use of Git branches, code reviews, Pull Requests (and approvers)
 - Extra “flair” and effort
-- Visit Project student hours 4 or more times for feedback (and implement it)
+- Visit Project student hours ~~4~~ 2 (updated) or more times for feedback (and implement it)
