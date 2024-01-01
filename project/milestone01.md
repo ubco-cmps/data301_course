@@ -219,7 +219,7 @@ The following is a more detailed description, again by [Dovile](https://teamhood
 
 Dovile's article offers a few suggestions to consider when writing your project vision statement:
 
-> 1. **Make it concise and easy to understand**. It is best when your project vision statement is not only easy to understand, but also easy to remem8ber. The shorter and clearer you make it, the less grey area there is for your team members to interpret in their own way. Also, if they can easily remember it, they are more likely to follow it.
+> 1. **Make it concise and easy to understand**. It is best when your project vision statement is not only easy to understand, but also easy to remember. The shorter and clearer you make it, the less grey area there is for your team members to interpret in their own way. Also, if they can easily remember it, they are more likely to follow it.
 > 
 > 2. **Specify, but do not limit.** Your vision statement should define the end goal and additional criteria that will make the project a success. However, it should not be focused on one specific way to achieve this end goal. Instead it should allow multiple paths to the desired result and encourage action from both stakeholders and the team.
 > 
